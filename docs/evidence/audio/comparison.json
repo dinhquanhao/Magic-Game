@@ -1,0 +1,96 @@
+{
+  "state": {
+    "skill": "FIRE-01",
+    "active": true,
+    "phase": "charging",
+    "time": 0,
+    "areaRadius": 18.75,
+    "vfxRadius": 18.75,
+    "previewRadius": 1,
+    "camera": [
+      19,
+      18.000000000000004,
+      23.999999999999996
+    ],
+    "environmentId": "d7728d2e-2d6d-4e1b-b07c-de39a1004c87",
+    "status": "ĐANG VẼ PHÙ VĂN",
+    "mana": 100,
+    "playMode": false,
+    "paused": false,
+    "contextLost": false,
+    "density": 1,
+    "debrisDensity": 1,
+    "runtimeDensityScale": 1,
+    "effectiveDensity": 1,
+    "render": {
+      "frame": 50,
+      "calls": 37,
+      "triangles": 21027,
+      "points": 0,
+      "lines": 182
+    },
+    "memory": {
+      "geometries": 23,
+      "textures": 14
+    },
+    "badTransforms": [],
+    "badPrograms": 0,
+    "glError": 0,
+    "graphics": {
+      "quality": "Low",
+      "features": {
+        "reflections": false,
+        "ao": false,
+        "volumetric": false,
+        "caustics": false,
+        "subsurface": false,
+        "motionBlur": false,
+        "dof": false,
+        "adaptive": false
+      },
+      "requestedFeatures": {
+        "reflections": false,
+        "ao": false,
+        "volumetric": false,
+        "caustics": false,
+        "subsurface": false,
+        "motionBlur": false,
+        "dof": false,
+        "adaptive": false
+      },
+      "autoReduced": [],
+      "averageFrameMs": 211.71600000002982,
+      "post": {
+        "ssr": false,
+        "gtao": false,
+        "ssao": false,
+        "dof": false,
+        "ssrTemporal": false,
+        "ssrResolution": "fallback IBL",
+        "maxTextures": 32,
+        "lastUpdateMs": 0,
+        "unavailable": []
+      },
+      "fields": {
+        "initialized": true,
+        "activeLights": 0,
+        "windStrength": 0,
+        "windTurbulence": 0,
+        "quality": "Low"
+      },
+      "grass": {
+        "quality": "Low",
+        "bladeInstances": 360,
+        "windAlpha": 0,
+        "initialized": true
+      },
+      "particleWind": {
+        "connectedMaterials": 18
+      },
+      "trackedMaterials": 24,
+      "estimatedRenderTargetBytes": 0
+    },
+    "feedback": "VẼ PHÙ VĂN"
+  },
+  "errors": []
+}

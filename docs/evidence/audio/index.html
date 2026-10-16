@@ -1,0 +1,13 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Magic Game — audio và assets</title>
+<style>body{background:#09131e;color:#d2e8ed;font:16px/1.6 system-ui;max-width:1100px;margin:auto;padding:24px}a{color:#83dfd0}img,video{width:100%;height:auto}audio{width:100%}.pair{display:grid;grid-template-columns:1fr 1fr;gap:14px}h2{margin-top:36px}small{color:#a0b7c6}@media(max-width:700px){.pair{grid-template-columns:1fr}}</style>
+<h1>Magic Game — vòng audio/asset</h1>
+<p>Giữ 15 hệ/23 tuyệt kỹ. Đây là bằng chứng kiểm thử local Chromium/SwiftShader, không phải Live Preview hoặc benchmark GPU thật.</p>
+<h2>Nghe 15 bản sắc nguyên tố · 75 giây</h2><audio controls preload="metadata" src="fifteen-elements.mp3"></audio>
+<p>Mỗi hệ 5 giây: 0 Hỏa · 5 Thủy · 10 Thổ · 15 Ánh Sáng · 20 Bóng Tối · 25 Phong · 30 Lôi · 35 Băng · 40 Nham · 45 Độc · 50 Không Gian · 55 Thời Gian · 60 Huyết · 65 Tinh Tú · 70 Tinh Thần.</p>
+<small>Bản tham chiếu có gain riêng. Audio là tổng hợp procedural đầu tiên; cần nghe/mix nghệ thuật tiếp, không được suy chất lượng từ test.</small>
+<h2>Thu WebAudio thực từ Chromium</h2><audio controls preload="metadata" src="browser-audio.mp3"></audio><p><a href="browser-audio.webm">Opus/WebM gốc</a>. Chứa master/spatial gain của game; thu riêng với video.</p>
+<h2>Video production UI</h2><video controls preload="metadata" src="production-video.mp4" poster="production-water.png"></video><p>76.3 giây, chọn/cast Thủy và Bóng Tối, Play/MP/pause, bật âm qua gesture. Video Playwright không có audio track.</p>
+<h2>Trước / sau cùng fixture</h2><div class="pair"><figure><img src="before-startup.png"><figcaption>Trước: startup .05s</figcaption></figure><figure><img src="after-startup.png"><figcaption>Sau: startup .05s, icon mới</figcaption></figure><figure><img src="before-water-impact.png"><figcaption>Trước: Water 9.55s</figcaption></figure><figure><img src="after-water-impact.png"><figcaption>Sau: Water 9.55s</figcaption></figure></div><p>Cùng camera/preset/viewport; particle ngẫu nhiên. Vùng quá sáng vẫn còn, là nhiệm vụ kế tiếp của GĐ1.</p>
+<h2>Audio UI và recovery</h2><img src="audio-controls.png">
+<h2>Báo cáo máy đọc được</h2><ul><li><a href="matrix.json">23/23 skill và 7 cue</a></li><li><a href="lifecycle.json">Hit-stop/context/recast/unlock muộn</a></li><li><a href="production-final.json">UI production cuối</a></li><li><a href="production-results.json">Ghi hình/console production</a></li><li><a href="vercel-access.json">Giới hạn Vercel/network</a></li><li><a href="lifecycle-fixture-failure.json">Fixture lỗi đã sửa, không tính là pass</a></li></ul>
+</html>

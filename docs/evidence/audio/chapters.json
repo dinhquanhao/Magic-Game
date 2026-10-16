@@ -1,0 +1,81 @@
+{
+  "duration": 75.0,
+  "note": "Reference cue sequence with demo gains; browser recording is separate and includes spatial/master gain.",
+  "chapters": [
+    {
+      "element": "FIRE",
+      "startSeconds": 0,
+      "impactSeconds": 2.15
+    },
+    {
+      "element": "WATER",
+      "startSeconds": 5,
+      "impactSeconds": 7.15
+    },
+    {
+      "element": "EARTH",
+      "startSeconds": 10,
+      "impactSeconds": 12.15
+    },
+    {
+      "element": "LIGHT",
+      "startSeconds": 15,
+      "impactSeconds": 17.15
+    },
+    {
+      "element": "SHADOW",
+      "startSeconds": 20,
+      "impactSeconds": 22.15
+    },
+    {
+      "element": "WIND",
+      "startSeconds": 25,
+      "impactSeconds": 27.15
+    },
+    {
+      "element": "LIGHTNING",
+      "startSeconds": 30,
+      "impactSeconds": 32.15
+    },
+    {
+      "element": "ICE",
+      "startSeconds": 35,
+      "impactSeconds": 37.15
+    },
+    {
+      "element": "MAGMA",
+      "startSeconds": 40,
+      "impactSeconds": 42.15
+    },
+    {
+      "element": "POISON",
+      "startSeconds": 45,
+      "impactSeconds": 47.15
+    },
+    {
+      "element": "SPACE",
+      "startSeconds": 50,
+      "impactSeconds": 52.15
+    },
+    {
+      "element": "TIME",
+      "startSeconds": 55,
+      "impactSeconds": 57.15
+    },
+    {
+      "element": "BLOOD",
+      "startSeconds": 60,
+      "impactSeconds": 62.15
+    },
+    {
+      "element": "ASTRAL",
+      "startSeconds": 65,
+      "impactSeconds": 67.15
+    },
+    {
+      "element": "PSYCHIC",
+      "startSeconds": 70,
+      "impactSeconds": 72.15
+    }
+  ]
+}

@@ -33,6 +33,13 @@
     <aside class="settings">
       <div class="panel-heading"><span>ĐIỀU KHIỂN HIỆU ỨNG</span><span class="live">● TRỰC TIẾP</span></div>
       <div class="control"><label>CHẤT LƯỢNG</label><select id="qualityPreset"><option value="Low">Thấp</option><option value="Medium">Vừa</option><option value="High" selected>Cao</option><option value="Ultra">Siêu cao</option></select></div>
+      <details class="audio-options">
+        <summary>ÂM THANH</summary>
+        <button id="audioToggle" class="secondary" type="button" aria-pressed="false">BẬT ÂM THANH</button>
+        <div class="control"><label for="audioVolume">ÂM LƯỢNG <output id="audioVolumeOut">65%</output></label><input id="audioVolume" type="range" min="0" max="1" step="0.05" value="0.65"></div>
+        <label class="toggle"><span>GIÓ ĐẤU TRƯỜNG</span><input type="checkbox" id="ambientAudio"></label>
+        <p id="audioStatus" role="status">Bật để nghe âm thanh phép thuật</p>
+      </details>
       <details class="graphics-options"><summary>ĐỒ HỌA NÂNG CAO</summary>
         <div class="toggle"><span>SSR TRÊN MẶT ĐẤT · IBL DỰ PHÒNG</span><input type="checkbox" id="graphicsReflections" checked></div>
         <div class="toggle"><span>GTAO / SSAO THEO CHẤT LƯỢNG</span><input type="checkbox" id="graphicsAo" checked></div>

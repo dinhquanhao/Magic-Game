@@ -1,0 +1,1052 @@
+{
+  "version": 1,
+  "sampleRate": 24000,
+  "channels": 1,
+  "provenance": "Original deterministic mathematical synthesis; no recordings, samples, models or paid services.",
+  "elements": {
+    "FIRE": {
+      "baseFrequency": 91,
+      "identity": "Crackling flame and descending heat",
+      "cues": {
+        "precast": {
+          "url": "/assets/audio/spells/fire/precast.wav",
+          "duration": 0.32,
+          "peak": 0.619995,
+          "rms": 0.07556,
+          "bytes": 15404,
+          "sha256": "38680e4504f9a5ab5de34b32cbfcf89689cbcabf856eeae256b322c3f527e9e9",
+          "loop": false
+        },
+        "charging": {
+          "url": "/assets/audio/spells/fire/charging.wav",
+          "duration": 1.0,
+          "peak": 0.619995,
+          "rms": 0.082398,
+          "bytes": 48044,
+          "sha256": "63b02a048faa69b1866c5f03e821be0fcef600f0504e563e0043ba165297405b",
+          "loop": true
+        },
+        "casting": {
+          "url": "/assets/audio/spells/fire/casting.wav",
+          "duration": 0.42,
+          "peak": 0.619995,
+          "rms": 0.073032,
+          "bytes": 20204,
+          "sha256": "3dce5fd0a0713ba2e4f9dc9698941bf27d06ad487bce7b68a7fa28bfe3920361",
+          "loop": false
+        },
+        "traveling": {
+          "url": "/assets/audio/spells/fire/traveling.wav",
+          "duration": 1.0,
+          "peak": 0.619995,
+          "rms": 0.089046,
+          "bytes": 48044,
+          "sha256": "6c6fca3bc714874db865710551f910ddd8f301933b1e3c0a51c6f670514102a8",
+          "loop": true
+        },
+        "impact": {
+          "url": "/assets/audio/spells/fire/impact.wav",
+          "duration": 1.4,
+          "peak": 0.619995,
+          "rms": 0.045642,
+          "bytes": 67244,
+          "sha256": "1e3996c3d32e3dd24368a4fd9d540a28764bd765ec535700019bf42834b45331",
+          "loop": false
+        },
+        "shockwave": {
+          "url": "/assets/audio/spells/fire/shockwave.wav",
+          "duration": 1.1,
+          "peak": 0.619995,
+          "rms": 0.057372,
+          "bytes": 52844,
+          "sha256": "6d4254a87701823906b6983c460cb92c60ea7e31ebd5acc7b52484137a9fc8d5",
+          "loop": false
+        },
+        "aftermath": {
+          "url": "/assets/audio/spells/fire/aftermath.wav",
+          "duration": 1.8,
+          "peak": 0.619995,
+          "rms": 0.069205,
+          "bytes": 86444,
+          "sha256": "d617e6399447c761624cbc84ef062b3c04066aeb618524461adef93a9531ed38",
+          "loop": false
+        }
+      }
+    },
+    "WATER": {
+      "baseFrequency": 173,
+      "identity": "Bubbles and a broad surf tail",
+      "cues": {
+        "precast": {
+          "url": "/assets/audio/spells/water/precast.wav",
+          "duration": 0.32,
+          "peak": 0.619995,
+          "rms": 0.123852,
+          "bytes": 15404,
+          "sha256": "b53ee4d3ff950866ff38b39375b831a418e29870c720ef970c23e38605613161",
+          "loop": false
+        },
+        "charging": {
+          "url": "/assets/audio/spells/water/charging.wav",
+          "duration": 1.0,
+          "peak": 0.619995,
+          "rms": 0.138279,
+          "bytes": 48044,
+          "sha256": "e5ffe839d78609031f897a5e07b69d3a4e1cfc113e25a0d708d97c87991ab1d2",
+          "loop": true
+        },
+        "casting": {
+          "url": "/assets/audio/spells/water/casting.wav",
+          "duration": 0.42,
+          "peak": 0.619995,
+          "rms": 0.130875,
+          "bytes": 20204,
+          "sha256": "99aaafab98d3a8e609d445bb3489e7adbcab3f1907e0a2d0c609072c87c5f08b",
+          "loop": false
+        },
+        "traveling": {
+          "url": "/assets/audio/spells/water/traveling.wav",
+          "duration": 1.0,
+          "peak": 0.619995,
+          "rms": 0.143461,
+          "bytes": 48044,
+          "sha256": "386f91017982f5ddf0732945dfad61214591d1e1c5411827b9253c453fa69194",
+          "loop": true
+        },
+        "impact": {
+          "url": "/assets/audio/spells/water/impact.wav",
+          "duration": 1.4,
+          "peak": 0.619995,
+          "rms": 0.051234,
+          "bytes": 67244,
+          "sha256": "d26996d8fb9a273fa95edf9629194758c6ff1bf95c405ddf6c0b5334d83b986f",
+          "loop": false
+        },
+        "shockwave": {
+          "url": "/assets/audio/spells/water/shockwave.wav",
+          "duration": 1.1,
+          "peak": 0.619995,
+          "rms": 0.074507,
+          "bytes": 52844,
+          "sha256": "ce65227b353e6ac70162d850fdfee1b12f492f506b354135c44bfa8525c2c9da",
+          "loop": false
+        },
+        "aftermath": {
+          "url": "/assets/audio/spells/water/aftermath.wav",
+          "duration": 1.8,
+          "peak": 0.619995,
+          "rms": 0.096858,
+          "bytes": 86444,
+          "sha256": "c163774a3e39f2d01553a4050cf39f662ae3683a301d46b82bca9b7f529db8a9",
+          "loop": false
+        }
+      }
+    },
+    "EARTH": {
+      "baseFrequency": 53,
+      "identity": "Low stone fracture and granular rumble",
+      "cues": {
+        "precast": {
+          "url": "/assets/audio/spells/earth/precast.wav",
+          "duration": 0.32,
+          "peak": 0.619995,
+          "rms": 0.135063,
+          "bytes": 15404,
+          "sha256": "bd04ea2f6073152bc84c5cfeb4db0898794681f717a1aadebbd21b445fd51466",
+          "loop": false
+        },
+        "charging": {
+          "url": "/assets/audio/spells/earth/charging.wav",
+          "duration": 1.0,
+          "peak": 0.619995,
+          "rms": 0.164436,
+          "bytes": 48044,
+          "sha256": "4f763891689920a4d1d1eab344b96f581aa89bb7a83fd1c07288be670f8e03f0",
+          "loop": true
+        },
+        "casting": {
+          "url": "/assets/audio/spells/earth/casting.wav",
+          "duration": 0.42,
+          "peak": 0.619995,
+          "rms": 0.207087,
+          "bytes": 20204,
+          "sha256": "ab4f95739de3fe07e996725280096e1655583695f8b0383cc769d4ec3b70c81d",
+          "loop": false
+        },
+        "traveling": {
+          "url": "/assets/audio/spells/earth/traveling.wav",
+          "duration": 1.0,
+          "peak": 0.619995,
+          "rms": 0.161434,
+          "bytes": 48044,
+          "sha256": "4bd9386c626e4251a52118538f14cdcad1adb1f730342ee6ce0d238e2e96d98b",
+          "loop": true
+        },
+        "impact": {
+          "url": "/assets/audio/spells/earth/impact.wav",
+          "duration": 1.4,
+          "peak": 0.619995,
+          "rms": 0.080794,
+          "bytes": 67244,
+          "sha256": "bf3e4e7c2da652b16326eae136cce8d8c7becae21b50a81f571b21b1d59fa905",
+          "loop": false
+        },
+        "shockwave": {
+          "url": "/assets/audio/spells/earth/shockwave.wav",
+          "duration": 1.1,
+          "peak": 0.619995,
+          "rms": 0.075672,
+          "bytes": 52844,
+          "sha256": "c0a24c5539e73bb62ae3b430a01a871e27c4135b065ca792b86f22e02db42178",
+          "loop": false
+        },
+        "aftermath": {
+          "url": "/assets/audio/spells/earth/aftermath.wav",
+          "duration": 1.8,
+          "peak": 0.619995,
+          "rms": 0.112269,
+          "bytes": 86444,
+          "sha256": "64185dce6f86e8be7c1f35a915f2970871ee33b30a0edf98103d76ab727fb388",
+          "loop": false
+        }
+      }
+    },
+    "LIGHT": {
+      "baseFrequency": 523,
+      "identity": "Clear harmonic bells",
+      "cues": {
+        "precast": {
+          "url": "/assets/audio/spells/light/precast.wav",
+          "duration": 0.32,
+          "peak": 0.619995,
+          "rms": 0.23588,
+          "bytes": 15404,
+          "sha256": "9ec42d2df6c23f5d4163c7d06b8b228bd0baf5f870acdf131f2ef1863112a0f7",
+          "loop": false
+        },
+        "charging": {
+          "url": "/assets/audio/spells/light/charging.wav",
+          "duration": 1.0,
+          "peak": 0.619995,
+          "rms": 0.337619,
+          "bytes": 48044,
+          "sha256": "c106126926e52b135959c93e21230917478d9429a7f64777a0ff6bdeb1f47488",
+          "loop": true
+        },
+        "casting": {
+          "url": "/assets/audio/spells/light/casting.wav",
+          "duration": 0.42,
+          "peak": 0.619995,
+          "rms": 0.26503,
+          "bytes": 20204,
+          "sha256": "88437b53a2c8304a7822df34da4d4889806da4bcb4f9c0a6412c50bdc2134626",
+          "loop": false
+        },
+        "traveling": {
+          "url": "/assets/audio/spells/light/traveling.wav",
+          "duration": 1.0,
+          "peak": 0.619995,
+          "rms": 0.337455,
+          "bytes": 48044,
+          "sha256": "b5d0a0f3e01b34b4080c06b2c9562e7b189eccdd2fb93ca74fe3dd60cf120c3b",
+          "loop": true
+        },
+        "impact": {
+          "url": "/assets/audio/spells/light/impact.wav",
+          "duration": 1.4,
+          "peak": 0.619995,
+          "rms": 0.083531,
+          "bytes": 67244,
+          "sha256": "e41856121d1c568743193efe071b68a14ae8683198336caec6139fb80e2d6829",
+          "loop": false
+        },
+        "shockwave": {
+          "url": "/assets/audio/spells/light/shockwave.wav",
+          "duration": 1.1,
+          "peak": 0.619995,
+          "rms": 0.074299,
+          "bytes": 52844,
+          "sha256": "4f4691c21f8a4f72a048d43a7e1a9f09f12da53a02a24468fa82602683548665",
+          "loop": false
+        },
+        "aftermath": {
+          "url": "/assets/audio/spells/light/aftermath.wav",
+          "duration": 1.8,
+          "peak": 0.619995,
+          "rms": 0.230905,
+          "bytes": 86444,
+          "sha256": "31c290ce5a61f5e64e71c05f92064e62d55b7a336425ddee1478e27f7d3a0df9",
+          "loop": false
+        }
+      }
+    },
+    "SHADOW": {
+      "baseFrequency": 63,
+      "identity": "Dark detuned downward resonance",
+      "cues": {
+        "precast": {
+          "url": "/assets/audio/spells/shadow/precast.wav",
+          "duration": 0.32,
+          "peak": 0.619995,
+          "rms": 0.208068,
+          "bytes": 15404,
+          "sha256": "79a26304c0adf14fd54550b3e5e85dacc3ca2b4b8ae3d4b5c3b26cde3e7d4100",
+          "loop": false
+        },
+        "charging": {
+          "url": "/assets/audio/spells/shadow/charging.wav",
+          "duration": 1.0,
+          "peak": 0.619995,
+          "rms": 0.281137,
+          "bytes": 48044,
+          "sha256": "d4f941f822a51eab6336a0d583813b9fbd81bbb5c00f914bc4ae6397455d1ed9",
+          "loop": true
+        },
+        "casting": {
+          "url": "/assets/audio/spells/shadow/casting.wav",
+          "duration": 0.42,
+          "peak": 0.619995,
+          "rms": 0.259699,
+          "bytes": 20204,
+          "sha256": "4ba6688960ba9ed428d1482a65062a2b49eafb6239dc44cc1d02590b0e8e9c46",
+          "loop": false
+        },
+        "traveling": {
+          "url": "/assets/audio/spells/shadow/traveling.wav",
+          "duration": 1.0,
+          "peak": 0.619995,
+          "rms": 0.267682,
+          "bytes": 48044,
+          "sha256": "421326934cef332d8a478c3c7ad3d1d29c9b70725deb9f55f99badc19c0c1fb8",
+          "loop": true
+        },
+        "impact": {
+          "url": "/assets/audio/spells/shadow/impact.wav",
+          "duration": 1.4,
+          "peak": 0.619995,
+          "rms": 0.111682,
+          "bytes": 67244,
+          "sha256": "bfe86c25d0081237a9063f9d4e426d572214f8d3c599e6cc3b99e5f372ec8df9",
+          "loop": false
+        },
+        "shockwave": {
+          "url": "/assets/audio/spells/shadow/shockwave.wav",
+          "duration": 1.1,
+          "peak": 0.619995,
+          "rms": 0.100166,
+          "bytes": 52844,
+          "sha256": "9d19e4edf599e3bf4db5d02314b46412510f0f34d3c5fed28e583f0a2b410949",
+          "loop": false
+        },
+        "aftermath": {
+          "url": "/assets/audio/spells/shadow/aftermath.wav",
+          "duration": 1.8,
+          "peak": 0.619995,
+          "rms": 0.167089,
+          "bytes": 86444,
+          "sha256": "50dea225d6acca25b733673e3ceafd370d61d00a587f951b836ddb6874d621fb",
+          "loop": false
+        }
+      }
+    },
+    "WIND": {
+      "baseFrequency": 211,
+      "identity": "Filtered air and swirling gusts",
+      "cues": {
+        "precast": {
+          "url": "/assets/audio/spells/wind/precast.wav",
+          "duration": 0.32,
+          "peak": 0.619995,
+          "rms": 0.113575,
+          "bytes": 15404,
+          "sha256": "a9363bf2f91ba11150536c2f7c7f56d7b13dfecbb94a1956f838828f6955be32",
+          "loop": false
+        },
+        "charging": {
+          "url": "/assets/audio/spells/wind/charging.wav",
+          "duration": 1.0,
+          "peak": 0.619995,
+          "rms": 0.121307,
+          "bytes": 48044,
+          "sha256": "9b7383e9cd0e2e10ab8d8ad1898a8de6cd10355c84d200b4547d7c2d792cc905",
+          "loop": true
+        },
+        "casting": {
+          "url": "/assets/audio/spells/wind/casting.wav",
+          "duration": 0.42,
+          "peak": 0.619995,
+          "rms": 0.11511,
+          "bytes": 20204,
+          "sha256": "22b80d60f79f2cf0854a610f6dc9dfb375d7c8ad06824e962baaf33e2bded780",
+          "loop": false
+        },
+        "traveling": {
+          "url": "/assets/audio/spells/wind/traveling.wav",
+          "duration": 1.0,
+          "peak": 0.619995,
+          "rms": 0.12412,
+          "bytes": 48044,
+          "sha256": "68d36d08322e104b61b2d58a779c4466030c02a79c447de31cd932692b54c631",
+          "loop": true
+        },
+        "impact": {
+          "url": "/assets/audio/spells/wind/impact.wav",
+          "duration": 1.4,
+          "peak": 0.619995,
+          "rms": 0.0561,
+          "bytes": 67244,
+          "sha256": "9592105b07789ed904dfb222d233f5c8893a831f0214e09e0d7e4e298cdf9a07",
+          "loop": false
+        },
+        "shockwave": {
+          "url": "/assets/audio/spells/wind/shockwave.wav",
+          "duration": 1.1,
+          "peak": 0.619995,
+          "rms": 0.08235,
+          "bytes": 52844,
+          "sha256": "bd5a35074b29b746d5ca7dd450ec3a88a099c426b53dd16903a50c56e0cb4d49",
+          "loop": false
+        },
+        "aftermath": {
+          "url": "/assets/audio/spells/wind/aftermath.wav",
+          "duration": 1.8,
+          "peak": 0.619995,
+          "rms": 0.089132,
+          "bytes": 86444,
+          "sha256": "a6bb46e536172b81e35902f1799639a8ca6367d64e6b6204bba3502f8380c5fe",
+          "loop": false
+        }
+      }
+    },
+    "LIGHTNING": {
+      "baseFrequency": 137,
+      "identity": "Short electrical arcs and bright crackle",
+      "cues": {
+        "precast": {
+          "url": "/assets/audio/spells/lightning/precast.wav",
+          "duration": 0.32,
+          "peak": 0.619995,
+          "rms": 0.074105,
+          "bytes": 15404,
+          "sha256": "2a6fcdce6a26e52af3ebd01d70604cf20f6f2829df1178e53d46409f4a7fbf34",
+          "loop": false
+        },
+        "charging": {
+          "url": "/assets/audio/spells/lightning/charging.wav",
+          "duration": 1.0,
+          "peak": 0.619995,
+          "rms": 0.074221,
+          "bytes": 48044,
+          "sha256": "06d3cd23fe3af8eb272e77db9fd3e8f911ef16a85d99c429510bbc38695a93f2",
+          "loop": true
+        },
+        "casting": {
+          "url": "/assets/audio/spells/lightning/casting.wav",
+          "duration": 0.42,
+          "peak": 0.619995,
+          "rms": 0.070281,
+          "bytes": 20204,
+          "sha256": "7167f4536e29a87a68f2205a35337033a5b3fd45770fc7007d40fdd0d134ff2f",
+          "loop": false
+        },
+        "traveling": {
+          "url": "/assets/audio/spells/lightning/traveling.wav",
+          "duration": 1.0,
+          "peak": 0.619995,
+          "rms": 0.071885,
+          "bytes": 48044,
+          "sha256": "9acb9ad0ed08998691185b48bf204b0132e469f0d79681a3c59597db89fc8871",
+          "loop": true
+        },
+        "impact": {
+          "url": "/assets/audio/spells/lightning/impact.wav",
+          "duration": 1.4,
+          "peak": 0.619995,
+          "rms": 0.034183,
+          "bytes": 67244,
+          "sha256": "d6c0d4705cb17285998730562d88d84623aaa819d4fe1b865257d72bb47e52cd",
+          "loop": false
+        },
+        "shockwave": {
+          "url": "/assets/audio/spells/lightning/shockwave.wav",
+          "duration": 1.1,
+          "peak": 0.619995,
+          "rms": 0.058436,
+          "bytes": 52844,
+          "sha256": "e4f76f2e0d034d2125983c4d8e0cd6989f6dab37fb6f6cbadec9c3983ca03ac6",
+          "loop": false
+        },
+        "aftermath": {
+          "url": "/assets/audio/spells/lightning/aftermath.wav",
+          "duration": 1.8,
+          "peak": 0.619995,
+          "rms": 0.059144,
+          "bytes": 86444,
+          "sha256": "70983d753542a321a0625378243f55c7e250f9b4188d8396d727cf22284e6896",
+          "loop": false
+        }
+      }
+    },
+    "ICE": {
+      "baseFrequency": 659,
+      "identity": "Brittle inharmonic crystal",
+      "cues": {
+        "precast": {
+          "url": "/assets/audio/spells/ice/precast.wav",
+          "duration": 0.32,
+          "peak": 0.619995,
+          "rms": 0.186223,
+          "bytes": 15404,
+          "sha256": "8bfe1ac9dfb26e389dbcbde737daca9d3aa6efb14e43f903bc407cd71848a4e8",
+          "loop": false
+        },
+        "charging": {
+          "url": "/assets/audio/spells/ice/charging.wav",
+          "duration": 1.0,
+          "peak": 0.619995,
+          "rms": 0.214462,
+          "bytes": 48044,
+          "sha256": "e40233168194ed4a929ec0ed93b6e23be6a32a3446a90168811ba2b4cf8e0c00",
+          "loop": true
+        },
+        "casting": {
+          "url": "/assets/audio/spells/ice/casting.wav",
+          "duration": 0.42,
+          "peak": 0.619995,
+          "rms": 0.182828,
+          "bytes": 20204,
+          "sha256": "46fe2ec7e6ca8c626df4108fbca1eb7b6350af5f984525698b3dfa15ddf93291",
+          "loop": false
+        },
+        "traveling": {
+          "url": "/assets/audio/spells/ice/traveling.wav",
+          "duration": 1.0,
+          "peak": 0.619995,
+          "rms": 0.193132,
+          "bytes": 48044,
+          "sha256": "05a7f0ec1afed97f96365c531c47f5c43f9ee08370647e86ae9718eb23c28636",
+          "loop": true
+        },
+        "impact": {
+          "url": "/assets/audio/spells/ice/impact.wav",
+          "duration": 1.4,
+          "peak": 0.619995,
+          "rms": 0.077336,
+          "bytes": 67244,
+          "sha256": "a33836e706f2a11354b27e9e116b795cbbd0475d1141c51d8b24b3ea4c4a508f",
+          "loop": false
+        },
+        "shockwave": {
+          "url": "/assets/audio/spells/ice/shockwave.wav",
+          "duration": 1.1,
+          "peak": 0.619995,
+          "rms": 0.086594,
+          "bytes": 52844,
+          "sha256": "dc545a2adb3eab3479f92f68d6024e8db5f2cd8fad2c3b2f6fd347cec515db89",
+          "loop": false
+        },
+        "aftermath": {
+          "url": "/assets/audio/spells/ice/aftermath.wav",
+          "duration": 1.8,
+          "peak": 0.619995,
+          "rms": 0.167427,
+          "bytes": 86444,
+          "sha256": "c9925e2c749c545c49d1953a0b7d254cb4863faaae9ad5a60d28e541c434d374",
+          "loop": false
+        }
+      }
+    },
+    "MAGMA": {
+      "baseFrequency": 47,
+      "identity": "Slow low bubbles and rolling heat",
+      "cues": {
+        "precast": {
+          "url": "/assets/audio/spells/magma/precast.wav",
+          "duration": 0.32,
+          "peak": 0.619995,
+          "rms": 0.184882,
+          "bytes": 15404,
+          "sha256": "261343fa203645a428a7933b70ef5df5100480381f18bc4725cc2517b0f70d2e",
+          "loop": false
+        },
+        "charging": {
+          "url": "/assets/audio/spells/magma/charging.wav",
+          "duration": 1.0,
+          "peak": 0.619995,
+          "rms": 0.222656,
+          "bytes": 48044,
+          "sha256": "9bfedd0c2905d6fb7c15910b1682964d26da3312223346c1c9cd4b4cd2a5158f",
+          "loop": true
+        },
+        "casting": {
+          "url": "/assets/audio/spells/magma/casting.wav",
+          "duration": 0.42,
+          "peak": 0.619995,
+          "rms": 0.218274,
+          "bytes": 20204,
+          "sha256": "8326ed93829da6558301f1b46b9a371a2b755ed81b4dbebd9c972f2feb66fb44",
+          "loop": false
+        },
+        "traveling": {
+          "url": "/assets/audio/spells/magma/traveling.wav",
+          "duration": 1.0,
+          "peak": 0.619995,
+          "rms": 0.236304,
+          "bytes": 48044,
+          "sha256": "2b5c9c875108d40461adf805c3538d634ca71b4f0682be89821f72c9e531dcc2",
+          "loop": true
+        },
+        "impact": {
+          "url": "/assets/audio/spells/magma/impact.wav",
+          "duration": 1.4,
+          "peak": 0.619995,
+          "rms": 0.101016,
+          "bytes": 67244,
+          "sha256": "31259319797c312b666f3cf099093f1f8bfd1bba2d0332d6ca60e81d1850df6e",
+          "loop": false
+        },
+        "shockwave": {
+          "url": "/assets/audio/spells/magma/shockwave.wav",
+          "duration": 1.1,
+          "peak": 0.619995,
+          "rms": 0.103397,
+          "bytes": 52844,
+          "sha256": "af14c2adb36044df8bbe09e8165d1682e8dbe210071fdffaa4f284d3227efdc0",
+          "loop": false
+        },
+        "aftermath": {
+          "url": "/assets/audio/spells/magma/aftermath.wav",
+          "duration": 1.8,
+          "peak": 0.619995,
+          "rms": 0.166009,
+          "bytes": 86444,
+          "sha256": "d68e21df7388c3cf40fe4bfbd47dc2aca11383d4c59a79bc627e122e6996f0e4",
+          "loop": false
+        }
+      }
+    },
+    "POISON": {
+      "baseFrequency": 127,
+      "identity": "Resonant bubbling and acid fizz",
+      "cues": {
+        "precast": {
+          "url": "/assets/audio/spells/poison/precast.wav",
+          "duration": 0.32,
+          "peak": 0.619995,
+          "rms": 0.115937,
+          "bytes": 15404,
+          "sha256": "5a50ecd8d42a045188f0a122d89dcdf08b79624fe357ef8a31930f64a6ac068b",
+          "loop": false
+        },
+        "charging": {
+          "url": "/assets/audio/spells/poison/charging.wav",
+          "duration": 1.0,
+          "peak": 0.619995,
+          "rms": 0.156631,
+          "bytes": 48044,
+          "sha256": "d78c3b1dbc1f11a2095f0b32d2725ea1d3eaff43967b0c8e98e711c4b1d5af8b",
+          "loop": true
+        },
+        "casting": {
+          "url": "/assets/audio/spells/poison/casting.wav",
+          "duration": 0.42,
+          "peak": 0.619995,
+          "rms": 0.149318,
+          "bytes": 20204,
+          "sha256": "32201a40a7f957bc9e1140a7ba5dadd585c10b95cdc8342d0f35d4ad3d3cf9fb",
+          "loop": false
+        },
+        "traveling": {
+          "url": "/assets/audio/spells/poison/traveling.wav",
+          "duration": 1.0,
+          "peak": 0.619995,
+          "rms": 0.152366,
+          "bytes": 48044,
+          "sha256": "40d291b8616ee7f3eacc32e4d280b1430735a3d912d2f61a79bf651e647b2dc3",
+          "loop": true
+        },
+        "impact": {
+          "url": "/assets/audio/spells/poison/impact.wav",
+          "duration": 1.4,
+          "peak": 0.619995,
+          "rms": 0.060191,
+          "bytes": 67244,
+          "sha256": "c06cc1eced2c54d0725770a08aa84e177b0837db9124f0c1a0641cbd0ab4c740",
+          "loop": false
+        },
+        "shockwave": {
+          "url": "/assets/audio/spells/poison/shockwave.wav",
+          "duration": 1.1,
+          "peak": 0.619995,
+          "rms": 0.083132,
+          "bytes": 52844,
+          "sha256": "f32f926227207887f84c46d4c849f59d4775c672a1a2d7fe506e40048049a2ff",
+          "loop": false
+        },
+        "aftermath": {
+          "url": "/assets/audio/spells/poison/aftermath.wav",
+          "duration": 1.8,
+          "peak": 0.619995,
+          "rms": 0.117724,
+          "bytes": 86444,
+          "sha256": "97ffb56599b617e62b33b45e547a11cecd5e2e4b07dd49c3a413eabc5a33f64b",
+          "loop": false
+        }
+      }
+    },
+    "SPACE": {
+      "baseFrequency": 83,
+      "identity": "Detuned frequency-modulated warp",
+      "cues": {
+        "precast": {
+          "url": "/assets/audio/spells/space/precast.wav",
+          "duration": 0.32,
+          "peak": 0.619995,
+          "rms": 0.266969,
+          "bytes": 15404,
+          "sha256": "ee96b56f55ce8828646516ffbcae2e3964943c50cf05d090525609b284e54ce6",
+          "loop": false
+        },
+        "charging": {
+          "url": "/assets/audio/spells/space/charging.wav",
+          "duration": 1.0,
+          "peak": 0.619995,
+          "rms": 0.319628,
+          "bytes": 48044,
+          "sha256": "51e278f23464f1096f5431b7376bcc29059226fbff74160af690cc398bf66029",
+          "loop": true
+        },
+        "casting": {
+          "url": "/assets/audio/spells/space/casting.wav",
+          "duration": 0.42,
+          "peak": 0.619995,
+          "rms": 0.24891,
+          "bytes": 20204,
+          "sha256": "74a75401706e74696851edd52fc84bc1562820e03000a0c326f4f9cd00c31045",
+          "loop": false
+        },
+        "traveling": {
+          "url": "/assets/audio/spells/space/traveling.wav",
+          "duration": 1.0,
+          "peak": 0.619995,
+          "rms": 0.290607,
+          "bytes": 48044,
+          "sha256": "63a9c87a8aa377c8ceac70b8ec3c2ea2ef38a99347238dea08f4e3ddc314619a",
+          "loop": true
+        },
+        "impact": {
+          "url": "/assets/audio/spells/space/impact.wav",
+          "duration": 1.4,
+          "peak": 0.619995,
+          "rms": 0.07241,
+          "bytes": 67244,
+          "sha256": "3ddfb5aa40dee114e71c8b36b197b93537ba20b05831e57935acb7fdebffed2d",
+          "loop": false
+        },
+        "shockwave": {
+          "url": "/assets/audio/spells/space/shockwave.wav",
+          "duration": 1.1,
+          "peak": 0.619995,
+          "rms": 0.080587,
+          "bytes": 52844,
+          "sha256": "a2d34075212e74b248d794f9e4817bf9739255b806c36e888231898cc3dd0fe8",
+          "loop": false
+        },
+        "aftermath": {
+          "url": "/assets/audio/spells/space/aftermath.wav",
+          "duration": 1.8,
+          "peak": 0.619995,
+          "rms": 0.190093,
+          "bytes": 86444,
+          "sha256": "8d0ba908c8600c07db1b07ec6c14bb11260a6aa82ad39e05a93cdd16f0820a9a",
+          "loop": false
+        }
+      }
+    },
+    "TIME": {
+      "baseFrequency": 293,
+      "identity": "Tick pulses with a reverse swell",
+      "cues": {
+        "precast": {
+          "url": "/assets/audio/spells/time/precast.wav",
+          "duration": 0.32,
+          "peak": 0.619995,
+          "rms": 0.074438,
+          "bytes": 15404,
+          "sha256": "95e0f02683ddf32d2eef88e68b461a58eb1fb1b3a809a027091cc6e67414b7c3",
+          "loop": false
+        },
+        "charging": {
+          "url": "/assets/audio/spells/time/charging.wav",
+          "duration": 1.0,
+          "peak": 0.619995,
+          "rms": 0.09838,
+          "bytes": 48044,
+          "sha256": "d2e261fbd23fd0f06af9e8ea587a4b39f42de37d553e9d6587a57fc3d79f2506",
+          "loop": true
+        },
+        "casting": {
+          "url": "/assets/audio/spells/time/casting.wav",
+          "duration": 0.42,
+          "peak": 0.619995,
+          "rms": 0.074764,
+          "bytes": 20204,
+          "sha256": "f325a02a64f72f21d75c62456bf2981d2a03c59707aaf15e5295bc16544cf4e7",
+          "loop": false
+        },
+        "traveling": {
+          "url": "/assets/audio/spells/time/traveling.wav",
+          "duration": 1.0,
+          "peak": 0.619995,
+          "rms": 0.085274,
+          "bytes": 48044,
+          "sha256": "7cce70d9595d7f288f213c61a2fa05304c807cddd784b75398bba760b3e8de8f",
+          "loop": true
+        },
+        "impact": {
+          "url": "/assets/audio/spells/time/impact.wav",
+          "duration": 1.4,
+          "peak": 0.619995,
+          "rms": 0.042833,
+          "bytes": 67244,
+          "sha256": "78ae9dde5b354b891861a265086e3c4bf53a0bae3a5263b09e76f70783fd0c06",
+          "loop": false
+        },
+        "shockwave": {
+          "url": "/assets/audio/spells/time/shockwave.wav",
+          "duration": 1.1,
+          "peak": 0.619995,
+          "rms": 0.057069,
+          "bytes": 52844,
+          "sha256": "bfc65334668e04fdd7d13e0bf08f3ce344755501a78927871127c7727fea94ac",
+          "loop": false
+        },
+        "aftermath": {
+          "url": "/assets/audio/spells/time/aftermath.wav",
+          "duration": 1.8,
+          "peak": 0.619995,
+          "rms": 0.050775,
+          "bytes": 86444,
+          "sha256": "fd09e68d0a20951925c1284e0891ca15d5cdfa3db08f57863b98f93154289912",
+          "loop": false
+        }
+      }
+    },
+    "BLOOD": {
+      "baseFrequency": 109,
+      "identity": "Tension and inharmonic chain resonance",
+      "cues": {
+        "precast": {
+          "url": "/assets/audio/spells/blood/precast.wav",
+          "duration": 0.32,
+          "peak": 0.619995,
+          "rms": 0.119049,
+          "bytes": 15404,
+          "sha256": "a9bfef182202ff6f86fec1ce0399349c5a00351c5d436076a1802e174b47ce66",
+          "loop": false
+        },
+        "charging": {
+          "url": "/assets/audio/spells/blood/charging.wav",
+          "duration": 1.0,
+          "peak": 0.619995,
+          "rms": 0.149331,
+          "bytes": 48044,
+          "sha256": "5f7be7775df7afb8689af545679848b03b08663b65246aef981a5a7f4d535a07",
+          "loop": true
+        },
+        "casting": {
+          "url": "/assets/audio/spells/blood/casting.wav",
+          "duration": 0.42,
+          "peak": 0.619995,
+          "rms": 0.135082,
+          "bytes": 20204,
+          "sha256": "4f49f6f4445ab698539bd747d38c99389838f7ebb95c3a6508402603ac892a90",
+          "loop": false
+        },
+        "traveling": {
+          "url": "/assets/audio/spells/blood/traveling.wav",
+          "duration": 1.0,
+          "peak": 0.619995,
+          "rms": 0.176472,
+          "bytes": 48044,
+          "sha256": "61f61ca07e1779c312ce75de9b5e1cd22a5d8936b1a436cb6d5dada4c6de8b54",
+          "loop": true
+        },
+        "impact": {
+          "url": "/assets/audio/spells/blood/impact.wav",
+          "duration": 1.4,
+          "peak": 0.619995,
+          "rms": 0.062077,
+          "bytes": 67244,
+          "sha256": "c0160903722814c6f7b1483dee7a4386bf32fb6e0da3fcd19083944962b81260",
+          "loop": false
+        },
+        "shockwave": {
+          "url": "/assets/audio/spells/blood/shockwave.wav",
+          "duration": 1.1,
+          "peak": 0.619995,
+          "rms": 0.074046,
+          "bytes": 52844,
+          "sha256": "163f0640aafbbedfb49d0631007ea5c23431d76fdfbb3555b89d55a44a763bb7",
+          "loop": false
+        },
+        "aftermath": {
+          "url": "/assets/audio/spells/blood/aftermath.wav",
+          "duration": 1.8,
+          "peak": 0.619995,
+          "rms": 0.117345,
+          "bytes": 86444,
+          "sha256": "55e1c912b4f5c9e19a1606954ba3638b38a5946f9c65f165ee63d2b6fbf8061a",
+          "loop": false
+        }
+      }
+    },
+    "ASTRAL": {
+      "baseFrequency": 440,
+      "identity": "Wide harmonic shimmer",
+      "cues": {
+        "precast": {
+          "url": "/assets/audio/spells/astral/precast.wav",
+          "duration": 0.32,
+          "peak": 0.619995,
+          "rms": 0.214482,
+          "bytes": 15404,
+          "sha256": "c9288135693c2e30cf249c9dd314feaa729efe7368b6554b7627d0cea31c2123",
+          "loop": false
+        },
+        "charging": {
+          "url": "/assets/audio/spells/astral/charging.wav",
+          "duration": 1.0,
+          "peak": 0.619995,
+          "rms": 0.318672,
+          "bytes": 48044,
+          "sha256": "75287e8f62023dc1ed74e06da4945c3c21e50ca3a9983f81240b4f240b6045c2",
+          "loop": true
+        },
+        "casting": {
+          "url": "/assets/audio/spells/astral/casting.wav",
+          "duration": 0.42,
+          "peak": 0.619995,
+          "rms": 0.241027,
+          "bytes": 20204,
+          "sha256": "cda219045f5905faf4eb4460e7bdd8f6470d6619c78233f1af7460e8b4cf3690",
+          "loop": false
+        },
+        "traveling": {
+          "url": "/assets/audio/spells/astral/traveling.wav",
+          "duration": 1.0,
+          "peak": 0.619995,
+          "rms": 0.318737,
+          "bytes": 48044,
+          "sha256": "042062fcfeb3f05153fb6afca4b52bf3330d59cf47c522883253d3175fe995a9",
+          "loop": true
+        },
+        "impact": {
+          "url": "/assets/audio/spells/astral/impact.wav",
+          "duration": 1.4,
+          "peak": 0.619995,
+          "rms": 0.081007,
+          "bytes": 67244,
+          "sha256": "6c325ae68e3f172ee58c09ce722ed417f03ce4a5e540777f592316f37025e771",
+          "loop": false
+        },
+        "shockwave": {
+          "url": "/assets/audio/spells/astral/shockwave.wav",
+          "duration": 1.1,
+          "peak": 0.619995,
+          "rms": 0.089655,
+          "bytes": 52844,
+          "sha256": "26ea21195d1f4e2c4d0bf86a76ba6fe9224037a582b0af14c5167f56225b2897",
+          "loop": false
+        },
+        "aftermath": {
+          "url": "/assets/audio/spells/astral/aftermath.wav",
+          "duration": 1.8,
+          "peak": 0.619995,
+          "rms": 0.212,
+          "bytes": 86444,
+          "sha256": "d400888e4dae5312340c3d0c3cfe82d364817b1e682c5af05272371fc242260e",
+          "loop": false
+        }
+      }
+    },
+    "PSYCHIC": {
+      "baseFrequency": 197,
+      "identity": "Beating tones and nervous modulation",
+      "cues": {
+        "precast": {
+          "url": "/assets/audio/spells/psychic/precast.wav",
+          "duration": 0.32,
+          "peak": 0.619995,
+          "rms": 0.198322,
+          "bytes": 15404,
+          "sha256": "23fef1772b6f99a947e05c682a98a9abd51641988605eb99323e4658fabf739f",
+          "loop": false
+        },
+        "charging": {
+          "url": "/assets/audio/spells/psychic/charging.wav",
+          "duration": 1.0,
+          "peak": 0.619995,
+          "rms": 0.281875,
+          "bytes": 48044,
+          "sha256": "b5ea6f441d785addf7d1c651f092b6aad2b8af5c480bc1e2fc869c783069f93d",
+          "loop": true
+        },
+        "casting": {
+          "url": "/assets/audio/spells/psychic/casting.wav",
+          "duration": 0.42,
+          "peak": 0.619995,
+          "rms": 0.201253,
+          "bytes": 20204,
+          "sha256": "a1e3e5015625cdea3bae14722739afb6da7173547d6ffc47a3934cae782dff23",
+          "loop": false
+        },
+        "traveling": {
+          "url": "/assets/audio/spells/psychic/traveling.wav",
+          "duration": 1.0,
+          "peak": 0.619995,
+          "rms": 0.269021,
+          "bytes": 48044,
+          "sha256": "24e0b6f9d3aa6fd93a39b8739387d6a9b63e8ae029276417298c353cbbbf1101",
+          "loop": true
+        },
+        "impact": {
+          "url": "/assets/audio/spells/psychic/impact.wav",
+          "duration": 1.4,
+          "peak": 0.619995,
+          "rms": 0.096941,
+          "bytes": 67244,
+          "sha256": "3c9e08b5a848f1d3ab89422f6d6383f02335d726663799be14904ce1a31fe6db",
+          "loop": false
+        },
+        "shockwave": {
+          "url": "/assets/audio/spells/psychic/shockwave.wav",
+          "duration": 1.1,
+          "peak": 0.619995,
+          "rms": 0.085041,
+          "bytes": 52844,
+          "sha256": "1684dafa2bd504914ca2cdbd153cd811bb20b8e052ddac35ad18aba1ab135fd0",
+          "loop": false
+        },
+        "aftermath": {
+          "url": "/assets/audio/spells/psychic/aftermath.wav",
+          "duration": 1.8,
+          "peak": 0.619995,
+          "rms": 0.177867,
+          "bytes": 86444,
+          "sha256": "7c619833ea90082a6ce9447d3eccf4514bad2be3574b622a83ede0499a3bb579",
+          "loop": false
+        }
+      }
+    }
+  },
+  "ambient": {
+    "url": "/assets/audio/arena-air.wav",
+    "duration": 4.0,
+    "peak": 0.220581,
+    "rms": 0.044166,
+    "bytes": 192044,
+    "sha256": "11290ea1eb0392528f705e0c03239258c9eaf8d5af3cfb5b6c86025f698805e2",
+    "loop": true
+  }
+}

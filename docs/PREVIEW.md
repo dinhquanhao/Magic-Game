@@ -57,4 +57,19 @@ Tệp `results.json` ghi commit, trạng thái working tree, lỗi và tên vide
 
 Đã có [`vercel.json`](../vercel.json) cho Vite (`npm ci`, `npm run build`, thư mục `dist`) và `.vercelignore` loại cache/artifacts khỏi deployment.
 
-**Chưa kết nối Vercel, chưa deploy, chưa tạo URL công khai và chưa sử dụng dịch vụ trả phí.** Sau khi được phê duyệt mới import repository/nhánh PR vào tài khoản Vercel đã chọn, xác nhận Deployment Protection cho preview và chính sách chi phí trước khi triển khai. Không thay audience để vượt giới hạn tài khoản và không tự tạo production deployment. Cấu hình hiện có là phương án sẵn để xem xét, không phải một preview đã hoạt động.
+Vòng mới đã tìm được dự án Vercel `magic-game-preview` và status Vercel thành công trên GitHub cho checkpoint trước. Connector đọc project/deployment với scope team hiện trả **403**; chưa có CLI Vercel đã xác thực. Không tạo deployment trực tiếp, đổi audience/quyền hoặc gọi dịch vụ trả phí. Git push nhánh PR vẫn được thực hiện theo yêu cầu; Git integration hiện có có thể tự cập nhật Preview. Chỉ ghi là đã kiểm thử web khi có kết quả browser của đúng bản build.
+
+[URL Preview do Vercel bot đăng trên PR](https://magic-game-preview-git-codex-magic-gam-593430-quuanghh2007-5227.vercel.app) là branch alias, có thể đổi theo commit. Chromium trong cloud bị `ERR_TUNNEL_CONNECTION_FAILED` khi mở URL này; hostname không nằm trong allowlist mạng. Connector cũng trả 403. Người dùng có thể thử mở URL bằng tài khoản Vercel của mình, nhưng chưa có kiểm thử game từ xa đạt trong phiên. Xem trạng thái đúng commit sau push ở PROGRESS.md; branch alias không tự chứng minh mã audio mới đã được deploy.
+
+
+## Vòng audio và assets
+
+- [Báo cáo, 12 ý tưởng được xếp hạng và giới hạn](ROUND-AUDIO-2026-10-17.md).
+- [Bản nghe tham chiếu 15 hệ, 75 giây](evidence/audio/fifteen-elements.mp3) · [mốc từng hệ](evidence/audio/chapters.json).
+- [Âm thanh thu thực từ WebAudio Chromium](evidence/audio/browser-audio.mp3) · [Opus/WebM gốc](evidence/audio/browser-audio.webm). Bản tham chiếu dùng gain riêng cho nghe thử; bản browser chứa master/spatial gain của game.
+- [Video production MP4](evidence/audio/production-video.mp4) · [WebM](evidence/audio/production-video.webm). Video Playwright không có audio track; nghe audio bằng các file riêng bên trên, không coi chúng là video đã mux đồng bộ.
+- [Gói audio/ảnh/video/báo cáo offline ZIP](evidence/audio-round.zip): tải, giải nén, mở `audio/index.html`. Trên GitHub dùng **Download raw file** để tải MP3/MP4/ZIP.
+- [Matrix audio 23 skill](evidence/audio/matrix.json) · [Lifecycle/context recovery](evidence/audio/lifecycle.json) · [UI production cuối](evidence/audio/production-final.json).
+- Ghi lại bằng `npm run observe -- --audio --label after-audio`. Để có tín hiệu PCM tự động kiểm chứng và bản ghi browser: `python tests/playwright_audio.py --url <URL-dev>`. Production không chứa globals kiểm thử.
+
+![Audio UI và icons](evidence/audio/audio-controls.png)

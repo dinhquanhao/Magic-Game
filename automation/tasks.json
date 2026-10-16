@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "tasks": [
+    {"id":"stage1-contrast-matrix","stage":1,"priority":10,"status":"queued","title":"Normalize exposure and contrast across 23 impact milestones","acceptance":"Preserve all 15 elements and 23 IDs; fixed-camera before/after images; build, shader/console checks, Chromium matrix; at most 3 repair rounds."},
+    {"id":"stage1-audio-art-review","stage":1,"priority":20,"status":"queued","title":"Review audible mixes and add useful skill variations","acceptance":"Listen to recordings; document subjective limitations; verify PCM peak/RMS, timeline, cache and mute; no unlicensed samples or paid services."},
+    {"id":"stage2-player-health","stage":2,"priority":30,"status":"blocked","title":"Complete HP, hurt/death/reset on the existing mage","acceptance":"Begin only after stage1 criteria are met; preserve existing movement, MP and all skills."}
+  ]
+}

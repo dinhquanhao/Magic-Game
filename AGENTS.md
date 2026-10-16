@@ -25,3 +25,11 @@ npm run observe -- --label after-feature
 ```
 
 Kiểm thử browser dùng Chromium hệ thống nếu có, hoặc browser của Playwright. Có thể chọn executable qua `PLAYWRIGHT_CHROMIUM_EXECUTABLE`. Xem `tests/playwright_smoke.py --help`; kiểm thử production dùng `--production --url http://127.0.0.1:4173/` sau khi chạy preview.
+
+## Audio, assets và điều phối
+
+- Đọc ASSET_INVENTORY.md trước khi tạo assets; ưu tiên tài nguyên được dùng ngay, không thay asset tốt bằng placeholder. Không nhập sample/font/model không rõ nguồn hoặc tự đổi license repository.
+- Audio chỉ unlock qua gesture. Dùng timeline mô phỏng, giới hạn voice/cache, master/mute và cleanup; kiểm thử WebAudio thật, pause/hit-stop/slow motion, fallback và context loss. Không suy chất lượng nghệ thuật từ peak/RMS.
+- Đầu mỗi vòng: xếp hạng ít nhất 10 ý tưởng theo giá trị/khó/rủi ro/test, chọn tối đa 3. Ghi task/acceptance và bằng chứng đã chạy, phần chưa làm, bước tiếp trong PROGRESS và inventory.
+- automation/templates là cấu hình chưa kích hoạt. Không bật readiness, cài workflow, lịch, tạo key hoặc gọi API trả phí trước khi quyền/auth/hạn mức/chi phí được xác minh và người dùng chấp thuận. Không tự sửa các gate này trong task do scheduler giao.
+- Kiểm tra claim trong automation/tasks.json và marker open PR; không sửa trùng task/nhánh đang có người khác làm. Workflow dùng concurrency group chung, không thay thế khóa giữa các tác vụ thủ công.

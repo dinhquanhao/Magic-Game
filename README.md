@@ -338,3 +338,13 @@ Bảng hiện có liệt kê phần thể hiện và lớp nâng cấp; đây l�
 | PSYCHIC-02 · Vạn Niệm Thần Vực | Ảo ảnh/tia dùng bề mặt và sóng tinh thần riêng; tương tác vật cản còn đơn giản. |
 | PSYCHIC-03 · Thần Niệm Sáng Thế | Tinh thể nhận viền lăng kính và dải sóng; vỡ mảnh vẫn theo hoạt ảnh giải tích, chưa có fracture solver. |
 
+
+### Âm thanh và assets mới (nhánh Draft PR #1)
+
+Mở **ÂM THANH → BẬT ÂM THANH** trong bảng điều khiển. Có âm lượng tổng và nền gió tùy chọn; âm thanh mặc định tắt cho đến khi người chơi bật. 15 hệ dùng 7 lớp WAV mỗi hệ theo timeline của 23 skill, có âm 3D, pause/slow motion và preload/cache giới hạn. Không đổi ID, tên hoặc hình thái kỹ năng.
+
+- [Nghe thử, video và kết quả kiểm thử](docs/PREVIEW.md)
+- [Kiểm kê assets và nguồn tạo](ASSET_INVENTORY.md)
+- `npm run test:audio` (server dev mặc định: cổng 5173), `python tests/playwright_audio_lifecycle.py --url <URL-dev>`; có thể đổi URL bằng `--url`.
+- `npm run assets:generate` cần Python + numpy, chỉ dùng để tái tạo WAV/SVG đã commit; runtime không cần Python.
+- `npm run automation:plan` chọn task offline. [Template điều phối](automation/README.md) chưa kích hoạt và không tự phát sinh chi phí/lịch chạy.

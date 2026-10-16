@@ -1,0 +1,100 @@
+# INACTIVE: outside .github/workflows. No schedule. Review README before moving.
+name: Magic Game development (gated template)
+on:
+  workflow_dispatch:
+    inputs:
+      base_ref:
+        description: Reviewed integration branch (never main for this round)
+        required: true
+        default: codex/magic-game-stability-vfx-20261017
+permissions:
+  contents: read
+concurrency:
+  group: magic-game-autonomous-development
+  cancel-in-progress: false
+jobs:
+  development:
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.base_ref != 'main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    environment: magic-game-autonomy-reviewed
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: ${{ inputs.base_ref }}
+          persist-credentials: false
+          fetch-depth: 1
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12'
+      - name: Readiness and open task claims
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p work/autonomy
+          gh pr list --state open --limit 100 --json number,body,headRefName > work/autonomy/open-prs.json
+          node scripts/plan_autonomy.mjs --require-ready --open-prs work/autonomy/open-prs.json > work/autonomy/plan.json
+          node -e 'const p=JSON.parse(require("fs").readFileSync("work/autonomy/plan.json"));if(!p.task)process.exit(1);require("fs").writeFileSync("work/autonomy/task-id",p.task.id)'
+          test -n "$MAGIC_CODEX_MODEL"
+          test -n "$MAGIC_CODEX_VERSION"
+        # Set reviewed values only after usage/cost approval. No model default.
+      - name: Prepare isolated branch and dependencies
+        env:
+          RUN_BRANCH: codex/autonomy-${{ github.run_id }}-${{ github.run_attempt }}
+        run: |
+          git switch -c "$RUN_BRANCH"
+          git rev-parse HEAD > work/autonomy/base-sha
+          npm ci
+          pip install -r tests/requirements.txt
+          python -m playwright install --with-deps chromium
+          cp automation/next-round-prompt.md work/autonomy/prompt.md
+          cat work/autonomy/plan.json >> work/autonomy/prompt.md
+      - name: Develop one reviewed task
+        uses: openai/codex-action@bdf19a4a223ec2549a3e2274a0cf61556bc07675 # v1, reviewed snapshot
+        with:
+          openai-api-key: ${{ secrets.OPENAI_API_KEY }}
+          model: ${{ vars.MAGIC_CODEX_MODEL }}
+          codex-version: ${{ vars.MAGIC_CODEX_VERSION }}
+          permission-profile: ':workspace'
+          safety-strategy: drop-sudo
+          prompt-file: work/autonomy/prompt.md
+          output-file: work/autonomy/last-message.md
+      - name: Validate and record
+        run: |
+          git diff --quiet "$(cat work/autonomy/base-sha)" -- automation/readiness.json automation/templates .github/workflows
+          test -z "$(git status --porcelain -- automation/readiness.json automation/templates .github/workflows)"
+          npm test
+          npm run observe -- --label autonomous
+      - name: Publish Draft PR on isolated branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_BRANCH: codex/autonomy-${{ github.run_id }}-${{ github.run_attempt }}
+          BASE_REF: ${{ inputs.base_ref }}
+        run: |
+          git config user.name 'Magic Game automation'
+          git config user.email 'magic-game-automation@users.noreply.github.com'
+          git add src public scripts tests docs AGENTS.md ROADMAP.md PROGRESS.md ASSET_INVENTORY.md automation
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Continue reviewed Magic Game task'
+          git -c credential.helper='!gh auth git-credential' push origin "$RUN_BRANCH"
+          node -e 'const fs=require("fs"),p=JSON.parse(fs.readFileSync("work/autonomy/plan.json"));fs.writeFileSync("work/autonomy/pr.md",`<!-- magic-task:${p.task.id} -->\n\n${p.task.title}\n\nReview PROGRESS.md and attached workflow artifacts. Draft only; no merge or deployment.\n`)'
+          gh pr create --draft --base "$BASE_REF" --head "$RUN_BRANCH" --title 'Continue Magic Game development' --body-file work/autonomy/pr.md
+      - name: Preserve run evidence even on failure
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: magic-game-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            work/autonomy/
+            test-results/
+          retention-days: 7
+    env:
+      MAGIC_CODEX_MODEL: ${{ vars.MAGIC_CODEX_MODEL }}
+      MAGIC_CODEX_VERSION: ${{ vars.MAGIC_CODEX_VERSION }}

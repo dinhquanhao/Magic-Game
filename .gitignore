@@ -16,3 +16,5 @@ test-results/
 
 # Local development evidence and scratch work
 work/
+__pycache__/
+.vercel/

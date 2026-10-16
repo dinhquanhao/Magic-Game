@@ -19,6 +19,7 @@ def main():
     parser.add_argument('--output',default='test-results/observations')
     parser.add_argument('--label',default='after')
     parser.add_argument('--hold-seconds',type=float,default=6)
+    parser.add_argument('--audio',action='store_true',help='Enable audio via the production UI; Playwright video remains silent')
     args=parser.parse_args()
     commit=subprocess.check_output(['git','rev-parse','--short','HEAD'],cwd=ROOT,text=True).strip()
     stamp=time.strftime('%Y%m%d-%H%M%S',time.gmtime())
@@ -67,6 +68,15 @@ def main():
                 page.goto(f'http://127.0.0.1:{args.port}/',wait_until='networkidle')
                 page.wait_for_function("document.querySelectorAll('[data-element]').length===15")
                 metadata['elements']=page.locator('[data-element]').count()
+                metadata['audioUIEnabled']=False
+                metadata['videoAudioTrack']=False
+                if args.audio:
+                    page.locator('.audio-options summary').click()
+                    page.locator('#audioToggle').click()
+                    page.wait_for_function("document.querySelector('#audioToggle').getAttribute('aria-pressed')==='true'")
+                    page.wait_for_function("document.querySelector('#audioStatus').textContent.includes('sẵn sàng')")
+                    metadata['audioUIEnabled']=True
+                    page.locator('.audio-options summary').click()
                 page.locator('#qualityPreset').select_option('Low')
                 page.locator('.graphics-options').evaluate('(e)=>e.open=true')
                 page.locator('#graphicsAdaptive').uncheck()

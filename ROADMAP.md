@@ -28,3 +28,10 @@ Lộ trình được cập nhật ngày 17/10/2026 (Asia/Bangkok), tiếp nối 
 | 10 | Nạp module skill theo nhu cầu và màn hình tải rõ ràng | Giảm tải ban đầu và mở đường assets lớn | Sau khi gameplay ổn định |
 
 Không coi các ý tưởng chưa triển khai là tính năng đã có. Nội dung roadmap có thể được tinh chỉnh theo kết quả đo, nhưng thay đổi điều kiện phải được ghi trong `PROGRESS.md`.
+
+## Bổ sung yêu cầu audio/assets và điều phối — vòng 2026-10-17
+
+- GĐ1 thêm điều kiện âm thanh: 7 cue theo timeline cho 15 hệ/23 skill, bật qua gesture, master/mute/spatial, pause/slow motion và lifecycle có kiểm thử. Bank WAV/SVG và nền gió đấu trường đã bổ sung; đây là bản tổng hợp procedural đầu tiên, còn cần nghe/mix nghệ thuật và biến thể riêng từng skill.
+- GĐ2–5 bổ sung âm tương ứng khi gameplay đã có: bước chân/chuyển động, hurt/death, enemy/Boss, UI/combat, vật liệu môi trường, nhạc/trạng thái trận đấu. Chưa đánh dấu các nhóm này hoàn thành chỉ vì có file audio kỹ năng.
+- Duy trì [ASSET_INVENTORY.md](ASSET_INVENTORY.md), [queue task](automation/tasks.json), [prompt tiếp nối](automation/next-round-prompt.md) và [readiness/hướng dẫn điều phối](automation/README.md). Lịch/Codex API trên Actions **chưa kích hoạt**; chỉ chuyển sau xác minh quyền, auth, usage và chi phí.
+- [12 ý tưởng được xếp hạng của vòng mới](docs/ROUND-AUDIO-2026-10-17.md). Ba nhóm chọn: layered audio, icon nguyên tố, template điều phối. Vòng kế ưu tiên contrast/exposure GĐ1; không tự nhảy sang Boss khi điều kiện VFX chưa đạt.
