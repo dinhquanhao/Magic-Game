@@ -84,7 +84,7 @@ function makeBeamMaterial(hex) {
       varying float vSeed;
       void main(){
         float localTime=uTime-aMotion.x;
-        float active=step(0.0,localTime);
+        float rayActive=step(0.0,localTime);
         float fallDuration=max(0.08,aMotion.y);
         float descent=clamp(localTime/fallDuration,0.0,1.0);
         float eased=descent*descent*(3.0-2.0*descent);
@@ -97,8 +97,8 @@ function makeBeamMaterial(hex) {
         float width=aMotion.w*(.52+.48*smoothstep(0.0,.22,position.y))*(1.0+0.10*sin(uTime*13.0+aStyle.z));
         vec3 p=vec3(aGround.x+aTilt.x*(aMotion.z-y),y,aGround.y+aTilt.y*(aMotion.z-y));
         vUv=uv;
-        vLife=active*max(0.0,localTime);
-        vBrightness=aStyle.x*active*(localTime<fallDuration?1.0:linger);
+        vLife=rayActive*max(0.0,localTime);
+        vBrightness=aStyle.x*rayActive*(localTime<fallDuration?1.0:linger);
         vWarmth=aStyle.y;
         vSeed=aStyle.z;
         vec4 mv=modelViewMatrix*vec4(p,1.0);

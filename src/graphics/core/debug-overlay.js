@@ -47,6 +47,7 @@ export function createGraphicsDebugOverlay({ renderer, scene, getStatus }) {
       `Draw calls ${info.render.calls} · tam giác ${info.render.triangles.toLocaleString('vi-VN')}`,
       `Instance ${instances.toLocaleString('vi-VN')} · điểm hạt ${points.toLocaleString('vi-VN')}`,
       `GPU texture ${info.memory.textures} · geometry ${info.memory.geometries}`,
+      `Vật liệu đang theo dõi ${status.trackedMaterials ?? 0} · ngân sách VFX ${Math.round((status.runtimeDensityScale ?? 1) * 100)}%`,
       `Render target ${targetsMb}`,
       `Post: SSR ${status.post?.ssr ? status.post.ssrResolution : 'tắt'}, GTAO ${status.post?.gtao ? 'bật' : 'tắt'}, SSAO ${status.post?.ssao ? 'bật' : 'tắt'}, DoF ${status.post?.dof ? 'bật' : 'tắt'}`,
       `Tự giảm: ${status.autoReduced?.length ? status.autoReduced.join(', ') : 'không'}`,

@@ -4,10 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Xưởng Hiệu Ứng Ma Thuật</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3E✦%3C/text%3E%3C/svg%3E">
 </head>
 <body>
   <div id="app">
-    <canvas id="stage"></canvas><div id="impactFlash" aria-hidden="true"></div>
+    <canvas id="stage"></canvas><div id="impactFlashOverlay" aria-hidden="true"></div>
+    <section id="castFeedback" class="cast-feedback" aria-label="Tiến trình thi triển" hidden>
+      <div><span data-cast-phase role="status"></span><output data-cast-remaining></output></div>
+      <progress max="1" value="0" aria-label="Tiến trình thi triển"></progress>
+    </section>
     <header class="brand">
       <div class="brand-mark">✦</div>
       <div><div class="eyebrow">PHÒNG THÍ NGHIỆM MA THUẬT</div><h1>XƯỞNG <span>HIỆU ỨNG MA THUẬT</span></h1></div>

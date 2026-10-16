@@ -136,7 +136,7 @@ totalEmissiveRadiance += min(arcInjectedLight, vec3(0.22)) * (0.24 + arcWet * 0.
   groundMaterial.needsUpdate = true;
 
   const enhancedMaterials = new WeakSet();
-  const enhancedMaterialList = [];
+  const enhancedMaterialList = new Set();
   const subsurfaceUniform = { value: 0 };
   const lightFieldUniforms = fields.getUniforms();
   function enhanceSurfaces(root) {
@@ -153,7 +153,12 @@ totalEmissiveRadiance += min(arcInjectedLight, vec3(0.22)) * (0.24 + arcWet * 0.
       for (const material of materials) {
         if (!(material?.isMeshStandardMaterial || material?.isMeshPhysicalMaterial) || enhancedMaterials.has(material)) continue;
         enhancedMaterials.add(material);
-        enhancedMaterialList.push(material);
+        enhancedMaterialList.add(material);
+        const onDispose = () => {
+          enhancedMaterialList.delete(material);
+          material.removeEventListener('dispose', onDispose);
+        };
+        material.addEventListener('dispose', onDispose);
         const previousCompile = material.onBeforeCompile;
         material.onBeforeCompile = (shader, activeRenderer) => {
           previousCompile?.call(material, shader, activeRenderer);
@@ -238,7 +243,7 @@ for (int arcObjectLightIndex = 0; arcObjectLightIndex < 8; arcObjectLightIndex++
   vec4 arcLightPositionRadius = uArcLightPositionRadius[arcObjectLightIndex];
   vec4 arcLightColorIntensity = uArcLightColorIntensity[arcObjectLightIndex];
   vec3 arcLightPositionView = (viewMatrix * vec4(arcLightPositionRadius.xyz, 1.0)).xyz;
-  vec3 arcToLight = arcLightPositionView - vViewPosition;
+  vec3 arcToLight = arcLightPositionView + vViewPosition;
   float arcLightDistance = max(length(arcToLight), 0.001);
   float arcLightReach = max(1.0, arcLightPositionRadius.w);
   float arcLightFade = max(0.0, 1.0 - arcLightDistance / arcLightReach);
@@ -434,7 +439,7 @@ reflectedLight.indirectDiffuse += diffuseColor.rgb * min(arcInjectedObjectLight,
   function getDiagnostics() {
     return {
       quality, features: effectiveFeatures(), requestedFeatures: getFeatures(), autoReduced: [...autoDisabled], averageFrameMs,
-      post: postEffects.getStatus(), fields: fields.getStatus(), grass: windGrass.getStatus(), estimatedRenderTargetBytes: postEffects.estimateTargetBytes()
+      post: postEffects.getStatus(), fields: fields.getStatus(), grass: windGrass.getStatus(), trackedMaterials: enhancedMaterialList.size, estimatedRenderTargetBytes: postEffects.estimateTargetBytes()
     };
   }
   function dispose() { composer.removePass(outputPass); outputPass.dispose(); postEffects.dispose(); windGrass.dispose(); fields.dispose(); environmentTarget.dispose(); }
