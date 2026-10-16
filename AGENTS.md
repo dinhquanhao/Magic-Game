@@ -10,6 +10,7 @@
 - Mỗi nhóm thay đổi: build, kiểm thử phù hợp, Playwright và thu console/WebGL/shader; sửa tối đa 3 vòng. Không gọi build thành công là bằng chứng shader đã chạy đúng.
 - Kiểm thử dài chạy trên server không HMR, không sửa nguồn đang được kiểm thử. Giữ log/ảnh trong `work/`; lưu bằng chứng bàn giao chọn lọc tại `docs/evidence/`. Không commit `node_modules`, `dist`, bí mật hoặc log thừa.
 - Khi gần giới hạn tác vụ: commit checkpoint, ghi rõ kiểm thử đạt/chưa đạt và bước kế tiếp; tạo Pull Request. Không merge hoặc bật auto-merge vào `main`.
+- Trước/sau mỗi nhóm nâng cấp, dùng `npm run observe -- --label before-<group>` / `after-<group>` để lưu ảnh/video khi có encoder, cùng console/result. Cập nhật PROGRESS và push cùng nhánh Draft PR sau nhóm. Không gọi bản ghi Playwright là Live Preview; không deploy công khai/dùng dịch vụ trả phí khi chưa được phê duyệt.
 
 ## Lệnh
 
@@ -20,6 +21,7 @@ npm run build
 npm test
 python -m pip install -r tests/requirements.txt
 npm run test:e2e
+npm run observe -- --label after-feature
 ```
 
 Kiểm thử browser dùng Chromium hệ thống nếu có, hoặc browser của Playwright. Có thể chọn executable qua `PLAYWRIGHT_CHROMIUM_EXECUTABLE`. Xem `tests/playwright_smoke.py --help`; kiểm thử production dùng `--production --url http://127.0.0.1:4173/` sau khi chạy preview.

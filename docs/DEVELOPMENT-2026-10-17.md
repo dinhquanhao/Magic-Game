@@ -47,3 +47,7 @@ Playwright dev fixture vô hiệu RAF scheduling, điều khiển đồng hồ v
 - [10 ý tưởng và quyết định triển khai](../ROADMAP.md#10-ý-tưởng-của-lượt-hiện-tại) là backlog cho các vòng tiếp theo. Ba cải tiến chọn ban đầu là tiến trình cast, lifecycle và ngân sách thích ứng; AOE/gió được làm thêm theo yêu cầu mở rộng.
 
 Checkpoint bàn giao qua PR nháp để bảo toàn mã, bằng chứng và nhiệm vụ tiếp theo khi kết thúc ngân sách lượt chạy. Không merge/auto-merge vào main.
+
+## Quan sát và preview bổ sung
+
+Sau checkpoint mã nguồn, đã mở [Draft PR #1](https://github.com/dinhquanhao/Magic-Game/pull/1), bổ sung lệnh tự khởi động Chromium/preview và ghi hình UI thật. [Trang hướng dẫn](PREVIEW.md) liên kết video, ảnh trước/sau, JSON console và ZIP offline. Không có Live Preview tương tác được xác nhận; Vercel mới có cấu hình chuẩn bị, chưa deploy hoặc dùng dịch vụ trả phí.

@@ -2,7 +2,7 @@
 
 ## Checkpoint phát triển 17/10/2026
 
-Xem [ROADMAP](ROADMAP.md), [PROGRESS](PROGRESS.md) và [báo cáo kèm ảnh/log](docs/DEVELOPMENT-2026-10-17.md) cho trạng thái mới. Đã sửa lỗi shader trên 8 tuyệt kỹ, thêm tiến trình cast, dọn tài nguyên/ngân sách VFX, hoàn thiện kiểm thử nâng cấp lịch sử và thống nhất AOE. 15 hệ/23 ID và thiết kế cốt lõi được giữ nguyên. Giai đoạn phát triển nhân vật/quái/Boss/thế giới/gameplay đầy đủ còn trong roadmap.
+Xem [code, ảnh, video và hướng dẫn preview](docs/PREVIEW.md), [ROADMAP](ROADMAP.md), [PROGRESS](PROGRESS.md) và [báo cáo kèm ảnh/log](docs/DEVELOPMENT-2026-10-17.md) cho trạng thái mới. Đã sửa lỗi shader trên 8 tuyệt kỹ, thêm tiến trình cast, dọn tài nguyên/ngân sách VFX, hoàn thiện kiểm thử nâng cấp lịch sử và thống nhất AOE. 15 hệ/23 ID và thiết kế cốt lõi được giữ nguyên. Giai đoạn phát triển nhân vật/quái/Boss/thế giới/gameplay đầy đủ còn trong roadmap.
 
 Các ghi chú “chưa kiểm chứng” trong phần nâng cấp cũ bên dưới phản ánh lần bàn giao trước; bằng chứng Chromium/SwiftShader mới nằm trong báo cáo. Chưa có benchmark native GPU. `UPGRADE_PROGRESS.md` giữ nguyên làm lịch sử.
 

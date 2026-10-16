@@ -1,0 +1,23 @@
+{
+  "commit": "04f8452",
+  "label": "cleanup-check",
+  "utcRecordedAt": "20261016-204653",
+  "production": true,
+  "sourceDirty": true,
+  "interactiveLivePreview": false,
+  "video": "preview.webm",
+  "errors": [],
+  "warnings": [
+    {
+      "type": "warning",
+      "text": "[Arcane VFX] Adaptive quality reduced volumetric; user settings are preserved."
+    },
+    {
+      "type": "warning",
+      "text": "[Arcane VFX] Performance watchdog limited runtime VFX budgets; user settings are preserved. {skill: FIRE-01, reason: synchronous skill construction exceeded 250 ms, frameCostMs: 269, runtimeDensityScale: 0.72}"
+    }
+  ],
+  "elements": 15,
+  "mana": "55 / 100",
+  "result": "passed"
+}

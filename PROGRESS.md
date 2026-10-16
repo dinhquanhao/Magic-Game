@@ -43,10 +43,19 @@
 1. GĐ1: chuẩn hóa góc máy/exposure và ảnh cho đủ 23 skill, xử lý vùng cháy sáng/thiếu tương phản. Shader đã biên dịch nhưng chưa gọi là hoàn thiện thị giác toàn bộ game.
 2. AOE đã sửa: một nguồn bán kính, không nhân tỷ lệ hai lần; test bounds 120/350 m và cast lệch tâm đạt cho cả 23 skill. Giữ bán kính cast khi thay slider trong lúc đang thi triển.
 3. GĐ2–5 chưa bắt đầu trong lượt này. Sau khi GĐ1 đạt, hoàn thiện HP/MP/trạng thái chiến đấu của pháp sư sẵn có, rồi enemy/Boss, cảnh vật và vòng gameplay theo roadmap.
-4. Checkpoint cuối được commit và tạo PR nháp, không merge main. Mã nguồn, log cũ và ảnh trong `work/` được bảo toàn; bằng chứng bàn giao có trong repository.
+4. Checkpoint đã push; [Draft PR #1](https://github.com/dinhquanhao/Magic-Game/pull/1), không merge main. Mã nguồn, log cũ và ảnh trong `work/` được bảo toàn; bằng chứng bàn giao có trong repository.
 
 ## Giới hạn môi trường
 
 - Chromium dùng ANGLE/SwiftShader (WebGL chạy bằng phần mềm), có compile/render thực; không đại diện FPS hoặc driver trên GPU người chơi.
 - Terminal mặc định chặn mở localhost/kết nối proxy; chạy server/browser và Git qua quyền thực thi đã được công cụ cấp. Không có auto-review rejection còn tồn đọng.
 - Chưa có kết quả kiểm thử native GPU. Không dùng số frame cost của SwiftShader làm tuyên bố tối ưu GPU thực.
+
+## Hệ thống quan sát — yêu cầu bổ sung
+
+- Đã kiểm tra Git sạch sau checkpoint `04f8452`, push nhánh riêng và mở Draft PR #1. Hai commit mã nguồn quan trọng (`d2e80eb`, `04f8452`) đã ở GitHub; lịch sử và toàn bộ bản ghi cũ trong work/ được giữ lại.
+- Thêm `npm run observe`: tự build, mở Vite preview riêng + Chromium, thao tác UI production, chụp ảnh, ghi WebM, lưu console/result theo label/commit/timestamp; dọn nhóm tiến trình server sau chạy. Đã chạy thành công và xác nhận cổng 4180 được giải phóng.
+- Đã có video MP4/WebM, ảnh startup/skill/Play Mode và ZIP offline trong `docs/evidence/observation/`. [Hướng dẫn xem code/game/artifacts](docs/PREVIEW.md).
+- Live Preview tương tác cho người dùng **chưa được xác nhận**. Localhost chỉ đã được truy cập từ Playwright bên trong cloud. Không cung cấp localhost như một URL web công khai.
+- Chuẩn bị `vercel.json` và `.vercelignore`; chưa kết nối tài khoản, chưa deploy, chưa dùng dịch vụ trả phí. Cần phê duyệt trước khi triển khai công khai hoặc phát sinh phí.
+- Thứ tự tiếp tục giữ nguyên: hoàn thiện đánh giá VFX GĐ1 trước nhân vật/HP, enemy/Boss và thế giới. Do giới hạn lượt chạy, lưu checkpoint quan sát trước khi mở thêm nhóm nâng cấp lớn; nhiệm vụ kế tiếp là chuẩn hóa góc máy/exposure và ghi đủ mốc thị giác của 23 skill.
