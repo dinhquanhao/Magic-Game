@@ -1,0 +1,36 @@
+{
+  "stage0-round1": {
+    "errors": [],
+    "warnings": [
+      {
+        "type": "warning",
+        "text": "[Arcane VFX] Performance watchdog limited runtime VFX budgets; user settings are preserved. {skill: PSYCHIC-03, reason: regression test, frameCostMs: 100, runtimeDensityScale: 0.72}"
+      }
+    ]
+  },
+  "stage0-round2": {
+    "errors": [],
+    "warnings": [
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+      }
+    ]
+  },
+  "stage1-round1": {
+    "errors": [],
+    "warnings": []
+  },
+  "production-final": {
+    "errors": [],
+    "warnings": []
+  }
+}

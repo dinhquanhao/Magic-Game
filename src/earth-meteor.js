@@ -1,3 +1,4 @@
+import { getSkillAreaRadius } from './skill-area.js';
 import * as THREE from 'three';
 
 const TAU = Math.PI * 2;
@@ -303,8 +304,7 @@ transformed.y = transformed.y * (slabAge < 0.0 ? 0.001 : 1.0) + slabLift + slabT
 
 export function createEarthMeteorAttack(parent, index, hex, skill, config, callbacks) {
   const settings = skill.earthMeteor, root = new THREE.Group(); parent.add(root); root.visible = false;
-  const aoe = Math.max(1, skill.spread * (config.aoeRadius / skill.aoe) * (config.aoeScale || 1));
-  const meteorRadius = settings.meteor.radius, craterRadius = settings.crater.radius, ruptureRadius = Math.min(settings.rupture.maxRadius, aoe * 1.12);
+  const meteorRadius = settings.meteor.radius, craterRadius = settings.crater.radius, ruptureRadius = getSkillAreaRadius(skill, config.aoeRadius);
   const impactAt = callbacks.plan.impactAt, descentTime = settings.meteor.descentTime, descentStart = impactAt - descentTime, skyHeight = settings.meteor.skyHeight;
   const angle = THREE.MathUtils.degToRad(THREE.MathUtils.clamp(settings.meteor.impactAngleDeg, 70, 89.5));
   const drift = (skyHeight - meteorRadius) / Math.tan(angle), driftX = -drift * .42, driftZ = -drift * .91;
@@ -461,6 +461,6 @@ export function createEarthMeteorAttack(parent, index, hex, skill, config, callb
     flashLevel: () => Math.exp(-Math.pow((currentTime - impactAt - .035) / .13, 2)),
     environmentMood: () => clamp01(.2 + smooth(2.4, 6.4, currentTime) * .55 - smooth(impactAt + 2, impactAt + 9, currentTime) * .22),
     lightPosition: () => meteor.position,
-    impactAt, rayCount: fragmentCount, slabCount: slabsCount
+    impactAt, radius: ruptureRadius, rayCount: fragmentCount, slabCount: slabsCount
   };
 }

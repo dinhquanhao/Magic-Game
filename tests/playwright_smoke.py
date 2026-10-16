@@ -15,7 +15,7 @@ clock.getDelta=()=>.05;
 config.auto=false;config.runes=false;config.cameraShake=false;config.hitStop=false;config.slowMotion=false;
 config.quality='Low';config.qualityScale=.35;
 graphics.applyQuality('Low',{...GRAPHICS_PRESETS.Low,adaptive:false});
-document.querySelector('#qualityPreset').value='Low';syncGraphicsFeatureControls();
+document.querySelector('#qualityPreset').value='Low';for(const id of ['auto','runes','cameraShakeToggle','hitStopToggle','slowMotionToggle'])document.getElementById(id).checked=false;syncGraphicsFeatureControls();
 window.__magicQA={
  skills:skillDefs.map((s,i)=>({index:i,id:s.id,name:s.vi,element:s.elementIndex,impact:cinematicPlans[i].impactAt,end:s.runeTower.timelineEnd})),
  sample(i,time){
@@ -29,20 +29,24 @@ window.__magicQA={
  channeling(){effect.userData.phase='channeling';effect.userData.channelTime=.2;animate();return this.snapshot();},
  finish(auto=false){config.auto=auto;return this.sample(spell,skillDefs[spell].runeTower.timelineEnd+.2);},
  setRunes(enabled){config.runes=enabled;},
+ area(i,meters){
+  if(!playMode)setPlayMode(true);select(i);config.aoeRadius=meters;config.aoeScale=meters/skillDefs[i].aoe;
+  updatePlayHud();cast(new THREE.Vector3(9,0,-7));return this.sample(i,cinematicPlans[i].impactAt);
+ },
  watchdog(enabled){graphics.setFeature('adaptive',enabled);adaptiveQualityReduced=false;lowerRuntimeQuality('regression test',100);syncGraphicsFeatureControls();return this.snapshot();},
  sequence(i,time){
   select(i);const d=effect.userData;d.phase='active';d.root.visible=d.skill.shape!=='eternalRequiem';d.transfer.visible=false;
   const render=composer.render;composer.render=()=>{};
-  try{while(effect===d.root.parent&&d.activeTime<time-.05)animate();}
+  try{while(effect?.userData===d&&d.activeTime<time-.05)animate();}
   finally{composer.render=render;}
   animate();return this.snapshot();
  },
- loseContext(){renderer.getContext().getExtension('WEBGL_lose_context').loseContext();},
- restoreContext(){renderer.getContext().getExtension('WEBGL_lose_context').restoreContext();},
+ loseContext(){this.contextExtension=renderer.getContext().getExtension('WEBGL_lose_context');if(!this.contextExtension)throw new Error('WEBGL_lose_context unavailable');this.contextExtension.loseContext();},
+ restoreContext(){this.contextExtension.restoreContext();},
  snapshot(){
   const gl=renderer.getContext();const badTransforms=[];scene.traverse(o=>{if(![...o.position,...o.scale,...o.quaternion].every(Number.isFinite))badTransforms.push(o.name||o.type);});
   return {skill:skillDefs[spell].id,active:!!effect,phase:effect?.userData.phase,time:effect?.userData.activeTime,
-   status:document.querySelector('#status').textContent,mana,playMode,paused:config.paused,contextLost:webglContextLost,
+   areaRadius:effect?.userData.areaRadius,vfxRadius:effect?.userData.attack?.radius,previewRadius:targetReticle.scale.x,camera:camera.position.toArray(),environmentId:graphics.environmentTarget.texture.uuid,status:document.querySelector('#status').textContent,mana,playMode,paused:config.paused,contextLost:webglContextLost,
    density:config.density,debrisDensity:config.debrisDensity,runtimeDensityScale,effectiveDensity:vfxConfig.density,
    render:{...renderer.info.render},memory:{...renderer.info.memory},badTransforms,
    badPrograms:renderer.info.programs.filter(p=>p.diagnostics?.runnable===false).length,glError:gl.getError(),
@@ -56,6 +60,8 @@ def main():
     parser.add_argument('--url',default='http://127.0.0.1:5173/')
     parser.add_argument('--output',default='test-results/magic-game')
     parser.add_argument('--production',action='store_true')
+    parser.add_argument('--context-only',action='store_true')
+    parser.add_argument('--areas-only',action='store_true')
     args=parser.parse_args()
     out=Path(args.output);out.mkdir(parents=True,exist_ok=True)
     errors=[];warnings=[];results=[]
@@ -104,6 +110,45 @@ def main():
                     assert value['glError']==0,value
                     assert not value['badTransforms'],value
                     return value
+                if args.areas_only:
+                    for skill in skills:
+                        for meters in [120,350]:
+                            sample=state(f"__magicQA.area({skill['index']},{meters})")
+                            assert abs(sample['areaRadius']-sample['vfxRadius'])<1e-5,sample
+                            assert abs(sample['areaRadius']-sample['previewRadius'])<1e-5,sample
+                            results.append({'skill':skill['id'],'meters':meters,'sample':sample})
+                        print(skill['id']+' AOE 120/350: passed',flush=True)
+                    # A slider edit during an existing cast affects the next cast's
+                    # preview; the active impact must keep its constructed radius.
+                    before=state()['areaRadius']
+                    page.locator('#aoeRadius').evaluate("e=>{e.value='120';e.dispatchEvent(new Event('input',{bubbles:true}));}")
+                    after=state('__magicQA.tick()')
+                    assert after['areaRadius']==before
+                    page.screenshot(path=str(out/'aoe-play.png'))
+                    assert not errors,errors[:3]
+                    print('AOE matrix: PASS',flush=True)
+                    return
+                if args.context_only:
+                    # Reproduce the Play -> Showcase camera transition before capture.
+                    page.locator('#modeToggle').click();state('__magicQA.tick()')
+                    page.locator('#modeToggle').click()
+                    assert state()['camera'][1]>10
+                    page.set_viewport_size({'width':1280,'height':800})
+                    for i,t,name in [(0,2,'fire'),(3,8,'water'),(6,11,'shadow'),(16,11,'blood')]:
+                        state(f'__magicQA.sequence({i},{t})')
+                        page.screenshot(path=str(out/(name+'.png')))
+                    before=state()['environmentId']
+                    page.evaluate('__magicQA.loseContext()')
+                    page.wait_for_function('__magicQA.snapshot().contextLost')
+                    page.evaluate('__magicQA.restoreContext()')
+                    page.wait_for_function('!__magicQA.snapshot().contextLost',timeout=30000)
+                    restored=state('__magicQA.tick()')
+                    assert restored['environmentId']!=before
+                    page.screenshot(path=str(out/'restored.png'))
+                    results.append({'contextRecovery':restored})
+                    assert not errors,errors[:3]
+                    print('Context and camera recovery: PASS',flush=True)
+                    return
                 # Every skill compiles and renders at release, impact and aftermath.
                 for skill in skills:
                     samples=[]
@@ -116,7 +161,7 @@ def main():
                 page.locator('.graphics-options').evaluate('(e)=>e.open=true')
                 page.locator('#graphicsAdaptive').uncheck()
                 for skill in skills:
-                    if skill['id'] not in ['FIRE-01','FIRE-02','FIRE-03','WATER-01','LIGHT-01','SHADOW-01','LIGHTNING-01','BLOOD-01']:continue
+                    # Include the nine formerly unfinished Magma/Astral/Psychic skills.
                     sample=state(f"__magicQA.sample({skill['index']},{skill['impact']})")
                     results.append({'skill':skill['id'],'quality':'High','sample':sample})
                     print(skill['id']+' High: passed',flush=True)

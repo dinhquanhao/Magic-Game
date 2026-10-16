@@ -1,3 +1,4 @@
+import { getSkillAreaRadius } from './skill-area.js';
 import * as THREE from 'three';
 
 const clamp = THREE.MathUtils.clamp;
@@ -190,7 +191,7 @@ function makeShards(parent, count, radius, color) {
 export function createTimeDomainAttack(parent, index, color, skill, config, callbacks, camera) {
   const settings = skill.timeDomain;
   const unitsPerMeter = settings.worldUnitsPerMeter;
-  const radius = Math.min(skill.spread * config.aoeScale, settings.domain.maxRadius / unitsPerMeter, settings.domain.shellHeight / unitsPerMeter);
+  const radius = getSkillAreaRadius(skill, config.aoeRadius);
   const centerY = Math.max(.12, radius * .1);
   const centerLocal = new THREE.Vector3(0, centerY, 0);
   const tint = 0x8ed5ca;

@@ -288,7 +288,7 @@ function makeShockwave(radius, definition, duration) {
 
 export function createLightningStormAttack(parent, index, hex, skill, config, callbacks) {
   const definition = skill.lightningStorm, quality = QUALITY[config.quality] || QUALITY.High;
-  const scale = THREE.MathUtils.clamp(config.aoeRadius / skill.aoe * config.aoeScale, .38, 1.6);
+  const scale = THREE.MathUtils.clamp(config.aoeRadius / skill.aoe, .38, 1.6);
   const radius = skill.spread * scale, height = radius * (definition.cloud.height / definition.aoeRadius) * 1.3, duration = definition.totalDuration;
   const requestedBoltCount = Math.round((definition.bolts.totalByQuality[config.quality] || quality.bolts) * (config.qualityScale || 1));
   const boltCount = Math.max(Math.round(quality.bolts * .72), requestedBoltCount);
@@ -408,7 +408,7 @@ export function createLightningStormAttack(parent, index, hex, skill, config, ca
   };
   group.userData.dispose = () => { startTexture.dispose(); endTexture.dispose(); };
   return {
-    group, update,
+    group, update, radius,
     environmentMood: () => currentMood,
     flashLevel: () => currentFlash,
     cameraPull: () => currentMood * .12,

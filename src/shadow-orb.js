@@ -336,7 +336,7 @@ export function createShadowOrbAttack(parent, index, hex, skill, config, callbac
   }
 
   return {
-    group: root, update, cameraPose: cameraPoseAt,
+    group: root, radius: absorbRadius, update, cameraPose: cameraPoseAt,
     environmentMood: () => currentMood,
     flashLevel: () => currentFlash,
     distortionLevel: () => currentPull * .65 + currentVignette * .22 + currentFlash * .2,

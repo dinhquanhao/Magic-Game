@@ -1,3 +1,4 @@
+import { getSkillAreaRadius } from './skill-area.js';
 import * as THREE from 'three';
 
 const clamp01 = x => Math.max(0, Math.min(1, x));
@@ -166,7 +167,7 @@ function makeWaterParticles(parent, count, radius, gateHeight, settings) {
 
 export function createOceanDominionAttack(parent, index, hex, skill, config, callbacks) {
   const settings = skill.oceanDominion, unit = settings.worldUnitsPerMeter || 16, root = new THREE.Group(); parent.add(root); root.visible = false;
-  const radius = Math.max(2, Math.min(settings.tide.maxRadius / unit, skill.spread * (config.aoeRadius / skill.aoe) * (config.aoeScale || 1)));
+  const radius = getSkillAreaRadius(skill, config.aoeRadius);
   const length = settings.whale.length / unit, gateRadius = settings.gate.radius / unit, gateHeight = settings.gate.height / unit;
   const quality = config.quality || 'High', dropCount = Math.min(settings.splash.dropsByQuality.Ultra, Math.round((settings.splash.dropsByQuality[quality] || 32000) * Math.max(.4, config.density || 1) * (config.qualityScale || 1)));
   const gate = makeOceanGate(root, gateRadius, gateHeight), tide = makeTideSurface(root, radius, settings), crown = makeCrownSplash(root, radius, settings.splash.crownHeight / unit, settings.impactTime), column = makeWaterColumn(root, Math.max(.8, radius * .13), settings.splash.columnHeight / unit, settings.impactTime + .06), droplets = makeWaterParticles(root, dropCount, radius, gateHeight, settings);

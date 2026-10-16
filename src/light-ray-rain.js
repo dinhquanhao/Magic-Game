@@ -1,3 +1,4 @@
+import { getSkillAreaRadius } from './skill-area.js';
 import * as THREE from 'three';
 
 const QUALITY_RAYS = Object.freeze({ Low: 2000, Medium: 2800, High: 4200, Ultra: 5500 });
@@ -248,7 +249,7 @@ export function createLightRayRainAttack(parent, index, hex, skill, config, call
   const group = new THREE.Group();
   parent.add(group);
   group.visible = false;
-  const radius = Math.max(1, skill.spread * (config.aoeRadius / skill.aoe));
+  const radius = getSkillAreaRadius(skill, config.aoeRadius);
   const quality = config.quality || 'High';
   const rayConfig = skill.rays;
   const count = Math.min(rayConfig.hardCap, rayConfig.totalByQuality[quality] || QUALITY_RAYS.High);
@@ -405,7 +406,7 @@ export function createLightRayRainAttack(parent, index, hex, skill, config, call
     cameraPose: getCameraPose,
     cameraPull: () => currentTime > rayConfig.finaleImpactAt ? 0.18 * Math.max(0, 1 - (currentTime - rayConfig.finaleImpactAt) / 1.5) : 0,
     environmentWarmth,
-    rayCount: count,
+    radius, rayCount: count,
     waveCounts
   };
 }

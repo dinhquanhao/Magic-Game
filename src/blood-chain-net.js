@@ -1,3 +1,4 @@
+import { getSkillAreaRadius } from './skill-area.js';
 import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 
@@ -351,7 +352,7 @@ export function createBloodChainNetAttack(parent, index, hex, skill, config, cal
   const root = new THREE.Group();
   parent.add(root);
   root.visible = false;
-  const radius = Math.max(4, skill.spread * (config.aoeRadius / skill.aoe) * (config.aoeScale || 1));
+  const radius = getSkillAreaRadius(skill, config.aoeRadius);
   const qualityName = config.quality || 'High';
   const quality = QUALITY[qualityName] || QUALITY.High;
   const density = Math.max(0.62, (config.density || 1) * (config.qualityScale || 1));

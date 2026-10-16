@@ -1,3 +1,4 @@
+import { getSkillAreaRadius } from './skill-area.js';
 import * as THREE from 'three';
 
 const PI = Math.PI;
@@ -182,7 +183,7 @@ function createSpikeForest(root, settings, config, radius, events) {
 
 export function createIceFreezeAttack(parent, index, hex, skill, config, callbacks) {
   const settings = skill.iceField, root = new THREE.Group(); parent.add(root); root.visible = false;
-  const radius = Math.min(settings.freeze.radius, skill.spread * (config.aoeRadius / skill.aoe) * (config.aoeScale || 1));
+  const radius = getSkillAreaRadius(skill, config.aoeRadius);
   const events = settings.waves.map(wave => ({ ...wave }));
   const forest = createSpikeForest(root, settings, config, radius, events);
   const field = makeIceField(radius); root.add(field.mesh);
@@ -243,6 +244,6 @@ export function createIceFreezeAttack(parent, index, hex, skill, config, callbac
     environmentMood: () => smooth(2.2, 6.2, currentTime) * (1 - smooth(settings.freeze.thawStart, settings.freeze.thawStart + settings.freeze.thawDuration, currentTime) * .48),
     flashLevel: () => Math.exp(-Math.pow((currentTime - settings.finalTime - .05) / .18, 2)),
     lightPosition: () => center.set(0, 5.5, 0),
-    spikeCount: forest.count
+    radius, spikeCount: forest.count
   };
 }

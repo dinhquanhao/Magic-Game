@@ -322,6 +322,7 @@ export function createSpaceBlackHoleAttack(parent, index, hex, skill, config, ca
 
   return {
     group: root,
+    radius: areaRadius,
     update,
     cameraPose: cameraPoseAt,
     environmentMood: () => currentMood,

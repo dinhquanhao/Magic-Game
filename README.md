@@ -1,5 +1,11 @@
 # Xưởng Hiệu Ứng Ma Thuật — 15 hệ, 23 tuyệt kỹ
 
+## Checkpoint phát triển 17/10/2026
+
+Xem [ROADMAP](ROADMAP.md), [PROGRESS](PROGRESS.md) và [báo cáo kèm ảnh/log](docs/DEVELOPMENT-2026-10-17.md) cho trạng thái mới. Đã sửa lỗi shader trên 8 tuyệt kỹ, thêm tiến trình cast, dọn tài nguyên/ngân sách VFX, hoàn thiện kiểm thử nâng cấp lịch sử và thống nhất AOE. 15 hệ/23 ID và thiết kế cốt lõi được giữ nguyên. Giai đoạn phát triển nhân vật/quái/Boss/thế giới/gameplay đầy đủ còn trong roadmap.
+
+Các ghi chú “chưa kiểm chứng” trong phần nâng cấp cũ bên dưới phản ánh lần bàn giao trước; bằng chứng Chromium/SwiftShader mới nằm trong báo cáo. Chưa có benchmark native GPU. `UPGRADE_PROGRESS.md` giữ nguyên làm lịch sử.
+
 Đây là bản nâng cấp trực tiếp dựa trên dự án hiện có. Giao diện, hướng dẫn và thông báo đã được chuyển sang tiếng Việt. Dự án giữ nguyên cảnh 3D, Tháp Phù Văn nhiều tầng và trình khởi chạy Windows `START.bat`. Registry hiện có 23 tuyệt kỹ; Bóng Tối còn SHADOW-01, Không Gian còn SPACE-01 và Thời Gian còn TIME-01. Các hệ khác được giữ nguyên.
 
 ## Cách chạy trên Windows
