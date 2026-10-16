@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Xưởng Hiệu Ứng Ma Thuật</title>
+</head>
+<body>
+  <div id="app">
+    <canvas id="stage"></canvas><div id="impactFlash" aria-hidden="true"></div>
+    <header class="brand">
+      <div class="brand-mark">✦</div>
+      <div><div class="eyebrow">PHÒNG THÍ NGHIỆM MA THUẬT</div><h1>XƯỞNG <span>HIỆU ỨNG MA THUẬT</span></h1></div>
+      <div class="version" id="projectCount">15 HỆ · 23 TUYỆT KỸ</div>
+    </header>
+    <button id="modeToggle" class="mode-toggle" type="button">▶ VÀO CHẾ ĐỘ CHƠI</button>
+    <aside class="instructions">
+      <div class="eyebrow">KHU VỰC THỬ PHÉP / 01</div>
+      <h2 id="spellTitle">THIÊN NHẬT DIỆT THẾ</h2>
+      <p id="spellDescription">Chọn một hệ phép và tuyệt kỹ để bắt đầu.</p>
+      <div class="keyline"><kbd>1—3</kbd> Chọn nhanh tuyệt kỹ</div>
+      <div class="keyline"><kbd>← →</kbd> Chuyển tuyệt kỹ</div>
+      <div class="keyline"><kbd>CÁCH</kbd> Thi triển lại</div>
+      <div class="keyline"><kbd>KÉO</kbd> Xoay góc nhìn</div>
+      <div class="keyline"><kbd>CUỘN</kbd> Thu phóng</div>
+      <div class="keyline"><kbd>NHẤP</kbd> Chọn vị trí thi triển</div>
+    </aside>
+    <aside class="settings">
+      <div class="panel-heading"><span>ĐIỀU KHIỂN HIỆU ỨNG</span><span class="live">● TRỰC TIẾP</span></div>
+      <div class="control"><label>CHẤT LƯỢNG</label><select id="qualityPreset"><option value="Low">Thấp</option><option value="Medium">Vừa</option><option value="High" selected>Cao</option><option value="Ultra">Siêu cao</option></select></div>
+      <details class="graphics-options"><summary>ĐỒ HỌA NÂNG CAO</summary>
+        <div class="toggle"><span>SSR TRÊN MẶT ĐẤT · IBL DỰ PHÒNG</span><input type="checkbox" id="graphicsReflections" checked></div>
+        <div class="toggle"><span>GTAO / SSAO THEO CHẤT LƯỢNG</span><input type="checkbox" id="graphicsAo" checked></div>
+        <div class="toggle"><span>TIA THỂ TÍCH (XẤP XỈ)</span><input type="checkbox" id="graphicsVolumetric" checked></div>
+        <div class="toggle"><span>CAUSTIC GIẢ LẬP</span><input type="checkbox" id="graphicsCaustics" checked></div>
+        <div class="toggle"><span>TÁN XẠ DƯỚI BỀ MẶT (XẤP XỈ)</span><input type="checkbox" id="graphicsSubsurface" checked></div>
+        <div class="toggle"><span>NHÒE CHUYỂN ĐỘNG</span><input type="checkbox" id="graphicsMotionBlur"></div>
+        <div class="toggle"><span>ĐỘ SÂU TRƯỜNG (DoF)</span><input type="checkbox" id="graphicsDof"></div>
+        <div class="toggle"><span>CHẤT LƯỢNG THÍCH ỨNG</span><input type="checkbox" id="graphicsAdaptive" checked></div>
+        <div class="graphics-note">SSR là phản chiếu không gian màn hình, chỉ áp dụng lên nền và mất phần phản chiếu nằm ngoài khung hình; IBL procedural luôn làm lớp dự phòng. GTAO dùng ở mức Cao/Siêu cao, SSAO nhẹ ở mức Vừa. Tia thể tích và caustic nền là xấp xỉ; tán xạ dưới bề mặt dùng viền sáng giả lập. DoF và nhòe có thể giảm độ rõ. Nhấn F3 để mở bảng debug. Không có ray tracing/path tracing thật; Giảm chuyển động tắt hiệu ứng nhòe.</div>
+      </details>
+      <div class="control"><label>BÁN KÍNH ẢNH HƯỞNG <output id="aoeRadiusOut">200 m</output></label><input id="aoeRadius" type="range" min="120" max="350" step="10" value="200"></div>
+      <div class="divider"></div><div class="panel-heading"><span>ĐIỆN ẢNH</span><span class="live">VA CHẠM & DƯ CHẤN</span></div>
+      <div class="toggle"><span>RUNG MÁY QUAY</span><input type="checkbox" id="cameraShakeToggle" checked></div>
+      <div class="control"><label>CƯỜNG ĐỘ RUNG <output id="shakeIntensityOut">0.80</output></label><input id="shakeIntensity" type="range" min="0" max="1.8" step="0.05" value="0.8"></div>
+      <div class="toggle"><span>NGẮT NHỊP VA CHẠM</span><input type="checkbox" id="hitStopToggle" checked></div>
+      <div class="control"><label>ĐỘ MẠNH NGẮT NHỊP <output id="hitStopStrengthOut">1.00</output></label><input id="hitStopStrength" type="range" min="0" max="1.5" step="0.05" value="1"></div>
+      <div class="toggle"><span>CHUYỂN ĐỘNG CHẬM</span><input type="checkbox" id="slowMotionToggle" checked></div>
+      <div class="control"><label>CƯỜNG ĐỘ CHẬM <output id="slowMotionIntensityOut">0.80</output></label><input id="slowMotionIntensity" type="range" min="0" max="1" step="0.05" value="0.8"></div>
+      <div class="control"><label>ĐỘ CHI TIẾT SÓNG XUNG KÍCH <output id="shockwaveDetailOut">2</output></label><input id="shockwaveDetail" type="range" min="0" max="3" step="1" value="2"></div>
+      <div class="control"><label>MẬT ĐỘ MẢNH VỠ <output id="debrisDensityOut">1.00</output></label><input id="debrisDensity" type="range" min="0" max="2" step="0.1" value="1"></div>
+      <div class="control"><label>ÁNH CHỚP VA CHẠM <output id="impactFlashOut">1.00</output></label><input id="impactFlash" type="range" min="0" max="2" step="0.05" value="1"></div>
+      <div class="toggle"><span>GÓC MÁY QUAY ĐIỆN ẢNH</span><input type="checkbox" id="cinematicCameraToggle"></div>
+      <div class="toggle"><span>GIẢM CHUYỂN ĐỘNG</span><input type="checkbox" id="reducedMotionToggle"></div>
+      <div class="toggle"><span>NGƯỜI CHƠI CHỊU LĨNH VỰC THỜI GIAN</span><input type="checkbox" id="timeAffectPlayerToggle"></div>
+      <div class="control"><label>CƯỜNG ĐỘ <output id="intensityOut">1.00</output></label><input id="intensity" type="range" min="0.3" max="2" step="0.05" value="1"></div>
+      <div class="control"><label>MẬT ĐỘ HẠT SÁNG <output id="densityOut">1.00</output></label><input id="density" type="range" min="0.25" max="2" step="0.05" value="1"></div>
+      <div class="control"><label>TỐC ĐỘ HOẠT ẢNH <output id="speedOut">1.00</output></label><input id="speed" type="range" min="0.3" max="2" step="0.05" value="1"></div>
+      <div class="control"><label>QUẦNG SÁNG <output id="bloomOut">1.15</output></label><input id="bloom" type="range" min="0" max="2.5" step="0.05" value="1.15"></div>
+      <div id="showcaseDistanceControl" class="control"><label>KHOẢNG CÁCH MÁY QUAY <output id="distanceOut">34</output></label><input id="distance" type="range" min="12" max="50" step="1" value="34"></div>
+      <div class="control"><label>THỜI GIAN VẼ PHÙ VĂN <output id="castTimeOut">4.50</output></label><input id="castTime" type="range" min="0.3" max="5" step="0.1" value="4.5"></div>
+      <div class="control"><label>SỐ TẦNG <output id="layerCountOut">8</output></label><input id="layerCount" type="range" min="7" max="9" step="1" value="8"></div>
+      <div class="control"><label>SỐ VÒNG MỖI TẦNG <output id="ringsPerLayerOut">3</output></label><input id="ringsPerLayer" type="range" min="2" max="4" step="1" value="3"></div>
+      <div class="control"><label>KÍCH THƯỚC VÒNG TRUNG TÂM <output id="centralRingSizeOut">8.8</output></label><input id="centralRingSize" type="range" min="8" max="10" step="0.2" value="8.8"></div>
+      <div class="control"><label>MẬT ĐỘ VÒNG VỆ TINH <output id="satelliteDensityOut">0.32</output></label><input id="satelliteDensity" type="range" min="0.25" max="0.4" step="0.01" value="0.32"></div>
+      <div class="control"><label>TỐC ĐỘ VẼ PHÙ VĂN <output id="runeDrawSpeedOut">1.00</output></label><input id="runeDrawSpeed" type="range" min="0.5" max="2.5" step="0.1" value="1"></div>
+      <div class="control"><label>TỐC ĐỘ XOAY VÒNG <output id="rotationSpeedOut">1.00</output></label><input id="rotationSpeed" type="range" min="0.3" max="2.5" step="0.1" value="1"></div>
+      <div class="control"><label>MÀU SẮC</label><select id="colorPreset"><option value="spell">MÀU THEO HỆ</option><option value="gold">VÀNG KIM</option><option value="violet">TÍM</option><option value="cyan">XANH NGỌC</option><option value="holy">ÁNH SÁNG THÁNH</option></select></div>
+      <div class="control"><label>CHẾ ĐỘ MÁY QUAY</label><select id="cameraMode"><option value="orbit">XOAY TỰ DO</option><option value="cinematic">ĐIỆN ẢNH</option></select></div>
+      <div class="divider"></div>
+      <button id="pauseButton" class="secondary">Ⅱ TẠM DỪNG</button>
+      <div id="autoToggle" class="toggle"><span>TỰ ĐỘNG THI TRIỂN LẠI</span><input type="checkbox" id="auto" checked></div>
+      <div class="toggle"><span>THÁP PHÙ VĂN</span><input type="checkbox" id="runes" checked></div>
+      <div class="divider"></div>
+      <button id="castButton">✧ THI TRIỂN TUYỆT KỸ</button>
+      <button id="resetButton" class="secondary">ĐẶT LẠI TÙY CHỈNH</button>
+      <div class="note">Ánh sáng · hình khối · hạt sáng · hoạt ảnh được tạo theo thời gian thực</div>
+    </aside>
+    <nav class="elementbar" aria-label="Chọn hệ phép"></nav>
+    <nav class="spellbar" aria-label="Chọn tuyệt kỹ"></nav>
+    <section id="playHud" class="play-hud" aria-label="Giao diện chế độ chơi" hidden>
+      <div class="play-card"><div class="hud-label">NĂNG LƯỢNG MA PHÁP <output id="manaText">100 / 100</output></div><div class="mana-track"><i id="manaFill"></i></div><div class="hud-status"><span id="playStatus">SẴN SÀNG</span><span id="targetRange">TẦM NGẮM 0 / 0</span></div></div>
+      <div id="aimCrosshair" class="aim-crosshair" aria-hidden="true"><i></i><b></b></div>
+      <div class="aim-label" id="aimLabel">NGẮM TỰ DO</div>
+      <div class="play-actions"><button id="lockButton" type="button">⌖ KHÓA MỤC TIÊU [TAB]</button><button id="replayButton" type="button">↻ THI TRIỂN LẠI</button></div>
+      <div class="play-help"><b>W A S D</b> di chuyển · <b>Shift</b> chạy · <b>Space</b> nhảy · <b>Q</b> lướt · <b>E</b> thi triển · <b>chuột phải</b> ngắm · <b>Tab</b> khóa mục tiêu · <b>Esc</b> thả chuột</div>
+      <div class="play-tuning"><label>ĐỘ NHẠY <input id="mouseSensitivity" type="range" min="0.4" max="2" value="1" step="0.05"></label><label>FOV <input id="playFov" type="range" min="38" max="78" value="58" step="1"></label><label>BÁN KÍNH ĐẤU TRƯỜNG <input id="arenaRadius" type="range" min="30" max="82" value="58" step="1"></label><label class="god-toggle"><input id="infiniteManaToggle" type="checkbox"> BỎ GIỚI HẠN MANA / HỒI CHIÊU</label></div>
+    </section>
+    <div class="status"><span id="fps">60 khung hình/giây</span><span class="dot">·</span><span>ĐỘNG CƠ HIỆU ỨNG 3D</span><span class="dot">·</span><span id="status">SẴN SÀNG</span></div>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
