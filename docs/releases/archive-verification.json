@@ -1,23 +1,28 @@
 {
   "archive": "Arcane-VFX-Studio-Thao-Update.zip",
-  "bytes": 82352432,
-  "sha256": "84c26dacea61dfb0f995b08d885e118aeb679a8ba22d620a6bba00bc93758e83",
-  "sourceCommit": "b49f044c28d582903d2c6eef6d07e7aabb27c528",
-  "entries": 1208,
-  "manifestFilesChecked": 1206,
+  "bytes": 90427655,
+  "sha256": "c11e656e65618207b4c4423f1114b797cd2a47ccdede5000b12b508b66de108f",
+  "sourceCommit": "4a345373185d9e6eb07847da6b2cd6ef1f8fbdbf",
+  "entries": 1222,
+  "manifestFilesChecked": 1220,
   "manifestHashesPassed": true,
   "crcPassed": true,
   "noDuplicateEntries": true,
   "noNodeModulesGitEnvFiles": true,
-  "runtimeAndDependencyFilesChecked": 985,
+  "runtimeAndDependencyFilesChecked": 983,
   "archiveRuntimeMatchesTestedWorkingTree": true,
+  "removedSkillPathOrTextMatches": [],
+  "referenceScope": "All archive paths and text sources/metadata/docs/tests. No OCR of historical binary images/video or audio transcription.",
   "launcherBytesPreserved": true,
   "currentWorkingTreeChecks": {
-    "unitTestsPassed": 12,
+    "elements": 15,
+    "skills": 19,
+    "unitTestsPassed": 13,
     "buildModules": 64,
-    "browserGroundSamplesPassed": 18,
-    "productionUI": "passed"
+    "retainedSkillFramesIdentical": 60,
+    "retainedSkillDefinitionsAndScoresUnchanged": 19,
+    "productionMenuHotkeysAudioLab": "passed"
   },
   "extractedInstallBuildRepeated": false,
-  "reason": "No dependency changes; every packaged runtime/public asset and dependency/config file matches the tested working tree byte for byte. Clean extracted install/build evidence for the preceding package is retained at commit 1ce5028."
+  "reason": "Dependencies unchanged; every packaged runtime/public asset/dependency/config byte matches the tested working tree. Tests and build ran on that working tree; no new extracted install/build is claimed."
 }
