@@ -1,0 +1,358 @@
+{
+  "label": "baseline-aaa",
+  "measurement": "synchronized gl.finish wall time; includes SwiftShader/software if reported; not real gameplay/native-GPU FPS",
+  "skills": [
+    {
+      "id": "FIRE-01",
+      "preset": "Low",
+      "phase": "opening",
+      "time": 0.2,
+      "image": "FIRE-01-Low-opening.jpg",
+      "frameMs": [
+        3.100000001490116,
+        4.599999997764826,
+        1.699999999254942
+      ],
+      "meanFrameMs": 3.133333332836628,
+      "syntheticFps": 319.1489362208052,
+      "render": {
+        "frame": 114,
+        "calls": 73,
+        "triangles": 38103,
+        "points": 1203,
+        "lines": 182
+      },
+      "memory": {
+        "geometries": 45,
+        "textures": 14
+      },
+      "diagnostics": {
+        "quality": "Low",
+        "features": {
+          "reflections": false,
+          "ao": false,
+          "volumetric": false,
+          "caustics": false,
+          "subsurface": false,
+          "motionBlur": false,
+          "dof": false,
+          "adaptive": false
+        },
+        "requestedFeatures": {
+          "reflections": false,
+          "ao": false,
+          "volumetric": false,
+          "caustics": false,
+          "subsurface": false,
+          "motionBlur": false,
+          "dof": false,
+          "adaptive": false
+        },
+        "autoReduced": [],
+        "averageFrameMs": 149.3289426836104,
+        "post": {
+          "ssr": false,
+          "gtao": false,
+          "ssao": false,
+          "dof": false,
+          "ssrTemporal": false,
+          "ssrResolution": "fallback IBL",
+          "maxTextures": 32,
+          "lastUpdateMs": 0,
+          "unavailable": []
+        },
+        "fields": {
+          "initialized": true,
+          "activeLights": 1,
+          "windStrength": 0,
+          "windTurbulence": 0,
+          "quality": "Low"
+        },
+        "grass": {
+          "quality": "Low",
+          "bladeInstances": 360,
+          "windAlpha": 0,
+          "initialized": true
+        },
+        "particleWind": {
+          "connectedMaterials": 18
+        },
+        "trackedMaterials": 24,
+        "estimatedRenderTargetBytes": 0
+      },
+      "programErrors": 0,
+      "glError": 0
+    },
+    {
+      "id": "FIRE-01",
+      "preset": "Low",
+      "phase": "climax",
+      "time": 3.87,
+      "image": "FIRE-01-Low-climax.jpg",
+      "frameMs": [
+        3.400000002235174,
+        3.199999999254942,
+        8.399999998509884
+      ],
+      "meanFrameMs": 5,
+      "syntheticFps": 200,
+      "render": {
+        "frame": 194,
+        "calls": 150,
+        "triangles": 85143,
+        "points": 1623,
+        "lines": 494
+      },
+      "memory": {
+        "geometries": 106,
+        "textures": 14
+      },
+      "diagnostics": {
+        "quality": "Low",
+        "features": {
+          "reflections": false,
+          "ao": false,
+          "volumetric": false,
+          "caustics": false,
+          "subsurface": false,
+          "motionBlur": false,
+          "dof": false,
+          "adaptive": false
+        },
+        "requestedFeatures": {
+          "reflections": false,
+          "ao": false,
+          "volumetric": false,
+          "caustics": false,
+          "subsurface": false,
+          "motionBlur": false,
+          "dof": false,
+          "adaptive": false
+        },
+        "autoReduced": [],
+        "averageFrameMs": 116.53702974829497,
+        "post": {
+          "ssr": false,
+          "gtao": false,
+          "ssao": false,
+          "dof": false,
+          "ssrTemporal": false,
+          "ssrResolution": "fallback IBL",
+          "maxTextures": 32,
+          "lastUpdateMs": 0,
+          "unavailable": []
+        },
+        "fields": {
+          "initialized": true,
+          "activeLights": 1,
+          "windStrength": 0,
+          "windTurbulence": 0,
+          "quality": "Low"
+        },
+        "grass": {
+          "quality": "Low",
+          "bladeInstances": 360,
+          "windAlpha": 0,
+          "initialized": true
+        },
+        "particleWind": {
+          "connectedMaterials": 18
+        },
+        "trackedMaterials": 24,
+        "estimatedRenderTargetBytes": 0
+      },
+      "programErrors": 0,
+      "glError": 0
+    },
+    {
+      "id": "FIRE-01",
+      "preset": "Low",
+      "phase": "aftermath",
+      "time": 6.220000000000001,
+      "image": "FIRE-01-Low-aftermath.jpg",
+      "frameMs": [
+        1.7000000029802322,
+        3.699999999254942,
+        3.800000000745058
+      ],
+      "meanFrameMs": 3.0666666676600776,
+      "syntheticFps": 326.08695641610706,
+      "render": {
+        "frame": 274,
+        "calls": 149,
+        "triangles": 85063,
+        "points": 1623,
+        "lines": 494
+      },
+      "memory": {
+        "geometries": 106,
+        "textures": 14
+      },
+      "diagnostics": {
+        "quality": "Low",
+        "features": {
+          "reflections": false,
+          "ao": false,
+          "volumetric": false,
+          "caustics": false,
+          "subsurface": false,
+          "motionBlur": false,
+          "dof": false,
+          "adaptive": false
+        },
+        "requestedFeatures": {
+          "reflections": false,
+          "ao": false,
+          "volumetric": false,
+          "caustics": false,
+          "subsurface": false,
+          "motionBlur": false,
+          "dof": false,
+          "adaptive": false
+        },
+        "autoReduced": [],
+        "averageFrameMs": 77.77716771459755,
+        "post": {
+          "ssr": false,
+          "gtao": false,
+          "ssao": false,
+          "dof": false,
+          "ssrTemporal": false,
+          "ssrResolution": "fallback IBL",
+          "maxTextures": 32,
+          "lastUpdateMs": 0,
+          "unavailable": []
+        },
+        "fields": {
+          "initialized": true,
+          "activeLights": 1,
+          "windStrength": 0,
+          "windTurbulence": 0,
+          "quality": "Low"
+        },
+        "grass": {
+          "quality": "Low",
+          "bladeInstances": 360,
+          "windAlpha": 0,
+          "initialized": true
+        },
+        "particleWind": {
+          "connectedMaterials": 18
+        },
+        "trackedMaterials": 24,
+        "estimatedRenderTargetBytes": 0
+      },
+      "programErrors": 0,
+      "glError": 0
+    },
+    {
+      "id": "FIRE-01",
+      "preset": "Medium",
+      "phase": "climax",
+      "time": 3.87,
+      "image": "FIRE-01-Medium-climax.jpg",
+      "frameMs": [
+        2.900000002235174,
+        2.599999997764826,
+        7.699999999254942
+      ],
+      "meanFrameMs": 4.399999999751647,
+      "syntheticFps": 227.27272728555542,
+      "render": {
+        "frame": 374,
+        "calls": 226,
+        "triangles": 148574,
+        "points": 1623,
+        "lines": 494
+      },
+      "memory": {
+        "geometries": 106,
+        "textures": 19
+      },
+      "diagnostics": {
+        "quality": "Medium",
+        "features": {
+          "reflections": true,
+          "ao": true,
+          "volumetric": false,
+          "caustics": false,
+          "subsurface": false,
+          "motionBlur": false,
+          "dof": false,
+          "adaptive": false
+        },
+        "requestedFeatures": {
+          "reflections": true,
+          "ao": true,
+          "volumetric": false,
+          "caustics": false,
+          "subsurface": false,
+          "motionBlur": false,
+          "dof": false,
+          "adaptive": false
+        },
+        "autoReduced": [],
+        "averageFrameMs": 54.14465113921227,
+        "post": {
+          "ssr": false,
+          "gtao": false,
+          "ssao": true,
+          "dof": false,
+          "ssrTemporal": false,
+          "ssrResolution": "50%",
+          "maxTextures": 32,
+          "lastUpdateMs": 0,
+          "unavailable": []
+        },
+        "fields": {
+          "initialized": true,
+          "activeLights": 1,
+          "windStrength": 0,
+          "windTurbulence": 0,
+          "quality": "Medium"
+        },
+        "grass": {
+          "quality": "Medium",
+          "bladeInstances": 800,
+          "windAlpha": 0,
+          "initialized": true
+        },
+        "particleWind": {
+          "connectedMaterials": 18
+        },
+        "trackedMaterials": 24,
+        "estimatedRenderTargetBytes": 11673600
+      },
+      "programErrors": 0,
+      "glError": 0
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "capabilities": {
+    "three": "180",
+    "webgl2": true,
+    "maxTextures": 32,
+    "maxVertexTextures": 32,
+    "maxAttributes": 16,
+    "floatColor": true,
+    "floatLinear": true,
+    "instancing": true,
+    "timerQuery": true,
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  },
+  "entities": {
+    "meshes": 250,
+    "instanced": 448,
+    "points": 4113,
+    "materials": {
+      "MeshStandardMaterial": 66,
+      "LineBasicMaterial": 522,
+      "MeshBasicMaterial": 175,
+      "PointsMaterial": 1,
+      "ShaderMaterial": 29
+    },
+    "bones": 0,
+    "skinned": 0
+  }
+}

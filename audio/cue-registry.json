@@ -1,0 +1,8057 @@
+[
+  {
+    "id": "water/precast",
+    "element": "WATER",
+    "role": "precast",
+    "profile": {
+      "base": 168,
+      "material": "bubble",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.42,
+        2.8,
+        4.9
+      ],
+      "cutoff": 3600,
+      "room": "underwater",
+      "keywords": "chảy · bọt · ẩm · sóng",
+      "bass": 0.85
+    },
+    "duration": 0.3,
+    "targetRmsDb": -25,
+    "category": "magic",
+    "seed": 120701,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "water/charging",
+    "element": "WATER",
+    "role": "charging",
+    "profile": {
+      "base": 168,
+      "material": "bubble",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.42,
+        2.8,
+        4.9
+      ],
+      "cutoff": 3600,
+      "room": "underwater",
+      "keywords": "chảy · bọt · ẩm · sóng",
+      "bass": 0.85
+    },
+    "duration": 1.2,
+    "targetRmsDb": -27,
+    "category": "magic",
+    "loop": true,
+    "seed": 120772,
+    "variants": 3,
+    "priority": 50,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "water/casting",
+    "element": "WATER",
+    "role": "casting",
+    "profile": {
+      "base": 168,
+      "material": "bubble",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.42,
+        2.8,
+        4.9
+      ],
+      "cutoff": 3600,
+      "room": "underwater",
+      "keywords": "chảy · bọt · ẩm · sóng",
+      "bass": 0.85
+    },
+    "duration": 0.38,
+    "targetRmsDb": -22,
+    "category": "sfx",
+    "seed": 120843,
+    "variants": 3,
+    "priority": 80,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "water/traveling",
+    "element": "WATER",
+    "role": "traveling",
+    "profile": {
+      "base": 168,
+      "material": "bubble",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.42,
+        2.8,
+        4.9
+      ],
+      "cutoff": 3600,
+      "room": "underwater",
+      "keywords": "chảy · bọt · ẩm · sóng",
+      "bass": 0.85
+    },
+    "duration": 1.2,
+    "targetRmsDb": -26,
+    "category": "magic",
+    "loop": true,
+    "seed": 120914,
+    "variants": 3,
+    "priority": 40,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "water/material",
+    "element": "WATER",
+    "role": "material",
+    "profile": {
+      "base": 168,
+      "material": "bubble",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.42,
+        2.8,
+        4.9
+      ],
+      "cutoff": 3600,
+      "room": "underwater",
+      "keywords": "chảy · bọt · ẩm · sóng",
+      "bass": 0.85
+    },
+    "duration": 1.2,
+    "targetRmsDb": -24,
+    "category": "sfx",
+    "repeated": true,
+    "domain": true,
+    "seed": 120985,
+    "variants": 4,
+    "priority": 55,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "water/motion",
+    "element": "WATER",
+    "role": "motion",
+    "profile": {
+      "base": 168,
+      "material": "bubble",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.42,
+        2.8,
+        4.9
+      ],
+      "cutoff": 3600,
+      "room": "underwater",
+      "keywords": "chảy · bọt · ẩm · sóng",
+      "bass": 0.85
+    },
+    "duration": 1.5,
+    "targetRmsDb": -26,
+    "category": "magic",
+    "seed": 121056,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "water/environment",
+    "element": "WATER",
+    "role": "environment",
+    "profile": {
+      "base": 168,
+      "material": "bubble",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.42,
+        2.8,
+        4.9
+      ],
+      "cutoff": 3600,
+      "room": "underwater",
+      "keywords": "chảy · bọt · ẩm · sóng",
+      "bass": 0.85
+    },
+    "duration": 2,
+    "targetRmsDb": -31,
+    "category": "ambience",
+    "loop": true,
+    "domain": true,
+    "seed": 121127,
+    "variants": 3,
+    "priority": 8,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "water/secondary",
+    "element": "WATER",
+    "role": "secondary",
+    "profile": {
+      "base": 168,
+      "material": "bubble",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.42,
+        2.8,
+        4.9
+      ],
+      "cutoff": 3600,
+      "room": "underwater",
+      "keywords": "chảy · bọt · ẩm · sóng",
+      "bass": 0.85
+    },
+    "duration": 0.9,
+    "targetRmsDb": -27,
+    "category": "sfx",
+    "repeated": true,
+    "domain": true,
+    "seed": 121198,
+    "variants": 4,
+    "priority": 35,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "water/riser",
+    "element": "WATER",
+    "role": "riser",
+    "profile": {
+      "base": 168,
+      "material": "bubble",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.42,
+        2.8,
+        4.9
+      ],
+      "cutoff": 3600,
+      "room": "underwater",
+      "keywords": "chảy · bọt · ẩm · sóng",
+      "bass": 0.85
+    },
+    "duration": 0.8,
+    "targetRmsDb": -23,
+    "category": "magic",
+    "seed": 121269,
+    "variants": 3,
+    "priority": 85,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "water/impact",
+    "element": "WATER",
+    "role": "impact",
+    "profile": {
+      "base": 168,
+      "material": "bubble",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.42,
+        2.8,
+        4.9
+      ],
+      "cutoff": 3600,
+      "room": "underwater",
+      "keywords": "chảy · bọt · ẩm · sóng",
+      "bass": 0.85
+    },
+    "duration": 3.2,
+    "targetRmsDb": -19,
+    "category": "impact",
+    "priority": 100,
+    "seed": 121340,
+    "variants": 3,
+    "wet": 0.08,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "water/shockwave",
+    "element": "WATER",
+    "role": "shockwave",
+    "profile": {
+      "base": 168,
+      "material": "bubble",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.42,
+        2.8,
+        4.9
+      ],
+      "cutoff": 3600,
+      "room": "underwater",
+      "keywords": "chảy · bọt · ẩm · sóng",
+      "bass": 0.85
+    },
+    "duration": 1.2,
+    "targetRmsDb": -25,
+    "category": "impact",
+    "seed": 121411,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "water/aftermath",
+    "element": "WATER",
+    "role": "aftermath",
+    "profile": {
+      "base": 168,
+      "material": "bubble",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.42,
+        2.8,
+        4.9
+      ],
+      "cutoff": 3600,
+      "room": "underwater",
+      "keywords": "chảy · bọt · ẩm · sóng",
+      "bass": 0.85
+    },
+    "duration": 3.6,
+    "targetRmsDb": -30,
+    "category": "ambience",
+    "seed": 121482,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "water/rune",
+    "element": "WATER",
+    "role": "rune",
+    "profile": {
+      "base": 168,
+      "material": "bubble",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.42,
+        2.8,
+        4.9
+      ],
+      "cutoff": 3600,
+      "room": "underwater",
+      "keywords": "chảy · bọt · ẩm · sóng",
+      "bass": 0.85
+    },
+    "duration": 0.48,
+    "targetRmsDb": -29,
+    "category": "magic",
+    "repeated": true,
+    "seed": 121553,
+    "variants": 4,
+    "priority": 45,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "water/ui",
+    "element": "WATER",
+    "role": "ui",
+    "profile": {
+      "base": 168,
+      "material": "bubble",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.42,
+        2.8,
+        4.9
+      ],
+      "cutoff": 3600,
+      "room": "underwater",
+      "keywords": "chảy · bọt · ẩm · sóng",
+      "bass": 0.85
+    },
+    "duration": 0.09,
+    "targetRmsDb": -34,
+    "category": "ui",
+    "seed": 121624,
+    "variants": 3,
+    "priority": 60,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "water/drone",
+    "element": "WATER",
+    "role": "drone",
+    "profile": {
+      "base": 168,
+      "material": "bubble",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.42,
+        2.8,
+        4.9
+      ],
+      "cutoff": 3600,
+      "room": "underwater",
+      "keywords": "chảy · bọt · ẩm · sóng",
+      "bass": 0.85
+    },
+    "duration": 2,
+    "targetRmsDb": -34,
+    "category": "drone",
+    "loop": true,
+    "seed": 121695,
+    "variants": 3,
+    "priority": 4,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "earth/precast",
+    "element": "EARTH",
+    "role": "precast",
+    "profile": {
+      "base": 62,
+      "material": "stone",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.48,
+        2.17,
+        3.83
+      ],
+      "cutoff": 1800,
+      "room": "arena",
+      "keywords": "đá · rạn · sỏi · nặng",
+      "bass": 1.1
+    },
+    "duration": 0.3,
+    "targetRmsDb": -25,
+    "category": "magic",
+    "seed": 121710,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "earth/charging",
+    "element": "EARTH",
+    "role": "charging",
+    "profile": {
+      "base": 62,
+      "material": "stone",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.48,
+        2.17,
+        3.83
+      ],
+      "cutoff": 1800,
+      "room": "arena",
+      "keywords": "đá · rạn · sỏi · nặng",
+      "bass": 1.1
+    },
+    "duration": 1.2,
+    "targetRmsDb": -27,
+    "category": "magic",
+    "loop": true,
+    "seed": 121781,
+    "variants": 3,
+    "priority": 50,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "earth/casting",
+    "element": "EARTH",
+    "role": "casting",
+    "profile": {
+      "base": 62,
+      "material": "stone",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.48,
+        2.17,
+        3.83
+      ],
+      "cutoff": 1800,
+      "room": "arena",
+      "keywords": "đá · rạn · sỏi · nặng",
+      "bass": 1.1
+    },
+    "duration": 0.38,
+    "targetRmsDb": -22,
+    "category": "sfx",
+    "seed": 121852,
+    "variants": 3,
+    "priority": 80,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "earth/traveling",
+    "element": "EARTH",
+    "role": "traveling",
+    "profile": {
+      "base": 62,
+      "material": "stone",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.48,
+        2.17,
+        3.83
+      ],
+      "cutoff": 1800,
+      "room": "arena",
+      "keywords": "đá · rạn · sỏi · nặng",
+      "bass": 1.1
+    },
+    "duration": 1.2,
+    "targetRmsDb": -26,
+    "category": "magic",
+    "loop": true,
+    "seed": 121923,
+    "variants": 3,
+    "priority": 40,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "earth/material",
+    "element": "EARTH",
+    "role": "material",
+    "profile": {
+      "base": 62,
+      "material": "stone",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.48,
+        2.17,
+        3.83
+      ],
+      "cutoff": 1800,
+      "room": "arena",
+      "keywords": "đá · rạn · sỏi · nặng",
+      "bass": 1.1
+    },
+    "duration": 1.2,
+    "targetRmsDb": -24,
+    "category": "sfx",
+    "repeated": true,
+    "domain": true,
+    "seed": 121994,
+    "variants": 4,
+    "priority": 55,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "earth/motion",
+    "element": "EARTH",
+    "role": "motion",
+    "profile": {
+      "base": 62,
+      "material": "stone",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.48,
+        2.17,
+        3.83
+      ],
+      "cutoff": 1800,
+      "room": "arena",
+      "keywords": "đá · rạn · sỏi · nặng",
+      "bass": 1.1
+    },
+    "duration": 1.5,
+    "targetRmsDb": -26,
+    "category": "magic",
+    "seed": 122065,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "earth/environment",
+    "element": "EARTH",
+    "role": "environment",
+    "profile": {
+      "base": 62,
+      "material": "stone",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.48,
+        2.17,
+        3.83
+      ],
+      "cutoff": 1800,
+      "room": "arena",
+      "keywords": "đá · rạn · sỏi · nặng",
+      "bass": 1.1
+    },
+    "duration": 2,
+    "targetRmsDb": -31,
+    "category": "ambience",
+    "loop": true,
+    "domain": true,
+    "seed": 122136,
+    "variants": 3,
+    "priority": 8,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "earth/secondary",
+    "element": "EARTH",
+    "role": "secondary",
+    "profile": {
+      "base": 62,
+      "material": "stone",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.48,
+        2.17,
+        3.83
+      ],
+      "cutoff": 1800,
+      "room": "arena",
+      "keywords": "đá · rạn · sỏi · nặng",
+      "bass": 1.1
+    },
+    "duration": 0.9,
+    "targetRmsDb": -27,
+    "category": "sfx",
+    "repeated": true,
+    "domain": true,
+    "seed": 122207,
+    "variants": 4,
+    "priority": 35,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "earth/riser",
+    "element": "EARTH",
+    "role": "riser",
+    "profile": {
+      "base": 62,
+      "material": "stone",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.48,
+        2.17,
+        3.83
+      ],
+      "cutoff": 1800,
+      "room": "arena",
+      "keywords": "đá · rạn · sỏi · nặng",
+      "bass": 1.1
+    },
+    "duration": 0.8,
+    "targetRmsDb": -23,
+    "category": "magic",
+    "seed": 122278,
+    "variants": 3,
+    "priority": 85,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "earth/impact",
+    "element": "EARTH",
+    "role": "impact",
+    "profile": {
+      "base": 62,
+      "material": "stone",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.48,
+        2.17,
+        3.83
+      ],
+      "cutoff": 1800,
+      "room": "arena",
+      "keywords": "đá · rạn · sỏi · nặng",
+      "bass": 1.1
+    },
+    "duration": 3.2,
+    "targetRmsDb": -19,
+    "category": "impact",
+    "priority": 100,
+    "seed": 122349,
+    "variants": 3,
+    "wet": 0.08,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "earth/shockwave",
+    "element": "EARTH",
+    "role": "shockwave",
+    "profile": {
+      "base": 62,
+      "material": "stone",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.48,
+        2.17,
+        3.83
+      ],
+      "cutoff": 1800,
+      "room": "arena",
+      "keywords": "đá · rạn · sỏi · nặng",
+      "bass": 1.1
+    },
+    "duration": 1.2,
+    "targetRmsDb": -25,
+    "category": "impact",
+    "seed": 122420,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "earth/aftermath",
+    "element": "EARTH",
+    "role": "aftermath",
+    "profile": {
+      "base": 62,
+      "material": "stone",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.48,
+        2.17,
+        3.83
+      ],
+      "cutoff": 1800,
+      "room": "arena",
+      "keywords": "đá · rạn · sỏi · nặng",
+      "bass": 1.1
+    },
+    "duration": 3.6,
+    "targetRmsDb": -30,
+    "category": "ambience",
+    "seed": 122491,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "earth/rune",
+    "element": "EARTH",
+    "role": "rune",
+    "profile": {
+      "base": 62,
+      "material": "stone",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.48,
+        2.17,
+        3.83
+      ],
+      "cutoff": 1800,
+      "room": "arena",
+      "keywords": "đá · rạn · sỏi · nặng",
+      "bass": 1.1
+    },
+    "duration": 0.48,
+    "targetRmsDb": -29,
+    "category": "magic",
+    "repeated": true,
+    "seed": 122562,
+    "variants": 4,
+    "priority": 45,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "earth/ui",
+    "element": "EARTH",
+    "role": "ui",
+    "profile": {
+      "base": 62,
+      "material": "stone",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.48,
+        2.17,
+        3.83
+      ],
+      "cutoff": 1800,
+      "room": "arena",
+      "keywords": "đá · rạn · sỏi · nặng",
+      "bass": 1.1
+    },
+    "duration": 0.09,
+    "targetRmsDb": -34,
+    "category": "ui",
+    "seed": 122633,
+    "variants": 3,
+    "priority": 60,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "earth/drone",
+    "element": "EARTH",
+    "role": "drone",
+    "profile": {
+      "base": 62,
+      "material": "stone",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.48,
+        2.17,
+        3.83
+      ],
+      "cutoff": 1800,
+      "room": "arena",
+      "keywords": "đá · rạn · sỏi · nặng",
+      "bass": 1.1
+    },
+    "duration": 2,
+    "targetRmsDb": -34,
+    "category": "drone",
+    "loop": true,
+    "seed": 122704,
+    "variants": 3,
+    "priority": 4,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "wind/precast",
+    "element": "WIND",
+    "role": "precast",
+    "profile": {
+      "base": 290,
+      "material": "air",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.05,
+        1.51
+      ],
+      "cutoff": 4200,
+      "room": "arena",
+      "keywords": "rít · xoáy · lá · thoáng",
+      "bass": 0.65
+    },
+    "duration": 0.3,
+    "targetRmsDb": -25,
+    "category": "magic",
+    "seed": 122719,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "wind/charging",
+    "element": "WIND",
+    "role": "charging",
+    "profile": {
+      "base": 290,
+      "material": "air",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.05,
+        1.51
+      ],
+      "cutoff": 4200,
+      "room": "arena",
+      "keywords": "rít · xoáy · lá · thoáng",
+      "bass": 0.65
+    },
+    "duration": 1.2,
+    "targetRmsDb": -27,
+    "category": "magic",
+    "loop": true,
+    "seed": 122790,
+    "variants": 3,
+    "priority": 50,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "wind/casting",
+    "element": "WIND",
+    "role": "casting",
+    "profile": {
+      "base": 290,
+      "material": "air",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.05,
+        1.51
+      ],
+      "cutoff": 4200,
+      "room": "arena",
+      "keywords": "rít · xoáy · lá · thoáng",
+      "bass": 0.65
+    },
+    "duration": 0.38,
+    "targetRmsDb": -22,
+    "category": "sfx",
+    "seed": 122861,
+    "variants": 3,
+    "priority": 80,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "wind/traveling",
+    "element": "WIND",
+    "role": "traveling",
+    "profile": {
+      "base": 290,
+      "material": "air",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.05,
+        1.51
+      ],
+      "cutoff": 4200,
+      "room": "arena",
+      "keywords": "rít · xoáy · lá · thoáng",
+      "bass": 0.65
+    },
+    "duration": 1.2,
+    "targetRmsDb": -26,
+    "category": "magic",
+    "loop": true,
+    "seed": 122932,
+    "variants": 3,
+    "priority": 40,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "wind/material",
+    "element": "WIND",
+    "role": "material",
+    "profile": {
+      "base": 290,
+      "material": "air",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.05,
+        1.51
+      ],
+      "cutoff": 4200,
+      "room": "arena",
+      "keywords": "rít · xoáy · lá · thoáng",
+      "bass": 0.65
+    },
+    "duration": 1.2,
+    "targetRmsDb": -24,
+    "category": "sfx",
+    "repeated": true,
+    "domain": true,
+    "seed": 123003,
+    "variants": 4,
+    "priority": 55,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "wind/motion",
+    "element": "WIND",
+    "role": "motion",
+    "profile": {
+      "base": 290,
+      "material": "air",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.05,
+        1.51
+      ],
+      "cutoff": 4200,
+      "room": "arena",
+      "keywords": "rít · xoáy · lá · thoáng",
+      "bass": 0.65
+    },
+    "duration": 1.5,
+    "targetRmsDb": -26,
+    "category": "magic",
+    "seed": 123074,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "wind/environment",
+    "element": "WIND",
+    "role": "environment",
+    "profile": {
+      "base": 290,
+      "material": "air",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.05,
+        1.51
+      ],
+      "cutoff": 4200,
+      "room": "arena",
+      "keywords": "rít · xoáy · lá · thoáng",
+      "bass": 0.65
+    },
+    "duration": 2,
+    "targetRmsDb": -31,
+    "category": "ambience",
+    "loop": true,
+    "domain": true,
+    "seed": 123145,
+    "variants": 3,
+    "priority": 8,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "wind/secondary",
+    "element": "WIND",
+    "role": "secondary",
+    "profile": {
+      "base": 290,
+      "material": "air",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.05,
+        1.51
+      ],
+      "cutoff": 4200,
+      "room": "arena",
+      "keywords": "rít · xoáy · lá · thoáng",
+      "bass": 0.65
+    },
+    "duration": 0.9,
+    "targetRmsDb": -27,
+    "category": "sfx",
+    "repeated": true,
+    "domain": true,
+    "seed": 123216,
+    "variants": 4,
+    "priority": 35,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "wind/riser",
+    "element": "WIND",
+    "role": "riser",
+    "profile": {
+      "base": 290,
+      "material": "air",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.05,
+        1.51
+      ],
+      "cutoff": 4200,
+      "room": "arena",
+      "keywords": "rít · xoáy · lá · thoáng",
+      "bass": 0.65
+    },
+    "duration": 0.8,
+    "targetRmsDb": -23,
+    "category": "magic",
+    "seed": 123287,
+    "variants": 3,
+    "priority": 85,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "wind/impact",
+    "element": "WIND",
+    "role": "impact",
+    "profile": {
+      "base": 290,
+      "material": "air",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.05,
+        1.51
+      ],
+      "cutoff": 4200,
+      "room": "arena",
+      "keywords": "rít · xoáy · lá · thoáng",
+      "bass": 0.65
+    },
+    "duration": 3.2,
+    "targetRmsDb": -19,
+    "category": "impact",
+    "priority": 100,
+    "seed": 123358,
+    "variants": 3,
+    "wet": 0.08,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "wind/shockwave",
+    "element": "WIND",
+    "role": "shockwave",
+    "profile": {
+      "base": 290,
+      "material": "air",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.05,
+        1.51
+      ],
+      "cutoff": 4200,
+      "room": "arena",
+      "keywords": "rít · xoáy · lá · thoáng",
+      "bass": 0.65
+    },
+    "duration": 1.2,
+    "targetRmsDb": -25,
+    "category": "impact",
+    "seed": 123429,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "wind/aftermath",
+    "element": "WIND",
+    "role": "aftermath",
+    "profile": {
+      "base": 290,
+      "material": "air",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.05,
+        1.51
+      ],
+      "cutoff": 4200,
+      "room": "arena",
+      "keywords": "rít · xoáy · lá · thoáng",
+      "bass": 0.65
+    },
+    "duration": 3.6,
+    "targetRmsDb": -30,
+    "category": "ambience",
+    "seed": 123500,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "wind/rune",
+    "element": "WIND",
+    "role": "rune",
+    "profile": {
+      "base": 290,
+      "material": "air",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.05,
+        1.51
+      ],
+      "cutoff": 4200,
+      "room": "arena",
+      "keywords": "rít · xoáy · lá · thoáng",
+      "bass": 0.65
+    },
+    "duration": 0.48,
+    "targetRmsDb": -29,
+    "category": "magic",
+    "repeated": true,
+    "seed": 123571,
+    "variants": 4,
+    "priority": 45,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "wind/ui",
+    "element": "WIND",
+    "role": "ui",
+    "profile": {
+      "base": 290,
+      "material": "air",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.05,
+        1.51
+      ],
+      "cutoff": 4200,
+      "room": "arena",
+      "keywords": "rít · xoáy · lá · thoáng",
+      "bass": 0.65
+    },
+    "duration": 0.09,
+    "targetRmsDb": -34,
+    "category": "ui",
+    "seed": 123642,
+    "variants": 3,
+    "priority": 60,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "wind/drone",
+    "element": "WIND",
+    "role": "drone",
+    "profile": {
+      "base": 290,
+      "material": "air",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.05,
+        1.51
+      ],
+      "cutoff": 4200,
+      "room": "arena",
+      "keywords": "rít · xoáy · lá · thoáng",
+      "bass": 0.65
+    },
+    "duration": 2,
+    "targetRmsDb": -34,
+    "category": "drone",
+    "loop": true,
+    "seed": 123713,
+    "variants": 3,
+    "priority": 4,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "fire/precast",
+    "element": "FIRE",
+    "role": "precast",
+    "profile": {
+      "base": 103,
+      "material": "flame",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.91,
+        3.12
+      ],
+      "cutoff": 5500,
+      "room": "arena",
+      "keywords": "lách tách · đối lưu · phập · nóng",
+      "bass": 0.95
+    },
+    "duration": 0.3,
+    "targetRmsDb": -25,
+    "category": "magic",
+    "seed": 123728,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "fire/charging",
+    "element": "FIRE",
+    "role": "charging",
+    "profile": {
+      "base": 103,
+      "material": "flame",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.91,
+        3.12
+      ],
+      "cutoff": 5500,
+      "room": "arena",
+      "keywords": "lách tách · đối lưu · phập · nóng",
+      "bass": 0.95
+    },
+    "duration": 1.2,
+    "targetRmsDb": -27,
+    "category": "magic",
+    "loop": true,
+    "seed": 123799,
+    "variants": 3,
+    "priority": 50,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "fire/casting",
+    "element": "FIRE",
+    "role": "casting",
+    "profile": {
+      "base": 103,
+      "material": "flame",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.91,
+        3.12
+      ],
+      "cutoff": 5500,
+      "room": "arena",
+      "keywords": "lách tách · đối lưu · phập · nóng",
+      "bass": 0.95
+    },
+    "duration": 0.38,
+    "targetRmsDb": -22,
+    "category": "sfx",
+    "seed": 123870,
+    "variants": 3,
+    "priority": 80,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "fire/traveling",
+    "element": "FIRE",
+    "role": "traveling",
+    "profile": {
+      "base": 103,
+      "material": "flame",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.91,
+        3.12
+      ],
+      "cutoff": 5500,
+      "room": "arena",
+      "keywords": "lách tách · đối lưu · phập · nóng",
+      "bass": 0.95
+    },
+    "duration": 1.2,
+    "targetRmsDb": -26,
+    "category": "magic",
+    "loop": true,
+    "seed": 123941,
+    "variants": 3,
+    "priority": 40,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "fire/material",
+    "element": "FIRE",
+    "role": "material",
+    "profile": {
+      "base": 103,
+      "material": "flame",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.91,
+        3.12
+      ],
+      "cutoff": 5500,
+      "room": "arena",
+      "keywords": "lách tách · đối lưu · phập · nóng",
+      "bass": 0.95
+    },
+    "duration": 1.2,
+    "targetRmsDb": -24,
+    "category": "sfx",
+    "repeated": true,
+    "domain": true,
+    "seed": 124012,
+    "variants": 4,
+    "priority": 55,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "fire/motion",
+    "element": "FIRE",
+    "role": "motion",
+    "profile": {
+      "base": 103,
+      "material": "flame",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.91,
+        3.12
+      ],
+      "cutoff": 5500,
+      "room": "arena",
+      "keywords": "lách tách · đối lưu · phập · nóng",
+      "bass": 0.95
+    },
+    "duration": 1.5,
+    "targetRmsDb": -26,
+    "category": "magic",
+    "seed": 124083,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "fire/environment",
+    "element": "FIRE",
+    "role": "environment",
+    "profile": {
+      "base": 103,
+      "material": "flame",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.91,
+        3.12
+      ],
+      "cutoff": 5500,
+      "room": "arena",
+      "keywords": "lách tách · đối lưu · phập · nóng",
+      "bass": 0.95
+    },
+    "duration": 2,
+    "targetRmsDb": -31,
+    "category": "ambience",
+    "loop": true,
+    "domain": true,
+    "seed": 124154,
+    "variants": 3,
+    "priority": 8,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "fire/secondary",
+    "element": "FIRE",
+    "role": "secondary",
+    "profile": {
+      "base": 103,
+      "material": "flame",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.91,
+        3.12
+      ],
+      "cutoff": 5500,
+      "room": "arena",
+      "keywords": "lách tách · đối lưu · phập · nóng",
+      "bass": 0.95
+    },
+    "duration": 0.9,
+    "targetRmsDb": -27,
+    "category": "sfx",
+    "repeated": true,
+    "domain": true,
+    "seed": 124225,
+    "variants": 4,
+    "priority": 35,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "fire/riser",
+    "element": "FIRE",
+    "role": "riser",
+    "profile": {
+      "base": 103,
+      "material": "flame",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.91,
+        3.12
+      ],
+      "cutoff": 5500,
+      "room": "arena",
+      "keywords": "lách tách · đối lưu · phập · nóng",
+      "bass": 0.95
+    },
+    "duration": 0.8,
+    "targetRmsDb": -23,
+    "category": "magic",
+    "seed": 124296,
+    "variants": 3,
+    "priority": 85,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "fire/impact",
+    "element": "FIRE",
+    "role": "impact",
+    "profile": {
+      "base": 103,
+      "material": "flame",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.91,
+        3.12
+      ],
+      "cutoff": 5500,
+      "room": "arena",
+      "keywords": "lách tách · đối lưu · phập · nóng",
+      "bass": 0.95
+    },
+    "duration": 3.2,
+    "targetRmsDb": -19,
+    "category": "impact",
+    "priority": 100,
+    "seed": 124367,
+    "variants": 3,
+    "wet": 0.08,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "fire/shockwave",
+    "element": "FIRE",
+    "role": "shockwave",
+    "profile": {
+      "base": 103,
+      "material": "flame",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.91,
+        3.12
+      ],
+      "cutoff": 5500,
+      "room": "arena",
+      "keywords": "lách tách · đối lưu · phập · nóng",
+      "bass": 0.95
+    },
+    "duration": 1.2,
+    "targetRmsDb": -25,
+    "category": "impact",
+    "seed": 124438,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "fire/aftermath",
+    "element": "FIRE",
+    "role": "aftermath",
+    "profile": {
+      "base": 103,
+      "material": "flame",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.91,
+        3.12
+      ],
+      "cutoff": 5500,
+      "room": "arena",
+      "keywords": "lách tách · đối lưu · phập · nóng",
+      "bass": 0.95
+    },
+    "duration": 3.6,
+    "targetRmsDb": -30,
+    "category": "ambience",
+    "seed": 124509,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "fire/rune",
+    "element": "FIRE",
+    "role": "rune",
+    "profile": {
+      "base": 103,
+      "material": "flame",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.91,
+        3.12
+      ],
+      "cutoff": 5500,
+      "room": "arena",
+      "keywords": "lách tách · đối lưu · phập · nóng",
+      "bass": 0.95
+    },
+    "duration": 0.48,
+    "targetRmsDb": -29,
+    "category": "magic",
+    "repeated": true,
+    "seed": 124580,
+    "variants": 4,
+    "priority": 45,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "fire/ui",
+    "element": "FIRE",
+    "role": "ui",
+    "profile": {
+      "base": 103,
+      "material": "flame",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.91,
+        3.12
+      ],
+      "cutoff": 5500,
+      "room": "arena",
+      "keywords": "lách tách · đối lưu · phập · nóng",
+      "bass": 0.95
+    },
+    "duration": 0.09,
+    "targetRmsDb": -34,
+    "category": "ui",
+    "seed": 124651,
+    "variants": 3,
+    "priority": 60,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "fire/drone",
+    "element": "FIRE",
+    "role": "drone",
+    "profile": {
+      "base": 103,
+      "material": "flame",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.91,
+        3.12
+      ],
+      "cutoff": 5500,
+      "room": "arena",
+      "keywords": "lách tách · đối lưu · phập · nóng",
+      "bass": 0.95
+    },
+    "duration": 2,
+    "targetRmsDb": -34,
+    "category": "drone",
+    "loop": true,
+    "seed": 124722,
+    "variants": 3,
+    "priority": 4,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "ice/precast",
+    "element": "ICE",
+    "role": "precast",
+    "profile": {
+      "base": 691,
+      "material": "crystal",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.47,
+        2.71,
+        4.13,
+        5.3
+      ],
+      "cutoff": 7200,
+      "room": "cave",
+      "keywords": "tinh thể · nứt · trong · lạnh",
+      "bass": 0.75
+    },
+    "duration": 0.3,
+    "targetRmsDb": -25,
+    "category": "magic",
+    "seed": 124737,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "ice/charging",
+    "element": "ICE",
+    "role": "charging",
+    "profile": {
+      "base": 691,
+      "material": "crystal",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.47,
+        2.71,
+        4.13,
+        5.3
+      ],
+      "cutoff": 7200,
+      "room": "cave",
+      "keywords": "tinh thể · nứt · trong · lạnh",
+      "bass": 0.75
+    },
+    "duration": 1.2,
+    "targetRmsDb": -27,
+    "category": "magic",
+    "loop": true,
+    "seed": 124808,
+    "variants": 3,
+    "priority": 50,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "ice/casting",
+    "element": "ICE",
+    "role": "casting",
+    "profile": {
+      "base": 691,
+      "material": "crystal",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.47,
+        2.71,
+        4.13,
+        5.3
+      ],
+      "cutoff": 7200,
+      "room": "cave",
+      "keywords": "tinh thể · nứt · trong · lạnh",
+      "bass": 0.75
+    },
+    "duration": 0.38,
+    "targetRmsDb": -22,
+    "category": "sfx",
+    "seed": 124879,
+    "variants": 3,
+    "priority": 80,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "ice/traveling",
+    "element": "ICE",
+    "role": "traveling",
+    "profile": {
+      "base": 691,
+      "material": "crystal",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.47,
+        2.71,
+        4.13,
+        5.3
+      ],
+      "cutoff": 7200,
+      "room": "cave",
+      "keywords": "tinh thể · nứt · trong · lạnh",
+      "bass": 0.75
+    },
+    "duration": 1.2,
+    "targetRmsDb": -26,
+    "category": "magic",
+    "loop": true,
+    "seed": 124950,
+    "variants": 3,
+    "priority": 40,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "ice/material",
+    "element": "ICE",
+    "role": "material",
+    "profile": {
+      "base": 691,
+      "material": "crystal",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.47,
+        2.71,
+        4.13,
+        5.3
+      ],
+      "cutoff": 7200,
+      "room": "cave",
+      "keywords": "tinh thể · nứt · trong · lạnh",
+      "bass": 0.75
+    },
+    "duration": 1.2,
+    "targetRmsDb": -24,
+    "category": "sfx",
+    "repeated": true,
+    "domain": true,
+    "seed": 125021,
+    "variants": 4,
+    "priority": 55,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "ice/motion",
+    "element": "ICE",
+    "role": "motion",
+    "profile": {
+      "base": 691,
+      "material": "crystal",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.47,
+        2.71,
+        4.13,
+        5.3
+      ],
+      "cutoff": 7200,
+      "room": "cave",
+      "keywords": "tinh thể · nứt · trong · lạnh",
+      "bass": 0.75
+    },
+    "duration": 1.5,
+    "targetRmsDb": -26,
+    "category": "magic",
+    "seed": 125092,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "ice/environment",
+    "element": "ICE",
+    "role": "environment",
+    "profile": {
+      "base": 691,
+      "material": "crystal",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.47,
+        2.71,
+        4.13,
+        5.3
+      ],
+      "cutoff": 7200,
+      "room": "cave",
+      "keywords": "tinh thể · nứt · trong · lạnh",
+      "bass": 0.75
+    },
+    "duration": 2,
+    "targetRmsDb": -31,
+    "category": "ambience",
+    "loop": true,
+    "domain": true,
+    "seed": 125163,
+    "variants": 3,
+    "priority": 8,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "ice/secondary",
+    "element": "ICE",
+    "role": "secondary",
+    "profile": {
+      "base": 691,
+      "material": "crystal",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.47,
+        2.71,
+        4.13,
+        5.3
+      ],
+      "cutoff": 7200,
+      "room": "cave",
+      "keywords": "tinh thể · nứt · trong · lạnh",
+      "bass": 0.75
+    },
+    "duration": 0.9,
+    "targetRmsDb": -27,
+    "category": "sfx",
+    "repeated": true,
+    "domain": true,
+    "seed": 125234,
+    "variants": 4,
+    "priority": 35,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "ice/riser",
+    "element": "ICE",
+    "role": "riser",
+    "profile": {
+      "base": 691,
+      "material": "crystal",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.47,
+        2.71,
+        4.13,
+        5.3
+      ],
+      "cutoff": 7200,
+      "room": "cave",
+      "keywords": "tinh thể · nứt · trong · lạnh",
+      "bass": 0.75
+    },
+    "duration": 0.8,
+    "targetRmsDb": -23,
+    "category": "magic",
+    "seed": 125305,
+    "variants": 3,
+    "priority": 85,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "ice/impact",
+    "element": "ICE",
+    "role": "impact",
+    "profile": {
+      "base": 691,
+      "material": "crystal",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.47,
+        2.71,
+        4.13,
+        5.3
+      ],
+      "cutoff": 7200,
+      "room": "cave",
+      "keywords": "tinh thể · nứt · trong · lạnh",
+      "bass": 0.75
+    },
+    "duration": 3.2,
+    "targetRmsDb": -19,
+    "category": "impact",
+    "priority": 100,
+    "seed": 125376,
+    "variants": 3,
+    "wet": 0.08,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "ice/shockwave",
+    "element": "ICE",
+    "role": "shockwave",
+    "profile": {
+      "base": 691,
+      "material": "crystal",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.47,
+        2.71,
+        4.13,
+        5.3
+      ],
+      "cutoff": 7200,
+      "room": "cave",
+      "keywords": "tinh thể · nứt · trong · lạnh",
+      "bass": 0.75
+    },
+    "duration": 1.2,
+    "targetRmsDb": -25,
+    "category": "impact",
+    "seed": 125447,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "ice/aftermath",
+    "element": "ICE",
+    "role": "aftermath",
+    "profile": {
+      "base": 691,
+      "material": "crystal",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.47,
+        2.71,
+        4.13,
+        5.3
+      ],
+      "cutoff": 7200,
+      "room": "cave",
+      "keywords": "tinh thể · nứt · trong · lạnh",
+      "bass": 0.75
+    },
+    "duration": 3.6,
+    "targetRmsDb": -30,
+    "category": "ambience",
+    "seed": 125518,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "ice/rune",
+    "element": "ICE",
+    "role": "rune",
+    "profile": {
+      "base": 691,
+      "material": "crystal",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.47,
+        2.71,
+        4.13,
+        5.3
+      ],
+      "cutoff": 7200,
+      "room": "cave",
+      "keywords": "tinh thể · nứt · trong · lạnh",
+      "bass": 0.75
+    },
+    "duration": 0.48,
+    "targetRmsDb": -29,
+    "category": "magic",
+    "repeated": true,
+    "seed": 125589,
+    "variants": 4,
+    "priority": 45,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "ice/ui",
+    "element": "ICE",
+    "role": "ui",
+    "profile": {
+      "base": 691,
+      "material": "crystal",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.47,
+        2.71,
+        4.13,
+        5.3
+      ],
+      "cutoff": 7200,
+      "room": "cave",
+      "keywords": "tinh thể · nứt · trong · lạnh",
+      "bass": 0.75
+    },
+    "duration": 0.09,
+    "targetRmsDb": -34,
+    "category": "ui",
+    "seed": 125660,
+    "variants": 3,
+    "priority": 60,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "ice/drone",
+    "element": "ICE",
+    "role": "drone",
+    "profile": {
+      "base": 691,
+      "material": "crystal",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.47,
+        2.71,
+        4.13,
+        5.3
+      ],
+      "cutoff": 7200,
+      "room": "cave",
+      "keywords": "tinh thể · nứt · trong · lạnh",
+      "bass": 0.75
+    },
+    "duration": 2,
+    "targetRmsDb": -34,
+    "category": "drone",
+    "loop": true,
+    "seed": 125731,
+    "variants": 3,
+    "priority": 4,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "lightning/precast",
+    "element": "LIGHTNING",
+    "role": "precast",
+    "profile": {
+      "base": 111,
+      "material": "electric",
+      "noise": "white",
+      "modes": [
+        1,
+        2,
+        4.17,
+        7.2
+      ],
+      "cutoff": 8500,
+      "room": "arena",
+      "keywords": "crack · ion · buzz · sấm",
+      "bass": 1
+    },
+    "duration": 0.3,
+    "targetRmsDb": -25,
+    "category": "magic",
+    "seed": 125746,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "lightning/charging",
+    "element": "LIGHTNING",
+    "role": "charging",
+    "profile": {
+      "base": 111,
+      "material": "electric",
+      "noise": "white",
+      "modes": [
+        1,
+        2,
+        4.17,
+        7.2
+      ],
+      "cutoff": 8500,
+      "room": "arena",
+      "keywords": "crack · ion · buzz · sấm",
+      "bass": 1
+    },
+    "duration": 1.2,
+    "targetRmsDb": -27,
+    "category": "magic",
+    "loop": true,
+    "seed": 125817,
+    "variants": 3,
+    "priority": 50,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "lightning/casting",
+    "element": "LIGHTNING",
+    "role": "casting",
+    "profile": {
+      "base": 111,
+      "material": "electric",
+      "noise": "white",
+      "modes": [
+        1,
+        2,
+        4.17,
+        7.2
+      ],
+      "cutoff": 8500,
+      "room": "arena",
+      "keywords": "crack · ion · buzz · sấm",
+      "bass": 1
+    },
+    "duration": 0.38,
+    "targetRmsDb": -22,
+    "category": "sfx",
+    "seed": 125888,
+    "variants": 3,
+    "priority": 80,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "lightning/traveling",
+    "element": "LIGHTNING",
+    "role": "traveling",
+    "profile": {
+      "base": 111,
+      "material": "electric",
+      "noise": "white",
+      "modes": [
+        1,
+        2,
+        4.17,
+        7.2
+      ],
+      "cutoff": 8500,
+      "room": "arena",
+      "keywords": "crack · ion · buzz · sấm",
+      "bass": 1
+    },
+    "duration": 1.2,
+    "targetRmsDb": -26,
+    "category": "magic",
+    "loop": true,
+    "seed": 125959,
+    "variants": 3,
+    "priority": 40,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "lightning/material",
+    "element": "LIGHTNING",
+    "role": "material",
+    "profile": {
+      "base": 111,
+      "material": "electric",
+      "noise": "white",
+      "modes": [
+        1,
+        2,
+        4.17,
+        7.2
+      ],
+      "cutoff": 8500,
+      "room": "arena",
+      "keywords": "crack · ion · buzz · sấm",
+      "bass": 1
+    },
+    "duration": 1.2,
+    "targetRmsDb": -24,
+    "category": "sfx",
+    "repeated": true,
+    "domain": true,
+    "seed": 126030,
+    "variants": 4,
+    "priority": 55,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "lightning/motion",
+    "element": "LIGHTNING",
+    "role": "motion",
+    "profile": {
+      "base": 111,
+      "material": "electric",
+      "noise": "white",
+      "modes": [
+        1,
+        2,
+        4.17,
+        7.2
+      ],
+      "cutoff": 8500,
+      "room": "arena",
+      "keywords": "crack · ion · buzz · sấm",
+      "bass": 1
+    },
+    "duration": 1.5,
+    "targetRmsDb": -26,
+    "category": "magic",
+    "seed": 126101,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "lightning/environment",
+    "element": "LIGHTNING",
+    "role": "environment",
+    "profile": {
+      "base": 111,
+      "material": "electric",
+      "noise": "white",
+      "modes": [
+        1,
+        2,
+        4.17,
+        7.2
+      ],
+      "cutoff": 8500,
+      "room": "arena",
+      "keywords": "crack · ion · buzz · sấm",
+      "bass": 1
+    },
+    "duration": 2,
+    "targetRmsDb": -31,
+    "category": "ambience",
+    "loop": true,
+    "domain": true,
+    "seed": 126172,
+    "variants": 3,
+    "priority": 8,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "lightning/secondary",
+    "element": "LIGHTNING",
+    "role": "secondary",
+    "profile": {
+      "base": 111,
+      "material": "electric",
+      "noise": "white",
+      "modes": [
+        1,
+        2,
+        4.17,
+        7.2
+      ],
+      "cutoff": 8500,
+      "room": "arena",
+      "keywords": "crack · ion · buzz · sấm",
+      "bass": 1
+    },
+    "duration": 0.9,
+    "targetRmsDb": -27,
+    "category": "sfx",
+    "repeated": true,
+    "domain": true,
+    "seed": 126243,
+    "variants": 4,
+    "priority": 35,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "lightning/riser",
+    "element": "LIGHTNING",
+    "role": "riser",
+    "profile": {
+      "base": 111,
+      "material": "electric",
+      "noise": "white",
+      "modes": [
+        1,
+        2,
+        4.17,
+        7.2
+      ],
+      "cutoff": 8500,
+      "room": "arena",
+      "keywords": "crack · ion · buzz · sấm",
+      "bass": 1
+    },
+    "duration": 0.8,
+    "targetRmsDb": -23,
+    "category": "magic",
+    "seed": 126314,
+    "variants": 3,
+    "priority": 85,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "lightning/impact",
+    "element": "LIGHTNING",
+    "role": "impact",
+    "profile": {
+      "base": 111,
+      "material": "electric",
+      "noise": "white",
+      "modes": [
+        1,
+        2,
+        4.17,
+        7.2
+      ],
+      "cutoff": 8500,
+      "room": "arena",
+      "keywords": "crack · ion · buzz · sấm",
+      "bass": 1
+    },
+    "duration": 3.2,
+    "targetRmsDb": -19,
+    "category": "impact",
+    "priority": 100,
+    "seed": 126385,
+    "variants": 3,
+    "wet": 0.08,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "lightning/shockwave",
+    "element": "LIGHTNING",
+    "role": "shockwave",
+    "profile": {
+      "base": 111,
+      "material": "electric",
+      "noise": "white",
+      "modes": [
+        1,
+        2,
+        4.17,
+        7.2
+      ],
+      "cutoff": 8500,
+      "room": "arena",
+      "keywords": "crack · ion · buzz · sấm",
+      "bass": 1
+    },
+    "duration": 1.2,
+    "targetRmsDb": -25,
+    "category": "impact",
+    "seed": 126456,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "lightning/aftermath",
+    "element": "LIGHTNING",
+    "role": "aftermath",
+    "profile": {
+      "base": 111,
+      "material": "electric",
+      "noise": "white",
+      "modes": [
+        1,
+        2,
+        4.17,
+        7.2
+      ],
+      "cutoff": 8500,
+      "room": "arena",
+      "keywords": "crack · ion · buzz · sấm",
+      "bass": 1
+    },
+    "duration": 3.6,
+    "targetRmsDb": -30,
+    "category": "ambience",
+    "seed": 126527,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "lightning/rune",
+    "element": "LIGHTNING",
+    "role": "rune",
+    "profile": {
+      "base": 111,
+      "material": "electric",
+      "noise": "white",
+      "modes": [
+        1,
+        2,
+        4.17,
+        7.2
+      ],
+      "cutoff": 8500,
+      "room": "arena",
+      "keywords": "crack · ion · buzz · sấm",
+      "bass": 1
+    },
+    "duration": 0.48,
+    "targetRmsDb": -29,
+    "category": "magic",
+    "repeated": true,
+    "seed": 126598,
+    "variants": 4,
+    "priority": 45,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "lightning/ui",
+    "element": "LIGHTNING",
+    "role": "ui",
+    "profile": {
+      "base": 111,
+      "material": "electric",
+      "noise": "white",
+      "modes": [
+        1,
+        2,
+        4.17,
+        7.2
+      ],
+      "cutoff": 8500,
+      "room": "arena",
+      "keywords": "crack · ion · buzz · sấm",
+      "bass": 1
+    },
+    "duration": 0.09,
+    "targetRmsDb": -34,
+    "category": "ui",
+    "seed": 126669,
+    "variants": 3,
+    "priority": 60,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "lightning/drone",
+    "element": "LIGHTNING",
+    "role": "drone",
+    "profile": {
+      "base": 111,
+      "material": "electric",
+      "noise": "white",
+      "modes": [
+        1,
+        2,
+        4.17,
+        7.2
+      ],
+      "cutoff": 8500,
+      "room": "arena",
+      "keywords": "crack · ion · buzz · sấm",
+      "bass": 1
+    },
+    "duration": 2,
+    "targetRmsDb": -34,
+    "category": "drone",
+    "loop": true,
+    "seed": 126740,
+    "variants": 3,
+    "priority": 4,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "poison/precast",
+    "element": "POISON",
+    "role": "precast",
+    "profile": {
+      "base": 139,
+      "material": "slime",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.23,
+        2.7,
+        3.71
+      ],
+      "cutoff": 4800,
+      "room": "cave",
+      "keywords": "nhầy · sủi · xì · ăn mòn",
+      "bass": 0.8
+    },
+    "duration": 0.3,
+    "targetRmsDb": -25,
+    "category": "magic",
+    "seed": 126755,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "poison/charging",
+    "element": "POISON",
+    "role": "charging",
+    "profile": {
+      "base": 139,
+      "material": "slime",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.23,
+        2.7,
+        3.71
+      ],
+      "cutoff": 4800,
+      "room": "cave",
+      "keywords": "nhầy · sủi · xì · ăn mòn",
+      "bass": 0.8
+    },
+    "duration": 1.2,
+    "targetRmsDb": -27,
+    "category": "magic",
+    "loop": true,
+    "seed": 126826,
+    "variants": 3,
+    "priority": 50,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "poison/casting",
+    "element": "POISON",
+    "role": "casting",
+    "profile": {
+      "base": 139,
+      "material": "slime",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.23,
+        2.7,
+        3.71
+      ],
+      "cutoff": 4800,
+      "room": "cave",
+      "keywords": "nhầy · sủi · xì · ăn mòn",
+      "bass": 0.8
+    },
+    "duration": 0.38,
+    "targetRmsDb": -22,
+    "category": "sfx",
+    "seed": 126897,
+    "variants": 3,
+    "priority": 80,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "poison/traveling",
+    "element": "POISON",
+    "role": "traveling",
+    "profile": {
+      "base": 139,
+      "material": "slime",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.23,
+        2.7,
+        3.71
+      ],
+      "cutoff": 4800,
+      "room": "cave",
+      "keywords": "nhầy · sủi · xì · ăn mòn",
+      "bass": 0.8
+    },
+    "duration": 1.2,
+    "targetRmsDb": -26,
+    "category": "magic",
+    "loop": true,
+    "seed": 126968,
+    "variants": 3,
+    "priority": 40,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "poison/material",
+    "element": "POISON",
+    "role": "material",
+    "profile": {
+      "base": 139,
+      "material": "slime",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.23,
+        2.7,
+        3.71
+      ],
+      "cutoff": 4800,
+      "room": "cave",
+      "keywords": "nhầy · sủi · xì · ăn mòn",
+      "bass": 0.8
+    },
+    "duration": 1.2,
+    "targetRmsDb": -24,
+    "category": "sfx",
+    "repeated": true,
+    "domain": true,
+    "seed": 127039,
+    "variants": 4,
+    "priority": 55,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "poison/motion",
+    "element": "POISON",
+    "role": "motion",
+    "profile": {
+      "base": 139,
+      "material": "slime",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.23,
+        2.7,
+        3.71
+      ],
+      "cutoff": 4800,
+      "room": "cave",
+      "keywords": "nhầy · sủi · xì · ăn mòn",
+      "bass": 0.8
+    },
+    "duration": 1.5,
+    "targetRmsDb": -26,
+    "category": "magic",
+    "seed": 127110,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "poison/environment",
+    "element": "POISON",
+    "role": "environment",
+    "profile": {
+      "base": 139,
+      "material": "slime",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.23,
+        2.7,
+        3.71
+      ],
+      "cutoff": 4800,
+      "room": "cave",
+      "keywords": "nhầy · sủi · xì · ăn mòn",
+      "bass": 0.8
+    },
+    "duration": 2,
+    "targetRmsDb": -31,
+    "category": "ambience",
+    "loop": true,
+    "domain": true,
+    "seed": 127181,
+    "variants": 3,
+    "priority": 8,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "poison/secondary",
+    "element": "POISON",
+    "role": "secondary",
+    "profile": {
+      "base": 139,
+      "material": "slime",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.23,
+        2.7,
+        3.71
+      ],
+      "cutoff": 4800,
+      "room": "cave",
+      "keywords": "nhầy · sủi · xì · ăn mòn",
+      "bass": 0.8
+    },
+    "duration": 0.9,
+    "targetRmsDb": -27,
+    "category": "sfx",
+    "repeated": true,
+    "domain": true,
+    "seed": 127252,
+    "variants": 4,
+    "priority": 35,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "poison/riser",
+    "element": "POISON",
+    "role": "riser",
+    "profile": {
+      "base": 139,
+      "material": "slime",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.23,
+        2.7,
+        3.71
+      ],
+      "cutoff": 4800,
+      "room": "cave",
+      "keywords": "nhầy · sủi · xì · ăn mòn",
+      "bass": 0.8
+    },
+    "duration": 0.8,
+    "targetRmsDb": -23,
+    "category": "magic",
+    "seed": 127323,
+    "variants": 3,
+    "priority": 85,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "poison/impact",
+    "element": "POISON",
+    "role": "impact",
+    "profile": {
+      "base": 139,
+      "material": "slime",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.23,
+        2.7,
+        3.71
+      ],
+      "cutoff": 4800,
+      "room": "cave",
+      "keywords": "nhầy · sủi · xì · ăn mòn",
+      "bass": 0.8
+    },
+    "duration": 3.2,
+    "targetRmsDb": -19,
+    "category": "impact",
+    "priority": 100,
+    "seed": 127394,
+    "variants": 3,
+    "wet": 0.08,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "poison/shockwave",
+    "element": "POISON",
+    "role": "shockwave",
+    "profile": {
+      "base": 139,
+      "material": "slime",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.23,
+        2.7,
+        3.71
+      ],
+      "cutoff": 4800,
+      "room": "cave",
+      "keywords": "nhầy · sủi · xì · ăn mòn",
+      "bass": 0.8
+    },
+    "duration": 1.2,
+    "targetRmsDb": -25,
+    "category": "impact",
+    "seed": 127465,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "poison/aftermath",
+    "element": "POISON",
+    "role": "aftermath",
+    "profile": {
+      "base": 139,
+      "material": "slime",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.23,
+        2.7,
+        3.71
+      ],
+      "cutoff": 4800,
+      "room": "cave",
+      "keywords": "nhầy · sủi · xì · ăn mòn",
+      "bass": 0.8
+    },
+    "duration": 3.6,
+    "targetRmsDb": -30,
+    "category": "ambience",
+    "seed": 127536,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "poison/rune",
+    "element": "POISON",
+    "role": "rune",
+    "profile": {
+      "base": 139,
+      "material": "slime",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.23,
+        2.7,
+        3.71
+      ],
+      "cutoff": 4800,
+      "room": "cave",
+      "keywords": "nhầy · sủi · xì · ăn mòn",
+      "bass": 0.8
+    },
+    "duration": 0.48,
+    "targetRmsDb": -29,
+    "category": "magic",
+    "repeated": true,
+    "seed": 127607,
+    "variants": 4,
+    "priority": 45,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "poison/ui",
+    "element": "POISON",
+    "role": "ui",
+    "profile": {
+      "base": 139,
+      "material": "slime",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.23,
+        2.7,
+        3.71
+      ],
+      "cutoff": 4800,
+      "room": "cave",
+      "keywords": "nhầy · sủi · xì · ăn mòn",
+      "bass": 0.8
+    },
+    "duration": 0.09,
+    "targetRmsDb": -34,
+    "category": "ui",
+    "seed": 127678,
+    "variants": 3,
+    "priority": 60,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "poison/drone",
+    "element": "POISON",
+    "role": "drone",
+    "profile": {
+      "base": 139,
+      "material": "slime",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.23,
+        2.7,
+        3.71
+      ],
+      "cutoff": 4800,
+      "room": "cave",
+      "keywords": "nhầy · sủi · xì · ăn mòn",
+      "bass": 0.8
+    },
+    "duration": 2,
+    "targetRmsDb": -34,
+    "category": "drone",
+    "loop": true,
+    "seed": 127749,
+    "variants": 3,
+    "priority": 4,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "light/precast",
+    "element": "LIGHT",
+    "role": "precast",
+    "profile": {
+      "base": 528,
+      "material": "bell",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.25,
+        1.5,
+        2,
+        3
+      ],
+      "cutoff": 7800,
+      "room": "cathedral",
+      "keywords": "chuông · sáng · thanh · lấp lánh",
+      "bass": 0.65
+    },
+    "duration": 0.3,
+    "targetRmsDb": -25,
+    "category": "magic",
+    "seed": 127764,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "light/charging",
+    "element": "LIGHT",
+    "role": "charging",
+    "profile": {
+      "base": 528,
+      "material": "bell",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.25,
+        1.5,
+        2,
+        3
+      ],
+      "cutoff": 7800,
+      "room": "cathedral",
+      "keywords": "chuông · sáng · thanh · lấp lánh",
+      "bass": 0.65
+    },
+    "duration": 1.2,
+    "targetRmsDb": -27,
+    "category": "magic",
+    "loop": true,
+    "seed": 127835,
+    "variants": 3,
+    "priority": 50,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "light/casting",
+    "element": "LIGHT",
+    "role": "casting",
+    "profile": {
+      "base": 528,
+      "material": "bell",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.25,
+        1.5,
+        2,
+        3
+      ],
+      "cutoff": 7800,
+      "room": "cathedral",
+      "keywords": "chuông · sáng · thanh · lấp lánh",
+      "bass": 0.65
+    },
+    "duration": 0.38,
+    "targetRmsDb": -22,
+    "category": "sfx",
+    "seed": 127906,
+    "variants": 3,
+    "priority": 80,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "light/traveling",
+    "element": "LIGHT",
+    "role": "traveling",
+    "profile": {
+      "base": 528,
+      "material": "bell",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.25,
+        1.5,
+        2,
+        3
+      ],
+      "cutoff": 7800,
+      "room": "cathedral",
+      "keywords": "chuông · sáng · thanh · lấp lánh",
+      "bass": 0.65
+    },
+    "duration": 1.2,
+    "targetRmsDb": -26,
+    "category": "magic",
+    "loop": true,
+    "seed": 127977,
+    "variants": 3,
+    "priority": 40,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "light/material",
+    "element": "LIGHT",
+    "role": "material",
+    "profile": {
+      "base": 528,
+      "material": "bell",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.25,
+        1.5,
+        2,
+        3
+      ],
+      "cutoff": 7800,
+      "room": "cathedral",
+      "keywords": "chuông · sáng · thanh · lấp lánh",
+      "bass": 0.65
+    },
+    "duration": 1.2,
+    "targetRmsDb": -24,
+    "category": "sfx",
+    "repeated": true,
+    "domain": true,
+    "seed": 128048,
+    "variants": 4,
+    "priority": 55,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "light/motion",
+    "element": "LIGHT",
+    "role": "motion",
+    "profile": {
+      "base": 528,
+      "material": "bell",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.25,
+        1.5,
+        2,
+        3
+      ],
+      "cutoff": 7800,
+      "room": "cathedral",
+      "keywords": "chuông · sáng · thanh · lấp lánh",
+      "bass": 0.65
+    },
+    "duration": 1.5,
+    "targetRmsDb": -26,
+    "category": "magic",
+    "seed": 128119,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "light/environment",
+    "element": "LIGHT",
+    "role": "environment",
+    "profile": {
+      "base": 528,
+      "material": "bell",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.25,
+        1.5,
+        2,
+        3
+      ],
+      "cutoff": 7800,
+      "room": "cathedral",
+      "keywords": "chuông · sáng · thanh · lấp lánh",
+      "bass": 0.65
+    },
+    "duration": 2,
+    "targetRmsDb": -31,
+    "category": "ambience",
+    "loop": true,
+    "domain": true,
+    "seed": 128190,
+    "variants": 3,
+    "priority": 8,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "light/secondary",
+    "element": "LIGHT",
+    "role": "secondary",
+    "profile": {
+      "base": 528,
+      "material": "bell",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.25,
+        1.5,
+        2,
+        3
+      ],
+      "cutoff": 7800,
+      "room": "cathedral",
+      "keywords": "chuông · sáng · thanh · lấp lánh",
+      "bass": 0.65
+    },
+    "duration": 0.9,
+    "targetRmsDb": -27,
+    "category": "sfx",
+    "repeated": true,
+    "domain": true,
+    "seed": 128261,
+    "variants": 4,
+    "priority": 35,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "light/riser",
+    "element": "LIGHT",
+    "role": "riser",
+    "profile": {
+      "base": 528,
+      "material": "bell",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.25,
+        1.5,
+        2,
+        3
+      ],
+      "cutoff": 7800,
+      "room": "cathedral",
+      "keywords": "chuông · sáng · thanh · lấp lánh",
+      "bass": 0.65
+    },
+    "duration": 0.8,
+    "targetRmsDb": -23,
+    "category": "magic",
+    "seed": 128332,
+    "variants": 3,
+    "priority": 85,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "light/impact",
+    "element": "LIGHT",
+    "role": "impact",
+    "profile": {
+      "base": 528,
+      "material": "bell",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.25,
+        1.5,
+        2,
+        3
+      ],
+      "cutoff": 7800,
+      "room": "cathedral",
+      "keywords": "chuông · sáng · thanh · lấp lánh",
+      "bass": 0.65
+    },
+    "duration": 3.2,
+    "targetRmsDb": -19,
+    "category": "impact",
+    "priority": 100,
+    "seed": 128403,
+    "variants": 3,
+    "wet": 0.08,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "light/shockwave",
+    "element": "LIGHT",
+    "role": "shockwave",
+    "profile": {
+      "base": 528,
+      "material": "bell",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.25,
+        1.5,
+        2,
+        3
+      ],
+      "cutoff": 7800,
+      "room": "cathedral",
+      "keywords": "chuông · sáng · thanh · lấp lánh",
+      "bass": 0.65
+    },
+    "duration": 1.2,
+    "targetRmsDb": -25,
+    "category": "impact",
+    "seed": 128474,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "light/aftermath",
+    "element": "LIGHT",
+    "role": "aftermath",
+    "profile": {
+      "base": 528,
+      "material": "bell",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.25,
+        1.5,
+        2,
+        3
+      ],
+      "cutoff": 7800,
+      "room": "cathedral",
+      "keywords": "chuông · sáng · thanh · lấp lánh",
+      "bass": 0.65
+    },
+    "duration": 3.6,
+    "targetRmsDb": -30,
+    "category": "ambience",
+    "seed": 128545,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "light/rune",
+    "element": "LIGHT",
+    "role": "rune",
+    "profile": {
+      "base": 528,
+      "material": "bell",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.25,
+        1.5,
+        2,
+        3
+      ],
+      "cutoff": 7800,
+      "room": "cathedral",
+      "keywords": "chuông · sáng · thanh · lấp lánh",
+      "bass": 0.65
+    },
+    "duration": 0.48,
+    "targetRmsDb": -29,
+    "category": "magic",
+    "repeated": true,
+    "seed": 128616,
+    "variants": 4,
+    "priority": 45,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "light/ui",
+    "element": "LIGHT",
+    "role": "ui",
+    "profile": {
+      "base": 528,
+      "material": "bell",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.25,
+        1.5,
+        2,
+        3
+      ],
+      "cutoff": 7800,
+      "room": "cathedral",
+      "keywords": "chuông · sáng · thanh · lấp lánh",
+      "bass": 0.65
+    },
+    "duration": 0.09,
+    "targetRmsDb": -34,
+    "category": "ui",
+    "seed": 128687,
+    "variants": 3,
+    "priority": 60,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "light/drone",
+    "element": "LIGHT",
+    "role": "drone",
+    "profile": {
+      "base": 528,
+      "material": "bell",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.25,
+        1.5,
+        2,
+        3
+      ],
+      "cutoff": 7800,
+      "room": "cathedral",
+      "keywords": "chuông · sáng · thanh · lấp lánh",
+      "bass": 0.65
+    },
+    "duration": 2,
+    "targetRmsDb": -34,
+    "category": "drone",
+    "loop": true,
+    "seed": 128758,
+    "variants": 3,
+    "priority": 4,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "shadow/precast",
+    "element": "SHADOW",
+    "role": "precast",
+    "profile": {
+      "base": 58,
+      "material": "void",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.067,
+        1.39,
+        2.12
+      ],
+      "cutoff": 1500,
+      "room": "void",
+      "keywords": "hút · trầm · u · mờ",
+      "bass": 1
+    },
+    "duration": 0.3,
+    "targetRmsDb": -25,
+    "category": "magic",
+    "seed": 128773,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "shadow/charging",
+    "element": "SHADOW",
+    "role": "charging",
+    "profile": {
+      "base": 58,
+      "material": "void",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.067,
+        1.39,
+        2.12
+      ],
+      "cutoff": 1500,
+      "room": "void",
+      "keywords": "hút · trầm · u · mờ",
+      "bass": 1
+    },
+    "duration": 1.2,
+    "targetRmsDb": -27,
+    "category": "magic",
+    "loop": true,
+    "seed": 128844,
+    "variants": 3,
+    "priority": 50,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "shadow/casting",
+    "element": "SHADOW",
+    "role": "casting",
+    "profile": {
+      "base": 58,
+      "material": "void",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.067,
+        1.39,
+        2.12
+      ],
+      "cutoff": 1500,
+      "room": "void",
+      "keywords": "hút · trầm · u · mờ",
+      "bass": 1
+    },
+    "duration": 0.38,
+    "targetRmsDb": -22,
+    "category": "sfx",
+    "seed": 128915,
+    "variants": 3,
+    "priority": 80,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "shadow/traveling",
+    "element": "SHADOW",
+    "role": "traveling",
+    "profile": {
+      "base": 58,
+      "material": "void",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.067,
+        1.39,
+        2.12
+      ],
+      "cutoff": 1500,
+      "room": "void",
+      "keywords": "hút · trầm · u · mờ",
+      "bass": 1
+    },
+    "duration": 1.2,
+    "targetRmsDb": -26,
+    "category": "magic",
+    "loop": true,
+    "seed": 128986,
+    "variants": 3,
+    "priority": 40,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "shadow/material",
+    "element": "SHADOW",
+    "role": "material",
+    "profile": {
+      "base": 58,
+      "material": "void",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.067,
+        1.39,
+        2.12
+      ],
+      "cutoff": 1500,
+      "room": "void",
+      "keywords": "hút · trầm · u · mờ",
+      "bass": 1
+    },
+    "duration": 1.2,
+    "targetRmsDb": -24,
+    "category": "sfx",
+    "repeated": true,
+    "domain": true,
+    "seed": 129057,
+    "variants": 4,
+    "priority": 55,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "shadow/motion",
+    "element": "SHADOW",
+    "role": "motion",
+    "profile": {
+      "base": 58,
+      "material": "void",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.067,
+        1.39,
+        2.12
+      ],
+      "cutoff": 1500,
+      "room": "void",
+      "keywords": "hút · trầm · u · mờ",
+      "bass": 1
+    },
+    "duration": 1.5,
+    "targetRmsDb": -26,
+    "category": "magic",
+    "seed": 129128,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "shadow/environment",
+    "element": "SHADOW",
+    "role": "environment",
+    "profile": {
+      "base": 58,
+      "material": "void",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.067,
+        1.39,
+        2.12
+      ],
+      "cutoff": 1500,
+      "room": "void",
+      "keywords": "hút · trầm · u · mờ",
+      "bass": 1
+    },
+    "duration": 2,
+    "targetRmsDb": -31,
+    "category": "ambience",
+    "loop": true,
+    "domain": true,
+    "seed": 129199,
+    "variants": 3,
+    "priority": 8,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "shadow/secondary",
+    "element": "SHADOW",
+    "role": "secondary",
+    "profile": {
+      "base": 58,
+      "material": "void",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.067,
+        1.39,
+        2.12
+      ],
+      "cutoff": 1500,
+      "room": "void",
+      "keywords": "hút · trầm · u · mờ",
+      "bass": 1
+    },
+    "duration": 0.9,
+    "targetRmsDb": -27,
+    "category": "sfx",
+    "repeated": true,
+    "domain": true,
+    "seed": 129270,
+    "variants": 4,
+    "priority": 35,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "shadow/riser",
+    "element": "SHADOW",
+    "role": "riser",
+    "profile": {
+      "base": 58,
+      "material": "void",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.067,
+        1.39,
+        2.12
+      ],
+      "cutoff": 1500,
+      "room": "void",
+      "keywords": "hút · trầm · u · mờ",
+      "bass": 1
+    },
+    "duration": 0.8,
+    "targetRmsDb": -23,
+    "category": "magic",
+    "seed": 129341,
+    "variants": 3,
+    "priority": 85,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "shadow/impact",
+    "element": "SHADOW",
+    "role": "impact",
+    "profile": {
+      "base": 58,
+      "material": "void",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.067,
+        1.39,
+        2.12
+      ],
+      "cutoff": 1500,
+      "room": "void",
+      "keywords": "hút · trầm · u · mờ",
+      "bass": 1
+    },
+    "duration": 3.2,
+    "targetRmsDb": -19,
+    "category": "impact",
+    "priority": 100,
+    "seed": 129412,
+    "variants": 3,
+    "wet": 0.08,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "shadow/shockwave",
+    "element": "SHADOW",
+    "role": "shockwave",
+    "profile": {
+      "base": 58,
+      "material": "void",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.067,
+        1.39,
+        2.12
+      ],
+      "cutoff": 1500,
+      "room": "void",
+      "keywords": "hút · trầm · u · mờ",
+      "bass": 1
+    },
+    "duration": 1.2,
+    "targetRmsDb": -25,
+    "category": "impact",
+    "seed": 129483,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "shadow/aftermath",
+    "element": "SHADOW",
+    "role": "aftermath",
+    "profile": {
+      "base": 58,
+      "material": "void",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.067,
+        1.39,
+        2.12
+      ],
+      "cutoff": 1500,
+      "room": "void",
+      "keywords": "hút · trầm · u · mờ",
+      "bass": 1
+    },
+    "duration": 3.6,
+    "targetRmsDb": -30,
+    "category": "ambience",
+    "seed": 129554,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "shadow/rune",
+    "element": "SHADOW",
+    "role": "rune",
+    "profile": {
+      "base": 58,
+      "material": "void",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.067,
+        1.39,
+        2.12
+      ],
+      "cutoff": 1500,
+      "room": "void",
+      "keywords": "hút · trầm · u · mờ",
+      "bass": 1
+    },
+    "duration": 0.48,
+    "targetRmsDb": -29,
+    "category": "magic",
+    "repeated": true,
+    "seed": 129625,
+    "variants": 4,
+    "priority": 45,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "shadow/ui",
+    "element": "SHADOW",
+    "role": "ui",
+    "profile": {
+      "base": 58,
+      "material": "void",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.067,
+        1.39,
+        2.12
+      ],
+      "cutoff": 1500,
+      "room": "void",
+      "keywords": "hút · trầm · u · mờ",
+      "bass": 1
+    },
+    "duration": 0.09,
+    "targetRmsDb": -34,
+    "category": "ui",
+    "seed": 129696,
+    "variants": 3,
+    "priority": 60,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "shadow/drone",
+    "element": "SHADOW",
+    "role": "drone",
+    "profile": {
+      "base": 58,
+      "material": "void",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.067,
+        1.39,
+        2.12
+      ],
+      "cutoff": 1500,
+      "room": "void",
+      "keywords": "hút · trầm · u · mờ",
+      "bass": 1
+    },
+    "duration": 2,
+    "targetRmsDb": -34,
+    "category": "drone",
+    "loop": true,
+    "seed": 129767,
+    "variants": 3,
+    "priority": 4,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "blood/precast",
+    "element": "BLOOD",
+    "role": "precast",
+    "profile": {
+      "base": 92,
+      "material": "viscous",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.31,
+        2.43,
+        3.82
+      ],
+      "cutoff": 2400,
+      "room": "cave",
+      "keywords": "sệt · nhịp · ẩm · căng",
+      "bass": 0.85
+    },
+    "duration": 0.3,
+    "targetRmsDb": -25,
+    "category": "magic",
+    "seed": 129782,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "blood/charging",
+    "element": "BLOOD",
+    "role": "charging",
+    "profile": {
+      "base": 92,
+      "material": "viscous",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.31,
+        2.43,
+        3.82
+      ],
+      "cutoff": 2400,
+      "room": "cave",
+      "keywords": "sệt · nhịp · ẩm · căng",
+      "bass": 0.85
+    },
+    "duration": 1.2,
+    "targetRmsDb": -27,
+    "category": "magic",
+    "loop": true,
+    "seed": 129853,
+    "variants": 3,
+    "priority": 50,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "blood/casting",
+    "element": "BLOOD",
+    "role": "casting",
+    "profile": {
+      "base": 92,
+      "material": "viscous",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.31,
+        2.43,
+        3.82
+      ],
+      "cutoff": 2400,
+      "room": "cave",
+      "keywords": "sệt · nhịp · ẩm · căng",
+      "bass": 0.85
+    },
+    "duration": 0.38,
+    "targetRmsDb": -22,
+    "category": "sfx",
+    "seed": 129924,
+    "variants": 3,
+    "priority": 80,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "blood/traveling",
+    "element": "BLOOD",
+    "role": "traveling",
+    "profile": {
+      "base": 92,
+      "material": "viscous",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.31,
+        2.43,
+        3.82
+      ],
+      "cutoff": 2400,
+      "room": "cave",
+      "keywords": "sệt · nhịp · ẩm · căng",
+      "bass": 0.85
+    },
+    "duration": 1.2,
+    "targetRmsDb": -26,
+    "category": "magic",
+    "loop": true,
+    "seed": 129995,
+    "variants": 3,
+    "priority": 40,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "blood/material",
+    "element": "BLOOD",
+    "role": "material",
+    "profile": {
+      "base": 92,
+      "material": "viscous",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.31,
+        2.43,
+        3.82
+      ],
+      "cutoff": 2400,
+      "room": "cave",
+      "keywords": "sệt · nhịp · ẩm · căng",
+      "bass": 0.85
+    },
+    "duration": 1.2,
+    "targetRmsDb": -24,
+    "category": "sfx",
+    "repeated": true,
+    "domain": true,
+    "seed": 130066,
+    "variants": 4,
+    "priority": 55,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "blood/motion",
+    "element": "BLOOD",
+    "role": "motion",
+    "profile": {
+      "base": 92,
+      "material": "viscous",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.31,
+        2.43,
+        3.82
+      ],
+      "cutoff": 2400,
+      "room": "cave",
+      "keywords": "sệt · nhịp · ẩm · căng",
+      "bass": 0.85
+    },
+    "duration": 1.5,
+    "targetRmsDb": -26,
+    "category": "magic",
+    "seed": 130137,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "blood/environment",
+    "element": "BLOOD",
+    "role": "environment",
+    "profile": {
+      "base": 92,
+      "material": "viscous",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.31,
+        2.43,
+        3.82
+      ],
+      "cutoff": 2400,
+      "room": "cave",
+      "keywords": "sệt · nhịp · ẩm · căng",
+      "bass": 0.85
+    },
+    "duration": 2,
+    "targetRmsDb": -31,
+    "category": "ambience",
+    "loop": true,
+    "domain": true,
+    "seed": 130208,
+    "variants": 3,
+    "priority": 8,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "blood/secondary",
+    "element": "BLOOD",
+    "role": "secondary",
+    "profile": {
+      "base": 92,
+      "material": "viscous",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.31,
+        2.43,
+        3.82
+      ],
+      "cutoff": 2400,
+      "room": "cave",
+      "keywords": "sệt · nhịp · ẩm · căng",
+      "bass": 0.85
+    },
+    "duration": 0.9,
+    "targetRmsDb": -27,
+    "category": "sfx",
+    "repeated": true,
+    "domain": true,
+    "seed": 130279,
+    "variants": 4,
+    "priority": 35,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "blood/riser",
+    "element": "BLOOD",
+    "role": "riser",
+    "profile": {
+      "base": 92,
+      "material": "viscous",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.31,
+        2.43,
+        3.82
+      ],
+      "cutoff": 2400,
+      "room": "cave",
+      "keywords": "sệt · nhịp · ẩm · căng",
+      "bass": 0.85
+    },
+    "duration": 0.8,
+    "targetRmsDb": -23,
+    "category": "magic",
+    "seed": 130350,
+    "variants": 3,
+    "priority": 85,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "blood/impact",
+    "element": "BLOOD",
+    "role": "impact",
+    "profile": {
+      "base": 92,
+      "material": "viscous",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.31,
+        2.43,
+        3.82
+      ],
+      "cutoff": 2400,
+      "room": "cave",
+      "keywords": "sệt · nhịp · ẩm · căng",
+      "bass": 0.85
+    },
+    "duration": 3.2,
+    "targetRmsDb": -19,
+    "category": "impact",
+    "priority": 100,
+    "seed": 130421,
+    "variants": 3,
+    "wet": 0.08,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "blood/shockwave",
+    "element": "BLOOD",
+    "role": "shockwave",
+    "profile": {
+      "base": 92,
+      "material": "viscous",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.31,
+        2.43,
+        3.82
+      ],
+      "cutoff": 2400,
+      "room": "cave",
+      "keywords": "sệt · nhịp · ẩm · căng",
+      "bass": 0.85
+    },
+    "duration": 1.2,
+    "targetRmsDb": -25,
+    "category": "impact",
+    "seed": 130492,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "blood/aftermath",
+    "element": "BLOOD",
+    "role": "aftermath",
+    "profile": {
+      "base": 92,
+      "material": "viscous",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.31,
+        2.43,
+        3.82
+      ],
+      "cutoff": 2400,
+      "room": "cave",
+      "keywords": "sệt · nhịp · ẩm · căng",
+      "bass": 0.85
+    },
+    "duration": 3.6,
+    "targetRmsDb": -30,
+    "category": "ambience",
+    "seed": 130563,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "blood/rune",
+    "element": "BLOOD",
+    "role": "rune",
+    "profile": {
+      "base": 92,
+      "material": "viscous",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.31,
+        2.43,
+        3.82
+      ],
+      "cutoff": 2400,
+      "room": "cave",
+      "keywords": "sệt · nhịp · ẩm · căng",
+      "bass": 0.85
+    },
+    "duration": 0.48,
+    "targetRmsDb": -29,
+    "category": "magic",
+    "repeated": true,
+    "seed": 130634,
+    "variants": 4,
+    "priority": 45,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "blood/ui",
+    "element": "BLOOD",
+    "role": "ui",
+    "profile": {
+      "base": 92,
+      "material": "viscous",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.31,
+        2.43,
+        3.82
+      ],
+      "cutoff": 2400,
+      "room": "cave",
+      "keywords": "sệt · nhịp · ẩm · căng",
+      "bass": 0.85
+    },
+    "duration": 0.09,
+    "targetRmsDb": -34,
+    "category": "ui",
+    "seed": 130705,
+    "variants": 3,
+    "priority": 60,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "blood/drone",
+    "element": "BLOOD",
+    "role": "drone",
+    "profile": {
+      "base": 92,
+      "material": "viscous",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.31,
+        2.43,
+        3.82
+      ],
+      "cutoff": 2400,
+      "room": "cave",
+      "keywords": "sệt · nhịp · ẩm · căng",
+      "bass": 0.85
+    },
+    "duration": 2,
+    "targetRmsDb": -34,
+    "category": "drone",
+    "loop": true,
+    "seed": 130776,
+    "variants": 3,
+    "priority": 4,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "space/precast",
+    "element": "SPACE",
+    "role": "precast",
+    "profile": {
+      "base": 47,
+      "material": "warp",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.07,
+        1.414,
+        2.91
+      ],
+      "cutoff": 2200,
+      "room": "void",
+      "keywords": "hút · xoay · giãn · sâu",
+      "bass": 1.15
+    },
+    "duration": 0.3,
+    "targetRmsDb": -25,
+    "category": "magic",
+    "seed": 130791,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "space/charging",
+    "element": "SPACE",
+    "role": "charging",
+    "profile": {
+      "base": 47,
+      "material": "warp",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.07,
+        1.414,
+        2.91
+      ],
+      "cutoff": 2200,
+      "room": "void",
+      "keywords": "hút · xoay · giãn · sâu",
+      "bass": 1.15
+    },
+    "duration": 1.2,
+    "targetRmsDb": -27,
+    "category": "magic",
+    "loop": true,
+    "seed": 130862,
+    "variants": 3,
+    "priority": 50,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "space/casting",
+    "element": "SPACE",
+    "role": "casting",
+    "profile": {
+      "base": 47,
+      "material": "warp",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.07,
+        1.414,
+        2.91
+      ],
+      "cutoff": 2200,
+      "room": "void",
+      "keywords": "hút · xoay · giãn · sâu",
+      "bass": 1.15
+    },
+    "duration": 0.38,
+    "targetRmsDb": -22,
+    "category": "sfx",
+    "seed": 130933,
+    "variants": 3,
+    "priority": 80,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "space/traveling",
+    "element": "SPACE",
+    "role": "traveling",
+    "profile": {
+      "base": 47,
+      "material": "warp",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.07,
+        1.414,
+        2.91
+      ],
+      "cutoff": 2200,
+      "room": "void",
+      "keywords": "hút · xoay · giãn · sâu",
+      "bass": 1.15
+    },
+    "duration": 1.2,
+    "targetRmsDb": -26,
+    "category": "magic",
+    "loop": true,
+    "seed": 131004,
+    "variants": 3,
+    "priority": 40,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "space/material",
+    "element": "SPACE",
+    "role": "material",
+    "profile": {
+      "base": 47,
+      "material": "warp",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.07,
+        1.414,
+        2.91
+      ],
+      "cutoff": 2200,
+      "room": "void",
+      "keywords": "hút · xoay · giãn · sâu",
+      "bass": 1.15
+    },
+    "duration": 1.2,
+    "targetRmsDb": -24,
+    "category": "sfx",
+    "repeated": true,
+    "domain": true,
+    "seed": 131075,
+    "variants": 4,
+    "priority": 55,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "space/motion",
+    "element": "SPACE",
+    "role": "motion",
+    "profile": {
+      "base": 47,
+      "material": "warp",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.07,
+        1.414,
+        2.91
+      ],
+      "cutoff": 2200,
+      "room": "void",
+      "keywords": "hút · xoay · giãn · sâu",
+      "bass": 1.15
+    },
+    "duration": 1.5,
+    "targetRmsDb": -26,
+    "category": "magic",
+    "seed": 131146,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "space/environment",
+    "element": "SPACE",
+    "role": "environment",
+    "profile": {
+      "base": 47,
+      "material": "warp",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.07,
+        1.414,
+        2.91
+      ],
+      "cutoff": 2200,
+      "room": "void",
+      "keywords": "hút · xoay · giãn · sâu",
+      "bass": 1.15
+    },
+    "duration": 2,
+    "targetRmsDb": -31,
+    "category": "ambience",
+    "loop": true,
+    "domain": true,
+    "seed": 131217,
+    "variants": 3,
+    "priority": 8,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "space/secondary",
+    "element": "SPACE",
+    "role": "secondary",
+    "profile": {
+      "base": 47,
+      "material": "warp",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.07,
+        1.414,
+        2.91
+      ],
+      "cutoff": 2200,
+      "room": "void",
+      "keywords": "hút · xoay · giãn · sâu",
+      "bass": 1.15
+    },
+    "duration": 0.9,
+    "targetRmsDb": -27,
+    "category": "sfx",
+    "repeated": true,
+    "domain": true,
+    "seed": 131288,
+    "variants": 4,
+    "priority": 35,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "space/riser",
+    "element": "SPACE",
+    "role": "riser",
+    "profile": {
+      "base": 47,
+      "material": "warp",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.07,
+        1.414,
+        2.91
+      ],
+      "cutoff": 2200,
+      "room": "void",
+      "keywords": "hút · xoay · giãn · sâu",
+      "bass": 1.15
+    },
+    "duration": 0.8,
+    "targetRmsDb": -23,
+    "category": "magic",
+    "seed": 131359,
+    "variants": 3,
+    "priority": 85,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "space/impact",
+    "element": "SPACE",
+    "role": "impact",
+    "profile": {
+      "base": 47,
+      "material": "warp",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.07,
+        1.414,
+        2.91
+      ],
+      "cutoff": 2200,
+      "room": "void",
+      "keywords": "hút · xoay · giãn · sâu",
+      "bass": 1.15
+    },
+    "duration": 3.2,
+    "targetRmsDb": -19,
+    "category": "impact",
+    "priority": 100,
+    "seed": 131430,
+    "variants": 3,
+    "wet": 0.08,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "space/shockwave",
+    "element": "SPACE",
+    "role": "shockwave",
+    "profile": {
+      "base": 47,
+      "material": "warp",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.07,
+        1.414,
+        2.91
+      ],
+      "cutoff": 2200,
+      "room": "void",
+      "keywords": "hút · xoay · giãn · sâu",
+      "bass": 1.15
+    },
+    "duration": 1.2,
+    "targetRmsDb": -25,
+    "category": "impact",
+    "seed": 131501,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "space/aftermath",
+    "element": "SPACE",
+    "role": "aftermath",
+    "profile": {
+      "base": 47,
+      "material": "warp",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.07,
+        1.414,
+        2.91
+      ],
+      "cutoff": 2200,
+      "room": "void",
+      "keywords": "hút · xoay · giãn · sâu",
+      "bass": 1.15
+    },
+    "duration": 3.6,
+    "targetRmsDb": -30,
+    "category": "ambience",
+    "seed": 131572,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "space/rune",
+    "element": "SPACE",
+    "role": "rune",
+    "profile": {
+      "base": 47,
+      "material": "warp",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.07,
+        1.414,
+        2.91
+      ],
+      "cutoff": 2200,
+      "room": "void",
+      "keywords": "hút · xoay · giãn · sâu",
+      "bass": 1.15
+    },
+    "duration": 0.48,
+    "targetRmsDb": -29,
+    "category": "magic",
+    "repeated": true,
+    "seed": 131643,
+    "variants": 4,
+    "priority": 45,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "space/ui",
+    "element": "SPACE",
+    "role": "ui",
+    "profile": {
+      "base": 47,
+      "material": "warp",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.07,
+        1.414,
+        2.91
+      ],
+      "cutoff": 2200,
+      "room": "void",
+      "keywords": "hút · xoay · giãn · sâu",
+      "bass": 1.15
+    },
+    "duration": 0.09,
+    "targetRmsDb": -34,
+    "category": "ui",
+    "seed": 131714,
+    "variants": 3,
+    "priority": 60,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "space/drone",
+    "element": "SPACE",
+    "role": "drone",
+    "profile": {
+      "base": 47,
+      "material": "warp",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.07,
+        1.414,
+        2.91
+      ],
+      "cutoff": 2200,
+      "room": "void",
+      "keywords": "hút · xoay · giãn · sâu",
+      "bass": 1.15
+    },
+    "duration": 2,
+    "targetRmsDb": -34,
+    "category": "drone",
+    "loop": true,
+    "seed": 131785,
+    "variants": 3,
+    "priority": 4,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "time/precast",
+    "element": "TIME",
+    "role": "precast",
+    "profile": {
+      "base": 440,
+      "material": "clock",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.5,
+        2,
+        3,
+        4.01
+      ],
+      "cutoff": 6200,
+      "room": "cathedral",
+      "keywords": "chuông · lặng · nhịp · trong",
+      "bass": 0.25
+    },
+    "duration": 0.3,
+    "targetRmsDb": -25,
+    "category": "magic",
+    "seed": 131800,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "time/charging",
+    "element": "TIME",
+    "role": "charging",
+    "profile": {
+      "base": 440,
+      "material": "clock",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.5,
+        2,
+        3,
+        4.01
+      ],
+      "cutoff": 6200,
+      "room": "cathedral",
+      "keywords": "chuông · lặng · nhịp · trong",
+      "bass": 0.25
+    },
+    "duration": 1.2,
+    "targetRmsDb": -27,
+    "category": "magic",
+    "loop": true,
+    "seed": 131871,
+    "variants": 3,
+    "priority": 50,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "time/casting",
+    "element": "TIME",
+    "role": "casting",
+    "profile": {
+      "base": 440,
+      "material": "clock",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.5,
+        2,
+        3,
+        4.01
+      ],
+      "cutoff": 6200,
+      "room": "cathedral",
+      "keywords": "chuông · lặng · nhịp · trong",
+      "bass": 0.25
+    },
+    "duration": 0.38,
+    "targetRmsDb": -22,
+    "category": "sfx",
+    "seed": 131942,
+    "variants": 3,
+    "priority": 80,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "time/traveling",
+    "element": "TIME",
+    "role": "traveling",
+    "profile": {
+      "base": 440,
+      "material": "clock",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.5,
+        2,
+        3,
+        4.01
+      ],
+      "cutoff": 6200,
+      "room": "cathedral",
+      "keywords": "chuông · lặng · nhịp · trong",
+      "bass": 0.25
+    },
+    "duration": 1.2,
+    "targetRmsDb": -26,
+    "category": "magic",
+    "loop": true,
+    "seed": 132013,
+    "variants": 3,
+    "priority": 40,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "time/material",
+    "element": "TIME",
+    "role": "material",
+    "profile": {
+      "base": 440,
+      "material": "clock",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.5,
+        2,
+        3,
+        4.01
+      ],
+      "cutoff": 6200,
+      "room": "cathedral",
+      "keywords": "chuông · lặng · nhịp · trong",
+      "bass": 0.25
+    },
+    "duration": 1.2,
+    "targetRmsDb": -24,
+    "category": "sfx",
+    "repeated": true,
+    "domain": true,
+    "seed": 132084,
+    "variants": 4,
+    "priority": 55,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "time/motion",
+    "element": "TIME",
+    "role": "motion",
+    "profile": {
+      "base": 440,
+      "material": "clock",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.5,
+        2,
+        3,
+        4.01
+      ],
+      "cutoff": 6200,
+      "room": "cathedral",
+      "keywords": "chuông · lặng · nhịp · trong",
+      "bass": 0.25
+    },
+    "duration": 1.5,
+    "targetRmsDb": -26,
+    "category": "magic",
+    "seed": 132155,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "time/environment",
+    "element": "TIME",
+    "role": "environment",
+    "profile": {
+      "base": 440,
+      "material": "clock",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.5,
+        2,
+        3,
+        4.01
+      ],
+      "cutoff": 6200,
+      "room": "cathedral",
+      "keywords": "chuông · lặng · nhịp · trong",
+      "bass": 0.25
+    },
+    "duration": 2,
+    "targetRmsDb": -31,
+    "category": "ambience",
+    "loop": true,
+    "domain": true,
+    "seed": 132226,
+    "variants": 3,
+    "priority": 8,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "time/secondary",
+    "element": "TIME",
+    "role": "secondary",
+    "profile": {
+      "base": 440,
+      "material": "clock",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.5,
+        2,
+        3,
+        4.01
+      ],
+      "cutoff": 6200,
+      "room": "cathedral",
+      "keywords": "chuông · lặng · nhịp · trong",
+      "bass": 0.25
+    },
+    "duration": 0.9,
+    "targetRmsDb": -27,
+    "category": "sfx",
+    "repeated": true,
+    "domain": true,
+    "seed": 132297,
+    "variants": 4,
+    "priority": 35,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "time/riser",
+    "element": "TIME",
+    "role": "riser",
+    "profile": {
+      "base": 440,
+      "material": "clock",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.5,
+        2,
+        3,
+        4.01
+      ],
+      "cutoff": 6200,
+      "room": "cathedral",
+      "keywords": "chuông · lặng · nhịp · trong",
+      "bass": 0.25
+    },
+    "duration": 0.8,
+    "targetRmsDb": -23,
+    "category": "magic",
+    "seed": 132368,
+    "variants": 3,
+    "priority": 85,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "time/impact",
+    "element": "TIME",
+    "role": "impact",
+    "profile": {
+      "base": 440,
+      "material": "clock",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.5,
+        2,
+        3,
+        4.01
+      ],
+      "cutoff": 6200,
+      "room": "cathedral",
+      "keywords": "chuông · lặng · nhịp · trong",
+      "bass": 0.25
+    },
+    "duration": 3.2,
+    "targetRmsDb": -19,
+    "category": "impact",
+    "priority": 100,
+    "seed": 132439,
+    "variants": 3,
+    "wet": 0.08,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "time/shockwave",
+    "element": "TIME",
+    "role": "shockwave",
+    "profile": {
+      "base": 440,
+      "material": "clock",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.5,
+        2,
+        3,
+        4.01
+      ],
+      "cutoff": 6200,
+      "room": "cathedral",
+      "keywords": "chuông · lặng · nhịp · trong",
+      "bass": 0.25
+    },
+    "duration": 1.2,
+    "targetRmsDb": -25,
+    "category": "impact",
+    "seed": 132510,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "time/aftermath",
+    "element": "TIME",
+    "role": "aftermath",
+    "profile": {
+      "base": 440,
+      "material": "clock",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.5,
+        2,
+        3,
+        4.01
+      ],
+      "cutoff": 6200,
+      "room": "cathedral",
+      "keywords": "chuông · lặng · nhịp · trong",
+      "bass": 0.25
+    },
+    "duration": 3.6,
+    "targetRmsDb": -30,
+    "category": "ambience",
+    "seed": 132581,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "time/rune",
+    "element": "TIME",
+    "role": "rune",
+    "profile": {
+      "base": 440,
+      "material": "clock",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.5,
+        2,
+        3,
+        4.01
+      ],
+      "cutoff": 6200,
+      "room": "cathedral",
+      "keywords": "chuông · lặng · nhịp · trong",
+      "bass": 0.25
+    },
+    "duration": 0.48,
+    "targetRmsDb": -29,
+    "category": "magic",
+    "repeated": true,
+    "seed": 132652,
+    "variants": 4,
+    "priority": 45,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "time/ui",
+    "element": "TIME",
+    "role": "ui",
+    "profile": {
+      "base": 440,
+      "material": "clock",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.5,
+        2,
+        3,
+        4.01
+      ],
+      "cutoff": 6200,
+      "room": "cathedral",
+      "keywords": "chuông · lặng · nhịp · trong",
+      "bass": 0.25
+    },
+    "duration": 0.09,
+    "targetRmsDb": -34,
+    "category": "ui",
+    "seed": 132723,
+    "variants": 3,
+    "priority": 60,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "time/drone",
+    "element": "TIME",
+    "role": "drone",
+    "profile": {
+      "base": 440,
+      "material": "clock",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.5,
+        2,
+        3,
+        4.01
+      ],
+      "cutoff": 6200,
+      "room": "cathedral",
+      "keywords": "chuông · lặng · nhịp · trong",
+      "bass": 0.25
+    },
+    "duration": 2,
+    "targetRmsDb": -34,
+    "category": "drone",
+    "loop": true,
+    "seed": 132794,
+    "variants": 3,
+    "priority": 4,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "magma/precast",
+    "element": "MAGMA",
+    "role": "precast",
+    "profile": {
+      "base": 51,
+      "material": "lava",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.67,
+        2.21,
+        3.5
+      ],
+      "cutoff": 2600,
+      "room": "cave",
+      "keywords": "sôi · đặc · rền · nứt nóng",
+      "bass": 1.1
+    },
+    "duration": 0.3,
+    "targetRmsDb": -25,
+    "category": "magic",
+    "seed": 132809,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "magma/charging",
+    "element": "MAGMA",
+    "role": "charging",
+    "profile": {
+      "base": 51,
+      "material": "lava",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.67,
+        2.21,
+        3.5
+      ],
+      "cutoff": 2600,
+      "room": "cave",
+      "keywords": "sôi · đặc · rền · nứt nóng",
+      "bass": 1.1
+    },
+    "duration": 1.2,
+    "targetRmsDb": -27,
+    "category": "magic",
+    "loop": true,
+    "seed": 132880,
+    "variants": 3,
+    "priority": 50,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "magma/casting",
+    "element": "MAGMA",
+    "role": "casting",
+    "profile": {
+      "base": 51,
+      "material": "lava",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.67,
+        2.21,
+        3.5
+      ],
+      "cutoff": 2600,
+      "room": "cave",
+      "keywords": "sôi · đặc · rền · nứt nóng",
+      "bass": 1.1
+    },
+    "duration": 0.38,
+    "targetRmsDb": -22,
+    "category": "sfx",
+    "seed": 132951,
+    "variants": 3,
+    "priority": 80,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "magma/traveling",
+    "element": "MAGMA",
+    "role": "traveling",
+    "profile": {
+      "base": 51,
+      "material": "lava",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.67,
+        2.21,
+        3.5
+      ],
+      "cutoff": 2600,
+      "room": "cave",
+      "keywords": "sôi · đặc · rền · nứt nóng",
+      "bass": 1.1
+    },
+    "duration": 1.2,
+    "targetRmsDb": -26,
+    "category": "magic",
+    "loop": true,
+    "seed": 133022,
+    "variants": 3,
+    "priority": 40,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "magma/material",
+    "element": "MAGMA",
+    "role": "material",
+    "profile": {
+      "base": 51,
+      "material": "lava",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.67,
+        2.21,
+        3.5
+      ],
+      "cutoff": 2600,
+      "room": "cave",
+      "keywords": "sôi · đặc · rền · nứt nóng",
+      "bass": 1.1
+    },
+    "duration": 1.2,
+    "targetRmsDb": -24,
+    "category": "sfx",
+    "repeated": true,
+    "domain": true,
+    "seed": 133093,
+    "variants": 4,
+    "priority": 55,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "magma/motion",
+    "element": "MAGMA",
+    "role": "motion",
+    "profile": {
+      "base": 51,
+      "material": "lava",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.67,
+        2.21,
+        3.5
+      ],
+      "cutoff": 2600,
+      "room": "cave",
+      "keywords": "sôi · đặc · rền · nứt nóng",
+      "bass": 1.1
+    },
+    "duration": 1.5,
+    "targetRmsDb": -26,
+    "category": "magic",
+    "seed": 133164,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "magma/environment",
+    "element": "MAGMA",
+    "role": "environment",
+    "profile": {
+      "base": 51,
+      "material": "lava",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.67,
+        2.21,
+        3.5
+      ],
+      "cutoff": 2600,
+      "room": "cave",
+      "keywords": "sôi · đặc · rền · nứt nóng",
+      "bass": 1.1
+    },
+    "duration": 2,
+    "targetRmsDb": -31,
+    "category": "ambience",
+    "loop": true,
+    "domain": true,
+    "seed": 133235,
+    "variants": 3,
+    "priority": 8,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "magma/secondary",
+    "element": "MAGMA",
+    "role": "secondary",
+    "profile": {
+      "base": 51,
+      "material": "lava",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.67,
+        2.21,
+        3.5
+      ],
+      "cutoff": 2600,
+      "room": "cave",
+      "keywords": "sôi · đặc · rền · nứt nóng",
+      "bass": 1.1
+    },
+    "duration": 0.9,
+    "targetRmsDb": -27,
+    "category": "sfx",
+    "repeated": true,
+    "domain": true,
+    "seed": 133306,
+    "variants": 4,
+    "priority": 35,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "magma/riser",
+    "element": "MAGMA",
+    "role": "riser",
+    "profile": {
+      "base": 51,
+      "material": "lava",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.67,
+        2.21,
+        3.5
+      ],
+      "cutoff": 2600,
+      "room": "cave",
+      "keywords": "sôi · đặc · rền · nứt nóng",
+      "bass": 1.1
+    },
+    "duration": 0.8,
+    "targetRmsDb": -23,
+    "category": "magic",
+    "seed": 133377,
+    "variants": 3,
+    "priority": 85,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "magma/impact",
+    "element": "MAGMA",
+    "role": "impact",
+    "profile": {
+      "base": 51,
+      "material": "lava",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.67,
+        2.21,
+        3.5
+      ],
+      "cutoff": 2600,
+      "room": "cave",
+      "keywords": "sôi · đặc · rền · nứt nóng",
+      "bass": 1.1
+    },
+    "duration": 3.2,
+    "targetRmsDb": -19,
+    "category": "impact",
+    "priority": 100,
+    "seed": 133448,
+    "variants": 3,
+    "wet": 0.08,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "magma/shockwave",
+    "element": "MAGMA",
+    "role": "shockwave",
+    "profile": {
+      "base": 51,
+      "material": "lava",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.67,
+        2.21,
+        3.5
+      ],
+      "cutoff": 2600,
+      "room": "cave",
+      "keywords": "sôi · đặc · rền · nứt nóng",
+      "bass": 1.1
+    },
+    "duration": 1.2,
+    "targetRmsDb": -25,
+    "category": "impact",
+    "seed": 133519,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "magma/aftermath",
+    "element": "MAGMA",
+    "role": "aftermath",
+    "profile": {
+      "base": 51,
+      "material": "lava",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.67,
+        2.21,
+        3.5
+      ],
+      "cutoff": 2600,
+      "room": "cave",
+      "keywords": "sôi · đặc · rền · nứt nóng",
+      "bass": 1.1
+    },
+    "duration": 3.6,
+    "targetRmsDb": -30,
+    "category": "ambience",
+    "seed": 133590,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "magma/rune",
+    "element": "MAGMA",
+    "role": "rune",
+    "profile": {
+      "base": 51,
+      "material": "lava",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.67,
+        2.21,
+        3.5
+      ],
+      "cutoff": 2600,
+      "room": "cave",
+      "keywords": "sôi · đặc · rền · nứt nóng",
+      "bass": 1.1
+    },
+    "duration": 0.48,
+    "targetRmsDb": -29,
+    "category": "magic",
+    "repeated": true,
+    "seed": 133661,
+    "variants": 4,
+    "priority": 45,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "magma/ui",
+    "element": "MAGMA",
+    "role": "ui",
+    "profile": {
+      "base": 51,
+      "material": "lava",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.67,
+        2.21,
+        3.5
+      ],
+      "cutoff": 2600,
+      "room": "cave",
+      "keywords": "sôi · đặc · rền · nứt nóng",
+      "bass": 1.1
+    },
+    "duration": 0.09,
+    "targetRmsDb": -34,
+    "category": "ui",
+    "seed": 133732,
+    "variants": 3,
+    "priority": 60,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "magma/drone",
+    "element": "MAGMA",
+    "role": "drone",
+    "profile": {
+      "base": 51,
+      "material": "lava",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.67,
+        2.21,
+        3.5
+      ],
+      "cutoff": 2600,
+      "room": "cave",
+      "keywords": "sôi · đặc · rền · nứt nóng",
+      "bass": 1.1
+    },
+    "duration": 2,
+    "targetRmsDb": -34,
+    "category": "drone",
+    "loop": true,
+    "seed": 133803,
+    "variants": 3,
+    "priority": 4,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "astral/precast",
+    "element": "ASTRAL",
+    "role": "precast",
+    "profile": {
+      "base": 392,
+      "material": "stars",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.5,
+        2,
+        2.5,
+        4
+      ],
+      "cutoff": 6900,
+      "room": "void",
+      "keywords": "tinh quang · quỹ đạo · ngân · bụi",
+      "bass": 0.7
+    },
+    "duration": 0.3,
+    "targetRmsDb": -25,
+    "category": "magic",
+    "seed": 133818,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "astral/charging",
+    "element": "ASTRAL",
+    "role": "charging",
+    "profile": {
+      "base": 392,
+      "material": "stars",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.5,
+        2,
+        2.5,
+        4
+      ],
+      "cutoff": 6900,
+      "room": "void",
+      "keywords": "tinh quang · quỹ đạo · ngân · bụi",
+      "bass": 0.7
+    },
+    "duration": 1.2,
+    "targetRmsDb": -27,
+    "category": "magic",
+    "loop": true,
+    "seed": 133889,
+    "variants": 3,
+    "priority": 50,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "astral/casting",
+    "element": "ASTRAL",
+    "role": "casting",
+    "profile": {
+      "base": 392,
+      "material": "stars",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.5,
+        2,
+        2.5,
+        4
+      ],
+      "cutoff": 6900,
+      "room": "void",
+      "keywords": "tinh quang · quỹ đạo · ngân · bụi",
+      "bass": 0.7
+    },
+    "duration": 0.38,
+    "targetRmsDb": -22,
+    "category": "sfx",
+    "seed": 133960,
+    "variants": 3,
+    "priority": 80,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "astral/traveling",
+    "element": "ASTRAL",
+    "role": "traveling",
+    "profile": {
+      "base": 392,
+      "material": "stars",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.5,
+        2,
+        2.5,
+        4
+      ],
+      "cutoff": 6900,
+      "room": "void",
+      "keywords": "tinh quang · quỹ đạo · ngân · bụi",
+      "bass": 0.7
+    },
+    "duration": 1.2,
+    "targetRmsDb": -26,
+    "category": "magic",
+    "loop": true,
+    "seed": 134031,
+    "variants": 3,
+    "priority": 40,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "astral/material",
+    "element": "ASTRAL",
+    "role": "material",
+    "profile": {
+      "base": 392,
+      "material": "stars",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.5,
+        2,
+        2.5,
+        4
+      ],
+      "cutoff": 6900,
+      "room": "void",
+      "keywords": "tinh quang · quỹ đạo · ngân · bụi",
+      "bass": 0.7
+    },
+    "duration": 1.2,
+    "targetRmsDb": -24,
+    "category": "sfx",
+    "repeated": true,
+    "domain": true,
+    "seed": 134102,
+    "variants": 4,
+    "priority": 55,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "astral/motion",
+    "element": "ASTRAL",
+    "role": "motion",
+    "profile": {
+      "base": 392,
+      "material": "stars",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.5,
+        2,
+        2.5,
+        4
+      ],
+      "cutoff": 6900,
+      "room": "void",
+      "keywords": "tinh quang · quỹ đạo · ngân · bụi",
+      "bass": 0.7
+    },
+    "duration": 1.5,
+    "targetRmsDb": -26,
+    "category": "magic",
+    "seed": 134173,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "astral/environment",
+    "element": "ASTRAL",
+    "role": "environment",
+    "profile": {
+      "base": 392,
+      "material": "stars",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.5,
+        2,
+        2.5,
+        4
+      ],
+      "cutoff": 6900,
+      "room": "void",
+      "keywords": "tinh quang · quỹ đạo · ngân · bụi",
+      "bass": 0.7
+    },
+    "duration": 2,
+    "targetRmsDb": -31,
+    "category": "ambience",
+    "loop": true,
+    "domain": true,
+    "seed": 134244,
+    "variants": 3,
+    "priority": 8,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "astral/secondary",
+    "element": "ASTRAL",
+    "role": "secondary",
+    "profile": {
+      "base": 392,
+      "material": "stars",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.5,
+        2,
+        2.5,
+        4
+      ],
+      "cutoff": 6900,
+      "room": "void",
+      "keywords": "tinh quang · quỹ đạo · ngân · bụi",
+      "bass": 0.7
+    },
+    "duration": 0.9,
+    "targetRmsDb": -27,
+    "category": "sfx",
+    "repeated": true,
+    "domain": true,
+    "seed": 134315,
+    "variants": 4,
+    "priority": 35,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "astral/riser",
+    "element": "ASTRAL",
+    "role": "riser",
+    "profile": {
+      "base": 392,
+      "material": "stars",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.5,
+        2,
+        2.5,
+        4
+      ],
+      "cutoff": 6900,
+      "room": "void",
+      "keywords": "tinh quang · quỹ đạo · ngân · bụi",
+      "bass": 0.7
+    },
+    "duration": 0.8,
+    "targetRmsDb": -23,
+    "category": "magic",
+    "seed": 134386,
+    "variants": 3,
+    "priority": 85,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "astral/impact",
+    "element": "ASTRAL",
+    "role": "impact",
+    "profile": {
+      "base": 392,
+      "material": "stars",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.5,
+        2,
+        2.5,
+        4
+      ],
+      "cutoff": 6900,
+      "room": "void",
+      "keywords": "tinh quang · quỹ đạo · ngân · bụi",
+      "bass": 0.7
+    },
+    "duration": 3.2,
+    "targetRmsDb": -19,
+    "category": "impact",
+    "priority": 100,
+    "seed": 134457,
+    "variants": 3,
+    "wet": 0.08,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "astral/shockwave",
+    "element": "ASTRAL",
+    "role": "shockwave",
+    "profile": {
+      "base": 392,
+      "material": "stars",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.5,
+        2,
+        2.5,
+        4
+      ],
+      "cutoff": 6900,
+      "room": "void",
+      "keywords": "tinh quang · quỹ đạo · ngân · bụi",
+      "bass": 0.7
+    },
+    "duration": 1.2,
+    "targetRmsDb": -25,
+    "category": "impact",
+    "seed": 134528,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "astral/aftermath",
+    "element": "ASTRAL",
+    "role": "aftermath",
+    "profile": {
+      "base": 392,
+      "material": "stars",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.5,
+        2,
+        2.5,
+        4
+      ],
+      "cutoff": 6900,
+      "room": "void",
+      "keywords": "tinh quang · quỹ đạo · ngân · bụi",
+      "bass": 0.7
+    },
+    "duration": 3.6,
+    "targetRmsDb": -30,
+    "category": "ambience",
+    "seed": 134599,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "astral/rune",
+    "element": "ASTRAL",
+    "role": "rune",
+    "profile": {
+      "base": 392,
+      "material": "stars",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.5,
+        2,
+        2.5,
+        4
+      ],
+      "cutoff": 6900,
+      "room": "void",
+      "keywords": "tinh quang · quỹ đạo · ngân · bụi",
+      "bass": 0.7
+    },
+    "duration": 0.48,
+    "targetRmsDb": -29,
+    "category": "magic",
+    "repeated": true,
+    "seed": 134670,
+    "variants": 4,
+    "priority": 45,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "astral/ui",
+    "element": "ASTRAL",
+    "role": "ui",
+    "profile": {
+      "base": 392,
+      "material": "stars",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.5,
+        2,
+        2.5,
+        4
+      ],
+      "cutoff": 6900,
+      "room": "void",
+      "keywords": "tinh quang · quỹ đạo · ngân · bụi",
+      "bass": 0.7
+    },
+    "duration": 0.09,
+    "targetRmsDb": -34,
+    "category": "ui",
+    "seed": 134741,
+    "variants": 3,
+    "priority": 60,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "astral/drone",
+    "element": "ASTRAL",
+    "role": "drone",
+    "profile": {
+      "base": 392,
+      "material": "stars",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.5,
+        2,
+        2.5,
+        4
+      ],
+      "cutoff": 6900,
+      "room": "void",
+      "keywords": "tinh quang · quỹ đạo · ngân · bụi",
+      "bass": 0.7
+    },
+    "duration": 2,
+    "targetRmsDb": -34,
+    "category": "drone",
+    "loop": true,
+    "seed": 134812,
+    "variants": 3,
+    "priority": 4,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "psychic/precast",
+    "element": "PSYCHIC",
+    "role": "precast",
+    "profile": {
+      "base": 217,
+      "material": "mind",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.031,
+        1.27,
+        2.5
+      ],
+      "cutoff": 4300,
+      "room": "cathedral",
+      "keywords": "giao thoa · vọng · nhịp · lăng kính",
+      "bass": 0.55
+    },
+    "duration": 0.3,
+    "targetRmsDb": -25,
+    "category": "magic",
+    "seed": 134827,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "psychic/charging",
+    "element": "PSYCHIC",
+    "role": "charging",
+    "profile": {
+      "base": 217,
+      "material": "mind",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.031,
+        1.27,
+        2.5
+      ],
+      "cutoff": 4300,
+      "room": "cathedral",
+      "keywords": "giao thoa · vọng · nhịp · lăng kính",
+      "bass": 0.55
+    },
+    "duration": 1.2,
+    "targetRmsDb": -27,
+    "category": "magic",
+    "loop": true,
+    "seed": 134898,
+    "variants": 3,
+    "priority": 50,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "psychic/casting",
+    "element": "PSYCHIC",
+    "role": "casting",
+    "profile": {
+      "base": 217,
+      "material": "mind",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.031,
+        1.27,
+        2.5
+      ],
+      "cutoff": 4300,
+      "room": "cathedral",
+      "keywords": "giao thoa · vọng · nhịp · lăng kính",
+      "bass": 0.55
+    },
+    "duration": 0.38,
+    "targetRmsDb": -22,
+    "category": "sfx",
+    "seed": 134969,
+    "variants": 3,
+    "priority": 80,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "psychic/traveling",
+    "element": "PSYCHIC",
+    "role": "traveling",
+    "profile": {
+      "base": 217,
+      "material": "mind",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.031,
+        1.27,
+        2.5
+      ],
+      "cutoff": 4300,
+      "room": "cathedral",
+      "keywords": "giao thoa · vọng · nhịp · lăng kính",
+      "bass": 0.55
+    },
+    "duration": 1.2,
+    "targetRmsDb": -26,
+    "category": "magic",
+    "loop": true,
+    "seed": 135040,
+    "variants": 3,
+    "priority": 40,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "psychic/material",
+    "element": "PSYCHIC",
+    "role": "material",
+    "profile": {
+      "base": 217,
+      "material": "mind",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.031,
+        1.27,
+        2.5
+      ],
+      "cutoff": 4300,
+      "room": "cathedral",
+      "keywords": "giao thoa · vọng · nhịp · lăng kính",
+      "bass": 0.55
+    },
+    "duration": 1.2,
+    "targetRmsDb": -24,
+    "category": "sfx",
+    "repeated": true,
+    "domain": true,
+    "seed": 135111,
+    "variants": 4,
+    "priority": 55,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "psychic/motion",
+    "element": "PSYCHIC",
+    "role": "motion",
+    "profile": {
+      "base": 217,
+      "material": "mind",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.031,
+        1.27,
+        2.5
+      ],
+      "cutoff": 4300,
+      "room": "cathedral",
+      "keywords": "giao thoa · vọng · nhịp · lăng kính",
+      "bass": 0.55
+    },
+    "duration": 1.5,
+    "targetRmsDb": -26,
+    "category": "magic",
+    "seed": 135182,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "psychic/environment",
+    "element": "PSYCHIC",
+    "role": "environment",
+    "profile": {
+      "base": 217,
+      "material": "mind",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.031,
+        1.27,
+        2.5
+      ],
+      "cutoff": 4300,
+      "room": "cathedral",
+      "keywords": "giao thoa · vọng · nhịp · lăng kính",
+      "bass": 0.55
+    },
+    "duration": 2,
+    "targetRmsDb": -31,
+    "category": "ambience",
+    "loop": true,
+    "domain": true,
+    "seed": 135253,
+    "variants": 3,
+    "priority": 8,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "psychic/secondary",
+    "element": "PSYCHIC",
+    "role": "secondary",
+    "profile": {
+      "base": 217,
+      "material": "mind",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.031,
+        1.27,
+        2.5
+      ],
+      "cutoff": 4300,
+      "room": "cathedral",
+      "keywords": "giao thoa · vọng · nhịp · lăng kính",
+      "bass": 0.55
+    },
+    "duration": 0.9,
+    "targetRmsDb": -27,
+    "category": "sfx",
+    "repeated": true,
+    "domain": true,
+    "seed": 135324,
+    "variants": 4,
+    "priority": 35,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "psychic/riser",
+    "element": "PSYCHIC",
+    "role": "riser",
+    "profile": {
+      "base": 217,
+      "material": "mind",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.031,
+        1.27,
+        2.5
+      ],
+      "cutoff": 4300,
+      "room": "cathedral",
+      "keywords": "giao thoa · vọng · nhịp · lăng kính",
+      "bass": 0.55
+    },
+    "duration": 0.8,
+    "targetRmsDb": -23,
+    "category": "magic",
+    "seed": 135395,
+    "variants": 3,
+    "priority": 85,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "psychic/impact",
+    "element": "PSYCHIC",
+    "role": "impact",
+    "profile": {
+      "base": 217,
+      "material": "mind",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.031,
+        1.27,
+        2.5
+      ],
+      "cutoff": 4300,
+      "room": "cathedral",
+      "keywords": "giao thoa · vọng · nhịp · lăng kính",
+      "bass": 0.55
+    },
+    "duration": 3.2,
+    "targetRmsDb": -19,
+    "category": "impact",
+    "priority": 100,
+    "seed": 135466,
+    "variants": 3,
+    "wet": 0.08,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "psychic/shockwave",
+    "element": "PSYCHIC",
+    "role": "shockwave",
+    "profile": {
+      "base": 217,
+      "material": "mind",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.031,
+        1.27,
+        2.5
+      ],
+      "cutoff": 4300,
+      "room": "cathedral",
+      "keywords": "giao thoa · vọng · nhịp · lăng kính",
+      "bass": 0.55
+    },
+    "duration": 1.2,
+    "targetRmsDb": -25,
+    "category": "impact",
+    "seed": 135537,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "psychic/aftermath",
+    "element": "PSYCHIC",
+    "role": "aftermath",
+    "profile": {
+      "base": 217,
+      "material": "mind",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.031,
+        1.27,
+        2.5
+      ],
+      "cutoff": 4300,
+      "room": "cathedral",
+      "keywords": "giao thoa · vọng · nhịp · lăng kính",
+      "bass": 0.55
+    },
+    "duration": 3.6,
+    "targetRmsDb": -30,
+    "category": "ambience",
+    "seed": 135608,
+    "variants": 3,
+    "priority": 30,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "psychic/rune",
+    "element": "PSYCHIC",
+    "role": "rune",
+    "profile": {
+      "base": 217,
+      "material": "mind",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.031,
+        1.27,
+        2.5
+      ],
+      "cutoff": 4300,
+      "room": "cathedral",
+      "keywords": "giao thoa · vọng · nhịp · lăng kính",
+      "bass": 0.55
+    },
+    "duration": 0.48,
+    "targetRmsDb": -29,
+    "category": "magic",
+    "repeated": true,
+    "seed": 135679,
+    "variants": 4,
+    "priority": 45,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "psychic/ui",
+    "element": "PSYCHIC",
+    "role": "ui",
+    "profile": {
+      "base": 217,
+      "material": "mind",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.031,
+        1.27,
+        2.5
+      ],
+      "cutoff": 4300,
+      "room": "cathedral",
+      "keywords": "giao thoa · vọng · nhịp · lăng kính",
+      "bass": 0.55
+    },
+    "duration": 0.09,
+    "targetRmsDb": -34,
+    "category": "ui",
+    "seed": 135750,
+    "variants": 3,
+    "priority": 60,
+    "wet": 0.18,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  },
+  {
+    "id": "psychic/drone",
+    "element": "PSYCHIC",
+    "role": "drone",
+    "profile": {
+      "base": 217,
+      "material": "mind",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.031,
+        1.27,
+        2.5
+      ],
+      "cutoff": 4300,
+      "room": "cathedral",
+      "keywords": "giao thoa · vọng · nhịp · lăng kính",
+      "bass": 0.55
+    },
+    "duration": 2,
+    "targetRmsDb": -34,
+    "category": "drone",
+    "loop": true,
+    "seed": 135821,
+    "variants": 3,
+    "priority": 4,
+    "wet": 0.45,
+    "thresholds": {
+      "peakDbMax": -0.5,
+      "truePeakDbMax": -0.2,
+      "rmsToleranceDb": 2.8,
+      "dcMax": 0.002,
+      "seamMax": 0.02,
+      "tailDropDb": 15
+    }
+  }
+]

@@ -1,0 +1,29 @@
+// Generated from measured cue history.
+export const CUE_CALIBRATION={
+  "water/impact": {
+    "drive": 1.8
+  },
+  "earth/riser": {},
+  "earth/impact": {
+    "drive": 1.8
+  },
+  "wind/impact": {
+    "drive": 1.8
+  },
+  "fire/impact": {
+    "drive": 1.8
+  },
+  "ice/impact": {
+    "drive": 1.8
+  },
+  "lightning/casting": {
+    "drive": 1.8
+  },
+  "lightning/impact": {
+    "drive": 1.8,
+    "correctionDb": -3
+  },
+  "poison/impact": {
+    "drive": 1.8
+  }
+};

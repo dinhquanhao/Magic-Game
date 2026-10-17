@@ -1,0 +1,2016 @@
+{
+  "elements": [
+    {
+      "id": "FIRE",
+      "vi": "Hỏa",
+      "color": 16734510
+    },
+    {
+      "id": "WATER",
+      "vi": "Thủy",
+      "color": 3784178
+    },
+    {
+      "id": "EARTH",
+      "vi": "Thổ",
+      "color": 12224594
+    },
+    {
+      "id": "LIGHT",
+      "vi": "Ánh Sáng",
+      "color": 16774075
+    },
+    {
+      "id": "SHADOW",
+      "vi": "Bóng Tối",
+      "color": 7156392
+    },
+    {
+      "id": "WIND",
+      "vi": "Phong",
+      "color": 8448973
+    },
+    {
+      "id": "LIGHTNING",
+      "vi": "Lôi",
+      "color": 9210879
+    },
+    {
+      "id": "ICE",
+      "vi": "Băng",
+      "color": 11071231
+    },
+    {
+      "id": "MAGMA",
+      "vi": "Nham",
+      "color": 16732965
+    },
+    {
+      "id": "POISON",
+      "vi": "Độc",
+      "color": 8641090
+    },
+    {
+      "id": "SPACE",
+      "vi": "Không Gian",
+      "color": 9267455
+    },
+    {
+      "id": "TIME",
+      "vi": "Thời Gian",
+      "color": 12886107
+    },
+    {
+      "id": "BLOOD",
+      "vi": "Huyết",
+      "color": 9375784
+    },
+    {
+      "id": "ASTRAL",
+      "vi": "Tinh Tú",
+      "color": 8297471
+    },
+    {
+      "id": "PSYCHIC",
+      "vi": "Tinh Thần",
+      "color": 13154047
+    }
+  ],
+  "skills": [
+    {
+      "id": "FIRE-01",
+      "elementIndex": 0,
+      "slot": 0,
+      "vi": "Thiên Nhật Diệt Thế",
+      "en": null,
+      "shape": "solarImpact",
+      "aoe": 300,
+      "pace": 1.04,
+      "count": 96,
+      "description": "Mặt trời plasma giáng xuống, ba tầng sóng nhiệt và mưa thiên thạch phụ.",
+      "spread": 18.75,
+      "archetype": "skyfall",
+      "runeTower": {
+        "sustainDuration": 1.9699999999999993,
+        "fadeStart": 0.5782520325203252,
+        "fadeDuration": 4.15,
+        "fadeOrder": "outer-last",
+        "fadeStagger": 0.075,
+        "fadeAt": null,
+        "releasePulse": 1.28,
+        "reactToShockwave": true,
+        "timelineEnd": 9.84,
+        "towerScale": 1.0350983390135313
+      },
+      "plan": {
+        "impactAt": 3.72,
+        "preSlowDuration": 0.48,
+        "preSlowScale": 0.23,
+        "hitStop": 0.135,
+        "postSlowScale": 0.3,
+        "postSlowDuration": 0.78,
+        "shake": 1.34,
+        "shakeDuration": 1.34,
+        "shakeFrequency": 18,
+        "seed": 0,
+        "shockCount": 3,
+        "secondaryCount": 4,
+        "style": "skyfall",
+        "debris": 24
+      }
+    },
+    {
+      "id": "FIRE-02",
+      "elementIndex": 0,
+      "slot": 1,
+      "vi": "Phượng Hoàng Tận Thế",
+      "en": null,
+      "shape": "phoenixDive",
+      "aoe": 320,
+      "pace": 0.92,
+      "count": 160,
+      "description": "Phượng hoàng lửa khổng lồ quét cánh rồi lao xuống tâm chiến trường.",
+      "spread": 20,
+      "archetype": "colossal",
+      "runeTower": {
+        "sustainDuration": 0.6100000000000003,
+        "fadeStart": 0.4794238683127572,
+        "fadeDuration": 5.0600000000000005,
+        "fadeOrder": "inner-last",
+        "fadeStagger": 0.093,
+        "fadeAt": null,
+        "releasePulse": 1.3900000000000001,
+        "reactToShockwave": true,
+        "timelineEnd": 9.72,
+        "towerScale": 1.0882877770673922
+      },
+      "plan": {
+        "impactAt": 4.05,
+        "preSlowDuration": 0.38,
+        "preSlowScale": 0.29,
+        "hitStop": 0.11,
+        "postSlowScale": 0.36,
+        "postSlowDuration": 0.65,
+        "shake": 1.18,
+        "shakeDuration": 1.2,
+        "shakeFrequency": 20,
+        "seed": 0.73,
+        "shockCount": 3,
+        "secondaryCount": 5,
+        "style": "colossal",
+        "debris": 32
+      }
+    },
+    {
+      "id": "FIRE-03",
+      "elementIndex": 0,
+      "slot": 2,
+      "vi": "Vạn Hỏa Thiên Phạt",
+      "en": null,
+      "shape": "fireGates",
+      "aoe": 260,
+      "pace": 1.22,
+      "count": 220,
+      "description": "Nhiều cổng trời bắn giáo lửa theo ba đợt phủ kín vùng ảnh hưởng.",
+      "spread": 16.25,
+      "archetype": "barrage",
+      "runeTower": {
+        "sustainDuration": 1.200000000000001,
+        "fadeStart": 0.5209580838323353,
+        "fadeDuration": 4.800000000000001,
+        "fadeOrder": "top-down",
+        "fadeStagger": 0.11099999999999999,
+        "fadeAt": null,
+        "releasePulse": 1.5,
+        "reactToShockwave": true,
+        "timelineEnd": 10.020000000000001,
+        "towerScale": 0.998314579679171
+      },
+      "plan": {
+        "impactAt": 4.02,
+        "preSlowDuration": 0.34,
+        "preSlowScale": 0.32,
+        "hitStop": 0.13,
+        "postSlowScale": 0.34,
+        "postSlowDuration": 0.7,
+        "shake": 1.42,
+        "shakeDuration": 1.38,
+        "shakeFrequency": 22,
+        "seed": 1.46,
+        "shockCount": 3,
+        "secondaryCount": 6,
+        "style": "barrage",
+        "debris": 40
+      }
+    },
+    {
+      "id": "WATER-01",
+      "elementIndex": 1,
+      "slot": 0,
+      "vi": "Hải Thần Lĩnh Vực",
+      "en": "Ocean Dominion",
+      "shape": "oceanDominion",
+      "aoe": 300,
+      "pace": 1,
+      "count": 1,
+      "description": "Cá voi xanh khổng lồ từ cổng đại dương lao xuống, sóng thần nhấn chìm chiến trường.",
+      "spread": 18.75,
+      "oceanDominion": {
+        "totalDuration": 17,
+        "impactTime": 9.55,
+        "worldUnitsPerMeter": 16,
+        "aoeRadius": 250,
+        "whale": {
+          "length": 220,
+          "spineSegments": 48,
+          "descentTime": 4,
+          "impactAngleDeg": 72,
+          "tailBeatHz": 0.35,
+          "waveAmplitude": 0.14,
+          "bioluminescence": 0.6,
+          "skyArcRadius": 180
+        },
+        "gate": {
+          "radius": 150,
+          "height": 260,
+          "formDuration": 2.5
+        },
+        "splash": {
+          "crownHeight": 120,
+          "columnHeight": 160,
+          "dropsByQuality": {
+            "Low": 4000,
+            "Medium": 12000,
+            "High": 32000,
+            "Ultra": 65000
+          }
+        },
+        "tide": {
+          "surgeSpeed": 95,
+          "waveHeight": 55,
+          "floodDepth": 8,
+          "maxRadius": 270,
+          "secondaryWaves": 3,
+          "reflectionDamping": 0.5,
+          "ebbStart": 13.5,
+          "ebbDuration": 2.5,
+          "whirlpoolRadius": 60
+        },
+        "shockwaves": [
+          {
+            "type": "pressure",
+            "speed": 170,
+            "radius": 300
+          },
+          {
+            "type": "water",
+            "speed": 95,
+            "radius": 270
+          },
+          {
+            "type": "ground",
+            "speed": 75,
+            "radius": 260
+          }
+        ],
+        "aftershock": {
+          "count": 3,
+          "interval": 0.7,
+          "decay": 0.55
+        },
+        "cameraShake": {
+          "impact": "god",
+          "surge": "medium",
+          "aftershock": "light"
+        },
+        "hitStop": {
+          "enabled": true,
+          "duration": 0.12
+        },
+        "slowMotion": {
+          "preImpactScale": 0.25,
+          "preImpactDuration": 0.6,
+          "postImpactScale": 0.5,
+          "postImpactDuration": 0.5
+        },
+        "runeTower": {
+          "tiers": "full",
+          "fadeStart": 15.55,
+          "fadeDuration": 1.25
+        }
+      },
+      "archetype": "ocean",
+      "runeTower": {
+        "sustainDuration": 6,
+        "fadeStart": 0.9147058823529413,
+        "fadeDuration": 1.25,
+        "fadeOrder": "outer-last",
+        "fadeStagger": 0.12,
+        "fadeAt": 15.55,
+        "releasePulse": 1.61,
+        "reactToShockwave": true,
+        "timelineEnd": 17,
+        "towerScale": 1.090993649320262
+      },
+      "plan": {
+        "impactAt": 9.55,
+        "preSlowDuration": 0.6,
+        "preSlowScale": 0.25,
+        "hitStop": 0.12,
+        "postSlowScale": 0.5,
+        "postSlowDuration": 0.5,
+        "shake": 1.65,
+        "shakeDuration": 1.35,
+        "shakeFrequency": 8,
+        "seed": 2.19,
+        "shockCount": 3,
+        "secondaryCount": 7,
+        "style": "ocean",
+        "debris": 48
+      }
+    },
+    {
+      "id": "EARTH-01",
+      "elementIndex": 2,
+      "slot": 0,
+      "vi": "Đại Lục Phân Liệt",
+      "en": "Continental Rupture",
+      "shape": "earthMeteorRupture",
+      "aoe": 300,
+      "pace": 1,
+      "count": 1200,
+      "description": "Thiên thạch đá khổng lồ giáng xuống, đại lục nứt vỡ thành các mảng lớn.",
+      "spread": 18.75,
+      "earthMeteor": {
+        "totalDuration": 18,
+        "meteor": {
+          "radius": 5.8,
+          "noiseOctaves": 5,
+          "skyHeight": 32,
+          "descentTime": 4.25,
+          "impactAngleDeg": 80,
+          "fragmentCount": {
+            "Low": 200,
+            "Medium": 500,
+            "High": 1200,
+            "Ultra": 2500
+          }
+        },
+        "crater": {
+          "radius": 7.4,
+          "depth": 2.2,
+          "rimHeight": 1.25
+        },
+        "rupture": {
+          "faultCount": 18,
+          "maxRadius": 22,
+          "slabs": {
+            "Low": 12,
+            "Medium": 22,
+            "High": 36,
+            "Ultra": 40
+          },
+          "propagationDuration": 4.2,
+          "propagationSpeed": 7.5
+        },
+        "aftershock": {
+          "times": [
+            1.35,
+            2.5,
+            3.55
+          ],
+          "decay": 0.55
+        }
+      },
+      "archetype": "skyfall",
+      "runeTower": {
+        "sustainDuration": 5.550000000000001,
+        "fadeStart": 0.8277777777777778,
+        "fadeDuration": 2.7,
+        "fadeOrder": "outer-last",
+        "fadeStagger": 0.11,
+        "fadeAt": 14.9,
+        "releasePulse": 1.72,
+        "reactToShockwave": true,
+        "timelineEnd": 18,
+        "towerScale": 1.1096254194225057
+      },
+      "plan": {
+        "impactAt": 9.35,
+        "preSlowDuration": 0.68,
+        "preSlowScale": 0.25,
+        "hitStop": 0.12,
+        "postSlowScale": 0.5,
+        "postSlowDuration": 0.62,
+        "shake": 1.55,
+        "shakeDuration": 1.38,
+        "shakeFrequency": 18,
+        "seed": 2.92,
+        "shockCount": 3,
+        "secondaryCount": 8,
+        "style": "skyfall",
+        "debris": 2500
+      }
+    },
+    {
+      "id": "LIGHT-01",
+      "elementIndex": 3,
+      "slot": 0,
+      "vi": "Lục Dực Thánh Khải",
+      "en": null,
+      "shape": "seraphicRain",
+      "aoe": 320,
+      "pace": 1,
+      "count": 4200,
+      "description": "Hàng nghìn tia ánh sáng vàng trắng từ trời đâm xuống thành năm đợt phủ rộng chiến trường.",
+      "spread": 20,
+      "rays": {
+        "totalByQuality": {
+          "Low": 2000,
+          "Medium": 2800,
+          "High": 4200,
+          "Ultra": 5500
+        },
+        "hardCap": 5500,
+        "lengthRange": [
+          260,
+          420
+        ],
+        "widthRange": [
+          1.2,
+          4.2
+        ],
+        "descentSpeedRange": [
+          180,
+          360
+        ],
+        "angleJitterDeg": 0.7,
+        "lingerTime": [
+          0.4,
+          1.2
+        ],
+        "finaleImpactAt": 12.05,
+        "totalDuration": 17.2,
+        "waves": [
+          {
+            "name": "scatter",
+            "share": 0.05,
+            "start": 2.55,
+            "spread": 0.95
+          },
+          {
+            "name": "concentric",
+            "share": 0.15,
+            "start": 4.35,
+            "spread": 0.95
+          },
+          {
+            "name": "sweep",
+            "share": 0.2,
+            "start": 6.15,
+            "spread": 1.05
+          },
+          {
+            "name": "carpet",
+            "share": 0.35,
+            "start": 8.1,
+            "spread": 1.15
+          },
+          {
+            "name": "finale",
+            "share": 0.25,
+            "start": 10.85,
+            "spread": 0.12
+          }
+        ]
+      },
+      "archetype": "skyfall",
+      "runeTower": {
+        "sustainDuration": 0,
+        "fadeStart": 0.6162790697674418,
+        "fadeDuration": 6.2,
+        "fadeOrder": "inner-last",
+        "fadeStagger": 0.12,
+        "fadeAt": 10.6,
+        "releasePulse": 1.83,
+        "reactToShockwave": true,
+        "timelineEnd": 17.2,
+        "towerScale": 1.0690449676496976
+      },
+      "plan": {
+        "impactAt": 12.05,
+        "preSlowDuration": 0.48,
+        "preSlowScale": 0.5,
+        "hitStop": 0.08,
+        "postSlowScale": 0.52,
+        "postSlowDuration": 0.72,
+        "shake": 1.24,
+        "shakeDuration": 1.12,
+        "shakeFrequency": 21,
+        "seed": 3.65,
+        "shockCount": 3,
+        "secondaryCount": 4,
+        "style": "skyfall",
+        "debris": 24
+      }
+    },
+    {
+      "id": "SHADOW-01",
+      "elementIndex": 4,
+      "slot": 0,
+      "vi": "Vạn Ảnh Thiên Kiếp",
+      "en": null,
+      "shape": "nightmareSpears",
+      "aoe": 220,
+      "pace": 1,
+      "count": 220,
+      "description": "Một quả cầu bóng tối nhỏ nuốt ánh sáng và năng lượng xung quanh, nén đến cực điểm rồi phát nổ.",
+      "spread": 13.75,
+      "shadowOrbCataclysm": {
+        "id": "SHADOW-01",
+        "tier": "divine",
+        "totalDuration": 17,
+        "worldUnitsPerMeter": 16,
+        "aoeRadius": 220,
+        "orb": {
+          "hoverHeight": 70,
+          "startRadius": 6,
+          "maxRadius": 14,
+          "seedDuration": 2,
+          "pulseHzByWave": [
+            0.8,
+            1.2,
+            2,
+            3.2
+          ],
+          "crackStartWave": 3,
+          "tentacles": {
+            "low": 16,
+            "medium": 32,
+            "high": 64,
+            "ultra": 120
+          }
+        },
+        "absorb": {
+          "maxRadius": 210,
+          "strengthByWave": [
+            0.2,
+            0.5,
+            0.85,
+            1
+          ],
+          "streamsByQuality": {
+            "low": 150,
+            "medium": 400,
+            "high": 900,
+            "ultra": 1800
+          },
+          "particlesByQuality": {
+            "low": 1200,
+            "medium": 2800,
+            "high": 5200,
+            "ultra": 9000
+          },
+          "spiralTightness": 0.5,
+          "groundDrainSpeed": 40,
+          "desaturateMax": 0.7
+        },
+        "waves": [
+          {
+            "name": "rút cạn",
+            "share": 0.15,
+            "pattern": "outer-in",
+            "start": 4.45,
+            "duration": 1.45
+          },
+          {
+            "name": "nuốt năng lượng",
+            "share": 0.25,
+            "pattern": "rune-ground",
+            "start": 6.25,
+            "duration": 1.45
+          },
+          {
+            "name": "cuồng thực",
+            "share": 0.3,
+            "pattern": "dense-streams",
+            "start": 8.15,
+            "duration": 1.55
+          },
+          {
+            "name": "quá tải",
+            "share": 0.3,
+            "pattern": "all-in",
+            "start": 10.15,
+            "duration": 1.55
+          }
+        ],
+        "overload": {
+          "start": 12,
+          "duration": 1.4,
+          "vignette": 0.58,
+          "shrink": 0.5
+        },
+        "detonation": {
+          "start": 13.5,
+          "burstRadius": 150,
+          "tentacleReach": 220,
+          "shardsByQuality": {
+            "low": 400,
+            "medium": 1000,
+            "high": 2200,
+            "ultra": 4500
+          },
+          "releaseColors": true
+        },
+        "shockwaves": [
+          {
+            "type": "pressure",
+            "speed": 180,
+            "radius": 250
+          },
+          {
+            "type": "shadow",
+            "speed": 120,
+            "radius": 230
+          },
+          {
+            "type": "ground",
+            "speed": 90,
+            "radius": 240
+          }
+        ],
+        "aftershock": {
+          "start": 15.15,
+          "count": 3,
+          "interval": 0.7,
+          "decay": 0.55
+        },
+        "cameraShake": {
+          "absorb": "rumble",
+          "detonation": "heavy",
+          "aftershock": "light"
+        },
+        "hitStop": {
+          "enabled": true,
+          "duration": 0.12
+        },
+        "slowMotion": {
+          "overloadScale": 0.3,
+          "overloadDuration": 0.9,
+          "postBurstScale": 0.5,
+          "postBurstDuration": 0.5
+        },
+        "runeTower": {
+          "tiers": "full",
+          "fadeStart": 14.2,
+          "fadeDuration": 2.8,
+          "fadeOrder": "outer-last"
+        }
+      },
+      "archetype": "shadowOrb",
+      "runeTower": {
+        "sustainDuration": 0.6999999999999993,
+        "fadeStart": 0.8352941176470587,
+        "fadeDuration": 2.8,
+        "fadeOrder": "outer-last",
+        "fadeStagger": 0.14,
+        "fadeAt": 14.2,
+        "releasePulse": 1.28,
+        "reactToShockwave": true,
+        "timelineEnd": 17,
+        "towerScale": 0.9023605551156209
+      },
+      "plan": {
+        "impactAt": 13.5,
+        "preSlowDuration": 0.9,
+        "preSlowScale": 0.3,
+        "hitStop": 0.12,
+        "postSlowScale": 0.5,
+        "postSlowDuration": 0.5,
+        "shake": 1.35,
+        "shakeDuration": 1.1,
+        "shakeFrequency": 17,
+        "seed": 4.38,
+        "shockCount": 3,
+        "secondaryCount": 5,
+        "style": "shadowOrb",
+        "debris": 32
+      }
+    },
+    {
+      "id": "WIND-01",
+      "elementIndex": 5,
+      "slot": 0,
+      "vi": "Thiên Khí Băng Diệt",
+      "en": null,
+      "shape": "atmosphericCollapse",
+      "aoe": 320,
+      "pace": 1.18,
+      "count": 4000,
+      "description": "Lốc xoáy khổng lồ cuốn đá và bụi, quét rộng qua chiến trường rồi tan dần.",
+      "spread": 20,
+      "tornado": {
+        "height": 28,
+        "baseRadius": 5.8,
+        "topRadius": 17,
+        "layers": 10,
+        "meanderAmplitude": 2.2,
+        "touchdownTime": 6,
+        "totalDuration": 20.25,
+        "travelSpeed": 3.8,
+        "travelDistance": 28,
+        "travelPath": "curved",
+        "aoeInfluenceRadius": 30,
+        "debris": {
+          "count": 4000,
+          "sizeRange": [
+            0.18,
+            1.25
+          ]
+        },
+        "camera": {
+          "mode": "tilt-orbit-pullback",
+          "rumbleAmplitude": 0.16
+        },
+        "cameraShake": {
+          "touchdown": "heavy",
+          "sustained": "rumble-low",
+          "dissipate": "light"
+        },
+        "hitStop": {
+          "enabled": true,
+          "duration": 0.04,
+          "atTouchdownOnly": true
+        },
+        "slowMotion": {
+          "scale": 0.6,
+          "duration": 0.8,
+          "atTouchdownOnly": true
+        },
+        "runeTower": {
+          "fadeStart": "touchdown",
+          "fadeDuration": 3.5,
+          "fadeOrder": "outer-last",
+          "stagger": 0.14
+        }
+      },
+      "archetype": "tornado",
+      "runeTower": {
+        "sustainDuration": 0,
+        "fadeStart": 0.2962962962962963,
+        "fadeDuration": 3.5,
+        "fadeOrder": "outer-last",
+        "fadeStagger": 0.14,
+        "fadeAt": null,
+        "releasePulse": 1.3900000000000001,
+        "reactToShockwave": true,
+        "timelineEnd": 20.25,
+        "towerScale": 1.1075305864850868
+      },
+      "plan": {
+        "impactAt": 6,
+        "preSlowDuration": 0.22,
+        "preSlowScale": 0.68,
+        "hitStop": 0.04,
+        "postSlowScale": 0.6,
+        "postSlowDuration": 0.8,
+        "shake": 0.92,
+        "shakeDuration": 0.9,
+        "shakeFrequency": 11,
+        "seed": 5.109999999999999,
+        "shockCount": 4,
+        "secondaryCount": 6,
+        "style": "tornado",
+        "debris": 40
+      }
+    },
+    {
+      "id": "LIGHTNING-01",
+      "elementIndex": 6,
+      "slot": 0,
+      "vi": "Lôi Giới Tận Thế",
+      "en": "Lightning Storm Barrage",
+      "shape": "lightningStorm",
+      "aoe": 300,
+      "pace": 1.05,
+      "count": 3500,
+      "description": "Mây giông phủ kín chiến trường, hàng nghìn tia sét phân nhánh giáng xuống theo năm đợt.",
+      "spread": 18.75,
+      "archetype": "barrage",
+      "lightningStorm": {
+        "totalDuration": 17.2,
+        "aoeRadius": 300,
+        "cloud": {
+          "height": 260,
+          "layers": 4,
+          "formDuration": 2.5,
+          "internalFlash": 0.7,
+          "dissipateStart": 13.5,
+          "dissipateDuration": 2.5
+        },
+        "bolts": {
+          "totalByQuality": {
+            "Low": 1100,
+            "Medium": 1900,
+            "High": 3500,
+            "Ultra": 5800
+          },
+          "segmentBudgetByQuality": {
+            "Low": 40000,
+            "Medium": 100000,
+            "High": 250000,
+            "Ultra": 450000
+          },
+          "shapeVariants": 256,
+          "branchDepth": 3,
+          "jaggedness": 0.35,
+          "lengthRange": [
+            200,
+            340
+          ],
+          "widthRange": [
+            0.12,
+            0.48
+          ],
+          "masterBoltCount": 1,
+          "restrikes": [
+            1,
+            4
+          ],
+          "leaderDuration": {
+            "normal": 0.06,
+            "master": 0.45
+          },
+          "flickerHz": 28,
+          "lingerTime": [
+            0.15,
+            0.6
+          ]
+        },
+        "waves": [
+          {
+            "name": "static",
+            "share": 0.05,
+            "pattern": "poisson",
+            "start": 2.5,
+            "duration": 1.6,
+            "shake": 0
+          },
+          {
+            "name": "forked",
+            "share": 0.15,
+            "pattern": "concentric",
+            "start": 4.25,
+            "duration": 1.8,
+            "shake": 0.22
+          },
+          {
+            "name": "chain",
+            "share": 0.2,
+            "pattern": "chain-hop",
+            "start": 6.25,
+            "duration": 1.8,
+            "shake": 0.3
+          },
+          {
+            "name": "tempest",
+            "share": 0.35,
+            "pattern": "carpet",
+            "start": 8.4,
+            "duration": 2,
+            "shake": 0.55
+          },
+          {
+            "name": "finale",
+            "share": 0.25,
+            "pattern": "simultaneous",
+            "start": 11.7,
+            "duration": 0.55,
+            "shake": 1.25
+          }
+        ],
+        "ground": {
+          "scorchRadius": 6,
+          "arcLifetime": [
+            0.3,
+            1.2
+          ],
+          "crawlingArcDensity": 0.6,
+          "fulguriteShare": 0.05,
+          "coolStart": 13.5,
+          "coolDuration": 3
+        },
+        "skyFlash": {
+          "maxHz": 3,
+          "intensity": 0.8,
+          "reducedMotionScale": 0.3
+        },
+        "shockwave": {
+          "type": "electric",
+          "speed": 150,
+          "radius": 270
+        },
+        "thunder": {
+          "speed": 120,
+          "shakeDust": true
+        },
+        "aftershock": {
+          "count": 3,
+          "interval": 0.7,
+          "decay": 0.55
+        },
+        "cameraShake": {
+          "perWave": [
+            "none",
+            "light",
+            "light",
+            "medium",
+            "heavy"
+          ]
+        },
+        "hitStop": {
+          "enabled": true,
+          "duration": 0.08,
+          "finaleOnly": true
+        },
+        "slowMotion": {
+          "scale": 0.5,
+          "duration": 0.7,
+          "beforeFinaleOnly": true
+        },
+        "runeTower": {
+          "fadeStart": 14.5,
+          "fadeDuration": 2.7,
+          "fadeOrder": "outer-last"
+        }
+      },
+      "runeTower": {
+        "sustainDuration": 2.25,
+        "fadeStart": 0.8430232558139535,
+        "fadeDuration": 2.7,
+        "fadeOrder": "outer-last",
+        "fadeStagger": 0.12,
+        "fadeAt": 14.5,
+        "releasePulse": 1.5,
+        "reactToShockwave": true,
+        "timelineEnd": 17.2,
+        "towerScale": 1.090993649320262
+      },
+      "plan": {
+        "impactAt": 12.25,
+        "preSlowDuration": 0.7,
+        "preSlowScale": 0.5,
+        "hitStop": 0.08,
+        "postSlowScale": 0.58,
+        "postSlowDuration": 0.45,
+        "shake": 1.2,
+        "shakeDuration": 1.05,
+        "shakeFrequency": 31,
+        "seed": 5.84,
+        "shockCount": 3,
+        "secondaryCount": 7,
+        "style": "barrage",
+        "debris": 48
+      }
+    },
+    {
+      "id": "ICE-01",
+      "elementIndex": 7,
+      "slot": 0,
+      "vi": "Vĩnh Băng Thiên Kiếp",
+      "en": "Eternal Winter",
+      "shape": "eternalWinter",
+      "aoe": 320,
+      "pace": 1.08,
+      "count": 1600,
+      "description": "Giá lạnh tuyệt đối đóng băng cả chiến trường; gai băng khổng lồ trồi lên từ lòng đất.",
+      "spread": 20,
+      "iceField": {
+        "totalDuration": 16,
+        "freeze": {
+          "radius": 24,
+          "spreadStart": 3.6,
+          "spreadDuration": 3.7,
+          "edgeThickness": 2.4,
+          "frostMargin": 4.2,
+          "crackDensity": 0.72,
+          "thawStart": 13,
+          "thawDuration": 3
+        },
+        "spikes": {
+          "totalByQuality": {
+            "Low": 300,
+            "Medium": 800,
+            "High": 1600,
+            "Ultra": 2800
+          },
+          "heightRange": [
+            1.3,
+            8
+          ],
+          "widthRange": [
+            0.18,
+            1.55
+          ],
+          "variants": 4,
+          "tiltDeg": 12,
+          "growDurationRange": [
+            0.35,
+            1.4
+          ],
+          "overshoot": 0.08,
+          "centralHeight": 17,
+          "centralWidth": 3.6
+        },
+        "waves": [
+          {
+            "name": "hoarfrost",
+            "share": 0.1,
+            "pattern": "scatter",
+            "start": 6.6,
+            "duration": 1.35
+          },
+          {
+            "name": "rings",
+            "share": 0.25,
+            "pattern": "rings",
+            "start": 7.55,
+            "duration": 1.45
+          },
+          {
+            "name": "glacier",
+            "share": 0.4,
+            "pattern": "fault-lines",
+            "start": 9.1,
+            "duration": 1.55
+          },
+          {
+            "name": "finale",
+            "share": 0.25,
+            "pattern": "burst-center",
+            "start": 10.85,
+            "duration": 0.8
+          }
+        ],
+        "finalTime": 10.85,
+        "aftershock": {
+          "count": 3,
+          "interval": 0.7,
+          "decay": 0.55
+        }
+      },
+      "archetype": "iceDomain",
+      "runeTower": {
+        "sustainDuration": 2.4000000000000004,
+        "fadeStart": 0.828125,
+        "fadeDuration": 2.55,
+        "fadeOrder": "outer-last",
+        "fadeStagger": 0.1,
+        "fadeAt": 13.25,
+        "releasePulse": 1.61,
+        "reactToShockwave": true,
+        "timelineEnd": 16,
+        "towerScale": 1.1460162053204759
+      },
+      "plan": {
+        "impactAt": 10.85,
+        "preSlowDuration": 0.62,
+        "preSlowScale": 0.5,
+        "hitStop": 0.1,
+        "postSlowScale": 0.54,
+        "postSlowDuration": 0.65,
+        "shake": 1.4,
+        "shakeDuration": 0.95,
+        "shakeFrequency": 31,
+        "seed": 6.57,
+        "shockCount": 3,
+        "secondaryCount": 8,
+        "style": "iceDomain",
+        "debris": 56
+      }
+    },
+    {
+      "id": "MAGMA-01",
+      "elementIndex": 8,
+      "slot": 0,
+      "vi": "Khai Thiên Nham Ngục",
+      "en": null,
+      "shape": "volcanicGenesis",
+      "aoe": 300,
+      "pace": 0.96,
+      "count": 40,
+      "description": "Chuỗi núi lửa mở miệng phun dung nham và đá nóng.",
+      "spread": 18.75,
+      "archetype": "elemental",
+      "runeTower": {
+        "sustainDuration": 4.260000000000002,
+        "fadeStart": 0.6454918032786886,
+        "fadeDuration": 3.46,
+        "fadeOrder": "top-down",
+        "fadeStagger": 0.075,
+        "fadeAt": null,
+        "releasePulse": 1.72,
+        "reactToShockwave": true,
+        "timelineEnd": 9.760000000000002,
+        "towerScale": 1.0350983390135313
+      },
+      "plan": {
+        "impactAt": 2.04,
+        "preSlowDuration": 0.31,
+        "preSlowScale": 0.285,
+        "hitStop": 0.1,
+        "postSlowScale": 0.46,
+        "postSlowDuration": 0.6799999999999999,
+        "shake": 0.82,
+        "shakeDuration": 0.72,
+        "shakeFrequency": 23,
+        "seed": 7.3,
+        "shockCount": 4,
+        "secondaryCount": 4,
+        "style": "elemental",
+        "debris": 24
+      }
+    },
+    {
+      "id": "MAGMA-02",
+      "elementIndex": 8,
+      "slot": 1,
+      "vi": "Nham Thiên Diệt Thế",
+      "en": null,
+      "shape": "moltenHeavenfall",
+      "aoe": 320,
+      "pace": 1.14,
+      "count": 120,
+      "description": "Mưa thiên thạch dung nham để lại những dòng magma chảy.",
+      "spread": 20,
+      "archetype": "skyfall",
+      "runeTower": {
+        "sustainDuration": 4.5500000000000025,
+        "fadeStart": 0.6780684104627768,
+        "fadeDuration": 3.1999999999999997,
+        "fadeOrder": "bottom-up",
+        "fadeStagger": 0.093,
+        "fadeAt": null,
+        "releasePulse": 1.83,
+        "reactToShockwave": true,
+        "timelineEnd": 9.940000000000001,
+        "towerScale": 1.0882877770673922
+      },
+      "plan": {
+        "impactAt": 2.19,
+        "preSlowDuration": 0.38,
+        "preSlowScale": 0.32999999999999996,
+        "hitStop": 0.125,
+        "postSlowScale": 0.54,
+        "postSlowDuration": 0.86,
+        "shake": 0.82,
+        "shakeDuration": 0.72,
+        "shakeFrequency": 23,
+        "seed": 8.03,
+        "shockCount": 5,
+        "secondaryCount": 5,
+        "style": "skyfall",
+        "debris": 32
+      }
+    },
+    {
+      "id": "MAGMA-03",
+      "elementIndex": 8,
+      "slot": 2,
+      "vi": "Nham Thần Giáng Thế",
+      "en": null,
+      "shape": "magmaTitan",
+      "aoe": 280,
+      "pace": 0.88,
+      "count": 1,
+      "description": "Titan nham thạch khổng lồ bước xuống, để lại vết nứt nóng chảy.",
+      "spread": 17.5,
+      "archetype": "colossal",
+      "runeTower": {
+        "sustainDuration": 4.240000000000001,
+        "fadeStart": 0.6239669421487604,
+        "fadeDuration": 3.64,
+        "fadeOrder": "outer-last",
+        "fadeStagger": 0.11099999999999999,
+        "fadeAt": null,
+        "releasePulse": 1.28,
+        "reactToShockwave": true,
+        "timelineEnd": 9.680000000000001,
+        "towerScale": 1.036
+      },
+      "plan": {
+        "impactAt": 1.8,
+        "preSlowDuration": 0.24,
+        "preSlowScale": 0.24,
+        "hitStop": 0.075,
+        "postSlowScale": 0.38,
+        "postSlowDuration": 0.5,
+        "shake": 1.05,
+        "shakeDuration": 1.1,
+        "shakeFrequency": 19,
+        "seed": 8.76,
+        "shockCount": 3,
+        "secondaryCount": 6,
+        "style": "colossal",
+        "debris": 40
+      }
+    },
+    {
+      "id": "POISON-01",
+      "elementIndex": 9,
+      "slot": 0,
+      "vi": "Vạn Độc Diệt Giới",
+      "en": "Venom Apocalypse",
+      "shape": "venomApocalypse",
+      "aoe": 320,
+      "pace": 1,
+      "count": 15000,
+      "description": "Mây độc phủ kín bầu trời, mưa axit trút xuống ăn mòn cả chiến trường.",
+      "spread": 20,
+      "poisonAcid": {
+        "totalDuration": 16,
+        "finalTime": 12.2,
+        "cloud": {
+          "radius": 26,
+          "height": 25,
+          "layers": 3,
+          "formStart": 2.5,
+          "formDuration": 2.5,
+          "dissipateStart": 13,
+          "dissipateDuration": 3
+        },
+        "rain": {
+          "totalByQuality": {
+            "Low": 2500,
+            "Medium": 6500,
+            "High": 15000,
+            "Ultra": 26000
+          },
+          "heavyBlobShare": 0,
+          "dropLengthRange": [
+            0.24,
+            0.68
+          ],
+          "blobSizeRange": [
+            0.12,
+            0.32
+          ],
+          "fallSpeedRange": [
+            18,
+            32
+          ],
+          "windSkew": 0.18,
+          "splashShare": 0.5
+        },
+        "waves": [
+          {
+            "name": "drizzle",
+            "share": 0.05,
+            "pattern": "poisson",
+            "start": 5,
+            "duration": 1.6
+          },
+          {
+            "name": "spread",
+            "share": 0.15,
+            "pattern": "radial-grow",
+            "start": 6.4,
+            "duration": 1.75
+          },
+          {
+            "name": "squall",
+            "share": 0.2,
+            "pattern": "sweep-slanted",
+            "start": 8.1,
+            "duration": 1.55
+          },
+          {
+            "name": "downpour",
+            "share": 0.35,
+            "pattern": "carpet",
+            "start": 9.55,
+            "duration": 2
+          },
+          {
+            "name": "finale",
+            "share": 0.25,
+            "pattern": "simultaneous",
+            "start": 11.35,
+            "duration": 0.6
+          }
+        ],
+        "corrosion": {
+          "pitDepth": 1.2,
+          "puddleMergeThreshold": 0.6,
+          "evaporateStart": 13.2,
+          "evaporateDuration": 2.8
+        },
+        "shockwave": {
+          "duration": 1.45
+        },
+        "aftershock": {
+          "count": 3,
+          "interval": 0.7,
+          "decay": 0.55
+        }
+      },
+      "archetype": "barrage",
+      "runeTower": {
+        "sustainDuration": 1.1000000000000014,
+        "fadeStart": 0.83125,
+        "fadeDuration": 2.7,
+        "fadeOrder": "outer-last",
+        "fadeStagger": 0.11,
+        "fadeAt": 13.3,
+        "releasePulse": 1.3900000000000001,
+        "reactToShockwave": true,
+        "timelineEnd": 16,
+        "towerScale": 1.1267733959027812
+      },
+      "plan": {
+        "impactAt": 12.2,
+        "preSlowDuration": 0.58,
+        "preSlowScale": 0.5,
+        "hitStop": 0.1,
+        "postSlowScale": 0.54,
+        "postSlowDuration": 0.68,
+        "shake": 1.35,
+        "shakeDuration": 1.05,
+        "shakeFrequency": 25,
+        "seed": 9.49,
+        "shockCount": 3,
+        "secondaryCount": 7,
+        "style": "barrage",
+        "debris": 48
+      }
+    },
+    {
+      "id": "SPACE-01",
+      "elementIndex": 10,
+      "slot": 0,
+      "vi": "Không Gian Băng Diệt",
+      "en": "Dimensional Collapse",
+      "shape": "dimensionalCollapse",
+      "aoe": 320,
+      "pace": 0.88,
+      "count": 12,
+      "description": "Một quả cầu kỳ dị nhỏ quay cực nhanh, hút bụi, mảnh vỡ và vật thể xung quanh vào tâm.",
+      "spread": 20,
+      "spaceBlackHole": {
+        "totalDuration": 19.2,
+        "worldUnitsPerMeter": 16,
+        "aoeRadius": 270,
+        "blackHole": {
+          "horizonRadius": 10,
+          "spinSpeed": 46,
+          "lensingStrength": 0.62,
+          "centerHeight": 18
+        },
+        "pull": {
+          "maxRadius": 270,
+          "gravityByWave": [
+            0.55,
+            0.72,
+            0.88,
+            1
+          ],
+          "debrisByQuality": {
+            "Low": 600,
+            "Medium": 1500,
+            "High": 3000,
+            "Ultra": 6500
+          },
+          "particlesByQuality": {
+            "Low": 15000,
+            "Medium": 40000,
+            "High": 80000,
+            "Ultra": 120000
+          },
+          "slabs": 48,
+          "spiralTightness": 2.4,
+          "tidalStretch": 1.4
+        },
+        "waves": [
+          {
+            "name": "bụi",
+            "share": 0.18,
+            "pattern": "xoắn-vào-tâm",
+            "start": 1.7,
+            "duration": 1.1
+          },
+          {
+            "name": "mảnh-vỡ",
+            "share": 0.22,
+            "pattern": "cuốn-xoáy",
+            "start": 3.1,
+            "duration": 1.25
+          },
+          {
+            "name": "vật-thể",
+            "share": 0.28,
+            "pattern": "hút-xoắn-ốc",
+            "start": 4.65,
+            "duration": 1.35
+          },
+          {
+            "name": "hội-tụ",
+            "share": 0.32,
+            "pattern": "hút-toàn-bộ",
+            "start": 6.2,
+            "duration": 1.55
+          }
+        ],
+        "convergence": {
+          "start": 14.5,
+          "vignette": 0.24
+        },
+        "hitStop": {
+          "enabled": true,
+          "duration": 0.08
+        },
+        "slowMotion": {
+          "preImpactScale": 0.62,
+          "preImpactDuration": 0.45,
+          "postImpactScale": 0.7,
+          "postImpactDuration": 0.35
+        },
+        "runeTower": {
+          "fadeStart": 16.5,
+          "fadeDuration": 2.7,
+          "fadeOrder": "outer-last"
+        }
+      },
+      "archetype": "spatial",
+      "runeTower": {
+        "sustainDuration": 2,
+        "fadeStart": 0.859375,
+        "fadeDuration": 2.7,
+        "fadeOrder": "outer-last",
+        "fadeStagger": 0.14,
+        "fadeAt": 16.5,
+        "releasePulse": 1.5,
+        "reactToShockwave": true,
+        "timelineEnd": 19.2,
+        "towerScale": 1.1460162053204759
+      },
+      "plan": {
+        "impactAt": 14.5,
+        "preSlowDuration": 0.45,
+        "preSlowScale": 0.62,
+        "hitStop": 0.08,
+        "postSlowScale": 0.7,
+        "postSlowDuration": 0.35,
+        "shake": 1.6,
+        "shakeDuration": 1.2,
+        "shakeFrequency": 11,
+        "seed": 10.219999999999999,
+        "shockCount": 3,
+        "secondaryCount": 8,
+        "style": "spatial",
+        "debris": 56
+      }
+    },
+    {
+      "id": "TIME-01",
+      "elementIndex": 11,
+      "slot": 0,
+      "vi": "Vĩnh Hằng Chung Khúc",
+      "en": "Eternal Requiem",
+      "shape": "eternalRequiem",
+      "aoe": 300,
+      "pace": 1.04,
+      "count": 160,
+      "description": "Một lĩnh vực thời gian khổng lồ lan rộng, giữ mọi vật trong khoảnh khắc rồi giải phóng chúng.",
+      "spread": 18.75,
+      "timeDomain": {
+        "id": "TIME-01",
+        "totalDuration": 18,
+        "worldUnitsPerMeter": 16,
+        "domain": {
+          "maxRadius": 320,
+          "shellHeight": 320,
+          "expandDuration": 3.5,
+          "minFreezeFactor": 0.006,
+          "freezeEase": "smooth",
+          "releaseOrder": "center-out",
+          "edgeFraction": 0.08,
+          "catchUp": {
+            "scale": 2.2,
+            "duration": 0.45,
+            "maxStep": 0.05
+          }
+        },
+        "chimes": {
+          "first": 2.5,
+          "expansion": [
+            {
+              "at": 4.5,
+              "radius": 0.35
+            },
+            {
+              "at": 5.6,
+              "radius": 0.7
+            },
+            {
+              "at": 6.8,
+              "radius": 1
+            }
+          ],
+          "stasis": {
+            "count": 4,
+            "interval": 1.06,
+            "start": 8.12
+          },
+          "finale": {
+            "at": 12.5
+          }
+        },
+        "shell": {
+          "fresnel": 2.4,
+          "patternRings": 24,
+          "crackSource": "center",
+          "crackDuration": 0.8,
+          "shardsByQuality": {
+            "low": 120,
+            "medium": 220,
+            "high": 360,
+            "ultra": 520
+          },
+          "hardCap": 560
+        },
+        "stasis": {
+          "particlesByQuality": {
+            "low": 8000,
+            "medium": 25000,
+            "high": 60000,
+            "ultra": 90000
+          },
+          "hardCap": 90000,
+          "clockHands": 3,
+          "afterimageCount": {
+            "low": 0,
+            "medium": 2,
+            "high": 4,
+            "ultra": 6
+          },
+          "gradeSaturation": 0.34,
+          "gradeTint": [
+            0.97,
+            1.015,
+            1.02
+          ],
+          "microMotion": 0.006,
+          "clockRotation": 0.012
+        },
+        "slowMotion": {
+          "scale": 0.5,
+          "duration": 0.6
+        },
+        "hitStop": {
+          "enabled": true,
+          "duration": 0.07,
+          "at": "shellCrack"
+        },
+        "runeTower": {
+          "slowFactor": 0.15,
+          "fadeStart": 15,
+          "fadeDuration": 3,
+          "fadeOrder": "outer-last",
+          "groundRotation": 0.008
+        }
+      },
+      "archetype": "timeDomain",
+      "runeTower": {
+        "sustainDuration": 2.5,
+        "fadeStart": 0.8333333333333334,
+        "fadeDuration": 3,
+        "fadeOrder": "outer-last",
+        "fadeStagger": 0.12,
+        "fadeAt": 15,
+        "releasePulse": 1.61,
+        "reactToShockwave": true,
+        "timelineEnd": 18,
+        "towerScale": 1.0350983390135313
+      },
+      "plan": {
+        "impactAt": 12.5,
+        "preSlowDuration": 0.6,
+        "preSlowScale": 0.5,
+        "hitStop": 0.07,
+        "postSlowScale": 0.62,
+        "postSlowDuration": 0.28,
+        "shake": 0.5,
+        "shakeDuration": 0.55,
+        "shakeFrequency": 18,
+        "seed": 10.95,
+        "shockCount": 2,
+        "secondaryCount": 4,
+        "style": "timeDomain",
+        "debris": 24
+      }
+    },
+    {
+      "id": "BLOOD-01",
+      "elementIndex": 12,
+      "slot": 0,
+      "vi": "Vạn Huyết Thiên Thượng",
+      "en": "Crimson Spears",
+      "shape": "bloodChainNet",
+      "aoe": 320,
+      "pace": 1,
+      "count": 1,
+      "description": "Hàng trăm sợi xích huyết đâm xuyên và đan thành lồng giam khổng lồ, siết chặt rồi vỡ tung qua năm đợt.",
+      "spread": 20,
+      "bloodChainNet": {
+        "totalDuration": 17.4,
+        "skyHeightScale": 1.9,
+        "sigil": {
+          "formStart": 2.35,
+          "formDuration": 2.15
+        },
+        "chains": {
+          "totalByQuality": {
+            "Low": 220,
+            "Medium": 320,
+            "High": 460,
+            "Ultra": 560
+          },
+          "hardCap": 600,
+          "linkBudgetByQuality": {
+            "Low": 8500,
+            "Medium": 15000,
+            "High": 24000,
+            "Ultra": 30000
+          },
+          "linkHardCap": 30000
+        },
+        "waves": [
+          {
+            "name": "khai-xich",
+            "share": 0.12,
+            "start": 4.65,
+            "duration": 1.08,
+            "arrivalDuration": 0.78
+          },
+          {
+            "name": "xuyen-thien",
+            "share": 0.16,
+            "start": 6.05,
+            "duration": 1.12,
+            "arrivalDuration": 0.84
+          },
+          {
+            "name": "dan-xuyen",
+            "share": 0.2,
+            "start": 7.5,
+            "duration": 1.15,
+            "arrivalDuration": 0.9
+          },
+          {
+            "name": "long-giam",
+            "share": 0.24,
+            "start": 8.95,
+            "duration": 1.18,
+            "arrivalDuration": 0.94
+          },
+          {
+            "name": "siết-mang-luoi",
+            "share": 0.28,
+            "start": 10.45,
+            "duration": 1.18,
+            "arrivalDuration": 1
+          }
+        ],
+        "constriction": {
+          "start": 11.82,
+          "fullAt": 12.54
+        },
+        "shatterTime": 12.72,
+        "ground": {
+          "evaporateStart": 14.55,
+          "evaporateDuration": 2.85
+        },
+        "particles": {
+          "particleBudgetByQuality": {
+            "Low": 700,
+            "Medium": 1300,
+            "High": 2300,
+            "Ultra": 3400
+          }
+        },
+        "cameraShake": {
+          "perWave": [
+            "light",
+            "light",
+            "medium",
+            "medium",
+            "heavy"
+          ]
+        },
+        "slowMotion": {
+          "preImpactDuration": 0.62
+        },
+        "runeTower": {
+          "fadeStart": 14.55,
+          "fadeDuration": 2.85
+        }
+      },
+      "archetype": "bloodChainNet",
+      "runeTower": {
+        "sustainDuration": 1.83,
+        "fadeStart": 0.8362068965517242,
+        "fadeDuration": 2.85,
+        "fadeOrder": "outer-last",
+        "fadeStagger": 0.093,
+        "fadeAt": 14.55,
+        "releasePulse": 1.72,
+        "reactToShockwave": true,
+        "timelineEnd": 17.4,
+        "towerScale": 1.0882877770673922
+      },
+      "plan": {
+        "impactAt": 12.72,
+        "preSlowDuration": 0.62,
+        "preSlowScale": 0.32,
+        "hitStop": 0.12,
+        "postSlowScale": 0.5,
+        "postSlowDuration": 0.72,
+        "shake": 1.42,
+        "shakeDuration": 1.1,
+        "shakeFrequency": 19,
+        "seed": 11.68,
+        "shockCount": 5,
+        "secondaryCount": 5,
+        "style": "bloodChainNet",
+        "debris": 32
+      }
+    },
+    {
+      "id": "ASTRAL-01",
+      "elementIndex": 13,
+      "slot": 0,
+      "vi": "Vạn Tinh Quy Nhất",
+      "en": null,
+      "shape": "astralConvergence",
+      "aoe": 300,
+      "pace": 1.02,
+      "count": 180,
+      "description": "Hàng trăm ngôi sao hội tụ thành thiên thể rồi rơi xuống.",
+      "spread": 18.75,
+      "archetype": "skyfall",
+      "runeTower": {
+        "sustainDuration": 4.120000000000001,
+        "fadeStart": 0.6425661914460286,
+        "fadeDuration": 3.51,
+        "fadeOrder": "inner-last",
+        "fadeStagger": 0.11099999999999999,
+        "fadeAt": null,
+        "releasePulse": 1.83,
+        "reactToShockwave": true,
+        "timelineEnd": 9.82,
+        "towerScale": 1.0723618792180185
+      },
+      "plan": {
+        "impactAt": 2.19,
+        "preSlowDuration": 0.38,
+        "preSlowScale": 0.32999999999999996,
+        "hitStop": 0.125,
+        "postSlowScale": 0.54,
+        "postSlowDuration": 0.86,
+        "shake": 0.82,
+        "shakeDuration": 0.72,
+        "shakeFrequency": 23,
+        "seed": 12.41,
+        "shockCount": 5,
+        "secondaryCount": 6,
+        "style": "skyfall",
+        "debris": 40
+      }
+    },
+    {
+      "id": "ASTRAL-02",
+      "elementIndex": 13,
+      "slot": 1,
+      "vi": "Tinh Hà Tận Thế",
+      "en": null,
+      "shape": "celestialArmageddon",
+      "aoe": 320,
+      "pace": 1.16,
+      "count": 200,
+      "description": "Chòm sao kết nối thành mạng cột tinh quang bao phủ chiến trường.",
+      "spread": 20,
+      "archetype": "skyfall",
+      "runeTower": {
+        "sustainDuration": 4.760000000000001,
+        "fadeStart": 0.6736947791164659,
+        "fadeDuration": 3.25,
+        "fadeOrder": "top-down",
+        "fadeStagger": 0.129,
+        "fadeAt": null,
+        "releasePulse": 1.28,
+        "reactToShockwave": true,
+        "timelineEnd": 9.96,
+        "towerScale": 1.1267733959027812
+      },
+      "plan": {
+        "impactAt": 1.95,
+        "preSlowDuration": 0.24,
+        "preSlowScale": 0.24,
+        "hitStop": 0.075,
+        "postSlowScale": 0.38,
+        "postSlowDuration": 0.5,
+        "shake": 0.82,
+        "shakeDuration": 0.72,
+        "shakeFrequency": 23,
+        "seed": 13.14,
+        "shockCount": 3,
+        "secondaryCount": 7,
+        "style": "skyfall",
+        "debris": 48
+      }
+    },
+    {
+      "id": "ASTRAL-03",
+      "elementIndex": 13,
+      "slot": 2,
+      "vi": "Sáng Thế Tinh Vực",
+      "en": null,
+      "shape": "galaxyGenesis",
+      "aoe": 340,
+      "pace": 0.88,
+      "count": 240,
+      "description": "Thiên hà xoắn ốc mở rộng, phóng sao và bụi vũ trụ ra ngoài.",
+      "spread": 21.25,
+      "archetype": "vortex",
+      "runeTower": {
+        "sustainDuration": 2.350000000000001,
+        "fadeStart": 0.4772727272727273,
+        "fadeDuration": 5.0600000000000005,
+        "fadeOrder": "bottom-up",
+        "fadeStagger": 0.147,
+        "fadeAt": null,
+        "releasePulse": 1.3900000000000001,
+        "reactToShockwave": true,
+        "timelineEnd": 9.680000000000001,
+        "towerScale": 1.1812864658014643
+      },
+      "plan": {
+        "impactAt": 2.27,
+        "preSlowDuration": 0.31,
+        "preSlowScale": 0.285,
+        "hitStop": 0.1,
+        "postSlowScale": 0.46,
+        "postSlowDuration": 0.6799999999999999,
+        "shake": 0.68,
+        "shakeDuration": 0.72,
+        "shakeFrequency": 23,
+        "seed": 13.87,
+        "shockCount": 4,
+        "secondaryCount": 8,
+        "style": "vortex",
+        "debris": 56
+      }
+    },
+    {
+      "id": "PSYCHIC-01",
+      "elementIndex": 14,
+      "slot": 0,
+      "vi": "Tâm Thức Băng Diệt",
+      "en": null,
+      "shape": "mindbreakerEye",
+      "aoe": 280,
+      "pace": 0.94,
+      "count": 1,
+      "description": "Con mắt tinh thần mở ra và phát sóng méo dạng qua chiến trường.",
+      "spread": 17.5,
+      "archetype": "spatial",
+      "runeTower": {
+        "sustainDuration": 4.380000000000001,
+        "fadeStart": 0.671457905544148,
+        "fadeDuration": 3.1999999999999997,
+        "fadeOrder": "outer-last",
+        "fadeStagger": 0.075,
+        "fadeAt": null,
+        "releasePulse": 1.5,
+        "reactToShockwave": true,
+        "timelineEnd": 9.74,
+        "towerScale": 1
+      },
+      "plan": {
+        "impactAt": 2.16,
+        "preSlowDuration": 0.38,
+        "preSlowScale": 0.32999999999999996,
+        "hitStop": 0.125,
+        "postSlowScale": 0.54,
+        "postSlowDuration": 0.86,
+        "shake": 0.48,
+        "shakeDuration": 0.72,
+        "shakeFrequency": 23,
+        "seed": 14.6,
+        "shockCount": 5,
+        "secondaryCount": 4,
+        "style": "spatial",
+        "debris": 24
+      }
+    },
+    {
+      "id": "PSYCHIC-02",
+      "elementIndex": 14,
+      "slot": 1,
+      "vi": "Vạn Niệm Thần Vực",
+      "en": null,
+      "shape": "astralMindDominion",
+      "aoe": 300,
+      "pace": 1.08,
+      "count": 120,
+      "description": "Ảo ảnh ý niệm dịch chuyển và bắn tia tới nhiều vùng.",
+      "spread": 18.75,
+      "archetype": "spatial",
+      "runeTower": {
+        "sustainDuration": 5.020000000000001,
+        "fadeStart": 0.7024291497975709,
+        "fadeDuration": 2.94,
+        "fadeOrder": "inner-last",
+        "fadeStagger": 0.093,
+        "fadeAt": null,
+        "releasePulse": 1.61,
+        "reactToShockwave": true,
+        "timelineEnd": 9.88,
+        "towerScale": 1.053730109115775
+      },
+      "plan": {
+        "impactAt": 1.92,
+        "preSlowDuration": 0.24,
+        "preSlowScale": 0.24,
+        "hitStop": 0.075,
+        "postSlowScale": 0.38,
+        "postSlowDuration": 0.5,
+        "shake": 0.48,
+        "shakeDuration": 0.72,
+        "shakeFrequency": 23,
+        "seed": 15.33,
+        "shockCount": 3,
+        "secondaryCount": 5,
+        "style": "spatial",
+        "debris": 32
+      }
+    },
+    {
+      "id": "PSYCHIC-03",
+      "elementIndex": 14,
+      "slot": 2,
+      "vi": "Thần Niệm Sáng Thế",
+      "en": null,
+      "shape": "psychoGenesis",
+      "aoe": 320,
+      "pace": 1.02,
+      "count": 180,
+      "description": "Tinh thể ý thức vỡ thành mạng fractal, hợp thành sóng tâm linh.",
+      "spread": 20,
+      "archetype": "spatial",
+      "runeTower": {
+        "sustainDuration": 5.1000000000000005,
+        "fadeStart": 0.7270875763747454,
+        "fadeDuration": 2.6799999999999997,
+        "fadeOrder": "top-down",
+        "fadeStagger": 0.11099999999999999,
+        "fadeAt": null,
+        "releasePulse": 1.72,
+        "reactToShockwave": true,
+        "timelineEnd": 9.82,
+        "towerScale": 1.1075305864850868
+      },
+      "plan": {
+        "impactAt": 2.04,
+        "preSlowDuration": 0.31,
+        "preSlowScale": 0.285,
+        "hitStop": 0.1,
+        "postSlowScale": 0.46,
+        "postSlowDuration": 0.6799999999999999,
+        "shake": 0.48,
+        "shakeDuration": 0.72,
+        "shakeFrequency": 23,
+        "seed": 16.06,
+        "shockCount": 4,
+        "secondaryCount": 6,
+        "style": "spatial",
+        "debris": 40
+      }
+    }
+  ],
+  "source": {
+    "registrySha256": "d9c9369b9fe18bcb0311d1c24e2ced41764220150d0ada6b87a6e646c0eadb0a",
+    "plansSha256": "a8564972b549f5d99b5716ce40a42e1473110e1860719cbebb7eaca10249cb13",
+    "startBatSha256": "863d11b3e0d3c16b6c2140941cb30ce79b90dd1f773519a8fd584e3c1a7e6e43"
+  },
+  "clock": {
+    "charging": "config.castTime * skill.pace / config.runeDrawSpeed",
+    "channeling": ".58 + skill.pace * .26",
+    "active": "data.activeTime += min(clockDelta,.05) * config.speed * advanceTimeScale(realDt)",
+    "cleanup": "skill.runeTower.timelineEnd",
+    "pause": "config.paused early return",
+    "hitstop": "advanceTimeScale freeze returns 0",
+    "timeDomain": "attack.timeFactorAt(worldPosition); runeTowerTimeScale()"
+  }
+}

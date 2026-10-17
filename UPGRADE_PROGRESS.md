@@ -126,3 +126,13 @@ Quy ước hồ sơ: geometry/hạt/đèn/hậu kỳ/cleanup chi tiết sẽ đ�
 - Các thay đổi mới nhất trong main.js gồm hạt đọc trường gió chung, chuyển động sao hội tụ, quỹ đạo thiên thạch Nham và lõi mắt Tinh Thần. Chưa kiểm chứng hình ảnh/GPU của các thay đổi này.
 - Build lại trước khi gửi: đạt (47 module; app 373.21 kB, add-ons 112.28 kB, Three core 535.18 kB; còn cảnh báo kích thước Three core >500 kB).
 - ZIP gồm mã nguồn, dist mới, tài liệu tiến độ và START.bat; không kèm node_modules. Đây là bản tiến độ hiện tại, chưa phải bản hoàn tất mọi yêu cầu.
+
+## Bổ sung AAA — 17/10/2026
+
+### Khảo sát và bảo toàn lượt đang chạy
+
+- Yêu cầu đồ họa mới nối tiếp tác vụ audio. Giữ mã audio Stage A đã build/chạy/đo đạt, không bắt đầu lại. Theo yêu cầu mới append mục này; toàn bộ phần lịch sử phía trên giữ nguyên.
+- Đã đọc lịch sử và mã đồ họa hiện có: PBR/IBL, SSR, GTAO/SSAO, volumetric/caustic/SSS xấp xỉ, Surface State, Wind Field, Light Injection, adaptive và debug đều có; không dựng lại.
+- [Khảo sát 10 ưu tiên và ánh xạ Unreal→web](graphics/AAA_DESIGN.md). Một WebGLRenderer/animate; Three r180/Vite7. Mage Group rig, dummies, arena/cỏ/kiến trúc procedural; không có skeleton hoặc enemy AI hoàn chỉnh.
+- Baseline mới đang chạy bằng Chromium ANGLE/SwiftShader: capabilities, entity census, mỗi hệ 3 mốc và cao trào 4 preset. Số đo frame dùng gl.finish wall time, không phải benchmark native GPU. Chưa có kết luận thị giác hoặc FPS trước khi có kết quả.
+- Việc tiếp: hoàn tất các cổng audio từng hệ, giữ baseline rồi mở các nhóm PBR/ánh sáng/LOD/nhân vật/field/post/adaptive theo graphics/AAA_DESIGN.md. Không ghi hoàn tất phần chưa triển khai.

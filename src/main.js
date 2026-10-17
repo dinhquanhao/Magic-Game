@@ -8,6 +8,9 @@ import { ShaderPass } from 'three/addons/postprocessing/ShaderPass.js';
 import { disposeObjectTree } from './graphics/core/dispose-tree.js';
 import { createCastFeedback } from './cast-feedback.js';
 import { createSpellAudio } from './audio/spell-audio.js';
+import { mountAudioControls } from './audio/controls.js';
+import { buildSkillScore } from './audio/score.js';
+import { mountAudioLab } from './audio/lab.js';
 import { createPlayableSystems } from './playable.js';
 import { createLightRayRainAttack } from './light-ray-rain.js';
 import { createEarthMeteorAttack } from './earth-meteor.js';
@@ -25,24 +28,30 @@ import { createGraphicsUpgrade, GRAPHICS_PRESETS } from './graphics-upgrade.js';
 import { createGraphicsDebugOverlay } from './graphics/core/debug-overlay.js';
 import { createElementSurfaceMaterial } from './graphics/core/element-materials.js';
 
+let audioLab;
 const sound=createSpellAudio({onStatus:text=>{document.querySelector('#audioStatus').textContent=text;}});
+const audioControls=mountAudioControls(sound);
 const audioButton=document.querySelector('#audioToggle');
 audioButton.addEventListener('click',async()=>{
+ audioGestureHandled=true;
  audioButton.disabled=true;
  try{if(sound.diagnostics().enabled){sound.disable();audioButton.textContent='BẬT ÂM THANH';audioButton.setAttribute('aria-pressed','false');}
- else if(await sound.enable()){audioButton.textContent='TẮT ÂM THANH';audioButton.setAttribute('aria-pressed','true');}}
+ else if((sound.setQuality(config.quality),await sound.enable())){audioButton.textContent='TẮT ÂM THANH';audioButton.setAttribute('aria-pressed','true');}}
  finally{audioButton.disabled=false;}
 });
-document.querySelector('#audioVolume').addEventListener('input',e=>{sound.setVolume(Number(e.target.value));document.querySelector('#audioVolumeOut').textContent=Math.round(Number(e.target.value)*100)+'%';});
 document.querySelector('#ambientAudio').addEventListener('change',e=>sound.setAmbient(e.target.checked));
+let audioGestureHandled=false;function unlockAudio(event){if(audioGestureHandled||!event.isTrusted||event.target.closest?.('#audioToggle'))return;audioGestureHandled=true;audioButton.disabled=true;sound.setQuality(config.quality);void sound.enable().then(ok=>{if(ok){audioButton.textContent='TẮT ÂM THANH';audioButton.setAttribute('aria-pressed','true');}}).finally(()=>audioButton.disabled=false);document.removeEventListener('pointerdown',unlockAudio,true);document.removeEventListener('keydown',unlockAudio,true);}
+document.addEventListener('pointerdown',unlockAudio,true);document.addEventListener('keydown',unlockAudio,true);
 document.addEventListener('visibilitychange',()=>sound.setHidden(document.hidden||webglContextLost));
 window.addEventListener('pagehide',()=>sound.dispose(),{once:true});
 const audioForward=new THREE.Vector3();
 function updateAudioFrame(rate=1){
+ audioLab?.update();
+ sound.setQuality(config.quality);
  if(!sound.enabled)return;
  const data=effect?.userData;
  camera.getWorldDirection(audioForward);
- sound.update(data?{id:effect.uuid,element:elements[data.skill.elementIndex].id,phase:data.phase,time:data.activeTime||0,impact:cinematicPlans[spell].impactAt,center:effect.position.toArray()}:null,
+ sound.update(data?{id:effect.uuid,skillId:data.skill.id,element:elements[data.skill.elementIndex].id,phase:data.phase,time:data.activeTime||0,impact:cinematicPlans[spell].impactAt,center:effect.position.toArray(),caster:data.castContext.origin.toArray(),radius:data.areaRadius,towerProgress:Math.min(1,elapsed*config.runeDrawSpeed/Math.max(.15,config.castTime*data.skillPlan.pace)),tiers:towerSettings(spell).layerCount,domainFactor:data.attack.timeFactorAt?.(effect.position)??1,wind:graphics.getWindUniform()?.value?.z??0,reduced:config.reducedMotion}:null,
  {position:camera.position.toArray(),forward:audioForward.toArray(),up:camera.up.toArray()},rate,config.paused||webglContextLost);
 }
 const canvas=document.querySelector('#stage');
@@ -173,6 +182,8 @@ skillDefs.forEach((skill,index)=>{
   const fadeStartTime=wind?plan.impactAt:shadow?skill.shadowOrbCataclysm.runeTower.fadeStart:seraphic?10.6:earth?14.9:ice?13.25:poison?13.3:ocean?skill.oceanDominion.runeTower.fadeStart:blood?skill.bloodChainNet.runeTower.fadeStart:lightning?skill.lightningStorm.runeTower.fadeStart:space?skill.spaceBlackHole.runeTower.fadeStart:time?skill.timeDomain.runeTower.fadeStart:endTime-fadeDuration;
   skill.runeTower={sustainDuration:wind?0:Math.max(0,fadeStartTime-plan.impactAt),fadeStart:fadeStartTime/endTime,fadeDuration,fadeOrder:wind?skill.tornado.runeTower.fadeOrder:earth||ice||poison||ocean||blood||lightning||space||time||shadow?'outer-last':['outer-last','inner-last','top-down','bottom-up'][index%4],fadeStagger:wind?skill.tornado.runeTower.stagger:earth?.11:ice?.1:poison?.11:seraphic?.12:ocean?.12:lightning?.12:space?.14:time?.12:shadow?.14:.075+(index%5)*.018,fadeAt:seraphic?10.6:earth?14.9:ice?13.25:poison?13.3:ocean||blood||lightning||space||time||shadow?fadeStartTime:null,releasePulse:1.28+(index%6)*.11,reactToShockwave:true,timelineEnd:endTime,towerScale:THREE.MathUtils.clamp(Math.sqrt(skill.aoe/280),.88,1.14)*(1+(index%5)*.018)};
 });
+sound.registerScores(skillDefs.map((skill,i)=>buildSkillScore(skill,cinematicPlans[i])));
+audioLab=mountAudioLab(sound,{skills:skillDefs,onPlaySkill:id=>{const i=skillDefs.findIndex(s=>s.id===id);if(i<0)return;if(playMode)setPlayMode(false);renderSkills(skillDefs[i].elementIndex);select(i);}});
 function mat(hex,opacity=1){return new THREE.MeshBasicMaterial({color:hex,transparent:opacity<1,opacity,depthWrite:false,blending:THREE.AdditiveBlending,side:THREE.DoubleSide,toneMapped:false});}
 function standard(hex,emissive=hex){return new THREE.MeshStandardMaterial({color:hex,metalness:.28,roughness:.23,emissive,emissiveIntensity:.5,transparent:true,opacity:.95,flatShading:true});}
 function addMesh(parent,geo,m,pos=[0,0,0]){const o=new THREE.Mesh(geo,m);o.position.set(...pos);parent.add(o);return o;}

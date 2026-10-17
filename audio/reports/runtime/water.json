@@ -1,0 +1,28 @@
+{
+  "element": "WATER",
+  "earVerified": false,
+  "material": {
+    "peak": 0.07397076487541199,
+    "rms": 0.024365127920477098,
+    "limiter": "lookahead-brickwall",
+    "limiterReductionDb": 0,
+    "liveSources": 1,
+    "pooledNodes": 231,
+    "decodedBytes": 2420160,
+    "baseLatency": 0.01,
+    "outputLatency": 0.032
+  },
+  "impact": {
+    "peak": 0.10057534277439117,
+    "rms": 0.03960943300389757,
+    "limiter": "lookahead-brickwall",
+    "limiterReductionDb": 0,
+    "liveSources": 1,
+    "pooledNodes": 231,
+    "decodedBytes": 2420160,
+    "baseLatency": 0.01,
+    "outputLatency": 0.032
+  },
+  "passed": true,
+  "errors": []
+}

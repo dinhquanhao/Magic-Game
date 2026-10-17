@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import vm from 'node:vm';
+import {createHash} from 'node:crypto';
+const s=fs.readFileSync('src/main.js','utf8');
+const registry=s.slice(s.indexOf('const elements=['),s.indexOf("document.querySelector('#projectCount')"));
+const plans=s.slice(s.indexOf('const cinematicPlans='),s.indexOf('function mat(')).replace(/^sound\.registerScores.*\n/gm,'').replace(/^audioLab=mountAudioLab.*\n/gm,'');
+const source=registry+'\n'+plans+'\nJSON.stringify({elements,skills:skillDefs.map((s,i)=>({...s,plan:cinematicPlans[i]}))})';
+const result=JSON.parse(vm.runInNewContext(source,{cooldowns:null,THREE:{MathUtils:{clamp:(v,a,b)=>Math.max(a,Math.min(b,v))}}}));
+result.source={registrySha256:createHash('sha256').update(registry).digest('hex'),plansSha256:createHash('sha256').update(plans).digest('hex'),startBatSha256:createHash('sha256').update(fs.readFileSync('START.bat')).digest('hex')};
+result.clock={charging:'config.castTime * skill.pace / config.runeDrawSpeed',channeling:'.58 + skill.pace * .26',active:'data.activeTime += min(clockDelta,.05) * config.speed * advanceTimeScale(realDt)',cleanup:'skill.runeTower.timelineEnd',pause:'config.paused early return',hitstop:'advanceTimeScale freeze returns 0',timeDomain:'attack.timeFactorAt(worldPosition); runeTowerTimeScale()'};
+fs.writeFileSync('audio/source-audit.json',JSON.stringify(result,null,2)+'\n');
+console.log(`${result.elements.length} elements, ${result.skills.length} skills; protected source hashes recorded.`);
