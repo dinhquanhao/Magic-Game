@@ -1,11 +1,11 @@
 {
   "file": "Arcane-VFX-Studio-Thao-Update.zip",
-  "sourceCommit": "ed8568de4e7f3a390b939ca225b5862f1d1611bb",
-  "bytes": 95318143,
-  "sha256": "b9b9d700390a3a3525703e8c2eb0ab19ff31fa10733b277a2dabe7827cc3eb4a",
-  "entries": 1238,
+  "sourceCommit": "afa01f09e18e6b1d2ae35747b8e4ae59fe09dfbd",
+  "bytes": 102773339,
+  "sha256": "270b7302757191e8a3fe4c2b8ac349f437f73a79c9093e46724d150e86672ac3",
+  "entries": 1267,
   "crcPassed": true,
   "noNodeModules": true,
   "launcherBytesPreserved": true,
-  "scope": "Runtime/source checkpoint ed8568de4e7f3a390b939ca225b5862f1d1611bb. Current registry: 15 elements, 19 skills; Fire retains only FIRE-01. Shared rune release now fades over 1.8 simulation seconds after effect visibility. Includes forest, brown-ground, retained-skill and rune-fade evidence and public runtime WAV/PNG assets. Excludes node_modules, Git, dist, caches, duplicate offline audio/rendered and audio/reports/cues, and bulky historical graphics/browser evidence or unintegrated graphics drafts. These excluded measurements remain in repository history; runtime audio mirrors are present. npm ci and npm run build work from the included package lock. The broader 11-layer graphics/rune request remains separately documented, not claimed complete by this archive."
+  "scope": "Runtime/source checkpoint afa01f09e18e6b1d2ae35747b8e4ae59fe09dfbd. Current registry: 15 elements, 19 skills; Fire retains only FIRE-01. Uploaded Cyber Bot replaces the player model, raises both hands and stays planted throughout casting. Default drawing plus convergence is 10 simulation seconds; all 19 active skill timelines play at 0.5x for double duration. Authored skill config, MP/cooldown and audio score markers remain intact. Shared rune release still fades over 1.8 simulation seconds after effect visibility, independently of active playback. Includes character-cast, forest, brown-ground, retained-skill and rune-fade evidence and public runtime WAV/PNG assets. Excludes node_modules, Git, dist, caches, duplicate offline audio/rendered and audio/reports/cues, and bulky historical graphics/browser evidence or unintegrated graphics drafts. These excluded measurements remain in repository history; runtime audio mirrors are present. npm ci and npm run build work from the included package lock. The broader 11-layer graphics/rune request remains separately documented, not claimed complete by this archive."
 }
