@@ -10,11 +10,21 @@ Các ghi chú “chưa kiểm chứng” trong phần nâng cấp cũ bên dư�
 
 ## Cách chạy trên Windows
 
-1. Giải nén tệp ZIP.
-2. Mở thư mục dự án.
-3. Nhấp đúp `START.bat` để cài các thư viện cần thiết và khởi chạy chương trình.
+1. Cài [Node.js bản LTS hiện tại](https://nodejs.org/) nếu máy chưa có, rồi đóng và mở lại cửa sổ dòng lệnh.
+2. Giải nén **toàn bộ** tệp ZIP; mở thư mục chứa `package.json` và `START.bat`.
+3. Nhấp đúp `START.bat`. Lần đầu, launcher cài dependencies theo `package-lock.json`; Vite sẽ mở trình duyệt tại đúng cổng máy chủ vừa khởi động.
+4. Giữ cửa sổ dòng lệnh mở trong khi chơi. Nhấn `Ctrl+C` để dừng.
 
-Cần cài Node.js phiên bản hỗ trợ dài hạn. Nếu muốn khởi chạy thủ công, mở cửa sổ dòng lệnh trong thư mục dự án và lần lượt chạy `npm.cmd install`, sau đó `npm.cmd run dev`.
+Launcher đã sửa lỗi CMD đọc sai ký tự/lệnh: dùng ASCII, xuống dòng CRLF, không cần PowerShell hoặc đổi code page. Git giữ nguyên byte của file trong ZIP tải về. Vite 7 yêu cầu Node 20.19 ở nhánh 20, hoặc Node 22.12 trở lên; khuyến nghị cài bản LTS hiện tại.
+
+Để chạy thủ công bằng CMD hoặc PowerShell, mở Terminal trong thư mục chứa `package.json` và chạy:
+
+```bat
+npm.cmd ci
+npm.cmd run dev -- --host 127.0.0.1 --open
+```
+
+Địa chỉ chính xác nằm ở dòng `Local` trong Terminal, thường là `http://localhost:5173/`. Dùng `npm.cmd` giúp PowerShell gọi đúng npm của Windows.
 
 ## 15 hệ và 23 tuyệt kỹ
 

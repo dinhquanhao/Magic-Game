@@ -1,41 +1,60 @@
 @echo off
-chcp 65001 >nul
-setlocal
+setlocal DisableDelayedExpansion
+title Magic-Game
 cd /d "%~dp0"
-title Xưởng Hiệu Ứng Ma Thuật - Tháp Phù Văn
-echo ========================================
-echo   XƯỞNG HIỆU ỨNG MA THUẬT - THÁP PHÙ VĂN
-echo ========================================
-where node >nul 2>&1
-if errorlevel 1 (
-  echo [LỖI] Chưa cài Node.js hoặc chưa thêm vào PATH.
-  echo Hãy cài Node.js phiên bản hỗ trợ dài hạn.
-  pause
-  exit /b 1
-)
+if errorlevel 1 goto directory_error
+if not exist "package.json" goto project_error
+
+where node.exe >nul 2>&1
+if errorlevel 1 goto node_error
 where npm.cmd >nul 2>&1
-if errorlevel 1 (
-  echo [LỖI] Không tìm thấy npm.cmd. Hãy cài lại Node.js phiên bản hỗ trợ dài hạn.
-  pause
-  exit /b 1
-)
-if not exist "node_modules\vite\package.json" (
-  echo [1/2] Đang cài các thư viện cần thiết...
-  call npm.cmd install
-  if errorlevel 1 (
-    echo [LỖI] Cài thư viện thất bại.
-    pause
-    exit /b 1
-  )
-) else (
-  echo [1/2] Các thư viện đã được cài đặt.
-)
-echo [2/2] Đang khởi chạy máy chủ...
-echo Trình duyệt sẽ mở tại một cổng nội bộ còn trống.
-start "" /min powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "$ports=5173..5190; for($i=0;$i -lt 90;$i++){foreach($p in $ports){try{$r=Invoke-WebRequest -UseBasicParsing -Uri ('http://localhost:'+$p+'/') -TimeoutSec 1; if($r.StatusCode -eq 200){Start-Process ('http://localhost:'+$p+'/'); exit}}catch{}}; Start-Sleep -Seconds 1}"
-call npm.cmd run dev
-if errorlevel 1 (
-  echo [LỖI] Máy chủ đã dừng do gặp sự cố.
-  pause
-)
-endlocal
+if errorlevel 1 goto npm_error
+node.exe -e "const v=process.versions.node.split('.').map(Number);process.exit(v[0]>22||(v[0]===22&&v[1]>=12)||(v[0]===20&&v[1]>=19)?0:1)"
+if errorlevel 1 goto version_error
+
+if exist "node_modules\vite\package.json" goto run_game
+echo [1/2] Installing dependencies from package-lock.json...
+call npm.cmd ci
+if errorlevel 1 goto install_error
+
+:run_game
+echo [2/2] Starting Magic-Game. Your browser will open when Vite is ready.
+echo Keep this window open while playing. Press Ctrl+C to stop the server.
+call npm.cmd run dev -- --host 127.0.0.1 --open
+if errorlevel 1 goto server_error
+exit /b 0
+
+:directory_error
+echo [ERROR] Cannot open the game directory.
+goto failed
+
+:project_error
+echo [ERROR] package.json is missing. Extract the entire ZIP before running START.bat.
+goto failed
+
+:node_error
+echo [ERROR] Node.js was not found. Install Node.js LTS from https://nodejs.org/
+echo Close this window and run START.bat again after installation.
+goto failed
+
+:npm_error
+echo [ERROR] npm.cmd was not found. Repair the Node.js LTS installation.
+goto failed
+
+:version_error
+echo [ERROR] This Node.js version cannot run Vite 7:
+node.exe --version
+echo Install the current Node.js LTS from https://nodejs.org/
+goto failed
+
+:install_error
+echo [ERROR] Dependency installation failed. See the npm error above.
+goto failed
+
+:server_error
+echo [ERROR] The game server stopped with an error. See the message above.
+goto failed
+
+:failed
+pause
+exit /b 1

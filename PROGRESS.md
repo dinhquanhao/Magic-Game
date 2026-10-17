@@ -1,6 +1,14 @@
 # Tiến độ Magic-Game
 
 
+## Mới nhất — sửa START.bat theo lỗi Windows người dùng báo
+
+- Phản hồi mới: CMD cắt đầu lệnh/chạy các mảnh tiếng Việt như lệnh. File cũ UTF-8 (235 byte ngoài ASCII), LF-only41dòng, có PowerShell dò cổng. Đổi START.bat sang ASCII/CRLF, git attribute giữ nguyên byte trong clone/ZIP; gọi npm.cmd ci và Vite --open tại127.0.0.1, kiểm tra Node/npm/version và thư mục giải nén.
+- Đây là ngoại lệ mới được yêu cầu qua báo lỗi khởi chạy: START.bat được sửa có chủ đích; các ghi chú giữ nguyên/hash cũ ở lượt trước là lịch sử. Không đổi mã game/registry/timeline/15hệ/23skill, không mở nhóm nâng cấp AAA mới.
+- Build PASS62modules, unit7nhóm PASS gồm guard byte-format launcher. Lệnh dev của launcher chạy được trên Linux; Chromium chọn/cast/Play/MP/pause PASS, 0 console error. Chưa chạy cmd.exe/nhấp đúp trên Windows thật vì môi trường chỉ có Linux và không có Wine/Windows runner. Chi tiết docs/evidence/windows-launcher/verification.json.
+- README/START_HERE có hướng dẫn Node LTS, giải nén toàn bộ và npm.cmd cho CMD/PowerShell. Không merge main hoặc kích hoạt workflow/dịch vụ trả phí.
+
+
 ## Mới nhất — tiếp nối sau dừng, 17/10/2026
 
 - Đã nhận yêu cầu tiếp tục. Bảo toàn WIP tại ce73729, audio fix tại 1a6cb41 đã push vào Draft PR #1. Không merge main/Production/scheduler/API trả phí.

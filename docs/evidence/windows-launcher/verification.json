@@ -1,0 +1,39 @@
+{
+  "platform": "Linux",
+  "before": {
+    "sha256": "863d11b3e0d3c16b6c2140941cb30ce79b90dd1f773519a8fd584e3c1a7e6e43",
+    "bytes": 1479,
+    "crlf": 0,
+    "lf": 41,
+    "nonAsciiBytes": 235
+  },
+  "nativeWindowsTools": {
+    "cmd.exe": null,
+    "wine": null,
+    "wine64": null,
+    "powershell.exe": null,
+    "pwsh": null
+  },
+  "nativeWindowsRun": false,
+  "after": {
+    "sha256": "67f2f70c870abd45d2604f1b20ddbf506907d6913cbf9a1598162f04cf159f72",
+    "bytes": 1774,
+    "crlf": 60,
+    "lf": 60,
+    "nonAsciiBytes": 0
+  },
+  "verification": {
+    "unit": "PASS, 7 groups including Windows byte-format regression",
+    "build": "PASS, 62 modules; existing Three chunk warning remains",
+    "launchCommand": "PASS, npm run dev -- --host 127.0.0.1 --open --port 5182 --strictPort on Linux with BROWSER=none",
+    "chromium": [
+      {
+        "productionUI": "passed",
+        "elements": 15
+      }
+    ],
+    "browserErrors": [],
+    "browserAutoOpenOnWindows": "not verified; Windows runtime unavailable"
+  },
+  "scope": "User-reported START.bat failure authorizes this launcher fix; older notes about unchanged START.bat describe historical checkpoints. Game source, 15 elements and 23 skills are not changed."
+}
