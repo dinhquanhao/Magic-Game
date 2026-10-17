@@ -1,3 +1,7 @@
+# Trạng thái bàn giao Thảo
+
+Runtime Thảo đã hoàn tất trong phạm vi kiểm thử nêu dưới:15hệ/21skill;20skill khác và START.bat giữ nguyên. Báo cáo tổng hợp ở docs/evidence/thao/verification.json; ảnh/video/console ở docs/evidence/thao/index.html. ZIP thật và checksum do scripts/package_thao.py tạo trong docs/releases. Các mục “đang thực hiện/chưa hoàn tất” phía dưới là nhật ký trước khi chốt; phần hạn chế và phạm vi11lớp chưa làm vẫn còn hiệu lực.
+
 # Tiến độ hệ Thảo — 17/10/2026
 
 ## Yêu cầu và phạm vi
@@ -55,7 +59,7 @@ Low/Medium/High/Ultra đều PASS bốn mốc, bốn loại hit, Pause/Resume, s
 - Giữ runtime21skill/15hệ;20skill khác,14element và toàn bộ cinematic/config giữ nguyên theo snapshot. START.bat giữ nguyên byte. Đã dọn thêm nhánh gate rỗng/array portal không còn ai đăng ký sau khi gỡ hệ cuối.
 - Sửa cảnh báo PMREM context cleanup: giải phóng target/listener khi GL đang lost, dựng PMREM mới sau restored. Kiểm thử tập trung3chu kỳ trên Thảo đang active: PASS,0error/0warning và environment texture được tạo lại mỗi lần. Raw warning cũ và lỗi fixture đọc target-null vẫn giữ ngoài cây bàn giao; snapshot fixture nay chấp nhận targetnull trong lúc lost.
 - Bản nghe/cận cảnh đã xem: rễ chạy về chân dummy, gai gỗ trồi tại mục tiêu, quả bay và lá rơi thấy được; ảnh bốnphase đã kiểm chứng bằng mắt. Video là mẫu mô phỏng cố định, không audio và không benchmarkGPU.
-- ZIP thật đã tạo và kiểm CRC/launcher/no-node_modules; đang cập nhật sang commit source cuối. Chi tiết SHA/size/sourceCommit được xuất trong docs/releases/thao-package.json.
+- ZIP được tạo từ commit source cuối bằng scripts/package_thao.py; kiểm CRC/launcher/no-node_modules và build bản giải nén được lưu trong bằng chứng bàn giao. Chi tiết SHA/size/sourceCommit được xuất trong docs/releases/thao-package.json.
 - Hạn chế: chưa đo FPS trên GPU người chơi; CPU submission/SwiftShader không chứng minh hiệu năng native. Chưa chạy START.bat trên Windows thật; chưa kiểm chứng âm thanh bằng tai; chưa có AI/HP quái mới. Lá/bark/SSS/bóng tán là xấp xỉ vật liệu/ánh sáng, không ray tracing. Chưa chứng nhận mọi góc camera/tất cả thiết bị.
 
 ### File chính sửa/tạo/xóa

@@ -1,4 +1,4 @@
-import io,tarfile,zipfile,subprocess,json,hashlib,argparse,tempfile
+import tarfile,zipfile,subprocess,json,hashlib,argparse,tempfile
 from pathlib import Path
 parser=argparse.ArgumentParser();parser.add_argument('--ref',default='HEAD');args=parser.parse_args();ref=subprocess.check_output(['git','rev-parse',args.ref],text=True).strip();out=Path('docs/releases/Arcane-VFX-Studio-Thao-Update.zip');out.parent.mkdir(parents=True,exist_ok=True)
 scratch=tempfile.TemporaryDirectory(prefix='arcane-thao-package-');tar_path=Path(scratch.name)/'checkpoint.tar'
