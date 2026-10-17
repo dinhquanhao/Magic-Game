@@ -1,0 +1,19 @@
+{
+  "runtimeFiles": {
+    "src/main.js": "3e3f2ea1093d56667bd03a6cc28dc3c99575d9d6c8ba9477c551ab66d321a20f",
+    "src/playable.js": "e684ff2dc0d52683c73d6e56eade42052d6e004a53a48e2a3348b911a68b51d9",
+    "src/character-model.js": "e934c84da362cf48c15f47ee5d16dc69621ebfb2b1e0079a1895e650a29fdcc2",
+    "src/cast-timing.js": "2db5eef23fefdb2e5395a77da533cf86dfb7c7c683531835a8dc9cea2da73173",
+    "src/cast-feedback.js": "0f413b44cdf7117ef2fb447b4ce26ed2123dbbd49d208d859dee0aa9fbec6cfd",
+    "src/rune-fade.js": "93948562713c2c02652f62dacafd38392834091dce2384409c8331ce6c872409",
+    "index.html": "15f310a39ddf52ec17b030c978d0aa767931071d4cfd80d2b26964fe74dfb1fa"
+  },
+  "note": "Hashes of the runtime used by matrix/lifecycle/production; test hooks are injected only through Playwright routing.",
+  "productionBuildFiles": {
+    "dist/index.html": "e6a1317ee3634bd43ac12c4bdcf0cc03d023c4c4fddbd3c46f7fa44802d65640",
+    "dist/assets/index-DSj2jVos.css": "de774b91be9ec60846696d1367aa3e49ee3d3c64c62a1f5fa9e3518ddcdfd0b1",
+    "dist/assets/index-B9ODx9dS.js": "80e220201ed4b4ec1e2184bb5a6f1fb6cf0b4129318193602bf7bd550d5c8d5c",
+    "dist/assets/three-core-BnBVkRDz.js": "6b0f8e3bda5257d3990650a8905c0afbaa888f9192a5122f877cac389244c170",
+    "dist/assets/three-addons-BfVEc4EA.js": "61705790ed88d6713b6b404614fa5a067aa30246fcb9e4d020a0830e3710bcb0"
+  }
+}

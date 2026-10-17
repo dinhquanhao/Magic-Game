@@ -9,8 +9,8 @@ out=Path(a.output);out.mkdir(parents=True,exist_ok=True)
 extra=r'''
 window.__runeQA={
  start(id,q){if(effect){scene.remove(effect);disposeTree(effect);effect=null;}graphics.resetSurface();let seed=38017;Math.random=()=>{seed=(Math.imul(seed,1664525)+1013904223)|0;return (seed>>>0)/4294967296;};
- sound.disable();config.runes=true;config.paused=false;config.quality=q;config.qualityScale={Low:.35,Medium:.62,High:1,Ultra:1.4}[q];graphics.applyQuality(q,{...GRAPHICS_PRESETS[q],adaptive:false});camera.position.set(0,18,34);controls.target.set(0,4.5,0);controls.update();select(skillDefs.findIndex(s=>s.id===id));effect.userData.phase='charging';elapsed=config.castTime*effect.userData.skillPlan.pace;animate();return this.state();},
- frame(t){__magicQA.sample(spell,t);return this.state();},
+ sound.disable();config.runes=true;config.paused=false;config.quality=q;config.qualityScale={Low:.35,Medium:.62,High:1,Ultra:1.4}[q];graphics.applyQuality(q,{...GRAPHICS_PRESETS[q],adaptive:false});camera.position.set(0,18,34);controls.target.set(0,4.5,0);controls.update();select(skillDefs.findIndex(s=>s.id===id));effect.userData.phase='charging';elapsed=effect.userData.timing.charge;animate();return this.state();},
+ frame(t){__magicQA.sample(spell,t/2);return this.state();},
  state(){const g=effect?.userData.ritual,opacities=[],intensities=[];g?.traverse(o=>{for(const m of (Array.isArray(o.material)?o.material:o.material?[o.material]:[])){if(!m.isShaderMaterial)opacities.push(m.opacity);if(m.uniforms?.uIntensity)intensities.push(m.uniforms.uIntensity.value);}if(o.isLight)intensities.push(o.intensity);});return {...__magicQA.snapshot(),runeVisible:g?.visible??false,runeStart:effect?.userData.runeFadeStartedAt??null,opacitySum:opacities.reduce((a,b)=>a+b,0),maxOpacity:Math.max(0,...opacities),maxIntensity:Math.max(0,...intensities),runeObjects:g?.children.length??0,attackVisible:effect?.userData.attack.group?.visible??false};},
  image(){composer.render();return canvas.toDataURL('image/png').split(',')[1];},
  pause(v){config.paused=v;animate();return this.state();},
@@ -38,7 +38,7 @@ with sync_playwright() as pw:
     if a.baseline_only and id not in ['FIRE-01','WATER-01','TIME-01','NATURE-01']:continue
     check(page.evaluate('([id,q])=>__runeQA.start(id,q)',[id,q]));previous=float('inf');frames=[]
     # The time-domain group intentionally remains hidden until active 1.85s.
-    start=1.9 if id=='TIME-01' else .05
+    start=3.75 if id=='TIME-01' else .05
     times=[.05,.45,.9,1.35,1.9] if a.baseline_only else ([.05] if start>1 else [])+[start,start+.45,start+.9,start+1.35,start+1.85,max(start+2.5,skill['impact']+.1)]
     if q=='High' and not a.baseline_only:times=([.05] if start>1 else [])+[start,start+.9,start+1.85,max(start+2.5,skill['impact']+.1)]
     for t in times:
@@ -57,7 +57,7 @@ with sync_playwright() as pw:
     page.evaluate('([id,q])=>__runeQA.start(id,q)',['FIRE-01',q]);check(page.evaluate('__runeQA.frame(.05)'));mid=check(page.evaluate('__runeQA.frame(.95)'));assert mid['runeVisible'];end=check(page.evaluate('__runeQA.frame(1.9)'));assert not end['runeVisible'];r['checks'][q]=True
    page.evaluate('([id,q])=>__runeQA.start(id,q)',['FIRE-01','Low']);page.evaluate('__runeQA.frame(.05)');before=check(page.evaluate('__runeQA.frame(.65)'));page.evaluate('__runeQA.pause(true)');page.evaluate('__magicQA.tick(6)');paused=check(page.evaluate('__runeQA.state()'));assert paused['time']==before['time'] and paused['opacitySum']==before['opacitySum'];page.evaluate('__runeQA.pause(false)');r['checks']['pauseResume']=True
    frozen=page.evaluate('__runeQA.timeMode("freeze")');page.evaluate('__magicQA.tick(6)');still=check(page.evaluate('__runeQA.state()'));assert still['time']==frozen['time'] and still['opacitySum']==frozen['opacitySum'];r['checks']['hitStopFreezesFade']=True
-   slow=page.evaluate('__runeQA.timeMode("pre",.25)');page.evaluate('__magicQA.tick(4)');slower=check(page.evaluate('__runeQA.state()'));assert abs(slower['time']-slow['time']-.05)<1e-6 and slower['opacitySum']<slow['opacitySum'];page.evaluate('__runeQA.timeMode("idle")');r['checks']['slowMotionUsesSimulationClock']=True
+   slow=page.evaluate('__runeQA.timeMode("pre",.25)');page.evaluate('__magicQA.tick(4)');slower=check(page.evaluate('__runeQA.state()'));assert abs(slower['time']-slow['time']-.025)<1e-6 and slower['opacitySum']<slow['opacitySum'];page.evaluate('__runeQA.timeMode("idle")');r['checks']['slowMotionUsesSimulationClock']=True
    page.evaluate('__runeQA.runes(false)');check(page.evaluate('__runeQA.frame(2.2)'));page.evaluate('__runeQA.runes(true)');assert not check(page.evaluate('__runeQA.frame(2.25)'))['runeVisible'];r['checks']['toggleDoesNotResurrect']=True
    page.evaluate('([id,q])=>__runeQA.start(id,q)',['FIRE-01','Low']);fresh=check(page.evaluate('__runeQA.frame(.05)'));assert fresh['runeVisible'] and fresh['maxOpacity']>.9;r['checks']['recastRestoresFullOpacity']=True
    page.evaluate('__magicQA.finish(true)');fresh=check(page.evaluate('__runeQA.state()'));assert fresh['active'] and fresh['phase']=='charging';check(page.evaluate('__runeQA.finish()'));r['checks']['autoRepeatCleanup']=True

@@ -1,0 +1,9 @@
+{
+  "source": "User-supplied model_3d_camera_360.zip",
+  "archiveSha256": "d3df91ba4a03c3475a156d3889ef4a6524dbb957f3ae258fc5a520b1b7a594fc",
+  "sourceFile": "js/game.js",
+  "sourceSha256": "ec6816bdde80401b52f1d4422fa0614333ecc59eb7a5b67d5e81587ab203fdec",
+  "imported": "Default bot geometry and materials from buildCharacterModel; no drone/astronaut selection, scene, renderer, RAF, external scripts, audio or input imported.",
+  "adaptation": "ES module, named hand/head/cast anchors, body grounding -0.09 m, both-hands casting animation, existing game controller retained.",
+  "license": "Provided by the user for this project; no separate license included in the archive. Repository license unchanged."
+}

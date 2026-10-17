@@ -1,4 +1,15 @@
-# Mốc mới nhất — phù văn mờ khi skill xuất hiện, 17/10/2026
+# Mốc mới nhất — model Cyber Bot và timeline thi triển,17/10/2026
+
+- Đã push checkpoint phù văn `9a786205e26d05f90f79dfd7079f423b78951d03` vào cùng Draft PR#1 trước khi sửa model; không mất nguồn/kết quả cũ, không merge main.
+- Model mặc định `bot` được port từ `js/game.js` trong ZIP người dùng, giữ hình học/màu/vật liệu; thêm anchor hai tay/đỉnh đầu, căn chân và animation. Không nhập renderer, RAF, input/audio/CDN của demo. Nguồn/hash tại assets/sources/cyber-bot-provenance.json.
+- Đứng yên/giơ hai tay suốt charging/channeling/active, chặn WASD/gamepad/nhảy/lướt và đổi hướng actor, camera vẫn xoay được. Kết thúc/hủy/reset trả lại di chuyển. Mặc định8,5s vẽ+1,5s hội tụ; active0,5×, đủ19skill kéo dài2×. Cấu hình timing chụp theo mỗi cast; UI/audio theo clock mới. Fade phù văn vẫn1,8s simulation từ lúc hiệu ứng hiển thị.
+- Build67module và11file test unit PASS, gồm3ca mới cho timing/model/input lock.19Low+19High full main-loop PASS,38lượt/228mốc,0JS/WebGL/shader error/warning; sai số active tối đa0,06s so với mục tiêu2×. Medium/Ultra đại diện và hồi quy fade PASS.979file nguồn/asset/dependency/launcher bảo vệ cùng registry/cinematic/rune profile/MP/cooldown/score gốc giữ nguyên byte/hash. Các mốc audio tham chiếu offline vẫn là timeline gốc; runtime phát theo0,5×, có đổi pitch như engine hiện hành.
+- Lifecycle đã PASS pause/hit-stop/slow0,25/delayedTime/audio/cleanup/reset/slider snapshot. Có2watchdog warning khi reset trở về High trên SwiftShader; không có JS/WebGL/shader error. Fixture ban đầu gọi `config` ngoài module ở2ca cuối; đã sửa fixture, rerun đủca PASS, không phải lỗi runtime.
+- Production không hook đã PASS khởi động/cast/hội tụ/active/camera orbit/aftermath/kết thúc/di chuyển/reset,0console/page error. Lượt đầu chạy song song timeout180s, raw giữ nguyên; lượt riêng DPR0,5/timeout dài hơn PASS. Video MP4 giữ frame/thời lượng từ WebM, không audio/không phải Live Preview. Bằng chứng tại docs/evidence/character-cast/README.md. Đóng gói ZIP mới theo sourceCommit/SHA metadata, cập nhật cùng Draft PR#1, không merge main. [10ý tưởng/chọn3](docs/ROUND-CHARACTER-CAST-2026-10-17.md). GĐ2 đạt phần thay model/kết nối animation theo yêu cầu; HP/hurt/death/Boss/gameplay đầy đủ vẫn chưa hoàn thành.
+
+---
+
+# Mốc trước — phù văn mờ khi skill xuất hiện, 17/10/2026
 
 - Yêu cầu mới áp dụng toàn15hệ/19skill: phù văn chung fade smoothstep trong1,8giây mô phỏng từ khi nhóm hiệu ứng skill bật hiển thị. Bỏ bước giảm opacity đột ngột lúc release. Chờ nhóm xuất hiện trễ/root rỗng; tắt hoàn toàn vòng/glyph/hạt/đèn, không hiện lại ở impact hoặc toggle. Recast phục hồi vòng mới.
 - Thay đổi trong src/rune-fade.js và phần cập nhật ritual của main.js; không thay registry, cấu hình/cinematic/rune profile/MP/cooldown/audio hoặc VFX đòn đánh. Source audit trước/sau giống hệt byte,16unit và build65module đạt. [Phạm vi/10ý tưởng chọn3](docs/ROUND-RUNE-FADE-2026-10-17.md).

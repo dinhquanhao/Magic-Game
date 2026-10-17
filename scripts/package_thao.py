@@ -13,7 +13,7 @@ with zipfile.ZipFile(out,'w',zipfile.ZIP_DEFLATED,compresslevel=3) as z,tarfile.
  for m in t:
   if not m.isfile() or not include(m.name):continue
   data=t.extractfile(m).read();name='Arcane-VFX-Studio-Thao-Update/'+m.name;z.writestr(name,data);manifest[m.name]=hashlib.sha256(data).hexdigest()
- for evidence in ['docs/evidence/thao','docs/evidence/brown-ground','docs/evidence/fire-trim','docs/evidence/rune-fade']:
+ for evidence in ['docs/evidence/thao','docs/evidence/brown-ground','docs/evidence/fire-trim','docs/evidence/rune-fade','docs/evidence/character-cast']:
   for p in Path(evidence).rglob('*'):
    if not p.is_file():continue
    name=str(p);data=p.read_bytes();z.writestr('Arcane-VFX-Studio-Thao-Update/'+name,data);manifest[name]=hashlib.sha256(data).hexdigest()
@@ -22,7 +22,7 @@ with zipfile.ZipFile(out,'w',zipfile.ZIP_DEFLATED,compresslevel=3) as z,tarfile.
   if name in manifest:continue
   p=Path(name)
   if p.exists():data=p.read_bytes();z.writestr('Arcane-VFX-Studio-Thao-Update/'+name,data);manifest[name]=hashlib.sha256(data).hexdigest()
- note=f'Runtime/source checkpoint {ref}. Current registry: 15 elements, 19 skills; Fire retains only FIRE-01. Shared rune release now fades over 1.8 simulation seconds after effect visibility. Includes forest, brown-ground, retained-skill and rune-fade evidence and public runtime WAV/PNG assets. Excludes node_modules, Git, dist, caches, duplicate offline audio/rendered and audio/reports/cues, and bulky historical graphics/browser evidence or unintegrated graphics drafts. These excluded measurements remain in repository history; runtime audio mirrors are present. npm ci and npm run build work from the included package lock. The broader 11-layer graphics/rune request remains separately documented, not claimed complete by this archive.\n'
+ note=f'Runtime/source checkpoint {ref}. Current registry: 15 elements, 19 skills; Fire retains only FIRE-01. Uploaded Cyber Bot replaces the player model, raises both hands and stays planted throughout casting. Default drawing plus convergence is 10 simulation seconds; all 19 active skill timelines play at 0.5x for double duration. Authored skill config, MP/cooldown and audio score markers remain intact. Shared rune release still fades over 1.8 simulation seconds after effect visibility, independently of active playback. Includes character-cast, forest, brown-ground, retained-skill and rune-fade evidence and public runtime WAV/PNG assets. Excludes node_modules, Git, dist, caches, duplicate offline audio/rendered and audio/reports/cues, and bulky historical graphics/browser evidence or unintegrated graphics drafts. These excluded measurements remain in repository history; runtime audio mirrors are present. npm ci and npm run build work from the included package lock. The broader 11-layer graphics/rune request remains separately documented, not claimed complete by this archive.\n'
  z.writestr('Arcane-VFX-Studio-Thao-Update/ARCHIVE_CONTENTS.txt',note)
  z.writestr('Arcane-VFX-Studio-Thao-Update/ARCHIVE_MANIFEST.json',json.dumps({'sourceCommit':ref,'files':manifest},indent=2))
 with zipfile.ZipFile(out) as z:

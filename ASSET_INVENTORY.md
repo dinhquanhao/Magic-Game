@@ -1,3 +1,11 @@
+# Model nhân vật tải lên —17/10/2026
+
+Cyber Bot từ model_3d_camera_360.zip của người dùng, mặc định gọi buildCharacterModel('bot') trong js/game.js. Nguồn rút trích và SHA256 tại assets/sources; module runtime src/character-model.js dựng cùng geometry/màu/roughness/metalness. Model humanoid có2khớp vai,2chân, backpack/visor; căn chân -0,09m và nâng vai khi giơ hai tay để đầu tay ở trên đỉnh đầu. Anchor phép nằm vùng hai tay, thay gậy cũ. Aura lam/mũi tên dưới bot là marker hướng từ model gốc; vòng phép/hạt theo nguyên tố dùng fade chung.
+
+Không có GLB, skin hay texture trong ZIP; không gọi model procedural này là asset skinned. Không nạp runtime demo/scene/camera/renderer/RAF/audio/CDN và không thêm dịch vụ hoặc sample ngoài. ZIP không kèm license riêng; ghi nguồn người dùng cung cấp, không đổi license repo. Drone/astronaut và controller parkour của demo chưa nhập. Model mới thay pháp sư cũ theo yêu cầu rõ ràng, giữ camera/target/dummy/MP của game. Audio bank và979file bảo vệ giữ nguyên; runtime active chạy0,5× để dài2× nên pitch đổi, chưa có time stretching giữ cao độ.
+
+---
+
 # Hiện trạng assets sau cập nhật Thảo
 
 Fade phù văn chung: giữ toàn bộ hình học, shader, icon và audio hiện có. Thêm logic opacity/timeline tại src/rune-fade.js, không tạo texture/mesh/renderer/RAF/timer mới. Vòng phép cũ và hạt/đèn được làm mờ rồi ẩn theo simulation time. Bằng chứng: docs/evidence/rune-fade/README.md.

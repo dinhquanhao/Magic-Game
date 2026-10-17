@@ -1,5 +1,7 @@
 # Magic-Game — nguyên tắc phát triển
 
+- Ngoại lệ mới nhất theo yêu cầu người dùng17/10: thay model bằng Cyber Bot trong ZIP tải lên; giữ nhân vật đứng yên/giơ hai tay suốt charging/channeling/active. Mặc định tổng vẽ+hội tụ10giây (8,5+1,5), active của19skill chạy0,5× để kéo dài2×. Giữ marker/cấu hình nội bộ, MP/cooldown; UI/audio đồng bộ playback. Fade rune vẫn1,8giây simulation từ khi hiệu ứng hiển thị. Đây là phạm vi được người dùng chọn, thay thế điều cấm đổi model/timing cũ; không mở các nhóm AAA/HP/Boss khác.
+
 - Tiếp tục repository hiện tại; không dựng lại dự án. Đọc `ROADMAP.md`, `PROGRESS.md`, README và mã thực tế trước khi chọn việc tiếp theo.
 - Registry hiện tại có 15 hệ/19 skill. Theo yêu cầu thu gọn Hỏa ngày 17/10, Hỏa chỉ còn FIRE-01 — Thiên Nhật Diệt Thế. Giữ nguyên toàn bộ 19 skill còn lại, gồm 18 skill ngoài Hỏa: ID/tên/mô tả, cấu hình, cinematic, rune, MP/cooldown và audio. Các seed tạo hình phải gắn với ID ổn định, không đổi theo vị trí UI. Không xóa thêm hệ/skill hoặc thay tuyệt kỹ bằng hiệu ứng chung.
 - Ngoại lệ hình ảnh theo yêu cầu mới: phù văn chung của cả19skill mờ dần trong1,8giây mô phỏng từ khi hiệu ứng skill được bật hiển thị. Giữ hình vẽ lúc charging/channeling, không đổi skill/cinematic/audio/MP/cooldown. Skill xuất hiện trễ phải chờ nhóm hiệu ứng thật, không dùng placeholder trống; pause/hit-stop/slow motion và recast dùng cùng timeline. Phù văn đã ẩn không hiện lại ở impact/toggle.

@@ -1,8 +1,10 @@
 # Chạy và xem game — nền đất nâu và Thảo
 
-Cập nhật mới nhất: [phù văn19skill mờ dần khi skill xuất hiện — ảnh, video và ma trận kiểm thử](evidence/rune-fade/README.md). ZIP bên dưới được cập nhật theo sourceCommit/SHA trong metadata gói.
+Cập nhật mới nhất: **Cyber Bot theo ZIP người dùng, giơ hai tay/đứng yên khi cast, rune10s và thời lượng19skill dài2×**. [Ảnh, video và báo cáo model/timing](evidence/character-cast/README.md). ZIP được cập nhật theo sourceCommit/SHA trong metadata gói. Vào **CHẾ ĐỘ CHƠI** để thấy nhân vật; nhấn **E** hoặc nút **THI TRIỂN**, xoay camera bằng chuột phải. Di chuyển/nhảy/lướt được trả lại sau khi skill kết thúc.
 
-Danh mục mới nhất: **15 hệ/19 skill**, Hỏa chỉ còn Thiên Nhật Diệt Thế và giữ nguyên hành vi. [Báo cáo đối chiếu trước/sau](evidence/fire-trim/README.md). ZIP bên dưới được đóng gói lại; các báo cáo Thảo/nền đất phía dưới là bằng chứng của checkpoint trước.
+Mốc trước: [phù văn19skill mờ dần khi skill xuất hiện — ảnh, video và ma trận kiểm thử](evidence/rune-fade/README.md). ZIP bên dưới được cập nhật theo sourceCommit/SHA trong metadata gói.
+
+Danh mục mới nhất: **15 hệ/19 skill**, Hỏa chỉ còn Thiên Nhật Diệt Thế; dữ liệu skill giữ nguyên, runtime dùng timing mới nêu trên. [Báo cáo đối chiếu trước/sau](evidence/fire-trim/README.md). ZIP bên dưới được đóng gói lại; các báo cáo Thảo/nền đất phía dưới là bằng chứng của checkpoint trước.
 
 - [Nền đất nâu: ảnh trước/sau, video và kiểm thử](evidence/brown-ground/README.md). ZIP bên dưới được cập nhật theo checkpoint ghi trong metadata; dùng bản mới để thấy nền nâu.
 

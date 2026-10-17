@@ -22,10 +22,10 @@ window.__magicQA={
   if(spell!==i||!effect)select(i);
   if(!effect)return {failed:true};
   const d=effect.userData;d.phase='active';d.root.visible=d.skill.shape!=='eternalRequiem';d.transfer.visible=false;
-  d.activeTime=Math.max(0,time-.05);elapsed=5+time;animate();return this.snapshot();
+  d.activeTime=Math.max(0,time-.025);d.activeWorldTime=d.activeTime*2;elapsed=5+time;animate();return this.snapshot();
  },
  tick(count=1){for(let i=0;i<count;i++)animate();return this.snapshot();},
- charging(){cast();elapsed=config.castTime*effect.userData.skillPlan.pace/config.runeDrawSpeed*.5;animate();return this.snapshot();},
+ charging(){cast();elapsed=effect.userData.timing.charge*.5;animate();return this.snapshot();},
  channeling(){effect.userData.phase='channeling';effect.userData.channelTime=.2;animate();return this.snapshot();},
  finish(auto=false){config.auto=auto;return this.sample(spell,skillDefs[spell].runeTower.timelineEnd+.2);},
  setRunes(enabled){config.runes=enabled;},
@@ -37,7 +37,7 @@ window.__magicQA={
  sequence(i,time){
   select(i);const d=effect.userData;d.phase='active';d.root.visible=d.skill.shape!=='eternalRequiem';d.transfer.visible=false;
   const render=composer.render;composer.render=()=>{};
-  try{while(effect?.userData===d&&d.activeTime<time-.05)animate();}
+  try{while(effect?.userData===d&&d.activeTime<time-.025)animate();}
   finally{composer.render=render;}
   animate();return this.snapshot();
  },

@@ -1,0 +1,28 @@
+{
+  "passed": false,
+  "production": true,
+  "sourceInterception": false,
+  "interactiveLivePreview": false,
+  "videoAudioTrack": false,
+  "errors": [],
+  "warnings": [],
+  "captures": [
+    {
+      "file": "idle-bot.png",
+      "phase": "VẼ PHÙ VĂN",
+      "remaining": "7.6 s",
+      "status": "ĐANG VẼ PHÙ VĂN"
+    },
+    {
+      "file": "casting-bot.png",
+      "phase": "VẼ PHÙ VĂN",
+      "remaining": "8.1 s",
+      "status": "ĐANG VẼ PHÙ VĂN"
+    }
+  ],
+  "sourceCommit": "9a786205e26d05f90f79dfd7079f423b78951d03",
+  "sourceDirty": true,
+  "harnessFailure": "Timeout180000ms waiting for convergence while the Low/High matrix and other SwiftShader runs were active; no console/page errors. Isolated production rerun uses DPR0.5 and a longer harness timeout; game default timing remains10s.",
+  "videoRetainedLocally": "/workspace/work/character-cast/production/preview.webm",
+  "videoDurationSeconds": 240.16
+}

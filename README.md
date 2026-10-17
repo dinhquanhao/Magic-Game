@@ -1,10 +1,12 @@
 # Arcane VFX Studio — nền đất nâu và hệ Thảo
 
-**Phù văn của toàn bộ19skill nay mờ dần trong1,8giây mô phỏng khi hiệu ứng skill được bật hiển thị**, rồi ẩn hẳn. Skill xuất hiện trễ được chờ đúng nhóm hiệu ứng; pause/hit-stop/slow motion đồng bộ và thi triển lại phục hồi vòng phép. [Ảnh/video và kiểm thử fade](docs/evidence/rune-fade/README.md). Chỉ đổi chuyển tiếp hiển thị của phù văn; các thông số, VFX đòn đánh, MP/cooldown và audio giữ nguyên.
+**Nhân vật mới: Cyber Bot từ file model bạn tải lên.** Khi thi triển, bot giơ hai tay lên trên đầu và đứng yên từ lúc vẽ rune đến khi skill kết thúc; camera vẫn xoay được. Mặc định tổng vẽ+hội tụ là **10giây** (8,5+1,5), pha khai triển của **toàn bộ19skill dài gấp đôi** qua playback0,5×. Đây là ngoại lệ thời lượng mới theo yêu cầu, gồm FIRE-01; tên/thông số/MP/cooldown và các marker nội bộ được giữ. Slider thời gian/tốc độ nghi thức áp dụng ở lần cast tiếp theo; pause/hit-stop/slow motion dùng cùng clock. Audio đi theo playback, có thay đổi pitch như engine hiện hành. [Ảnh/video và kiểm thử model/timing](docs/evidence/character-cast/README.md).
+
+**Phù văn của toàn bộ19skill nay mờ dần trong1,8giây mô phỏng khi hiệu ứng skill được bật hiển thị**, rồi ẩn hẳn. Skill xuất hiện trễ được chờ đúng nhóm hiệu ứng; pause/hit-stop/slow motion đồng bộ và thi triển lại phục hồi vòng phép. [Ảnh/video và kiểm thử fade](docs/evidence/rune-fade/README.md). Nhóm fade giữ nguyên envelope1,8s; thời lượng skill/audio runtime dùng quy tắc mới nêu trên.
 
 Nền đấu trường đã đổi sang nâu đất, bề mặt ít bóng và có vân procedural nhẹ. Hiệu ứng rêu/ướt/cháy/băng vẫn phủ lên nền và phục hồi sau reset. [Ảnh trước/sau và kết quả kiểm thử](docs/evidence/brown-ground/README.md).
 
-Registry hiện tại: **15 hệ, 19 skill**. Hỏa chỉ còn **FIRE-01 — Thiên Nhật Diệt Thế**, giữ nguyên tên, mô tả, chỉ số, MP, cooldown, cinematic, VFX đòn đánh và audio; phù văn dùng fade chung mới nêu trên. Hệ cuối có **NATURE-01 — Vạn Mộc Sinh Giới / Verdant Genesis**. START.bat vẫn dùng npm.cmd, ASCII/CRLF. [Bằng chứng đợt thu gọn Hỏa trước đó](docs/evidence/fire-trim/README.md).
+Registry hiện tại: **15 hệ, 19 skill**. Hỏa chỉ còn **FIRE-01 — Thiên Nhật Diệt Thế**, giữ nguyên dữ liệu tên/mô tả/chỉ số/MP/cooldown/cinematic/VFX đòn đánh/audio; playback dài2× và phù văn dùng fade chung mới nêu trên. Hệ cuối có **NATURE-01 — Vạn Mộc Sinh Giới / Verdant Genesis**. START.bat vẫn dùng npm.cmd, ASCII/CRLF. [Bằng chứng đợt thu gọn Hỏa trước đó](docs/evidence/fire-trim/README.md).
 
 - Cast: vòng mặt đất chia nhỏ, shader dây leo/lá/rune, sáng lan theo góc và phấn hoa.
 - Bùng phát: dây leo → bụi/gai → thân/cành/tán → cổ thụ; sáu hình thái procedural, phân nhánh và overshoot đàn hồi.
@@ -20,7 +22,7 @@ Cây/gai/quả/lá dùng InstancedMesh; pollen/đất/bào tử dùng Points v�
 | High | 96 | 3000 | 720 |
 | Ultra | 144 | 5000 | 1200 |
 
-Chỉnh trong `src/main.js`, đối tượng `natureSkill.nature`: `treeCounts` (số cây từng preset), `growthSpeed` (tốc độ mọc), `attackRange` (mét chọn mục tiêu). Chỉnh ngân sách hạt/lá trong `NATURE_BUDGETS` và các màu bark/leaf/petal/circle ở `src/nature-growth.js`; màu UI nằm ở element NATURE trong main.js. Seed hình học ở `src/nature-geometry.js` tạo sáu variant. Giữ thời lượng 18 giây đồng bộ với cinematic/Rune Tower khi chỉnh.
+Chỉnh trong `src/main.js`, đối tượng `natureSkill.nature`: `treeCounts` (số cây từng preset), `growthSpeed` (tốc độ mọc), `attackRange` (mét chọn mục tiêu). Chỉnh ngân sách hạt/lá trong `NATURE_BUDGETS` và các màu bark/leaf/petal/circle ở `src/nature-growth.js`; màu UI nằm ở element NATURE trong main.js. Seed hình học ở `src/nature-geometry.js` tạo sáu variant. Marker gốc18giây đồng bộ cinematic/Rune Tower; runtime0,5× kéo dài thành36giây simulation khi tốc độ1. Các mốc Thảo phía trên là marker gốc, nhân2để đổi sang thời gian active hiện tại.
 
 Windows: giải nén toàn bộ ZIP, cài Node.js LTS rồi nhấp START.bat. Hoặc mở terminal trong thư mục đã giải nén và chạy `npm.cmd ci`, `npm.cmd run dev`. Không mở index.html trực tiếp. Xem [ảnh, kiểm thử và bản tải](docs/PREVIEW.md), [báo cáo Thảo](THAO_PROGRESS.md).
 
