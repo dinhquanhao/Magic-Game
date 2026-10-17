@@ -1,4 +1,14 @@
-# Mốc mới nhất — nền đất nâu, 17/10/2026
+# Mốc mới nhất — thu gọn Hỏa, 17/10/2026
+
+- Theo yêu cầu mới, Hỏa chỉ giữ FIRE-01 — Thiên Nhật Diệt Thế; tổng15hệ/19skill. Xóa hai slot Hỏa khác cùng mã VFX, nhịp rung, score,4WAV nguồn/mirror,2report/2biểu đồ/4ảnh riêng và các record/tài liệu tham chiếu. Giữ shader/ember/icon/bank Hỏa dùng chung với FIRE-01.
+- Bảo toàn toàn bộ19skill còn lại: config/cinematic/rune/audio/MP/cooldown khớp snapshot trước sửa. Seed tạo hình gắn với ID, giữ giá trị gốc để việc đổi vị trí UI không đổi các hệ khác.37tệp nguồn/938publicasset còn dùng và byte START.bat không đổi.
+- [Bằng chứng mới](docs/evidence/fire-trim/README.md):60cặp ảnh seeded khớp từng pixel (19skill×3mốc Low và FIRE-01×3mốc High),0JS/WebGL/shader error/warning. Build64module và13unit đạt. Production observation chọn/cast/Play/MP/Pause đạt. Một vòng thay đổi runtime; fixture keyboard được sửa focus và xác minh lại riêng.
+- 0thamchiếu hai skill bị gỡ trong source/UI/audio metadata/docs/tests/tênfile và dist. Các record lịch sử đã lọc được đánh dấu, không đổi số đo còn lại hoặc biến thành kết quả mới. Mã nền nâu và hệ Thảo của mốc3273606 được bảo toàn. ZIP/CRC/hash runtime nằm trong docs/releases.
+- Cập nhật cùng nhánh/Draft PR#1; không merge main. Không triển khai đồ họa AAA/nhân vật/Boss mới trong tác vụ thu gọn này. Bước tiếp theo chỉ thực hiện khi có phạm vi được chọn; backlog vẫn ở ROADMAP.md.
+
+---
+
+# Mốc trước — nền đất nâu, 17/10/2026
 
 - Theo yêu cầu “tạo nền đất màu nâu”: đổi nền xanh xám sang nâu ấm, roughness 0,98/metalness 0, lưới tông đất nhẹ. Thêm hai lớp noise tĩnh; hạt nhỏ hơn pixel giảm dần. Không thêm mesh/texture/render pass. [10 ý tưởng xếp hạng, chọn 3](docs/ROUND-GROUND-2026-10-17.md).
 - Một vòng sửa/kiểm thử: build64module và12test đạt; Chromium/SwiftShader18mốc gồm4preset,5phản ứng bề mặt và Thảo Low/High đạt. Reset sau Thảo khớp từng pixel. Registry15hệ/21skill và byte START.bat giữ nguyên; cảnh tĩnh trước/sau cùng23geometry/14texture.

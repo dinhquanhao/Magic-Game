@@ -2,7 +2,7 @@
 
 Nền đấu trường đã đổi sang nâu đất, bề mặt ít bóng và có vân procedural nhẹ. Hiệu ứng rêu/ướt/cháy/băng vẫn phủ lên nền và phục hồi sau reset. [Ảnh trước/sau và kết quả kiểm thử](docs/evidence/brown-ground/README.md).
 
-Registry hiện tại: **15 hệ, 21 skill**. Hệ cuối có một skill mới **NATURE-01 — Vạn Mộc Sinh Giới / Verdant Genesis**; thay ba slot cũ bằng một slot thật. 20 skill còn lại giữ ID, tên, cấu hình và cinematic. START.bat vẫn dùng npm.cmd, ASCII/CRLF.
+Registry hiện tại: **15 hệ, 19 skill**. Hỏa chỉ còn **FIRE-01 — Thiên Nhật Diệt Thế**, được giữ nguyên tên, mô tả, chỉ số, MP, cooldown, cinematic, rune, VFX và audio. Hệ cuối có **NATURE-01 — Vạn Mộc Sinh Giới / Verdant Genesis**. Các hệ ngoài Hỏa giữ nguyên. START.bat vẫn dùng npm.cmd, ASCII/CRLF. [Bằng chứng bảo toàn skill](docs/evidence/fire-trim/README.md).
 
 - Cast: vòng mặt đất chia nhỏ, shader dây leo/lá/rune, sáng lan theo góc và phấn hoa.
 - Bùng phát: dây leo → bụi/gai → thân/cành/tán → cổ thụ; sáu hình thái procedural, phân nhánh và overshoot đàn hồi.
@@ -58,7 +58,7 @@ npm.cmd run dev -- --host 127.0.0.1 --open
 
 | Hệ phép | Tuyệt kỹ hiện có |
 | --- | --- |
-| Hỏa | Thiên Nhật Diệt Thế · Phượng Hoàng Tận Thế · Vạn Hỏa Thiên Phạt |
+| Hỏa | Thiên Nhật Diệt Thế |
 | Thủy | Hải Thần Lĩnh Vực (WATER-01) — Cá voi thần và sóng thần |
 | Thổ | Đại Lục Phân Liệt (EARTH-01) — Thiên thạch đá và địa tầng nứt vỡ |
 | Ánh Sáng | Lục Dực Thánh Khải (LIGHT-01) — Mưa tia sáng từ thiên giới |
@@ -143,11 +143,9 @@ Mưa dùng một InstancedMesh với thuộc tính thời điểm, tốc độ, 
 
 Có thể chỉnh `skill.poisonAcid` trong `src/main.js`: `cloud.radius`, `height`, `layers`, `formStart` và `dissipateStart` đặt mây/AOE; `rain.totalByQuality`, `heavyBlobShare`, `dropLengthRange`, `blobSizeRange`, `fallSpeedRange`, `windSkew` và `splashShare` đặt mưa; `waves` chứa `pattern`, `share`, `start`, `duration` cho năm đợt; `corrosion.pitDepth`, `puddleMergeThreshold`, `evaporateStart` và `evaporateDuration` đặt hố, vũng và thời gian tan. Bán kính AOE lấy từ `cloud.radius`, `skill.aoe` và `config.aoeScale`.
 
-## Nâng cấp riêng cho ba tuyệt kỹ Hỏa
+## Tuyệt kỹ Hỏa hiện tại
 
 - **Thiên Nhật Diệt Thế:** bề mặt plasma fBm năm lớp có miền nhiễu bị uốn, các mảng đối lưu/đốm tối, lõi nhiệt nhiều tầng, corona bằng tia InstancedMesh và bảy vòng prominence chuyển động. Mưa tàn lửa, khói và cầu lửa tồn dư đi theo pha lao xuống; cấu hình riêng dùng slow-motion trước chạm, hit-stop 135 ms và ba lớp shockwave.
-- **Phượng Hoàng Tận Thế:** thân và đầu dùng shader nhiệt; hai cánh có 144 lông lửa InstancedMesh chia ba lớp, vỗ lệch pha để tạo follow-through. Đuôi tám dải lửa uốn cong; mưa lông cháy tiếp tục dùng tập đạn AOE hiện có. Các nhịp va chạm nhỏ chỉ rung nhẹ, cú lao cuối mới dùng hit-stop và rung mạnh.
-- **Vạn Hỏa Thiên Phạt:** 144 cổng rune InstancedMesh ở High (tối đa 180 ở Ultra) mở theo độ cao, xoay độc lập rồi co về tâm; giáo lửa được phóng thành bốn đợt trên các vị trí AOE phân bố đều, kèm lõi theo nhiệt độ và đuôi lửa. Cột lửa kết thúc gồm chín dải xoắn và lõi nhiễu; chỉ cú đánh cuối kích hoạt hit-stop, còn các đợt trước tăng rung nhẹ dần.
 
 ### Chỉnh chất lượng và thông số Hỏa
 
@@ -182,7 +180,7 @@ Archetype xác định cách skill được đặt và hướng nhóm VFX trong 
 
 | Hệ | Skill và archetype |
 | --- | --- |
-| Hỏa | Thiên Nhật Diệt Thế — Thiên giáng · Phượng Hoàng Tận Thế — Khổng lồ · Vạn Hỏa Thiên Phạt — Mưa đòn |
+| Hỏa | Thiên Nhật Diệt Thế — Thiên giáng |
 | Thủy | Hải Thần Lĩnh Vực (WATER-01) — Cá voi từ cổng đại dương / sóng thần |
 | Thổ | Đại Lục Phân Liệt (EARTH-01) — Thiên thạch giáng xuống / Địa tầng nứt vỡ |
 | Ánh Sáng | Lục Dực Thánh Khải (LIGHT-01) — Mưa tia ánh sáng / Lĩnh vực |
@@ -271,8 +269,6 @@ Registry trong src/main.js có **21 kỹ năng / 15 hệ**. ID được tạo t�
 | ID · Tuyệt kỹ | Hiện có: vật liệu, shader, hạt và hiệu ứng | Sau nâng cấp · chi phí thêm |
 |---|---|---|
 | FIRE-01 · Thiên Nhật Diệt Thế | Nhiều vỏ lõi dùng shader nhiệt đen thân, corona instanced, prominence và vòng va chạm. | PBR có IBL/bóng cho bề mặt chuẩn; mặt đất có vết than và nứt nóng; tia thể tích tùy bật. Nhẹ–vừa. |
-| FIRE-02 · Phượng Hoàng Tận Thế | Shader ngọn lửa, lông hình học instanced cho cánh, đuôi lửa, ember và khói. | Giữ shader lửa; bề mặt PBR liên quan nhận IBL/bóng, nền nhận vết cháy và phản ứng ánh sáng. Vừa. |
-| FIRE-03 · Vạn Hỏa Thiên Phạt | Cổng lửa, giáo/đạn instanced, vật liệu đen thân, vệt và hạt lửa. | Mặt đất có vùng cháy/nứt tạm thời; phản xạ môi trường và bóng mềm theo preset. Vừa. |
 | WATER-01 · Hải Thần Lĩnh Vực | Shader cổng và sóng, cá voi, giọt/splash instanced, bọt và các vòng triều. | IBL cho vật liệu chuẩn; vệt nước tối, giảm roughness và caustic chuyển động trên nền. Vừa–cao. |
 | EARTH-01 · Đại Lục Phân Liệt | Shader thiên thạch, hố và mạng nứt; đá chuẩn instanced, bụi Points và dư chấn. | Đá PBR nhận nhiễu vi bề mặt/IBL/bóng; nền có vùng nứt, bụi màu đất và biến dạng nhẹ. Vừa. |
 | LIGHT-01 · Lục Dực Thánh Khải | Shader tia photon instanced, hạt ở cổng, sparks, vết đánh dấu và dư chấn. | PMREM phản chiếu trên vật liệu chuẩn; tia thể tích 6 mẫu tùy bật; nền nhận ánh sáng nhẹ. Vừa. |
@@ -349,8 +345,6 @@ Bảng hiện có liệt kê phần thể hiện và lớp nâng cấp; đây l�
 | ID · Tuyệt kỹ | Điểm yếu chính còn lại sau nâng cấp |
 |---|---|
 | FIRE-01 · Thiên Nhật Diệt Thế | Lõi plasma vẫn là shader phát sáng; khói và truyền nhiệt không tham gia mô phỏng đối lưu/va chạm đầy đủ. |
-| FIRE-02 · Phượng Hoàng Tận Thế | Cánh lông là hình học instanced và ngọn lửa shader; không có mô phỏng vải/lông mềm hay gió vật lý riêng. |
-| FIRE-03 · Vạn Hỏa Thiên Phạt | Giáo lửa và cổng được hoạt hóa theo timeline; phản ứng cháy không tích lũy bằng texture decal thật. |
 | WATER-01 · Hải Thần Lĩnh Vực | Beer–Lambert/Fresnel và sóng analytic đã bổ sung; chưa có refraction scene-color, FFT/Gerstner solver, SSR riêng trên mặt nước hay giọt tương tác vật lý. |
 | EARTH-01 · Đại Lục Phân Liệt | Phiến đá đa diện chạy theo shader và bóng dùng depth material tương ứng; mảnh đá/địa tầng vẫn là hoạt ảnh VFX, chưa có height-field collision hoặc solver GPU tổng quát. |
 | LIGHT-01 · Lục Dực Thánh Khải | Tia photon còn là vật liệu phát sáng instanced; tán xạ thể tích được xấp xỉ trong hậu kỳ, không có photon/light transport. |

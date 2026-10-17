@@ -1,7 +1,7 @@
 # Magic-Game — nguyên tắc phát triển
 
 - Tiếp tục repository hiện tại; không dựng lại dự án. Đọc `ROADMAP.md`, `PROGRESS.md`, README và mã thực tế trước khi chọn việc tiếp theo.
-- Registry hiện tại có 15 hệ/21 skill. Theo yêu cầu Thảo ngày 17/10, hệ cuối đã được thay bằng NATURE-01; giữ nguyên 20 ID/tên, cấu hình và cinematic còn lại. Cải tiến kỹ thuật không được xóa hệ hoặc thay thế tuyệt kỹ bằng hiệu ứng chung.
+- Registry hiện tại có 15 hệ/19 skill. Theo yêu cầu thu gọn Hỏa ngày 17/10, Hỏa chỉ còn FIRE-01 — Thiên Nhật Diệt Thế. Giữ nguyên toàn bộ 19 skill còn lại, gồm 18 skill ngoài Hỏa: ID/tên/mô tả, cấu hình, cinematic, rune, MP/cooldown và audio. Các seed tạo hình phải gắn với ID ổn định, không đổi theo vị trí UI. Không xóa thêm hệ/skill hoặc thay tuyệt kỹ bằng hiệu ứng chung.
 - `UPGRADE_PROGRESS.md`: giữ lịch sử của các hệ còn lại; yêu cầu Thảo cho phép gỡ nội dung/asset của hệ đã thay khỏi mọi tài liệu hiện tại; theo yêu cầu bổ sung ngày 17/10 chỉ append mục “Bổ sung AAA” với bằng chứng mới. Tiến độ mới ghi trong `PROGRESS.md` với commit và bằng chứng kiểm thử.
 - Thứ tự được người dùng cập nhật: hoàn thiện nâng cấp cũ → 15 hệ → nhân vật → quái/Boss → cảnh vật → gameplay → đánh giá tổng thể. Chỉ chuyển giai đoạn khi đạt điều kiện của roadmap.
 - Chủ động xử lý kỹ thuật thông thường. Không yêu cầu người dùng gửi “tiếp tục” giữa các bước. Nếu thiếu quyền hoặc bị giới hạn môi trường, nêu rõ hành động bị chặn và phần đã hoàn tất.
@@ -36,6 +36,6 @@ Kiểm thử browser dùng Chromium hệ thống nếu có, hoặc browser của
 
 ## Yêu cầu đồ họa bổ sung 17/10
 
-Ưu tiên nghiệm thu trình tự rune→COMMIT→skill và fade1.8giây toàn21skill trước nền đồ họa chung/từng hệ. Giữ các tham số/cinematic nội bộ; chỉ thay gate và thời điểm bắt đầu. UPGRADE_PROGRESS ghi audit trước sửa và bằng chứng từng giai đoạn. Mỗi nhóm tối đa3vòng sửa/kiểm thử, lưu checkpoint/PR nếu gần giới hạn tài nguyên.
+Ưu tiên nghiệm thu trình tự rune→COMMIT→skill và fade1.8giây toàn19skill trước nền đồ họa chung/từng hệ. Giữ các tham số/cinematic nội bộ; chỉ thay gate và thời điểm bắt đầu. UPGRADE_PROGRESS ghi audit trước sửa và bằng chứng từng giai đoạn. Mỗi nhóm tối đa3vòng sửa/kiểm thử, lưu checkpoint/PR nếu gần giới hạn tài nguyên.
 
-Cập nhật sau cùng: theo tài liệu11lớp mới nhất, GĐ1 nền tảng chung trước GĐ2 rune; giữ bản khảo sát/gate đã soạn, chỉ chuyển giai đoạn khi đủ kiểm thử. Không bỏ một trong15hệ/21skill khi lập ma trận.
+Cập nhật sau cùng: theo tài liệu11lớp mới nhất, GĐ1 nền tảng chung trước GĐ2 rune; giữ bản khảo sát/gate đã soạn, chỉ chuyển giai đoạn khi đủ kiểm thử. Không bỏ một trong15hệ/19skill khi lập ma trận. Yêu cầu thu gọn Hỏa mới nhất cho phép xóa hai skill Hỏa ngoài FIRE-01; không mở thêm nhóm nâng cấp.

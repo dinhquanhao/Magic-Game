@@ -102,7 +102,7 @@ def main():
             else:
                 page.wait_for_function('window.__magicQA')
                 skills=page.evaluate('__magicQA.skills')
-                assert len(skills)==21 and len(set(s['element'] for s in skills))==15
+                assert len(skills)==19 and len(set(s['element'] for s in skills))==15
                 def state(expression='__magicQA.snapshot()'):
                     value=page.evaluate(expression)
                     assert not value.get('failed'),value
@@ -134,7 +134,8 @@ def main():
                     page.locator('#modeToggle').click()
                     assert state()['camera'][1]>10
                     page.set_viewport_size({'width':1280,'height':800})
-                    for i,t,name in [(0,2,'fire'),(3,8,'water'),(6,11,'shadow'),(16,11,'blood')]:
+                    for id,t,name in [('FIRE-01',2,'fire'),('WATER-01',8,'water'),('SHADOW-01',11,'shadow'),('BLOOD-01',11,'blood')]:
+                        i=next(s['index'] for s in skills if s['id']==id)
                         state(f'__magicQA.sequence({i},{t})')
                         page.screenshot(path=str(out/(name+'.png')))
                     before=state()['environmentId']
@@ -202,13 +203,13 @@ def main():
                 # Repeated rendered casts must return to the same GPU/resource counts.
                 memory=[]
                 for i in range(10):
-                    state('__magicQA.sample(16,12.8)')
+                    state('__magicQA.sample(__magicQA.skills.findIndex(s=>s.id===`BLOOD-01`),12.8)')
                     completed=state('__magicQA.finish(false)')
                     assert not completed['active']
                     memory.append({'memory':completed['memory'],'tracked':completed['graphics']['trackedMaterials']})
                 assert all(m==memory[1] for m in memory[2:]),memory
                 results.append({'repeatCasts':10,'memory':memory})
-                for i in [0,3,16]:
+                for i in [s['index'] for s in skills if s['id'] in ['FIRE-01','WATER-01','BLOOD-01']]:
                     state(f'__magicQA.sample({i},1)')
                     repeated=state('__magicQA.finish(true)')
                     assert repeated['active'] and repeated['phase']=='charging'

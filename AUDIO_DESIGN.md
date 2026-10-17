@@ -4,13 +4,11 @@
 
 ## Bất biến và timeline
 
-Nguồn: audio/source-audit.json trích registry/config/plans thực từ main.js; 20skill được giữ không đổi nhịp/hình ảnh/cinematic; NATURE-01 có score mới theo mốc rừng. Rune Tower và START.bat giữ cơ chế/byte như cũ. Thời điểm trong bảng là giây active; charge mặc định 4.5×pace/runeDrawSpeed, channel .58+.26×pace, cleanup bằng runeTower.timelineEnd.
+Nguồn: audio/source-audit.json trích registry/config/plans thực từ main.js; 19skill hiện tại được giữ không đổi nhịp/hình ảnh/cinematic; NATURE-01 có score mới theo mốc rừng. Rune Tower và START.bat giữ cơ chế/byte như cũ. Thời điểm trong bảng là giây active; charge mặc định 4.5×pace/runeDrawSpeed, channel .58+.26×pace, cleanup bằng runeTower.timelineEnd.
 
 | Skill ID | Tên nguyên bản | Impact / hit-stop / pre-slow | Rune fade / cleanup | Wave cấu hình |
 |---|---|---|---|---|
 | FIRE-01 | Thiên Nhật Diệt Thế | 3.720 / 0.135 / 0.480 | 5.690 / 9.840 | Không có wave-list riêng; bám callback/plan thực |
-| FIRE-02 | Phượng Hoàng Tận Thế | 4.050 / 0.110 / 0.380 | 4.660 / 9.720 | Không có wave-list riêng; bám callback/plan thực |
-| FIRE-03 | Vạn Hỏa Thiên Phạt | 4.020 / 0.130 / 0.340 | 5.220 / 10.020 | Không có wave-list riêng; bám callback/plan thực |
 | WATER-01 | Hải Thần Lĩnh Vực | 9.550 / 0.120 / 0.600 | 15.550 / 17.000 | Không có wave-list riêng; bám callback/plan thực |
 | EARTH-01 | Đại Lục Phân Liệt | 9.350 / 0.120 / 0.680 | 14.900 / 18.000 | Không có wave-list riêng; bám callback/plan thực |
 | LIGHT-01 | Lục Dực Thánh Khải | 12.050 / 0.080 / 0.480 | 10.600 / 17.200 | scatter@2.55, concentric@4.35, sweep@6.15, carpet@8.1, finale@10.85 |
@@ -93,75 +91,7 @@ Biến thể: repeated material/secondary/rune có 4 seed đo offline, runtime 3
 
 Clock: [{"at":3.24,"type":"pre","duration":0.48,"scale":0.23},{"at":3.72,"type":"freeze","duration":0.135,"postScale":0.3,"postDuration":0.78}]. Các điểm này chỉ điều khiển reference mix/audio; không sửa cinematic trong game.
 
-### FIRE-02 — Phượng Hoàng Tận Thế
 
-Bản sắc: lách tách · đối lưu · phập · nóng. Tham chiếu: vật liệu và chuyển động tự nhiên được mô tả bằng từ khóa; không sample bên ngoài. arena là không gian gợi ý, người chơi có thể chọn room chung.
-
-| Event ID | Cue / mục đích | Giai đoạn/mốc | Công thức / seed / tham số | Dài / dải | Nguồn trigger | Spatial / send | Ưu tiên / duck | Nghiệm thu |
-|---|---|---|---|---|---|---|---|---|
-| FIRE-02/precast | precast | charge 0 | renderCue/materialTexture/flame; seed 123728; base 103Hz; gain 1; pitch 1 | 0.3s; material-dependent; FFT report | cast → charging | caster/target; HRTF High+; wet 0.18 | 30; priority steal | RMS -25±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-02/rune-tier | rune | charge progress × actual tier count | renderCue/materialTexture/flame; seed 124580; base 103Hz; gain 1; pitch 1 | 0.48s; material-dependent; FFT report | towerSettings.layerCount / draw progress | caster/target; HRTF High+; wet 0.18 | 45; priority steal | RMS -29±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-02/charge-bed | charging | charge+channel loop | renderCue/materialTexture/flame; seed 123799; base 103Hz; gain 1; pitch 1 | 1.2s; material-dependent; FFT report | data.phase | caster/target; HRTF High+; wet 0.18 | 50; priority steal | RMS -27±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-02/release | casting | 0.000s active | renderCue/materialTexture/flame; seed 123870; base 103Hz; gain 1; pitch 1 | 0.38s; material-dependent; FFT report | main.js channel→active | caster/target; HRTF High+; wet 0.18 | 80; priority steal | RMS -22±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-02/formation-motion | motion | 0.020s active | renderCue/materialTexture/flame; seed 124083; base 103Hz; gain 1; pitch 1 | 1.5s; material-dependent; FFT report | main.js animateRelease | caster/target; HRTF High+; wet 0.18 | 30; priority steal | RMS -26±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-02/phoenix-beat-0 | motion | 1.300s active | renderCue/materialTexture/flame; seed 124083; base 103Hz; gain 0.35; pitch 1 | 1.5s; material-dependent; FFT report | main.js phoenixShakeBeat | caster/target; HRTF High+; wet 0.18 | 30; priority steal | RMS -26±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-02/phoenix-beat-1 | motion | 2.020s active | renderCue/materialTexture/flame; seed 124083; base 103Hz; gain 0.43999999999999995; pitch 1 | 1.5s; material-dependent; FFT report | main.js phoenixShakeBeat | caster/target; HRTF High+; wet 0.18 | 30; priority steal | RMS -26±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-02/phoenix-beat-2 | motion | 2.740s active | renderCue/materialTexture/flame; seed 124083; base 103Hz; gain 0.53; pitch 1 | 1.5s; material-dependent; FFT report | main.js phoenixShakeBeat | caster/target; HRTF High+; wet 0.18 | 30; priority steal | RMS -26±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-02/anticipation | riser | 3.250s active | renderCue/materialTexture/flame; seed 124296; base 103Hz; gain 1; pitch 1 | 0.8s; material-dependent; FFT report | audio-only anticipation of existing impact; does not change VFX | caster/target; HRTF High+; wet 0.18 | 85; duck5dB/.8s | RMS -23±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-02/phoenix-beat-3 | motion | 3.460s active | renderCue/materialTexture/flame; seed 124083; base 103Hz; gain 0.62; pitch 1 | 1.5s; material-dependent; FFT report | main.js phoenixShakeBeat | caster/target; HRTF High+; wet 0.18 | 30; priority steal | RMS -26±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-02/finale | impact | 4.050s active | renderCue/materialTexture/flame; seed 124367; base 103Hz; gain 1; pitch 1 | 3.2s; 20Hz–10kHz layered | cinematicPlans.impactAt / VFX hit-stop callback | caster/target; HRTF High+; wet 0.08 | 100; duck6dB/.45s | RMS -19±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-02/pressure-0 | shockwave | 4.050s active | renderCue/materialTexture/flame; seed 124438; base 103Hz; gain 0.5; pitch 1 | 1.2s; material-dependent; FFT report | main.js makeImpactSuite waves delay | AOE cluster; HRTF High+; wet 0.18 | 30; priority steal | RMS -25±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-02/pressure-1 | shockwave | 4.240s active | renderCue/materialTexture/flame; seed 124438; base 103Hz; gain 0.36; pitch 1 | 1.2s; material-dependent; FFT report | main.js makeImpactSuite waves delay | AOE cluster; HRTF High+; wet 0.18 | 30; priority steal | RMS -25±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-02/pressure-2 | shockwave | 4.430s active | renderCue/materialTexture/flame; seed 124438; base 103Hz; gain 0.2592; pitch 1 | 1.2s; material-dependent; FFT report | main.js makeImpactSuite waves delay | AOE cluster; HRTF High+; wet 0.18 | 30; priority steal | RMS -25±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-02/decay | aftermath | 4.500s active | renderCue/materialTexture/flame; seed 124509; base 103Hz; gain 1; pitch 1 | 3.6s; material-dependent; FFT report | audio tail follows existing aftermath; truncated by cleanup | caster/target; HRTF High+; wet 0.45 | 30; priority steal | RMS -30±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-02/aftershock-0 | secondary | 4.670s active | renderCue/materialTexture/flame; seed 124225; base 103Hz; gain 0.5; pitch 1 | 0.9s; material-dependent; FFT report | existing module aftershock array | AOE cluster; HRTF High+; wet 0.18 | 35; priority steal | RMS -27±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-02/aftershock-1 | secondary | 4.990s active | renderCue/materialTexture/flame; seed 124225; base 103Hz; gain 0.275; pitch 1 | 0.9s; material-dependent; FFT report | existing module aftershock array | AOE cluster; HRTF High+; wet 0.18 | 35; priority steal | RMS -27±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-02/aftershock-2 | secondary | 5.310s active | renderCue/materialTexture/flame; seed 124225; base 103Hz; gain 0.15125000000000002; pitch 1 | 0.9s; material-dependent; FFT report | existing module aftershock array | AOE cluster; HRTF High+; wet 0.18 | 35; priority steal | RMS -27±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-02/environment | environment | 0..4.66 | renderCue/materialTexture/flame; seed 124154; base 103Hz; gain 1; pitch 1 | 2s; material-dependent; FFT report | active/fadeAt | caster/target; HRTF High+; wet 0.45 | 8; priority steal | RMS -31±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-02/drone | drone | 0..4.66 | renderCue/materialTexture/flame; seed 124722; base 103Hz; gain 1; pitch 1 | 2s; material-dependent; FFT report | active/fadeAt | caster/target; HRTF High+; wet 0.45 | 4; priority steal | RMS -34±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-02/travel | traveling | 0..3.960 | renderCue/materialTexture/flame; seed 123941; base 103Hz; gain 1; pitch 1 | 1.2s; material-dependent; FFT report | active/anticipation | caster/target; HRTF High+; wet 0.18 | 40; priority steal | RMS -26±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-
-Biến thể: repeated material/secondary/rune có 4 seed đo offline, runtime 3/4/6 theo preset; seed bước7919, pitch thay theo đợt, window cap3 cue cùng loại/120ms; không tạo event từng hạt. Khoảng lặng90ms có fade15ms, finale giữ đỉnh, aftershock giảm theo decay.
-
-- Đã triển khai: Rune cộng hưởng theo cấp của Phượng Hoàng Tận Thế. actual tower progress → tier note; seeded modal frequency
-- Đã triển khai: Đường chuyển động phoenixDive có cue riêng. existing waves/beat/descent markers; gain/pitch/round robin
-- Đã triển khai: Trường âm FIRE trải trên AOE. regional clusters within actual AOE and stereo-linked dry/wet; mono-safe core
-- Không dùng: Đọc lại mọi va chạm GPU để phát từng hạt. No GPU collision event readback; would stall rendering and produce excessive voices. Cluster at known wave markers instead.
-
-Clock: [{"at":3.67,"type":"pre","duration":0.38,"scale":0.29},{"at":4.05,"type":"freeze","duration":0.11,"postScale":0.36,"postDuration":0.65}]. Các điểm này chỉ điều khiển reference mix/audio; không sửa cinematic trong game.
-
-### FIRE-03 — Vạn Hỏa Thiên Phạt
-
-Bản sắc: lách tách · đối lưu · phập · nóng. Tham chiếu: vật liệu và chuyển động tự nhiên được mô tả bằng từ khóa; không sample bên ngoài. arena là không gian gợi ý, người chơi có thể chọn room chung.
-
-| Event ID | Cue / mục đích | Giai đoạn/mốc | Công thức / seed / tham số | Dài / dải | Nguồn trigger | Spatial / send | Ưu tiên / duck | Nghiệm thu |
-|---|---|---|---|---|---|---|---|---|
-| FIRE-03/precast | precast | charge 0 | renderCue/materialTexture/flame; seed 123728; base 103Hz; gain 1; pitch 1 | 0.3s; material-dependent; FFT report | cast → charging | caster/target; HRTF High+; wet 0.18 | 30; priority steal | RMS -25±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-03/rune-tier | rune | charge progress × actual tier count | renderCue/materialTexture/flame; seed 124580; base 103Hz; gain 1; pitch 1 | 0.48s; material-dependent; FFT report | towerSettings.layerCount / draw progress | caster/target; HRTF High+; wet 0.18 | 45; priority steal | RMS -29±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-03/charge-bed | charging | charge+channel loop | renderCue/materialTexture/flame; seed 123799; base 103Hz; gain 1; pitch 1 | 1.2s; material-dependent; FFT report | data.phase | caster/target; HRTF High+; wet 0.18 | 50; priority steal | RMS -27±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-03/release | casting | 0.000s active | renderCue/materialTexture/flame; seed 123870; base 103Hz; gain 1; pitch 1 | 0.38s; material-dependent; FFT report | main.js channel→active | caster/target; HRTF High+; wet 0.18 | 80; priority steal | RMS -22±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-03/formation-motion | motion | 0.020s active | renderCue/materialTexture/flame; seed 124083; base 103Hz; gain 1; pitch 1 | 1.5s; material-dependent; FFT report | main.js animateRelease | caster/target; HRTF High+; wet 0.18 | 30; priority steal | RMS -26±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-03/anticipation | riser | 3.220s active | renderCue/materialTexture/flame; seed 124296; base 103Hz; gain 1; pitch 1 | 0.8s; material-dependent; FFT report | audio-only anticipation of existing impact; does not change VFX | caster/target; HRTF High+; wet 0.18 | 85; duck5dB/.8s | RMS -23±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-03/finale | impact | 4.020s active | renderCue/materialTexture/flame; seed 124367; base 103Hz; gain 1; pitch 1 | 3.2s; 20Hz–10kHz layered | cinematicPlans.impactAt / VFX hit-stop callback | caster/target; HRTF High+; wet 0.08 | 100; duck6dB/.45s | RMS -19±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-03/pressure-0 | shockwave | 4.020s active | renderCue/materialTexture/flame; seed 124438; base 103Hz; gain 0.5; pitch 1 | 1.2s; material-dependent; FFT report | main.js makeImpactSuite waves delay | AOE cluster; HRTF High+; wet 0.18 | 30; priority steal | RMS -25±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-03/pressure-1 | shockwave | 4.210s active | renderCue/materialTexture/flame; seed 124438; base 103Hz; gain 0.36; pitch 1 | 1.2s; material-dependent; FFT report | main.js makeImpactSuite waves delay | AOE cluster; HRTF High+; wet 0.18 | 30; priority steal | RMS -25±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-03/pressure-2 | shockwave | 4.400s active | renderCue/materialTexture/flame; seed 124438; base 103Hz; gain 0.2592; pitch 1 | 1.2s; material-dependent; FFT report | main.js makeImpactSuite waves delay | AOE cluster; HRTF High+; wet 0.18 | 30; priority steal | RMS -25±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-03/decay | aftermath | 4.470s active | renderCue/materialTexture/flame; seed 124509; base 103Hz; gain 1; pitch 1 | 3.6s; material-dependent; FFT report | audio tail follows existing aftermath; truncated by cleanup | caster/target; HRTF High+; wet 0.45 | 30; priority steal | RMS -30±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-03/aftershock-0 | secondary | 4.640s active | renderCue/materialTexture/flame; seed 124225; base 103Hz; gain 0.5; pitch 1 | 0.9s; material-dependent; FFT report | existing module aftershock array | AOE cluster; HRTF High+; wet 0.18 | 35; priority steal | RMS -27±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-03/aftershock-1 | secondary | 4.960s active | renderCue/materialTexture/flame; seed 124225; base 103Hz; gain 0.275; pitch 1 | 0.9s; material-dependent; FFT report | existing module aftershock array | AOE cluster; HRTF High+; wet 0.18 | 35; priority steal | RMS -27±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-03/aftershock-2 | secondary | 5.280s active | renderCue/materialTexture/flame; seed 124225; base 103Hz; gain 0.15125000000000002; pitch 1 | 0.9s; material-dependent; FFT report | existing module aftershock array | AOE cluster; HRTF High+; wet 0.18 | 35; priority steal | RMS -27±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-03/environment | environment | 0..5.220000000000001 | renderCue/materialTexture/flame; seed 124154; base 103Hz; gain 1; pitch 1 | 2s; material-dependent; FFT report | active/fadeAt | caster/target; HRTF High+; wet 0.45 | 8; priority steal | RMS -31±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-03/drone | drone | 0..5.220000000000001 | renderCue/materialTexture/flame; seed 124722; base 103Hz; gain 1; pitch 1 | 2s; material-dependent; FFT report | active/fadeAt | caster/target; HRTF High+; wet 0.45 | 4; priority steal | RMS -34±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-| FIRE-03/travel | traveling | 0..3.930 | renderCue/materialTexture/flame; seed 123941; base 103Hz; gain 1; pitch 1 | 1.2s; material-dependent; FFT report | active/anticipation | caster/target; HRTF High+; wet 0.18 | 40; priority steal | RMS -26±2.8dBFS; TP4×≤-.2; master≤-1dBTP; tail≥15dB; ear chưa kiểm chứng |
-
-Biến thể: repeated material/secondary/rune có 4 seed đo offline, runtime 3/4/6 theo preset; seed bước7919, pitch thay theo đợt, window cap3 cue cùng loại/120ms; không tạo event từng hạt. Khoảng lặng90ms có fade15ms, finale giữ đỉnh, aftershock giảm theo decay.
-
-- Đã triển khai: Rune cộng hưởng theo cấp của Vạn Hỏa Thiên Phạt. actual tower progress → tier note; seeded modal frequency
-- Đã triển khai: Đường chuyển động fireGates có cue riêng. existing waves/beat/descent markers; gain/pitch/round robin
-- Đã triển khai: Trường âm FIRE trải trên AOE. regional clusters within actual AOE and stereo-linked dry/wet; mono-safe core
-- Không dùng: Đọc lại mọi va chạm GPU để phát từng hạt. No GPU collision event readback; would stall rendering and produce excessive voices. Cluster at known wave markers instead.
-
-Clock: [{"at":3.6799999999999997,"type":"pre","duration":0.34,"scale":0.32},{"at":4.02,"type":"freeze","duration":0.13,"postScale":0.34,"postDuration":0.7}]. Các điểm này chỉ điều khiển reference mix/audio; không sửa cinematic trong game.
 
 ### WATER-01 — Hải Thần Lĩnh Vực
 
@@ -845,4 +775,4 @@ Clock: [{"at":6.98,"type":"pre","duration":0.22,"scale":0.65},{"at":7.2,"type":"
 
 ## Phép đo và ngoại lệ
 
-224/225 logical cue đạt các ngưỡng đã khai báo. lightning/impact giữ FAIL sau đúng5 vòng: RMS-22.12dBFS so với -19±2.8; TP4×-.62dBTP ở cue riêng. Không nới ngưỡng để che lỗi. Tham chiếu master hiện tại21skill có peak dưới-1dBTP, tương phản finale và vacuum đạt; không thay thế browser timing hoặc đánh giá tai. Lịch sử số đo JSON giữ mọi tham số/thay đổi. Các biến thể bổ sung runtime Ultra5/6 được tạo bằng cùng công thức nhưng không ghi là đã có WAV/được đo riêng nếu chưa chạy matrix tương ứng.
+224/225 logical cue đạt các ngưỡng đã khai báo. lightning/impact giữ FAIL sau đúng5 vòng: RMS-22.12dBFS so với -19±2.8; TP4×-.62dBTP ở cue riêng. Không nới ngưỡng để che lỗi. Tham chiếu master hiện tại19skill có peak dưới-1dBTP, tương phản finale và vacuum đạt; không thay thế browser timing hoặc đánh giá tai. Lịch sử số đo JSON giữ mọi tham số/thay đổi. Các biến thể bổ sung runtime Ultra5/6 được tạo bằng cùng công thức nhưng không ghi là đã có WAV/được đo riêng nếu chưa chạy matrix tương ứng.

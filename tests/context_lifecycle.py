@@ -12,7 +12,7 @@ with sync_playwright() as pw:
   response=route.fetch();s=response.text().replace('requestAnimationFrame(animate);','').replace('select(0);animate();','select(0);');route.fulfill(response=response,body=s+'\n'+HOOK)
  page.route('**/src/main.js*',intercept)
  try:
-  page.goto(a.url,wait_until='networkidle');page.evaluate('__magicQA.sample(20,8.2)')
+  page.goto(a.url,wait_until='networkidle');page.evaluate('__magicQA.sample(__magicQA.skills.findIndex(s=>s.id===`NATURE-01`),8.2)')
   for cycle in range(3):
    before=page.evaluate('__magicQA.snapshot()');page.evaluate('__magicQA.loseContext()');page.wait_for_function('__magicQA.snapshot().contextLost');assert page.evaluate('__magicQA.snapshot().environmentId') is None
    page.evaluate('__magicQA.restoreContext()');page.wait_for_function('!__magicQA.snapshot().contextLost');after=page.evaluate('__magicQA.tick()');assert after['environmentId']!=before['environmentId'] and after['glError']==0 and after['badPrograms']==0

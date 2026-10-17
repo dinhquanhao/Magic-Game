@@ -48,12 +48,12 @@ def main():
             result['checks']['rapidSelectionAbort']=True
             casts=[]
             for _ in range(10):
-                ev('__magicQA.charging()');ev('__magicQA.sample(3,.05)')
+                ev('__magicQA.charging()');ev('__magicQA.sample(__magicQA.skills.findIndex(s=>s.id===`WATER-01`),.05)')
                 casts.append(ev('__magicAudio.status().activeVoices'))
                 ev('__magicAudio.stop()');assert ev('__magicAudio.status().activeVoices')==0
             result['checks']['tenRecasts']={'voicesDuringCast':casts,'afterStop':0}
             page.locator('#audioToggle').click()
-            ev('__magicQA.sample(3,__magicQA.skills[3].impact+2)')
+            ev('__magicQA.sample(__magicQA.skills.findIndex(s=>s.id===`WATER-01`),__magicQA.skills.find(s=>s.id===`WATER-01`).impact+2)')
             before=len(ev('__magicAudio.status().history'))
             page.locator('#audioToggle').click();ev('__magicAudio.ready()');ev('__magicQA.tick()')
             assert len(ev('__magicAudio.status().history'))==before,'Enabling late replayed old cues'

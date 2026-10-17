@@ -11,18 +11,6 @@
       "equal": true
     },
     {
-      "id": "FIRE-02",
-      "beforeSha256": "611814e444395352c818aa231f111cde61e16444847d8d99c4635d287762fbc2",
-      "afterSha256": "611814e444395352c818aa231f111cde61e16444847d8d99c4635d287762fbc2",
-      "equal": true
-    },
-    {
-      "id": "FIRE-03",
-      "beforeSha256": "656253366d5c1e41ec8d9913095a4f8c168fbea04f7b612ea047c49757ef10bc",
-      "afterSha256": "656253366d5c1e41ec8d9913095a4f8c168fbea04f7b612ea047c49757ef10bc",
-      "equal": true
-    },
-    {
       "id": "WATER-01",
       "beforeSha256": "e35a84619e58aef00cbece14e93086b4eb9abadc8db37e98e4c12b583eecef09",
       "afterSha256": "e35a84619e58aef00cbece14e93086b4eb9abadc8db37e98e4c12b583eecef09",
@@ -126,5 +114,6 @@
     }
   ],
   "scope": "Full parsed configuration including per-skill cinematic plan, not only names",
-  "windowsLauncherSha256": "67f2f70c870abd45d2604f1b20ddbf506907d6913cbf9a1598162f04cf159f72"
+  "windowsLauncherSha256": "67f2f70c870abd45d2604f1b20ddbf506907d6913cbf9a1598162f04cf159f72",
+  "historicalRecordNote": "Retired skill rows/references removed from the distributed record after checkpoint 3273606. Surviving measurements are unchanged; original run totals are historical, not a new 19-skill test."
 }

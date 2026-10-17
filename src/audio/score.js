@@ -32,7 +32,6 @@ export function buildSkillScore(skill,plan) {
   for(let i=0;i<chimes.stasis.count;i++)add('rune',chimes.stasis.start+i*chimes.stasis.interval,`time-stasis-${i}`,{gain:.45,source:'timeDomain.chimes.stasis'});
   add('secondary',chimes.finale.at+skill.timeDomain.shell.crackDuration,'time-catchup',{pitch:1.7,gain:.5,source:'shell crackDuration + domain release'});
  }
- if(skill.shape==='phoenixDive')for(let i=0;i<4;i++)if(1.3+i*.72<impact-.45)add('motion',1.3+i*.72,`phoenix-beat-${i}`,{gain:.35+i*.09,source:'main.js phoenixShakeBeat'});
  add('riser',Math.max(0,impact-.8),'anticipation',{priority:85,source:'audio-only anticipation of existing impact; does not change VFX'});
  add('impact',impact,'finale',{priority:100,source:'cinematicPlans.impactAt / VFX hit-stop callback',gain:element==='TIME'?.7:1});
  const shockOffsets=skill.oceanDominion?[.04,.16,.28]:skill.shadowOrbCataclysm?[0,.12,.24]:skill.earthMeteor?[.04,.32,.65]:[0,.19,.38];

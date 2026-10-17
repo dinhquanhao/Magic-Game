@@ -73,7 +73,7 @@ def main():
                     page.screenshot(path=str(out / (skill['id'].lower() + '.png')))
                 ev('__magicAudio.stop()')
                 assert audio()['activeVoices'] == 0
-            results['checks']['all21SevenCues'] = True
+            results['checks']['all19SevenCues'] = True
             # A continuously playing charging loop supplies actual PCM, not just marker assertions.
             ev('__magicAudio.select(3)'); ev('__magicAudio.ready()'); ev('__magicQA.charging()')
             page.wait_for_timeout(350)
@@ -103,7 +103,7 @@ def main():
             page.route('**/assets/audio/spells/earth/impact.wav', lambda route: route.fulfill(status=200, body='invalid WAV', content_type='audio/wav'))
             ev('__magicAudio.select(4)'); ev('__magicAudio.ready()')
             assert audio()['fallbacks'] == 1, audio()
-            ev('__magicQA.charging()'); ev('__magicQA.sample(4,.05)'); ev('__magicQA.sample(4,3)')
+            ev('__magicQA.charging()'); ev('__magicQA.sample(__magicQA.skills.findIndex(s=>s.id===`EARTH-01`),.05)'); ev('__magicQA.sample(__magicQA.skills.findIndex(s=>s.id===`EARTH-01`),3)')
             results['checks']['missingAssetFallback'] = True
             page.unroute('**/assets/audio/spells/earth/impact.wav')
             # Audible browser recording across three identities; video is captured separately.

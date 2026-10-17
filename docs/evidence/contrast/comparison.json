@@ -14,30 +14,6 @@
       "meanAfter": 0.7053890848995034
     },
     {
-      "id": "FIRE-02",
-      "time": 4.2,
-      "before": "before/FIRE-02-impact.png",
-      "after": "after/FIRE-02-impact.png",
-      "whiteBefore": 0.3764241536458333,
-      "whiteAfter": 0.050356547037760414,
-      "brightBefore": 0.42889658610026044,
-      "brightAfter": 0.059331258138020836,
-      "meanBefore": 0.889958670983408,
-      "meanAfter": 0.5227577306510577
-    },
-    {
-      "id": "FIRE-03",
-      "time": 4.17,
-      "before": "before/FIRE-03-impact.png",
-      "after": "after/FIRE-03-impact.png",
-      "whiteBefore": 0.2707265218098958,
-      "whiteAfter": 0.037663777669270836,
-      "brightBefore": 0.34011586507161456,
-      "brightAfter": 0.0812225341796875,
-      "meanBefore": 0.8936678485566182,
-      "meanAfter": 0.4464211976154801
-    },
-    {
       "id": "WATER-01",
       "time": 9.700000000000001,
       "before": "before/WATER-01-impact.png",
@@ -261,5 +237,6 @@
       "cases": 4,
       "errors": []
     }
-  }
+  },
+  "historicalRecordNote": "Retired skill rows/references removed from the distributed record after checkpoint 3273606. Surviving measurements are unchanged; original run totals are historical, not a new 19-skill test."
 }

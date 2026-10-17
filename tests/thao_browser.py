@@ -37,7 +37,7 @@ with sync_playwright() as pw:
  def capture(name):
   (out/(name+'.png')).write_bytes(base64.b64decode(page.evaluate('__natureQA.image()')))
  try:
-  page.goto(a.url,wait_until='networkidle');skills=page.evaluate('__magicQA.skills');assert len(skills)==21 and len(set(s['element'] for s in skills))==15
+  page.goto(a.url,wait_until='networkidle');skills=page.evaluate('__magicQA.skills');assert len(skills)==19 and len(set(s['element'] for s in skills))==15
   page.locator('[data-element="14"]').click();assert page.locator('#spellTitle').inner_text().endswith('Vạn Mộc Sinh Giới');assert page.locator('[data-spell]').count()==1
   page.evaluate('(q)=>__natureQA.choose(q)',a.quality)
   baseline=page.evaluate('__natureQA.baseline()');(out/'baseline.png').write_bytes(base64.b64decode(baseline))
@@ -56,7 +56,8 @@ with sync_playwright() as pw:
    for i in range(10):
     page.evaluate('(q)=>__natureQA.choose(q)',a.quality);check(page.evaluate('__natureQA.frame(8.2)'));page.evaluate('__natureQA.baseline()');memories.append(page.evaluate('__natureQA.state().memory'))
    result['checks']['tenCasts']=memories;assert memories[-1]['geometries']<=memories[0]['geometries']+1 and memories[-1]['textures']<=memories[0]['textures']+1,memories
-   for i in [0,20,3,20,8,20]:page.evaluate('(i)=>__magicQA.sample(i,.1)',i)
+   for id in ['FIRE-01','NATURE-01','WATER-01','NATURE-01','MAGMA-01','NATURE-01']:
+    i=next(s['index'] for s in skills if s['id']==id);page.evaluate('(i)=>__magicQA.sample(i,.1)',i)
    result['checks']['rapidSelection']=True
    page.evaluate('(q)=>__natureQA.choose(q)',a.quality);page.evaluate('__natureQA.reduced(true)');check(page.evaluate('__natureQA.state()'));result['checks']['reducedMotion']=True
    assert 'not finite' in page.evaluate('__natureQA.failTime()');page.evaluate('__natureQA.baseline()');result['checks']['nanGuardCleanup']=True

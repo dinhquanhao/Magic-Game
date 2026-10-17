@@ -1,5 +1,7 @@
 # Chạy và xem game — nền đất nâu và Thảo
 
+Danh mục mới nhất: **15 hệ/19 skill**, Hỏa chỉ còn Thiên Nhật Diệt Thế và giữ nguyên hành vi. [Báo cáo đối chiếu trước/sau](evidence/fire-trim/README.md). ZIP bên dưới được đóng gói lại; các báo cáo Thảo/nền đất phía dưới là bằng chứng của checkpoint trước.
+
 - [Nền đất nâu: ảnh trước/sau, video và kiểm thử](evidence/brown-ground/README.md). ZIP bên dưới được cập nhật theo checkpoint ghi trong metadata; dùng bản mới để thấy nền nâu.
 
 - [Draft PR #1 và từng file code](https://github.com/dinhquanhao/Magic-Game/pull/1/files).

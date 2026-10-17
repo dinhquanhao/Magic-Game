@@ -120,90 +120,6 @@
       }
     },
     {
-      "id": "FIRE-02",
-      "elementIndex": 0,
-      "slot": 1,
-      "vi": "Phượng Hoàng Tận Thế",
-      "en": null,
-      "shape": "phoenixDive",
-      "aoe": 320,
-      "pace": 0.92,
-      "count": 160,
-      "description": "Phượng hoàng lửa khổng lồ quét cánh rồi lao xuống tâm chiến trường.",
-      "spread": 20,
-      "archetype": "colossal",
-      "runeTower": {
-        "sustainDuration": 0.6100000000000003,
-        "fadeStart": 0.4794238683127572,
-        "fadeDuration": 5.0600000000000005,
-        "fadeOrder": "inner-last",
-        "fadeStagger": 0.093,
-        "fadeAt": null,
-        "releasePulse": 1.3900000000000001,
-        "reactToShockwave": true,
-        "timelineEnd": 9.72,
-        "towerScale": 1.0882877770673922
-      },
-      "plan": {
-        "impactAt": 4.05,
-        "preSlowDuration": 0.38,
-        "preSlowScale": 0.29,
-        "hitStop": 0.11,
-        "postSlowScale": 0.36,
-        "postSlowDuration": 0.65,
-        "shake": 1.18,
-        "shakeDuration": 1.2,
-        "shakeFrequency": 20,
-        "seed": 0.73,
-        "shockCount": 3,
-        "secondaryCount": 5,
-        "style": "colossal",
-        "debris": 32
-      }
-    },
-    {
-      "id": "FIRE-03",
-      "elementIndex": 0,
-      "slot": 2,
-      "vi": "Vạn Hỏa Thiên Phạt",
-      "en": null,
-      "shape": "fireGates",
-      "aoe": 260,
-      "pace": 1.22,
-      "count": 220,
-      "description": "Nhiều cổng trời bắn giáo lửa theo ba đợt phủ kín vùng ảnh hưởng.",
-      "spread": 16.25,
-      "archetype": "barrage",
-      "runeTower": {
-        "sustainDuration": 1.200000000000001,
-        "fadeStart": 0.5209580838323353,
-        "fadeDuration": 4.800000000000001,
-        "fadeOrder": "top-down",
-        "fadeStagger": 0.11099999999999999,
-        "fadeAt": null,
-        "releasePulse": 1.5,
-        "reactToShockwave": true,
-        "timelineEnd": 10.020000000000001,
-        "towerScale": 0.998314579679171
-      },
-      "plan": {
-        "impactAt": 4.02,
-        "preSlowDuration": 0.34,
-        "preSlowScale": 0.32,
-        "hitStop": 0.13,
-        "postSlowScale": 0.34,
-        "postSlowDuration": 0.7,
-        "shake": 1.42,
-        "shakeDuration": 1.38,
-        "shakeFrequency": 22,
-        "seed": 1.46,
-        "shockCount": 3,
-        "secondaryCount": 6,
-        "style": "barrage",
-        "debris": 40
-      }
-    },
-    {
       "id": "WATER-01",
       "elementIndex": 1,
       "slot": 0,
@@ -1928,8 +1844,8 @@
     }
   ],
   "source": {
-    "registrySha256": "2ce22f93d177d5cc7a19bc8f37cbb52647611d540bf84dc25328c8babeeba2b5",
-    "plansSha256": "1c773e3600c8b2660de92713dd434f3dd653105e1d68117d685acf044a9e8a0c",
+    "registrySha256": "da1942cb16892841dc7bd616cd8d58a5e6d291d7017de5a5d899e77e009210f5",
+    "plansSha256": "b7580ab6ce682863f5f1c4d2937a36d4e1e250544a549e3be7562df7ed959c8b",
     "startBatSha256": "67f2f70c870abd45d2604f1b20ddbf506907d6913cbf9a1598162f04cf159f72"
   },
   "clock": {

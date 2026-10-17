@@ -5,7 +5,7 @@ import {getCue} from '../src/audio/cues/registry.js';
 
 const {skills}=JSON.parse(readFileSync(new URL('../audio/source-audit.json',import.meta.url)));
 const scores=skills.map(s=>buildSkillScore(s,s.plan));
-assert.equal(scores.length,21);
+assert.equal(scores.length,19);
 assert.equal(new Set(scores.map(s=>s.element)).size,15);
 for(const score of scores){
  assert.ok(Number.isFinite(score.fadeAt)&&score.fadeAt<=score.end,score.id);

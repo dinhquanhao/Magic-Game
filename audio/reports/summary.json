@@ -1816,24 +1816,6 @@
       "vacuumContrastDb": 25.447393459124754
     },
     {
-      "id": "FIRE-02",
-      "passed": true,
-      "earVerified": false,
-      "timeAxis": "reference wall-time mapping of extracted world controls; not a recording of browser output",
-      "truePeakDbTP4x": -10.100158741615191,
-      "finaleContrastDb": 15.903770406536701,
-      "vacuumContrastDb": 19.95797607246365
-    },
-    {
-      "id": "FIRE-03",
-      "passed": true,
-      "earVerified": false,
-      "timeAxis": "reference wall-time mapping of extracted world controls; not a recording of browser output",
-      "truePeakDbTP4x": -10.169071710269748,
-      "finaleContrastDb": 16.358915166304513,
-      "vacuumContrastDb": 18.465323336153936
-    },
-    {
       "id": "WATER-01",
       "passed": true,
       "earVerified": false,
@@ -2000,8 +1982,8 @@
     "cues": 225,
     "passed": 224,
     "failed": 1,
-    "skills": 21,
-    "skillsPassed": 21
+    "skills": 19,
+    "skillsPassed": 19
   },
   "artifacts": [
     {
@@ -3353,16 +3335,6 @@
       "url": "/audio/rendered/skills/FIRE-01.wav",
       "sha256": "6344b32305b09c306fe4a4010a52f140df622a5025b56b01caece2a72ae2df74",
       "bytes": 775168
-    },
-    {
-      "url": "/audio/rendered/skills/FIRE-02.wav",
-      "sha256": "b4ea65477c4c3fc48f400b57c6a35760219133640cf4df78579a2f7b9d28f19c",
-      "bytes": 732918
-    },
-    {
-      "url": "/audio/rendered/skills/FIRE-03.wav",
-      "sha256": "4757f542fbda6063aef8051e969b66c1237c48a68c83bfd3ed3c2586de9fa2f8",
-      "bytes": 816054
     },
     {
       "url": "/audio/rendered/skills/ICE-01.wav",

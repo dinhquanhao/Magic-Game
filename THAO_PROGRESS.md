@@ -1,3 +1,9 @@
+# Ghi chú danh mục sau thu gọn Hỏa
+
+Danh mục hiện tại có15hệ/19skill. Báo cáo Thảo bên dưới ghi checkpoint trước khi thu gọn Hỏa; số21và các kết quả kiểm thử đó là lịch sử, không phải số skill hiện tại. Các record của hai skill đã gỡ không còn được phân phối. Bằng chứng mới: docs/evidence/fire-trim/README.md.
+
+---
+
 # Trạng thái bàn giao Thảo
 
 Runtime Thảo đã hoàn tất trong phạm vi kiểm thử nêu dưới:15hệ/21skill;20skill khác và START.bat giữ nguyên. Báo cáo tổng hợp ở docs/evidence/thao/verification.json; ảnh/video/console ở docs/evidence/thao/index.html. ZIP thật và checksum do scripts/package_thao.py tạo trong docs/releases. Các mục “đang thực hiện/chưa hoàn tất” phía dưới là nhật ký trước khi chốt; phần hạn chế và phạm vi11lớp chưa làm vẫn còn hiệu lực.

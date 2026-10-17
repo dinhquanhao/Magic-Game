@@ -65,24 +65,6 @@
       "banks": 1
     },
     {
-      "id": "FIRE-02",
-      "passed": true,
-      "impactCount": 1,
-      "rms": 0.025482409634756713,
-      "peak": 0.05016131326556206,
-      "cleanupRms": 1.4000549171548024e-08,
-      "banks": 1
-    },
-    {
-      "id": "FIRE-03",
-      "passed": true,
-      "impactCount": 1,
-      "rms": 0.02395587334213424,
-      "peak": 0.04918699339032173,
-      "cleanupRms": 1.5049069006542347e-08,
-      "banks": 1
-    },
-    {
       "id": "WATER-01",
       "passed": true,
       "impactCount": 1,
@@ -338,5 +320,6 @@
     "deviceChanges": 0,
     "errors": [],
     "pending": 0
-  }
+  },
+  "historicalRecordNote": "Retired skill rows/references removed from the distributed record after checkpoint 3273606. Surviving measurements are unchanged; original run totals are historical, not a new 19-skill test."
 }

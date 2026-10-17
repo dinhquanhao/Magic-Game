@@ -47,8 +47,6 @@ Khảo sát đã ghi trước sửa. Chưa triển khai gate/fade mới, chưa n
 | ID / tên | Module và hình thái chính hiện tại | Hạn chế đã biết ở đầu đợt |
 |---|---|---|
 | FIRE-01 Thiên Nhật Diệt Thế | `src/main.js`; shader lõi plasma, corona instanced, prominence, vòng va chạm | Không mô phỏng truyền nhiệt/khói/va chạm vật lý tổng quát |
-| FIRE-02 Phượng Hoàng Tận Thế | `src/main.js`; shader lửa, lông instanced, ember/khói | Không có solver lông/vải; lửa là shader VFX |
-| FIRE-03 Vạn Hỏa Thiên Phạt | `src/main.js`; cổng, giáo/đạn instanced, hạt lửa | Dấu cháy là shader trạng thái tạm, không phải decal texture lưu |
 | WATER-01 Hải Thần Lĩnh Vực | `src/ocean-dominion.js`; cá voi, sóng/foam shader, hạt giọt/splash | Chưa có Beer–Lambert, FFT/Gerstner fluid hay phản xạ màn hình trước đợt này |
 | EARTH-01 Đại Lục Phân Liệt | `src/earth-meteor.js`; thiên thạch, đá instanced, bụi và nứt | Chuyển động/va chạm mang tính VFX, chưa phải solver địa hình/GPU |
 | LIGHT-01 Lục Dực Thánh Khải | `src/light-ray-rain.js`; cổng và tia photon instanced, điểm impact | Tán xạ thể tích chỉ xấp xỉ |
@@ -172,3 +170,8 @@ Quy ước hồ sơ: geometry/hạt/đèn/hậu kỳ/cleanup chi tiết sẽ đ�
 ### Bổ sung AAA — tiếp nối 17/10/2026
 
 Bảo toàn ce73729/1a6cb41. Giới hạn năng lượng bloom và tách ngưỡng cho các hệ tối; Low23impact, Medium/High/Ultra4ca đại diện, production UI/video, build/unit đạt. 3vòng sửa bloom đã khép; Lôi còn flash rộng. PBR/probes mới vẫn chưa tích hợp; không tự ghi là hoàn thiện AAA. Bằng chứng và phần tiếp tại PROGRESS mục mới nhất, docs/evidence/contrast và docs/evidence/resumed-production.
+
+
+## Thu gọn Hỏa — 17/10/2026
+
+Theo yêu cầu mới, Hỏa chỉ giữ FIRE-01. Hai hàng skill đã gỡ được loại khỏi bản lịch sử phân phối hiện tại; không sửa cấu hình/số đo của các skill còn lại. Snapshot gốc trước thu gọn nằm tại commit3273606. Xem docs/evidence/fire-trim/README.md cho kiểm thử mới; không coi kết quả lịch sử là ma trận19skill mới.

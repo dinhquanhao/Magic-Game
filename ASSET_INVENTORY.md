@@ -1,5 +1,7 @@
 # Hiện trạng assets sau cập nhật Thảo
 
+Cập nhật thu gọn Hỏa: registry15hệ/19skill, chỉ giữ FIRE-01. Gỡ audio mix/biểu đồ/report riêng của hai skill bị xóa và các record liên quan; giữ nguyên shader lửa/ember/icon và bank cue dùng chung vì FIRE-01 vẫn sử dụng. Không tạo asset mới hoặc đổi asset của hệ khác. Báo cáo lịch sử đã lọc các hàng bị gỡ được đánh dấu riêng; không đổi số đo của các skill được giữ.
+
 Bổ sung nền nâu 17/10: vật liệu đất nâu không kim loại, lưới tông đất và hai lớp noise shader tĩnh, có giảm chi tiết hạt ở xa. Không thêm asset bên ngoài, texture, mesh hoặc render pass; không đổi license. Bằng chứng: docs/evidence/brown-ground/README.md. Đá/cỏ rìa/vết chân vẫn là backlog trong docs/ROUND-GROUND-2026-10-17.md.
 
 NATURE-01 dùng sáu cây procedural tự tạo, bark/leaf/circle shader, instanced roots/spikes/fruits/leaves, pooled analytic pollen/soil/spores và SVG lá mới. Audio gỗ/lá/hạt do công thức tạo, không sample bên ngoài: 15 cue logic/24 WAV biến thể, một mix tham chiếu mới. Audio của 14 hệ còn lại giữ nguyên. Registry có 15 hệ/21 skill; nguồn gốc/số đo và phạm vi kiểm thử ở THAO_PROGRESS.md.

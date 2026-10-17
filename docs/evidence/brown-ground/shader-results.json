@@ -1851,22 +1851,6 @@
       "end": 9.84
     },
     {
-      "index": 1,
-      "id": "FIRE-02",
-      "name": "Phượng Hoàng Tận Thế",
-      "element": 0,
-      "impact": 4.05,
-      "end": 9.72
-    },
-    {
-      "index": 2,
-      "id": "FIRE-03",
-      "name": "Vạn Hỏa Thiên Phạt",
-      "element": 0,
-      "impact": 4.02,
-      "end": 10.020000000000001
-    },
-    {
       "index": 3,
       "id": "WATER-01",
       "name": "Hải Thần Lĩnh Vực",
@@ -2010,5 +1994,6 @@
       "impact": 7.2,
       "end": 18
     }
-  ]
+  ],
+  "historicalRecordNote": "Retired skill rows/references removed from the distributed record after checkpoint 3273606. Surviving measurements are unchanged; original run totals are historical, not a new 19-skill test."
 }

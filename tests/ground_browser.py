@@ -59,7 +59,7 @@ with sync_playwright() as pw:
         page.goto(args.url, wait_until='networkidle')
         skills = page.evaluate('__magicQA.skills')
         result['registry'] = skills
-        assert len(skills) == 21 and len({s['element'] for s in skills}) == 15
+        assert len(skills) == 19 and len({s['element'] for s in skills}) == 15
         for quality in (['Low'] if args.baseline_only else ['Low', 'Medium', 'High', 'Ultra']):
             baseline = capture(quality + '-baseline', '__groundQA.baseline(' + json.dumps(quality) + ')')
             if args.baseline_only or quality not in ['Low', 'High']:
