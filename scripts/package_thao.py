@@ -13,15 +13,16 @@ with zipfile.ZipFile(out,'w',zipfile.ZIP_DEFLATED,compresslevel=3) as z,tarfile.
  for m in t:
   if not m.isfile() or not include(m.name):continue
   data=t.extractfile(m).read();name='Arcane-VFX-Studio-Thao-Update/'+m.name;z.writestr(name,data);manifest[m.name]=hashlib.sha256(data).hexdigest()
- for p in Path('docs/evidence/thao').rglob('*'):
-  if not p.is_file():continue
-  name=str(p);data=p.read_bytes();z.writestr('Arcane-VFX-Studio-Thao-Update/'+name,data);manifest[name]=hashlib.sha256(data).hexdigest()
+ for evidence in ['docs/evidence/thao','docs/evidence/brown-ground']:
+  for p in Path(evidence).rglob('*'):
+   if not p.is_file():continue
+   name=str(p);data=p.read_bytes();z.writestr('Arcane-VFX-Studio-Thao-Update/'+name,data);manifest[name]=hashlib.sha256(data).hexdigest()
  for name in ['THAO_PROGRESS.md','docs/PREVIEW.md','tests/thao_production.py','scripts/audit_nature.py']:
   # These are documentation/evidence additions; runtime source remains exactly ref.
   if name in manifest:continue
   p=Path(name)
   if p.exists():data=p.read_bytes();z.writestr('Arcane-VFX-Studio-Thao-Update/'+name,data);manifest[name]=hashlib.sha256(data).hexdigest()
- note=f'Runtime/source checkpoint {ref}. Includes current forest evidence and public runtime WAV/PNG assets. Excludes node_modules, Git, dist, caches, duplicate offline audio/rendered and audio/reports/cues, and bulky historical graphics/browser evidence or unintegrated graphics drafts. These excluded measurements remain in repository history; runtime audio mirrors are present. npm ci and npm run build work from the included package lock. The broader 11-layer graphics/rune request remains separately documented, not claimed complete by this archive.\n'
+ note=f'Runtime/source checkpoint {ref}. Includes forest and brown-ground evidence and public runtime WAV/PNG assets. Excludes node_modules, Git, dist, caches, duplicate offline audio/rendered and audio/reports/cues, and bulky historical graphics/browser evidence or unintegrated graphics drafts. These excluded measurements remain in repository history; runtime audio mirrors are present. npm ci and npm run build work from the included package lock. The broader 11-layer graphics/rune request remains separately documented, not claimed complete by this archive.\n'
  z.writestr('Arcane-VFX-Studio-Thao-Update/ARCHIVE_CONTENTS.txt',note)
  z.writestr('Arcane-VFX-Studio-Thao-Update/ARCHIVE_MANIFEST.json',json.dumps({'sourceCommit':ref,'files':manifest},indent=2))
 with zipfile.ZipFile(out) as z:

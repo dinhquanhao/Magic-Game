@@ -102,6 +102,14 @@ float arcGroundNoise(vec2 p) {
   return mix(mix(arcGroundHash(i), arcGroundHash(i + vec2(1.0, 0.0)), f.x), mix(arcGroundHash(i + vec2(0.0, 1.0)), arcGroundHash(i + vec2(1.0, 1.0)), f.x), f.y);
 }`)
       .replace('#include <roughnessmap_fragment>', `#include <roughnessmap_fragment>
+// Static soil detail stays anchored to the ground as the camera/time changes.
+// Fade fine grain below a pixel to avoid distant shimmer; no texture allocation.
+float arcSoilPatch = arcGroundNoise(vArcGroundPos.xz * 0.23);
+vec2 arcSoilUV = vArcGroundPos.xz * 2.6;
+float arcSoilDetail = 1.0 - smoothstep(0.35, 1.0, max(fwidth(arcSoilUV.x), fwidth(arcSoilUV.y)));
+float arcSoilGrain = mix(0.5, arcGroundNoise(arcSoilUV), arcSoilDetail);
+diffuseColor.rgb *= (0.78 + arcSoilPatch * 0.36) * (0.94 + arcSoilGrain * 0.12);
+roughnessFactor = clamp(roughnessFactor + (arcSoilGrain - 0.5) * 0.04, 0.0, 1.0);
 float arcGroundNoiseValue = arcGroundNoise(vArcGroundPos.xz * 0.19 + vec2(uArcTime * 0.018, -uArcTime * 0.012));
 float arcGroundMask = 1.0 - smoothstep(max(0.15, uGroundRadius * 0.45), max(0.2, uGroundRadius), distance(vArcGroundPos.xz, uGroundCenter));
 float arcNature=clamp(uSurfaceNature*arcGroundMask,0.,1.);
@@ -149,7 +157,7 @@ for (int arcLightIndex = 0; arcLightIndex < 8; arcLightIndex++) {
 }
 totalEmissiveRadiance += min(arcInjectedLight, vec3(0.22)) * (0.24 + arcWet * 0.55 + arcFrost * 0.28);`);
   };
-  groundMaterial.customProgramCacheKey = () => 'arcane-ground-reactive-v2';
+  groundMaterial.customProgramCacheKey = () => 'arcane-ground-reactive-v3-soil';
   groundMaterial.needsUpdate = true;
 
   const enhancedMaterials = new WeakSet();

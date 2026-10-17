@@ -1,0 +1,28 @@
+{
+  "commit": "1ce5028",
+  "label": "before-brown-ground",
+  "utcRecordedAt": "20261017-161632",
+  "production": true,
+  "sourceDirty": false,
+  "interactiveLivePreview": false,
+  "video": "preview.webm",
+  "errors": [],
+  "warnings": [],
+  "captures": {
+    "water": {
+      "skill": "Hải Thần Lĩnh Vực",
+      "phase": "KHAI TRIỂN",
+      "file": "water.png"
+    },
+    "shadow": {
+      "skill": "Vạn Ảnh Thiên Kiếp",
+      "phase": "KHAI TRIỂN",
+      "file": "shadow.png"
+    }
+  },
+  "elements": 15,
+  "audioUIEnabled": false,
+  "videoAudioTrack": false,
+  "mana": "55 / 100",
+  "result": "passed"
+}

@@ -1,4 +1,14 @@
-# Mốc mới nhất — Thảo, 17/10/2026
+# Mốc mới nhất — nền đất nâu, 17/10/2026
+
+- Theo yêu cầu “tạo nền đất màu nâu”: đổi nền xanh xám sang nâu ấm, roughness 0,98/metalness 0, lưới tông đất nhẹ. Thêm hai lớp noise tĩnh; hạt nhỏ hơn pixel giảm dần. Không thêm mesh/texture/render pass. [10 ý tưởng xếp hạng, chọn 3](docs/ROUND-GROUND-2026-10-17.md).
+- Một vòng sửa/kiểm thử: build64module và12test đạt; Chromium/SwiftShader18mốc gồm4preset,5phản ứng bề mặt và Thảo Low/High đạt. Reset sau Thảo khớp từng pixel. Registry15hệ/21skill và byte START.bat giữ nguyên; cảnh tĩnh trước/sau cùng23geometry/14texture.
+- [Ảnh trước/sau, video và raw report](docs/evidence/brown-ground/README.md). Không JS/WebGL/shader error; fixture0warning. Production UI chọn/cast/Play/MP/Pause đạt, giữ2warning watchdog khởi tạo Hỏa trên SwiftShader; không coi là benchmark GPU thật. Cảnh báo bundle Three core535,18kB có sẵn.
+- Bảo toàn checkpoint1ce5028 và cập nhật cùng nhánh/Draft PR#1; không merge main. ZIP mới dùng sourceCommit và SHA trong docs/releases/thao-package.json. Không xác nhận Live Preview từ xa hoặc Windows thật.
+- Tiếp theo: tùy chọn tông đất, đá/cỏ rìa hoặc vết chân sau khi chọn phạm vi. Các yêu cầu AAA/gate đang dở vẫn ở roadmap, chưa triển khai trong nhóm nền đất này.
+
+---
+
+# Mốc trước — Thảo, 17/10/2026
 
 - Thảo NATURE-01 thay3slot cuối bằng1skill thật, tổng15hệ/21skill. Checkpointfad20b0 đã push; bản chốt thêm evidence/video/ZIP và sửa PMREM context cleanup. Không merge main.
 - 6variant cây GPU,4kiểu tấn công nhắm dummy, mặt nền/gió/đèn/bind phục hồi;4preset PASS,10castLow giữ24geometry/14texture;21Low+21High regression PASS; production UI riêng PASS; audio thực PASS;12unit và build64module PASS. Các số đo thuộc môi trườngSwiftShader, không phải FPSGPU native.

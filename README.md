@@ -1,4 +1,6 @@
-# Bản cập nhật Thảo — Arcane VFX Studio
+# Arcane VFX Studio — nền đất nâu và hệ Thảo
+
+Nền đấu trường đã đổi sang nâu đất, bề mặt ít bóng và có vân procedural nhẹ. Hiệu ứng rêu/ướt/cháy/băng vẫn phủ lên nền và phục hồi sau reset. [Ảnh trước/sau và kết quả kiểm thử](docs/evidence/brown-ground/README.md).
 
 Registry hiện tại: **15 hệ, 21 skill**. Hệ cuối có một skill mới **NATURE-01 — Vạn Mộc Sinh Giới / Verdant Genesis**; thay ba slot cũ bằng một slot thật. 20 skill còn lại giữ ID, tên, cấu hình và cinematic. START.bat vẫn dùng npm.cmd, ASCII/CRLF.
 

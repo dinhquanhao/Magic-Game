@@ -1,0 +1,37 @@
+{
+  "commit": "1ce5028",
+  "label": "after-brown-ground",
+  "utcRecordedAt": "20261017-161843",
+  "production": true,
+  "sourceDirty": true,
+  "interactiveLivePreview": false,
+  "video": "preview.webm",
+  "errors": [],
+  "warnings": [
+    {
+      "type": "warning",
+      "text": "[Arcane VFX] Adaptive quality reduced volumetric; user settings are preserved."
+    },
+    {
+      "type": "warning",
+      "text": "[Arcane VFX] Performance watchdog limited runtime VFX budgets; user settings are preserved. {skill: FIRE-01, reason: synchronous skill construction exceeded 250 ms, frameCostMs: 257, runtimeDensityScale: 0.72}"
+    }
+  ],
+  "captures": {
+    "water": {
+      "skill": "Hải Thần Lĩnh Vực",
+      "phase": "KHAI TRIỂN",
+      "file": "water.png"
+    },
+    "shadow": {
+      "skill": "Vạn Ảnh Thiên Kiếp",
+      "phase": "KHAI TRIỂN",
+      "file": "shadow.png"
+    }
+  },
+  "elements": 15,
+  "audioUIEnabled": false,
+  "videoAudioTrack": false,
+  "mana": "55 / 100",
+  "result": "passed"
+}

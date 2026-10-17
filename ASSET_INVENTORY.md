@@ -1,5 +1,7 @@
 # Hiện trạng assets sau cập nhật Thảo
 
+Bổ sung nền nâu 17/10: vật liệu đất nâu không kim loại, lưới tông đất và hai lớp noise shader tĩnh, có giảm chi tiết hạt ở xa. Không thêm asset bên ngoài, texture, mesh hoặc render pass; không đổi license. Bằng chứng: docs/evidence/brown-ground/README.md. Đá/cỏ rìa/vết chân vẫn là backlog trong docs/ROUND-GROUND-2026-10-17.md.
+
 NATURE-01 dùng sáu cây procedural tự tạo, bark/leaf/circle shader, instanced roots/spikes/fruits/leaves, pooled analytic pollen/soil/spores và SVG lá mới. Audio gỗ/lá/hạt do công thức tạo, không sample bên ngoài: 15 cue logic/24 WAV biến thể, một mix tham chiếu mới. Audio của 14 hệ còn lại giữ nguyên. Registry có 15 hệ/21 skill; nguồn gốc/số đo và phạm vi kiểm thử ở THAO_PROGRESS.md.
 
 Bảng dưới mô tả lịch sử audio/assets trước đợt thay hệ cuối. Số23 trong phần lịch sử không phải số skill hiện tại. Các record của hệ đã thay đã gỡ, không chuyển kết quả đo cũ sang Thảo.
