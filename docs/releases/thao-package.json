@@ -1,0 +1,11 @@
+{
+  "file": "Arcane-VFX-Studio-Thao-Update.zip",
+  "sourceCommit": "45118913bd20a273dc4d5754f6186f2736208d36",
+  "bytes": 70634232,
+  "sha256": "75a7952fb286d5beea7677d9f76822a6c9bff151371dda0fa33892be9b10d895",
+  "entries": 1194,
+  "crcPassed": true,
+  "noNodeModules": true,
+  "launcherBytesPreserved": true,
+  "scope": "Runtime/source checkpoint 45118913bd20a273dc4d5754f6186f2736208d36. Includes current forest evidence and public runtime WAV/PNG assets. Excludes node_modules, Git, dist, caches, duplicate offline audio/rendered and audio/reports/cues, and bulky historical graphics/browser evidence or unintegrated graphics drafts. These excluded measurements remain in repository history; runtime audio mirrors are present. npm ci and npm run build work from the included package lock. The broader 11-layer graphics/rune request remains separately documented, not claimed complete by this archive."
+}

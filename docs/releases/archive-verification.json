@@ -1,0 +1,17 @@
+{
+  "archive": "Arcane-VFX-Studio-Thao-Update.zip",
+  "bytes": 70634232,
+  "sha256": "75a7952fb286d5beea7677d9f76822a6c9bff151371dda0fa33892be9b10d895",
+  "entries": 1194,
+  "manifestFilesChecked": 1192,
+  "manifestHashesPassed": true,
+  "crcPassed": true,
+  "retiredIdentifierPathOrTextMatches": [],
+  "noNodeModulesGitSecrets": true,
+  "sourceCommit": "45118913bd20a273dc4d5754f6186f2736208d36",
+  "extractedInstallPassed": true,
+  "extractedUnitFilesPassed": 8,
+  "extractedBuildPassed": true,
+  "extractedBuildModules": 64,
+  "testedRuntimeMatchesCurrentSources": true
+}
