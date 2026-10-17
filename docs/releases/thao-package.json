@@ -1,11 +1,11 @@
 {
   "file": "Arcane-VFX-Studio-Thao-Update.zip",
-  "sourceCommit": "4a345373185d9e6eb07847da6b2cd6ef1f8fbdbf",
-  "bytes": 90427655,
-  "sha256": "c11e656e65618207b4c4423f1114b797cd2a47ccdede5000b12b508b66de108f",
-  "entries": 1222,
+  "sourceCommit": "ed8568de4e7f3a390b939ca225b5862f1d1611bb",
+  "bytes": 95318143,
+  "sha256": "b9b9d700390a3a3525703e8c2eb0ab19ff31fa10733b277a2dabe7827cc3eb4a",
+  "entries": 1238,
   "crcPassed": true,
   "noNodeModules": true,
   "launcherBytesPreserved": true,
-  "scope": "Runtime/source checkpoint 4a345373185d9e6eb07847da6b2cd6ef1f8fbdbf. Current registry: 15 elements, 19 skills; Fire retains only FIRE-01. Includes forest, brown-ground and retained-skill evidence and public runtime WAV/PNG assets. Excludes node_modules, Git, dist, caches, duplicate offline audio/rendered and audio/reports/cues, and bulky historical graphics/browser evidence or unintegrated graphics drafts. These excluded measurements remain in repository history; runtime audio mirrors are present. npm ci and npm run build work from the included package lock. The broader 11-layer graphics/rune request remains separately documented, not claimed complete by this archive."
+  "scope": "Runtime/source checkpoint ed8568de4e7f3a390b939ca225b5862f1d1611bb. Current registry: 15 elements, 19 skills; Fire retains only FIRE-01. Shared rune release now fades over 1.8 simulation seconds after effect visibility. Includes forest, brown-ground, retained-skill and rune-fade evidence and public runtime WAV/PNG assets. Excludes node_modules, Git, dist, caches, duplicate offline audio/rendered and audio/reports/cues, and bulky historical graphics/browser evidence or unintegrated graphics drafts. These excluded measurements remain in repository history; runtime audio mirrors are present. npm ci and npm run build work from the included package lock. The broader 11-layer graphics/rune request remains separately documented, not claimed complete by this archive."
 }

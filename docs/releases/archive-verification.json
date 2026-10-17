@@ -1,28 +1,30 @@
 {
   "archive": "Arcane-VFX-Studio-Thao-Update.zip",
-  "bytes": 90427655,
-  "sha256": "c11e656e65618207b4c4423f1114b797cd2a47ccdede5000b12b508b66de108f",
-  "sourceCommit": "4a345373185d9e6eb07847da6b2cd6ef1f8fbdbf",
-  "entries": 1222,
-  "manifestFilesChecked": 1220,
+  "bytes": 95318143,
+  "sha256": "b9b9d700390a3a3525703e8c2eb0ab19ff31fa10733b277a2dabe7827cc3eb4a",
+  "sourceCommit": "ed8568de4e7f3a390b939ca225b5862f1d1611bb",
+  "entries": 1238,
+  "manifestFilesChecked": 1236,
   "manifestHashesPassed": true,
   "crcPassed": true,
   "noDuplicateEntries": true,
   "noNodeModulesGitEnvFiles": true,
-  "runtimeAndDependencyFilesChecked": 983,
+  "runtimeAndDependencyFilesChecked": 984,
   "archiveRuntimeMatchesTestedWorkingTree": true,
   "removedSkillPathOrTextMatches": [],
-  "referenceScope": "All archive paths and text sources/metadata/docs/tests. No OCR of historical binary images/video or audio transcription.",
+  "referenceScope": "Archive paths/text sources/metadata/docs/tests; no OCR of historical images/video or audio transcription.",
   "launcherBytesPreserved": true,
   "currentWorkingTreeChecks": {
     "elements": 15,
     "skills": 19,
-    "unitTestsPassed": 13,
-    "buildModules": 64,
-    "retainedSkillFramesIdentical": 60,
-    "retainedSkillDefinitionsAndScoresUnchanged": 19,
-    "productionMenuHotkeysAudioLab": "passed"
+    "unitTestsPassed": 16,
+    "buildModules": 65,
+    "runeLowHighRows": 38,
+    "runeFadeSamplesPassed": 192,
+    "retainedSkillConfigurationsAndScoresUnchanged": 19,
+    "pauseHitStopSlowToggleRecastCleanup": "passed",
+    "productionRuneVideo": "passed"
   },
   "extractedInstallBuildRepeated": false,
-  "reason": "Dependencies unchanged; every packaged runtime/public asset/dependency/config byte matches the tested working tree. Tests and build ran on that working tree; no new extracted install/build is claimed."
+  "reason": "No dependency change; packaged runtime/public assets/dependency/config bytes match the tested working tree. No new extracted install/build is claimed."
 }
