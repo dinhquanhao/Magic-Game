@@ -54,6 +54,7 @@ export function createGraphicsUpgrade(THREE, renderer, scene, ground, composer, 
     uSurfaceDust: { value: 0 },
     uSurfaceMud: { value: 0 },
     uSurfaceHeat: { value: 0 },
+    uSurfaceNature: { value: 0 },
     uGroundAO: { value: 0 },
     uGroundCaustics: { value: 0 },
     uGroundDisturbance: { value: 0 },
@@ -80,6 +81,7 @@ uniform float uBloodStain;
 uniform float uSurfaceDust;
 uniform float uSurfaceMud;
 uniform float uSurfaceHeat;
+uniform float uSurfaceNature;
 uniform float uGroundAO;
 uniform float uGroundCaustics;
 uniform vec4 uArcLightPositionRadius[8];
@@ -95,6 +97,8 @@ float arcGroundNoise(vec2 p) {
       .replace('#include <roughnessmap_fragment>', `#include <roughnessmap_fragment>
 float arcGroundNoiseValue = arcGroundNoise(vArcGroundPos.xz * 0.19 + vec2(uArcTime * 0.018, -uArcTime * 0.012));
 float arcGroundMask = 1.0 - smoothstep(max(0.15, uGroundRadius * 0.45), max(0.2, uGroundRadius), distance(vArcGroundPos.xz, uGroundCenter));
+float arcNature=clamp(uSurfaceNature*arcGroundMask,0.,1.);
+diffuseColor.rgb=mix(diffuseColor.rgb,vec3(.065,.13,.027)*(.7+arcGroundNoiseValue*.5),arcNature*.82);
 float arcWet = clamp(uSurfaceState.x * arcGroundMask, 0.0, 1.0);
 float arcBurn = clamp(uSurfaceState.y * arcGroundMask, 0.0, 1.0);
 float arcFrost = clamp(uSurfaceState.z * arcGroundMask, 0.0, 1.0);
@@ -412,10 +416,11 @@ reflectedLight.indirectDiffuse += diffuseColor.rgb * min(arcInjectedObjectLight,
     postEffects.setReducedMotion(reducedMotion);
   }
 
-  function updateSurface({ time = 0, center = null, radius = 1, wet = 0, burn = 0, frost = 0, acid = 0, blood = 0, dust = 0, mud = 0, heat = 0, crack = 0, wind = 0, windDirection = null, light = 0, shadow = 0 } = {}) {
+  function updateSurface({ time = 0, center = null, radius = 1, wet = 0, burn = 0, frost = 0, acid = 0, blood = 0, dust = 0, mud = 0, heat = 0, nature = 0, crack = 0, wind = 0, windDirection = null, light = 0, shadow = 0 } = {}) {
     if (center) groundUniforms.uGroundCenter.value.set(center.x, center.z);
     else groundUniforms.uGroundCenter.value.set(0, 0);
     groundUniforms.uGroundRadius.value = Math.max(1, Number.isFinite(radius) ? radius : 1);
+    groundUniforms.uSurfaceNature.value=THREE.MathUtils.clamp(nature,0,1);
     groundUniforms.uSurfaceState.value.set(wet, burn, frost, acid);
     groundUniforms.uSurfaceAux.value.set(crack, wind, light, shadow);
     groundUniforms.uBloodStain.value = THREE.MathUtils.clamp(blood, 0, 1);
@@ -432,6 +437,7 @@ reflectedLight.indirectDiffuse += diffuseColor.rgb * min(arcInjectedObjectLight,
   function resetSurface() {
     updateSurface();
     fields.clearLightSources();
+    windGrass.reset();
     fields.updateWind({ strength: 0, turbulence: 0 });
     distortionPass.uniforms.uVolumeStrength.value = 0;
     distortionPass.uniforms.uMotionDir.value.set(0, 0);
@@ -447,7 +453,7 @@ reflectedLight.indirectDiffuse += diffuseColor.rgb * min(arcInjectedObjectLight,
   function getDiagnostics() {
     return {
       quality, features: effectiveFeatures(), requestedFeatures: getFeatures(), autoReduced: [...autoDisabled], averageFrameMs,
-      post: postEffects.getStatus(), fields: fields.getStatus(), grass: windGrass.getStatus(), particleWind: particleWind.getStatus(), trackedMaterials: enhancedMaterialList.size, estimatedRenderTargetBytes: postEffects.estimateTargetBytes()
+      post: postEffects.getStatus(), fields: fields.getStatus(), grass: windGrass.getStatus(), particleWind: particleWind.getStatus(), trackedMaterials: enhancedMaterialList.size, estimatedRenderTargetBytes: postEffects.estimateTargetBytes(), surfaceNature:groundUniforms.uSurfaceNature.value
     };
   }
   function dispose() { composer.removePass(outputPass); outputPass.dispose(); postEffects.dispose(); windGrass.dispose(); fields.dispose(); environmentTarget.dispose(); }

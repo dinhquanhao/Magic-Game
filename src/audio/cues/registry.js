@@ -1,4 +1,4 @@
-export const ELEMENT_ORDER=['WATER','EARTH','WIND','FIRE','ICE','LIGHTNING','POISON','LIGHT','SHADOW','BLOOD','SPACE','TIME','MAGMA','ASTRAL','PSYCHIC'];
+export const ELEMENT_ORDER=['WATER','EARTH','WIND','FIRE','ICE','LIGHTNING','POISON','LIGHT','SHADOW','BLOOD','SPACE','TIME','MAGMA','ASTRAL','NATURE'];
 // All parameters and seeds are original; the old WAV bank remains available for A/B.
 export const ELEMENT_AUDIO={
  WATER:{base:168,material:'bubble',noise:'pink',modes:[1,1.42,2.8,4.9],cutoff:3600,room:'underwater',keywords:'chảy · bọt · ẩm · sóng',bass:.85},
@@ -15,7 +15,7 @@ export const ELEMENT_AUDIO={
  TIME:{base:440,material:'clock',noise:'pink',modes:[1,1.5,2,3,4.01],cutoff:6200,room:'cathedral',keywords:'chuông · lặng · nhịp · trong',bass:.25},
  MAGMA:{base:51,material:'lava',noise:'brown',modes:[1,1.67,2.21,3.5],cutoff:2600,room:'cave',keywords:'sôi · đặc · rền · nứt nóng',bass:1.1},
  ASTRAL:{base:392,material:'stars',noise:'blue',modes:[1,1.5,2,2.5,4],cutoff:6900,room:'void',keywords:'tinh quang · quỹ đạo · ngân · bụi',bass:.7},
- PSYCHIC:{base:217,material:'mind',noise:'pink',modes:[1,1.031,1.27,2.5],cutoff:4300,room:'cathedral',keywords:'giao thoa · vọng · nhịp · lăng kính',bass:.55},
+ NATURE:{base:146,material:'wood',noise:'brown',modes:[1,1.57,2.83,4.36],cutoff:3900,room:'arena',keywords:'gỗ · lá · hạt · sinh trưởng',bass:.75},
 };
 const role=(duration,level,category,extra={})=>({duration,targetRmsDb:level,category,...extra});
 export const CUE_ROLES={

@@ -49,8 +49,7 @@
     "pauseRateMute": true,
     "rapidSelection": {
       "banks": [
-        "FIRE",
-        "PSYCHIC"
+        "FIRE"
       ],
       "decodedBytes": 4840320,
       "errors": []

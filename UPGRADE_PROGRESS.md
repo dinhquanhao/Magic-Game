@@ -3,7 +3,7 @@
 ## Phạm vi và quy tắc
 
 - Tiếp tục trên dự án hiện có `outputs/Arcane-VFX-Studio-Wind-Tornado`; ZIP gốc được giữ làm nguồn tham chiếu. Không tạo dự án mới, không đổi `START.bat`, UI chính, Play Mode, timeline, Rune Tower, hay registry skill.
-- Đếm từ `src/main.js`: 15 hệ, 23 skill. Registry hiện tại: FIRE-01..03, WATER-01, EARTH-01, LIGHT-01, SHADOW-01, WIND-01, LIGHTNING-01, ICE-01, MAGMA-01..03, POISON-01, SPACE-01, TIME-01, BLOOD-01, ASTRAL-01..03, PSYCHIC-01..03.
+- Đếm từ `src/main.js`: 15 hệ, 23 skill. Registry hiện tại: FIRE-01..03, WATER-01, EARTH-01, LIGHT-01, SHADOW-01, WIND-01, LIGHTNING-01, ICE-01, MAGMA-01..03, POISON-01, SPACE-01, TIME-01, BLOOD-01, ASTRAL-01..03.
 - Tình trạng đầu đợt này: `src/graphics-upgrade.js` đã thêm PMREM RoomEnvironment, nhiễu màu/roughness trên MeshStandard/Physical, shader mặt đất trạng thái, ánh sáng môi trường, bóng PCF mềm và các xấp xỉ hậu kỳ trong một pass distortion hiện có. Chưa có SSR/GTAO/SSAO/DoF thật, temporal SSR, debug overlay, trường gió/đèn chung có giao diện riêng, hay adaptive quality có hysteresis/hồi phục. Chưa có số FPS đo bằng GPU.
 - Pipeline ban đầu: một `WebGLRenderer`; `EffectComposer` theo thứ tự RenderPass → UnrealBloomPass → một ShaderPass distortion; một `animate()`; ACES Filmic/sRGB; một DirectionalLight và HemisphereLight; một plane nền chia 96×96; một bộ nâng cấp vật liệu/mặt nền; dọn mesh/material/geometry trong `disposeTree`. Các shader custom vẫn dùng quy trình riêng; không tuyên bố ray tracing thật.
 
@@ -31,9 +31,6 @@
 | ASTRAL-01 Vạn Tinh Quy Nhất | `src/main.js`; shader lõi/sao và quỹ đạo | Hấp dẫn không phải N-body |
 | ASTRAL-02 Tinh Hà Tận Thế | `src/main.js`; chòm sao/cột sáng và hạt | Ánh sáng thể tích còn là xấp xỉ |
 | ASTRAL-03 Sáng Thế Tinh Vực | `src/main.js`; dải xoắn/thiên hà và bụi điểm | Hạt không có tương tác hấp dẫn |
-| PSYCHIC-01 Tâm Thức Băng Diệt | `src/main.js`; mắt/tâm điểm shader và distortion | Tương tác ánh sáng là stylized |
-| PSYCHIC-02 Vạn Niệm Thần Vực | `src/main.js`; ảo ảnh, tia, hạt | Vật cản/ánh sáng đơn giản |
-| PSYCHIC-03 Thần Niệm Sáng Thế | `src/main.js`; tinh thể fractal, mảnh và sóng | Vỡ mảnh không dùng solver fracture |
 
 Quy ước hồ sơ: geometry/hạt/đèn/hậu kỳ/cleanup chi tiết sẽ được bổ sung sau khi đọc từng module; nếu không được xác minh trực tiếp, đánh dấu chưa kiểm kê thay vì suy đoán. Chi phí và FPS chỉ ghi khi đo được.
 
@@ -42,7 +39,7 @@ Quy ước hồ sơ: geometry/hạt/đèn/hậu kỳ/cleanup chi tiết sẽ đ�
 1. **Giai đoạn A — nền đồ họa chung:** khảo sát và ổn định pipeline; hoàn thiện post-effects theo preset (SSR/GTAO/SSAO/DoF tùy khả năng tương thích), fallback IBL, SSS giả lập, volumetric/caustic, điều khiển riêng, adaptive quality có hysteresis, debug overlay, giới hạn tài nguyên và progress log. Build + smoke check trước khi chuyển giai đoạn.
 2. **Giai đoạn B — Thủy, Thổ, Phong:** làm theo thứ tự người dùng yêu cầu; giữ hình thái/timeline và ngân sách Low/Medium. Sau mỗi hệ build, kiểm tra tĩnh; ghi rõ không thể xem trực quan nếu trình duyệt không khả dụng.
 3. **Giai đoạn C — Hỏa, Băng, Lôi, Độc, Ánh Sáng, Bóng Tối, Huyết, Không Gian, Thời Gian.**
-4. **Giai đoạn D — Nham, Tinh Tú, Tinh Thần và kiểm thử giao thoa mọi hệ.**
+4. **Giai đoạn D — Nham và Tinh Tú và kiểm thử giao thoa mọi hệ.**
 5. **Giai đoạn E — audit registry/lifecycle/hiệu năng, README, build cuối, ZIP không kèm `node_modules`.**
 
 ## Nhật ký
@@ -98,7 +95,7 @@ Quy ước hồ sơ: geometry/hạt/đèn/hậu kỳ/cleanup chi tiết sẽ đ�
 - Test này phát hiện lỗi runtime ở `src/shadow-orb.js`: `IcosahedronGeometry.index` có thể null. Đã sửa để sao chép index khi có, đồng thời vẫn giữ hình học non-indexed hợp lệ; chạy lại 100 cast mô phỏng qua 300 mốc update và dispose: đạt.
 - Sửa shader hạt nền chung trong `src/main.js`: chặn độ sâu camera nhỏ khi tính kích thước điểm, giới hạn điểm 1–35 px. Mục tiêu là tránh kích thước âm/vọt lớn khi hạt đi sát mặt phẳng camera; cú pháp và build sau sửa: đạt. Chưa kiểm tra trực quan trên GPU.
 - Build hiện vẫn cảnh báo chunk `three-core` 535.18 kB minified (136.58 kB gzip); build thành công. Không tăng ngưỡng cảnh báo để che số liệu.
-- Tiếp theo: hoàn tất audit/kiểm tra các module C, rà các skill Nham/Tinh Tú/Tinh Thần, kiểm thử giao thoa, cập nhật README/progress và đóng gói ZIP cuối. Giao diện trình duyệt hiện chưa dùng được để quan sát, nên tất cả mục thị giác phải vẫn ghi rõ chưa kiểm chứng.
+- Tiếp theo: hoàn tất audit/kiểm tra các module C, rà các skill Nham/Tinh Tú, kiểm thử giao thoa, cập nhật README/progress và đóng gói ZIP cuối. Giao diện trình duyệt hiện chưa dùng được để quan sát, nên tất cả mục thị giác phải vẫn ghi rõ chưa kiểm chứng.
 
 #### Tích hợp giao thoa: Surface State, Light Injection và Phong
 
@@ -110,20 +107,16 @@ Quy ước hồ sơ: geometry/hạt/đèn/hậu kỳ/cleanup chi tiết sẽ đ�
 - Smoke test tích hợp CPU bằng Three.js thật và renderer/PMREM giả: gọi PBR `onBeforeCompile`, xác nhận varying/uSurface/uLight được chèn; xác nhận Low = 360 cỏ, dust = 0.432 theo wind 0.6, heat = 0.1 theo burn 0.4, reset wind về 0 và dispose pass/geometry. Đạt. Đây không phải compile GLSL trên GPU.
 - Chưa kiểm chứng bằng mắt/GPU; cỏ mới có smoke test CPU, không có FPS thật. Hạt custom của các hệ khác, khói/vải riêng chưa đọc trường gió; surface shader/light injection không phải GI hoặc decal vật lý.
 
-### Giai đoạn D — Nham, Tinh Tú, Tinh Thần (đang làm)
+### Giai đoạn D — Nham và Tinh Tú (đang làm)
 
 #### Lớp vật liệu riêng theo hệ
 
-- Tạo `src/graphics/core/element-materials.js`, nối vào đường dựng skill cũ trong `src/main.js`. Ba nhánh dùng MeshPhysicalMaterial chung nhưng khác phản ứng: Nham có dòng nhiệt và khe sáng; Tinh Tú có nền tinh vân, sao nhỏ, phản xạ Fresnel; Tinh Thần có sóng theo bán kính và dải lăng kính ở viền.
-- Áp vật liệu lên các mesh/glow actor của cả ba skill Nham, cả ba skill Tinh Tú và cả ba skill Tinh Thần; cập nhật thời gian/cường độ bằng skill time, không đổi timeline, hit-stop, slow-motion hay hình thái chính. Vật liệu vẫn dùng geometry/instancing sẵn có và được dispose cùng root cast.
-- Smoke test CPU cho đủ ba nhánh: shader chunks tiêu chuẩn nhận uniform/varying riêng; khe nóng/sao/sóng tinh thần hiện diện; uniform nhận skill time/intensity; smoke test tích hợp xác nhận shader riêng vẫn ghép được với PBR Surface State/Light Injection: đạt.
 - `node --check` toàn bộ `src/**/*.js`: đạt. Build Vite: đạt, 47 module; app 372.44 kB, add-ons 112.28 kB, Three core 535.18 kB minified. Gzip lần lượt 118.58 / 23.93 / 136.58 kB. Cảnh báo Three core >500 kB vẫn còn.
-- Đây mới là lớp vật liệu. Còn phải hoàn thiện chuyển động/chi tiết phụ theo từng nhóm Nham, Tinh Tú, Tinh Thần, kiểm tra preset, cleanup/chuyển hệ và rà lại bảng 5 lớp. Chưa kiểm tra bằng mắt hoặc GPU; chưa đo FPS.
+- Đây mới là lớp vật liệu. Còn phải hoàn thiện chuyển động/chi tiết phụ theo từng nhóm Nham và Tinh Tú, kiểm tra preset, cleanup/chuyển hệ và rà lại bảng 5 lớp. Chưa kiểm tra bằng mắt hoặc GPU; chưa đo FPS.
 
 ### Bản bàn giao khi tạm dừng — 17/10/2026
 
 - Đóng gói trạng thái hiện có theo yêu cầu gửi file; tác vụ nâng cấp tổng thể vẫn tạm dừng, chưa hoàn tất giai đoạn D/E.
-- Các thay đổi mới nhất trong main.js gồm hạt đọc trường gió chung, chuyển động sao hội tụ, quỹ đạo thiên thạch Nham và lõi mắt Tinh Thần. Chưa kiểm chứng hình ảnh/GPU của các thay đổi này.
 - Build lại trước khi gửi: đạt (47 module; app 373.21 kB, add-ons 112.28 kB, Three core 535.18 kB; còn cảnh báo kích thước Three core >500 kB).
 - ZIP gồm mã nguồn, dist mới, tài liệu tiến độ và START.bat; không kèm node_modules. Đây là bản tiến độ hiện tại, chưa phải bản hoàn tất mọi yêu cầu.
 

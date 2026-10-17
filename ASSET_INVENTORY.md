@@ -1,10 +1,16 @@
+# Hiện trạng assets sau cập nhật Thảo
+
+NATURE-01 dùng sáu cây procedural tự tạo, bark/leaf/circle shader, instanced roots/spikes/fruits/leaves, pooled analytic pollen/soil/spores và SVG lá mới. Audio gỗ/lá/hạt do công thức tạo, không sample bên ngoài: 15 cue logic/24 WAV biến thể, một mix tham chiếu mới. Audio của 14 hệ còn lại giữ nguyên. Registry có 15 hệ/21 skill; nguồn gốc/số đo và phạm vi kiểm thử ở THAO_PROGRESS.md.
+
+Bảng dưới mô tả lịch sử audio/assets trước đợt thay hệ cuối. Số23 trong phần lịch sử không phải số skill hiện tại. Các record của hệ đã thay đã gỡ, không chuyển kết quả đo cũ sang Thảo.
+
 # Kiểm kê assets — vòng audio 2026-10-17
 
 Phạm vi: mã hiện tại của nhánh PR #1. Không tạo lại dự án hoặc đổi giấy phép repository.
 
 | Nhóm | Hiện có | Thiếu / còn yếu | Quyết định |
 |---|---|---|---|
-| 15 hệ / 23 skill | Mesh, shader, particles, rune tower procedural; ID và hình thái giữ nguyên | Một số impact quá sáng, độ tương phản chưa đồng đều | Tiếp tục GĐ1 với ảnh cố định và exposure đo được |
+| 15 hệ / 21 skill | Mesh, shader, particles, rune tower procedural; ID và hình thái giữ nguyên | Một số impact quá sáng, độ tương phản chưa đồng đều | Tiếp tục GĐ1 với ảnh cố định và exposure đo được |
 | Pháp sư | Model procedural, idle/walk/run/jump/dash/cast, camera, MP | HP, hurt/death, thiết bị và animation chuyển tiếp chưa hoàn chỉnh | GĐ2; giữ model hiện có |
 | Mục tiêu | Training dummy và phản hồi impact | Chưa có enemy AI/Boss nhiều pha | GĐ3 |
 | Đấu trường | Nền, kiến trúc/rune, cây/cỏ, ánh sáng/PBR procedural | Thế giới khám phá, collision/LOD và nhiều biome | GĐ4 sau combat |

@@ -9,7 +9,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 ROOT=Path(__file__).resolve().parents[1]
 os.chdir(ROOT)
-ORDER=['WATER','EARTH','WIND','FIRE','ICE','LIGHTNING','POISON','LIGHT','SHADOW','BLOOD','SPACE','TIME','MAGMA','ASTRAL','PSYCHIC']
+ORDER=['WATER','EARTH','WIND','FIRE','ICE','LIGHTNING','POISON','LIGHT','SHADOW','BLOOD','SPACE','TIME','MAGMA','ASTRAL','NATURE']
 REPORT=Path('audio/reports');REPORT.mkdir(parents=True,exist_ok=True)
 def db(x):return float(20*np.log10(max(1e-12,float(x))))
 def read_wav(path):

@@ -73,7 +73,7 @@ def main():
                     page.screenshot(path=str(out / (skill['id'].lower() + '.png')))
                 ev('__magicAudio.stop()')
                 assert audio()['activeVoices'] == 0
-            results['checks']['all23SevenCues'] = True
+            results['checks']['all21SevenCues'] = True
             # A continuously playing charging loop supplies actual PCM, not just marker assertions.
             ev('__magicAudio.select(3)'); ev('__magicAudio.ready()'); ev('__magicQA.charging()')
             page.wait_for_timeout(350)

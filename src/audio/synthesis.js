@@ -32,7 +32,7 @@ export function materialTexture(cue,rate,variant=0,grains=32){
  granular(x,rate,rng,Math.max(8,grains),base,['bubble','slime','viscous','lava'].includes(p.material)?'bubble':isBell?'modal':'noise');
  let phase=0;
  for(let i=0;i<n;i++){
-  const t=i/rate,lfo=.6+.4*Math.sin(TAU*(.37+variant*.03)*t),fm=Math.sin(TAU*base*t+3*Math.sin(TAU*(p.material==='mind'?6.5:2.7)*t));phase+=base/rate;
+  const t=i/rate,lfo=.6+.4*Math.sin(TAU*(.37+variant*.03)*t),fm=Math.sin(TAU*base*t+3*Math.sin(TAU*2.7*t));phase+=base/rate;
   switch(p.material){
    case 'bubble': x[i]=x[i]*.7+.18*Math.sin(TAU*base*(t+t*t*.6))*Math.exp(-t*3)+tone[i]*.1;break;
    case 'stone':x[i]=brown[i]*1.5+tone[i]*.6+x[i]*.35;break;
@@ -44,12 +44,12 @@ export function materialTexture(cue,rate,variant=0,grains=32){
    case 'lava':x[i]=brown[i]*1.7+.15*fm+tone[i]*.15;break;
    case 'void':x[i]=fm*.35+brown[i]*.8+.15*Math.sin(TAU*base*1.067*t);break;
    case 'warp':x[i]=fm*.35+.25*Math.sin(TAU*base*1.07*t+2*Math.sin(t*7))+brown[i]*.4;break;
-   case 'mind':x[i]=fm*.3+.3*Math.sin(TAU*base*1.031*t)+x[i]*.12;break;
+   case 'wood':x[i]=brown[i]*.65+tone[i]*Math.exp(-((t*6)%1)*8)*.4+x[i]*.22*(.5+.5*Math.sin(TAU*17*t))+.12*Math.sin(TAU*base*(t+t*t*.018));break;
    default:x[i]=tone[i]*.75+x[i]*(p.material==='crystal'?.17:.025);
   }
  }
  x=biquad(x,rate,isBell?'highpass':'lowpass',isBell?120:p.cutoff);
- if(['warp','mind','stars'].includes(p.material))x=modulation(x,rate,'chorus',.22,.45);
+ if(['warp','stars'].includes(p.material))x=modulation(x,rate,'chorus',.22,.45);
  return x;
 }
 export function renderCue(cue,{rate=24000,variant=0,reduced=false,grains=32,correctionDb=0,drive=1}={}) {

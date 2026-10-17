@@ -1,88 +1,48 @@
-# Xem code, ảnh và video Magic-Game
+# Chạy và xem bản cập nhật Thảo
 
-## Mới nhất — tiếp nối 17/10/2026
+- [Draft PR #1 và từng file code](https://github.com/dinhquanhao/Magic-Game/pull/1/files).
+- [Báo cáo và tiến độ Thảo](../THAO_PROGRESS.md).
+- [Ảnh bốn giai đoạn và kết quả kiểm thử](evidence/thao/index.html). GitHub không chạy HTML; tải source/ZIP rồi mở file này để xem báo cáo.
+- [ZIP game/source — Arcane-VFX-Studio-Thao-Update.zip](releases/Arcane-VFX-Studio-Thao-Update.zip). Trên GitHub chọn **Download raw file**. Xem THAO_PROGRESS để biết trạng thái đóng gói và kiểm thử; liên kết này chỉ được bàn giao sau khi ZIP thật đã được tạo.
 
-- [Báo cáo mã và kiểm thử mới](DEVELOPMENT-RESUMED-2026-10-17.md).
-- [Video production mới — MP4](evidence/resumed-production/preview.mp4) · [WebM](evidence/resumed-production/preview.webm) · [console/kết quả](evidence/resumed-production/results.json). Video không có audio track.
-- [Tải ZIP so sánh 23 impact](evidence/contrast-review.zip): chọn Download raw file, giải nén, mở contrast/index.html để chọn skill/kéo thanh trước–sau. [Số đo JSON](evidence/contrast/comparison.json).
-- [Audio Lab mới](evidence/audio-v3/audio-lab.png) · [bản thu browser ngắn](evidence/audio-v3/browser-audio.webm) · [bằng chứng và ngoại lệ fixture](evidence/audio-v3/summary.json).
-- Các tài liệu/asset mới đã lưu cùng nhánh PR. Không gọi video/screenshot là Live Preview; remote tương tác vẫn chưa được xác nhận. Server dev kiểm thử cục bộ dùng npm run dev:test, Audio Lab ?audiolab=1.
+## Trên Windows
 
-| Thủy trước | Thủy sau |
-|---|---|
-| ![Thủy trước sửa](evidence/contrast/before/WATER-01-impact.png) | ![Thủy sau sửa](evidence/contrast/after/WATER-01-impact.png) |
+Cài Node.js LTS, tải ZIP, **giải nén toàn bộ**, mở thư mục rồi nhấp `START.bat`. Launcher dùng npm.cmd, ASCII/CRLF. Không mở index.html trực tiếp hoặc chạy START.bat bên trong trình xem ZIP.
 
+Có thể dùng terminal trong thư mục game:
 
-## Code đã lưu
+```bat
+npm.cmd ci
+npm.cmd run dev
+```
 
-- [Draft PR #1](https://github.com/dinhquanhao/Magic-Game/pull/1)
-- [Từng file thay đổi — Files changed](https://github.com/dinhquanhao/Magic-Game/pull/1/files); dùng bộ lọc `src/` để tập trung vào game, `tests/` để xem kiểm thử.
-- [Lộ trình](../ROADMAP.md), [tiến độ](../PROGRESS.md), [báo cáo kỹ thuật](DEVELOPMENT-2026-10-17.md).
+Mở địa chỉ Vite in trên terminal. Để thử bản build:
 
-Nhánh `codex/magic-game-stability-vfx-20261017` chứa các checkpoint của phiên này. `main` không được merge hoặc bật auto-merge.
+```bat
+npm.cmd run build
+npm.cmd run preview -- --host 127.0.0.1 --port 4173
+```
 
-## Ảnh và video có thể truy cập
+## Thử trực tiếp qua web
 
-- [Tải video MP4](evidence/observation/preview.mp4) · [WebM gốc](evidence/observation/preview.webm)
-- [Tải gói quan sát ZIP](evidence/observation.zip): giải nén rồi mở `observation/index.html` để xem video, ảnh và JSON cùng nhau. Nếu xem file trên GitHub, chọn **Raw / Download raw file** để tải.
-- [Kết quả quan sát và console](evidence/observation/results.json): production bundle, 15 hệ, chọn/thi triển Thủy và Bóng Tối, Play Mode, mana và pause đạt; không lỗi console trong lượt ghi này.
-- [Ảnh trước khi sửa mã trong phiên](evidence/before-session.png) · [ảnh sau — startup](evidence/observation/startup.png) · [ảnh sau — Play Mode](evidence/observation/play-mode.png).
+[Branch Preview do Vercel bot đăng](https://magic-game-preview-git-codex-magic-gam-593430-quuanghh2007-5227.vercel.app) có thể tự cập nhật theo nhánh PR qua Git integration sẵn có. Nếu Vercel yêu cầu đăng nhập, dùng tài khoản được cấp quyền dự án.
 
-Ảnh trước và sau được ghi tại các thời điểm mô phỏng khác nhau, không phải cặp so sánh chất lượng hình ảnh được chuẩn hóa. Video ghi thao tác UI và một phần timeline Thủy/Bóng Tối; không phải video hoàn chỉnh cả 23 tuyệt kỹ. Browser dùng SwiftShader, không dùng video để tuyên bố FPS trên GPU người chơi.
+**Chưa xác nhận Live Preview tương tác từ môi trường kiểm thử này.** Lượt kiểm tra trước bị ERR_TUNNEL_CONNECTION_FAILED do hostname ngoài allowlist, connector trả403. Bằng chứng Playwright mới được chạy qua localhost, không tự chứng minh deployment từ xa hoạt động. Không tạo deployment công khai, đổi protection hoặc dùng dịch vụ trả phí.
 
-![Game sau nâng cấp](evidence/observation/startup.png)
+Nếu giao diện Codex có **Ports / Preview**, có thể chuyển tiếp cổng của server đang chạy; công cụ phiên này chưa xác minh được một URL chia sẻ. `127.0.0.1` của cloud không phải địa chỉ mở từ máy Windows của bạn.
 
-![Thi triển Thủy trong bản production](evidence/observation/water.png)
-
-## Trạng thái Live Preview
-
-**Chưa có Live Preview tương tác được xác nhận cho người dùng trong phiên này.** Máy chủ đã khởi động trong môi trường cloud và Playwright đã truy cập được qua localhost. Công cụ hiện có không xuất URL chuyển tiếp cổng có thể chia sẻ; `127.0.0.1` trong log là địa chỉ bên trong môi trường, không phải link web để mở trực tiếp từ máy của bạn.
-
-Nếu giao diện Codex của bạn có bảng **Ports / Preview**, có thể chuyển tiếp cổng `4173` của máy chủ preview đang chạy. Khả năng chuyển tiếp và URL đó chưa được xác minh từ công cụ của phiên này, nên không ghi là đã hoạt động.
-
-Để tương tác trên máy của bạn sau khi checkout nhánh PR:
+## Tái chạy kiểm thử
 
 ```sh
 npm ci
-npm run build
-npm run preview -- --host 127.0.0.1 --port 4173
-```
-
-Mở `http://127.0.0.1:4173` trên chính máy đã chạy các lệnh đó. Đây là cách chạy cục bộ, không triển khai web.
-
-## Tự ghi artifacts cho mỗi nhóm thay đổi
-
-Lệnh quan sát đã được xác minh trong môi trường Linux của phiên này; trên Windows có thể chạy trong WSL. Cần Python, thư viện trong `tests/requirements.txt` và Chromium. Runtime hiện tại đã có Chromium/ffmpeg. Máy khác có thể cài browser bằng `python -m playwright install chromium`; có thể chọn executable qua `PLAYWRIGHT_CHROMIUM_EXECUTABLE`.
-
-```sh
-python -m pip install -r tests/requirements.txt
-npm run observe -- --label before-feature
-# Chỉnh sửa nhóm thay đổi, chạy unit/regression phù hợp.
 npm test
-npm run observe -- --label after-feature
+npm run build
+python -m pip install -r tests/requirements.txt
+npm run dev:test -- --port 5183
+# Terminal khác:
+python tests/thao_browser.py --url http://127.0.0.1:5183/ --quality Low --stress --integration --output work/thao-local
 ```
 
-`npm run observe` tự build, mở Vite preview trên cổng 4180, mở Chromium, thao tác UI thật, chụp ảnh, ghi WebM và lưu console/result. Khi kết thúc, nó đóng browser và nhóm tiến trình server do nó tạo. Nếu cổng bị chiếm, nó báo lỗi thay vì dừng server khác. Lưu từng lượt ở `test-results/observations/<label>-<commit>-<UTC timestamp>/`; không ghi đè lượt cũ.
+Đổi `--quality` thành Medium/High/Ultra để kiểm tra từng preset. Browser test dùng Chromium và SwiftShader; số đo không phải FPS GPU của máy người chơi. Hook kiểm thử chỉ được chèn qua route Playwright, không phát hành trong game.
 
-Tệp `results.json` ghi commit, trạng thái working tree, lỗi và tên video. Nếu encoder không có, báo rõ trong kết quả; không giả lập rằng đã có video. Gói artifacts chọn lọc được đưa vào `docs/evidence/`, cập nhật PROGRESS và push lên cùng nhánh PR sau mỗi nhóm. `test-results/` giữ bản ghi gốc cục bộ, không commit cache/browser.
-
-## Phương án preview web riêng đã chuẩn bị
-
-Đã có [`vercel.json`](../vercel.json) cho Vite (`npm ci`, `npm run build`, thư mục `dist`) và `.vercelignore` loại cache/artifacts khỏi deployment.
-
-Vòng mới đã tìm được dự án Vercel `magic-game-preview` và status Vercel thành công trên GitHub cho checkpoint trước. Connector đọc project/deployment với scope team hiện trả **403**; chưa có CLI Vercel đã xác thực. Không tạo deployment trực tiếp, đổi audience/quyền hoặc gọi dịch vụ trả phí. Git push nhánh PR vẫn được thực hiện theo yêu cầu; Git integration hiện có có thể tự cập nhật Preview. Chỉ ghi là đã kiểm thử web khi có kết quả browser của đúng bản build.
-
-[URL Preview do Vercel bot đăng trên PR](https://magic-game-preview-git-codex-magic-gam-593430-quuanghh2007-5227.vercel.app) là branch alias, có thể đổi theo commit. Chromium trong cloud bị `ERR_TUNNEL_CONNECTION_FAILED` khi mở URL này; hostname không nằm trong allowlist mạng. Connector cũng trả 403. Người dùng có thể thử mở URL bằng tài khoản Vercel của mình, nhưng chưa có kiểm thử game từ xa đạt trong phiên. Xem trạng thái đúng commit sau push ở PROGRESS.md; branch alias không tự chứng minh mã audio mới đã được deploy.
-
-
-## Vòng audio và assets
-
-- [Báo cáo, 12 ý tưởng được xếp hạng và giới hạn](ROUND-AUDIO-2026-10-17.md).
-- [Bản nghe tham chiếu 15 hệ, 75 giây](evidence/audio/fifteen-elements.mp3) · [mốc từng hệ](evidence/audio/chapters.json).
-- [Âm thanh thu thực từ WebAudio Chromium](evidence/audio/browser-audio.mp3) · [Opus/WebM gốc](evidence/audio/browser-audio.webm). Bản tham chiếu dùng gain riêng cho nghe thử; bản browser chứa master/spatial gain của game.
-- [Video production MP4](evidence/audio/production-video.mp4) · [WebM](evidence/audio/production-video.webm). Video Playwright không có audio track; nghe audio bằng các file riêng bên trên, không coi chúng là video đã mux đồng bộ.
-- [Gói audio/ảnh/video/báo cáo offline ZIP](evidence/audio-round.zip): tải, giải nén, mở `audio/index.html`. Trên GitHub dùng **Download raw file** để tải MP3/MP4/ZIP.
-- [Matrix audio 23 skill](evidence/audio/matrix.json) · [Lifecycle/context recovery](evidence/audio/lifecycle.json) · [UI production cuối](evidence/audio/production-final.json).
-- Ghi lại bằng `npm run observe -- --audio --label after-audio`. Để có tín hiệu PCM tự động kiểm chứng và bản ghi browser: `python tests/playwright_audio.py --url <URL-dev>`. Production không chứa globals kiểm thử.
-
-![Audio UI và icons](evidence/audio/audio-controls.png)
+Bằng chứng lịch sử của các hệ còn lại: [so sánh trước/sau bloom](evidence/contrast/index.html), [báo cáo tiếp nối](DEVELOPMENT-RESUMED-2026-10-17.md). Không đổi nhãn ảnh/số đo lịch sử thành kết quả Thảo. Các ZIP/audio tổng hợp có chứa hệ đã gỡ đã được bỏ theo yêu cầu mới; bản cũ còn trong lịch sử Git.

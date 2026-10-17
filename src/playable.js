@@ -122,7 +122,8 @@ export function createPlayableSystems(scene, canvas) {
         else if (elementGesture === 1 || elementGesture === 5 || elementGesture === 9 || elementGesture === 13) { y += Math.sin(a * 1.35) * .34; x *= .76; z *= .76; }
         else if (elementGesture === 2 || elementGesture === 7) { x = Math.cos(seed) * r; z = Math.sin(seed) * r; y = 1.3 + (i % 4) * .24 + Math.sin(motion.time * 9 + i) * .08; }
         else if (elementGesture === 3 || elementGesture === 6 || elementGesture === 10) { r *= .65 + .3 * Math.sin(motion.time * 3 + i * .4); x = Math.cos(a * (elementGesture === 6 ? 3 : 1)) * r; z = Math.sin(a * 1.4) * r; }
-        else if (elementGesture === 4 || elementGesture === 11 || elementGesture === 14) { y = 2.35 + Math.sin(a) * .35; x = Math.cos(a) * r * .85; z = Math.sin(a * 1.2) * r * .5; }
+        else if (elementGesture === 4 || elementGesture === 11) { y = 2.35 + Math.sin(a) * .35; x = Math.cos(a) * r * .85; z = Math.sin(a * 1.2) * r * .5; }
+        else if(elementGesture===14){y=1.15+u*1.6+Math.sin(a)*.12;x=Math.cos(a)*r*(.4+u);z=Math.sin(a)*r*(.4+u);}
         const tx = .62, ty = 2.48, tz = -.08, pull = converge * (.35 + .65 * ((i * 7 % castParticleCount) / castParticleCount));
         positions[i * 3] = x * (1 - pull) + tx * pull; positions[i * 3 + 1] = y * (1 - pull) + ty * pull; positions[i * 3 + 2] = z * (1 - pull) + tz * pull;
       }
@@ -167,10 +168,11 @@ export function createPlayableSystems(scene, canvas) {
     for (const d of dummies) {
       const factor = timeDomain ? timeDomain.timeFactorAt(d.group.position) : 1;
       const localDt = Math.min(realDt * factor, timeDomain?.catchUpMaxStep ?? .05);
+      d.natureBind=Math.max(0,(d.natureBind||0)-localDt);
       d.motionTime += localDt;
       d.hit = Math.max(0, d.hit - localDt);
       d.goal.copy(d.base).add(d.impulse);
-      d.group.position.lerp(d.goal, 1 - Math.exp(-localDt * 2.8));
+      d.group.position.lerp(d.goal, 1 - Math.exp(-localDt * (d.natureBind>0?.55:2.8)));
       d.impulse.multiplyScalar(Math.exp(-localDt * 2));
       d.group.rotation.z = Math.sin(d.motionTime * 14 + d.base.x) * d.hit * .12;
       d.hitMaterial.color.setHex(d.elementColor); d.hitMaterial.emissive.setHex(d.elementColor);
@@ -191,10 +193,15 @@ export function createPlayableSystems(scene, canvas) {
     const origin = new THREE.Vector3(); originAnchor.getWorldPosition(origin);
     const casterPosition = mage.position.clone(), casterForward = motion.aim ? new THREE.Vector3(Math.sin(motion.yaw), 0, -Math.cos(motion.yaw)) : motion.lastForward.clone();
     const archetype = ({ skyfall: 'Thiên giáng', colossal: 'Khổng lồ', barrage: 'Mưa đòn', vortex: 'Xoáy hội tụ', tornado: 'Siêu lốc', spatial: 'Không gian', timeDomain: 'Lĩnh vực thời gian', iceDomain: 'Lĩnh vực băng giá', bloodChainNet: 'Lồng xích huyết', elemental: 'Lĩnh vực nguyên tố' })[skill.archetype] || 'Lĩnh vực nguyên tố';
-    const selfCentered = ['astralMindDominion'].includes(skill.shape);
-    const aoeCenter = selfCentered ? casterPosition.clone() : aimTarget.clone(); aoeCenter.y = 0;
+    const aoeCenter = aimTarget.clone(); aoeCenter.y = 0;
     return { origin, casterPosition, casterForward, target: aimTarget.clone(), targetNormal: new THREE.Vector3(0, 1, 0), aoeCenter, aoeScale: 1, lockedTarget: motion.locked?.group || null, quality, mode, archetype, maxRange: Math.max(18, skill.spread * 1.75) };
   }
+  function applyNatureHit(index, kind, color) {
+    const d=dummies[index];if(!d)return;d.hit=.8;d.elementColor=color;
+    d.hitMaterial.color.setHex(color);d.hitMaterial.emissive.setHex(color);d.bodyMesh.material=d.hitMaterial;
+    if(kind==='root')d.natureBind=1.7;else{d.impulse.x+=Math.sin(index*2.4)*.12;d.impulse.z+=Math.cos(index*2.4)*.12;}
+  }
+  function clearNatureEffects(){for(const d of dummies){d.natureBind=0;d.impulse.set(0,0,0);d.hit=0;d.group.position.copy(d.base);d.goal.copy(d.base);d.group.rotation.z=0;d.bodyMesh.material=dummyMat;}}
   function applyImpact(center, radius, hex, visualOnly = false) {
     if (visualOnly) return 0;
     let count = 0;
@@ -218,10 +225,10 @@ export function createPlayableSystems(scene, canvas) {
     }
     return affected;
   }
-  function reset() { pressed.clear(); rightHeld = false; motion.position.set(0, 0, 12); motion.velocity.set(0, 0, 0); motion.yaw = 0; motion.pitch = .2; motion.distance = 8.6; motion.arenaRadius = 58; motion.grounded = true; motion.locked = null; motion.dash = 0; motion.recovery = 0; motion.lastPhase = 'idle'; motion.lastForward.set(0, 0, -1); for (const d of dummies) { d.group.position.copy(d.base); d.impulse.set(0, 0, 0); d.hit = 0; d.motionTime = 0; d.echo.visible = false; d.bodyMesh.material = dummyMat; } }
+  function reset() { pressed.clear(); rightHeld = false; motion.position.set(0, 0, 12); motion.velocity.set(0, 0, 0); motion.yaw = 0; motion.pitch = .2; motion.distance = 8.6; motion.arenaRadius = 58; motion.grounded = true; motion.locked = null; motion.dash = 0; motion.recovery = 0; motion.lastPhase = 'idle'; motion.lastForward.set(0, 0, -1); for (const d of dummies) { d.group.position.copy(d.base); d.impulse.set(0, 0, 0); d.hit = 0; d.natureBind=0; d.motionTime = 0; d.echo.visible = false; d.bodyMesh.material = dummyMat; } }
   const systems = {
     mage, dummies, motion, aimTarget, get rangeExceeded() { return rangeExceeded; }, get locked() { return motion.locked; }, get aim() { return motion.aim; }, get distance() { return motion.distance; }, get colliders() { return colliders; },
-    update, castContext, applyImpact, pullTargets, reset,
+    update, castContext, applyImpact, applyNatureHit, clearNatureEffects, pullTargets, reset,
     toggleLock() { if (motion.locked) { motion.locked = null; return null; } const choices = dummies.map(d => ({ d, dist: d.group.position.distanceTo(mage.position) })).filter(x => x.dist < 70).sort((a, b) => a.dist - b.dist); motion.locked = choices[0]?.d || null; return motion.locked; },
     setAim(v) { rightHeld = v; },
     replaceModel(object3D, rig = {}) { modelRoot.clear(); modelRoot.add(object3D); object3D.position.y = object3D.position.y || 0; if (Array.isArray(rig.arms)) { arms.length = 0; arms.push(...rig.arms); } if (Array.isArray(rig.legs)) { legs.length = 0; legs.push(...rig.legs); } if (Array.isArray(rig.cape)) { cape.length = 0; cape.push(...rig.cape); } const anchor = rig.staffAnchor || object3D.getObjectByName?.('StaffCrystal'); if (anchor) { originAnchor = anchor; if (anchor.material?.color) crystal = anchor; } return mage; },

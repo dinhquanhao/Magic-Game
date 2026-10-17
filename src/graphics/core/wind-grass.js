@@ -69,8 +69,9 @@ diffuseColor.rgb *= 0.72 + 0.28 * uArcGrassAlpha;`);
     mesh.visible = initialized && grassAlpha.value > 0.018;
     grassTime.value = Number.isFinite(time) ? time : 0; return grassAlpha.value;
   }
+  function reset() { grassAlpha.value = 0; grassTime.value = 0; lastSimulationTime = null; mesh.visible = false; }
   function setQuality(nextQuality) { quality = COUNTS[nextQuality] ? nextQuality : 'High'; mesh.count = COUNTS[quality]; return getStatus(); }
   function getStatus() { return { quality, bladeInstances: mesh.count, windAlpha: grassAlpha.value, initialized }; }
   function dispose() { if (initialized) scene.remove(mesh); initialized = false; mesh.visible = false; bladeGeometry.dispose(); material.dispose(); grassAlpha.value = 0; }
-  return { init, update, setQuality, getStatus, dispose, mesh, material };
+  return { init, update, reset, setQuality, getStatus, dispose, mesh, material };
 }

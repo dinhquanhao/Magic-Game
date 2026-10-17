@@ -12,6 +12,6 @@ for(const s of scores){
  for(const idea of s.ideas)text+=`- ${idea.implemented?'Đã triển khai':'Không dùng'}: ${idea.idea}. ${idea.method||idea.reason}\n`;
  text+=`\nClock: ${JSON.stringify(s.timeControls)}. Các điểm này chỉ điều khiển reference mix/audio; không sửa cinematic trong game.\n`;
 }
-text+='\n## Phép đo và ngoại lệ\n\n224/225 logical cue đạt các ngưỡng đã khai báo. lightning/impact giữ FAIL sau đúng5 vòng: RMS-22.12dBFS so với -19±2.8; TP4×-.62dBTP ở cue riêng. Không nới ngưỡng để che lỗi. Tham chiếu master23skill có peak dưới-1dBTP, tương phản finale và vacuum đạt; không thay thế browser timing hoặc đánh giá tai. Lịch sử số đo JSON giữ mọi tham số/thay đổi. Các biến thể bổ sung runtime Ultra5/6 được tạo bằng cùng công thức nhưng không ghi là đã có WAV/được đo riêng nếu chưa chạy matrix tương ứng.\n';
+text+='\n## Phép đo và ngoại lệ\n\n224/225 logical cue đạt các ngưỡng đã khai báo. lightning/impact giữ FAIL sau đúng5 vòng: RMS-22.12dBFS so với -19±2.8; TP4×-.62dBTP ở cue riêng. Không nới ngưỡng để che lỗi. Tham chiếu master hiện tại21skill có peak dưới-1dBTP, tương phản finale và vacuum đạt; không thay thế browser timing hoặc đánh giá tai. Lịch sử số đo JSON giữ mọi tham số/thay đổi. Các biến thể bổ sung runtime Ultra5/6 được tạo bằng cùng công thức nhưng không ghi là đã có WAV/được đo riêng nếu chưa chạy matrix tương ứng.\n';
 fs.writeFileSync('AUDIO_DESIGN.md',text);
 console.log('Detailed cue sheets written for',scores.length,'skills');

@@ -38,7 +38,7 @@ So sánh seed/camera/preset/mốc impact cố định, chỉ pixel canvas, khôn
 
 Ở Thủy, chỉ số vùng luminance ≥0.95 giảm từ khoảng 29.1% xuống 0%, giúp nhìn lại thân cá voi, vương miện nước và mặt triều. Lôi vẫn có vùng flash rộng ở mốc này; đã hết 3 vòng sửa nhóm bloom, lưu phần còn lại cho nhóm đánh giá flash/aftermath riêng. Không thay toàn bộ 15 kỹ năng bằng hiệu ứng chung.
 
-Tải evidence/contrast-review.zip, giải nén, mở contrast/index.html để chọn kỹ năng và kéo thanh trước/sau. Ảnh được lưu; không phải Live Preview. Video production không có audio track; bản thu browser ngắn của Lab nằm riêng tại evidence/audio-v3/browser-audio.webm.
+Mở [so sánh lịch sử của20skill còn lại](evidence/contrast/index.html). ZIP hỗn hợp cũ đã gỡ theo yêu cầu thay hệ cuối. Ảnh được lưu; không phải Live Preview. Video production không có audio track; bản thu browser ngắn của Lab nằm riêng tại evidence/audio-v3/browser-audio.webm.
 
 ## Chạy lại trên máy phát triển
 

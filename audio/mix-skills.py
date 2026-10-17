@@ -1,4 +1,4 @@
-import json,math,subprocess,wave,os
+import json,math,subprocess,wave,os,argparse
 from pathlib import Path
 os.environ.setdefault('MPLCONFIGDIR',str(Path('work/matplotlib').resolve()))
 import numpy as np
@@ -17,8 +17,11 @@ def get(element,role,variant=0):
  p=Path(f'audio/rendered/{element.lower()}/{role}-{variant}.wav')
  if not p.exists():p=p.with_name(f'{role}-0.wav')
  return read_wav(p)[1]
-allresults=[]
+parser=argparse.ArgumentParser();parser.add_argument('--skill');args=parser.parse_args()
+allresults=json.loads(Path('audio/reports/skill-mixes.json').read_text()) if args.skill else []
+if args.skill:allresults=[s for s in allresults if s['id']!=args.skill]
 for index,score in enumerate(scores):
+ if args.skill and score['id']!=args.skill:continue
  skill=audit['skills'][index];charge=4.5*skill['pace'];start=charge+score['channelDuration'];duration=start+score['end'];n=round(duration*RATE);stems={k:np.zeros(n) for k in ['sfx','impact','ambience','magic','drone','ui']};wet=np.zeros(n)
  def add(role,at,gain=1,pitch=1,variant=0,loopto=None):
   cue=roles[f'{score["element"].lower()}/{role}'];x=get(score['element'],role,variant)

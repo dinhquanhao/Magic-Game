@@ -4053,32 +4053,32 @@
     ]
   },
   {
-    "id": "PSYCHIC-01",
-    "name": "Tâm Thức Băng Diệt",
-    "element": "PSYCHIC",
+    "id": "NATURE-01",
+    "name": "Vạn Mộc Sinh Giới",
+    "element": "NATURE",
     "identity": {
-      "base": 217,
-      "material": "mind",
-      "noise": "pink",
+      "base": 146,
+      "material": "wood",
+      "noise": "brown",
       "modes": [
         1,
-        1.031,
-        1.27,
-        2.5
+        1.57,
+        2.83,
+        4.36
       ],
-      "cutoff": 4300,
-      "room": "cathedral",
-      "keywords": "giao thoa · vọng · nhịp · lăng kính",
-      "bass": 0.55
+      "cutoff": 3900,
+      "room": "arena",
+      "keywords": "gỗ · lá · hạt · sinh trưởng",
+      "bass": 0.75
     },
-    "chargePace": 0.94,
-    "channelDuration": 0.8244,
-    "impact": 2.16,
-    "end": 9.74,
-    "fadeAt": 6.540000000000002,
-    "hitstop": 0.125,
-    "preSlow": 0.38,
-    "shake": 0.48,
+    "chargePace": 1.06,
+    "channelDuration": 0.8555999999999999,
+    "impact": 7.2,
+    "end": 18,
+    "fadeAt": 14,
+    "hitstop": 0.045,
+    "preSlow": 0.22,
+    "shake": 0.42,
     "events": [
       {
         "key": "release",
@@ -4097,181 +4097,68 @@
         "source": "main.js animateRelease"
       },
       {
-        "key": "anticipation",
-        "role": "riser",
-        "at": 1.36,
+        "key": "growth-0",
+        "role": "material",
+        "at": 0.65,
         "variant": 2,
-        "gain": 1,
-        "priority": 85,
-        "source": "audio-only anticipation of existing impact; does not change VFX"
+        "gain": 0.45,
+        "source": "nature-growth birth waves"
       },
       {
-        "key": "finale",
-        "role": "impact",
-        "at": 2.16,
+        "key": "growth-1",
+        "role": "material",
+        "at": 1.9,
         "variant": 3,
-        "gain": 1,
-        "priority": 100,
-        "source": "cinematicPlans.impactAt / VFX hit-stop callback"
+        "gain": 0.5700000000000001,
+        "source": "nature-growth birth waves"
       },
       {
-        "key": "pressure-0",
-        "role": "shockwave",
-        "at": 2.16,
+        "key": "growth-2",
+        "role": "material",
+        "at": 2.9,
         "variant": 0,
-        "gain": 0.5,
-        "source": "main.js makeImpactSuite waves delay",
-        "region": true
+        "gain": 0.69,
+        "source": "nature-growth birth waves"
       },
       {
-        "key": "pressure-1",
-        "role": "shockwave",
-        "at": 2.35,
+        "key": "growth-3",
+        "role": "material",
+        "at": 3.8,
         "variant": 1,
-        "gain": 0.36,
-        "source": "main.js makeImpactSuite waves delay",
-        "region": true
+        "gain": 0.81,
+        "source": "nature-growth birth waves"
       },
       {
-        "key": "pressure-2",
-        "role": "shockwave",
-        "at": 2.54,
-        "variant": 2,
-        "gain": 0.2592,
-        "source": "main.js makeImpactSuite waves delay",
-        "region": true
-      },
-      {
-        "key": "decay",
-        "role": "aftermath",
-        "at": 2.6100000000000003,
-        "variant": 2,
-        "gain": 1,
-        "source": "audio tail follows existing aftermath; truncated by cleanup"
-      },
-      {
-        "key": "aftershock-0",
-        "role": "secondary",
-        "at": 2.7800000000000002,
-        "variant": 3,
-        "gain": 0.5,
-        "source": "existing module aftershock array",
-        "region": true
-      },
-      {
-        "key": "aftershock-1",
-        "role": "secondary",
-        "at": 3.1,
-        "variant": 0,
-        "gain": 0.275,
-        "source": "existing module aftershock array",
-        "region": true
-      },
-      {
-        "key": "aftershock-2",
-        "role": "secondary",
-        "at": 3.4200000000000004,
-        "variant": 1,
-        "gain": 0.15125000000000002,
-        "source": "existing module aftershock array",
-        "region": true
-      }
-    ],
-    "timeControls": [
-      {
-        "at": 1.7800000000000002,
-        "type": "pre",
-        "duration": 0.38,
-        "scale": 0.32999999999999996
-      },
-      {
-        "at": 2.16,
-        "type": "freeze",
-        "duration": 0.125,
-        "postScale": 0.54,
-        "postDuration": 0.86
-      }
-    ],
-    "ideas": [
-      {
-        "idea": "Rune cộng hưởng theo cấp của Tâm Thức Băng Diệt",
-        "implemented": true,
-        "method": "actual tower progress → tier note; seeded modal frequency"
-      },
-      {
-        "idea": "Đường chuyển động mindbreakerEye có cue riêng",
-        "implemented": true,
-        "method": "existing waves/beat/descent markers; gain/pitch/round robin"
-      },
-      {
-        "idea": "Trường âm PSYCHIC trải trên AOE",
-        "implemented": true,
-        "method": "regional clusters within actual AOE and stereo-linked dry/wet; mono-safe core"
-      },
-      {
-        "idea": "Đọc lại mọi va chạm GPU để phát từng hạt",
-        "implemented": false,
-        "reason": "No GPU collision event readback; would stall rendering and produce excessive voices. Cluster at known wave markers instead."
-      }
-    ]
-  },
-  {
-    "id": "PSYCHIC-02",
-    "name": "Vạn Niệm Thần Vực",
-    "element": "PSYCHIC",
-    "identity": {
-      "base": 217,
-      "material": "mind",
-      "noise": "pink",
-      "modes": [
-        1,
-        1.031,
-        1.27,
-        2.5
-      ],
-      "cutoff": 4300,
-      "room": "cathedral",
-      "keywords": "giao thoa · vọng · nhịp · lăng kính",
-      "bass": 0.55
-    },
-    "chargePace": 1.08,
-    "channelDuration": 0.8608,
-    "impact": 1.92,
-    "end": 9.88,
-    "fadeAt": 6.94,
-    "hitstop": 0.075,
-    "preSlow": 0.24,
-    "shake": 0.48,
-    "events": [
-      {
-        "key": "release",
-        "role": "casting",
-        "at": 0,
-        "variant": 0,
-        "gain": 1,
-        "source": "main.js channel→active"
-      },
-      {
-        "key": "formation-motion",
+        "key": "forest-strike-0",
         "role": "motion",
-        "at": 0.02,
-        "variant": 1,
-        "gain": 1,
-        "source": "main.js animateRelease"
+        "at": 5.6,
+        "variant": 2,
+        "gain": 0.5,
+        "region": true,
+        "source": "clustered root/branch/seed attack phase"
       },
       {
         "key": "anticipation",
         "role": "riser",
-        "at": 1.1199999999999999,
+        "at": 6.4,
         "variant": 2,
         "gain": 1,
         "priority": 85,
         "source": "audio-only anticipation of existing impact; does not change VFX"
       },
       {
+        "key": "forest-strike-1",
+        "role": "secondary",
+        "at": 6.47,
+        "variant": 3,
+        "gain": 0.5,
+        "region": true,
+        "source": "clustered root/branch/seed attack phase"
+      },
+      {
         "key": "finale",
         "role": "impact",
-        "at": 1.92,
+        "at": 7.2,
         "variant": 3,
         "gain": 1,
         "priority": 100,
@@ -4280,16 +4167,25 @@
       {
         "key": "pressure-0",
         "role": "shockwave",
-        "at": 1.92,
+        "at": 7.2,
         "variant": 0,
         "gain": 0.5,
         "source": "main.js makeImpactSuite waves delay",
         "region": true
       },
       {
+        "key": "forest-strike-2",
+        "role": "secondary",
+        "at": 7.34,
+        "variant": 0,
+        "gain": 0.5,
+        "region": true,
+        "source": "clustered root/branch/seed attack phase"
+      },
+      {
         "key": "pressure-1",
         "role": "shockwave",
-        "at": 2.11,
+        "at": 7.390000000000001,
         "variant": 1,
         "gain": 0.36,
         "source": "main.js makeImpactSuite waves delay",
@@ -4298,7 +4194,7 @@
       {
         "key": "pressure-2",
         "role": "shockwave",
-        "at": 2.3,
+        "at": 7.58,
         "variant": 2,
         "gain": 0.2592,
         "source": "main.js makeImpactSuite waves delay",
@@ -4307,7 +4203,7 @@
       {
         "key": "decay",
         "role": "aftermath",
-        "at": 2.37,
+        "at": 7.65,
         "variant": 2,
         "gain": 1,
         "source": "audio tail follows existing aftermath; truncated by cleanup"
@@ -4315,7 +4211,7 @@
       {
         "key": "aftershock-0",
         "role": "secondary",
-        "at": 2.54,
+        "at": 7.82,
         "variant": 3,
         "gain": 0.5,
         "source": "existing module aftershock array",
@@ -4324,213 +4220,95 @@
       {
         "key": "aftershock-1",
         "role": "secondary",
-        "at": 2.86,
+        "at": 8.14,
         "variant": 0,
         "gain": 0.275,
         "source": "existing module aftershock array",
         "region": true
       },
       {
-        "key": "aftershock-2",
-        "role": "secondary",
-        "at": 3.18,
-        "variant": 1,
-        "gain": 0.15125000000000002,
-        "source": "existing module aftershock array",
-        "region": true
-      }
-    ],
-    "timeControls": [
-      {
-        "at": 1.68,
-        "type": "pre",
-        "duration": 0.24,
-        "scale": 0.24
-      },
-      {
-        "at": 1.92,
-        "type": "freeze",
-        "duration": 0.075,
-        "postScale": 0.38,
-        "postDuration": 0.5
-      }
-    ],
-    "ideas": [
-      {
-        "idea": "Rune cộng hưởng theo cấp của Vạn Niệm Thần Vực",
-        "implemented": true,
-        "method": "actual tower progress → tier note; seeded modal frequency"
-      },
-      {
-        "idea": "Đường chuyển động astralMindDominion có cue riêng",
-        "implemented": true,
-        "method": "existing waves/beat/descent markers; gain/pitch/round robin"
-      },
-      {
-        "idea": "Trường âm PSYCHIC trải trên AOE",
-        "implemented": true,
-        "method": "regional clusters within actual AOE and stereo-linked dry/wet; mono-safe core"
-      },
-      {
-        "idea": "Đọc lại mọi va chạm GPU để phát từng hạt",
-        "implemented": false,
-        "reason": "No GPU collision event readback; would stall rendering and produce excessive voices. Cluster at known wave markers instead."
-      }
-    ]
-  },
-  {
-    "id": "PSYCHIC-03",
-    "name": "Thần Niệm Sáng Thế",
-    "element": "PSYCHIC",
-    "identity": {
-      "base": 217,
-      "material": "mind",
-      "noise": "pink",
-      "modes": [
-        1,
-        1.031,
-        1.27,
-        2.5
-      ],
-      "cutoff": 4300,
-      "room": "cathedral",
-      "keywords": "giao thoa · vọng · nhịp · lăng kính",
-      "bass": 0.55
-    },
-    "chargePace": 1.02,
-    "channelDuration": 0.8452,
-    "impact": 2.04,
-    "end": 9.82,
-    "fadeAt": 7.140000000000001,
-    "hitstop": 0.1,
-    "preSlow": 0.31,
-    "shake": 0.48,
-    "events": [
-      {
-        "key": "release",
-        "role": "casting",
-        "at": 0,
-        "variant": 0,
-        "gain": 1,
-        "source": "main.js channel→active"
-      },
-      {
-        "key": "formation-motion",
+        "key": "forest-strike-3",
         "role": "motion",
-        "at": 0.02,
+        "at": 8.209999999999999,
         "variant": 1,
-        "gain": 1,
-        "source": "main.js animateRelease"
-      },
-      {
-        "key": "anticipation",
-        "role": "riser",
-        "at": 1.24,
-        "variant": 2,
-        "gain": 1,
-        "priority": 85,
-        "source": "audio-only anticipation of existing impact; does not change VFX"
-      },
-      {
-        "key": "finale",
-        "role": "impact",
-        "at": 2.04,
-        "variant": 3,
-        "gain": 1,
-        "priority": 100,
-        "source": "cinematicPlans.impactAt / VFX hit-stop callback"
-      },
-      {
-        "key": "pressure-0",
-        "role": "shockwave",
-        "at": 2.04,
-        "variant": 0,
         "gain": 0.5,
-        "source": "main.js makeImpactSuite waves delay",
-        "region": true
-      },
-      {
-        "key": "pressure-1",
-        "role": "shockwave",
-        "at": 2.23,
-        "variant": 1,
-        "gain": 0.36,
-        "source": "main.js makeImpactSuite waves delay",
-        "region": true
-      },
-      {
-        "key": "pressure-2",
-        "role": "shockwave",
-        "at": 2.42,
-        "variant": 2,
-        "gain": 0.2592,
-        "source": "main.js makeImpactSuite waves delay",
-        "region": true
-      },
-      {
-        "key": "decay",
-        "role": "aftermath",
-        "at": 2.49,
-        "variant": 2,
-        "gain": 1,
-        "source": "audio tail follows existing aftermath; truncated by cleanup"
-      },
-      {
-        "key": "aftershock-0",
-        "role": "secondary",
-        "at": 2.66,
-        "variant": 3,
-        "gain": 0.5,
-        "source": "existing module aftershock array",
-        "region": true
-      },
-      {
-        "key": "aftershock-1",
-        "role": "secondary",
-        "at": 2.98,
-        "variant": 0,
-        "gain": 0.275,
-        "source": "existing module aftershock array",
-        "region": true
+        "region": true,
+        "source": "clustered root/branch/seed attack phase"
       },
       {
         "key": "aftershock-2",
         "role": "secondary",
-        "at": 3.3000000000000003,
+        "at": 8.46,
         "variant": 1,
         "gain": 0.15125000000000002,
         "source": "existing module aftershock array",
         "region": true
+      },
+      {
+        "key": "forest-strike-4",
+        "role": "secondary",
+        "at": 9.08,
+        "variant": 2,
+        "gain": 0.5,
+        "region": true,
+        "source": "clustered root/branch/seed attack phase"
+      },
+      {
+        "key": "forest-strike-5",
+        "role": "secondary",
+        "at": 9.95,
+        "variant": 3,
+        "gain": 0.5,
+        "region": true,
+        "source": "clustered root/branch/seed attack phase"
+      },
+      {
+        "key": "forest-strike-6",
+        "role": "motion",
+        "at": 10.82,
+        "variant": 0,
+        "gain": 0.5,
+        "region": true,
+        "source": "clustered root/branch/seed attack phase"
+      },
+      {
+        "key": "forest-strike-7",
+        "role": "secondary",
+        "at": 11.69,
+        "variant": 1,
+        "gain": 0.5,
+        "region": true,
+        "source": "clustered root/branch/seed attack phase"
       }
     ],
     "timeControls": [
       {
-        "at": 1.73,
+        "at": 6.98,
         "type": "pre",
-        "duration": 0.31,
-        "scale": 0.285
+        "duration": 0.22,
+        "scale": 0.65
       },
       {
-        "at": 2.04,
+        "at": 7.2,
         "type": "freeze",
-        "duration": 0.1,
-        "postScale": 0.46,
-        "postDuration": 0.6799999999999999
+        "duration": 0.045,
+        "postScale": 0.75,
+        "postDuration": 0.22
       }
     ],
     "ideas": [
       {
-        "idea": "Rune cộng hưởng theo cấp của Thần Niệm Sáng Thế",
+        "idea": "Rune cộng hưởng theo cấp của Vạn Mộc Sinh Giới",
         "implemented": true,
         "method": "actual tower progress → tier note; seeded modal frequency"
       },
       {
-        "idea": "Đường chuyển động psychoGenesis có cue riêng",
+        "idea": "Đường chuyển động verdantGenesis có cue riêng",
         "implemented": true,
         "method": "existing waves/beat/descent markers; gain/pitch/round robin"
       },
       {
-        "idea": "Trường âm PSYCHIC trải trên AOE",
+        "idea": "Trường âm NATURE trải trên AOE",
         "implemented": true,
         "method": "regional clusters within actual AOE and stereo-linked dry/wet; mono-safe core"
       },

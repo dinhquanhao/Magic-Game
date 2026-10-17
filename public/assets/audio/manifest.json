@@ -970,71 +970,71 @@
         }
       }
     },
-    "PSYCHIC": {
-      "baseFrequency": 197,
-      "identity": "Beating tones and nervous modulation",
+    "NATURE": {
+      "baseFrequency": 146,
+      "identity": "Bark resonance, leaf rustle and growing seed pulses",
       "cues": {
         "precast": {
-          "url": "/assets/audio/spells/psychic/precast.wav",
+          "url": "/assets/audio/spells/nature/precast.wav",
           "duration": 0.32,
           "peak": 0.619995,
-          "rms": 0.198322,
+          "rms": 0.088044,
           "bytes": 15404,
-          "sha256": "23fef1772b6f99a947e05c682a98a9abd51641988605eb99323e4658fabf739f",
+          "sha256": "453827563ff431f636dbb57f6901919192bb04113b8934c2ba5afd967a102312",
           "loop": false
         },
         "charging": {
-          "url": "/assets/audio/spells/psychic/charging.wav",
+          "url": "/assets/audio/spells/nature/charging.wav",
           "duration": 1.0,
           "peak": 0.619995,
-          "rms": 0.281875,
+          "rms": 0.109662,
           "bytes": 48044,
-          "sha256": "b5ea6f441d785addf7d1c651f092b6aad2b8af5c480bc1e2fc869c783069f93d",
+          "sha256": "67539706ab95b35639b8efefebea46516261108b6f901baa982f1df8d4692da1",
           "loop": true
         },
         "casting": {
-          "url": "/assets/audio/spells/psychic/casting.wav",
+          "url": "/assets/audio/spells/nature/casting.wav",
           "duration": 0.42,
           "peak": 0.619995,
-          "rms": 0.201253,
+          "rms": 0.111802,
           "bytes": 20204,
-          "sha256": "a1e3e5015625cdea3bae14722739afb6da7173547d6ffc47a3934cae782dff23",
+          "sha256": "d4b075eb02b8e8604eabefe38508c4977a80a570cbdd58757c75e5661ca4e884",
           "loop": false
         },
         "traveling": {
-          "url": "/assets/audio/spells/psychic/traveling.wav",
+          "url": "/assets/audio/spells/nature/traveling.wav",
           "duration": 1.0,
           "peak": 0.619995,
-          "rms": 0.269021,
+          "rms": 0.138092,
           "bytes": 48044,
-          "sha256": "24e0b6f9d3aa6fd93a39b8739387d6a9b63e8ae029276417298c353cbbbf1101",
+          "sha256": "9f72d4387fed92298fc769387f9bb1c02f08ecdbe68e91bf3f707136f9cedffb",
           "loop": true
         },
         "impact": {
-          "url": "/assets/audio/spells/psychic/impact.wav",
+          "url": "/assets/audio/spells/nature/impact.wav",
           "duration": 1.4,
           "peak": 0.619995,
-          "rms": 0.096941,
+          "rms": 0.061319,
           "bytes": 67244,
-          "sha256": "3c9e08b5a848f1d3ab89422f6d6383f02335d726663799be14904ce1a31fe6db",
+          "sha256": "740929b86082aeccd0172b6687633f706b1155bbd2abaa7a6949c15bf46d2947",
           "loop": false
         },
         "shockwave": {
-          "url": "/assets/audio/spells/psychic/shockwave.wav",
+          "url": "/assets/audio/spells/nature/shockwave.wav",
           "duration": 1.1,
           "peak": 0.619995,
-          "rms": 0.085041,
+          "rms": 0.075928,
           "bytes": 52844,
-          "sha256": "1684dafa2bd504914ca2cdbd153cd811bb20b8e052ddac35ad18aba1ab135fd0",
+          "sha256": "a39351bfaa80b914e9ce0e7b4ee8b09b6608c55589060b7ec176f52dcf43ccc0",
           "loop": false
         },
         "aftermath": {
-          "url": "/assets/audio/spells/psychic/aftermath.wav",
+          "url": "/assets/audio/spells/nature/aftermath.wav",
           "duration": 1.8,
           "peak": 0.619995,
-          "rms": 0.177867,
+          "rms": 0.090247,
           "bytes": 86444,
-          "sha256": "7c619833ea90082a6ce9447d3eccf4514bad2be3574b622a83ede0499a3bb579",
+          "sha256": "164a53c3e32a2ad0dcfc8c47ed092bbacbce595774449a33cc4ef07aa6385e3e",
           "loop": false
         }
       }

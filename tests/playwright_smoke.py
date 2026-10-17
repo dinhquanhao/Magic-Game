@@ -102,7 +102,7 @@ def main():
             else:
                 page.wait_for_function('window.__magicQA')
                 skills=page.evaluate('__magicQA.skills')
-                assert len(skills)==23 and len(set(s['element'] for s in skills))==15
+                assert len(skills)==21 and len(set(s['element'] for s in skills))==15
                 def state(expression='__magicQA.snapshot()'):
                     value=page.evaluate(expression)
                     assert not value.get('failed'),value
@@ -161,7 +161,7 @@ def main():
                 page.locator('.graphics-options').evaluate('(e)=>e.open=true')
                 page.locator('#graphicsAdaptive').uncheck()
                 for skill in skills:
-                    # Include the nine formerly unfinished Magma/Astral/Psychic skills.
+                    # Include all procedural categories and the forest skill.
                     sample=state(f"__magicQA.sample({skill['index']},{skill['impact']})")
                     results.append({'skill':skill['id'],'quality':'High','sample':sample})
                     print(skill['id']+' High: passed',flush=True)

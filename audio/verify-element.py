@@ -5,7 +5,7 @@ from playwright.sync_api import sync_playwright
 import sys
 sys.path.insert(0,str(Path('tests').resolve()))
 from playwright_smoke import HOOK
-p=argparse.ArgumentParser();p.add_argument('--element',required=True);a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--element',required=True);p.add_argument('--url',default='http://127.0.0.1:5181/');a=p.parse_args()
 out=Path('audio/reports/runtime');out.mkdir(parents=True,exist_ok=True)
 errors=[];result={'element':a.element,'earVerified':False}
 with sync_playwright() as playwright:
@@ -15,7 +15,7 @@ with sync_playwright() as playwright:
   response=route.fetch();s=response.text().replace('requestAnimationFrame(animate);','').replace('select(0);animate();','select(0);');route.fulfill(response=response,body=s+'\n'+HOOK+'\nwindow.__sound=sound;')
  page.route('**/src/main.js*',intercept)
  try:
-  page.goto('http://127.0.0.1:5181/',wait_until='networkidle')
+  page.goto(a.url,wait_until='networkidle')
   audit=json.loads(Path('audio/source-audit.json').read_text());index=next(i for i,s in enumerate(audit['skills']) if s['id'].startswith(a.element+'-'));element=audit['skills'][index]['elementIndex']
   page.locator(f'[data-element="{element}"]').click();page.evaluate('__sound.ready()');page.evaluate('__magicQA.charging();__magicQA.tick()');page.wait_for_timeout(100)
   for role in ['material','impact']:

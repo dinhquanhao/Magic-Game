@@ -42,7 +42,7 @@ def main():
             ev('__magicQA.tick()');page.wait_for_function('__magicAudio.status().state==="running"')
             result['checks']['webglLossRestoreAudio']=True
             # Switching before decode finishes must not populate unbounded banks.
-            ev('[0,4,7,10,15,18,22,3].forEach(i=>__magicAudio.select(i))')
+            ev('[0,4,7,10,15,18,20,3].forEach(i=>__magicAudio.select(i))')
             ev('__magicAudio.ready()');ev('__magicQA.charging()')
             assert len(ev('__magicAudio.status().banks'))<=3
             result['checks']['rapidSelectionAbort']=True

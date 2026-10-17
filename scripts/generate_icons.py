@@ -16,7 +16,7 @@ SHAPES = {
     'TIME': '<path d="M7 3h18M7 29h18M9 3v5l14 16v5M23 3v5L9 24v5M12 24h8M12 8h8"/>',
     'BLOOD': '<path d="M16 3C13 10 8 14 8 20a8 8 0 0 0 16 0C24 14 19 10 16 3Z M3 11l4 4m18 0 4-4M2 22h3m22 0h3"/>',
     'ASTRAL': '<path d="m16 2 4 10 10 4-10 4-4 10-4-10-10-4 10-4ZM25 3v6m-3-3h6M5 25v5m-2-3h5"/>',
-    'PSYCHIC': '<path d="M2 16Q16 1 30 16 16 31 2 16Z"/><circle cx="16" cy="16" r="5"/><path d="M16 2v4m0 20v4"/>',
+    'NATURE': '<path d="M16 29V12M16 20C5 20 3 12 4 5c9 0 14 4 12 15ZM16 15C16 6 23 3 29 4c0 9-4 14-13 11Z"/><path d="m7 9 9 11m9-12-9 7M10 28l6-4 6 4"/>',
 }
 ROOT = Path(__file__).resolve().parents[1]
 out = ROOT / 'public/assets/ui/elements.svg'

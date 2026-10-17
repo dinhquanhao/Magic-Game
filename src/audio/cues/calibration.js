@@ -46,8 +46,5 @@ export const CUE_CALIBRATION={
   },
   "astral/impact": {
     "drive": 1.8
-  },
-  "psychic/impact": {
-    "drive": 1.8
   }
 };

@@ -393,27 +393,25 @@ Xây nền mixer, ceiling limiter có fallback, pool/quality/lifecycle và UI; k
 
 - Gate ASTRAL: build đạt; Chromium material/impact/stop qua mixer đạt; ảnh waveform/spectrogram và JSON lưu. Chưa kiểm chứng bằng tai. Chuyển sang hệ kế theo thứ tự.
 
-### PSYCHIC — render/đo cue
-
-- 15/15 logical cue đạt ngưỡng kỹ thuật, max 2 vòng; lịch sử trước/sau: audio/reports/cue-history.json. Chưa kiểm chứng bằng tai.
-- `psychic/precast`: PASS (vòng 1), RMS -25.00 dBFS, TP4× -15.91 dBTP; ngưỡng đạt.
-- `psychic/charging`: PASS (vòng 1), RMS -27.00 dBFS, TP4× -19.30 dBTP; ngưỡng đạt.
-- `psychic/casting`: PASS (vòng 1), RMS -22.15 dBFS, TP4× -6.21 dBTP; ngưỡng đạt.
-- `psychic/traveling`: PASS (vòng 1), RMS -26.00 dBFS, TP4× -18.18 dBTP; ngưỡng đạt.
-- `psychic/material`: PASS (vòng 1), RMS -24.00 dBFS, TP4× -12.18 dBTP; ngưỡng đạt.
-- `psychic/motion`: PASS (vòng 1), RMS -26.00 dBFS, TP4× -13.54 dBTP; ngưỡng đạt.
-- `psychic/environment`: PASS (vòng 1), RMS -31.00 dBFS, TP4× -23.07 dBTP; ngưỡng đạt.
-- `psychic/secondary`: PASS (vòng 1), RMS -27.06 dBFS, TP4× -11.58 dBTP; ngưỡng đạt.
-- `psychic/riser`: PASS (vòng 1), RMS -24.14 dBFS, TP4× -10.05 dBTP; ngưỡng đạt.
-- `psychic/impact`: PASS (vòng 2), RMS -20.42 dBFS, TP4× -1.89 dBTP; ngưỡng đạt.
-- `psychic/shockwave`: PASS (vòng 1), RMS -25.00 dBFS, TP4× -8.57 dBTP; ngưỡng đạt.
-- `psychic/aftermath`: PASS (vòng 1), RMS -30.00 dBFS, TP4× -14.07 dBTP; ngưỡng đạt.
-- `psychic/rune`: PASS (vòng 1), RMS -29.18 dBFS, TP4× -11.29 dBTP; ngưỡng đạt.
-- `psychic/ui`: PASS (vòng 1), RMS -34.56 dBFS, TP4× -21.16 dBTP; ngưỡng đạt.
-- `psychic/drone`: PASS (vòng 1), RMS -34.00 dBFS, TP4× -27.41 dBTP; ngưỡng đạt.
-
-- Gate PSYCHIC: build đạt; Chromium material/impact/stop qua mixer đạt; ảnh waveform/spectrogram và JSON lưu. Chưa kiểm chứng bằng tai. Chuyển sang hệ kế theo thứ tự.
-
 ## Tiếp nối sau dừng — hồi quy engine và Lab
 
 Xem PROGRESS mục Audio tiếp nối và docs/evidence/audio-v3. Đã sửa burst vượt budget Low (14→8 active), kiểm tra 23 finale/cleanup, pause/rate/mute/cache. Lab UI/A-B/WAV/ảnh/dừng đạt lượt riêng sau sửa fixture. Build và 6 nhóm unit đạt; 833 artifact mirror khớp hash. Không đổi lịch sử 225 cue; lightning/impact còn FAIL, mọi cue chưa kiểm chứng bằng tai.
+
+### NATURE — render/đo cue
+
+- 15/15 logical cue đạt ngưỡng kỹ thuật, max 2 vòng; lịch sử trước/sau: audio/reports/cue-history.json. Chưa kiểm chứng bằng tai.
+- `nature/precast`: PASS (vòng 1), RMS -25.04 dBFS, TP4× -12.25 dBTP; ngưỡng đạt.
+- `nature/charging`: PASS (vòng 1), RMS -27.00 dBFS, TP4× -15.67 dBTP; ngưỡng đạt.
+- `nature/casting`: PASS (vòng 1), RMS -22.05 dBFS, TP4× -2.50 dBTP; ngưỡng đạt.
+- `nature/traveling`: PASS (vòng 1), RMS -26.00 dBFS, TP4× -14.62 dBTP; ngưỡng đạt.
+- `nature/material`: PASS (vòng 1), RMS -24.00 dBFS, TP4× -6.91 dBTP; ngưỡng đạt.
+- `nature/motion`: PASS (vòng 1), RMS -26.00 dBFS, TP4× -6.80 dBTP; ngưỡng đạt.
+- `nature/environment`: PASS (vòng 1), RMS -31.00 dBFS, TP4× -19.12 dBTP; ngưỡng đạt.
+- `nature/secondary`: PASS (vòng 1), RMS -27.02 dBFS, TP4× -7.93 dBTP; ngưỡng đạt.
+- `nature/riser`: PASS (vòng 1), RMS -23.82 dBFS, TP4× -8.04 dBTP; ngưỡng đạt.
+- `nature/impact`: PASS (vòng 2), RMS -20.81 dBFS, TP4× -1.72 dBTP; ngưỡng đạt.
+- `nature/shockwave`: PASS (vòng 1), RMS -25.00 dBFS, TP4× -7.94 dBTP; ngưỡng đạt.
+- `nature/aftermath`: PASS (vòng 1), RMS -30.00 dBFS, TP4× -9.52 dBTP; ngưỡng đạt.
+- `nature/rune`: PASS (vòng 1), RMS -29.13 dBFS, TP4× -11.55 dBTP; ngưỡng đạt.
+- `nature/ui`: PASS (vòng 1), RMS -34.33 dBFS, TP4× -18.23 dBTP; ngưỡng đạt.
+- `nature/drone`: PASS (vòng 1), RMS -34.00 dBFS, TP4× -25.82 dBTP; ngưỡng đạt.

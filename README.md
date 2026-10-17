@@ -1,3 +1,29 @@
+# Bản cập nhật Thảo — Arcane VFX Studio
+
+Registry hiện tại: **15 hệ, 21 skill**. Hệ cuối có một skill mới **NATURE-01 — Vạn Mộc Sinh Giới / Verdant Genesis**; thay ba slot cũ bằng một slot thật. 20 skill còn lại giữ ID, tên, cấu hình và cinematic. START.bat vẫn dùng npm.cmd, ASCII/CRLF.
+
+- Cast: vòng mặt đất chia nhỏ, shader dây leo/lá/rune, sáng lan theo góc và phấn hoa.
+- Bùng phát: dây leo → bụi/gai → thân/cành/tán → cổ thụ; sáu hình thái procedural, phân nhánh và overshoot đàn hồi.
+- Tấn công: chọn dummy gần nhất mỗi 0,35 giây; rễ trói/làm chậm, gai dưới chân, cành quất và quả có trọng lực/drag. Hit-stop và shake dùng controller hiện có. Mốc cao trào ở 7,2 giây active.
+- Aftermath: ngừng ra đòn sau khoảng 13,3 giây; héo/co rút và lá rơi đến 18 giây. Hủy/kết thúc/reset dọn GPU, bind, màu nền, đèn và gió/cỏ.
+
+Cây/gai/quả/lá dùng InstancedMesh; pollen/đất/bào tử dùng Points với quỹ đạo GPU. Mỗi cast dùng geometry từ template CPU cache; không dựng geometry hoặc cập nhật matrix từng cây mỗi frame. Vỏ cây có grain/crack/moss/roughness và bump procedural; lá có gân/backlight; bóng tán/contact shadow, sap và tia nắng là xấp xỉ shader, không phải ray tracing/SSS vật lý.
+
+| Preset | Cây | Hạt | Lá rơi |
+|---|---:|---:|---:|
+| Low | 36 | 800 | 180 |
+| Medium | 60 | 1600 | 360 |
+| High | 96 | 3000 | 720 |
+| Ultra | 144 | 5000 | 1200 |
+
+Chỉnh trong `src/main.js`, đối tượng `natureSkill.nature`: `treeCounts` (số cây từng preset), `growthSpeed` (tốc độ mọc), `attackRange` (mét chọn mục tiêu). Chỉnh ngân sách hạt/lá trong `NATURE_BUDGETS` và các màu bark/leaf/petal/circle ở `src/nature-growth.js`; màu UI nằm ở element NATURE trong main.js. Seed hình học ở `src/nature-geometry.js` tạo sáu variant. Giữ thời lượng 18 giây đồng bộ với cinematic/Rune Tower khi chỉnh.
+
+Windows: giải nén toàn bộ ZIP, cài Node.js LTS rồi nhấp START.bat. Hoặc mở terminal trong thư mục đã giải nén và chạy `npm.cmd ci`, `npm.cmd run dev`. Không mở index.html trực tiếp. Xem [ảnh, kiểm thử và bản tải](docs/PREVIEW.md), [báo cáo Thảo](THAO_PROGRESS.md).
+
+Các phần dưới ghi lại nền tảng/các vòng phát triển trước; số đo lịch sử không phải bằng chứng mới cho Thảo. Lịch sử chỉ còn dữ liệu của các hệ được giữ lại, không đổi nhãn kết quả cũ thành kết quả mới.
+
+---
+
 # Xưởng Hiệu Ứng Ma Thuật — 15 hệ, 23 tuyệt kỹ
 
 ## Checkpoint phát triển 17/10/2026
@@ -44,7 +70,7 @@ npm.cmd run dev -- --host 127.0.0.1 --open
 | Thời Gian | Vĩnh Hằng Chung Khúc (TIME-01) — Lĩnh vực ngưng đọng thời gian |
 | Huyết | Vạn Huyết Thiên Thượng (BLOOD-01) — Lưới xích huyết siết vỡ qua năm đợt |
 | Tinh tú | Vạn Tinh Quy Nhất · Tinh Hà Tận Thế · Sáng Thế Tinh Vực |
-| Tinh thần | Tâm Thức Băng Diệt · Vạn Niệm Thần Vực · Thần Niệm Sáng Thế |
+| Thảo | Vạn Mộc Sinh Giới (NATURE-01) |
 
 ## Điều khiển
 
@@ -131,7 +157,7 @@ Các module tái sử dụng trong `src/main.js` gồm `FireShaderLibrary` (surf
 
 Mỗi tuyệt kỹ giữ nguyên hình thái và nhịp thi triển hiện có, đồng thời được phủ thêm hai lớp bề mặt shader 3D có nhiễu thủ tục, viền Fresnel, biến dạng và hoa văn chuyển động riêng theo nguyên tố. Các dải năng lượng xoắn có pha, hướng và nhịp khác nhau; lửa/nham có dòng cuộn, lôi có đường răng cưa, không gian có méo quỹ đạo, còn thời gian/tinh tú tạo các dải vòng và quỹ đạo. Ánh sáng điểm gắn với vụ va chạm cũng được mở rộng để tác động rõ hơn lên môi trường.
 
-Nham, Tinh Tú và Tinh Thần dùng cùng khung PBR nhưng có nhánh bề mặt riêng trong `src/graphics/core/element-materials.js`: Nham tạo lớp đá nguội với khe nóng chuyển động; Tinh Tú có sương tinh vân, điểm sao và Fresnel; Tinh Thần có dải sóng méo dạng và viền lăng kính. `uArcElementTime` và cường độ được cập nhật theo skill time; hình thái, thời lượng và quỹ đạo gốc không đổi. Các shader khác vẫn dùng module riêng theo hệ. Đây là vật liệu procedural, không phải mô phỏng đá nóng, hấp dẫn N-body hay trường ý thức vật lý.
+Nham và Tinh Tú dùng khung PBR trong `src/graphics/core/element-materials.js`: khe nóng chuyển động trên Nham, tinh vân/sao/Fresnel trên Tinh Tú. Thảo dùng shader rừng riêng trong `src/nature-growth.js`. Đây là vật liệu procedural với mô phỏng ánh sáng gần đúng.
 
 ## Chế độ chơi pháp sư
 
@@ -168,7 +194,6 @@ Archetype xác định cách skill được đặt và hướng nhóm VFX trong 
 | Thời Gian | Vĩnh Hằng Chung Khúc (TIME-01) — Lĩnh vực ngưng đọng, hồi chuông và giải phóng thời gian |
 | Huyết | Vạn Huyết Thiên Thượng (BLOOD-01) — Xích huyết đan thành lồng, siết vỡ qua năm đợt |
 | Tinh Tú | Vạn Tinh Quy Nhất — Thiên giáng · Tinh Hà Tận Thế — Thiên giáng · Sáng Thế Tinh Vực — Xoáy hội tụ |
-| Tinh Thần | Tâm Thức Băng Diệt — Không gian · Vạn Niệm Thần Vực — Không gian · Thần Niệm Sáng Thế — Không gian |
 
 ## Vĩnh Hằng Chung Khúc (TIME-01)
 
@@ -239,7 +264,7 @@ Bản cập nhật giữ renderer, animation loop, giao diện, Play Mode, các 
 
 ### Kiểm kê theo mã nguồn
 
-Registry trong src/main.js có **23 kỹ năng / 15 hệ**. ID được tạo từ thứ tự registry và giữ nguyên: FIRE-01..03, WATER-01, EARTH-01, LIGHT-01, SHADOW-01, WIND-01, LIGHTNING-01, ICE-01, MAGMA-01..03, POISON-01, SPACE-01, TIME-01, BLOOD-01, ASTRAL-01..03, PSYCHIC-01..03. Bảng dưới đây mô tả shader/vật liệu/hạt đang có trước lớp nâng cấp chung và phần hiển thị mới được áp dụng. Các shader năng lượng riêng của từng module vẫn giữ hình thái và timeline ban đầu.
+Registry trong src/main.js có **21 kỹ năng / 15 hệ**. ID được tạo từ thứ tự registry và giữ nguyên: FIRE-01..03, WATER-01, EARTH-01, LIGHT-01, SHADOW-01, WIND-01, LIGHTNING-01, ICE-01, MAGMA-01..03, POISON-01, SPACE-01, TIME-01, BLOOD-01, ASTRAL-01..03. Bảng dưới đây mô tả shader/vật liệu/hạt đang có trước lớp nâng cấp chung và phần hiển thị mới được áp dụng. 20 skill còn lại giữ hình thái, cấu hình và cinematic ban đầu; NATURE-01 được thêm theo yêu cầu thay hệ cuối.
 
 | ID · Tuyệt kỹ | Hiện có: vật liệu, shader, hạt và hiệu ứng | Sau nâng cấp · chi phí thêm |
 |---|---|---|
@@ -263,9 +288,6 @@ Registry trong src/main.js có **23 kỹ năng / 15 hệ**. ID được tạo t�
 | ASTRAL-01 · Vạn Tinh Quy Nhất | Shader nguyên tố tinh tú dùng chung, lõi/đá sao, vòng quỹ đạo và hạt. | PBR/IBL/bóng cho mesh chuẩn; nền nhận phản ứng ánh sáng và AO tiếp xúc nhẹ. Nhẹ–vừa. |
 | ASTRAL-02 · Tinh Hà Tận Thế | Shader tinh tú, chòm sao/cột sáng và hạt điểm. | PMREM cho mesh chuẩn; tia thể tích tùy bật và nền có phản ứng nhẹ theo pulse. Nhẹ–vừa. |
 | ASTRAL-03 · Sáng Thế Tinh Vực | Shader thiên hà, dải xoắn, sao và bụi điểm. | Nhiễu vi bề mặt/IBL cho mesh chuẩn; light shaft dùng 6 mẫu cố định trong pass hiện có. Vừa. |
-| PSYCHIC-01 · Tâm Thức Băng Diệt | Shader nguyên tố tinh thần dùng chung, mắt/tâm điểm, vỏ và hiệu ứng méo. | Mesh chuẩn nhận IBL/bóng; hậu kỳ dùng distortion trước pass xuất màu cuối; nền có AO nhẹ. Nhẹ–vừa. |
-| PSYCHIC-02 · Vạn Niệm Thần Vực | Shader tinh thần, ảo ảnh, tia/đạn và hạt instanced/Points. | Vật liệu chuẩn nhận nhiễu vi bề mặt/IBL; tia thể tích và phản ứng nền tùy preset. Vừa. |
-| PSYCHIC-03 · Thần Niệm Sáng Thế | Shader tinh thể fractal, mảnh và sóng tâm linh. | Mesh chuẩn nhận bóng/IBL; nền phản ứng theo pulse và khôi phục sau cast. Vừa. |
 
 ### Pipeline trước → sau
 
@@ -297,7 +319,7 @@ Các module đồ họa lõi nằm trong `src/graphics/core/`: `post-effects.js`
 
 ### Đánh giá độ chân thật và giới hạn
 
-Lớp nâng cấp cải thiện chiều sâu ánh sáng môi trường, độ nhám vi mô của các mesh PBR, bóng cho vật thể lớn, và tương tác mặt đất theo nguyên tố. Các module Thủy, Thổ, Phong, Hỏa, Băng, Độc, Lôi, Ánh Sáng, Bóng Tối, Huyết, Không Gian, Thời Gian đã có shader/hạt riêng trước thay đổi; ba kỹ năng Nham, Tinh Tú, Tinh Thần dùng nền shader nguyên tố dùng chung. Chất lượng vật liệu custom ShaderMaterial và vật lý từng module không đồng nhất: hệ thống này không thể tự làm mọi vỏ phát sáng thành bề mặt PBR thật, cũng không thay một mô phỏng chất lỏng/khói/đá GPU tổng quát. Không tuyên bố chất lượng tương đương game ray tracing AAA.
+Lớp nâng cấp cải thiện chiều sâu ánh sáng môi trường, độ nhám vi mô của các mesh PBR, bóng cho vật thể lớn, và tương tác mặt đất theo nguyên tố. Các module Thủy, Thổ, Phong, Hỏa, Băng, Độc, Lôi, Ánh Sáng, Bóng Tối, Huyết, Không Gian, Thời Gian đã có shader/hạt riêng trước thay đổi; các kỹ năng Nham và Tinh Tú dùng nền shader nguyên tố dùng chung. Chất lượng vật liệu custom ShaderMaterial và vật lý từng module không đồng nhất: hệ thống này không thể tự làm mọi vỏ phát sáng thành bề mặt PBR thật, cũng không thay một mô phỏng chất lỏng/khói/đá GPU tổng quát. Không tuyên bố chất lượng tương đương game ray tracing AAA.
 
 ### Tệp thay đổi
 
@@ -344,14 +366,11 @@ Bảng hiện có liệt kê phần thể hiện và lớp nâng cấp; đây l�
 | ASTRAL-01 · Vạn Tinh Quy Nhất | Lõi/vật thể dùng bề mặt tinh vân và sao PBR; quỹ đạo chưa giải bằng hấp dẫn N-body. |
 | ASTRAL-02 · Tinh Hà Tận Thế | Cột/chòm sao giữ geometry và hạt, vật liệu thêm Fresnel/sao; chưa có chiếu sáng thể tích shadow-aware. |
 | ASTRAL-03 · Sáng Thế Tinh Vực | Vật liệu thêm các dải tinh vân và bụi sao; vẫn là shader/dải xoắn giải tích, không có hấp dẫn N-body. |
-| PSYCHIC-01 · Tâm Thức Băng Diệt | Tâm điểm nhận dải sóng Fresnel; trường ý thức vẫn là VFX stylized, không tác động vật lý từng mesh. |
-| PSYCHIC-02 · Vạn Niệm Thần Vực | Ảo ảnh/tia dùng bề mặt và sóng tinh thần riêng; tương tác vật cản còn đơn giản. |
-| PSYCHIC-03 · Thần Niệm Sáng Thế | Tinh thể nhận viền lăng kính và dải sóng; vỡ mảnh vẫn theo hoạt ảnh giải tích, chưa có fracture solver. |
 
 
 ### Âm thanh và assets mới (nhánh Draft PR #1)
 
-Mở **ÂM THANH → BẬT ÂM THANH** trong bảng điều khiển. Có âm lượng tổng và nền gió tùy chọn; âm thanh mặc định tắt cho đến khi người chơi bật. 15 hệ dùng 7 lớp WAV mỗi hệ theo timeline của 23 skill, có âm 3D, pause/slow motion và preload/cache giới hạn. Không đổi ID, tên hoặc hình thái kỹ năng.
+Mở **ÂM THANH → BẬT ÂM THANH** trong bảng điều khiển. Có âm lượng tổng và nền gió tùy chọn; âm thanh mặc định tắt cho đến khi người chơi bật. 15 hệ dùng 7 lớp WAV mỗi hệ theo timeline của 21 skill, có âm 3D, pause/slow motion và preload/cache giới hạn. Không đổi ID, tên hoặc hình thái kỹ năng.
 
 - [Nghe thử, video và kết quả kiểm thử](docs/PREVIEW.md)
 - [Kiểm kê assets và nguồn tạo](ASSET_INVENTORY.md)

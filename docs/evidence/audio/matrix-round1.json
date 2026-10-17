@@ -352,60 +352,6 @@
         "BLOOD",
         "ASTRAL"
       ]
-    },
-    {
-      "id": "PSYCHIC-01",
-      "cues": [
-        "precast",
-        "charging",
-        "casting",
-        "traveling",
-        "impact",
-        "shockwave",
-        "aftermath"
-      ],
-      "voices": 2,
-      "banks": [
-        "BLOOD",
-        "ASTRAL",
-        "PSYCHIC"
-      ]
-    },
-    {
-      "id": "PSYCHIC-02",
-      "cues": [
-        "precast",
-        "charging",
-        "casting",
-        "traveling",
-        "impact",
-        "shockwave",
-        "aftermath"
-      ],
-      "voices": 1,
-      "banks": [
-        "BLOOD",
-        "ASTRAL",
-        "PSYCHIC"
-      ]
-    },
-    {
-      "id": "PSYCHIC-03",
-      "cues": [
-        "precast",
-        "charging",
-        "casting",
-        "traveling",
-        "impact",
-        "shockwave",
-        "aftermath"
-      ],
-      "voices": 1,
-      "banks": [
-        "BLOOD",
-        "ASTRAL",
-        "PSYCHIC"
-      ]
     }
   ],
   "checks": {

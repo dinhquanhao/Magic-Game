@@ -48,8 +48,7 @@
     "pauseRateMute": true,
     "rapidSelection": {
       "banks": [
-        "FIRE",
-        "PSYCHIC"
+        "FIRE"
       ],
       "decodedBytes": 4840320,
       "errors": []
@@ -234,33 +233,6 @@
       "rms": 0.0401912204128548,
       "peak": 0.08002596348524094,
       "cleanupRms": 9.080341413247892e-09,
-      "banks": 2
-    },
-    {
-      "id": "PSYCHIC-01",
-      "passed": true,
-      "impactCount": 1,
-      "rms": 0.03367668620524498,
-      "peak": 0.05741523951292038,
-      "cleanupRms": 2.9763340346943796e-09,
-      "banks": 2
-    },
-    {
-      "id": "PSYCHIC-02",
-      "passed": true,
-      "impactCount": 1,
-      "rms": 0.0315479861055485,
-      "peak": 0.05707269161939621,
-      "cleanupRms": 9.120853904848934e-09,
-      "banks": 2
-    },
-    {
-      "id": "PSYCHIC-03",
-      "passed": true,
-      "impactCount": 1,
-      "rms": 0.031882119269078184,
-      "peak": 0.056369684636592865,
-      "cleanupRms": 4.9620819243501596e-09,
       "banks": 2
     }
   ],

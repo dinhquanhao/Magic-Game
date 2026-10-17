@@ -7520,23 +7520,23 @@
     }
   },
   {
-    "id": "psychic/precast",
-    "element": "PSYCHIC",
+    "id": "nature/precast",
+    "element": "NATURE",
     "role": "precast",
     "profile": {
-      "base": 217,
-      "material": "mind",
-      "noise": "pink",
+      "base": 146,
+      "material": "wood",
+      "noise": "brown",
       "modes": [
         1,
-        1.031,
-        1.27,
-        2.5
+        1.57,
+        2.83,
+        4.36
       ],
-      "cutoff": 4300,
-      "room": "cathedral",
-      "keywords": "giao thoa · vọng · nhịp · lăng kính",
-      "bass": 0.55
+      "cutoff": 3900,
+      "room": "arena",
+      "keywords": "gỗ · lá · hạt · sinh trưởng",
+      "bass": 0.75
     },
     "duration": 0.3,
     "targetRmsDb": -25,
@@ -7555,23 +7555,23 @@
     }
   },
   {
-    "id": "psychic/charging",
-    "element": "PSYCHIC",
+    "id": "nature/charging",
+    "element": "NATURE",
     "role": "charging",
     "profile": {
-      "base": 217,
-      "material": "mind",
-      "noise": "pink",
+      "base": 146,
+      "material": "wood",
+      "noise": "brown",
       "modes": [
         1,
-        1.031,
-        1.27,
-        2.5
+        1.57,
+        2.83,
+        4.36
       ],
-      "cutoff": 4300,
-      "room": "cathedral",
-      "keywords": "giao thoa · vọng · nhịp · lăng kính",
-      "bass": 0.55
+      "cutoff": 3900,
+      "room": "arena",
+      "keywords": "gỗ · lá · hạt · sinh trưởng",
+      "bass": 0.75
     },
     "duration": 1.2,
     "targetRmsDb": -27,
@@ -7591,23 +7591,23 @@
     }
   },
   {
-    "id": "psychic/casting",
-    "element": "PSYCHIC",
+    "id": "nature/casting",
+    "element": "NATURE",
     "role": "casting",
     "profile": {
-      "base": 217,
-      "material": "mind",
-      "noise": "pink",
+      "base": 146,
+      "material": "wood",
+      "noise": "brown",
       "modes": [
         1,
-        1.031,
-        1.27,
-        2.5
+        1.57,
+        2.83,
+        4.36
       ],
-      "cutoff": 4300,
-      "room": "cathedral",
-      "keywords": "giao thoa · vọng · nhịp · lăng kính",
-      "bass": 0.55
+      "cutoff": 3900,
+      "room": "arena",
+      "keywords": "gỗ · lá · hạt · sinh trưởng",
+      "bass": 0.75
     },
     "duration": 0.38,
     "targetRmsDb": -22,
@@ -7626,23 +7626,23 @@
     }
   },
   {
-    "id": "psychic/traveling",
-    "element": "PSYCHIC",
+    "id": "nature/traveling",
+    "element": "NATURE",
     "role": "traveling",
     "profile": {
-      "base": 217,
-      "material": "mind",
-      "noise": "pink",
+      "base": 146,
+      "material": "wood",
+      "noise": "brown",
       "modes": [
         1,
-        1.031,
-        1.27,
-        2.5
+        1.57,
+        2.83,
+        4.36
       ],
-      "cutoff": 4300,
-      "room": "cathedral",
-      "keywords": "giao thoa · vọng · nhịp · lăng kính",
-      "bass": 0.55
+      "cutoff": 3900,
+      "room": "arena",
+      "keywords": "gỗ · lá · hạt · sinh trưởng",
+      "bass": 0.75
     },
     "duration": 1.2,
     "targetRmsDb": -26,
@@ -7662,23 +7662,23 @@
     }
   },
   {
-    "id": "psychic/material",
-    "element": "PSYCHIC",
+    "id": "nature/material",
+    "element": "NATURE",
     "role": "material",
     "profile": {
-      "base": 217,
-      "material": "mind",
-      "noise": "pink",
+      "base": 146,
+      "material": "wood",
+      "noise": "brown",
       "modes": [
         1,
-        1.031,
-        1.27,
-        2.5
+        1.57,
+        2.83,
+        4.36
       ],
-      "cutoff": 4300,
-      "room": "cathedral",
-      "keywords": "giao thoa · vọng · nhịp · lăng kính",
-      "bass": 0.55
+      "cutoff": 3900,
+      "room": "arena",
+      "keywords": "gỗ · lá · hạt · sinh trưởng",
+      "bass": 0.75
     },
     "duration": 1.2,
     "targetRmsDb": -24,
@@ -7699,23 +7699,23 @@
     }
   },
   {
-    "id": "psychic/motion",
-    "element": "PSYCHIC",
+    "id": "nature/motion",
+    "element": "NATURE",
     "role": "motion",
     "profile": {
-      "base": 217,
-      "material": "mind",
-      "noise": "pink",
+      "base": 146,
+      "material": "wood",
+      "noise": "brown",
       "modes": [
         1,
-        1.031,
-        1.27,
-        2.5
+        1.57,
+        2.83,
+        4.36
       ],
-      "cutoff": 4300,
-      "room": "cathedral",
-      "keywords": "giao thoa · vọng · nhịp · lăng kính",
-      "bass": 0.55
+      "cutoff": 3900,
+      "room": "arena",
+      "keywords": "gỗ · lá · hạt · sinh trưởng",
+      "bass": 0.75
     },
     "duration": 1.5,
     "targetRmsDb": -26,
@@ -7734,23 +7734,23 @@
     }
   },
   {
-    "id": "psychic/environment",
-    "element": "PSYCHIC",
+    "id": "nature/environment",
+    "element": "NATURE",
     "role": "environment",
     "profile": {
-      "base": 217,
-      "material": "mind",
-      "noise": "pink",
+      "base": 146,
+      "material": "wood",
+      "noise": "brown",
       "modes": [
         1,
-        1.031,
-        1.27,
-        2.5
+        1.57,
+        2.83,
+        4.36
       ],
-      "cutoff": 4300,
-      "room": "cathedral",
-      "keywords": "giao thoa · vọng · nhịp · lăng kính",
-      "bass": 0.55
+      "cutoff": 3900,
+      "room": "arena",
+      "keywords": "gỗ · lá · hạt · sinh trưởng",
+      "bass": 0.75
     },
     "duration": 2,
     "targetRmsDb": -31,
@@ -7771,23 +7771,23 @@
     }
   },
   {
-    "id": "psychic/secondary",
-    "element": "PSYCHIC",
+    "id": "nature/secondary",
+    "element": "NATURE",
     "role": "secondary",
     "profile": {
-      "base": 217,
-      "material": "mind",
-      "noise": "pink",
+      "base": 146,
+      "material": "wood",
+      "noise": "brown",
       "modes": [
         1,
-        1.031,
-        1.27,
-        2.5
+        1.57,
+        2.83,
+        4.36
       ],
-      "cutoff": 4300,
-      "room": "cathedral",
-      "keywords": "giao thoa · vọng · nhịp · lăng kính",
-      "bass": 0.55
+      "cutoff": 3900,
+      "room": "arena",
+      "keywords": "gỗ · lá · hạt · sinh trưởng",
+      "bass": 0.75
     },
     "duration": 0.9,
     "targetRmsDb": -27,
@@ -7808,23 +7808,23 @@
     }
   },
   {
-    "id": "psychic/riser",
-    "element": "PSYCHIC",
+    "id": "nature/riser",
+    "element": "NATURE",
     "role": "riser",
     "profile": {
-      "base": 217,
-      "material": "mind",
-      "noise": "pink",
+      "base": 146,
+      "material": "wood",
+      "noise": "brown",
       "modes": [
         1,
-        1.031,
-        1.27,
-        2.5
+        1.57,
+        2.83,
+        4.36
       ],
-      "cutoff": 4300,
-      "room": "cathedral",
-      "keywords": "giao thoa · vọng · nhịp · lăng kính",
-      "bass": 0.55
+      "cutoff": 3900,
+      "room": "arena",
+      "keywords": "gỗ · lá · hạt · sinh trưởng",
+      "bass": 0.75
     },
     "duration": 0.8,
     "targetRmsDb": -23,
@@ -7843,23 +7843,23 @@
     }
   },
   {
-    "id": "psychic/impact",
-    "element": "PSYCHIC",
+    "id": "nature/impact",
+    "element": "NATURE",
     "role": "impact",
     "profile": {
-      "base": 217,
-      "material": "mind",
-      "noise": "pink",
+      "base": 146,
+      "material": "wood",
+      "noise": "brown",
       "modes": [
         1,
-        1.031,
-        1.27,
-        2.5
+        1.57,
+        2.83,
+        4.36
       ],
-      "cutoff": 4300,
-      "room": "cathedral",
-      "keywords": "giao thoa · vọng · nhịp · lăng kính",
-      "bass": 0.55
+      "cutoff": 3900,
+      "room": "arena",
+      "keywords": "gỗ · lá · hạt · sinh trưởng",
+      "bass": 0.75
     },
     "duration": 3.2,
     "targetRmsDb": -19,
@@ -7878,23 +7878,23 @@
     }
   },
   {
-    "id": "psychic/shockwave",
-    "element": "PSYCHIC",
+    "id": "nature/shockwave",
+    "element": "NATURE",
     "role": "shockwave",
     "profile": {
-      "base": 217,
-      "material": "mind",
-      "noise": "pink",
+      "base": 146,
+      "material": "wood",
+      "noise": "brown",
       "modes": [
         1,
-        1.031,
-        1.27,
-        2.5
+        1.57,
+        2.83,
+        4.36
       ],
-      "cutoff": 4300,
-      "room": "cathedral",
-      "keywords": "giao thoa · vọng · nhịp · lăng kính",
-      "bass": 0.55
+      "cutoff": 3900,
+      "room": "arena",
+      "keywords": "gỗ · lá · hạt · sinh trưởng",
+      "bass": 0.75
     },
     "duration": 1.2,
     "targetRmsDb": -25,
@@ -7913,23 +7913,23 @@
     }
   },
   {
-    "id": "psychic/aftermath",
-    "element": "PSYCHIC",
+    "id": "nature/aftermath",
+    "element": "NATURE",
     "role": "aftermath",
     "profile": {
-      "base": 217,
-      "material": "mind",
-      "noise": "pink",
+      "base": 146,
+      "material": "wood",
+      "noise": "brown",
       "modes": [
         1,
-        1.031,
-        1.27,
-        2.5
+        1.57,
+        2.83,
+        4.36
       ],
-      "cutoff": 4300,
-      "room": "cathedral",
-      "keywords": "giao thoa · vọng · nhịp · lăng kính",
-      "bass": 0.55
+      "cutoff": 3900,
+      "room": "arena",
+      "keywords": "gỗ · lá · hạt · sinh trưởng",
+      "bass": 0.75
     },
     "duration": 3.6,
     "targetRmsDb": -30,
@@ -7948,23 +7948,23 @@
     }
   },
   {
-    "id": "psychic/rune",
-    "element": "PSYCHIC",
+    "id": "nature/rune",
+    "element": "NATURE",
     "role": "rune",
     "profile": {
-      "base": 217,
-      "material": "mind",
-      "noise": "pink",
+      "base": 146,
+      "material": "wood",
+      "noise": "brown",
       "modes": [
         1,
-        1.031,
-        1.27,
-        2.5
+        1.57,
+        2.83,
+        4.36
       ],
-      "cutoff": 4300,
-      "room": "cathedral",
-      "keywords": "giao thoa · vọng · nhịp · lăng kính",
-      "bass": 0.55
+      "cutoff": 3900,
+      "room": "arena",
+      "keywords": "gỗ · lá · hạt · sinh trưởng",
+      "bass": 0.75
     },
     "duration": 0.48,
     "targetRmsDb": -29,
@@ -7984,23 +7984,23 @@
     }
   },
   {
-    "id": "psychic/ui",
-    "element": "PSYCHIC",
+    "id": "nature/ui",
+    "element": "NATURE",
     "role": "ui",
     "profile": {
-      "base": 217,
-      "material": "mind",
-      "noise": "pink",
+      "base": 146,
+      "material": "wood",
+      "noise": "brown",
       "modes": [
         1,
-        1.031,
-        1.27,
-        2.5
+        1.57,
+        2.83,
+        4.36
       ],
-      "cutoff": 4300,
-      "room": "cathedral",
-      "keywords": "giao thoa · vọng · nhịp · lăng kính",
-      "bass": 0.55
+      "cutoff": 3900,
+      "room": "arena",
+      "keywords": "gỗ · lá · hạt · sinh trưởng",
+      "bass": 0.75
     },
     "duration": 0.09,
     "targetRmsDb": -34,
@@ -8019,23 +8019,23 @@
     }
   },
   {
-    "id": "psychic/drone",
-    "element": "PSYCHIC",
+    "id": "nature/drone",
+    "element": "NATURE",
     "role": "drone",
     "profile": {
-      "base": 217,
-      "material": "mind",
-      "noise": "pink",
+      "base": 146,
+      "material": "wood",
+      "noise": "brown",
       "modes": [
         1,
-        1.031,
-        1.27,
-        2.5
+        1.57,
+        2.83,
+        4.36
       ],
-      "cutoff": 4300,
-      "room": "cathedral",
-      "keywords": "giao thoa · vọng · nhịp · lăng kính",
-      "bass": 0.55
+      "cutoff": 3900,
+      "room": "arena",
+      "keywords": "gỗ · lá · hạt · sinh trưởng",
+      "bass": 0.75
     },
     "duration": 2,
     "targetRmsDb": -34,

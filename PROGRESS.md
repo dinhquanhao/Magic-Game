@@ -74,7 +74,7 @@ Các mục phía dưới là lịch sử; mô tả audio v1/105WAV không còn l
 
 - A: SSR/GTAO/SSAO/DoF, OutputPass, PBR, adaptive và F3 đã có trong mã; đã kiểm thử WebGL qua Chromium/SwiftShader, gồm 4 preset và context recovery.
 - B/C: hình thái Thủy/Thổ/Phong và các module riêng đã có. Phần thiếu chính là shader thực thi, trường gió dùng chung và kiểm chứng lifecycle; đã bổ sung gió point shader và kiểm thử shader/lifecycle.
-- D: Nham/Tinh Tú/Tinh Thần đã có vật liệu và chuyển động từ bản tạm dừng; không dựng lại. Cả 9 skill Low/High đạt. Đánh giá thị giác có hệ thống tiếp tục ở GĐ1.
+- D: Nham/Tinh Tú đã có vật liệu và chuyển động từ bản tạm dừng; không dựng lại. Cả 9 skill Low/High đạt. Đánh giá thị giác có hệ thống tiếp tục ở GĐ1.
 - E: registry/ID/tên giữ nguyên so với main; build, audit, tài liệu và bằng chứng đã lưu. `dist/` sinh bằng build, không commit.
 - Các xấp xỉ analytic về nước/khói/gió, SSS, GI và lensing vẫn được công khai; chưa có ray tracing, FFT fluid hay solver vật lý tổng quát.
 
@@ -117,5 +117,5 @@ Các mục phía dưới là lịch sử; mô tả audio v1/105WAV không còn l
 
 ### Bằng chứng đóng nhóm bloom
 
-- Bộ so sánh docs/evidence/contrast-review.zip (39.6MiB) đã kiểm CRC và đủ23cặp ảnh; index có thanh kéo trước/sau. Video production mới dài89.48giây, không audio track.
+- Bộ so sánh docs/evidence/contrast/index.html hiện giữ20cặp ảnh lịch sử của các skill còn lại; ZIP hỗn hợp cũ đã gỡ theo yêu cầu thay hệ cuối. Video production mới dài89.48giây, không audio track.
 - Planner offline vẫn activated=false; task contrast được đề xuất done trong Draft PR, thêm queue AAA materials/probes và review flash/aftermath. Không kích hoạt readiness hoặc scheduler.

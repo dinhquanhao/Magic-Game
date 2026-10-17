@@ -1,0 +1,45 @@
+{
+  "measurement": "SwiftShader, fixed peak state, render+gl.finish only. Not a native GPU FPS or complete gameplay benchmark. Canvas dimensions vary with preset pixel ratio. Tests were run sequentially.",
+  "presets": {
+    "low": {
+      "passed": true,
+      "trees": 36,
+      "particles": 800,
+      "peakRenderMedianMs": 1.099999999627471,
+      "renderOnlyThroughputFramesPerSecond": 909.0909093987843,
+      "pixelRatio": 0.8,
+      "errors": 0,
+      "restoredPixelsExact": true
+    },
+    "medium": {
+      "passed": true,
+      "trees": 60,
+      "particles": 1600,
+      "peakRenderMedianMs": 3.799999998882413,
+      "renderOnlyThroughputFramesPerSecond": 263.15789481423735,
+      "pixelRatio": 1,
+      "errors": 0,
+      "restoredPixelsExact": true
+    },
+    "high": {
+      "passed": true,
+      "trees": 96,
+      "particles": 3000,
+      "peakRenderMedianMs": 2.200000001117587,
+      "renderOnlyThroughputFramesPerSecond": 454.5454543145481,
+      "pixelRatio": 1,
+      "errors": 0,
+      "restoredPixelsExact": true
+    },
+    "ultra": {
+      "passed": true,
+      "trees": 144,
+      "particles": 5000,
+      "peakRenderMedianMs": 1.450000001117587,
+      "renderOnlyThroughputFramesPerSecond": 689.6551718822416,
+      "pixelRatio": 1,
+      "errors": 0,
+      "restoredPixelsExact": true
+    }
+  }
+}

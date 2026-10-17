@@ -240,42 +240,6 @@
       "brightAfter": 0.0002568562825520833,
       "meanBefore": 0.408783027467416,
       "meanAfter": 0.11833224829779732
-    },
-    {
-      "id": "PSYCHIC-01",
-      "time": 2.31,
-      "before": "before/PSYCHIC-01-impact.png",
-      "after": "after/PSYCHIC-01-impact.png",
-      "whiteBefore": 0.027562459309895832,
-      "whiteAfter": 0.0009485880533854166,
-      "brightBefore": 0.03125762939453125,
-      "brightAfter": 0.0018132527669270833,
-      "meanBefore": 0.3732865047300251,
-      "meanAfter": 0.13193540483462265
-    },
-    {
-      "id": "PSYCHIC-02",
-      "time": 2.07,
-      "before": "before/PSYCHIC-02-impact.png",
-      "after": "after/PSYCHIC-02-impact.png",
-      "whiteBefore": 0.05194091796875,
-      "whiteAfter": 0.00177764892578125,
-      "brightBefore": 0.062060038248697914,
-      "brightAfter": 0.0037816365559895835,
-      "meanBefore": 0.47072393567453014,
-      "meanAfter": 0.16283109029732498
-    },
-    {
-      "id": "PSYCHIC-03",
-      "time": 2.19,
-      "before": "before/PSYCHIC-03-impact.png",
-      "after": "after/PSYCHIC-03-impact.png",
-      "whiteBefore": 0.033991495768229164,
-      "whiteAfter": 0.006785074869791667,
-      "brightBefore": 0.052538553873697914,
-      "brightAfter": 0.008082071940104166,
-      "meanBefore": 0.4628515954908982,
-      "meanAfter": 0.16656976945864607
     }
   ],
   "method": "Seed 38017, 960x640, fixed camera [0,18,34], Low, same impact+.15s. RGB>=245 all channels defines white; sRGB luminance>=.95 defines bright. Screenshot-only measurement, not native GPU FPS or perceptual certification.",

@@ -12,6 +12,10 @@ export function buildSkillScore(skill,plan) {
   add('material',wave.start,`wave-${i}`,{gain:.25+progress*.5,pitch:1+i*.025,density:1+i,source:`${skill.shape}.waves[${i}].start`,region:true});
   add('secondary',wave.start+Math.min(.18,(wave.duration||wave.spread||.4)*.15),`wave-detail-${i}`,{gain:.3+progress*.45,source:'cluster near wave emission, not individual GPU collision',region:true,domain:true});
  }
+ if(skill.nature){
+  for(const [i,at]of [.65,1.9,2.9,3.8].entries())add('material',at,`growth-${i}`,{gain:.45+i*.12,source:'nature-growth birth waves'});
+  for(let i=0;i<8;i++)add(i%3===0?'motion':'secondary',5.6+i*.87,`forest-strike-${i}`,{gain:.5,region:true,source:'clustered root/branch/seed attack phase'});
+ }
  if(skill.oceanDominion){const c=skill.oceanDominion;
   add('material',2.35,'gate',{source:'ocean-dominion.js gateOpen(2.35,...)'});add('motion',4.65,'whale-swim',{source:'ocean-dominion.js swimStart=4.65'});
   for(let i=0;i<c.tide.secondaryWaves;i++)add('material',impact+1+i*.72,`tide-${i}`,{gain:.7+i*.1,region:true,source:'ocean-dominion.js surgeTimes'});

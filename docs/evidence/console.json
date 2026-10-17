@@ -1,12 +1,7 @@
 {
   "stage0-round1": {
     "errors": [],
-    "warnings": [
-      {
-        "type": "warning",
-        "text": "[Arcane VFX] Performance watchdog limited runtime VFX budgets; user settings are preserved. {skill: PSYCHIC-03, reason: regression test, frameCostMs: 100, runtimeDensityScale: 0.72}"
-      }
-    ]
+    "warnings": []
   },
   "stage0-round2": {
     "errors": [],

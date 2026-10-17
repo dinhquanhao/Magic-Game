@@ -27,7 +27,7 @@ PROFILES = [
     ('TIME', 293, 'clock', 'Tick pulses with a reverse swell'),
     ('BLOOD', 109, 'metal', 'Tension and inharmonic chain resonance'),
     ('ASTRAL', 440, 'stars', 'Wide harmonic shimmer'),
-    ('PSYCHIC', 197, 'mind', 'Beating tones and nervous modulation'),
+    ('NATURE', 146, 'wood', 'Bark resonance, leaf rustle and growing seed pulses'),
 ]
 CUES = {'precast': (.32, False), 'charging': (1.0, True),
         'casting': (.42, False), 'traveling': (1.0, True),
@@ -85,8 +85,10 @@ def synth(index, cue, duration, loop):
         x = .35 * tone() + .25 * tone(2.43) + .19 * tone(3.82) + noise * pulse * 1.6
     elif kind == 'stars':
         x = .35 * tone() + .25 * tone(1.5) + .18 * tone(2) + .12 * tone(4)
+    elif kind == 'wood':
+        x = .35 * tone() * (.4 + pulse) + .25 * tone(2.83) + noise * (.5 + pulse)
     else:
-        x = .4 * tone(1, 3) + .32 * tone(1.03, 2) + .15 * tone(2.5, 5)
+        raise ValueError('Unknown material profile')
     if loop:
         # A 3 ms boundary taper also protects bright, steep waveforms whose
         # adjacent PCM samples can differ sharply despite mathematical periodicity.

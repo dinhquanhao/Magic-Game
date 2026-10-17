@@ -1684,125 +1684,125 @@
       "rmsDbFS": -34.00058715937298,
       "truePeakDbTP4x": -26.18111978147575
     },
-    "psychic/precast": {
+    "nature/precast": {
       "status": "PASS",
       "failures": [],
       "iterations": 1,
       "earVerified": false,
-      "rmsDbFS": -25.000236752013283,
-      "truePeakDbTP4x": -15.905250040196508
+      "rmsDbFS": -25.038843689907292,
+      "truePeakDbTP4x": -12.249873602199187
     },
-    "psychic/charging": {
+    "nature/charging": {
       "status": "PASS",
       "failures": [],
       "iterations": 1,
       "earVerified": false,
-      "rmsDbFS": -27.000789725258315,
-      "truePeakDbTP4x": -19.298406507950993
+      "rmsDbFS": -27.001311184050234,
+      "truePeakDbTP4x": -15.666893319710947
     },
-    "psychic/casting": {
+    "nature/casting": {
       "status": "PASS",
       "failures": [],
       "iterations": 1,
       "earVerified": false,
-      "rmsDbFS": -22.14532555016614,
-      "truePeakDbTP4x": -6.212932464166476
+      "rmsDbFS": -22.047321623738064,
+      "truePeakDbTP4x": -2.4981967835756977
     },
-    "psychic/traveling": {
+    "nature/traveling": {
       "status": "PASS",
       "failures": [],
       "iterations": 1,
       "earVerified": false,
-      "rmsDbFS": -26.000882526002293,
-      "truePeakDbTP4x": -18.177722267427203
+      "rmsDbFS": -26.00084881414009,
+      "truePeakDbTP4x": -14.623971255909865
     },
-    "psychic/material": {
+    "nature/material": {
       "status": "PASS",
       "failures": [],
       "iterations": 1,
       "earVerified": false,
-      "rmsDbFS": -24.00210549351492,
-      "truePeakDbTP4x": -12.176948881648403
+      "rmsDbFS": -24.000629599769038,
+      "truePeakDbTP4x": -6.908223878791958
     },
-    "psychic/motion": {
+    "nature/motion": {
       "status": "PASS",
       "failures": [],
       "iterations": 1,
       "earVerified": false,
-      "rmsDbFS": -26.001697163635747,
-      "truePeakDbTP4x": -13.535518626930305
+      "rmsDbFS": -26.001404686089597,
+      "truePeakDbTP4x": -6.800195834324217
     },
-    "psychic/environment": {
+    "nature/environment": {
       "status": "PASS",
       "failures": [],
       "iterations": 1,
       "earVerified": false,
-      "rmsDbFS": -31.000839048319,
-      "truePeakDbTP4x": -23.06891460381143
+      "rmsDbFS": -31.001557421787723,
+      "truePeakDbTP4x": -19.124502404602495
     },
-    "psychic/secondary": {
+    "nature/secondary": {
       "status": "PASS",
       "failures": [],
       "iterations": 1,
       "earVerified": false,
-      "rmsDbFS": -27.060085871612216,
-      "truePeakDbTP4x": -11.581638777549482
+      "rmsDbFS": -27.020011100234314,
+      "truePeakDbTP4x": -7.933345583520282
     },
-    "psychic/riser": {
+    "nature/riser": {
       "status": "PASS",
       "failures": [],
       "iterations": 1,
       "earVerified": false,
-      "rmsDbFS": -24.142999386769777,
-      "truePeakDbTP4x": -10.047826330307936
+      "rmsDbFS": -23.820446047735544,
+      "truePeakDbTP4x": -8.040654586821672
     },
-    "psychic/impact": {
+    "nature/impact": {
       "status": "PASS",
       "failures": [],
       "iterations": 2,
       "earVerified": false,
-      "rmsDbFS": -20.420346337405814,
-      "truePeakDbTP4x": -1.89214524926943
+      "rmsDbFS": -20.80617261606868,
+      "truePeakDbTP4x": -1.718441257549419
     },
-    "psychic/shockwave": {
+    "nature/shockwave": {
       "status": "PASS",
       "failures": [],
       "iterations": 1,
       "earVerified": false,
-      "rmsDbFS": -25.00141529539812,
-      "truePeakDbTP4x": -8.572645030357407
+      "rmsDbFS": -25.00202958210219,
+      "truePeakDbTP4x": -7.938415144257233
     },
-    "psychic/aftermath": {
+    "nature/aftermath": {
       "status": "PASS",
       "failures": [],
       "iterations": 1,
       "earVerified": false,
-      "rmsDbFS": -30.00039483844589,
-      "truePeakDbTP4x": -14.065271715761309
+      "rmsDbFS": -30.000302298419296,
+      "truePeakDbTP4x": -9.519156006084277
     },
-    "psychic/rune": {
+    "nature/rune": {
       "status": "PASS",
       "failures": [],
       "iterations": 1,
       "earVerified": false,
-      "rmsDbFS": -29.183815849959824,
-      "truePeakDbTP4x": -11.289360628686065
+      "rmsDbFS": -29.12535211516595,
+      "truePeakDbTP4x": -11.550105036183185
     },
-    "psychic/ui": {
+    "nature/ui": {
       "status": "PASS",
       "failures": [],
       "iterations": 1,
       "earVerified": false,
-      "rmsDbFS": -34.56294589179255,
-      "truePeakDbTP4x": -21.15687708717647
+      "rmsDbFS": -34.329962603760876,
+      "truePeakDbTP4x": -18.233206426267955
     },
-    "psychic/drone": {
+    "nature/drone": {
       "status": "PASS",
       "failures": [],
       "iterations": 1,
       "earVerified": false,
-      "rmsDbFS": -34.00100118104993,
-      "truePeakDbTP4x": -27.411987171970964
+      "rmsDbFS": -34.0019854800545,
+      "truePeakDbTP4x": -25.823175096706006
     }
   },
   "skills": [
@@ -1987,39 +1987,21 @@
       "vacuumContrastDb": 54.09540724984937
     },
     {
-      "id": "PSYCHIC-01",
+      "id": "NATURE-01",
       "passed": true,
       "earVerified": false,
       "timeAxis": "reference wall-time mapping of extracted world controls; not a recording of browser output",
-      "truePeakDbTP4x": -10.895603882571285,
-      "finaleContrastDb": 14.362726701065139,
-      "vacuumContrastDb": 55.5880167735999
-    },
-    {
-      "id": "PSYCHIC-02",
-      "passed": true,
-      "earVerified": false,
-      "timeAxis": "reference wall-time mapping of extracted world controls; not a recording of browser output",
-      "truePeakDbTP4x": -10.888168128547932,
-      "finaleContrastDb": 11.03432669644608,
-      "vacuumContrastDb": 53.78356166524502
-    },
-    {
-      "id": "PSYCHIC-03",
-      "passed": true,
-      "earVerified": false,
-      "timeAxis": "reference wall-time mapping of extracted world controls; not a recording of browser output",
-      "truePeakDbTP4x": -10.876098588334822,
-      "finaleContrastDb": 15.47458237580147,
-      "vacuumContrastDb": 54.500063992820024
+      "truePeakDbTP4x": -10.729860461710679,
+      "finaleContrastDb": 15.217423887525129,
+      "vacuumContrastDb": 21.252046667274833
     }
   ],
   "totals": {
     "cues": 225,
     "passed": 224,
     "failed": 1,
-    "skills": 23,
-    "skillsPassed": 23
+    "skills": 21,
+    "skillsPassed": 21
   },
   "artifacts": [
     {
@@ -2983,6 +2965,126 @@
       "bytes": 4364
     },
     {
+      "url": "/audio/rendered/nature/aftermath-0.wav",
+      "sha256": "5b4c8594787b78f678966c40c7747a8dcba3fbcda342b36c36f75a581ff0f477",
+      "bytes": 172844
+    },
+    {
+      "url": "/audio/rendered/nature/casting-0.wav",
+      "sha256": "ee386ec56e511fd1ca9979f6eac26361548acaa52690ee6ca0f364843a00d350",
+      "bytes": 18284
+    },
+    {
+      "url": "/audio/rendered/nature/charging-0.wav",
+      "sha256": "9bec1932721d43777d587ee3d8fdd0db7f7c28a7018a354df634f39a9a3b1f7e",
+      "bytes": 57644
+    },
+    {
+      "url": "/audio/rendered/nature/drone-0.wav",
+      "sha256": "2f2c5971ce5daf38f91acc0ab1face4a17c8fc368d3ec8a16e025080dae2bd10",
+      "bytes": 96044
+    },
+    {
+      "url": "/audio/rendered/nature/environment-0.wav",
+      "sha256": "01d051aed8cdf4b82b82eea78179fccdc627acb4e4b907986ba6a2318efdbfdc",
+      "bytes": 96044
+    },
+    {
+      "url": "/audio/rendered/nature/impact-0.wav",
+      "sha256": "e8ebdbf8055154ae6f771c919c41272f4e6e38e9266d1b356b8de68b6725038b",
+      "bytes": 153644
+    },
+    {
+      "url": "/audio/rendered/nature/material-0.wav",
+      "sha256": "d92876193a1fd028efc6ca7dc3c92752f276726f41c03acf36108fcdf045b2dd",
+      "bytes": 57644
+    },
+    {
+      "url": "/audio/rendered/nature/material-1.wav",
+      "sha256": "2b45714f6a1b2a7b4682f2bd702c7a760e5cbdf727788d04263bfe030049996a",
+      "bytes": 57644
+    },
+    {
+      "url": "/audio/rendered/nature/material-2.wav",
+      "sha256": "5f078d45ccd69db870f376a62d8fd8caa16996230598b22aa7a3cc952ffcad58",
+      "bytes": 57644
+    },
+    {
+      "url": "/audio/rendered/nature/material-3.wav",
+      "sha256": "da7ebc9aa0bc31c5959be84dd222b8d04dd93a667f398994dc8bfd423bd5056d",
+      "bytes": 57644
+    },
+    {
+      "url": "/audio/rendered/nature/motion-0.wav",
+      "sha256": "9805ff0ec233b19603eda144c79a85a89258336b5d80f5e6e87ab47f1b86bc20",
+      "bytes": 72044
+    },
+    {
+      "url": "/audio/rendered/nature/precast-0.wav",
+      "sha256": "dd26e791785ca9307a8d4a154321832b82535c52e1e6e1ba0e275108554b9fb5",
+      "bytes": 14444
+    },
+    {
+      "url": "/audio/rendered/nature/riser-0.wav",
+      "sha256": "29224e6417bd4ea69c3b83bae898fe71c398275f027c9eedb089b562c0eeeef3",
+      "bytes": 38444
+    },
+    {
+      "url": "/audio/rendered/nature/rune-0.wav",
+      "sha256": "2f1792a9a18d72fb470e4f60eab0b3fae5dd06eb85741e99fa7c09020932a7db",
+      "bytes": 23084
+    },
+    {
+      "url": "/audio/rendered/nature/rune-1.wav",
+      "sha256": "15addf4ed94eda63f2d0361565573d48c349a7a48d7673d40349929c493e3f8c",
+      "bytes": 23084
+    },
+    {
+      "url": "/audio/rendered/nature/rune-2.wav",
+      "sha256": "9bbf2b9abeeb6143cbf08e6b397351bef142127a9d74659fa803322831434440",
+      "bytes": 23084
+    },
+    {
+      "url": "/audio/rendered/nature/rune-3.wav",
+      "sha256": "0e1aa071f2735f8556f87d8b8c1461a9014454c6183a2b222b1b55f8ab663fa6",
+      "bytes": 23084
+    },
+    {
+      "url": "/audio/rendered/nature/secondary-0.wav",
+      "sha256": "dbe19e05bf989f15563651a472281bb20d552e61d4dc652ac6342f7d1bafb9f9",
+      "bytes": 43244
+    },
+    {
+      "url": "/audio/rendered/nature/secondary-1.wav",
+      "sha256": "7bb6b866faf2aa0a5ac9a531d2dbb398fc4305da7cc9ee377c474178f57d2168",
+      "bytes": 43244
+    },
+    {
+      "url": "/audio/rendered/nature/secondary-2.wav",
+      "sha256": "c3aaa47d7839fb94250c93de0bd1fa60a44cdb8509c7734e1f34c01cdc1e49b1",
+      "bytes": 43244
+    },
+    {
+      "url": "/audio/rendered/nature/secondary-3.wav",
+      "sha256": "f4efb6253356cb05527a61c58f18a81a39cfeff25e98bd74048c04b77962a778",
+      "bytes": 43244
+    },
+    {
+      "url": "/audio/rendered/nature/shockwave-0.wav",
+      "sha256": "b42a63855aafaffd8c794ca9bdf40772dc37fa0ef2693477e08ebc6090ef3614",
+      "bytes": 57644
+    },
+    {
+      "url": "/audio/rendered/nature/traveling-0.wav",
+      "sha256": "b3f8cbce7c356d9cb1895e99b2f10646fbf475abd5414b92d6d5d3f2bea5b832",
+      "bytes": 57644
+    },
+    {
+      "url": "/audio/rendered/nature/ui-0.wav",
+      "sha256": "da714eb513e36c5870a18b9b4cb0a40340a52bcdbb6f2e47a5a0006b92654b65",
+      "bytes": 4364
+    },
+    {
       "url": "/audio/rendered/poison/aftermath-0.wav",
       "sha256": "325ff60b29b943eb3ffe204962a0ddd2d42300014f57984a0aefa225854a2384",
       "bytes": 172844
@@ -3100,126 +3202,6 @@
     {
       "url": "/audio/rendered/poison/ui-0.wav",
       "sha256": "85d8e0f7e76a7b06a2b500c9c4100b9821a20705a9ce0ea775663b25d81dbd15",
-      "bytes": 4364
-    },
-    {
-      "url": "/audio/rendered/psychic/aftermath-0.wav",
-      "sha256": "f5dc4d6886a1cc6baeee44380f8ed1f8ecdbce70ec4b48979b78f04a328a205b",
-      "bytes": 172844
-    },
-    {
-      "url": "/audio/rendered/psychic/casting-0.wav",
-      "sha256": "f09131d4de638dda0811a962eb678ee6abb908e1574327c440b961306a144ccf",
-      "bytes": 18284
-    },
-    {
-      "url": "/audio/rendered/psychic/charging-0.wav",
-      "sha256": "0c12dab8c2d1ab56ddb31eb86a07f8151a1f4ca887571ce240d324f775286f34",
-      "bytes": 57644
-    },
-    {
-      "url": "/audio/rendered/psychic/drone-0.wav",
-      "sha256": "6160aa2a278aa36a57ef8034ec6b78d03bc09de18a28d59185432a814a212fea",
-      "bytes": 96044
-    },
-    {
-      "url": "/audio/rendered/psychic/environment-0.wav",
-      "sha256": "228991b4845787724a2c4808a9dd29e87be2c371d707f724f1c28780d6a221a2",
-      "bytes": 96044
-    },
-    {
-      "url": "/audio/rendered/psychic/impact-0.wav",
-      "sha256": "48b436f95c94f2a59dafeb212ea52cc843bb087abbfb81f36b3cde2859f52089",
-      "bytes": 153644
-    },
-    {
-      "url": "/audio/rendered/psychic/material-0.wav",
-      "sha256": "7ed07a4b07f516ef6fc25728dfc336c733b87b7d59451221c33310a2168765ab",
-      "bytes": 57644
-    },
-    {
-      "url": "/audio/rendered/psychic/material-1.wav",
-      "sha256": "c791b4c56b5f0ed83e408743ffcc17986ccc33f34396c8ad92297a71b2d42054",
-      "bytes": 57644
-    },
-    {
-      "url": "/audio/rendered/psychic/material-2.wav",
-      "sha256": "db5082cf45ac7c0386d32537dad16b1fcb5a489bcdb770471db71b6fb1678eb8",
-      "bytes": 57644
-    },
-    {
-      "url": "/audio/rendered/psychic/material-3.wav",
-      "sha256": "5a55e5f3449724e687dbb12fb4bad53d7aef5c9b3c409d2d7fd117789791b893",
-      "bytes": 57644
-    },
-    {
-      "url": "/audio/rendered/psychic/motion-0.wav",
-      "sha256": "9484d29a3ae687de1425bde7a7358eca60d9806d3e5c90abdad618149e402b3a",
-      "bytes": 72044
-    },
-    {
-      "url": "/audio/rendered/psychic/precast-0.wav",
-      "sha256": "668bc34c28a87e6d0ebab99463864e2966809e71baf11eea4988868d0ad58c09",
-      "bytes": 14444
-    },
-    {
-      "url": "/audio/rendered/psychic/riser-0.wav",
-      "sha256": "1132e7dd5c6437e4b2fc073cc5be41200061d034d6c0ecbc17aefee060e457bf",
-      "bytes": 38444
-    },
-    {
-      "url": "/audio/rendered/psychic/rune-0.wav",
-      "sha256": "c17406b05c990596b5e6f476dba8fcbdf80b04dc877aa978a100ed45e0b5cb1f",
-      "bytes": 23084
-    },
-    {
-      "url": "/audio/rendered/psychic/rune-1.wav",
-      "sha256": "1c8c7866d8ad603355302c0071db29bb467cf0dbf02f1a85c962d4ccf55854ff",
-      "bytes": 23084
-    },
-    {
-      "url": "/audio/rendered/psychic/rune-2.wav",
-      "sha256": "748ebd5065a2d4442c85c1204807d2d50de4bc9708bc52f2b0c9d5f8228bd202",
-      "bytes": 23084
-    },
-    {
-      "url": "/audio/rendered/psychic/rune-3.wav",
-      "sha256": "6499793f81b5df1c7b48b24f85fe968164b18dfccae6548be3b91b8c6fc94cf0",
-      "bytes": 23084
-    },
-    {
-      "url": "/audio/rendered/psychic/secondary-0.wav",
-      "sha256": "af93d3dc285073917c144a556c38af4e0672f09ab3daefcc52b641c379ab7cdd",
-      "bytes": 43244
-    },
-    {
-      "url": "/audio/rendered/psychic/secondary-1.wav",
-      "sha256": "88c935118b657366be0ef3507f3cb1f6874d6f922938de2e97f6b4020600ea59",
-      "bytes": 43244
-    },
-    {
-      "url": "/audio/rendered/psychic/secondary-2.wav",
-      "sha256": "b815301932c4c6725d35139fc46494c1b7614dc421edf4a696ffc3f152fb9955",
-      "bytes": 43244
-    },
-    {
-      "url": "/audio/rendered/psychic/secondary-3.wav",
-      "sha256": "abd3fdfb6bd1bbd46727afd5795b02183b016d14874c84a74d437fccd77d04a5",
-      "bytes": 43244
-    },
-    {
-      "url": "/audio/rendered/psychic/shockwave-0.wav",
-      "sha256": "9e7f5ec339890655e3236b8eeeb169e723aea1240156fb50e4bd3ffda2ec45fa",
-      "bytes": 57644
-    },
-    {
-      "url": "/audio/rendered/psychic/traveling-0.wav",
-      "sha256": "00be9edc18a5921d3b35977817db1de6aea998786076f009ead4f41ff48f6e50",
-      "bytes": 57644
-    },
-    {
-      "url": "/audio/rendered/psychic/ui-0.wav",
-      "sha256": "f1061adba5ddfe468d971eb1d613f6c1c00b44ee0255605a7cca8a26ba441019",
       "bytes": 4364
     },
     {
@@ -3413,24 +3395,14 @@
       "bytes": 713410
     },
     {
+      "url": "/audio/rendered/skills/NATURE-01.wav",
+      "sha256": "c40301a7afd584cb2555adec3a52ef643cafd42e247cb34c7c44901d52a38820",
+      "bytes": 1141272
+    },
+    {
       "url": "/audio/rendered/skills/POISON-01.wav",
       "sha256": "468118f20dd93562bbc8de375c4d2e13a75cf94aa5bbc1e49e1ea944796ceb33",
       "bytes": 1050620
-    },
-    {
-      "url": "/audio/rendered/skills/PSYCHIC-01.wav",
-      "sha256": "806220e19ca111d87ace0304d2ff3c5e0788e7e80abd317a904439634f91c468",
-      "bytes": 737920
-    },
-    {
-      "url": "/audio/rendered/skills/PSYCHIC-02.wav",
-      "sha256": "c15acc395d1f4a47d9bc5a5033dd6512e573fd942369dec9ca92651ed1174e39",
-      "bytes": 768706
-    },
-    {
-      "url": "/audio/rendered/skills/PSYCHIC-03.wav",
-      "sha256": "e68c25ac7cf29a24977e6afa5ed440b9c4a6d799637a6c7296e841fe23faa41d",
-      "bytes": 756582
     },
     {
       "url": "/audio/rendered/skills/SHADOW-01.wav",
@@ -5138,6 +5110,156 @@
       "bytes": 25397
     },
     {
+      "url": "/audio/reports/cues/nature/aftermath-spectrogram.png",
+      "sha256": "90b3381b38d5bceb344359d47de0b79518ceefdc5e37e01a4cd82fa5dcd8ed9d",
+      "bytes": 83317
+    },
+    {
+      "url": "/audio/reports/cues/nature/aftermath-waveform.png",
+      "sha256": "3b709bb6484949dd51671e1de2bde26d297e1c8a4244313551f95b034a2bbb7a",
+      "bytes": 29722
+    },
+    {
+      "url": "/audio/reports/cues/nature/casting-spectrogram.png",
+      "sha256": "6c9d6b167a68f382cf1930b76aa1b514a4c08b66556334addb9ca245c918c9f6",
+      "bytes": 39570
+    },
+    {
+      "url": "/audio/reports/cues/nature/casting-waveform.png",
+      "sha256": "4e4936cc8e7f9935518d3f85ab6c49fc9a8302f90e87e5b2a972ed2a9d1273ca",
+      "bytes": 26722
+    },
+    {
+      "url": "/audio/reports/cues/nature/charging-spectrogram.png",
+      "sha256": "85b404490ec5c0fa4af1e176f6d087ba141ba12d163f2b36d2fff736ca9f599c",
+      "bytes": 82009
+    },
+    {
+      "url": "/audio/reports/cues/nature/charging-waveform.png",
+      "sha256": "ce9faee9a20e4bea5532d6b265dee7617e8ae1fe26fc525e096a55a5dd7c9569",
+      "bytes": 48552
+    },
+    {
+      "url": "/audio/reports/cues/nature/drone-spectrogram.png",
+      "sha256": "c5ee8030ab4b79c5bc263023b46c68b21c263a044686b64990977d267da1a4c7",
+      "bytes": 46572
+    },
+    {
+      "url": "/audio/reports/cues/nature/drone-waveform.png",
+      "sha256": "a8ae4c3b0c5e452e4723d4e215384e2815489870ff553ed90d9455aebe6c07d3",
+      "bytes": 65052
+    },
+    {
+      "url": "/audio/reports/cues/nature/environment-spectrogram.png",
+      "sha256": "2519930a9b850aa4ad782f194bc5cd975b15d10cc1101c050cfe8f65236d6bba",
+      "bytes": 99136
+    },
+    {
+      "url": "/audio/reports/cues/nature/environment-waveform.png",
+      "sha256": "37be1648f2233a451a0308b4478ade130f420c6df21560523b9d72ed579d2f16",
+      "bytes": 52297
+    },
+    {
+      "url": "/audio/reports/cues/nature/impact-spectrogram.png",
+      "sha256": "78f138302c0e5e0baa46bf01047e5ebc836f3ceb0faa0b77225544315b145d1e",
+      "bytes": 140875
+    },
+    {
+      "url": "/audio/reports/cues/nature/impact-waveform.png",
+      "sha256": "8fc0a3edccc27eff75a1e46a4cecb90f0f0970de47222a8a88002aba1e137ecc",
+      "bytes": 29443
+    },
+    {
+      "url": "/audio/reports/cues/nature/material-spectrogram.png",
+      "sha256": "395265d4284e22db0940fad47bce63bf1fcecdfb6d6c5d2a774ef3d2aa380553",
+      "bytes": 70967
+    },
+    {
+      "url": "/audio/reports/cues/nature/material-waveform.png",
+      "sha256": "a15d1d3b2ae45d6b92db77519762a197e659ce9350bcfdb14f3bcb3b8130ee20",
+      "bytes": 48132
+    },
+    {
+      "url": "/audio/reports/cues/nature/motion-spectrogram.png",
+      "sha256": "f91f3d7de307a5e24ac6a44c93c95f481c17efa7eaa39df51f85f40ccd354810",
+      "bytes": 71987
+    },
+    {
+      "url": "/audio/reports/cues/nature/motion-waveform.png",
+      "sha256": "5c3f1ef13a0ec87ad9a53770c1fd0b318ac376e7ee9dcb2d2c9989d1023ca524",
+      "bytes": 34226
+    },
+    {
+      "url": "/audio/reports/cues/nature/precast-spectrogram.png",
+      "sha256": "bc107ad3f962cc667a99c0058954a1512051c9dd7508a7ca982fd9fe9778f1ed",
+      "bytes": 41283
+    },
+    {
+      "url": "/audio/reports/cues/nature/precast-waveform.png",
+      "sha256": "098f5998f8d9482ee83450026d24c1b6bc315f1c9794aa73561c191d82c71de3",
+      "bytes": 39442
+    },
+    {
+      "url": "/audio/reports/cues/nature/riser-spectrogram.png",
+      "sha256": "8469d5edc4dcb547b70146bbf1aa87c9f4ce01fd1f900cce15ec574a55bb8b8c",
+      "bytes": 54506
+    },
+    {
+      "url": "/audio/reports/cues/nature/riser-waveform.png",
+      "sha256": "3fd23d9598db2fbdeb8d9715289325d56a7969959d1fe7872cd69ffb123c7ed1",
+      "bytes": 34172
+    },
+    {
+      "url": "/audio/reports/cues/nature/rune-spectrogram.png",
+      "sha256": "d350a51b662359f23b7704e869133702e25fc026bec4add9025275ed86e3d454",
+      "bytes": 24043
+    },
+    {
+      "url": "/audio/reports/cues/nature/rune-waveform.png",
+      "sha256": "4afe0a7365cd819f3af210b1a25ec85c13084007a0b991a8f7355d03666bd2fc",
+      "bytes": 31209
+    },
+    {
+      "url": "/audio/reports/cues/nature/secondary-spectrogram.png",
+      "sha256": "29d5050ff533b619ee9a857afaed65cce3122f0eface5f137ded8147f47b0ea6",
+      "bytes": 48210
+    },
+    {
+      "url": "/audio/reports/cues/nature/secondary-waveform.png",
+      "sha256": "01169ff0c302cf3061dd06e8e73fa9f15e6f53280a298a2456943199c0213bff",
+      "bytes": 40931
+    },
+    {
+      "url": "/audio/reports/cues/nature/shockwave-spectrogram.png",
+      "sha256": "fcbdee3a227de2cdc262b0337dcb892312a44bd9f34d2e242d7ccfc5c433dcc3",
+      "bytes": 61260
+    },
+    {
+      "url": "/audio/reports/cues/nature/shockwave-waveform.png",
+      "sha256": "dffa4d0214f63f0cc3260250b20b0a9dac6a9c2e0a0307f2df82f643fc317397",
+      "bytes": 35254
+    },
+    {
+      "url": "/audio/reports/cues/nature/traveling-spectrogram.png",
+      "sha256": "b2213682fdf6e5cc7aed12f435d68f427f7e4c3501c7b0735582ff5ca0b4a7fe",
+      "bytes": 84549
+    },
+    {
+      "url": "/audio/reports/cues/nature/traveling-waveform.png",
+      "sha256": "c26455212941917b53905bf714fdcf9ed908302b09197f1f43e215992e603b55",
+      "bytes": 49029
+    },
+    {
+      "url": "/audio/reports/cues/nature/ui-spectrogram.png",
+      "sha256": "9c2f67eda9e118ff9c9d7c462701cefb4a51746cf9fd2513841e68441cc4ddfa",
+      "bytes": 22602
+    },
+    {
+      "url": "/audio/reports/cues/nature/ui-waveform.png",
+      "sha256": "bcf0e64c943ea2d7a5f2d241490f07509907c61998cfb526a60541b9b0c4b39c",
+      "bytes": 25854
+    },
+    {
       "url": "/audio/reports/cues/poison/aftermath-spectrogram.png",
       "sha256": "773d334bec0a6a163b727ad6e63076a4b2b63cca4eef8ffb2f0ddffae1ab269c",
       "bytes": 134786
@@ -5286,156 +5408,6 @@
       "url": "/audio/reports/cues/poison/ui-waveform.png",
       "sha256": "aa526af1438444324a74bcc25d87261d42e68c0fd8151693899ef04eb535b247",
       "bytes": 25955
-    },
-    {
-      "url": "/audio/reports/cues/psychic/aftermath-spectrogram.png",
-      "sha256": "ffa677ab40c6a380329e17302d368018435cfbd61b40a30d5244fb937d05db70",
-      "bytes": 68113
-    },
-    {
-      "url": "/audio/reports/cues/psychic/aftermath-waveform.png",
-      "sha256": "7a769ce7ebe43a60740122ca357b7460b08f0a47022d1faf0b0b0218c7739d1c",
-      "bytes": 27472
-    },
-    {
-      "url": "/audio/reports/cues/psychic/casting-spectrogram.png",
-      "sha256": "c2d623a967a3955f9e12a101061fdebc762cf2990d3338ee1041201bed1a0f36",
-      "bytes": 38241
-    },
-    {
-      "url": "/audio/reports/cues/psychic/casting-waveform.png",
-      "sha256": "28c1dd2c023f615f3fe1377a8e08f02870c1d5a97e993abe47251978d3bc6534",
-      "bytes": 33158
-    },
-    {
-      "url": "/audio/reports/cues/psychic/charging-spectrogram.png",
-      "sha256": "00d6978d66abbad8967b87827a5d2ee1621e20b7403ab7d324ed02ce48b2c2e9",
-      "bytes": 76115
-    },
-    {
-      "url": "/audio/reports/cues/psychic/charging-waveform.png",
-      "sha256": "da9c325f6f9ac1ddbfff9f2bb353d51d9854ed86f9ef563a82f1df42e8f297a0",
-      "bytes": 70048
-    },
-    {
-      "url": "/audio/reports/cues/psychic/drone-spectrogram.png",
-      "sha256": "18a2ae922db7d3a01c628b6d873b9647b02e225b840ec56bbcfc8f4eb28d681e",
-      "bytes": 30016
-    },
-    {
-      "url": "/audio/reports/cues/psychic/drone-waveform.png",
-      "sha256": "769c47ebe2585cb78b0402fc6076afa21faa5e0874e7c1ee5c728ea24ec065ad",
-      "bytes": 75845
-    },
-    {
-      "url": "/audio/reports/cues/psychic/environment-spectrogram.png",
-      "sha256": "e8b0ae5339fa872a8c85d0f578de49bdd7c54e44674123b606519729c92cf4d7",
-      "bytes": 84893
-    },
-    {
-      "url": "/audio/reports/cues/psychic/environment-waveform.png",
-      "sha256": "0718e15b81dd05af6deef5e226d1fe256871dc55002835a354cdfb3bd3183c96",
-      "bytes": 56939
-    },
-    {
-      "url": "/audio/reports/cues/psychic/impact-spectrogram.png",
-      "sha256": "36e5f1661a9fec5faaa9c1c0863bf399c389683a0b7587e1053bee7ff46bc9df",
-      "bytes": 144447
-    },
-    {
-      "url": "/audio/reports/cues/psychic/impact-waveform.png",
-      "sha256": "6e7d91a08d6be97bb59cbe283a0ffecae76f01f29dd0a8429edb6ba2846938ac",
-      "bytes": 27593
-    },
-    {
-      "url": "/audio/reports/cues/psychic/material-spectrogram.png",
-      "sha256": "d22c8da01d7ba465159e696b18d9f56649340dd9ec43d771f197fe81f7d2691a",
-      "bytes": 61993
-    },
-    {
-      "url": "/audio/reports/cues/psychic/material-waveform.png",
-      "sha256": "fdc3cbe1c5bb7418cd74ee8dc7b41ed1f40be5fac20b28b49fe7818a1e6fe06a",
-      "bytes": 59148
-    },
-    {
-      "url": "/audio/reports/cues/psychic/motion-spectrogram.png",
-      "sha256": "2ad83ab97ba8f403ff2326bfe6c81fcffba610866a43749a89d12e6774f8ee3e",
-      "bytes": 64016
-    },
-    {
-      "url": "/audio/reports/cues/psychic/motion-waveform.png",
-      "sha256": "f255c6b1642229242769e14f75e398c6321a6e30b37afa46d7bfc108cc2c3e96",
-      "bytes": 44400
-    },
-    {
-      "url": "/audio/reports/cues/psychic/precast-spectrogram.png",
-      "sha256": "8fcea2d91d6e1378f677c3efd003fdbad901418d925fb8122174870556811704",
-      "bytes": 40096
-    },
-    {
-      "url": "/audio/reports/cues/psychic/precast-waveform.png",
-      "sha256": "a98030f2c57f3bb5b0b136617f3bb4096e243908672ae009d7c4c0fa9ee92aef",
-      "bytes": 47397
-    },
-    {
-      "url": "/audio/reports/cues/psychic/riser-spectrogram.png",
-      "sha256": "8a4d9eb8fff061167b4f140ab5ec0cbb6cba72bf5c77045e56859c80627e6771",
-      "bytes": 49450
-    },
-    {
-      "url": "/audio/reports/cues/psychic/riser-waveform.png",
-      "sha256": "100d8148443a68838dfbf8662dbbec5d64f4ef67c840d754a51a9b734dcc2658",
-      "bytes": 40847
-    },
-    {
-      "url": "/audio/reports/cues/psychic/rune-spectrogram.png",
-      "sha256": "d5d08aac2921da051a46b2ed78ade11290d98a626346290a1426dd2f6d6676b2",
-      "bytes": 23405
-    },
-    {
-      "url": "/audio/reports/cues/psychic/rune-waveform.png",
-      "sha256": "384603a494eb2c2e938a3c1b8814fcb0dd4922f28c09f6267a8274089db67c44",
-      "bytes": 31731
-    },
-    {
-      "url": "/audio/reports/cues/psychic/secondary-spectrogram.png",
-      "sha256": "93c23903d05a7f889a0c5095f3bb4ed1cd6597a90258128c8bd493101639f7c1",
-      "bytes": 45323
-    },
-    {
-      "url": "/audio/reports/cues/psychic/secondary-waveform.png",
-      "sha256": "5b846fe587ccb62134c181e244e5c7c1792cfd9bd4402e4c6a5e3e3cfab3601d",
-      "bytes": 47920
-    },
-    {
-      "url": "/audio/reports/cues/psychic/shockwave-spectrogram.png",
-      "sha256": "ca553f068744e366bc7dda54a8720624c2ba3f43eee1cfd49719a8ad23a54f8e",
-      "bytes": 54468
-    },
-    {
-      "url": "/audio/reports/cues/psychic/shockwave-waveform.png",
-      "sha256": "29e5f8315ed5eb5002778820bc273575b11d476a8cc7daaf4e9b71bddc2c6192",
-      "bytes": 39250
-    },
-    {
-      "url": "/audio/reports/cues/psychic/traveling-spectrogram.png",
-      "sha256": "11694802d2c8e6223624db0a156432b3c7f549148c8a4de0d009b304da4d050d",
-      "bytes": 78254
-    },
-    {
-      "url": "/audio/reports/cues/psychic/traveling-waveform.png",
-      "sha256": "2d66f209b54a07a0431ae3c5998b8327ab29ec7dfe63e35040088cc184ca6f24",
-      "bytes": 69131
-    },
-    {
-      "url": "/audio/reports/cues/psychic/ui-spectrogram.png",
-      "sha256": "7b06ad17f3925310e4bbbe70d6daa46468309b635ad5904c5c1e9a611c834041",
-      "bytes": 22802
-    },
-    {
-      "url": "/audio/reports/cues/psychic/ui-waveform.png",
-      "sha256": "ea97a6f6f98b4f6a63af4243d54cd575f3cad80115f7365ab085ed04a271945f",
-      "bytes": 29197
     },
     {
       "url": "/audio/reports/cues/shadow/aftermath-spectrogram.png",

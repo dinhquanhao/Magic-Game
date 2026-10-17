@@ -4,7 +4,7 @@ Ngày 17/10/2026 (Asia/Bangkok), tiếp nối engine hiện có; không tạo re
 
 | Ưu tiên | Đã có | Điểm yếu quan sát từ code/ảnh | Điểm nền /5 |
 |---|---|---|---:|
-| 1 PBR/texture | PMREM IBL, Standard/Physical, noise, Surface State, vật liệu Nham/Tinh Tú/Tinh Thần | Noise PBR phụ thuộc view position; chưa có thư viện vật liệu/triplanar micro-normal/height-blend/POM | 2 |
+| 1 PBR/texture | PMREM IBL, Standard/Physical, noise, Surface State, vật liệu Nham/Tinh Tú | Noise PBR phụ thuộc view position; chưa có thư viện vật liệu/triplanar micro-normal/height-blend/POM | 2 |
 | 2 GI/bóng | 8 Light Injection ảo, PCFSoft, hemisphere, nền nhận light | Chưa SH grid; GI screen-space chưa có; shadow một frustum | 2 |
 | 3 GPU shader/hạt | Instance attributes và quỹ đạo shader, giới hạn attribute đã sửa | Một vài module còn setMatrixAt CPU, chưa collision heightfield chung | 3 |
 | 4 Volumetric | Screen radial rays trong distortion pass; sương module | Chưa có occlusion-aware density/height atmosphere thống nhất | 2 |
