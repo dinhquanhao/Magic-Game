@@ -72,7 +72,10 @@ def main():
                 metadata['videoAudioTrack']=False
                 if args.audio:
                     page.locator('.audio-options summary').click()
-                    page.locator('#audioToggle').click()
+                    # The first trusted gesture may already unlock current audio.
+                    page.wait_for_function("!document.querySelector('#audioToggle').disabled")
+                    if page.locator('#audioToggle').get_attribute('aria-pressed') != 'true':
+                        page.locator('#audioToggle').click()
                     page.wait_for_function("document.querySelector('#audioToggle').getAttribute('aria-pressed')==='true'")
                     page.wait_for_function("document.querySelector('#audioStatus').textContent.includes('sẵn sàng')")
                     metadata['audioUIEnabled']=True

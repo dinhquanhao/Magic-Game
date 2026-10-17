@@ -1,0 +1,33 @@
+{
+  "commit": "1a6cb41",
+  "label": "resumed-vfx",
+  "utcRecordedAt": "20261017-034111",
+  "production": true,
+  "sourceDirty": true,
+  "interactiveLivePreview": false,
+  "video": "preview.webm",
+  "errors": [],
+  "warnings": [
+    {
+      "type": "warning",
+      "text": "[Arcane VFX] Adaptive quality reduced volumetric; user settings are preserved."
+    }
+  ],
+  "captures": {
+    "water": {
+      "skill": "Hải Thần Lĩnh Vực",
+      "phase": "KHAI TRIỂN",
+      "file": "water.png"
+    },
+    "shadow": {
+      "skill": "Vạn Ảnh Thiên Kiếp",
+      "phase": "KHAI TRIỂN",
+      "file": "shadow.png"
+    }
+  },
+  "elements": 15,
+  "audioUIEnabled": true,
+  "videoAudioTrack": false,
+  "mana": "55 / 100",
+  "result": "passed"
+}

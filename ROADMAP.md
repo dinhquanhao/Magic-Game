@@ -5,6 +5,7 @@ Lộ trình được cập nhật ngày 17/10/2026 (Asia/Bangkok), tiếp nối 
 | Giai đoạn | Phạm vi | Điều kiện hoàn thành | Trạng thái |
 |---|---|---|---|
 | 0 — Nâng cấp cũ | Shader, PBR, post-effects, Bóng Tối, trường gió, lifecycle và D/E trong log cũ | Đối chiếu mã/lịch sử; sửa lỗi shader; kiểm tra 23 skill Low/High, 4 preset hậu kỳ, pause, context recovery, cast lặp; xác nhận chuyển động Nham/Tinh Tú/Tinh Thần; ghi giới hạn đồ họa | Đạt trong phạm vi engine; xem bằng chứng |
+| 0b — Bổ sung AAA 17/10 | Tiếp nối hai module PBR và SH đang dở; shader compile/fallback/quality/lifecycle trước khi mở rộng nhân vật | Tích hợp có ngân sách, ảnh so sánh, kiểm tra shader thực và cleanup; không gọi analytical SH là GI/ray tracing đầy đủ | Đang dở: bloom đã sửa/đo, PBR/probes chưa tích hợp |
 | 1 — 15 hệ | VFX, ánh sáng, particle, AOE, camera và hiệu năng toàn registry | Giữ nguyên ID/tên/thiết kế; bán kính VFX/reticle/va chạm thống nhất; ảnh release/impact/aftermath; không lỗi JS/WebGL/shader trong ma trận; tài nguyên ổn định khi chuyển hệ | Đang thực hiện: shader/AOE đạt, còn thị giác/cân bằng |
 | 2 — Nhân vật | Hoàn thiện pháp sư procedural có sẵn, animation, di chuyển, HP/MP, chiến đấu | Không tạo lại model hiện có; đi/chạy/nhảy/lướt/ngắm/cast hoạt động; HP/MP, trạng thái bị đánh/chết/reset có kiểm thử; đủ 23 skill kết nối | Chưa bắt đầu |
 | 3 — Quái và Boss | Enemy registry, AI, sát thương, animation, Boss nhiều giai đoạn | Vòng AI truy đuổi/báo đòn/đánh/hồi phục; chết/dọn tài nguyên; Boss chuyển pha theo HP; người chơi có thể thắng/thua và chơi lại | Chưa bắt đầu |
@@ -35,3 +36,7 @@ Không coi các ý tưởng chưa triển khai là tính năng đã có. Nội d
 - GĐ2–5 bổ sung âm tương ứng khi gameplay đã có: bước chân/chuyển động, hurt/death, enemy/Boss, UI/combat, vật liệu môi trường, nhạc/trạng thái trận đấu. Chưa đánh dấu các nhóm này hoàn thành chỉ vì có file audio kỹ năng.
 - Duy trì [ASSET_INVENTORY.md](ASSET_INVENTORY.md), [queue task](automation/tasks.json), [prompt tiếp nối](automation/next-round-prompt.md) và [readiness/hướng dẫn điều phối](automation/README.md). Lịch/Codex API trên Actions **chưa kích hoạt**; chỉ chuyển sau xác minh quyền, auth, usage và chi phí.
 - [12 ý tưởng được xếp hạng của vòng mới](docs/ROUND-AUDIO-2026-10-17.md). Ba nhóm chọn: layered audio, icon nguyên tố, template điều phối. Vòng kế ưu tiên contrast/exposure GĐ1; không tự nhảy sang Boss khi điều kiện VFX chưa đạt.
+
+## Bằng chứng tiếp nối
+
+Vòng 17/10 sau dừng: audio pool/Lab và bloom đã lưu kiểm thử; Low23impact, Medium/High/Ultra4ca/preset, production video và6nhóm unit PASS. Chi tiết tại PROGRESS mục mới nhất và docs/DEVELOPMENT-RESUMED-2026-10-17.md. GĐ0 lịch sử đạt trong phạm vi cũ; 0b là mở rộng AAA chưa khép, không viết lại lịch sử như thể đã làm đầy đủ.

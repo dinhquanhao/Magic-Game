@@ -1,5 +1,17 @@
 # Tiến độ Magic-Game
 
+
+## Mới nhất — tiếp nối sau dừng, 17/10/2026
+
+- Đã nhận yêu cầu tiếp tục. Bảo toàn WIP tại ce73729, audio fix tại 1a6cb41 đã push vào Draft PR #1. Không merge main/Production/scheduler/API trả phí.
+- Audio: sửa Low nhận14 active voice thay vì8 trong burst; sau sửa8/8. 23/23 finale/cleanup,4preset,pause/rate/mute/rapid selection đạt. Lượt harness tổng dừng ở lỗi fixture audioLab không expose (giữ FAIL raw); fixture đã sửa và UI Lab riêng PASS nghe mới/A–B/assets/dừng. Xem docs/evidence/audio-v3/summary.json. 833 artifact mirror khớp hash, Lab hiện measurement/PASS/FAIL. 224/225 cue đạt; lightning/impact FAIL sau5vòng; 23 reference mixes đạt. Chưa kiểm chứng bằng tai.
+- VFX: sau3vòng sửa bloom, Low23/23impact PASS; Medium/High/Ultra mỗi preset4ca đại diện PASS, không JS/WebGL/shader errors. Không lẫn pixel UI trong số đo. Hỏa-01 trắng73.28%→14.65%, Ánh Sáng44.56%→3.90%; Thủy khôi phục chi tiết mặt triều. Lôi vẫn flash rộng. Không gọi đây là đánh giá nghệ thuật đầy đủ mọi phase/preset.
+- Production UI chọn/cast/Play/MP/pause và bật audio PASS, không console error; video mới ở docs/evidence/resumed-production. Video không audio track, bản thu Lab riêng tại docs/evidence/audio-v3. Build PASS62modules, unit6nhóm PASS. Còn cảnh báo chunk Three >500kB. Hash registry/plans/START.bat không đổi.
+- Tải ảnh/ZIP so sánh tại docs/PREVIEW.md; báo cáo chi tiết docs/DEVELOPMENT-RESUMED-2026-10-17.md. 12ý tưởng có xếp hạng ở docs/ROUND-RESUME-2026-10-17.md. Không tuyên bố Live Preview tương tác hoạt động.
+- Việc tiếp theo theo ưu tiên: tích hợp/compile PBR procedural và SH probes từ src/graphics/aaa (hiện chưa dùng), kiểm tra seam/normal/interpolation/lifecycle; sau đó flash/aftermath toàn hệ, rồi HP/AI/Boss/world theo roadmap. GĐ1 chưa khép; không tự đánh dấu GĐ2–5 hoàn thành. Nhóm bloom đã hết3vòng, không tiếp tục sửa vô hạn.
+
+Các mục phía dưới là lịch sử; mô tả audio v1/105WAV không còn là trạng thái engine mới.
+
 ## Cập nhật mới nhất — vòng audio/assets 17/10/2026 (Asia/Bangkok)
 
 - Tiếp nối `d433860`, bảo toàn toàn bộ checkpoint cũ trên `codex/magic-game-stability-vfx-20261017` / Draft PR #1. Không merge main, không Production, không bật paid API hoặc scheduler.
@@ -94,3 +106,8 @@
 - 833 WAV/PNG phục vụ Lab khớp hash với nguồn. Thêm audio:render/audio:report/audio:test; report xuất measurement manifest và Lab hiển thị số đo/PASS/FAIL. Không render lại hoặc kéo dài vòng hiệu chỉnh cue: lightning/impact vẫn FAIL sau 5 vòng; 224/225 PASS, 23/23 reference mixes PASS, chưa kiểm chứng bằng tai.
 - Build đạt 61 modules; npm test đạt 6 nhóm gồm score thật 23 skill. Cảnh báo chunk Three >500kB còn nguyên. Asset inventory audio v1 bên dưới và PROGRESS cũ là lịch sử, được thay thế bằng mục này cho audio hiện tại.
 - Các lỗi fixture và thử nghiệm chưa đạt được giữ trong work/audio-resume; historical stage-a/results.json được phục hồi sau khi lưu kết quả rerun fixture cũ riêng.
+
+### Bằng chứng đóng nhóm bloom
+
+- Bộ so sánh docs/evidence/contrast-review.zip (39.6MiB) đã kiểm CRC và đủ23cặp ảnh; index có thanh kéo trước/sau. Video production mới dài89.48giây, không audio track.
+- Planner offline vẫn activated=false; task contrast được đề xuất done trong Draft PR, thêm queue AAA materials/probes và review flash/aftermath. Không kích hoạt readiness hoặc scheduler.

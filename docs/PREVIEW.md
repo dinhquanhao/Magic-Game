@@ -1,5 +1,18 @@
 # Xem code, ảnh và video Magic-Game
 
+## Mới nhất — tiếp nối 17/10/2026
+
+- [Báo cáo mã và kiểm thử mới](DEVELOPMENT-RESUMED-2026-10-17.md).
+- [Video production mới — MP4](evidence/resumed-production/preview.mp4) · [WebM](evidence/resumed-production/preview.webm) · [console/kết quả](evidence/resumed-production/results.json). Video không có audio track.
+- [Tải ZIP so sánh 23 impact](evidence/contrast-review.zip): chọn Download raw file, giải nén, mở contrast/index.html để chọn skill/kéo thanh trước–sau. [Số đo JSON](evidence/contrast/comparison.json).
+- [Audio Lab mới](evidence/audio-v3/audio-lab.png) · [bản thu browser ngắn](evidence/audio-v3/browser-audio.webm) · [bằng chứng và ngoại lệ fixture](evidence/audio-v3/summary.json).
+- Các tài liệu/asset mới đã lưu cùng nhánh PR. Không gọi video/screenshot là Live Preview; remote tương tác vẫn chưa được xác nhận. Server dev kiểm thử cục bộ dùng npm run dev:test, Audio Lab ?audiolab=1.
+
+| Thủy trước | Thủy sau |
+|---|---|
+| ![Thủy trước sửa](evidence/contrast/before/WATER-01-impact.png) | ![Thủy sau sửa](evidence/contrast/after/WATER-01-impact.png) |
+
+
 ## Code đã lưu
 
 - [Draft PR #1](https://github.com/dinhquanhao/Magic-Game/pull/1)
