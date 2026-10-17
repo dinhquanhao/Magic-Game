@@ -3,7 +3,7 @@
 - [Draft PR #1 và từng file code](https://github.com/dinhquanhao/Magic-Game/pull/1/files).
 - [Báo cáo và tiến độ Thảo](../THAO_PROGRESS.md).
 - [Ảnh bốn giai đoạn và kết quả kiểm thử](evidence/thao/index.html). GitHub không chạy HTML; tải source/ZIP rồi mở file này để xem báo cáo.
-- [ZIP game/source — Arcane-VFX-Studio-Thao-Update.zip](releases/Arcane-VFX-Studio-Thao-Update.zip). Trên GitHub chọn **Download raw file**. Xem THAO_PROGRESS để biết trạng thái đóng gói và kiểm thử; liên kết này chỉ được bàn giao sau khi ZIP thật đã được tạo.
+- [ZIP game/source — Arcane-VFX-Studio-Thao-Update.zip](releases/Arcane-VFX-Studio-Thao-Update.zip). Trên GitHub chọn **Download raw file**. ZIP thật đã được tạo; SHA256, kích thước và commit source nằm trong [metadata gói](releases/thao-package.json).
 
 ## Trên Windows
 

@@ -43,6 +43,13 @@ export function createGraphicsUpgrade(THREE, renderer, scene, ground, composer, 
     room.dispose();
   }
   restoreEnvironment();
+  function contextLost() {
+    // Clear listeners while GL is lost. A dispose after restoration would try
+    // deleting framebuffer/texture handles belonging to the former context.
+    environmentTarget?.dispose();
+    environmentTarget = null;
+    scene.environment = null;
+  }
 
   const groundUniforms = {
     uArcTime: { value: 0 },
@@ -456,7 +463,7 @@ reflectedLight.indirectDiffuse += diffuseColor.rgb * min(arcInjectedObjectLight,
       post: postEffects.getStatus(), fields: fields.getStatus(), grass: windGrass.getStatus(), particleWind: particleWind.getStatus(), trackedMaterials: enhancedMaterialList.size, estimatedRenderTargetBytes: postEffects.estimateTargetBytes(), surfaceNature:groundUniforms.uSurfaceNature.value
     };
   }
-  function dispose() { composer.removePass(outputPass); outputPass.dispose(); postEffects.dispose(); windGrass.dispose(); fields.dispose(); environmentTarget.dispose(); }
+  function dispose() { composer.removePass(outputPass); outputPass.dispose(); postEffects.dispose(); windGrass.dispose(); fields.dispose(); environmentTarget?.dispose(); }
 
-  return { applyQuality, setFeature, getFeatures, getEffectiveFeatures, getDiagnostics, getWindUniform: () => fields.getUniforms().uArcWind, setLightSources, reportFrame, degradeOneFeature, reduceHeavyFeatures, enhanceSurfaces, update, updateSurface, resetSurface, resize, dispose, restoreEnvironment, get environmentTarget() { return environmentTarget; } };
+  return { applyQuality, setFeature, getFeatures, getEffectiveFeatures, getDiagnostics, getWindUniform: () => fields.getUniforms().uArcWind, setLightSources, reportFrame, degradeOneFeature, reduceHeavyFeatures, enhanceSurfaces, update, updateSurface, resetSurface, resize, dispose, contextLost, restoreEnvironment, get environmentTarget() { return environmentTarget; } };
 }

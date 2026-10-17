@@ -33,3 +33,9 @@ Kiểm thử browser dùng Chromium hệ thống nếu có, hoặc browser của
 - Đầu mỗi vòng: xếp hạng ít nhất 10 ý tưởng theo giá trị/khó/rủi ro/test, chọn tối đa 3. Ghi task/acceptance và bằng chứng đã chạy, phần chưa làm, bước tiếp trong PROGRESS và inventory.
 - automation/templates là cấu hình chưa kích hoạt. Không bật readiness, cài workflow, lịch, tạo key hoặc gọi API trả phí trước khi quyền/auth/hạn mức/chi phí được xác minh và người dùng chấp thuận. Không tự sửa các gate này trong task do scheduler giao.
 - Kiểm tra claim trong automation/tasks.json và marker open PR; không sửa trùng task/nhánh đang có người khác làm. Workflow dùng concurrency group chung, không thay thế khóa giữa các tác vụ thủ công.
+
+## Yêu cầu đồ họa bổ sung 17/10
+
+Ưu tiên nghiệm thu trình tự rune→COMMIT→skill và fade1.8giây toàn21skill trước nền đồ họa chung/từng hệ. Giữ các tham số/cinematic nội bộ; chỉ thay gate và thời điểm bắt đầu. UPGRADE_PROGRESS ghi audit trước sửa và bằng chứng từng giai đoạn. Mỗi nhóm tối đa3vòng sửa/kiểm thử, lưu checkpoint/PR nếu gần giới hạn tài nguyên.
+
+Cập nhật sau cùng: theo tài liệu11lớp mới nhất, GĐ1 nền tảng chung trước GĐ2 rune; giữ bản khảo sát/gate đã soạn, chỉ chuyển giai đoạn khi đủ kiểm thử. Không bỏ một trong15hệ/21skill khi lập ma trận.

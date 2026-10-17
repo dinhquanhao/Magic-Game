@@ -1,0 +1,24 @@
+
+> arcane-vfx-studio@2.0.0 test
+> node --test tests/*.test.js
+
+✔ tests/audio-assets.test.js (111.006874ms)
+✔ tests/audio-limiter.test.js (84.342683ms)
+✔ tests/audio-score.test.js (98.988899ms)
+✔ tests/autonomy.test.js (33.799851ms)
+✔ six forest templates have finite, bounded, valid indices at every detail level (19.023866ms)
+✔ nearest targets are throttled; all four real hits occur and retarget after movement (13.534037ms)
+✔ every quality has bounded GPU batches, no per-tree Mesh, and disposable instance buffers (14.085662ms)
+✔ invalid time cleans target effects; pending shader warm-up cancels safely on rapid replacement (47.802943ms)
+✔ releasing a cast disposes shared resources once and every instance buffer (2.345127ms)
+✔ AOE uses a linear meter scale rather than applying the ratio twice (0.737859ms)
+✔ water respects its world-unit cap and invalid settings fall back safely (0.148543ms)
+✔ tests/windows-launcher.test.js (34.890087ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 660.434044

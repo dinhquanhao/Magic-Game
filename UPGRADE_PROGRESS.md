@@ -1,3 +1,38 @@
+## Bản bàn giao đang chốt — Thảo
+
+Tệp người dùng gửi sau cùng nhắc lại thay hệ cuối bằng Thảo và giữ các hệ còn lại. Bản runtime hiện tại tập trung hoàn tất Thảo; các mở rộng11lớp và gate đã soạn được lưu tại docs/drafts/graphics, chưa import/chưa nghiệm thu. Mọi kế hoạch đồ họa bên dưới tiếp tục được giữ, không gọi là đã triển khai. Tập trung đóng ZIP Thảo và xử lý cảnh báo context cleanup có bằng chứng.
+
+## Cập nhật ưu tiên mới nhất (hai tài liệu bổ sung)
+
+Tài liệu cuối mở ma trận lên **11 lớp / mọi skill** và đổi thứ tự thành: GĐ1 nền tảng chung → GĐ2 trình tự rune/commit/fade → GĐ3 từng hệ → giao thoa/độ bền/bàn giao. Quy định này thay thứ tự rune-trước ở mục khảo sát bên dưới. Khảo sát đã làm và module gate đang soạn được giữ an toàn, chưa tích hợp vào runtime và chưa gọi là nghiệm thu. Không đổi21skill/15hệ hiện tại.
+
+11lớp: hình khối; PBR/shader; particles; vật lý; ánh sáng/bóng; môi trường; thứ cấp/decal; hậu kỳ; cinematic; rune; audio. Mọi lớp có cột có/thiếu/bằng chứng trong ma trận sắp kiểm kê. Nền tảng hiện có nhiều xấp xỉ; không đồng nhất “có checkbox” với hoàn thành raymarch/PCSS/GPU height field.
+
+# Trạng thái mới nhất — đồ họa và trình tự rune, 17/10/2026
+
+Registry hiện tại: **15 hệ / 21 skill**, kế thừa checkpoint Thảo fad20b0 đã push. Các số23 trong nhật ký phía dưới là số tại thời điểm lịch sử, không phải registry hiện hành. Giữ mọi ID/tên/cấu hình/cinematic của21skill này. Yêu cầu mới ưu tiên Giai đoạn1 trình tự rune, nghiệm thu toàn registry trước khi mở Giai đoạn2 đồ họa chung và từng hệ. Không dựng lại dự án, không renderer/RAF thứ hai, không merge main.
+
+## Khảo sát timeline trước sửa theo yêu cầu mới
+
+- Khởi tạo ở castUnsafe: root cơ sở ẩn; Rune Tower dựng bằng nhiều Line/Mesh/Points; transfer rune riêng; PointLight skill; makeUltimateAttack dựng group hiệu ứng dưới effect. Một số factory tự đặt group ẩn, nhiều module riêng để group hiện ngay trong init. Thảo còn gọi updateCast nên vòng/pollen riêng có thể hiện trước release.
+- `charging`: elapsed/(castTime×pace/runeDrawSpeed), Rune Tower vẽ tới100%; attack.updateCast có thể hoạt động; đèn skill tăng2→10. `channeling`: thêm .58+.26×pace giây, Rune Transfer hội tụ; skill light tăng9→24. Sau đó phase=active, activeTime=0 và root xuất hiện. Không có một gate chung chặn mọi mesh/emitter/uniform của các factory.
+- `active`: attack.update(activeTime), cinematic vẫn tính theo activeTime; Tower update dùng runeTower.fadeAt/fadeDuration/timelineEnd của từng skill nên có thể tồn tại tới impact/aftermath. Group vẫn giữ geometry cho tới khi cast kết thúc. Có fade opacity/scale theo tier nhưng chưa có hợp đồng fade chung1.2–2.5giây tại commit và dispose sớm.
+- Sơ đồ trước: bấm cast → charging (Rune0→100%, vài module skill/đèn đã hiện) → channeling (Rune100% + transfer, skill light) → activeTime0 (root/attack) → fade Tower muộn theo từng plan → kết thúc/dispose toàn cast.
+- Rune Tower luôn có cho21skill. Tái sử dụng cơ chế layerCount/ringsPerLayer/profile/update/release; thêm ground overlay subdivided và wrapper fade, không đổi registry/profile/plan cũ. Snapshot source audit và src trước sửa lưu ngoài repo để đối chiếu.
+
+## Kế hoạch nghiệm thu mới
+
+1. Gate chung trước COMMIT: toàn bộ visual group của skill ẩn, chưa update attack, skill light/wind/surface/post tắt; chỉ rune/transfer và cue rune. Vẽ Rune0→90% ở charging,90→100% ở channeling; tổng thời gian chuẩn bị cũ giữ nguyên. COMMIT trùng100% và activeTime0.
+2. RELEASE: fade mặc định1.8giây skill time, emissive giảm trước, radial noise dissolve ngoài→trong, tier tắt so le, rune dust/ground light về0, dispose sớm Tower/transfer/overlay. ACTIVE giữ nhịp/cinematic nội bộ.
+3. Kiểm thử toàn21skill ở trước/commit/giữa fade/hết fade/impact/aftermath; pause/replay/reset/rapid select, giữ heap/GPU resources ổn định. Đạt Giai đoạn1 mới chuyển nền đồ họa chung.
+4. Phạm vi Giai đoạn2–3 gồm A1–A18 và5lớp mọi hệ theo thứ tự mới; các tính năng hiện có phải được audit/chạy thật, không gọi stub/chưa tích hợp là hoàn thành. FPS GPU thật cần phần cứng phù hợp; SwiftShader/CPU submission không phải bằng chứng FPS native.
+
+## Trạng thái hiện tại
+
+Khảo sát đã ghi trước sửa. Chưa triển khai gate/fade mới, chưa nghiệm thu Giai đoạn1 mới. Bằng chứng Thảo trước yêu cầu mới đang được lưu/đóng gói riêng; không dùng nó thay cho kết quả gate mới.
+
+---
+
 # Tiến độ nâng cấp Arcane VFX Studio
 
 ## Phạm vi và quy tắc

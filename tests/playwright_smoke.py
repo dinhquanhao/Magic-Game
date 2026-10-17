@@ -46,7 +46,7 @@ window.__magicQA={
  snapshot(){
   const gl=renderer.getContext();const badTransforms=[];scene.traverse(o=>{if(![...o.position,...o.scale,...o.quaternion].every(Number.isFinite))badTransforms.push(o.name||o.type);});
   return {skill:skillDefs[spell].id,active:!!effect,phase:effect?.userData.phase,time:effect?.userData.activeTime,
-   areaRadius:effect?.userData.areaRadius,vfxRadius:effect?.userData.attack?.radius,previewRadius:targetReticle.scale.x,camera:camera.position.toArray(),environmentId:graphics.environmentTarget.texture.uuid,status:document.querySelector('#status').textContent,mana,playMode,paused:config.paused,contextLost:webglContextLost,
+   areaRadius:effect?.userData.areaRadius,vfxRadius:effect?.userData.attack?.radius,previewRadius:targetReticle.scale.x,camera:camera.position.toArray(),environmentId:graphics.environmentTarget?.texture.uuid??null,status:document.querySelector('#status').textContent,mana,playMode,paused:config.paused,contextLost:webglContextLost,
    density:config.density,debrisDensity:config.debrisDensity,runtimeDensityScale,effectiveDensity:vfxConfig.density,
    render:{...renderer.info.render},memory:{...renderer.info.memory},badTransforms,
    badPrograms:renderer.info.programs.filter(p=>p.diagnostics?.runnable===false).length,glError:gl.getError(),

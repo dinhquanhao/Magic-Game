@@ -1,3 +1,13 @@
+# Mốc mới nhất — Thảo, 17/10/2026
+
+- Thảo NATURE-01 thay3slot cuối bằng1skill thật, tổng15hệ/21skill. Checkpointfad20b0 đã push; bản chốt thêm evidence/video/ZIP và sửa PMREM context cleanup. Không merge main.
+- 6variant cây GPU,4kiểu tấn công nhắm dummy, mặt nền/gió/đèn/bind phục hồi;4preset PASS,10castLow giữ24geometry/14texture;21Low+21High regression PASS; production UI riêng PASS; audio thực PASS;12unit và build64module PASS. Các số đo thuộc môi trườngSwiftShader, không phải FPSGPU native.
+- Sau sửa,3context recovery PASS0error/0warning. [Báo cáo Thảo](THAO_PROGRESS.md), [ảnh/video/kiểm thử](docs/evidence/thao/index.html), [xem/chạy game](docs/PREVIEW.md). ZIP được kiểm CRC/no-node_modules/launcher; SHA và commit nguồn ở docs/releases/thao-package.json.
+- Chưa xác minh Live Preview từ xa. START.bat chưa chạy Windows thật; audio chưa kiểm chứng bằng tai.
+- Các yêu cầu11lớp/gate được bảo toàn trong UPGRADE_PROGRESS.md và docs/drafts/graphics; chưa tích hợp/chưa đánh dấu hoàn tất. Tệp yêu cầu sau cùng nhắc lại phạm vi Thảo/giữ các hệ khác; bản bàn giao runtime này giữ20skill còn lại.
+
+---
+
 # Tiến độ Magic-Game
 
 

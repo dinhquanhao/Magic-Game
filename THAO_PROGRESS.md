@@ -40,4 +40,45 @@ Khảo sát: đạt. Gỡ hệ cũ: đang thực hiện. Module/asset/tích hợ
 
 ### Bốn preset đã đạt
 
-Low/Medium/High/Ultra đều PASS bốn mốc, bốn loại hit, Pause/Resume, shader/WebGL và phục hồi nền chính xác từng pixel. Geometry/texture sau10cast Low ổn định; các preset khác được kiểm tra lifecycle một cast, chưa gọi là10cast trên cả bốn. Có số đo render đồng bộ bằng gl.finish ở trạng thái cao trào trong SwiftShader, lưu docs/evidence/thao/presets.json; đây không phải FPS GPU thật hay benchmark toàn gameplay. Full-registry smoke và video đang chạy.
+Low/Medium/High/Ultra đều PASS bốn mốc, bốn loại hit, Pause/Resume, shader/WebGL và phục hồi nền chính xác từng pixel. Geometry/texture sau10cast Low ổn định; các preset khác được kiểm tra lifecycle một cast, chưa gọi là10cast trên cả bốn. Có số đo CPU gửi lệnh render (gl.finish của WebGL không bảo đảm đồng bộ GPU), ở trạng thái cao trào trong SwiftShader, lưu docs/evidence/thao/presets.json; đây không phải FPS GPU thật hay benchmark toàn gameplay. Full-registry smoke và video đang chạy.
+
+## Checkpoint Thảo đã lưu
+
+- fad20b0 đã push vào nhánh Draft PR#1. Full-registry smoke đạt21Low +21High,0page/console error;1warning watchdog được test cố ý và3warning WebGL INVALID_OPERATION khi xóa tài nguyên context cũ. Lỗi lifecycle này được chuyển sang GĐnền tảng mới, chưa gọi là sạch warning. Thử context lost/restored và10cast chung đạt.
+- Video171canvasframe/21.375giây đã encodeMP4 ở8fps quy định, không audio, không phải đoFPS thời gian thực. Có ảnh cận rễ/gai và cành/quả. Audio WebAudio thực material/impact/stop PASS,0error.
+- npm ci sạch từ cache PASS (15package); npm test12test PASS; build64module PASS; vẫn có cảnh báo chunk Three535.18kB. Lượt thử npmci không-cache và Chromium không cấp quyền trước đó thất bại vì môi trường; đã khôi phục đầy đủ dependency, không mất source/dist.
+- Production UI lượt riêng PASS: chọn slot cuối/một skill, cast tới impact, Play/MP/Pause, không test globals và0error. Lượt đầu timeout do tranh tài nguyên SwiftShader với video được giữ raw, không bỏ bằng chứng lỗi.
+- Yêu cầu mới mở sang11lớp và trình tự rune cho toàn21skill; bằng chứng Thảo cũ này không nghiệm thu các thay đổi mới. Chuyển tiếp theo UPGRADE_PROGRESS.md, giữ checkpoint và ảnh/video.
+
+## Kết quả chốt Thảo
+
+- Giữ runtime21skill/15hệ;20skill khác,14element và toàn bộ cinematic/config giữ nguyên theo snapshot. START.bat giữ nguyên byte. Đã dọn thêm nhánh gate rỗng/array portal không còn ai đăng ký sau khi gỡ hệ cuối.
+- Sửa cảnh báo PMREM context cleanup: giải phóng target/listener khi GL đang lost, dựng PMREM mới sau restored. Kiểm thử tập trung3chu kỳ trên Thảo đang active: PASS,0error/0warning và environment texture được tạo lại mỗi lần. Raw warning cũ và lỗi fixture đọc target-null vẫn giữ ngoài cây bàn giao; snapshot fixture nay chấp nhận targetnull trong lúc lost.
+- Bản nghe/cận cảnh đã xem: rễ chạy về chân dummy, gai gỗ trồi tại mục tiêu, quả bay và lá rơi thấy được; ảnh bốnphase đã kiểm chứng bằng mắt. Video là mẫu mô phỏng cố định, không audio và không benchmarkGPU.
+- ZIP thật đã tạo và kiểm CRC/launcher/no-node_modules; đang cập nhật sang commit source cuối. Chi tiết SHA/size/sourceCommit được xuất trong docs/releases/thao-package.json.
+- Hạn chế: chưa đo FPS trên GPU người chơi; CPU submission/SwiftShader không chứng minh hiệu năng native. Chưa chạy START.bat trên Windows thật; chưa kiểm chứng âm thanh bằng tai; chưa có AI/HP quái mới. Lá/bark/SSS/bóng tán là xấp xỉ vật liệu/ánh sáng, không ray tracing. Chưa chứng nhận mọi góc camera/tất cả thiết bị.
+
+### File chính sửa/tạo/xóa
+
+Tạo src/nature-geometry.js và nature-growth.js; SVG lá và audioNature; tests/nature.test.js, thao_browser.py, thao_record.py, thao_production.py, context_lifecycle.py; scripts/audit_nature.py; báo cáo/ảnh/video trong docs/evidence/thao. Sửa main.js, playable.js, graphics-upgrade.js, graphics/core/element-materials.js, wind-grass.js, audio registry/synthesis/score/calibration, generators và tài liệu. Xóa141file riêng/record của hệ bị thay (theo diff checkpoint), nhánh hình học/update/icon/audio cũ; lọc JSON thay vì đổi nhãn bằng chứng. Các ZIP tổng hợp cũ chứa nội dung đã gỡ được thay bằng evidence hiện hành; Git history không rewrite.
+
+### Việc sau bản bàn giao
+
+Phạm vi11lớp đồ họa và rune gate được ghi trong UPGRADE_PROGRESS.md; bản soạn2module ở docs/drafts/graphics chưa import/chưa nghiệm thu. Ưu tiên tiếp theo: kiểm kê nền tảng chung với ngân sách thật → hoàn thiện gate/fade mọi skill → nâng từng hệ theo thứ tự đã yêu cầu. Giữ15hệ/21skill và các mốc cinematic hiện tại. Không gọi các draft là tính năng đang hoạt động.
+
+## 10 ý tưởng cho vòng tiếp theo
+
+| Ưu tiên | Ý tưởng | Giá trị / khó / rủi ro | Bằng chứng cần có |
+|---:|---|---|---|
+| 1 | Benchmark GPU thật và LOD cây theo khoảng cách | Cao / vừa / thấp | Frame time, GPU timer và ảnh4preset |
+| 2 | Hoàn thiện BRDF/IBL cho bark và lá, giữ palette rừng | Cao / cao / vừa | So sánh nhiều hướng sáng/camera, shader trên GPU yếu |
+| 3 | Gate COMMIT/fade dùng chung cho21skill | Cao / vừa / vừa | Mọi hệ trước/đúng/saucommit, pause và cleanup |
+| 4 | Va chạm height-field cho quả/lá với nền | Cao / cao / vừa | Nảy/trượt/dừng,10cast không tăng tài nguyên |
+| 5 | Tối ưu tán lá theo screen coverage và mip/alpha | Cao / vừa / vừa | Silhouette/canopy ở xa, giảm overdraw |
+| 6 | Bóng tán theo hướng đèn và phong hóa vỏ cây | Vừa / vừa / thấp | Contact/đổ bóng ở nhiều góc, reset sạch |
+| 7 | Nối trói/đòn cây vào HP và enemy AI tương lai | Cao / cao / cao | Targeting, sát thương, trói hết hạn, chết/reset |
+| 8 | Mảnh gỗ theo hướng cú quất và dấu va chạm pool | Vừa / vừa / thấp | Đòn đúng mục tiêu và budget ổn định |
+| 9 | Thu/mux WebAudio theo timestamp với video | Vừa / vừa / thấp | Âm–hình/hit-stop đồng bộ, không gán WAV tham chiếu thành browser recording |
+| 10 | Xác minh preview riêng qua quyền Vercel hợp lệ | Cao / vừa / phụ thuộc quyền | Browser của đúng deployment/commit, giữ protection |
+
+Ba nhóm đã chọn và làm trong lượt Thảo: hình học/vật liệu/chuyển độngGPU; bốn đòn nhắm mục tiêu và phục hồi; tích hợp UI/audio cùng hệ thống bằng chứng. Bảng trên là backlog, không phải tính năng đã hoàn thành.

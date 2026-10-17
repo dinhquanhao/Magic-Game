@@ -1,0 +1,28 @@
+{
+  "element": "NATURE",
+  "earVerified": false,
+  "material": {
+    "peak": 0.06962187588214874,
+    "rms": 0.03479629192334482,
+    "limiter": "lookahead-brickwall",
+    "limiterReductionDb": 0,
+    "liveSources": 1,
+    "pooledNodes": 231,
+    "decodedBytes": 2420160,
+    "baseLatency": 0.01,
+    "outputLatency": 0.032
+  },
+  "impact": {
+    "peak": 0.12051056325435638,
+    "rms": 0.04746842487403257,
+    "limiter": "lookahead-brickwall",
+    "limiterReductionDb": 0,
+    "liveSources": 1,
+    "pooledNodes": 231,
+    "decodedBytes": 2420160,
+    "baseLatency": 0.01,
+    "outputLatency": 0.032
+  },
+  "passed": true,
+  "errors": []
+}

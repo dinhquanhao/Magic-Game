@@ -1,0 +1,49 @@
+{
+  "systems": 15,
+  "skills": 21,
+  "unitTests": 12,
+  "unitFailures": 0,
+  "buildModules": 64,
+  "buildPassed": true,
+  "buildWarning": "Three core bundle 535.18kB exceeds 500kB recommendation",
+  "presetsPassed": [
+    "Low",
+    "Medium",
+    "High",
+    "Ultra"
+  ],
+  "registryLowSkillsPassed": 21,
+  "registryHighSkillsPassed": 21,
+  "repeatedNatureCasts": 10,
+  "postCleanupGeometryCount": 24,
+  "postCleanupTextureCount": 14,
+  "contextRecoveryAfterFix": {
+    "cycles": 3,
+    "errors": 0,
+    "warnings": 0
+  },
+  "historicalContextWarningsPreserved": 3,
+  "productionUiWithoutHooksPassed": true,
+  "natureWebAudioPassed": true,
+  "artisticAudioVerified": false,
+  "nativeWindowsTested": false,
+  "nativeGpuFps": null,
+  "video": {
+    "frames": 171,
+    "prescribedPlaybackFps": 8,
+    "durationSeconds": 21.375,
+    "audioTrack": false,
+    "realTimeFpsBenchmark": false
+  },
+  "broaderGraphicsRequestComplete": false,
+  "sourceSha256": {
+    "src/main.js": "286f14f7f0b1507588e7684c091309385ca3ac6b5ce54521bc359ecd1774276b",
+    "src/nature-geometry.js": "7bae5fbab1b19308d4cc35bc167e4b57686e5982c90d9ac5eb59ab1b3f5e37b4",
+    "src/nature-growth.js": "5957785fe6274bdf56a5fa785bd64869727924e9e71b5389cbd78ca249a0ee94",
+    "src/playable.js": "0b396ffee32d4b9fcc5db59a529a592300d3c02bcc8d35beed6f8df321ef94b8",
+    "src/graphics-upgrade.js": "09320296c7672274ff72ede72cd54eff3a7d89372536b31a6cb6c53d3796efd0",
+    "src/graphics/core/wind-grass.js": "a262809f400bcc347b836b9dbb8f00531151f49f4d754966d71e9d0676374576",
+    "START.bat": "67f2f70c870abd45d2604f1b20ddbf506907d6913cbf9a1598162f04cf159f72",
+    "package-lock.json": "80dff64f4b23b67f7736ffb0a920aa88bf7303a8c4615f1e50b7ea83ae72227d"
+  }
+}
