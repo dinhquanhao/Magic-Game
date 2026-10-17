@@ -7,13 +7,13 @@ Lộ trình được cập nhật ngày 17/10/2026 (Asia/Bangkok), tiếp nối 
 | 0 — Nâng cấp cũ | Shader, PBR, post-effects, Bóng Tối, trường gió, lifecycle và D/E trong log cũ | Đối chiếu mã/lịch sử; sửa lỗi shader; kiểm tra 19 skill Low/High, 4 preset hậu kỳ, pause, context recovery, cast lặp; xác nhận chuyển động Nham/Tinh Tú; ghi giới hạn đồ họa | Đạt trong phạm vi engine; xem bằng chứng |
 | 0b — Bổ sung AAA 17/10 | Tiếp nối hai module PBR và SH đang dở; shader compile/fallback/quality/lifecycle trước khi mở rộng nhân vật | Tích hợp có ngân sách, ảnh so sánh, kiểm tra shader thực và cleanup; không gọi analytical SH là GI/ray tracing đầy đủ | Đang dở: bloom đã sửa/đo, PBR/probes chưa tích hợp |
 | 1 — 15 hệ | VFX, ánh sáng, particle, AOE, camera và hiệu năng toàn registry | Giữ nguyên ID/tên/thiết kế; bán kính VFX/reticle/va chạm thống nhất; ảnh release/impact/aftermath; không lỗi JS/WebGL/shader trong ma trận; tài nguyên ổn định khi chuyển hệ | Đang thực hiện: shader/AOE đạt, còn thị giác/cân bằng |
-| 2 — Nhân vật | Cyber Bot tải lên theo yêu cầu, animation, di chuyển, HP/MP, chiến đấu | Model theo ZIP người dùng được tích hợp; đi/chạy/nhảy/lướt/ngắm/cast hoạt động; HP/MP, trạng thái bị đánh/chết/reset có kiểm thử; đủ 19 skill kết nối | Model/tư thế/timing đã kiểm thử; HP/hurt/death chưa làm |
+| 2 — Nhân vật | Cyber Bot tải lên theo yêu cầu, animation, di chuyển, HP/MP, chiến đấu | Model theo ZIP người dùng được tích hợp; đi/chạy/nhảy/lướt/ngắm/cast hoạt động; HP/MP, trạng thái bị đánh/chết/reset có kiểm thử; đủ 19 skill kết nối | Model/tư thế/timing đã kiểm thử;4view camera đã kiểm chứng; HP/hurt/death chưa làm |
 | 3 — Quái và Boss | Enemy registry, AI, sát thương, animation, Boss nhiều giai đoạn | Vòng AI truy đuổi/báo đòn/đánh/hồi phục; chết/dọn tài nguyên; Boss chuyển pha theo HP; người chơi có thể thắng/thua và chơi lại | Chưa bắt đầu |
 | 4 — Assets và cảnh | Địa hình, rừng/núi, công trình, nước/thời tiết/ánh sáng | Cảnh có chủ đề, đường đi và vùng chiến đấu rõ; collision phù hợp; culling/instancing và preset được kiểm tra; không che reticle/UI | Chưa bắt đầu |
 | 5 — Gameplay | Khám phá, gặp địch, tiến trình, Boss và vòng chơi hoàn chỉnh | Có bắt đầu, mục tiêu, tiến trình, thắng/thua/restart; combat và khám phá liên tục; tài nguyên/HP/MP hợp lý; smoke test trọn vòng | Chưa bắt đầu |
 | 6 — Cải tiến | Đánh giá, sửa lỗi, đo và backlog | Chạy kiểm thử tích hợp; báo cáo thực tế, giới hạn và 10 ý tưởng ưu tiên; checkpoint/PR, không auto-merge | Thực hiện ở mỗi mốc bàn giao |
 
-Ưu tiên theo yêu cầu mới: thay model bằng Cyber Bot trong ZIP, đứng yên/giơ hai tay, rune mặc định10s và active19skill dài2×; giữ fade1,8s simulation. Các nhóm phù văn/thu gọn Hỏa/Thảo/nền đất đã lưu checkpoint; không tự mở các draft gate/AAA/HP/Boss khác trong nhóm này.
+Ưu tiên theo yêu cầu18/10:4view camera3/4,LoL tự do,thứ nhất,orbit360, giữ camera/actor độc lập và kiểm chứng input/aim/cast. Bot đứng yên/giơ hai tay, rune10s/active0,5×/fade1,8s đã bàn giao, tiếp tục bảo toàn. Các nhóm phù văn/thu gọn Hỏa/Thảo/nền đất đã lưu checkpoint; không tự mở các draft gate/AAA/HP/Boss khác trong nhóm này.
 
 ## 10 ý tưởng của lượt hiện tại
 

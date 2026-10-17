@@ -1,0 +1,21 @@
+{
+  "baseline": "c0e5dd2a0eaf89349476bbca2789d7d8216961f4",
+  "unchangedFiles": 983,
+  "unchangedMainBlocks": {
+    "registry": "da1942cb16892841dc7bd616cd8d58a5e6d291d7017de5a5d899e77e009210f5",
+    "cinematic": "80df519dea62add7d382b37357bab7aa2ee91a530949274d9ca8b813aa76d5ee",
+    "runeProfiles": "a6800b604e39e2f42ae8bc89853975c91cd48a0bbd0fdab9d864fbf5a3dcce91",
+    "castConstruction": "968d0548f2aefd0db091a7185f98eb99ddf3957c397445bc58a36ecd93916029",
+    "castPhases": "ff04a7887ef836c69a29fa165278c8091b2504b0a469acdb7c8679a179115ec2",
+    "brownGround": "ce94803daa7722db360c97ab2c89eade2fdd1e58b7564b52c55aef483cb3fc02"
+  },
+  "registry": "15 elements / 19 skills",
+  "unchangedTimingFiles": {
+    "src/cast-timing.js": "2db5eef23fefdb2e5395a77da533cf86dfb7c7c683531835a8dc9cea2da73173",
+    "src/cast-feedback.js": "0f413b44cdf7117ef2fb447b4ce26ed2123dbbd49d208d859dee0aa9fbec6cfd",
+    "src/rune-fade.js": "93948562713c2c02652f62dacafd38392834091dce2384409c8331ce6c872409",
+    "src/character-model.js": "e934c84da362cf48c15f47ee5d16dc69621ebfb2b1e0079a1895e650a29fdcc2"
+  },
+  "launcherSha256": "67f2f70c870abd45d2604f1b20ddbf506907d6913cbf9a1598162f04cf159f72",
+  "scope": "Only camera state/input/view UI, camera-relative movement/aim signs, paused observation, model visibility in FP and the camera module; skill authoring,10s ritual/0.5x active/1.8s fade, bot geometry/materials,MP/cooldown,audio and brown ground preserved."
+}

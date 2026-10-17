@@ -1,5 +1,7 @@
 # Magic-Game — nguyên tắc phát triển
 
+- Yêu cầu camera18/10: thêm3/4 (mặc định),LoL tự do,thứ nhất vàorbit360, giữTheoSau. Camera yaw/pitch/pan độc lập actor; WASD theo hướng nhìn, giữ khóa vị trí/hai tay khi cast. LoL pan mép/chuột giữa, C về nhân vật, Y follow, V chuyển view; ray trỏ chuột3/4/LoL. First person ẩn thân chống che mắt. Camera quan sát được khi pause nhưng đồng hồ/pose VFX phải đứng yên. Không đổi19skill/model/timing/audio/nền; không mở HP/Boss/AAA khác.
+
 - Ngoại lệ mới nhất theo yêu cầu người dùng17/10: thay model bằng Cyber Bot trong ZIP tải lên; giữ nhân vật đứng yên/giơ hai tay suốt charging/channeling/active. Mặc định tổng vẽ+hội tụ10giây (8,5+1,5), active của19skill chạy0,5× để kéo dài2×. Giữ marker/cấu hình nội bộ, MP/cooldown; UI/audio đồng bộ playback. Fade rune vẫn1,8giây simulation từ khi hiệu ứng hiển thị. Đây là phạm vi được người dùng chọn, thay thế điều cấm đổi model/timing cũ; không mở các nhóm AAA/HP/Boss khác.
 
 - Tiếp tục repository hiện tại; không dựng lại dự án. Đọc `ROADMAP.md`, `PROGRESS.md`, README và mã thực tế trước khi chọn việc tiếp theo.

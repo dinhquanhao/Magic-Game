@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import { createCharacterModel } from './character-model.js';
 import { isCastingPhase } from './cast-timing.js';
+import { createPlayerCamera } from './player-camera.js';
 
 // Player movement, targeting and the uploaded character share the existing game loop.
 export function createPlayableSystems(scene, canvas) {
@@ -21,9 +22,10 @@ export function createPlayableSystems(scene, canvas) {
   const castMaterial = new THREE.PointsMaterial({ color: 0x7de9e3, size: .105, transparent: true, opacity: .8, blending: THREE.AdditiveBlending, depthWrite: false, toneMapped: false, sizeAttenuation: true });
   const castParticles = new THREE.Points(castGeometry, castMaterial); castParticles.frustumCulled = false; mage.add(castParticles); castParticles.visible = false;
   const motion = { position: mage.position, velocity: new THREE.Vector3(), yaw: 0, pitch: .2, distance: 8.6, arenaRadius: 58, aim: false, locked: null, grounded: true, jumping: false, dash: 0, castPhase: 'idle', castStyle: '', recovery: 0, lastPhase: 'idle', castLocked: false, castAnchor: new THREE.Vector3(), castYaw: 0, time: 0, lastForward: new THREE.Vector3(0, 0, -1) };
+  const view = createPlayerCamera();
   const pressed = new Set(); let rightHeld = false; let aimTarget = new THREE.Vector3(); let rangeExceeded = false, aimDistance = 0, aimMaxRange = 18;
-  const cameraOffset = new THREE.Vector3(), cameraTarget = new THREE.Vector3(), desiredCamera = new THREE.Vector3(), cameraDirection = new THREE.Vector3(), rayDirection = new THREE.Vector3(), aimDelta = new THREE.Vector3(), aimFrom = new THREE.Vector3(), aimHit = new THREE.Vector3(), forward = new THREE.Vector3(), right = new THREE.Vector3(), move = new THREE.Vector3(), targetDelta = new THREE.Vector3(), camRay = new THREE.Raycaster();
-  const floorPlane = new THREE.Plane(new THREE.Vector3(0, 1, 0), 0); const aimRay = new THREE.Ray(), cameraHits = [];
+  const aimForward = new THREE.Vector3(0, 0, -1), rayDirection = new THREE.Vector3(), aimDelta = new THREE.Vector3(), aimFrom = new THREE.Vector3(), aimHit = new THREE.Vector3(), forward = new THREE.Vector3(), right = new THREE.Vector3(), move = new THREE.Vector3(), targetDelta = new THREE.Vector3(), camRay = new THREE.Raycaster();
+  const floorPlane = new THREE.Plane(new THREE.Vector3(0, 1, 0), 0); const aimRay = new THREE.Ray();
   const dummyMat = makeMat(0x77858a, .72, .32, 0x102b31), dummyGlow = new THREE.MeshBasicMaterial({ color: 0x62d7ce, transparent: true, opacity: .85, blending: THREE.AdditiveBlending, depthWrite: false, toneMapped: false });
   const dummies = [];
   for (let i = 0; i < 8; i++) {
@@ -45,13 +47,14 @@ export function createPlayableSystems(scene, canvas) {
   }
   const colliders = dummies.flatMap(d => [d.bodyMesh, d.headMesh]);
   const updateReticle = (camera, skill, lockedTarget) => {
-    camera.getWorldDirection(rayDirection); aimRay.set(camera.position, rayDirection);
+    if (view.pointerAim && view.hasPointer) { camRay.setFromCamera(view.pointer, camera); aimRay.copy(camRay.ray); }
+    else { camera.getWorldDirection(rayDirection); aimRay.set(camera.position, rayDirection); }
     if (lockedTarget) { aimHit.copy(lockedTarget.group.position); aimHit.y += 1.15; }
     else if (!aimRay.intersectPlane(floorPlane, aimHit)) aimHit.copy(mage.position).addScaledVector(motion.lastForward, 18);
     const maxRange = aimMaxRange = Math.max(18, skill.spread * 1.75); aimFrom.copy(mage.position); aimFrom.y = 0;
     aimDelta.copy(aimHit).sub(aimFrom); aimDelta.y = 0; const dist = aimDistance = aimDelta.length(); rangeExceeded = dist > maxRange;
     if (rangeExceeded) aimHit.copy(aimFrom).add(aimDelta.normalize().multiplyScalar(maxRange));
-    aimHit.y = 0; aimTarget.copy(aimHit);
+    aimHit.y = 0; aimTarget.copy(aimHit); aimForward.copy(aimTarget).sub(mage.position).setY(0); if (aimForward.lengthSq() > .0001) aimForward.normalize(); else aimForward.copy(view.forward);
   };
   const setColor = hex => { runeMat.color.setHex(hex); for (const child of feetRune.children) if (child.material?.color) { child.material.color.setHex(hex); child.material.opacity = runeMat.opacity; } };
   function beginCast() {
@@ -92,11 +95,11 @@ export function createPlayableSystems(scene, canvas) {
     if (casting && !motion.castLocked) beginCast();
     if (!casting) motion.castLocked = false;
     motion.aim = aimHeld; motion.castPhase = phase; motion.castStyle = skill?.archetype ?? shape;
-    forward.set(Math.sin(motion.yaw), 0, -Math.cos(motion.yaw)); right.set(-forward.z, 0, forward.x);
+    forward.set(-Math.sin(view.state.yaw), 0, -Math.cos(view.state.yaw)); right.set(-forward.z, 0, forward.x);
     let x = (pressed.has('KeyD') || pressed.has('ArrowRight') ? 1 : 0) - (pressed.has('KeyA') || pressed.has('ArrowLeft') ? 1 : 0);
     let z = (pressed.has('KeyW') || pressed.has('ArrowUp') ? 1 : 0) - (pressed.has('KeyS') || pressed.has('ArrowDown') ? 1 : 0);
     const pads = navigator.getGamepads?.() || []; let pad = null; for (let i = 0; i < pads.length; i++) if (pads[i]) { pad = pads[i]; break; }
-    if (pad) { x += Math.abs(pad.axes[0] || 0) > .12 ? pad.axes[0] : 0; z += Math.abs(pad.axes[1] || 0) > .12 ? -pad.axes[1] : 0; if (Math.abs(pad.axes[2] || 0) > .16) motion.yaw += pad.axes[2] * realDt * 2.2; if (Math.abs(pad.axes[3] || 0) > .16) motion.pitch = THREE.MathUtils.clamp(motion.pitch + pad.axes[3] * realDt * .8, -.02, .78); }
+    if (pad) { x += Math.abs(pad.axes[0] || 0) > .12 ? pad.axes[0] : 0; z += Math.abs(pad.axes[1] || 0) > .12 ? -pad.axes[1] : 0; if (Math.abs(pad.axes[2] || 0) > .16 || Math.abs(pad.axes[3] || 0) > .16) view.rotate((pad.axes[2] || 0) * realDt * 1000, (pad.axes[3] || 0) * realDt * 450); }
     const stick = Math.min(1, Math.hypot(x, z)); if (stick > .01) { x /= Math.max(1, Math.hypot(x, z)); z /= Math.max(1, Math.hypot(x, z)); }
     move.set(0, 0, 0).addScaledVector(right, x).addScaledVector(forward, z);
     const sprint = pressed.has('ShiftLeft') || pressed.has('ShiftRight') || (pad?.buttons?.[10]?.pressed ?? false); const topSpeed = sprint ? 8.2 : 5.1;
@@ -112,20 +115,14 @@ export function createPlayableSystems(scene, canvas) {
       if (motion.position.y <= 0) { motion.position.y = 0; motion.velocity.y = 0; motion.grounded = true; }
       const radius = motion.arenaRadius, d = Math.hypot(motion.position.x, motion.position.z); if (d > radius) { const k = radius / d; motion.position.x *= k; motion.position.z *= k; motion.velocity.x *= .4; motion.velocity.z *= .4; }
       if (motion.aim && !motion.locked && move.lengthSq() < .02) { /* keep facing the camera while aiming */ }
-      if (motion.locked) { targetDelta.copy(motion.locked.group.position).sub(motion.position); motion.yaw = Math.atan2(targetDelta.x, -targetDelta.z); }
-      else if (move.lengthSq() > .02 && !motion.aim) motion.yaw = THREE.MathUtils.damp(motion.yaw, Math.atan2(move.x, -move.z), 9, playerDt);
-      else if (motion.aim) motion.yaw = THREE.MathUtils.damp(motion.yaw, motion.yaw, 5, playerDt);
+      if (motion.locked) { targetDelta.copy(motion.locked.group.position).sub(motion.position); motion.yaw = Math.atan2(-targetDelta.x, -targetDelta.z); }
+      else if (move.lengthSq() > .02 && !motion.aim) motion.yaw += Math.atan2(Math.sin(Math.atan2(-move.x, -move.z) - motion.yaw), Math.cos(Math.atan2(-move.x, -move.z) - motion.yaw)) * (1 - Math.exp(-9 * playerDt));
+      else if (motion.aim || view.state.mode === 'first-person') motion.yaw = view.pointerAim ? Math.atan2(-aimForward.x, -aimForward.z) : view.state.yaw;
       if (move.lengthSq() > .01) motion.lastForward.copy(move).normalize();
       mage.rotation.y = motion.yaw;
     }
-    const headTarget = cameraTarget.set(motion.position.x, motion.position.y + 2.15, motion.position.z);
-    const aimDist = motion.aim ? Math.min(motion.distance, 6.1) : motion.distance;
-    const pitch = motion.pitch; cameraOffset.set(Math.sin(motion.yaw) * Math.cos(pitch) * aimDist, Math.sin(pitch) * aimDist + .22, Math.cos(motion.yaw) * Math.cos(pitch) * aimDist);
-    desiredCamera.copy(headTarget).add(cameraOffset);
-    cameraDirection.copy(cameraOffset).normalize(); camRay.set(headTarget, cameraDirection); cameraHits.length = 0; camRay.intersectObjects(colliders, false, cameraHits); let safeLength = aimDist; if (cameraHits.length && cameraHits[0].distance < safeLength) safeLength = Math.max(2.4, cameraHits[0].distance - .45);
-    desiredCamera.copy(headTarget).addScaledVector(cameraDirection, safeLength);
-    const smooth = 1 - Math.exp(-realDt * (cinematic ? 2.5 : 8.5)); camera.position.lerp(desiredCamera, smooth); camera.lookAt(headTarget.x + Math.sin(motion.yaw) * (motion.aim ? .45 : 0), headTarget.y + .12, headTarget.z - Math.cos(motion.yaw) * (motion.aim ? .45 : 0));
-    updateReticle(camera, skill, motion.locked); updateModel(realDt, playerDt, color, phase, skill, runeOpacity);
+    updateCamera(realDt, camera, skill);
+    updateModel(realDt, playerDt, color, phase, skill, runeOpacity);
     let echoBudget = timeDomain ? Math.max(0, timeDomain.afterimageCount || 0) : 0;
     for (const d of dummies) {
       const factor = timeDomain ? timeDomain.timeFactorAt(d.group.position) : 1;
@@ -151,9 +148,16 @@ export function createPlayableSystems(scene, canvas) {
       }
     }
   }
+  function updateCamera(dt, camera, skill) {
+    modelRoot.visible = view.state.mode !== 'first-person';
+    view.update(dt, camera, motion.position, colliders, motion.arenaRadius);
+    motion.pitch = view.state.pitch; motion.distance = view.state.distance;
+    if (skill) updateReticle(camera, skill, motion.locked);
+  }
   function castContext(skill, quality, mode = 'play') {
     const origin = new THREE.Vector3(); (character.castAnchor || castAnchorFallback).getWorldPosition(origin);
-    const casterPosition = mage.position.clone(), casterForward = motion.aim ? new THREE.Vector3(Math.sin(motion.yaw), 0, -Math.cos(motion.yaw)) : motion.lastForward.clone();
+    const casterPosition = mage.position.clone(), casterForward = (motion.aim || view.pointerAim || view.state.mode === 'first-person') ? aimForward.clone() : motion.lastForward.clone();
+    if (casterForward.lengthSq() < .01) casterForward.set(0, 0, -1).applyAxisAngle(new THREE.Vector3(0, 1, 0), mage.rotation.y);
     const archetype = ({ skyfall: 'Thiên giáng', colossal: 'Khổng lồ', barrage: 'Mưa đòn', vortex: 'Xoáy hội tụ', tornado: 'Siêu lốc', spatial: 'Không gian', timeDomain: 'Lĩnh vực thời gian', iceDomain: 'Lĩnh vực băng giá', bloodChainNet: 'Lồng xích huyết', elemental: 'Lĩnh vực nguyên tố' })[skill.archetype] || 'Lĩnh vực nguyên tố';
     const aoeCenter = aimTarget.clone(); aoeCenter.y = 0;
     return { origin, casterPosition, casterForward, target: aimTarget.clone(), targetNormal: new THREE.Vector3(0, 1, 0), aoeCenter, aoeScale: 1, lockedTarget: motion.locked?.group || null, quality, mode, archetype, maxRange: Math.max(18, skill.spread * 1.75) };
@@ -187,17 +191,18 @@ export function createPlayableSystems(scene, canvas) {
     }
     return affected;
   }
-  function reset() { pressed.clear(); rightHeld = false; motion.position.set(0, 0, 12); motion.velocity.set(0, 0, 0); motion.yaw = 0; motion.pitch = .2; motion.distance = 8.6; motion.arenaRadius = 58; motion.grounded = true; motion.locked = null; motion.dash = 0; motion.recovery = 0; motion.lastPhase = 'idle'; motion.castPhase = 'idle'; motion.castLocked = false; character.reset?.(); motion.lastForward.set(0, 0, -1); for (const d of dummies) { d.group.position.copy(d.base); d.impulse.set(0, 0, 0); d.hit = 0; d.natureBind=0; d.motionTime = 0; d.echo.visible = false; d.bodyMesh.material = dummyMat; } }
+  function reset() { pressed.clear(); rightHeld = false; motion.position.set(0, 0, 12); motion.velocity.set(0, 0, 0); motion.yaw = 0; motion.pitch = .2; motion.distance = 8.6; motion.arenaRadius = 58; motion.grounded = true; motion.locked = null; motion.dash = 0; motion.recovery = 0; motion.lastPhase = 'idle'; motion.castPhase = 'idle'; motion.castLocked = false; character.reset?.(); motion.lastForward.set(0, 0, -1); mage.rotation.y = 0; view.reset(motion.position); for (const d of dummies) { d.group.position.copy(d.base); d.impulse.set(0, 0, 0); d.hit = 0; d.natureBind=0; d.motionTime = 0; d.echo.visible = false; d.bodyMesh.material = dummyMat; } }
   const systems = {
-    mage, dummies, motion, aimTarget, get rangeExceeded() { return rangeExceeded; }, get locked() { return motion.locked; }, get aim() { return motion.aim; }, get distance() { return motion.distance; }, get colliders() { return colliders; },
-    update, beginCast, castContext, get character() { return character; }, applyImpact, applyNatureHit, clearNatureEffects, pullTargets, reset,
+    mage, dummies, motion, aimTarget, aimForward, get rangeExceeded() { return rangeExceeded; }, get locked() { return motion.locked; }, get aim() { return motion.aim; }, get distance() { return motion.distance; }, get colliders() { return colliders; },
+    update, updateCamera, view, beginCast, castContext, get character() { return character; }, applyImpact, applyNatureHit, clearNatureEffects, pullTargets, reset,
     toggleLock() { if (motion.locked) { motion.locked = null; return null; } const choices = dummies.map(d => ({ d, dist: d.group.position.distanceTo(mage.position) })).filter(x => x.dist < 70).sort((a, b) => a.dist - b.dist); motion.locked = choices[0]?.d || null; return motion.locked; },
     setAim(v) { rightHeld = v; },
     replaceModel(object3D, rig = {}) { character.dispose?.(); modelRoot.clear(); modelRoot.add(object3D); character = { ...rig, root: object3D, castAnchor: rig.castAnchor || rig.staffAnchor || object3D.getObjectByName?.('StaffCrystal') }; return mage; },
+    releaseInput() { pressed.clear(); rightHeld = false; view.clearPointer(); },
     onKeyDown(e) { pressed.add(e.code); if (motion.castLocked || isCastingPhase(motion.castPhase)) return; if (e.code === 'Space' && motion.grounded) { motion.velocity.y = 7.5; motion.grounded = false; } if (e.code === 'KeyQ' && motion.grounded) { motion.dash = .24; motion.velocity.x += motion.lastForward.x * 13; motion.velocity.z += motion.lastForward.z * 13; } },
     onKeyUp(e) { pressed.delete(e.code); },
-    onMouseMove(dx, dy, sensitivity = 1) { motion.yaw -= dx * .0022 * sensitivity; motion.pitch = THREE.MathUtils.clamp(motion.pitch + dy * .0018 * sensitivity, -.02, .78); },
-    onWheel(delta) { motion.distance = THREE.MathUtils.clamp(motion.distance + Math.sign(delta) * .9, 4.4, 12.5); }, setArenaRadius(value) { motion.arenaRadius = THREE.MathUtils.clamp(value, 30, 82); },
+    onMouseMove(dx, dy, sensitivity = 1) { view.rotate(dx, dy, sensitivity); },
+    onWheel(delta) { view.zoom(delta); }, setArenaRadius(value) { motion.arenaRadius = THREE.MathUtils.clamp(value, 30, 82); },
     targetInfo: { target: aimTarget, dist: 0, maxRange: 18, exceeded: false },
     getTargetInfo(skill) { systems.targetInfo.dist = Math.min(aimDistance, Math.max(18, skill.spread * 1.75)); systems.targetInfo.maxRange = aimMaxRange; systems.targetInfo.exceeded = rangeExceeded; return systems.targetInfo; }
   };

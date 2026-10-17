@@ -1,3 +1,9 @@
+# Camera nhân vật —18/10/2026
+
+Thêm controller camera procedural src/player-camera.js và UI5lựa chọn (4góc mới+TheoSau). Không thêm model/texture/audio/font/dịch vụ/renderer/RAF. Chỉ thay view/projection, input, ray ngắm và visibility của modelRoot khi first person; model gốc/geometry/vật liệu/hai tay và toàn bộ15hệ/19skill giữ nguyên. Cùng thời lượng10s/active0,5×/fade1,8s, MP/cooldown/score/audio assets không đổi. Nguồn Cyber Bot vẫn được ghi ở mục trước. Bằng chứng mới docs/evidence/camera-modes, rawwork/camera-modes.
+
+---
+
 # Model nhân vật tải lên —17/10/2026
 
 Cyber Bot từ model_3d_camera_360.zip của người dùng, mặc định gọi buildCharacterModel('bot') trong js/game.js. Nguồn rút trích và SHA256 tại assets/sources; module runtime src/character-model.js dựng cùng geometry/màu/roughness/metalness. Model humanoid có2khớp vai,2chân, backpack/visor; căn chân -0,09m và nâng vai khi giơ hai tay để đầu tay ở trên đỉnh đầu. Anchor phép nằm vùng hai tay, thay gậy cũ. Aura lam/mũi tên dưới bot là marker hướng từ model gốc; vòng phép/hạt theo nguyên tố dùng fade chung.

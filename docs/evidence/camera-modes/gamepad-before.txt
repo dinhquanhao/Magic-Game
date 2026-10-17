@@ -1,0 +1,33 @@
+✔ all views stay finite, clear first-person occlusion, and preserve the casting anchor (24.944343ms)
+✔ orbit makes a full revolution without movement steering or actor yaw controlling it (6.079411ms)
+✔ LoL pan is independent, bounded, supports edges/follow/recenter and UI clears edge input (0.627945ms)
+✔ third-person collision and extreme zoom/pitch avoid obstacles and floor clipping (1.451001ms)
+✖ gamepad right stick looks right in orbit and first person without rotating a casting actor (5.732969ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 4
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 49.277607
+
+✖ failing tests:
+
+test at tests/player-camera.test.js:67:1
+✖ gamepad right stick looks right in orbit and first person without rotating a casting actor (5.732969ms)
+  AssertionError [ERR_ASSERTION]: orbit right stick should look right
+      at TestContext.<anonymous> (file:///workspace/Magic-Game/tests/player-camera.test.js:75:14)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

@@ -1,4 +1,6 @@
-# Arcane VFX Studio — nền đất nâu và hệ Thảo
+# Arcane VFX Studio — camera, Cyber Bot và 15 hệ
+
+**Có thêm camera3/4, tự do kiểu LoL, thứ nhất và xoay360°.** Vào **CHẾ ĐỘ CHƠI → GÓC NHÌN** ở khung trái, hoặc nhấn **V** khi điều khiển cảnh. LoL: kéo chuột giữa/rê mép để pan, **C** về nhân vật, **Y** bật/tắt theo dõi; con lăn zoom. Orbit360/thứ nhất: giữ chuột phải để nhìn; góc thứ nhất có thể nhấp cảnh để khóa chuột. WASD/Space/Q/E giữ nguyên. Camera độc lập nhân vật, đổi được khi cast/pause. [Ảnh, video và kiểm thử camera](docs/evidence/camera-modes/README.md).
 
 **Nhân vật mới: Cyber Bot từ file model bạn tải lên.** Khi thi triển, bot giơ hai tay lên trên đầu và đứng yên từ lúc vẽ rune đến khi skill kết thúc; camera vẫn xoay được. Mặc định tổng vẽ+hội tụ là **10giây** (8,5+1,5), pha khai triển của **toàn bộ19skill dài gấp đôi** qua playback0,5×. Đây là ngoại lệ thời lượng mới theo yêu cầu, gồm FIRE-01; tên/thông số/MP/cooldown và các marker nội bộ được giữ. Slider thời gian/tốc độ nghi thức áp dụng ở lần cast tiếp theo; pause/hit-stop/slow motion dùng cùng clock. Audio đi theo playback, có thay đổi pitch như engine hiện hành. [Ảnh/video và kiểm thử model/timing](docs/evidence/character-cast/README.md).
 

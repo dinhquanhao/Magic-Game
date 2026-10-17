@@ -1,6 +1,9 @@
-# Chạy và xem game — nền đất nâu và Thảo
+# Chạy và xem Magic-Game — góc nhìn mới
 
-Cập nhật mới nhất: **Cyber Bot theo ZIP người dùng, giơ hai tay/đứng yên khi cast, rune10s và thời lượng19skill dài2×**. [Ảnh, video và báo cáo model/timing](evidence/character-cast/README.md). ZIP được cập nhật theo sourceCommit/SHA trong metadata gói. Vào **CHẾ ĐỘ CHƠI** để thấy nhân vật; nhấn **E** hoặc nút **THI TRIỂN**, xoay camera bằng chuột phải. Di chuyển/nhảy/lướt được trả lại sau khi skill kết thúc.
+**Mới:4góc camera —3/4,LoL tự do,thứ nhất,orbit360.** Vào **CHẾ ĐỘ CHƠI**, chọn **GÓC NHÌN** ở khung trái hoặc nhấn V khi điều khiển cảnh. LoL dùng chuột giữa/rê mép để pan,C về nhân vật,Y theo dõi; orbit/FPS dùng chuột phải để nhìn. [Ảnh/video và kiểm thử](evidence/camera-modes/README.md). ZIP bên dưới chứa controller mới theo sourceCommit/SHA metadata; hai video WebM nền đất lịch sử được liên kết GitHub để giữ dung lượng gói.
+
+
+Mốc trước: **Cyber Bot theo ZIP người dùng, giơ hai tay/đứng yên khi cast, rune10s và thời lượng19skill dài2×**. [Ảnh, video và báo cáo model/timing](evidence/character-cast/README.md). ZIP được cập nhật theo sourceCommit/SHA trong metadata gói. Vào **CHẾ ĐỘ CHƠI** để thấy nhân vật; nhấn **E** hoặc nút **THI TRIỂN**, xoay camera bằng chuột phải. Di chuyển/nhảy/lướt được trả lại sau khi skill kết thúc.
 
 Mốc trước: [phù văn19skill mờ dần khi skill xuất hiện — ảnh, video và ma trận kiểm thử](evidence/rune-fade/README.md). ZIP bên dưới được cập nhật theo sourceCommit/SHA trong metadata gói.
 

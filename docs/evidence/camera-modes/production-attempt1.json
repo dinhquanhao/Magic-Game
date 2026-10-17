@@ -1,0 +1,13 @@
+{
+  "passed": false,
+  "stoppedAt": "Synthetic native Escape after first-person capture stalled the headless automation protocol. Owned recording processes stopped; original screenshots/raw-video preserved.",
+  "captures": [
+    "quarter.png",
+    "moba.png",
+    "moba-pan.png",
+    "moba-follow.png",
+    "first-person.png"
+  ],
+  "consoleCollectionIncomplete": true,
+  "nextAttempt": "Avoid synthetic native Escape; use the public pointer-lock exit API. Runtime unchanged."
+}

@@ -1,4 +1,16 @@
-# Mốc mới nhất — model Cyber Bot và timeline thi triển,17/10/2026
+# Mốc mới nhất — 4 góc nhìn mới, 18/10/2026 (Asia/Bangkok)
+
+- Tiếp nối checkpoint c0e5dd2, Git sạch trước sửa; baseline production observe PASS. Camera cũ dùng chung motion.yaw với actor. Story: menu/input → camera/aim ray → renderer; game client, không có API/database/credential mới.
+- Thêm 3/4 mặc định, LoL tự do, thứ nhất, orbit360 và giữ Theo sau. Camera độc lập hướng nhân vật; LoL pan mép/chuột giữa, C về nhân vật, Y theo dõi, V chuyển view. Ray cursor cho3/4/LoL; FPS đặt mắt1,77m/FOV75, ẩn thân. Camera đổi được khi cast/pause nhưng nhân vật/timeline vẫn đứng yên.
+- Build68module và24unit PASS. Ma trận125ca:19skill Low×5view +6skill đại diện High×5view,0JS/WebGL/shader error/warning. Menu/mouse/keyboard/pan/follow/recenter/rotation/movement/aim snapshot/pose/pause/Showcase/mobile PASS. Đây là render mốc, không phải125lượt chơi trọn vẹn hay benchmark GPU.
+- Ba vòng hiệu chỉnh: initial camera, sửa PointerMove khi middle-drag bị chặn MouseMove, sửa dấu trục nhìn ngang tay cầm. Ca tái hiện tay cầm mô phỏng trước FAIL/sau PASS. Ma trận đã chạy trước thay đổi dấu trục cuối; hash matrix/final ghi riêng. Full unit/build và production cuối chạy sau sửa; chưa kiểm tay cầm phần cứng.
+- Production không hook PASS:13ảnh, pan/follow/first-person pointer lock/rotate đủ vòng/cast/pause/đổi camera/Showcase quay lại,0console/page error/warning. Video MP4 giữ frame/thời lượng WebM, không audio/LivePreview/FPS native. Lượt đầu bị kẹt ở Esc giả lập; dừng đúng cây tiến trình ghi hình và giữ raw. Lượt cuối dùng document.exitPointerLock, đã xác minh API exit; không gọi là kiểm chứng Esc vật lý/Windows thật.
+- Bảo toàn983file và các block registry/cinematic/rune/cast/nền nâu;15hệ/19skill, bot/hai tay, MP/cooldown/audio, rune10s/active0,5×/fade1,8s không đổi. [Ảnh/video và báo cáo](docs/evidence/camera-modes/README.md), [10ý tưởng/chọn3](docs/ROUND-CAMERA-2026-10-18.md).
+- Đóng ZIP với controller/video camera mới; hai WebM nền đất lịch sử giữ nguyên trong repo, dẫn online trong ZIP qua ARCHIVE_MEDIA_LINKS.json để gói dưới100MiB. Runtime/asset vẫn khớp byte đã test. Cập nhật cùng Draft PR#1; không merge main/deploy công khai/dùng dịch vụ trả phí. Tiếp theo: minimap/bookmark hoặc click-to-move nếu chọn phạm vi; HP/hurt/death/Boss và các draft AAA khác chưa hoàn tất.
+
+---
+
+# Mốc trước — model Cyber Bot và timeline thi triển,17/10/2026
 
 - Đã push checkpoint phù văn `9a786205e26d05f90f79dfd7079f423b78951d03` vào cùng Draft PR#1 trước khi sửa model; không mất nguồn/kết quả cũ, không merge main.
 - Model mặc định `bot` được port từ `js/game.js` trong ZIP người dùng, giữ hình học/màu/vật liệu; thêm anchor hai tay/đỉnh đầu, căn chân và animation. Không nhập renderer, RAF, input/audio/CDN của demo. Nguồn/hash tại assets/sources/cyber-bot-provenance.json.

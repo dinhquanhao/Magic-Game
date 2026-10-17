@@ -1,0 +1,13 @@
+✔ all views stay finite, clear first-person occlusion, and preserve the casting anchor (29.702181ms)
+✔ orbit makes a full revolution without movement steering or actor yaw controlling it (10.891585ms)
+✔ LoL pan is independent, bounded, supports edges/follow/recenter and UI clears edge input (5.423634ms)
+✔ third-person collision and extreme zoom/pitch avoid obstacles and floor clipping (3.928439ms)
+✔ gamepad right stick looks right in orbit and first person without rotating a casting actor (8.755007ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 70.709579
