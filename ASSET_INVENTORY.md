@@ -1,5 +1,7 @@
 # Hiện trạng assets sau cập nhật Thảo
 
+Fade phù văn chung: giữ toàn bộ hình học, shader, icon và audio hiện có. Thêm logic opacity/timeline tại src/rune-fade.js, không tạo texture/mesh/renderer/RAF/timer mới. Vòng phép cũ và hạt/đèn được làm mờ rồi ẩn theo simulation time. Bằng chứng: docs/evidence/rune-fade/README.md.
+
 Cập nhật thu gọn Hỏa: registry15hệ/19skill, chỉ giữ FIRE-01. Gỡ audio mix/biểu đồ/report riêng của hai skill bị xóa và các record liên quan; giữ nguyên shader lửa/ember/icon và bank cue dùng chung vì FIRE-01 vẫn sử dụng. Không tạo asset mới hoặc đổi asset của hệ khác. Báo cáo lịch sử đã lọc các hàng bị gỡ được đánh dấu riêng; không đổi số đo của các skill được giữ.
 
 Bổ sung nền nâu 17/10: vật liệu đất nâu không kim loại, lưới tông đất và hai lớp noise shader tĩnh, có giảm chi tiết hạt ở xa. Không thêm asset bên ngoài, texture, mesh hoặc render pass; không đổi license. Bằng chứng: docs/evidence/brown-ground/README.md. Đá/cỏ rìa/vết chân vẫn là backlog trong docs/ROUND-GROUND-2026-10-17.md.

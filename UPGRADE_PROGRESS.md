@@ -175,3 +175,9 @@ Bảo toàn ce73729/1a6cb41. Giới hạn năng lượng bloom và tách ngưỡ
 ## Thu gọn Hỏa — 17/10/2026
 
 Theo yêu cầu mới, Hỏa chỉ giữ FIRE-01. Hai hàng skill đã gỡ được loại khỏi bản lịch sử phân phối hiện tại; không sửa cấu hình/số đo của các skill còn lại. Snapshot gốc trước thu gọn nằm tại commit3273606. Xem docs/evidence/fire-trim/README.md cho kiểm thử mới; không coi kết quả lịch sử là ma trận19skill mới.
+
+## Bổ sung AAA — fade phù văn chung, 17/10/2026
+
+Theo yêu cầu mới nhất, chỉ chỉnh chuyển tiếp hiển thị phù văn trên15hệ/19skill. Trước sửa, nhiều rune giữ đến impact/aftermath; bản audit tại checkpoint13b1e7f và work/rune-fade/registry-before.json. Sau sửa, chờ nhóm hiệu ứng bật hiển thị rồi fade smoothstep1,8giây mô phỏng, không giảm opacity đột ngột; hết fade tắt vật liệu/hạt/đèn và ẩn group. Mốc xuất hiện trễ của Thời Gian được chờ; root placeholder rỗng không kích hoạt fade.
+
+Không đổi registry/config/cinematic/rune profile/MP/cooldown/score: source audit trước/sau khớp byte, fingerprint19skill đạt. Build65module,16unit,19Low+19High và lifecycle tại docs/evidence/rune-fade/README.md. Phạm vi này không tích hợp draft gate/rune AAA cũ, không tuyên bố hoàn tất roadmap lớn. Các kết quả rune cũ vẫn là lịch sử; thay đổi fade mới là ngoại lệ được người dùng yêu cầu cho toàn bộ skill.

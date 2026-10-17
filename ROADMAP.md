@@ -13,7 +13,7 @@ Lộ trình được cập nhật ngày 17/10/2026 (Asia/Bangkok), tiếp nối 
 | 5 — Gameplay | Khám phá, gặp địch, tiến trình, Boss và vòng chơi hoàn chỉnh | Có bắt đầu, mục tiêu, tiến trình, thắng/thua/restart; combat và khám phá liên tục; tài nguyên/HP/MP hợp lý; smoke test trọn vòng | Chưa bắt đầu |
 | 6 — Cải tiến | Đánh giá, sửa lỗi, đo và backlog | Chạy kiểm thử tích hợp; báo cáo thực tế, giới hạn và 10 ý tưởng ưu tiên; checkpoint/PR, không auto-merge | Thực hiện ở mỗi mốc bàn giao |
 
-Ưu tiên hiện tại: hoàn tất thu gọn Hỏa còn FIRE-01, đối chiếu bảo toàn 19 skill và đóng gói. Các nhóm Thảo/nền đất đã bàn giao; không tự mở lại nhóm AAA trong lượt này.
+Ưu tiên hiện tại: nghiệm thu fade phù văn chung khi skill bật hiển thị, đủ19skill, lifecycle và đóng gói. Các nhóm thu gọn Hỏa/Thảo/nền đất đã bàn giao; không tự mở các draft gate/AAA trong lượt fade này.
 
 ## 10 ý tưởng của lượt hiện tại
 

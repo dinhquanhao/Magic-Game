@@ -20,6 +20,7 @@ def main():
     parser.add_argument('--label',default='after')
     parser.add_argument('--hold-seconds',type=float,default=6)
     parser.add_argument('--audio',action='store_true',help='Enable audio via the production UI; Playwright video remains silent')
+    parser.add_argument('--runes',action='store_true',help='Keep rune circles enabled while recording the release transition')
     args=parser.parse_args()
     commit=subprocess.check_output(['git','rev-parse','--short','HEAD'],cwd=ROOT,text=True).strip()
     stamp=time.strftime('%Y%m%d-%H%M%S',time.gmtime())
@@ -84,7 +85,9 @@ def main():
                 page.locator('.graphics-options').evaluate('(e)=>e.open=true')
                 page.locator('#graphicsAdaptive').uncheck()
                 page.locator('.graphics-options').evaluate('(e)=>e.open=false')
-                for name in ['auto','runes','cameraShakeToggle','hitStopToggle','slowMotionToggle']:page.locator('#'+name).uncheck()
+                for name in ['auto','cameraShakeToggle','hitStopToggle','slowMotionToggle']:page.locator('#'+name).uncheck()
+                page.locator('#runes').set_checked(args.runes)
+                metadata['runesUIEnabled']=args.runes
                 for name,value in [('castTime','.3'),('speed','2')]:
                     page.locator('#'+name).evaluate('(e,v)=>{e.value=v;e.dispatchEvent(new Event("input",{bubbles:true}));}',value)
                 page.locator('.settings').evaluate('e=>e.scrollTop=0')

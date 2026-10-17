@@ -1,8 +1,10 @@
 # Arcane VFX Studio — nền đất nâu và hệ Thảo
 
+**Phù văn của toàn bộ19skill nay mờ dần trong1,8giây mô phỏng khi hiệu ứng skill được bật hiển thị**, rồi ẩn hẳn. Skill xuất hiện trễ được chờ đúng nhóm hiệu ứng; pause/hit-stop/slow motion đồng bộ và thi triển lại phục hồi vòng phép. [Ảnh/video và kiểm thử fade](docs/evidence/rune-fade/README.md). Chỉ đổi chuyển tiếp hiển thị của phù văn; các thông số, VFX đòn đánh, MP/cooldown và audio giữ nguyên.
+
 Nền đấu trường đã đổi sang nâu đất, bề mặt ít bóng và có vân procedural nhẹ. Hiệu ứng rêu/ướt/cháy/băng vẫn phủ lên nền và phục hồi sau reset. [Ảnh trước/sau và kết quả kiểm thử](docs/evidence/brown-ground/README.md).
 
-Registry hiện tại: **15 hệ, 19 skill**. Hỏa chỉ còn **FIRE-01 — Thiên Nhật Diệt Thế**, được giữ nguyên tên, mô tả, chỉ số, MP, cooldown, cinematic, rune, VFX và audio. Hệ cuối có **NATURE-01 — Vạn Mộc Sinh Giới / Verdant Genesis**. Các hệ ngoài Hỏa giữ nguyên. START.bat vẫn dùng npm.cmd, ASCII/CRLF. [Bằng chứng bảo toàn skill](docs/evidence/fire-trim/README.md).
+Registry hiện tại: **15 hệ, 19 skill**. Hỏa chỉ còn **FIRE-01 — Thiên Nhật Diệt Thế**, giữ nguyên tên, mô tả, chỉ số, MP, cooldown, cinematic, VFX đòn đánh và audio; phù văn dùng fade chung mới nêu trên. Hệ cuối có **NATURE-01 — Vạn Mộc Sinh Giới / Verdant Genesis**. START.bat vẫn dùng npm.cmd, ASCII/CRLF. [Bằng chứng đợt thu gọn Hỏa trước đó](docs/evidence/fire-trim/README.md).
 
 - Cast: vòng mặt đất chia nhỏ, shader dây leo/lá/rune, sáng lan theo góc và phấn hoa.
 - Bùng phát: dây leo → bụi/gai → thân/cành/tán → cổ thụ; sáu hình thái procedural, phân nhánh và overshoot đàn hồi.

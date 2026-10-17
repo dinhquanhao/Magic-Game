@@ -1,5 +1,7 @@
 # Chạy và xem game — nền đất nâu và Thảo
 
+Cập nhật mới nhất: [phù văn19skill mờ dần khi skill xuất hiện — ảnh, video và ma trận kiểm thử](evidence/rune-fade/README.md). ZIP bên dưới được cập nhật theo sourceCommit/SHA trong metadata gói.
+
 Danh mục mới nhất: **15 hệ/19 skill**, Hỏa chỉ còn Thiên Nhật Diệt Thế và giữ nguyên hành vi. [Báo cáo đối chiếu trước/sau](evidence/fire-trim/README.md). ZIP bên dưới được đóng gói lại; các báo cáo Thảo/nền đất phía dưới là bằng chứng của checkpoint trước.
 
 - [Nền đất nâu: ảnh trước/sau, video và kiểm thử](evidence/brown-ground/README.md). ZIP bên dưới được cập nhật theo checkpoint ghi trong metadata; dùng bản mới để thấy nền nâu.

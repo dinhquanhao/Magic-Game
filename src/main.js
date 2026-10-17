@@ -1,4 +1,5 @@
 import { getSkillAreaRadius } from './skill-area.js';
+import { runeReleaseAge, runeReleaseFade } from './rune-fade.js';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
@@ -369,14 +370,16 @@ function runeRitual(parent,hex,spellIndex){
   }));
  const totalRings=layers.reduce((n,l)=>n+l.rings.length,0);
  group.userData.ringCount=totalRings;group.userData.layerCount=layerCount;
-  let releaseTime=0,releaseShock=0,lastUpdateTime=null;
+  let releaseTime=0,releaseShock=0,lastUpdateTime=null,releaseFinished=false;
   group.userData.release=(time,intensity=1,shockwave=0)=>{releaseTime=Math.max(0,time);releaseShock=Math.max(releaseShock,shockwave);};
  group.userData.update=(progress,t,intensity,releaseAge=null,shockwave=0,drain=0)=>{
+  if(releaseAge!==null&&releaseFinished){group.visible=false;return;}
   const p=THREE.MathUtils.clamp(progress,0,1),accelerate=p>.94?1+smooth((p-.94)/.06)*1.8:1,delta=lastUpdateTime===null?0:Math.max(0,t-lastUpdateTime);lastUpdateTime=t;
-   let fade=0,pulse=0,shockEnergy=0;
-   if(releaseAge!==null){releaseTime=releaseAge;const impactAt=cinematicPlans[spellIndex].impactAt,fadeStart=runeFadeConfig.fadeAt??Math.max(impactAt+runeFadeConfig.sustainDuration,runeFadeConfig.timelineEnd*runeFadeConfig.fadeStart),fadeDuration=Math.max(.05,Math.min(runeFadeConfig.fadeDuration,runeFadeConfig.timelineEnd-fadeStart));fade=smooth((releaseAge-fadeStart)/fadeDuration);pulse=Math.max(0,1-releaseAge/.42)*runeFadeConfig.releasePulse;releaseShock=Math.max(releaseShock,shockwave);releaseShock=Math.max(0,releaseShock-delta*2.4);shockEnergy=runeFadeConfig.reactToShockwave?THREE.MathUtils.clamp(Math.max(shockwave,releaseShock),0,1):0;}
-   const baseVisibility=releaseAge===null?1:1-fade,globalOpacity=(releaseAge===null?1:.68*(.86+.14*baseVisibility)*baseVisibility)*(1-.22*THREE.MathUtils.clamp(drain,0,1)),luminosity=(releaseAge===null?1:(.62+.38*baseVisibility+pulse*.18+shockEnergy*.16)*baseVisibility)*(1-.14*THREE.MathUtils.clamp(drain,0,1));
+   let fade=0,shockEnergy=0;
+   if(releaseAge!==null){releaseTime=releaseAge;fade=runeReleaseFade(releaseAge);releaseShock=Math.max(releaseShock,shockwave);releaseShock=Math.max(0,releaseShock-delta*2.4);shockEnergy=runeFadeConfig.reactToShockwave?THREE.MathUtils.clamp(Math.max(shockwave,releaseShock),0,1):0;}
+   const baseVisibility=1-fade,globalOpacity=baseVisibility*(1-.22*THREE.MathUtils.clamp(drain,0,1)),luminosity=(.62+.38*baseVisibility)*baseVisibility*(1-.14*THREE.MathUtils.clamp(drain,0,1));
   towerMaterials.forEach(entry=>{entry.material.opacity=entry.opacity*globalOpacity;if(entry.color&&entry.material.color)entry.material.color.copy(entry.color).multiplyScalar(luminosity);});
+   if(fade>=1){group.visible=false;releaseFinished=true;coreLight.intensity=0;ambient.material.uniforms.uIntensity.value=0;layers.forEach(({rings})=>rings.forEach(({runeDust})=>{runeDust.material.uniforms.uIntensity.value=0;}));return;}
    group.scale.setScalar(runeFadeConfig.towerScale*(1-.025*fade+shockEnergy*.003));
   layers.forEach(({layer,rings,li,vertical})=>{
    let layerEnergy=0;
@@ -914,7 +917,8 @@ let frames=0,sec=0,slowSkillFrames=0,adaptiveQualityReduced=false;function anima
   data.ritual.visible=config.runes;
   const planPulse=!data.didRuneShock&&a>=cinematicPlans[spell].impactAt?1:0;
   if(planPulse)data.didRuneShock=true;const runeShockwave=Math.max(planPulse,data.attack.runePulse?.()??0);
-  if(config.runes)data.ritual.userData.update(1,towerTime,config.intensity,a,runeShockwave,data.attack.runeDrain?.()??0);
+  const runeAge=runeReleaseAge(data,a);
+  if(config.runes)data.ritual.userData.update(1,towerTime,config.intensity,runeAge,runeShockwave,data.attack.runeDrain?.()??0);
   if(playMode&&skillDefs[spell].shape==='atmosphericCollapse'&&a>=cinematicPlans[spell].impactAt&&a<=15.15&&(a-(data.lastTornadoImpact??-10))>=1.15){data.lastTornadoImpact=a;data.windImpactPosition??=new THREE.Vector3();data.attack.group.getWorldPosition(data.windImpactPosition);const hitCount=playable.applyImpact(data.windImpactPosition,data.areaRadius*.38,C[spell]);if(hitCount)document.querySelector('#status').textContent='LỐC XOÁY QUÉT TRÚNG '+hitCount+' MỤC TIÊU';}if(playMode&&skillDefs[spell].shape!=='verdantGenesis'&&skillDefs[spell].shape!=='atmosphericCollapse'&&skillDefs[spell].shape!=='dimensionalCollapse'&&skillDefs[spell].shape!=='eternalRequiem'&&skillDefs[spell].shape!=='nightmareSpears'&&!data.didDummyImpact&&a>=cinematicPlans[spell].impactAt){data.didDummyImpact=true;const ctx=data.castContext,activeSkill=skillDefs[spell],impactRadius=data.areaRadius,hitCount=playable.applyImpact(ctx.aoeCenter,impactRadius,C[spell],activeSkill.shape==='bloodChainNet'||activeSkill.shape==='lightningStorm');if(hitCount)document.querySelector('#status').textContent=`DƯ CHẤN ĐÁNH TRÚNG ${hitCount} MỤC TIÊU`;}
   data.root.traverse(o=>{
    if(o.userData.shader){o.userData.shader.uniforms.uTime.value=a;if(o.userData.shader.uniforms.uIntensity)o.userData.shader.uniforms.uIntensity.value=config.intensity;}

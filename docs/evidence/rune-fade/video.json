@@ -1,0 +1,34 @@
+{
+  "source": "Playwright production recording with rune toggle enabled; original WebM retained in scratch",
+  "sourceSHA256": "ce610ad4586cda4f4b458b6b13d1b29d4ea4e24802fa8c4e9f4da4d2bb2dd2dc",
+  "publishedVideo": "production.mp4",
+  "publishedSHA256": "852eb6d72c7c8cec63edd7ee48abab339582a69e975afcc1edb04d9a104f7812",
+  "sourceProbe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "r_frame_rate": "25/1",
+        "nb_read_frames": "2806"
+      }
+    ],
+    "format": {
+      "duration": "112.240000"
+    }
+  },
+  "publishedProbe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "r_frame_rate": "25/1",
+        "nb_read_frames": "2806"
+      }
+    ],
+    "format": {
+      "duration": "112.240000"
+    }
+  },
+  "transcode": "H.264 crf28, original timestamps/frame count, no audio",
+  "nativeGPUPerformanceClaim": false
+}

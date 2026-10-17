@@ -1,4 +1,14 @@
-# Mốc mới nhất — thu gọn Hỏa, 17/10/2026
+# Mốc mới nhất — phù văn mờ khi skill xuất hiện, 17/10/2026
+
+- Yêu cầu mới áp dụng toàn15hệ/19skill: phù văn chung fade smoothstep trong1,8giây mô phỏng từ khi nhóm hiệu ứng skill bật hiển thị. Bỏ bước giảm opacity đột ngột lúc release. Chờ nhóm xuất hiện trễ/root rỗng; tắt hoàn toàn vòng/glyph/hạt/đèn, không hiện lại ở impact hoặc toggle. Recast phục hồi vòng mới.
+- Thay đổi trong src/rune-fade.js và phần cập nhật ritual của main.js; không thay registry, cấu hình/cinematic/rune profile/MP/cooldown/audio hoặc VFX đòn đánh. Source audit trước/sau giống hệt byte,16unit và build65module đạt. [Phạm vi/10ý tưởng chọn3](docs/ROUND-RUNE-FADE-2026-10-17.md).
+- [Bằng chứng mới](docs/evidence/rune-fade/README.md):19Low+19High,192mốc fade/impact; Medium/Ultra đại diện; pause/hit-stop/slow0,25/toggle/recast/auto-repeat đạt. Ma trận0JS/WebGL/shader error/warning. Lifecycle có2warning watchdog khởi tạo Hỏa trên SwiftShader; giữ raw, không coi là benchmark GPU native. Một vòng thay đổi runtime.
+- Video production bật phù văn đã ghi và chuyển MP4, giữ2.806frame/112,24giây;0error/0warning, không audio. Bản ghi không phải Live Preview tương tác. Cảnh báo bundle Three core535,18kB có sẵn; chưa kiểm Windows thật.
+- Bảo toàn checkpoint13b1e7f, nền đất nâu và danh mục19skill. Cập nhật ZIP và cùng Draft PR#1; không merge main. Các kết quả giữ nguyên rune của mốc trước là lịch sử trước yêu cầu đổi fade chung này. Các draft gate/AAA lớn không được mở trong lượt này.
+
+---
+
+# Mốc trước — thu gọn Hỏa, 17/10/2026
 
 - Theo yêu cầu mới, Hỏa chỉ giữ FIRE-01 — Thiên Nhật Diệt Thế; tổng15hệ/19skill. Xóa hai slot Hỏa khác cùng mã VFX, nhịp rung, score,4WAV nguồn/mirror,2report/2biểu đồ/4ảnh riêng và các record/tài liệu tham chiếu. Giữ shader/ember/icon/bank Hỏa dùng chung với FIRE-01.
 - Bảo toàn toàn bộ19skill còn lại: config/cinematic/rune/audio/MP/cooldown khớp snapshot trước sửa. Seed tạo hình gắn với ID, giữ giá trị gốc để việc đổi vị trí UI không đổi các hệ khác.37tệp nguồn/938publicasset còn dùng và byte START.bat không đổi.
