@@ -1,17 +1,23 @@
 {
   "archive": "Arcane-VFX-Studio-Thao-Update.zip",
-  "bytes": 70634232,
-  "sha256": "75a7952fb286d5beea7677d9f76822a6c9bff151371dda0fa33892be9b10d895",
-  "entries": 1194,
-  "manifestFilesChecked": 1192,
+  "bytes": 82352432,
+  "sha256": "84c26dacea61dfb0f995b08d885e118aeb679a8ba22d620a6bba00bc93758e83",
+  "sourceCommit": "b49f044c28d582903d2c6eef6d07e7aabb27c528",
+  "entries": 1208,
+  "manifestFilesChecked": 1206,
   "manifestHashesPassed": true,
   "crcPassed": true,
-  "retiredIdentifierPathOrTextMatches": [],
-  "noNodeModulesGitSecrets": true,
-  "sourceCommit": "45118913bd20a273dc4d5754f6186f2736208d36",
-  "extractedInstallPassed": true,
-  "extractedUnitFilesPassed": 8,
-  "extractedBuildPassed": true,
-  "extractedBuildModules": 64,
-  "testedRuntimeMatchesCurrentSources": true
+  "noDuplicateEntries": true,
+  "noNodeModulesGitEnvFiles": true,
+  "runtimeAndDependencyFilesChecked": 985,
+  "archiveRuntimeMatchesTestedWorkingTree": true,
+  "launcherBytesPreserved": true,
+  "currentWorkingTreeChecks": {
+    "unitTestsPassed": 12,
+    "buildModules": 64,
+    "browserGroundSamplesPassed": 18,
+    "productionUI": "passed"
+  },
+  "extractedInstallBuildRepeated": false,
+  "reason": "No dependency changes; every packaged runtime/public asset and dependency/config file matches the tested working tree byte for byte. Clean extracted install/build evidence for the preceding package is retained at commit 1ce5028."
 }
