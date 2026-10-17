@@ -66,15 +66,18 @@ export function createSpellAudio({onStatus=()=>{},manifestUrl='/assets/audio/man
  }
  function stopCast(immediate=false){for(const v of [...voices])if(v.kind!=='ambient')retire(v,immediate?0:.05);for(const [key,v]of loops)if(v.kind!=='ambient')loops.delete(key);timeline.reset();scheduler.reset();eventWindows.clear();castId=null;mixer?.flush();}
  function allocate(priority){
-  const reserved=new Set([...voices].map(v=>v.slot));let slot=mixer.slots.find(s=>!reserved.has(s)),when=ctx.currentTime;
-  if(reserved.size>=mixer.limit||!slot){
-   const candidates=[...voices].filter(v=>v.slot.voice===v||v.retiring).sort((a,b)=>a.priority-b.priority||a.start-b.start);
+  const reserved=new Set([...voices].map(v=>v.slot)),active=[...voices].filter(v=>!v.retiring);let slot=mixer.slots.find(s=>!reserved.has(s)),when=ctx.currentTime;
+  if(active.length>=mixer.limit||!slot){
+   // A retiring source already gave its reservation to its replacement.
+   // Stealing it again admits multiple replacements onto the same pooled graph.
+   const candidates=active.filter(v=>v.slot.voice===v).sort((a,b)=>a.priority-b.priority||a.start-b.start);
    const victim=candidates[0];if(!victim||victim.priority>priority)return null;slot=victim.slot;
    retire(victim,priority>=90?.018:.04);
    for(const old of voices)if(old.slot===slot)when=Math.max(when,(old.stopAt||old.start)+.001);
   }
   return {slot,when};
  }
+ function enforceBudget(){if(!mixer)return;const active=[...voices].filter(v=>!v.retiring).sort((a,b)=>a.priority-b.priority||a.start-b.start);while(active.length>mixer.limit)retire(active.shift(),.04);}
  function play(cue,bank,f,rate=1,loop=false,options={}) {
   if(!enabled||disposed||!mixer||!bank?.[cue])return;
   const metadata=getCue(f?.element||selection,cue);
@@ -144,10 +147,10 @@ export function createSpellAudio({onStatus=()=>{},manifestUrl='/assets/audio/man
   get enabled(){return enabled;},enable,disable,update,stopCast,setSelection,diagnostics,configure,
   registerScores(list){for(const score of list)scores.set(score.id,score);},
   init:enable,ready:async()=>{if(initPromise)await initPromise;return loading?.promise||(enabled?loadBank(selection):banks.get(selection));},
-  setQuality(value){if(value===quality)return;quality=value;mixer?.setQuality(value);if(mixer)evict();},
+  setQuality(value){if(!AUDIO_PRESETS[value]||value===quality)return;quality=value;mixer?.setQuality(value);enforceBudget();evict();},
   setVolume(value){configure({masterDb:value<=0?-60:Math.max(-60,Math.min(0,20*Math.log10(value)))});},setAmbient,
   setHidden(value){hidden=!!value;syncContext();},
-  reportFrame(cost,dt){mixer?.reportFrame(cost,dt);},
+  reportFrame(cost,dt){mixer?.reportFrame(cost,dt);enforceBudget();},
   uiFeedback(){if(!enabled||!settings.ui||!mixer)return;const bank=banks.get(selection);if(bank?.ui)play('ui',bank,{id:'ui',element:selection,time:0,center:lastPose.position},1,false,{key:'ui',category:'ui',wet:0,gain:.18});},
   testSound(){const bank=banks.get(selection);if(bank)play('impact',bank,{id:'test',element:selection,time:0,center:lastPose.position.map((v,i)=>v+(i===2?-12:0))},1,false,{gain:.5});},
   async audition(id,{legacy=false}={}){const cue=CUE_REGISTRY.find(c=>c.id===id);if(!cue)return;await enable();stopCast();setSelection(cue.element);await loadBank(cue.element);let bank=banks.get(cue.element);

@@ -9,9 +9,11 @@ export function mountAudioLab(sound,{skills,onPlaySkill}) {
  <div data-lab-cues></div><div class="lab-images"><img data-lab-static-wave alt="Waveform cue offline"><img data-lab-static-spectrum alt="Spectrogram cue offline"></div><p data-lab-description></p>`;
  document.body.append(root);
  const elementSelect=root.querySelector('[data-lab-element]'),skillSelect=root.querySelector('[data-lab-skill]'),list=root.querySelector('[data-lab-cues]');
+ let measurements={},selectedCue;
+ void fetch('/audio/qa-summary.json').then(r=>{if(!r.ok)throw new Error('Measurements unavailable');return r.json();}).then(r=>{measurements=r.cues||{};if(selectedCue)selectCue(selectedCue);}).catch(()=>{if(selectedCue)selectCue(selectedCue);});
  for(const element of Object.keys(ELEMENT_AUDIO)){const option=document.createElement('option');option.value=element;option.textContent=element+' · '+ELEMENT_AUDIO[element].keywords;elementSelect.append(option);}
  const listeners=[],listen=(el,event,fn)=>{el.addEventListener(event,fn);listeners.push(()=>el.removeEventListener(event,fn));};
- function selectCue(cue){root.querySelector('[data-lab-static-wave]').src=`/audio/reports/cues/${cue.id}-waveform.png`;root.querySelector('[data-lab-static-spectrum]').src=`/audio/reports/cues/${cue.id}-spectrogram.png`;root.querySelector('[data-lab-description]').textContent=`${cue.id} · seed ${cue.seed} · ${cue.duration}s · RMS mục tiêu ${cue.targetRmsDb} dBFS · ${cue.variants} biến thể công thức · chưa kiểm chứng bằng tai`;}
+ function selectCue(cue){selectedCue=cue;root.querySelector('[data-lab-static-wave]').src=`/audio/reports/cues/${cue.id}-waveform.png`;root.querySelector('[data-lab-static-spectrum]').src=`/audio/reports/cues/${cue.id}-spectrogram.png`;const m=measurements[cue.id],measurement=m?`${m.status} sau ${m.iterations} vòng · RMS ${m.rmsDbFS.toFixed(2)} dBFS · TP4× ${m.truePeakDbTP4x.toFixed(2)} dBTP${m.failures.length?' · '+m.failures.join(', '):''}`:'chưa tải được số đo';root.querySelector('[data-lab-description]').textContent=`${cue.id} · seed ${cue.seed} · ${cue.duration}s · ${measurement} · RMS mục tiêu ${cue.targetRmsDb} dBFS · chưa kiểm chứng bằng tai`;}
  function render(){const element=elementSelect.value;list.replaceChildren();skillSelect.replaceChildren();
   for(const skill of skills.filter(s=>s.id.startsWith(element+'-'))){const option=document.createElement('option');option.value=skill.id;option.textContent=skill.id+' · '+skill.vi;skillSelect.append(option);}
   for(const cue of CUE_REGISTRY.filter(c=>c.element===element)){

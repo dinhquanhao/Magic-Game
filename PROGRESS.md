@@ -86,3 +86,11 @@
 - Đã nhận yêu cầu tiếp tục, giữ nguyên toàn bộ WIP và ZIP bàn giao. Build baseline hiện tại đạt (61 modules), 5 nhóm unit đạt. Các kết quả browser mới chưa được xác nhận.
 - Xếp hạng 12 ý tưởng tại work/ROUND-RESUME-2026-10-17.md; chọn hồi quy audio, đồng bộ assets Lab, cân bằng độ sáng VFX. Không bắt đầu lại game hoặc vượt gate roadmap.
 - Checkpoint bảo toàn dưới đây chứa WIP chưa browser-test cuối; hai module AAA chưa tích hợp.
+
+### Audio tiếp nối — nhóm 1–2 đã kiểm chứng
+
+- Checkpoint bảo toàn WIP: ce73729. Sửa lỗi Low nhận 14 voice hoạt động thay vì 8 trong burst: chỉ lấy voice đang được nhận vào pool làm victim, không lấy voice đang fade đã nhường slot; giảm preset/adaptive cũng thực thi budget. Ca tái hiện sau sửa giữ 8/8 active; fade-tail được ghi riêng, không tính là voice mới.
+- 23/23 finale phát đúng một impact và cleanup nguồn về 0, bốn preset, pause/rate/mute, rapid selection đạt; không JS error. Lượt harness tổng cuối dừng ở lỗi fixture audioLab chưa expose, không gọi toàn harness là PASS. Đã sửa route fixture và test riêng Lab đạt nghe mới/A–B/assets/dừng. Evidence: docs/evidence/audio-v3/summary.json và raw engine-and-fixture.json/lab.json.
+- 833 WAV/PNG phục vụ Lab khớp hash với nguồn. Thêm audio:render/audio:report/audio:test; report xuất measurement manifest và Lab hiển thị số đo/PASS/FAIL. Không render lại hoặc kéo dài vòng hiệu chỉnh cue: lightning/impact vẫn FAIL sau 5 vòng; 224/225 PASS, 23/23 reference mixes PASS, chưa kiểm chứng bằng tai.
+- Build đạt 61 modules; npm test đạt 6 nhóm gồm score thật 23 skill. Cảnh báo chunk Three >500kB còn nguyên. Asset inventory audio v1 bên dưới và PROGRESS cũ là lịch sử, được thay thế bằng mục này cho audio hiện tại.
+- Các lỗi fixture và thử nghiệm chưa đạt được giữ trong work/audio-resume; historical stage-a/results.json được phục hồi sau khi lưu kết quả rerun fixture cũ riêng.

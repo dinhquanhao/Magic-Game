@@ -9,7 +9,10 @@
     "test": "node --test tests/*.test.js",
     "test:e2e": "python tests/playwright_smoke.py",
     "observe": "npm run build && python tests/observe_preview.py",
-    "test:audio": "python tests/playwright_audio.py",
+    "test:audio": "python tests/audio_runtime.py",
+    "audio:test": "python tests/audio_runtime.py",
+    "audio:render": "node audio/render.mjs",
+    "audio:report": "node audio/report.mjs",
     "assets:generate": "python scripts/generate_audio.py && python scripts/generate_icons.py",
     "automation:plan": "node scripts/plan_autonomy.mjs"
   },

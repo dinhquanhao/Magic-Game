@@ -413,3 +413,7 @@ Xây nền mixer, ceiling limiter có fallback, pool/quality/lifecycle và UI; k
 - `psychic/drone`: PASS (vòng 1), RMS -34.00 dBFS, TP4× -27.41 dBTP; ngưỡng đạt.
 
 - Gate PSYCHIC: build đạt; Chromium material/impact/stop qua mixer đạt; ảnh waveform/spectrogram và JSON lưu. Chưa kiểm chứng bằng tai. Chuyển sang hệ kế theo thứ tự.
+
+## Tiếp nối sau dừng — hồi quy engine và Lab
+
+Xem PROGRESS mục Audio tiếp nối và docs/evidence/audio-v3. Đã sửa burst vượt budget Low (14→8 active), kiểm tra 23 finale/cleanup, pause/rate/mute/cache. Lab UI/A-B/WAV/ảnh/dừng đạt lượt riêng sau sửa fixture. Build và 6 nhóm unit đạt; 833 artifact mirror khớp hash. Không đổi lịch sử 225 cue; lightning/impact còn FAIL, mọi cue chưa kiểm chứng bằng tai.

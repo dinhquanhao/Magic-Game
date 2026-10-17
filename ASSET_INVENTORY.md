@@ -23,3 +23,9 @@ Phạm vi: mã hiện tại của nhánh PR #1. Không tạo lại dự án ho�
 - Gain riêng từng cue, master, compressor và panner; file lỗi dùng tổng hợp tone dự phòng có giới hạn. Pause/hit-stop/ẩn tab/context lost dừng đồng hồ audio; slow motion đổi playback rate cùng tốc độ mô phỏng. Pitch cũng thay đổi, chưa có time stretching giữ cao độ.
 - Stop/recast/chuyển hệ hủy voice cũ; pagehide đóng context và dọn nodes/cache. Ambient tùy chọn không thay nhạc nền.
 - Kết quả kỹ thuật và bản nghe được lưu ở `docs/evidence/audio/`; chất lượng nghệ thuật cần nghe thử, không được suy từ test đạt.
+
+## Cập nhật audio v3 — 17/10/2026
+
+- Thay thế mô tả engine v1 ở bảng lịch sử: 225 cue logic/360 cue WAV có biến thể +23 skill WAV; 6 bus, limiter lookahead/fallback, spatial/preset8/12/20/28, bank2/3/3/4 với cache12/20/32/48MiB và Audio Lab. Unlock qua gesture; có prewarm tổng hợp AudioBuffer/OfflineAudioContext trước gesture, không tạo speaker AudioContext trước gesture.
+- 833 WAV/PNG mirror được xác minh SHA256; npm run audio:report đồng bộ và xuất public/audio/qa-summary.json. Nguồn đo audio/reports; 224/225 cue PASS, lightning/impact FAIL sau5vòng; 23 reference mixes PASS nhưng không phải bản ghi browser. Chưa kiểm chứng bằng tai.
+- Audio runtime/regression và Lab evidence ở docs/evidence/audio-v3; public/assets/audio v1 vẫn giữ cho A/B.
