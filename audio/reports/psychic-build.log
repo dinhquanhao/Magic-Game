@@ -1,0 +1,20 @@
+
+> arcane-vfx-studio@2.0.0 build
+> vite build
+
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 61 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                        12.38 kB │ gzip:   3.96 kB
+dist/assets/index-DSj2jVos.css         12.98 kB │ gzip:   3.81 kB
+dist/assets/three-addons-BiVHgwmS.js  112.28 kB │ gzip:  23.93 kB
+dist/assets/index-1rx7lPBm.js         420.62 kB │ gzip: 138.37 kB
+dist/assets/three-core-Chm7boA6.js    535.18 kB │ gzip: 136.58 kB
+✓ built in 2.48s
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.

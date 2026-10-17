@@ -79,3 +79,10 @@
 - Live Preview tương tác cho người dùng **chưa được xác nhận**. Localhost chỉ đã được truy cập từ Playwright bên trong cloud. Không cung cấp localhost như một URL web công khai.
 - Chuẩn bị `vercel.json` và `.vercelignore`; chưa kết nối tài khoản, chưa deploy, chưa dùng dịch vụ trả phí. Cần phê duyệt trước khi triển khai công khai hoặc phát sinh phí.
 - Thứ tự tiếp tục giữ nguyên: hoàn thiện đánh giá VFX GĐ1 trước nhân vật/HP, enemy/Boss và thế giới. Do giới hạn lượt chạy, lưu checkpoint quan sát trước khi mở thêm nhóm nâng cấp lớn; nhiệm vụ kế tiếp là chuẩn hóa góc máy/exposure và ghi đủ mốc thị giác của 23 skill.
+
+
+## Tiếp nối sau lệnh dừng — 17/10/2026
+
+- Đã nhận yêu cầu tiếp tục, giữ nguyên toàn bộ WIP và ZIP bàn giao. Build baseline hiện tại đạt (61 modules), 5 nhóm unit đạt. Các kết quả browser mới chưa được xác nhận.
+- Xếp hạng 12 ý tưởng tại work/ROUND-RESUME-2026-10-17.md; chọn hồi quy audio, đồng bộ assets Lab, cân bằng độ sáng VFX. Không bắt đầu lại game hoặc vượt gate roadmap.
+- Checkpoint bảo toàn dưới đây chứa WIP chưa browser-test cuối; hai module AAA chưa tích hợp.

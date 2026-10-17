@@ -42,9 +42,12 @@ export function buildSkillScore(skill,plan) {
  else if(!skill.earthMeteor&&!skill.timeDomain&&!skill.spaceBlackHole&&!skill.lightningStorm)after=Array.from({length:3},(_,i)=>impact+.62+i*.32);
  after.forEach((at,i)=>add('secondary',at,`aftershock-${i}`,{gain:.5*Math.pow(.55,i),source:'existing module aftershock array',region:true}));
  add('aftermath',Math.min(impact+.45,end-.1),'decay',{source:'audio tail follows existing aftermath; truncated by cleanup'});
+ const preAt=skill.shadowOrbCataclysm?skill.shadowOrbCataclysm.overload.start-.06:skill.timeDomain?impact-skill.timeDomain.slowMotion.duration:impact-plan.preSlowDuration;
+ const timeControls=[{at:preAt,type:'pre',duration:plan.preSlowDuration,scale:plan.preSlowScale},{at:impact,type:'freeze',duration:plan.hitStop,postScale:plan.postSlowScale,postDuration:plan.postSlowDuration}];
+ if(skill.iceField)timeControls.unshift({at:3.2,type:'pre',duration:.58,scale:.52});
  return {id:skill.id,name:skill.vi,element,identity:ELEMENT_AUDIO[element],chargePace:skill.pace,channelDuration:.58+skill.pace*.26,impact,end,
   fadeAt:skill.runeTower.fadeAt??skill.runeTower.fadeStart*end,hitstop:plan.hitStop,preSlow:plan.preSlowDuration,shake:plan.shake,
-  events:events.sort((a,b)=>a.at-b.at),ideas:[
+  events:events.sort((a,b)=>a.at-b.at),timeControls,ideas:[
    {idea:`Rune cộng hưởng theo cấp của ${skill.vi}`,implemented:true,method:'actual tower progress → tier note; seeded modal frequency'},
    {idea:settings?.waves?`Độ dày tăng theo ${settings.waves.length} đợt thật`:`Đường chuyển động ${skill.shape} có cue riêng`,implemented:true,method:'existing waves/beat/descent markers; gain/pitch/round robin'},
    {idea:`Trường âm ${element} trải trên AOE`,implemented:true,method:'regional clusters within actual AOE and stereo-linked dry/wet; mono-safe core'},

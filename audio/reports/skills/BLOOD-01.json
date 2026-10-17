@@ -1,0 +1,45 @@
+{
+  "id": "BLOOD-01",
+  "duration": 23.462,
+  "timeAxis": "reference wall-time mapping of extracted world controls; not a recording of browser output",
+  "impactSeconds": 18.481625,
+  "metrics": {
+    "peakDbFS": -11.189474254227852,
+    "truePeakDbTP4x": -11.18394687919678,
+    "rmsDbFS": -36.28972169679323,
+    "lufsApprox": -40.986801860856986,
+    "duration": 23.462,
+    "dc": 5.726815218463855e-06,
+    "seam": 0.0,
+    "tailDropDb": 222.8312675022372,
+    "centroidHz": 133.57558076942362,
+    "riserCentroidDeltaHz": 5.71712679250642,
+    "bands": [
+      0.5976487072291232,
+      0.26759462010485496,
+      0.06879544085803743,
+      0.004400984328576036,
+      0.0016580012895278887
+    ],
+    "vacuumRmsDbFS": -240.0,
+    "vacuumBoundaryDelta": 0.0,
+    "finite": true
+  },
+  "limiter": {
+    "reductionDb": 0,
+    "lookaheadSamples": 128,
+    "rate": 24000
+  },
+  "peakEnvelopeAt": 18.625,
+  "finalePeakWindowDbFS": -18.462707628683727,
+  "preFinalePeakWindowDbFS": -33.9979653819175,
+  "finaleContrastDb": 15.535257753233775,
+  "vacuumContrastDb": 25.088914605030112,
+  "earVerified": false,
+  "thresholds": {
+    "masterTruePeakDbTP4xMax": -1,
+    "vacuumContrastDbMin": 12,
+    "finaleContrastDbMin": 3
+  },
+  "passed": true
+}

@@ -123,6 +123,21 @@
         "region": true
       }
     ],
+    "timeControls": [
+      {
+        "at": 3.24,
+        "type": "pre",
+        "duration": 0.48,
+        "scale": 0.23
+      },
+      {
+        "at": 3.72,
+        "type": "freeze",
+        "duration": 0.135,
+        "postScale": 0.3,
+        "postDuration": 0.78
+      }
+    ],
     "ideas": [
       {
         "idea": "Rune cộng hưởng theo cấp của Thiên Nhật Diệt Thế",
@@ -302,6 +317,21 @@
         "region": true
       }
     ],
+    "timeControls": [
+      {
+        "at": 3.67,
+        "type": "pre",
+        "duration": 0.38,
+        "scale": 0.29
+      },
+      {
+        "at": 4.05,
+        "type": "freeze",
+        "duration": 0.11,
+        "postScale": 0.36,
+        "postDuration": 0.65
+      }
+    ],
     "ideas": [
       {
         "idea": "Rune cộng hưởng theo cấp của Phượng Hoàng Tận Thế",
@@ -447,6 +477,21 @@
         "gain": 0.15125000000000002,
         "source": "existing module aftershock array",
         "region": true
+      }
+    ],
+    "timeControls": [
+      {
+        "at": 3.6799999999999997,
+        "type": "pre",
+        "duration": 0.34,
+        "scale": 0.32
+      },
+      {
+        "at": 4.02,
+        "type": "freeze",
+        "duration": 0.13,
+        "postScale": 0.34,
+        "postDuration": 0.7
       }
     ],
     "ideas": [
@@ -640,6 +685,21 @@
         "region": true
       }
     ],
+    "timeControls": [
+      {
+        "at": 8.950000000000001,
+        "type": "pre",
+        "duration": 0.6,
+        "scale": 0.25
+      },
+      {
+        "at": 9.55,
+        "type": "freeze",
+        "duration": 0.12,
+        "postScale": 0.5,
+        "postDuration": 0.5
+      }
+    ],
     "ideas": [
       {
         "idea": "Rune cộng hưởng theo cấp của Hải Thần Lĩnh Vực",
@@ -794,6 +854,21 @@
         "gain": 0.16637500000000005,
         "region": true,
         "source": "earthMeteor.aftershock.times"
+      }
+    ],
+    "timeControls": [
+      {
+        "at": 8.67,
+        "type": "pre",
+        "duration": 0.68,
+        "scale": 0.25
+      },
+      {
+        "at": 9.35,
+        "type": "freeze",
+        "duration": 0.12,
+        "postScale": 0.5,
+        "postDuration": 0.62
       }
     ],
     "ideas": [
@@ -1050,6 +1125,21 @@
         "region": true
       }
     ],
+    "timeControls": [
+      {
+        "at": 11.57,
+        "type": "pre",
+        "duration": 0.48,
+        "scale": 0.5
+      },
+      {
+        "at": 12.05,
+        "type": "freeze",
+        "duration": 0.08,
+        "postScale": 0.52,
+        "postDuration": 0.72
+      }
+    ],
     "ideas": [
       {
         "idea": "Rune cộng hưởng theo cấp của Lục Dực Thánh Khải",
@@ -1282,6 +1372,21 @@
         "region": true
       }
     ],
+    "timeControls": [
+      {
+        "at": 11.94,
+        "type": "pre",
+        "duration": 0.9,
+        "scale": 0.3
+      },
+      {
+        "at": 13.5,
+        "type": "freeze",
+        "duration": 0.12,
+        "postScale": 0.5,
+        "postDuration": 0.5
+      }
+    ],
     "ideas": [
       {
         "idea": "Rune cộng hưởng theo cấp của Vạn Ảnh Thiên Kiếp",
@@ -1462,6 +1567,21 @@
         "gain": 0.6,
         "region": true,
         "source": "main.js travelTime begins after touch+fade"
+      }
+    ],
+    "timeControls": [
+      {
+        "at": 5.78,
+        "type": "pre",
+        "duration": 0.22,
+        "scale": 0.68
+      },
+      {
+        "at": 6,
+        "type": "freeze",
+        "duration": 0.04,
+        "postScale": 0.6,
+        "postDuration": 0.8
       }
     ],
     "ideas": [
@@ -1688,6 +1808,21 @@
         "variant": 1,
         "gain": 1,
         "source": "audio tail follows existing aftermath; truncated by cleanup"
+      }
+    ],
+    "timeControls": [
+      {
+        "at": 11.55,
+        "type": "pre",
+        "duration": 0.7,
+        "scale": 0.5
+      },
+      {
+        "at": 12.25,
+        "type": "freeze",
+        "duration": 0.08,
+        "postScale": 0.58,
+        "postDuration": 0.45
       }
     ],
     "ideas": [
@@ -1923,6 +2058,27 @@
         "region": true
       }
     ],
+    "timeControls": [
+      {
+        "at": 3.2,
+        "type": "pre",
+        "duration": 0.58,
+        "scale": 0.52
+      },
+      {
+        "at": 10.23,
+        "type": "pre",
+        "duration": 0.62,
+        "scale": 0.5
+      },
+      {
+        "at": 10.85,
+        "type": "freeze",
+        "duration": 0.1,
+        "postScale": 0.54,
+        "postDuration": 0.65
+      }
+    ],
     "ideas": [
       {
         "idea": "Rune cộng hưởng theo cấp của Vĩnh Băng Thiên Kiếp",
@@ -2069,6 +2225,21 @@
         "gain": 0.15125000000000002,
         "source": "existing module aftershock array",
         "region": true
+      }
+    ],
+    "timeControls": [
+      {
+        "at": 1.73,
+        "type": "pre",
+        "duration": 0.31,
+        "scale": 0.285
+      },
+      {
+        "at": 2.04,
+        "type": "freeze",
+        "duration": 0.1,
+        "postScale": 0.46,
+        "postDuration": 0.6799999999999999
       }
     ],
     "ideas": [
@@ -2219,6 +2390,21 @@
         "region": true
       }
     ],
+    "timeControls": [
+      {
+        "at": 1.81,
+        "type": "pre",
+        "duration": 0.38,
+        "scale": 0.32999999999999996
+      },
+      {
+        "at": 2.19,
+        "type": "freeze",
+        "duration": 0.125,
+        "postScale": 0.54,
+        "postDuration": 0.86
+      }
+    ],
     "ideas": [
       {
         "idea": "Rune cộng hưởng theo cấp của Nham Thiên Diệt Thế",
@@ -2365,6 +2551,21 @@
         "gain": 0.15125000000000002,
         "source": "existing module aftershock array",
         "region": true
+      }
+    ],
+    "timeControls": [
+      {
+        "at": 1.56,
+        "type": "pre",
+        "duration": 0.24,
+        "scale": 0.24
+      },
+      {
+        "at": 1.8,
+        "type": "freeze",
+        "duration": 0.075,
+        "postScale": 0.38,
+        "postDuration": 0.5
       }
     ],
     "ideas": [
@@ -2620,6 +2821,21 @@
         "region": true
       }
     ],
+    "timeControls": [
+      {
+        "at": 11.62,
+        "type": "pre",
+        "duration": 0.58,
+        "scale": 0.5
+      },
+      {
+        "at": 12.2,
+        "type": "freeze",
+        "duration": 0.1,
+        "postScale": 0.54,
+        "postDuration": 0.68
+      }
+    ],
     "ideas": [
       {
         "idea": "Rune cộng hưởng theo cấp của Vạn Độc Diệt Giới",
@@ -2825,6 +3041,21 @@
         "source": "audio tail follows existing aftermath; truncated by cleanup"
       }
     ],
+    "timeControls": [
+      {
+        "at": 14.05,
+        "type": "pre",
+        "duration": 0.45,
+        "scale": 0.62
+      },
+      {
+        "at": 14.5,
+        "type": "freeze",
+        "duration": 0.08,
+        "postScale": 0.7,
+        "postDuration": 0.35
+      }
+    ],
     "ideas": [
       {
         "idea": "Rune cộng hưởng theo cấp của Không Gian Băng Diệt",
@@ -3021,6 +3252,21 @@
         "gain": 0.5,
         "pitch": 1.7,
         "source": "shell crackDuration + domain release"
+      }
+    ],
+    "timeControls": [
+      {
+        "at": 11.9,
+        "type": "pre",
+        "duration": 0.6,
+        "scale": 0.5
+      },
+      {
+        "at": 12.5,
+        "type": "freeze",
+        "duration": 0.07,
+        "postScale": 0.62,
+        "postDuration": 0.28
       }
     ],
     "ideas": [
@@ -3276,6 +3522,21 @@
         "region": true
       }
     ],
+    "timeControls": [
+      {
+        "at": 12.100000000000001,
+        "type": "pre",
+        "duration": 0.62,
+        "scale": 0.32
+      },
+      {
+        "at": 12.72,
+        "type": "freeze",
+        "duration": 0.12,
+        "postScale": 0.5,
+        "postDuration": 0.72
+      }
+    ],
     "ideas": [
       {
         "idea": "Rune cộng hưởng theo cấp của Vạn Huyết Thiên Thượng",
@@ -3423,6 +3684,21 @@
         "gain": 0.15125000000000002,
         "source": "existing module aftershock array",
         "region": true
+      }
+    ],
+    "timeControls": [
+      {
+        "at": 1.81,
+        "type": "pre",
+        "duration": 0.38,
+        "scale": 0.32999999999999996
+      },
+      {
+        "at": 2.19,
+        "type": "freeze",
+        "duration": 0.125,
+        "postScale": 0.54,
+        "postDuration": 0.86
       }
     ],
     "ideas": [
@@ -3574,6 +3850,21 @@
         "region": true
       }
     ],
+    "timeControls": [
+      {
+        "at": 1.71,
+        "type": "pre",
+        "duration": 0.24,
+        "scale": 0.24
+      },
+      {
+        "at": 1.95,
+        "type": "freeze",
+        "duration": 0.075,
+        "postScale": 0.38,
+        "postDuration": 0.5
+      }
+    ],
     "ideas": [
       {
         "idea": "Rune cộng hưởng theo cấp của Tinh Hà Tận Thế",
@@ -3721,6 +4012,21 @@
         "gain": 0.15125000000000002,
         "source": "existing module aftershock array",
         "region": true
+      }
+    ],
+    "timeControls": [
+      {
+        "at": 1.96,
+        "type": "pre",
+        "duration": 0.31,
+        "scale": 0.285
+      },
+      {
+        "at": 2.27,
+        "type": "freeze",
+        "duration": 0.1,
+        "postScale": 0.46,
+        "postDuration": 0.6799999999999999
       }
     ],
     "ideas": [
@@ -3871,6 +4177,21 @@
         "region": true
       }
     ],
+    "timeControls": [
+      {
+        "at": 1.7800000000000002,
+        "type": "pre",
+        "duration": 0.38,
+        "scale": 0.32999999999999996
+      },
+      {
+        "at": 2.16,
+        "type": "freeze",
+        "duration": 0.125,
+        "postScale": 0.54,
+        "postDuration": 0.86
+      }
+    ],
     "ideas": [
       {
         "idea": "Rune cộng hưởng theo cấp của Tâm Thức Băng Diệt",
@@ -4019,6 +4340,21 @@
         "region": true
       }
     ],
+    "timeControls": [
+      {
+        "at": 1.68,
+        "type": "pre",
+        "duration": 0.24,
+        "scale": 0.24
+      },
+      {
+        "at": 1.92,
+        "type": "freeze",
+        "duration": 0.075,
+        "postScale": 0.38,
+        "postDuration": 0.5
+      }
+    ],
     "ideas": [
       {
         "idea": "Rune cộng hưởng theo cấp của Vạn Niệm Thần Vực",
@@ -4165,6 +4501,21 @@
         "gain": 0.15125000000000002,
         "source": "existing module aftershock array",
         "region": true
+      }
+    ],
+    "timeControls": [
+      {
+        "at": 1.73,
+        "type": "pre",
+        "duration": 0.31,
+        "scale": 0.285
+      },
+      {
+        "at": 2.04,
+        "type": "freeze",
+        "duration": 0.1,
+        "postScale": 0.46,
+        "postDuration": 0.6799999999999999
       }
     ],
     "ideas": [

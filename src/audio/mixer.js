@@ -8,7 +8,8 @@ function set(param,value,now,tau=.015){param.cancelScheduledValues(now);param.se
 export async function createMixer(ctx,settings,quality='High') {
  const nodes=new Set(),buses={},slots=[],irCache=new Map();
  let disposed=false,preset=quality,adaptive=1,room=settings.room,limiterStats={reduction:0,peak:0,blocks:0};
- let limiterKind='waveshaper-ceiling',cpuSlow=0,cpuGood=0,duckUntil=0,vacuumActive=false,hitstopActive=false;
+ let limiterKind='waveshaper-ceiling',cpuSlow=0,cpuGood=0,duckUntil=0,vacuumActive=false,hitstopActive=false,clearWetAt=0,wetRequested=true;
+ const feedbackGains=[];let listenerPose={position:[0,0,0],forward:[0,0,-1]};
  const node=n=>{nodes.add(n);return n;};
  const gain=v=>{const g=node(ctx.createGain());g.gain.value=v;return g;};
  const master=gain(dbGain(settings.masterDb)),eq=node(ctx.createBiquadFilter());eq.type='highpass';eq.frequency.value=22;eq.Q.value=.5;
@@ -29,7 +30,7 @@ export async function createMixer(ctx,settings,quality='High') {
  // Two short damped delay lines are the Low/Medium room; both feed a common bus.
  for(const delayTime of [.073,.109]) {
   const delay=node(ctx.createDelay(.5)),damping=node(ctx.createBiquadFilter()),feedback=gain(.28);
-  delay.delayTime.value=delayTime;damping.type='lowpass';damping.frequency.value=2700;
+  feedbackGains.push(feedback);delay.delayTime.value=delayTime;damping.type='lowpass';damping.frequency.value=2700;
   pre.connect(delay);delay.connect(damping);damping.connect(feedback);feedback.connect(delay);damping.connect(fdnGain);
  }
  fdnGain.connect(wetOut);
@@ -60,6 +61,7 @@ export async function createMixer(ctx,settings,quality='High') {
   }
   if(room===next&&!disposed)convolver.buffer=irCache.get(next);
  }
+ function maintain(){if(clearWetAt&&ctx.currentTime>=clearWetAt){const buffer=convolver.buffer;convolver.buffer=null;convolver.buffer=buffer;clearWetAt=0;for(const feedback of feedbackGains)set(feedback.gain,.28,ctx.currentTime,.02);if(wetRequested){set(wetOut.gain,.28,ctx.currentTime,.015);set(fdnGain.gain,AUDIO_PRESETS[preset].convolution&&adaptive>.5?0:.7,ctx.currentTime,.02);}}}
  function applySettings(s) {
   settings=s;const now=ctx.currentTime;
   set(master.gain,s.mute?0:dbGain(s.masterDb),now);
@@ -99,23 +101,23 @@ export async function createMixer(ctx,settings,quality='High') {
   slots,attach,duck,applySettings,setQuality,setRoom,reportFrame,analyser,
   get limit(){return Math.max(4,Math.floor(AUDIO_PRESETS[preset].voices*adaptive));},
   get budget(){return AUDIO_PRESETS[preset];},
-  route(slot,category,wet=.1){attach(slot,category);slot.send.gain.value=wet;slot.direct.gain.value=1;},
-  listener(pose) {const now=ctx.currentTime;for(const [prefix,values] of Object.entries(pose))if(values&&['position','forward','up'].includes(prefix)) {
+  route(slot,category,wet=.1){wetRequested=true;attach(slot,category);slot.send.gain.value=wet;slot.direct.gain.value=1;},
+  listener(pose) {maintain();listenerPose=pose;const now=ctx.currentTime;for(const [prefix,values] of Object.entries(pose))if(values&&['position','forward','up'].includes(prefix)) {
    if(ctx.listener[`${prefix}X`])for(let i=0;i<3;i++)set(ctx.listener[`${prefix}${'XYZ'[i]}`],values[i],now,.018);
    else if(prefix==='position')ctx.listener.setPosition(...values);else if(prefix==='forward')ctx.listener.setOrientation(...values,...(pose.up||[0,1,0]));
   }},
   spatial(slot,position,distance,rate=1,reduced=settings.reduced) {const now=ctx.currentTime;
-   for(let i=0;i<3;i++)set(slot.panner[`position${'XYZ'[i]}`],settings.spatial?position[i]:[0,0,-1][i],now,.015);
+   for(let i=0;i<3;i++)set(slot.panner[`position${'XYZ'[i]}`],settings.spatial?position[i]:listenerPose.position[i]+listenerPose.forward[i],now,.015);
    slot.panner.rolloffFactor=settings.spatial?.45:0;
    const cutoff=(reduced?8500:16000)/(1+Math.max(0,distance-16)*.018);
    set(slot.filter.frequency,Math.max(160,cutoff*Math.max(.08,Math.min(1,rate))),now,.02);set(slot.bass.gain,(settings.impact-1)*6-(reduced?9:0),now,.02);set(slot.presence.gain,reduced?-8:0,now,.02);
   },
-  anticipation(active){if(active===vacuumActive)return;vacuumActive=active;const now=ctx.currentTime;for(const category of ['ambience','drone','magic','sfx']){const ducked=['ambience','drone'].includes(category)&&now<duckUntil?.5:1;const compressed=hitstopActive&&['magic','sfx'].includes(category)?.18:1;set(buses[category].duck.gain,active?.015:ducked*compressed,now,active?.008:.03);}},
+  anticipation(active){if(active===vacuumActive)return;vacuumActive=active;const now=ctx.currentTime;if(!clearWetAt)set(wetOut.gain,active?.003:.28,now,active?.008:.02);for(const category of ['ambience','drone','magic','sfx']){const ducked=['ambience','drone'].includes(category)&&now<duckUntil?.5:1;const compressed=hitstopActive&&['magic','sfx'].includes(category)?.18:1;set(buses[category].duck.gain,active?.015:ducked*compressed,now,active?.008:.03);}},
   hitstop(active){hitstopActive=active;const now=ctx.currentTime;for(const category of ['sfx','impact','magic'])set(buses[category].duck.gain,vacuumActive&&category!=='impact'?.015:active?.18:1,now,active?.006:.025);},
-  metrics(){analyser.getFloatTimeDomainData(meterData);let peak=0,sum=0;for(const x of meterData){peak=Math.max(peak,Math.abs(x));sum+=x*x;}
+  metrics(){maintain();analyser.getFloatTimeDomainData(meterData);let peak=0,sum=0;for(const x of meterData){peak=Math.max(peak,Math.abs(x));sum+=x*x;}
    return {peak,rms:Math.sqrt(sum/meterData.length),limiter:limiterKind,ceilingDb:limiterKind==='lookahead-brickwall'?-1.8:-2,limiterReductionDb:limiterStats.reduction,compressorReductionDb:compressor.reduction,limiterBlocks:limiterStats.blocks,preset,adaptive,pooledNodes:nodes.size,irBuffers:irCache.size,baseLatency:ctx.baseLatency??null,outputLatency:ctx.outputLatency??null,estimatedUnderruns:null};},
   capture(){const tap=ctx.createMediaStreamDestination();limiter.connect(tap);return {stream:tap.stream,disconnect(){limiter.disconnect(tap);tap.disconnect();}};},
-  flush(){const now=ctx.currentTime;set(wetOut.gain,0,now,.012);const buffer=convolver.buffer;convolver.buffer=null;convolver.buffer=buffer;set(wetOut.gain,.28,now+.7,.15);},
+  flush(){const now=ctx.currentTime;wetRequested=false;clearWetAt=now+.19;set(wetOut.gain,0,now,.009);set(fdnGain.gain,0,now,.009);for(const feedback of feedbackGains)set(feedback.gain,0,now,.006);},
   dispose(){disposed=true;limiter.port&&(limiter.port.onmessage=null);for(const n of nodes)n.disconnect();nodes.clear();irCache.clear();},
  };
 }

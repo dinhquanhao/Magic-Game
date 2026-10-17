@@ -243,3 +243,173 @@ Xây nền mixer, ceiling limiter có fallback, pool/quality/lifecycle và UI; k
 - `poison/rune`: PASS (vòng 1), RMS -29.19 dBFS, TP4× -10.71 dBTP; ngưỡng đạt.
 - `poison/ui`: PASS (vòng 1), RMS -34.78 dBFS, TP4× -18.56 dBTP; ngưỡng đạt.
 - `poison/drone`: PASS (vòng 1), RMS -34.00 dBFS, TP4× -26.41 dBTP; ngưỡng đạt.
+
+- Gate POISON: build đạt; Chromium material/impact/stop qua mixer đạt; ảnh waveform/spectrogram và JSON lưu. Chưa kiểm chứng bằng tai. Chuyển sang hệ kế theo thứ tự.
+
+### LIGHT — render/đo cue
+
+- 15/15 logical cue đạt ngưỡng kỹ thuật, max 2 vòng; lịch sử trước/sau: audio/reports/cue-history.json. Chưa kiểm chứng bằng tai.
+- `light/precast`: PASS (vòng 1), RMS -25.00 dBFS, TP4× -14.17 dBTP; ngưỡng đạt.
+- `light/charging`: PASS (vòng 1), RMS -27.00 dBFS, TP4× -18.52 dBTP; ngưỡng đạt.
+- `light/casting`: PASS (vòng 1), RMS -22.07 dBFS, TP4× -3.79 dBTP; ngưỡng đạt.
+- `light/traveling`: PASS (vòng 1), RMS -26.00 dBFS, TP4× -17.53 dBTP; ngưỡng đạt.
+- `light/material`: PASS (vòng 1), RMS -24.00 dBFS, TP4× -6.23 dBTP; ngưỡng đạt.
+- `light/motion`: PASS (vòng 1), RMS -26.00 dBFS, TP4× -7.98 dBTP; ngưỡng đạt.
+- `light/environment`: PASS (vòng 1), RMS -31.00 dBFS, TP4× -22.11 dBTP; ngưỡng đạt.
+- `light/secondary`: PASS (vòng 1), RMS -27.03 dBFS, TP4× -8.01 dBTP; ngưỡng đạt.
+- `light/riser`: PASS (vòng 1), RMS -23.90 dBFS, TP4× -9.38 dBTP; ngưỡng đạt.
+- `light/impact`: PASS (vòng 2), RMS -19.07 dBFS, TP4× -2.10 dBTP; ngưỡng đạt.
+- `light/shockwave`: PASS (vòng 1), RMS -25.00 dBFS, TP4× -6.95 dBTP; ngưỡng đạt.
+- `light/aftermath`: PASS (vòng 1), RMS -30.00 dBFS, TP4× -9.63 dBTP; ngưỡng đạt.
+- `light/rune`: PASS (vòng 1), RMS -29.08 dBFS, TP4× -9.97 dBTP; ngưỡng đạt.
+- `light/ui`: PASS (vòng 1), RMS -34.26 dBFS, TP4× -16.80 dBTP; ngưỡng đạt.
+- `light/drone`: PASS (vòng 1), RMS -34.00 dBFS, TP4× -26.16 dBTP; ngưỡng đạt.
+
+- Gate LIGHT: build đạt; Chromium material/impact/stop qua mixer đạt; ảnh waveform/spectrogram và JSON lưu. Chưa kiểm chứng bằng tai. Chuyển sang hệ kế theo thứ tự.
+
+### SHADOW — render/đo cue
+
+- 15/15 logical cue đạt ngưỡng kỹ thuật, max 2 vòng; lịch sử trước/sau: audio/reports/cue-history.json. Chưa kiểm chứng bằng tai.
+- `shadow/precast`: PASS (vòng 1), RMS -25.00 dBFS, TP4× -12.04 dBTP; ngưỡng đạt.
+- `shadow/charging`: PASS (vòng 1), RMS -27.00 dBFS, TP4× -17.82 dBTP; ngưỡng đạt.
+- `shadow/casting`: PASS (vòng 1), RMS -22.13 dBFS, TP4× -5.47 dBTP; ngưỡng đạt.
+- `shadow/traveling`: PASS (vòng 1), RMS -26.00 dBFS, TP4× -14.92 dBTP; ngưỡng đạt.
+- `shadow/material`: PASS (vòng 1), RMS -24.00 dBFS, TP4× -9.13 dBTP; ngưỡng đạt.
+- `shadow/motion`: PASS (vòng 1), RMS -26.00 dBFS, TP4× -10.21 dBTP; ngưỡng đạt.
+- `shadow/environment`: PASS (vòng 1), RMS -31.00 dBFS, TP4× -19.70 dBTP; ngưỡng đạt.
+- `shadow/secondary`: PASS (vòng 1), RMS -27.06 dBFS, TP4× -11.65 dBTP; ngưỡng đạt.
+- `shadow/riser`: PASS (vòng 1), RMS -23.81 dBFS, TP4× -7.89 dBTP; ngưỡng đạt.
+- `shadow/impact`: PASS (vòng 2), RMS -19.04 dBFS, TP4× -2.68 dBTP; ngưỡng đạt.
+- `shadow/shockwave`: PASS (vòng 1), RMS -25.00 dBFS, TP4× -9.07 dBTP; ngưỡng đạt.
+- `shadow/aftermath`: PASS (vòng 1), RMS -30.00 dBFS, TP4× -12.68 dBTP; ngưỡng đạt.
+- `shadow/rune`: PASS (vòng 1), RMS -29.25 dBFS, TP4× -11.92 dBTP; ngưỡng đạt.
+- `shadow/ui`: PASS (vòng 1), RMS -35.12 dBFS, TP4× -22.28 dBTP; ngưỡng đạt.
+- `shadow/drone`: PASS (vòng 1), RMS -34.00 dBFS, TP4× -27.30 dBTP; ngưỡng đạt.
+
+- Gate SHADOW: build đạt; Chromium material/impact/stop qua mixer đạt; ảnh waveform/spectrogram và JSON lưu. Chưa kiểm chứng bằng tai. Chuyển sang hệ kế theo thứ tự.
+
+### BLOOD — render/đo cue
+
+- 15/15 logical cue đạt ngưỡng kỹ thuật, max 2 vòng; lịch sử trước/sau: audio/reports/cue-history.json. Chưa kiểm chứng bằng tai.
+- `blood/precast`: PASS (vòng 1), RMS -25.00 dBFS, TP4× -14.31 dBTP; ngưỡng đạt.
+- `blood/charging`: PASS (vòng 1), RMS -27.00 dBFS, TP4× -16.42 dBTP; ngưỡng đạt.
+- `blood/casting`: PASS (vòng 1), RMS -22.13 dBFS, TP4× -7.93 dBTP; ngưỡng đạt.
+- `blood/traveling`: PASS (vòng 1), RMS -26.00 dBFS, TP4× -14.49 dBTP; ngưỡng đạt.
+- `blood/material`: PASS (vòng 1), RMS -24.00 dBFS, TP4× -8.35 dBTP; ngưỡng đạt.
+- `blood/motion`: PASS (vòng 1), RMS -26.00 dBFS, TP4× -10.34 dBTP; ngưỡng đạt.
+- `blood/environment`: PASS (vòng 1), RMS -31.00 dBFS, TP4× -20.91 dBTP; ngưỡng đạt.
+- `blood/secondary`: PASS (vòng 1), RMS -27.04 dBFS, TP4× -10.85 dBTP; ngưỡng đạt.
+- `blood/riser`: PASS (vòng 1), RMS -23.98 dBFS, TP4× -7.67 dBTP; ngưỡng đạt.
+- `blood/impact`: PASS (vòng 2), RMS -19.01 dBFS, TP4× -1.72 dBTP; ngưỡng đạt.
+- `blood/shockwave`: PASS (vòng 1), RMS -25.00 dBFS, TP4× -7.90 dBTP; ngưỡng đạt.
+- `blood/aftermath`: PASS (vòng 1), RMS -30.00 dBFS, TP4× -11.92 dBTP; ngưỡng đạt.
+- `blood/rune`: PASS (vòng 1), RMS -29.27 dBFS, TP4× -10.78 dBTP; ngưỡng đạt.
+- `blood/ui`: PASS (vòng 1), RMS -34.49 dBFS, TP4× -17.18 dBTP; ngưỡng đạt.
+- `blood/drone`: PASS (vòng 1), RMS -34.00 dBFS, TP4× -24.97 dBTP; ngưỡng đạt.
+
+- Gate BLOOD: build đạt; Chromium material/impact/stop qua mixer đạt; ảnh waveform/spectrogram và JSON lưu. Chưa kiểm chứng bằng tai. Chuyển sang hệ kế theo thứ tự.
+
+### SPACE — render/đo cue
+
+- 15/15 logical cue đạt ngưỡng kỹ thuật, max 2 vòng; lịch sử trước/sau: audio/reports/cue-history.json. Chưa kiểm chứng bằng tai.
+- `space/precast`: PASS (vòng 1), RMS -25.00 dBFS, TP4× -14.51 dBTP; ngưỡng đạt.
+- `space/charging`: PASS (vòng 1), RMS -27.00 dBFS, TP4× -18.26 dBTP; ngưỡng đạt.
+- `space/casting`: PASS (vòng 1), RMS -22.13 dBFS, TP4× -7.33 dBTP; ngưỡng đạt.
+- `space/traveling`: PASS (vòng 1), RMS -26.00 dBFS, TP4× -14.97 dBTP; ngưỡng đạt.
+- `space/material`: PASS (vòng 1), RMS -24.00 dBFS, TP4× -7.95 dBTP; ngưỡng đạt.
+- `space/motion`: PASS (vòng 1), RMS -26.00 dBFS, TP4× -9.29 dBTP; ngưỡng đạt.
+- `space/environment`: PASS (vòng 1), RMS -31.00 dBFS, TP4× -21.77 dBTP; ngưỡng đạt.
+- `space/secondary`: PASS (vòng 1), RMS -27.04 dBFS, TP4× -8.72 dBTP; ngưỡng đạt.
+- `space/riser`: PASS (vòng 1), RMS -24.08 dBFS, TP4× -9.17 dBTP; ngưỡng đạt.
+- `space/impact`: PASS (vòng 2), RMS -19.06 dBFS, TP4× -2.18 dBTP; ngưỡng đạt.
+- `space/shockwave`: PASS (vòng 1), RMS -25.00 dBFS, TP4× -7.52 dBTP; ngưỡng đạt.
+- `space/aftermath`: PASS (vòng 1), RMS -30.00 dBFS, TP4× -11.05 dBTP; ngưỡng đạt.
+- `space/rune`: PASS (vòng 1), RMS -29.18 dBFS, TP4× -13.13 dBTP; ngưỡng đạt.
+- `space/ui`: PASS (vòng 1), RMS -34.92 dBFS, TP4× -22.32 dBTP; ngưỡng đạt.
+- `space/drone`: PASS (vòng 1), RMS -34.00 dBFS, TP4× -28.18 dBTP; ngưỡng đạt.
+
+- Gate SPACE: build đạt; Chromium material/impact/stop qua mixer đạt; ảnh waveform/spectrogram và JSON lưu. Chưa kiểm chứng bằng tai. Chuyển sang hệ kế theo thứ tự.
+
+### TIME — render/đo cue
+
+- 15/15 logical cue đạt ngưỡng kỹ thuật, max 2 vòng; lịch sử trước/sau: audio/reports/cue-history.json. Chưa kiểm chứng bằng tai.
+- `time/precast`: PASS (vòng 1), RMS -25.00 dBFS, TP4× -14.18 dBTP; ngưỡng đạt.
+- `time/charging`: PASS (vòng 1), RMS -27.00 dBFS, TP4× -18.65 dBTP; ngưỡng đạt.
+- `time/casting`: PASS (vòng 1), RMS -22.06 dBFS, TP4× -3.79 dBTP; ngưỡng đạt.
+- `time/traveling`: PASS (vòng 1), RMS -26.00 dBFS, TP4× -17.66 dBTP; ngưỡng đạt.
+- `time/material`: PASS (vòng 1), RMS -24.00 dBFS, TP4× -6.92 dBTP; ngưỡng đạt.
+- `time/motion`: PASS (vòng 1), RMS -26.00 dBFS, TP4× -8.69 dBTP; ngưỡng đạt.
+- `time/environment`: PASS (vòng 1), RMS -31.00 dBFS, TP4× -22.23 dBTP; ngưỡng đạt.
+- `time/secondary`: PASS (vòng 1), RMS -27.03 dBFS, TP4× -8.26 dBTP; ngưỡng đạt.
+- `time/riser`: PASS (vòng 1), RMS -23.91 dBFS, TP4× -9.51 dBTP; ngưỡng đạt.
+- `time/impact`: PASS (vòng 2), RMS -19.07 dBFS, TP4× -1.98 dBTP; ngưỡng đạt.
+- `time/shockwave`: PASS (vòng 1), RMS -25.00 dBFS, TP4× -6.67 dBTP; ngưỡng đạt.
+- `time/aftermath`: PASS (vòng 1), RMS -30.00 dBFS, TP4× -10.86 dBTP; ngưỡng đạt.
+- `time/rune`: PASS (vòng 1), RMS -29.06 dBFS, TP4× -11.00 dBTP; ngưỡng đạt.
+- `time/ui`: PASS (vòng 1), RMS -34.49 dBFS, TP4× -18.13 dBTP; ngưỡng đạt.
+- `time/drone`: PASS (vòng 1), RMS -34.00 dBFS, TP4× -25.99 dBTP; ngưỡng đạt.
+
+- Gate TIME: build đạt; Chromium material/impact/stop qua mixer đạt; ảnh waveform/spectrogram và JSON lưu. Chưa kiểm chứng bằng tai. Chuyển sang hệ kế theo thứ tự.
+
+### MAGMA — render/đo cue
+
+- 15/15 logical cue đạt ngưỡng kỹ thuật, max 2 vòng; lịch sử trước/sau: audio/reports/cue-history.json. Chưa kiểm chứng bằng tai.
+- `magma/precast`: PASS (vòng 1), RMS -25.00 dBFS, TP4× -13.02 dBTP; ngưỡng đạt.
+- `magma/charging`: PASS (vòng 1), RMS -27.00 dBFS, TP4× -16.81 dBTP; ngưỡng đạt.
+- `magma/casting`: PASS (vòng 1), RMS -22.01 dBFS, TP4× -8.02 dBTP; ngưỡng đạt.
+- `magma/traveling`: PASS (vòng 1), RMS -26.00 dBFS, TP4× -15.51 dBTP; ngưỡng đạt.
+- `magma/material`: PASS (vòng 1), RMS -24.00 dBFS, TP4× -8.54 dBTP; ngưỡng đạt.
+- `magma/motion`: PASS (vòng 1), RMS -26.00 dBFS, TP4× -9.68 dBTP; ngưỡng đạt.
+- `magma/environment`: PASS (vòng 1), RMS -31.00 dBFS, TP4× -20.36 dBTP; ngưỡng đạt.
+- `magma/secondary`: PASS (vòng 1), RMS -27.01 dBFS, TP4× -11.24 dBTP; ngưỡng đạt.
+- `magma/riser`: PASS (vòng 1), RMS -23.52 dBFS, TP4× -8.95 dBTP; ngưỡng đạt.
+- `magma/impact`: PASS (vòng 2), RMS -19.02 dBFS, TP4× -2.91 dBTP; ngưỡng đạt.
+- `magma/shockwave`: PASS (vòng 1), RMS -25.00 dBFS, TP4× -7.46 dBTP; ngưỡng đạt.
+- `magma/aftermath`: PASS (vòng 1), RMS -30.00 dBFS, TP4× -11.37 dBTP; ngưỡng đạt.
+- `magma/rune`: PASS (vòng 1), RMS -29.35 dBFS, TP4× -12.58 dBTP; ngưỡng đạt.
+- `magma/ui`: PASS (vòng 1), RMS -35.29 dBFS, TP4× -24.11 dBTP; ngưỡng đạt.
+- `magma/drone`: PASS (vòng 1), RMS -34.00 dBFS, TP4× -25.78 dBTP; ngưỡng đạt.
+
+- Gate MAGMA: build đạt; Chromium material/impact/stop qua mixer đạt; ảnh waveform/spectrogram và JSON lưu. Chưa kiểm chứng bằng tai. Chuyển sang hệ kế theo thứ tự.
+
+### ASTRAL — render/đo cue
+
+- 15/15 logical cue đạt ngưỡng kỹ thuật, max 2 vòng; lịch sử trước/sau: audio/reports/cue-history.json. Chưa kiểm chứng bằng tai.
+- `astral/precast`: PASS (vòng 1), RMS -25.00 dBFS, TP4× -14.61 dBTP; ngưỡng đạt.
+- `astral/charging`: PASS (vòng 1), RMS -27.00 dBFS, TP4× -17.66 dBTP; ngưỡng đạt.
+- `astral/casting`: PASS (vòng 1), RMS -22.05 dBFS, TP4× -4.24 dBTP; ngưỡng đạt.
+- `astral/traveling`: PASS (vòng 1), RMS -26.00 dBFS, TP4× -16.59 dBTP; ngưỡng đạt.
+- `astral/material`: PASS (vòng 1), RMS -24.00 dBFS, TP4× -6.10 dBTP; ngưỡng đạt.
+- `astral/motion`: PASS (vòng 1), RMS -26.00 dBFS, TP4× -7.70 dBTP; ngưỡng đạt.
+- `astral/environment`: PASS (vòng 1), RMS -31.00 dBFS, TP4× -21.22 dBTP; ngưỡng đạt.
+- `astral/secondary`: PASS (vòng 1), RMS -27.03 dBFS, TP4× -8.36 dBTP; ngưỡng đạt.
+- `astral/riser`: PASS (vòng 1), RMS -24.04 dBFS, TP4× -10.55 dBTP; ngưỡng đạt.
+- `astral/impact`: PASS (vòng 2), RMS -19.06 dBFS, TP4× -2.50 dBTP; ngưỡng đạt.
+- `astral/shockwave`: PASS (vòng 1), RMS -25.00 dBFS, TP4× -6.45 dBTP; ngưỡng đạt.
+- `astral/aftermath`: PASS (vòng 1), RMS -30.00 dBFS, TP4× -9.70 dBTP; ngưỡng đạt.
+- `astral/rune`: PASS (vòng 1), RMS -29.05 dBFS, TP4× -10.91 dBTP; ngưỡng đạt.
+- `astral/ui`: PASS (vòng 1), RMS -34.50 dBFS, TP4× -18.27 dBTP; ngưỡng đạt.
+- `astral/drone`: PASS (vòng 1), RMS -34.00 dBFS, TP4× -26.18 dBTP; ngưỡng đạt.
+
+- Gate ASTRAL: build đạt; Chromium material/impact/stop qua mixer đạt; ảnh waveform/spectrogram và JSON lưu. Chưa kiểm chứng bằng tai. Chuyển sang hệ kế theo thứ tự.
+
+### PSYCHIC — render/đo cue
+
+- 15/15 logical cue đạt ngưỡng kỹ thuật, max 2 vòng; lịch sử trước/sau: audio/reports/cue-history.json. Chưa kiểm chứng bằng tai.
+- `psychic/precast`: PASS (vòng 1), RMS -25.00 dBFS, TP4× -15.91 dBTP; ngưỡng đạt.
+- `psychic/charging`: PASS (vòng 1), RMS -27.00 dBFS, TP4× -19.30 dBTP; ngưỡng đạt.
+- `psychic/casting`: PASS (vòng 1), RMS -22.15 dBFS, TP4× -6.21 dBTP; ngưỡng đạt.
+- `psychic/traveling`: PASS (vòng 1), RMS -26.00 dBFS, TP4× -18.18 dBTP; ngưỡng đạt.
+- `psychic/material`: PASS (vòng 1), RMS -24.00 dBFS, TP4× -12.18 dBTP; ngưỡng đạt.
+- `psychic/motion`: PASS (vòng 1), RMS -26.00 dBFS, TP4× -13.54 dBTP; ngưỡng đạt.
+- `psychic/environment`: PASS (vòng 1), RMS -31.00 dBFS, TP4× -23.07 dBTP; ngưỡng đạt.
+- `psychic/secondary`: PASS (vòng 1), RMS -27.06 dBFS, TP4× -11.58 dBTP; ngưỡng đạt.
+- `psychic/riser`: PASS (vòng 1), RMS -24.14 dBFS, TP4× -10.05 dBTP; ngưỡng đạt.
+- `psychic/impact`: PASS (vòng 2), RMS -20.42 dBFS, TP4× -1.89 dBTP; ngưỡng đạt.
+- `psychic/shockwave`: PASS (vòng 1), RMS -25.00 dBFS, TP4× -8.57 dBTP; ngưỡng đạt.
+- `psychic/aftermath`: PASS (vòng 1), RMS -30.00 dBFS, TP4× -14.07 dBTP; ngưỡng đạt.
+- `psychic/rune`: PASS (vòng 1), RMS -29.18 dBFS, TP4× -11.29 dBTP; ngưỡng đạt.
+- `psychic/ui`: PASS (vòng 1), RMS -34.56 dBFS, TP4× -21.16 dBTP; ngưỡng đạt.
+- `psychic/drone`: PASS (vòng 1), RMS -34.00 dBFS, TP4× -27.41 dBTP; ngưỡng đạt.
+
+- Gate PSYCHIC: build đạt; Chromium material/impact/stop qua mixer đạt; ảnh waveform/spectrogram và JSON lưu. Chưa kiểm chứng bằng tai. Chuyển sang hệ kế theo thứ tự.

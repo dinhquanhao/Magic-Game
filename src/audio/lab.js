@@ -23,7 +23,7 @@ export function mountAudioLab(sound,{skills,onPlaySkill}) {
   selectCue(CUE_REGISTRY.find(c=>c.element===element));
  }
  listen(elementSelect,'change',render);listen(root.querySelector('[data-lab-play]'),'click',async()=>{if(!sound.enabled)await sound.enable();onPlaySkill(skillSelect.value);await sound.ready();});
- listen(root.querySelector('[data-lab-stop]'),'click',()=>sound.stopCast());render();
+ listen(root.querySelector('[data-lab-stop]'),'click',()=>sound.disable());render();
  const wave=root.querySelector('[data-lab-wave]'),spec=root.querySelector('[data-lab-spectrum]'),wc=wave.getContext('2d'),sc=spec.getContext('2d');
  const samples=new Float32Array(2048),frequencies=new Float32Array(1024),energies=new Float64Array(90);let index=0,count=0,sum=0,last=0;
  const update=(now=performance.now())=>{if(now-last<33)return;last=now;sound.readAnalysis(samples,frequencies);const d=sound.diagnostics();

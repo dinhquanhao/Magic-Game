@@ -2,7 +2,7 @@
 
 - Tiếp tục repository hiện tại; không dựng lại dự án. Đọc `ROADMAP.md`, `PROGRESS.md`, README và mã thực tế trước khi chọn việc tiếp theo.
 - Giữ 15 hệ, 23 ID/tên tuyệt kỹ, hình thái và thiết kế cốt lõi. Cải tiến kỹ thuật không được xóa hệ hoặc thay thế tuyệt kỹ bằng hiệu ứng chung.
-- `UPGRADE_PROGRESS.md` là tài liệu lịch sử, giữ nguyên. Tiến độ mới ghi trong `PROGRESS.md` với commit và bằng chứng kiểm thử.
+- `UPGRADE_PROGRESS.md`: giữ nguyên phần lịch sử; theo yêu cầu bổ sung ngày 17/10 chỉ append mục “Bổ sung AAA” với bằng chứng mới. Tiến độ mới ghi trong `PROGRESS.md` với commit và bằng chứng kiểm thử.
 - Thứ tự được người dùng cập nhật: hoàn thiện nâng cấp cũ → 15 hệ → nhân vật → quái/Boss → cảnh vật → gameplay → đánh giá tổng thể. Chỉ chuyển giai đoạn khi đạt điều kiện của roadmap.
 - Chủ động xử lý kỹ thuật thông thường. Không yêu cầu người dùng gửi “tiếp tục” giữa các bước. Nếu thiếu quyền hoặc bị giới hạn môi trường, nêu rõ hành động bị chặn và phần đã hoàn tất.
 - Một renderer, một vòng cập nhật, một đồng hồ mô phỏng. Pause, slow motion, hit-stop, gió và UI tiến trình phải đồng bộ. Module mới có API cập nhật/reset/dispose rõ ràng.

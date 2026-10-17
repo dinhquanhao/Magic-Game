@@ -25,5 +25,29 @@ export const CUE_CALIBRATION={
   },
   "poison/impact": {
     "drive": 1.8
+  },
+  "light/impact": {
+    "drive": 1.8
+  },
+  "shadow/impact": {
+    "drive": 1.8
+  },
+  "blood/impact": {
+    "drive": 1.8
+  },
+  "space/impact": {
+    "drive": 1.8
+  },
+  "time/impact": {
+    "drive": 1.8
+  },
+  "magma/impact": {
+    "drive": 1.8
+  },
+  "astral/impact": {
+    "drive": 1.8
+  },
+  "psychic/impact": {
+    "drive": 1.8
   }
 };

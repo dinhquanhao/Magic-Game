@@ -136,3 +136,7 @@ Quy ước hồ sơ: geometry/hạt/đèn/hậu kỳ/cleanup chi tiết sẽ đ�
 - [Khảo sát 10 ưu tiên và ánh xạ Unreal→web](graphics/AAA_DESIGN.md). Một WebGLRenderer/animate; Three r180/Vite7. Mage Group rig, dummies, arena/cỏ/kiến trúc procedural; không có skeleton hoặc enemy AI hoàn chỉnh.
 - Baseline mới đang chạy bằng Chromium ANGLE/SwiftShader: capabilities, entity census, mỗi hệ 3 mốc và cao trào 4 preset. Số đo frame dùng gl.finish wall time, không phải benchmark native GPU. Chưa có kết luận thị giác hoặc FPS trước khi có kết quả.
 - Việc tiếp: hoàn tất các cổng audio từng hệ, giữ baseline rồi mở các nhóm PBR/ánh sáng/LOD/nhân vật/field/post/adaptive theo graphics/AAA_DESIGN.md. Không ghi hoàn tất phần chưa triển khai.
+
+- Baseline phát hiện fixture đổi hậu kỳ nhưng chưa dựng lại instance theo preset. Lưu các số Medium/High/Ultra ban đầu vào invalid-preset-fixture, không dùng làm kết luận; sửa fixture dispose/recast trước mỗi preset. Giữ các ảnh Low hợp lệ và tiếp tục phần còn thiếu.
+
+- Baseline bị timeout screenshot ở Ice sau chuỗi preset dài. Giữ 35 mốc đã ghi; bổ sung readPixels 1 pixel để chờ framebuffer hoàn tất trước khi chụp/đo, giảm 3→2 mẫu, tăng timeout screenshot60s. Các số gl.finish trước đó chỉ dùng như CPU submission timing, không diễn giải thành GPU FPS. Đây là lần sửa fixture baseline thứ hai; nếu vẫn lỗi sẽ giữ phần chưa kiểm chứng thay vì lặp vô hạn.
