@@ -1,1 +1,26 @@
-{"name":"arcane-vfx-studio","version":"2.0.0","type":"module","scripts":{"dev":"vite --host 0.0.0.0","build":"vite build","preview":"vite preview --host 0.0.0.0"},"dependencies":{"three":"^0.180.0"},"devDependencies":{"vite":"^7.1.0"}}
+{
+  "name": "arcane-vfx-studio",
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "dev:test": "vite --config vite.test.config.js",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test tests/*.test.js",
+    "test:e2e": "python tests/playwright_smoke.py",
+    "observe": "npm run build && python tests/observe_preview.py",
+    "test:audio": "python tests/audio_runtime.py",
+    "audio:test": "python tests/audio_runtime.py",
+    "audio:render": "node audio/render.mjs",
+    "audio:report": "node audio/report.mjs",
+    "assets:generate": "python scripts/generate_audio.py && python scripts/generate_icons.py",
+    "automation:plan": "node scripts/plan_autonomy.mjs"
+  },
+  "dependencies": {
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "vite": "^7.1.0"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "sourceCommit": "b61153d2919ed115465c0e09190f09bcf080366e",
+  "archiveBytes": 101890739,
+  "archiveSha256": "5d691ced436dd093e2debb2d3e448fb092a7af3ab4d98212da75b1b5eca41c96",
+  "entries": 1293,
+  "manifestFilesVerified": 1291,
+  "runtimeAssetDependencyFilesExact": 990,
+  "crcPassed": true,
+  "duplicateEntries": false,
+  "noNodeModulesGitOrEnv": true,
+  "cameraControllerAndCurrentVideoIncluded": true,
+  "historicalBrownVideosKeptInRepoLinkedFromArchive": {
+    "docs/evidence/brown-ground/before.webm": "https://github.com/dinhquanhao/Magic-Game/raw/b61153d2919ed115465c0e09190f09bcf080366e/docs/evidence/brown-ground/before.webm",
+    "docs/evidence/brown-ground/after.webm": "https://github.com/dinhquanhao/Magic-Game/raw/b61153d2919ed115465c0e09190f09bcf080366e/docs/evidence/brown-ground/after.webm"
+  },
+  "retiredIdentifierMatches": [],
+  "cleanExtractedInstallBuildRepeated": false,
+  "validationNote": "All packaged runtime/asset/config bytes match the final tested source; dependency lock unchanged. Media-link substitutions affect only historical archive reports. No fresh extracted install/build claimed."
+}

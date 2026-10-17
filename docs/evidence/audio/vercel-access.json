@@ -1,0 +1,9 @@
+{
+  "verifiedInteractivePreview": false,
+  "url": "https://magic-game-preview-git-codex-magic-gam-593430-quuanghh2007-5227.vercel.app",
+  "source": "Vercel bot comment in PR #1; checkpoint d433860 status success",
+  "connector": "get-project/list-deployments returned 403 for explicit project/team",
+  "browser": "net::ERR_TUNNEL_CONNECTION_FAILED at navigation; remote game did not load",
+  "networkPolicy": "Preview hostname absent from managed environment allowed domains; no policy or audience changed",
+  "localProduction": "passed; see production-final.json"
+}

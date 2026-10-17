@@ -1,0 +1,45 @@
+{
+  "measurement": "SwiftShader fixed-state CPU render submission timings only; gl.finish in WebGL is not a reliable GPU completion measurement. These values cannot establish GPU FPS, whole-game FPS, or a Low/Ultra performance ranking.",
+  "presets": {
+    "low": {
+      "passed": true,
+      "trees": 36,
+      "particles": 800,
+      "peakRenderMedianMs": 1.099999999627471,
+      "pixelRatio": 0.8,
+      "errors": 0,
+      "restoredPixelsExact": true,
+      "nativeGpuFps": null
+    },
+    "medium": {
+      "passed": true,
+      "trees": 60,
+      "particles": 1600,
+      "peakRenderMedianMs": 3.799999998882413,
+      "pixelRatio": 1,
+      "errors": 0,
+      "restoredPixelsExact": true,
+      "nativeGpuFps": null
+    },
+    "high": {
+      "passed": true,
+      "trees": 96,
+      "particles": 3000,
+      "peakRenderMedianMs": 2.200000001117587,
+      "pixelRatio": 1,
+      "errors": 0,
+      "restoredPixelsExact": true,
+      "nativeGpuFps": null
+    },
+    "ultra": {
+      "passed": true,
+      "trees": 144,
+      "particles": 5000,
+      "peakRenderMedianMs": 1.450000001117587,
+      "pixelRatio": 1,
+      "errors": 0,
+      "restoredPixelsExact": true,
+      "nativeGpuFps": null
+    }
+  }
+}

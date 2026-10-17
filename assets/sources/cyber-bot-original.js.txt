@@ -1,0 +1,136 @@
+      function buildCharacterModel(type) {
+        characterRig.type = type;
+        while (characterRig.root.children.length > 0) {
+          characterRig.root.remove(characterRig.root.children[0]);
+        }
+
+        const primaryMat = new THREE.MeshStandardMaterial({
+          color: type === 'bot' ? 0x38bdf8 : (type === 'mecha' ? 0x10b981 : 0xf8fafc),
+          roughness: 0.3,
+          metalness: 0.6
+        });
+        const darkMat = new THREE.MeshStandardMaterial({
+          color: 0x1e293b,
+          roughness: 0.5,
+          metalness: 0.5
+        });
+        const glowMat = new THREE.MeshBasicMaterial({
+          color: type === 'bot' ? 0x7dd3fc : (type === 'mecha' ? 0x34d399 : 0xfbbf24)
+        });
+
+        // Ground direction indicator ring under character
+        const ringGeo = new THREE.RingGeometry(0.52, 0.65, 32);
+        const ringMat = new THREE.MeshBasicMaterial({
+          color: 0x38bdf8,
+          side: THREE.DoubleSide,
+          transparent: true,
+          opacity: 0.65
+        });
+        const auraRing = new THREE.Mesh(ringGeo, ringMat);
+        auraRing.rotation.x = -Math.PI / 2;
+        auraRing.position.y = 0.03;
+        characterRig.root.add(auraRing);
+        characterRig.auraRing = auraRing;
+
+        // Forward arrow pointer on ring so user clearly sees character orientation
+        const arrowGeo = new THREE.ConeGeometry(0.18, 0.35, 4);
+        const arrowMesh = new THREE.Mesh(arrowGeo, glowMat);
+        arrowMesh.rotation.x = -Math.PI / 2;
+        arrowMesh.position.set(0, 0.06, -0.78);
+        characterRig.root.add(arrowMesh);
+
+        if (type === 'mecha') {
+          // Sleek Hover Sphere Drone with Gyro Rings
+          const core = new THREE.Mesh(new THREE.SphereGeometry(0.55, 24, 24), primaryMat);
+          core.position.y = 1.15;
+          core.castShadow = true;
+
+          const eye = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.18, 0.25), glowMat);
+          eye.position.set(0, 0.08, -0.45);
+          core.add(eye);
+
+          const outerRing = new THREE.Mesh(new THREE.TorusGeometry(0.78, 0.06, 12, 32), darkMat);
+          outerRing.rotation.x = Math.PI / 2;
+          core.add(outerRing);
+
+          characterRig.torso = core;
+          characterRig.head = outerRing;
+          characterRig.leftArm = null;
+          characterRig.rightArm = null;
+          characterRig.leftLeg = null;
+          characterRig.rightLeg = null;
+          characterRig.root.add(core);
+          return;
+        }
+
+        // Articulated Humanoid (Cyber Bot or Astronaut)
+        const torso = new THREE.Mesh(new THREE.BoxGeometry(0.72, 0.85, 0.44), primaryMat);
+        torso.position.y = 1.15;
+        torso.castShadow = true;
+        characterRig.root.add(torso);
+        characterRig.torso = torso;
+
+        // Backpack / Jetpack
+        const pack = new THREE.Mesh(new THREE.BoxGeometry(0.52, 0.62, 0.26), darkMat);
+        pack.position.set(0, 0.05, 0.32);
+        torso.add(pack);
+
+        const thrusterL = new THREE.Mesh(new THREE.CylinderGeometry(0.08, 0.11, 0.18, 12), glowMat);
+        thrusterL.position.set(-0.15, -0.32, 0.32);
+        torso.add(thrusterL);
+
+        const thrusterR = thrusterL.clone();
+        thrusterR.position.x = 0.15;
+        torso.add(thrusterR);
+
+        // Head + Visor
+        const headGroup = new THREE.Group();
+        headGroup.position.set(0, 0.68, 0);
+        torso.add(headGroup);
+
+        const headMesh = new THREE.Mesh(
+          type === 'astronaut'
+            ? new THREE.SphereGeometry(0.36, 20, 20)
+            : new THREE.BoxGeometry(0.56, 0.48, 0.52),
+          primaryMat
+        );
+        headMesh.castShadow = true;
+        headGroup.add(headMesh);
+
+        const visor = new THREE.Mesh(new THREE.BoxGeometry(0.46, 0.2, 0.12), glowMat);
+        visor.position.set(0, 0.03, -0.25);
+        headGroup.add(visor);
+        characterRig.head = headGroup;
+
+        // Limbs (Arms & Legs)
+        const armGeo = new THREE.BoxGeometry(0.22, 0.68, 0.22);
+        armGeo.translate(0, -0.26, 0);
+
+        const leftArm = new THREE.Mesh(armGeo, darkMat);
+        leftArm.position.set(-0.5, 0.32, 0);
+        leftArm.castShadow = true;
+        torso.add(leftArm);
+        characterRig.leftArm = leftArm;
+
+        const rightArm = new THREE.Mesh(armGeo, darkMat);
+        rightArm.position.set(0.5, 0.32, 0);
+        rightArm.castShadow = true;
+        torso.add(rightArm);
+        characterRig.rightArm = rightArm;
+
+        const legGeo = new THREE.BoxGeometry(0.25, 0.68, 0.26);
+        legGeo.translate(0, -0.32, 0);
+
+        const leftLeg = new THREE.Mesh(legGeo, darkMat);
+        leftLeg.position.set(-0.2, -0.4, 0);
+        leftLeg.castShadow = true;
+        torso.add(leftLeg);
+        characterRig.leftLeg = leftLeg;
+
+        const rightLeg = new THREE.Mesh(legGeo, darkMat);
+        rightLeg.position.set(0.2, -0.4, 0);
+        rightLeg.castShadow = true;
+        torso.add(rightLeg);
+        characterRig.rightLeg = rightLeg;
+      }
+

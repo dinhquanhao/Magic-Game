@@ -1,0 +1,242 @@
+{
+  "passed": true,
+  "comparison": [
+    {
+      "id": "FIRE-01",
+      "time": 3.87,
+      "before": "before/FIRE-01-impact.png",
+      "after": "after/FIRE-01-impact.png",
+      "whiteBefore": 0.7328287760416666,
+      "whiteAfter": 0.1464970906575521,
+      "brightBefore": 0.8058853149414062,
+      "brightAfter": 0.1772740681966146,
+      "meanBefore": 0.9744025804806379,
+      "meanAfter": 0.7053890848995034
+    },
+    {
+      "id": "WATER-01",
+      "time": 9.700000000000001,
+      "before": "before/WATER-01-impact.png",
+      "after": "after/WATER-01-impact.png",
+      "whiteBefore": 0.008272806803385416,
+      "whiteAfter": 0.0,
+      "brightBefore": 0.2912241617838542,
+      "brightAfter": 0.0,
+      "meanBefore": 0.6872734965844248,
+      "meanAfter": 0.2584515552376142
+    },
+    {
+      "id": "EARTH-01",
+      "time": 9.5,
+      "before": "before/EARTH-01-impact.png",
+      "after": "after/EARTH-01-impact.png",
+      "whiteBefore": 1.2715657552083334e-05,
+      "whiteAfter": 0.0,
+      "brightBefore": 0.0008214314778645834,
+      "brightAfter": 4.8319498697916664e-05,
+      "meanBefore": 0.20621153734992528,
+      "meanAfter": 0.12834712203081916
+    },
+    {
+      "id": "LIGHT-01",
+      "time": 12.200000000000001,
+      "before": "before/LIGHT-01-impact.png",
+      "after": "after/LIGHT-01-impact.png",
+      "whiteBefore": 0.4456075032552083,
+      "whiteAfter": 0.039044698079427086,
+      "brightBefore": 0.6695963541666666,
+      "brightAfter": 0.10767364501953125,
+      "meanBefore": 0.9510152858918631,
+      "meanAfter": 0.7870833938419118
+    },
+    {
+      "id": "SHADOW-01",
+      "time": 13.65,
+      "before": "before/SHADOW-01-impact.png",
+      "after": "after/SHADOW-01-impact.png",
+      "whiteBefore": 0.0,
+      "whiteAfter": 0.0,
+      "brightBefore": 0.0,
+      "brightAfter": 0.0,
+      "meanBefore": 0.056134993461658754,
+      "meanAfter": 0.0375910935186249
+    },
+    {
+      "id": "WIND-01",
+      "time": 6.15,
+      "before": "before/WIND-01-impact.png",
+      "after": "after/WIND-01-impact.png",
+      "whiteBefore": 0.34880320231119794,
+      "whiteAfter": 0.0,
+      "brightBefore": 0.3901926676432292,
+      "brightAfter": 0.0,
+      "meanBefore": 0.8027133037412556,
+      "meanAfter": 0.3749445254137625
+    },
+    {
+      "id": "LIGHTNING-01",
+      "time": 12.4,
+      "before": "before/LIGHTNING-01-impact.png",
+      "after": "after/LIGHTNING-01-impact.png",
+      "whiteBefore": 0.9589792887369791,
+      "whiteAfter": 0.5374018351236979,
+      "brightBefore": 0.9839680989583334,
+      "brightAfter": 0.621856689453125,
+      "meanBefore": 0.9935871822701249,
+      "meanAfter": 0.929196561227437
+    },
+    {
+      "id": "ICE-01",
+      "time": 11.0,
+      "before": "before/ICE-01-impact.png",
+      "after": "after/ICE-01-impact.png",
+      "whiteBefore": 0.2263056437174479,
+      "whiteAfter": 0.0,
+      "brightBefore": 0.43977610270182294,
+      "brightAfter": 6.357828776041667e-05,
+      "meanBefore": 0.7825513896907231,
+      "meanAfter": 0.37010389919305936
+    },
+    {
+      "id": "MAGMA-01",
+      "time": 2.19,
+      "before": "before/MAGMA-01-impact.png",
+      "after": "after/MAGMA-01-impact.png",
+      "whiteBefore": 0.0003255208333333333,
+      "whiteAfter": 0.0,
+      "brightBefore": 0.009272257486979166,
+      "brightAfter": 0.000152587890625,
+      "meanBefore": 0.36430265209123197,
+      "meanAfter": 0.12356218171761707
+    },
+    {
+      "id": "MAGMA-02",
+      "time": 2.34,
+      "before": "before/MAGMA-02-impact.png",
+      "after": "after/MAGMA-02-impact.png",
+      "whiteBefore": 0.019788106282552082,
+      "whiteAfter": 0.0,
+      "brightBefore": 0.056439717610677086,
+      "brightAfter": 0.0008900960286458334,
+      "meanBefore": 0.4130284634359522,
+      "meanAfter": 0.1360654497473224
+    },
+    {
+      "id": "MAGMA-03",
+      "time": 1.95,
+      "before": "before/MAGMA-03-impact.png",
+      "after": "after/MAGMA-03-impact.png",
+      "whiteBefore": 0.023485819498697918,
+      "whiteAfter": 0.00011444091796875,
+      "brightBefore": 0.034604390462239586,
+      "brightAfter": 0.00020599365234375,
+      "meanBefore": 0.44918154764412277,
+      "meanAfter": 0.12842216013789956
+    },
+    {
+      "id": "POISON-01",
+      "time": 12.35,
+      "before": "before/POISON-01-impact.png",
+      "after": "after/POISON-01-impact.png",
+      "whiteBefore": 0.0,
+      "whiteAfter": 0.0,
+      "brightBefore": 0.08223215738932292,
+      "brightAfter": 0.0,
+      "meanBefore": 0.6431649138726129,
+      "meanAfter": 0.26299707732555916
+    },
+    {
+      "id": "SPACE-01",
+      "time": 14.65,
+      "before": "before/SPACE-01-impact.png",
+      "after": "after/SPACE-01-impact.png",
+      "whiteBefore": 0.0,
+      "whiteAfter": 0.0,
+      "brightBefore": 0.0,
+      "brightAfter": 0.0,
+      "meanBefore": 0.053947095725863585,
+      "meanAfter": 0.04871906868728937
+    },
+    {
+      "id": "TIME-01",
+      "time": 12.65,
+      "before": "before/TIME-01-impact.png",
+      "after": "after/TIME-01-impact.png",
+      "whiteBefore": 0.0,
+      "whiteAfter": 0.0,
+      "brightBefore": 0.00017801920572916666,
+      "brightAfter": 0.0,
+      "meanBefore": 0.26362207184436276,
+      "meanAfter": 0.15157247262194265
+    },
+    {
+      "id": "BLOOD-01",
+      "time": 12.870000000000001,
+      "before": "before/BLOOD-01-impact.png",
+      "after": "after/BLOOD-01-impact.png",
+      "whiteBefore": 0.0,
+      "whiteAfter": 0.0,
+      "brightBefore": 0.00014750162760416666,
+      "brightAfter": 2.5431315104166665e-06,
+      "meanBefore": 0.20136482473336015,
+      "meanAfter": 0.14355015306659774
+    },
+    {
+      "id": "ASTRAL-01",
+      "time": 2.34,
+      "before": "before/ASTRAL-01-impact.png",
+      "after": "after/ASTRAL-01-impact.png",
+      "whiteBefore": 0.010770161946614584,
+      "whiteAfter": 0.0005137125651041666,
+      "brightBefore": 0.016682942708333332,
+      "brightAfter": 0.0030364990234375,
+      "meanBefore": 0.41950230901381547,
+      "meanAfter": 0.13187185225343392
+    },
+    {
+      "id": "ASTRAL-02",
+      "time": 2.1,
+      "before": "before/ASTRAL-02-impact.png",
+      "after": "after/ASTRAL-02-impact.png",
+      "whiteBefore": 0.03255462646484375,
+      "whiteAfter": 8.392333984375e-05,
+      "brightBefore": 0.05260467529296875,
+      "brightAfter": 0.0007832845052083334,
+      "meanBefore": 0.7214883317416322,
+      "meanAfter": 0.22058600176443463
+    },
+    {
+      "id": "ASTRAL-03",
+      "time": 2.42,
+      "before": "before/ASTRAL-03-impact.png",
+      "after": "after/ASTRAL-03-impact.png",
+      "whiteBefore": 0.005859375,
+      "whiteAfter": 5.340576171875e-05,
+      "brightBefore": 0.011599222819010416,
+      "brightAfter": 0.0002568562825520833,
+      "meanBefore": 0.408783027467416,
+      "meanAfter": 0.11833224829779732
+    }
+  ],
+  "method": "Seed 38017, 960x640, fixed camera [0,18,34], Low, same impact+.15s. RGB>=245 all channels defines white; sRGB luminance>=.95 defines bright. Screenshot-only measurement, not native GPU FPS or perceptual certification.",
+  "repairRounds": 3,
+  "remaining": "Lightning-01 still has a large hot flash at this milestone. Other phases/quality combinations are not the complete 23xall-presets art review. AAA materials/probe modules remain unintegrated.",
+  "qualityChecks": {
+    "high": {
+      "passed": true,
+      "cases": 4,
+      "errors": []
+    },
+    "ultra": {
+      "passed": true,
+      "cases": 4,
+      "errors": []
+    },
+    "medium": {
+      "passed": true,
+      "cases": 4,
+      "errors": []
+    }
+  },
+  "historicalRecordNote": "Retired skill rows/references removed from the distributed record after checkpoint 3273606. Surviving measurements are unchanged; original run totals are historical, not a new 19-skill test."
+}

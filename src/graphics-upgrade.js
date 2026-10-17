@@ -3,6 +3,7 @@ import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 import { createPostEffects } from './graphics/core/post-effects.js';
 import { createGraphicsFields } from './graphics/core/fields.js';
 import { createWindGrass } from './graphics/core/wind-grass.js';
+import { createParticleWind } from './graphics/core/particle-wind.js';
 
 export const GRAPHICS_PRESETS = Object.freeze({
   Low: Object.freeze({ reflections: false, ao: false, volumetric: false, caustics: false, subsurface: false, motionBlur: false, dof: false, adaptive: true }),
@@ -21,22 +22,34 @@ function injectShaderDeclarations(source, declarations) {
 export function createGraphicsUpgrade(THREE, renderer, scene, ground, composer, distortionPass, bloom) {
   const fields = createGraphicsFields(THREE);
   fields.init();
+  const particleWind = createParticleWind(fields.getUniforms().uArcWind);
   const windGrass = createWindGrass(THREE, scene, fields.getUniforms().uArcWind);
   windGrass.init();
   const postEffects = createPostEffects({ renderer, scene, camera: composer.passes.find((pass) => pass.scene)?.camera, ground, composer, width: window.innerWidth, height: window.innerHeight, bloom });
   postEffects.init();
   const outputPass = new OutputPass();
   composer.addPass(outputPass);
-  const room = new RoomEnvironment();
-  const pmrem = new THREE.PMREMGenerator(renderer);
-  const environmentTarget = pmrem.fromScene(room, 0.035);
-  scene.environment = environmentTarget.texture;
-  pmrem.dispose();
-  room.traverse((object) => {
-    object.geometry?.dispose?.();
-    const materials = Array.isArray(object.material) ? object.material : [object.material];
-    materials.forEach((material) => material?.dispose?.());
-  });
+  let environmentTarget;
+  function restoreEnvironment() {
+    // Render-target contents do not survive WebGL context loss. Re-render the
+    // procedural IBL instead of reusing an allocated but empty PMREM texture.
+    const room = new RoomEnvironment();
+    const pmrem = new THREE.PMREMGenerator(renderer);
+    const nextTarget = pmrem.fromScene(room, 0.035);
+    scene.environment = nextTarget.texture;
+    environmentTarget?.dispose();
+    environmentTarget = nextTarget;
+    pmrem.dispose();
+    room.dispose();
+  }
+  restoreEnvironment();
+  function contextLost() {
+    // Clear listeners while GL is lost. A dispose after restoration would try
+    // deleting framebuffer/texture handles belonging to the former context.
+    environmentTarget?.dispose();
+    environmentTarget = null;
+    scene.environment = null;
+  }
 
   const groundUniforms = {
     uArcTime: { value: 0 },
@@ -48,6 +61,7 @@ export function createGraphicsUpgrade(THREE, renderer, scene, ground, composer, 
     uSurfaceDust: { value: 0 },
     uSurfaceMud: { value: 0 },
     uSurfaceHeat: { value: 0 },
+    uSurfaceNature: { value: 0 },
     uGroundAO: { value: 0 },
     uGroundCaustics: { value: 0 },
     uGroundDisturbance: { value: 0 },
@@ -74,6 +88,7 @@ uniform float uBloodStain;
 uniform float uSurfaceDust;
 uniform float uSurfaceMud;
 uniform float uSurfaceHeat;
+uniform float uSurfaceNature;
 uniform float uGroundAO;
 uniform float uGroundCaustics;
 uniform vec4 uArcLightPositionRadius[8];
@@ -87,8 +102,18 @@ float arcGroundNoise(vec2 p) {
   return mix(mix(arcGroundHash(i), arcGroundHash(i + vec2(1.0, 0.0)), f.x), mix(arcGroundHash(i + vec2(0.0, 1.0)), arcGroundHash(i + vec2(1.0, 1.0)), f.x), f.y);
 }`)
       .replace('#include <roughnessmap_fragment>', `#include <roughnessmap_fragment>
+// Static soil detail stays anchored to the ground as the camera/time changes.
+// Fade fine grain below a pixel to avoid distant shimmer; no texture allocation.
+float arcSoilPatch = arcGroundNoise(vArcGroundPos.xz * 0.23);
+vec2 arcSoilUV = vArcGroundPos.xz * 2.6;
+float arcSoilDetail = 1.0 - smoothstep(0.35, 1.0, max(fwidth(arcSoilUV.x), fwidth(arcSoilUV.y)));
+float arcSoilGrain = mix(0.5, arcGroundNoise(arcSoilUV), arcSoilDetail);
+diffuseColor.rgb *= (0.78 + arcSoilPatch * 0.36) * (0.94 + arcSoilGrain * 0.12);
+roughnessFactor = clamp(roughnessFactor + (arcSoilGrain - 0.5) * 0.04, 0.0, 1.0);
 float arcGroundNoiseValue = arcGroundNoise(vArcGroundPos.xz * 0.19 + vec2(uArcTime * 0.018, -uArcTime * 0.012));
 float arcGroundMask = 1.0 - smoothstep(max(0.15, uGroundRadius * 0.45), max(0.2, uGroundRadius), distance(vArcGroundPos.xz, uGroundCenter));
+float arcNature=clamp(uSurfaceNature*arcGroundMask,0.,1.);
+diffuseColor.rgb=mix(diffuseColor.rgb,vec3(.065,.13,.027)*(.7+arcGroundNoiseValue*.5),arcNature*.82);
 float arcWet = clamp(uSurfaceState.x * arcGroundMask, 0.0, 1.0);
 float arcBurn = clamp(uSurfaceState.y * arcGroundMask, 0.0, 1.0);
 float arcFrost = clamp(uSurfaceState.z * arcGroundMask, 0.0, 1.0);
@@ -132,14 +157,15 @@ for (int arcLightIndex = 0; arcLightIndex < 8; arcLightIndex++) {
 }
 totalEmissiveRadiance += min(arcInjectedLight, vec3(0.22)) * (0.24 + arcWet * 0.55 + arcFrost * 0.28);`);
   };
-  groundMaterial.customProgramCacheKey = () => 'arcane-ground-reactive-v2';
+  groundMaterial.customProgramCacheKey = () => 'arcane-ground-reactive-v3-soil';
   groundMaterial.needsUpdate = true;
 
   const enhancedMaterials = new WeakSet();
-  const enhancedMaterialList = [];
+  const enhancedMaterialList = new Set();
   const subsurfaceUniform = { value: 0 };
   const lightFieldUniforms = fields.getUniforms();
   function enhanceSurfaces(root) {
+    particleWind.connect(root);
     root.traverse((object) => {
       if (object === ground || !object.isMesh || object.isPoints || object.isLine) return;
       const materials = Array.isArray(object.material) ? object.material : [object.material];
@@ -153,7 +179,12 @@ totalEmissiveRadiance += min(arcInjectedLight, vec3(0.22)) * (0.24 + arcWet * 0.
       for (const material of materials) {
         if (!(material?.isMeshStandardMaterial || material?.isMeshPhysicalMaterial) || enhancedMaterials.has(material)) continue;
         enhancedMaterials.add(material);
-        enhancedMaterialList.push(material);
+        enhancedMaterialList.add(material);
+        const onDispose = () => {
+          enhancedMaterialList.delete(material);
+          material.removeEventListener('dispose', onDispose);
+        };
+        material.addEventListener('dispose', onDispose);
         const previousCompile = material.onBeforeCompile;
         material.onBeforeCompile = (shader, activeRenderer) => {
           previousCompile?.call(material, shader, activeRenderer);
@@ -238,7 +269,7 @@ for (int arcObjectLightIndex = 0; arcObjectLightIndex < 8; arcObjectLightIndex++
   vec4 arcLightPositionRadius = uArcLightPositionRadius[arcObjectLightIndex];
   vec4 arcLightColorIntensity = uArcLightColorIntensity[arcObjectLightIndex];
   vec3 arcLightPositionView = (viewMatrix * vec4(arcLightPositionRadius.xyz, 1.0)).xyz;
-  vec3 arcToLight = arcLightPositionView - vViewPosition;
+  vec3 arcToLight = arcLightPositionView + vViewPosition;
   float arcLightDistance = max(length(arcToLight), 0.001);
   float arcLightReach = max(1.0, arcLightPositionRadius.w);
   float arcLightFade = max(0.0, 1.0 - arcLightDistance / arcLightReach);
@@ -379,6 +410,7 @@ reflectedLight.indirectDiffuse += diffuseColor.rgb * min(arcInjectedObjectLight,
   }
 
   function update(time, camera, reducedMotion = false) {
+    particleWind.update(time);
     groundUniforms.uArcTime.value = Number.isFinite(time) ? time : 0;
     const cameraPosition = camera.position;
     const motion = distortionPass.uniforms.uMotionDir.value;
@@ -399,10 +431,11 @@ reflectedLight.indirectDiffuse += diffuseColor.rgb * min(arcInjectedObjectLight,
     postEffects.setReducedMotion(reducedMotion);
   }
 
-  function updateSurface({ time = 0, center = null, radius = 1, wet = 0, burn = 0, frost = 0, acid = 0, blood = 0, dust = 0, mud = 0, heat = 0, crack = 0, wind = 0, windDirection = null, light = 0, shadow = 0 } = {}) {
+  function updateSurface({ time = 0, center = null, radius = 1, wet = 0, burn = 0, frost = 0, acid = 0, blood = 0, dust = 0, mud = 0, heat = 0, nature = 0, crack = 0, wind = 0, windDirection = null, light = 0, shadow = 0 } = {}) {
     if (center) groundUniforms.uGroundCenter.value.set(center.x, center.z);
     else groundUniforms.uGroundCenter.value.set(0, 0);
     groundUniforms.uGroundRadius.value = Math.max(1, Number.isFinite(radius) ? radius : 1);
+    groundUniforms.uSurfaceNature.value=THREE.MathUtils.clamp(nature,0,1);
     groundUniforms.uSurfaceState.value.set(wet, burn, frost, acid);
     groundUniforms.uSurfaceAux.value.set(crack, wind, light, shadow);
     groundUniforms.uBloodStain.value = THREE.MathUtils.clamp(blood, 0, 1);
@@ -419,6 +452,7 @@ reflectedLight.indirectDiffuse += diffuseColor.rgb * min(arcInjectedObjectLight,
   function resetSurface() {
     updateSurface();
     fields.clearLightSources();
+    windGrass.reset();
     fields.updateWind({ strength: 0, turbulence: 0 });
     distortionPass.uniforms.uVolumeStrength.value = 0;
     distortionPass.uniforms.uMotionDir.value.set(0, 0);
@@ -434,10 +468,10 @@ reflectedLight.indirectDiffuse += diffuseColor.rgb * min(arcInjectedObjectLight,
   function getDiagnostics() {
     return {
       quality, features: effectiveFeatures(), requestedFeatures: getFeatures(), autoReduced: [...autoDisabled], averageFrameMs,
-      post: postEffects.getStatus(), fields: fields.getStatus(), grass: windGrass.getStatus(), estimatedRenderTargetBytes: postEffects.estimateTargetBytes()
+      post: postEffects.getStatus(), fields: fields.getStatus(), grass: windGrass.getStatus(), particleWind: particleWind.getStatus(), trackedMaterials: enhancedMaterialList.size, estimatedRenderTargetBytes: postEffects.estimateTargetBytes(), surfaceNature:groundUniforms.uSurfaceNature.value
     };
   }
-  function dispose() { composer.removePass(outputPass); outputPass.dispose(); postEffects.dispose(); windGrass.dispose(); fields.dispose(); environmentTarget.dispose(); }
+  function dispose() { composer.removePass(outputPass); outputPass.dispose(); postEffects.dispose(); windGrass.dispose(); fields.dispose(); environmentTarget?.dispose(); }
 
-  return { applyQuality, setFeature, getFeatures, getEffectiveFeatures, getDiagnostics, getWindUniform: () => fields.getUniforms().uArcWind, setLightSources, reportFrame, degradeOneFeature, reduceHeavyFeatures, enhanceSurfaces, update, updateSurface, resetSurface, resize, dispose, environmentTarget };
+  return { applyQuality, setFeature, getFeatures, getEffectiveFeatures, getDiagnostics, getWindUniform: () => fields.getUniforms().uArcWind, setLightSources, reportFrame, degradeOneFeature, reduceHeavyFeatures, enhanceSurfaces, update, updateSurface, resetSurface, resize, dispose, contextLost, restoreEnvironment, get environmentTarget() { return environmentTarget; } };
 }

@@ -1,0 +1,19 @@
+
+> arcane-vfx-studio@2.0.0 test
+> node --test tests/*.test.js
+
+✔ tests/audio-assets.test.js (127.880155ms)
+✔ tests/audio-limiter.test.js (124.292059ms)
+✔ tests/audio-score.test.js (155.500372ms)
+✔ tests/autonomy.test.js (43.620327ms)
+✔ tests/resource-lifecycle.test.js (111.585204ms)
+✔ tests/skill-area.test.js (63.668608ms)
+✔ tests/windows-launcher.test.js (43.587373ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 682.124277

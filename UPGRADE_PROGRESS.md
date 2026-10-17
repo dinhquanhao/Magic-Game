@@ -1,9 +1,44 @@
+## Bản bàn giao đang chốt — Thảo
+
+Tệp người dùng gửi sau cùng nhắc lại thay hệ cuối bằng Thảo và giữ các hệ còn lại. Bản runtime hiện tại tập trung hoàn tất Thảo; các mở rộng11lớp và gate đã soạn được lưu tại docs/drafts/graphics, chưa import/chưa nghiệm thu. Mọi kế hoạch đồ họa bên dưới tiếp tục được giữ, không gọi là đã triển khai. Tập trung đóng ZIP Thảo và xử lý cảnh báo context cleanup có bằng chứng.
+
+## Cập nhật ưu tiên mới nhất (hai tài liệu bổ sung)
+
+Tài liệu cuối mở ma trận lên **11 lớp / mọi skill** và đổi thứ tự thành: GĐ1 nền tảng chung → GĐ2 trình tự rune/commit/fade → GĐ3 từng hệ → giao thoa/độ bền/bàn giao. Quy định này thay thứ tự rune-trước ở mục khảo sát bên dưới. Khảo sát đã làm và module gate đang soạn được giữ an toàn, chưa tích hợp vào runtime và chưa gọi là nghiệm thu. Không đổi21skill/15hệ hiện tại.
+
+11lớp: hình khối; PBR/shader; particles; vật lý; ánh sáng/bóng; môi trường; thứ cấp/decal; hậu kỳ; cinematic; rune; audio. Mọi lớp có cột có/thiếu/bằng chứng trong ma trận sắp kiểm kê. Nền tảng hiện có nhiều xấp xỉ; không đồng nhất “có checkbox” với hoàn thành raymarch/PCSS/GPU height field.
+
+# Trạng thái mới nhất — đồ họa và trình tự rune, 17/10/2026
+
+Registry hiện tại: **15 hệ / 21 skill**, kế thừa checkpoint Thảo fad20b0 đã push. Các số23 trong nhật ký phía dưới là số tại thời điểm lịch sử, không phải registry hiện hành. Giữ mọi ID/tên/cấu hình/cinematic của21skill này. Yêu cầu mới ưu tiên Giai đoạn1 trình tự rune, nghiệm thu toàn registry trước khi mở Giai đoạn2 đồ họa chung và từng hệ. Không dựng lại dự án, không renderer/RAF thứ hai, không merge main.
+
+## Khảo sát timeline trước sửa theo yêu cầu mới
+
+- Khởi tạo ở castUnsafe: root cơ sở ẩn; Rune Tower dựng bằng nhiều Line/Mesh/Points; transfer rune riêng; PointLight skill; makeUltimateAttack dựng group hiệu ứng dưới effect. Một số factory tự đặt group ẩn, nhiều module riêng để group hiện ngay trong init. Thảo còn gọi updateCast nên vòng/pollen riêng có thể hiện trước release.
+- `charging`: elapsed/(castTime×pace/runeDrawSpeed), Rune Tower vẽ tới100%; attack.updateCast có thể hoạt động; đèn skill tăng2→10. `channeling`: thêm .58+.26×pace giây, Rune Transfer hội tụ; skill light tăng9→24. Sau đó phase=active, activeTime=0 và root xuất hiện. Không có một gate chung chặn mọi mesh/emitter/uniform của các factory.
+- `active`: attack.update(activeTime), cinematic vẫn tính theo activeTime; Tower update dùng runeTower.fadeAt/fadeDuration/timelineEnd của từng skill nên có thể tồn tại tới impact/aftermath. Group vẫn giữ geometry cho tới khi cast kết thúc. Có fade opacity/scale theo tier nhưng chưa có hợp đồng fade chung1.2–2.5giây tại commit và dispose sớm.
+- Sơ đồ trước: bấm cast → charging (Rune0→100%, vài module skill/đèn đã hiện) → channeling (Rune100% + transfer, skill light) → activeTime0 (root/attack) → fade Tower muộn theo từng plan → kết thúc/dispose toàn cast.
+- Rune Tower luôn có cho21skill. Tái sử dụng cơ chế layerCount/ringsPerLayer/profile/update/release; thêm ground overlay subdivided và wrapper fade, không đổi registry/profile/plan cũ. Snapshot source audit và src trước sửa lưu ngoài repo để đối chiếu.
+
+## Kế hoạch nghiệm thu mới
+
+1. Gate chung trước COMMIT: toàn bộ visual group của skill ẩn, chưa update attack, skill light/wind/surface/post tắt; chỉ rune/transfer và cue rune. Vẽ Rune0→90% ở charging,90→100% ở channeling; tổng thời gian chuẩn bị cũ giữ nguyên. COMMIT trùng100% và activeTime0.
+2. RELEASE: fade mặc định1.8giây skill time, emissive giảm trước, radial noise dissolve ngoài→trong, tier tắt so le, rune dust/ground light về0, dispose sớm Tower/transfer/overlay. ACTIVE giữ nhịp/cinematic nội bộ.
+3. Kiểm thử toàn21skill ở trước/commit/giữa fade/hết fade/impact/aftermath; pause/replay/reset/rapid select, giữ heap/GPU resources ổn định. Đạt Giai đoạn1 mới chuyển nền đồ họa chung.
+4. Phạm vi Giai đoạn2–3 gồm A1–A18 và5lớp mọi hệ theo thứ tự mới; các tính năng hiện có phải được audit/chạy thật, không gọi stub/chưa tích hợp là hoàn thành. FPS GPU thật cần phần cứng phù hợp; SwiftShader/CPU submission không phải bằng chứng FPS native.
+
+## Trạng thái hiện tại
+
+Khảo sát đã ghi trước sửa. Chưa triển khai gate/fade mới, chưa nghiệm thu Giai đoạn1 mới. Bằng chứng Thảo trước yêu cầu mới đang được lưu/đóng gói riêng; không dùng nó thay cho kết quả gate mới.
+
+---
+
 # Tiến độ nâng cấp Arcane VFX Studio
 
 ## Phạm vi và quy tắc
 
 - Tiếp tục trên dự án hiện có `outputs/Arcane-VFX-Studio-Wind-Tornado`; ZIP gốc được giữ làm nguồn tham chiếu. Không tạo dự án mới, không đổi `START.bat`, UI chính, Play Mode, timeline, Rune Tower, hay registry skill.
-- Đếm từ `src/main.js`: 15 hệ, 23 skill. Registry hiện tại: FIRE-01..03, WATER-01, EARTH-01, LIGHT-01, SHADOW-01, WIND-01, LIGHTNING-01, ICE-01, MAGMA-01..03, POISON-01, SPACE-01, TIME-01, BLOOD-01, ASTRAL-01..03, PSYCHIC-01..03.
+- Đếm từ `src/main.js`: 15 hệ, 23 skill. Registry hiện tại: FIRE-01..03, WATER-01, EARTH-01, LIGHT-01, SHADOW-01, WIND-01, LIGHTNING-01, ICE-01, MAGMA-01..03, POISON-01, SPACE-01, TIME-01, BLOOD-01, ASTRAL-01..03.
 - Tình trạng đầu đợt này: `src/graphics-upgrade.js` đã thêm PMREM RoomEnvironment, nhiễu màu/roughness trên MeshStandard/Physical, shader mặt đất trạng thái, ánh sáng môi trường, bóng PCF mềm và các xấp xỉ hậu kỳ trong một pass distortion hiện có. Chưa có SSR/GTAO/SSAO/DoF thật, temporal SSR, debug overlay, trường gió/đèn chung có giao diện riêng, hay adaptive quality có hysteresis/hồi phục. Chưa có số FPS đo bằng GPU.
 - Pipeline ban đầu: một `WebGLRenderer`; `EffectComposer` theo thứ tự RenderPass → UnrealBloomPass → một ShaderPass distortion; một `animate()`; ACES Filmic/sRGB; một DirectionalLight và HemisphereLight; một plane nền chia 96×96; một bộ nâng cấp vật liệu/mặt nền; dọn mesh/material/geometry trong `disposeTree`. Các shader custom vẫn dùng quy trình riêng; không tuyên bố ray tracing thật.
 
@@ -12,8 +47,6 @@
 | ID / tên | Module và hình thái chính hiện tại | Hạn chế đã biết ở đầu đợt |
 |---|---|---|
 | FIRE-01 Thiên Nhật Diệt Thế | `src/main.js`; shader lõi plasma, corona instanced, prominence, vòng va chạm | Không mô phỏng truyền nhiệt/khói/va chạm vật lý tổng quát |
-| FIRE-02 Phượng Hoàng Tận Thế | `src/main.js`; shader lửa, lông instanced, ember/khói | Không có solver lông/vải; lửa là shader VFX |
-| FIRE-03 Vạn Hỏa Thiên Phạt | `src/main.js`; cổng, giáo/đạn instanced, hạt lửa | Dấu cháy là shader trạng thái tạm, không phải decal texture lưu |
 | WATER-01 Hải Thần Lĩnh Vực | `src/ocean-dominion.js`; cá voi, sóng/foam shader, hạt giọt/splash | Chưa có Beer–Lambert, FFT/Gerstner fluid hay phản xạ màn hình trước đợt này |
 | EARTH-01 Đại Lục Phân Liệt | `src/earth-meteor.js`; thiên thạch, đá instanced, bụi và nứt | Chuyển động/va chạm mang tính VFX, chưa phải solver địa hình/GPU |
 | LIGHT-01 Lục Dực Thánh Khải | `src/light-ray-rain.js`; cổng và tia photon instanced, điểm impact | Tán xạ thể tích chỉ xấp xỉ |
@@ -31,9 +64,6 @@
 | ASTRAL-01 Vạn Tinh Quy Nhất | `src/main.js`; shader lõi/sao và quỹ đạo | Hấp dẫn không phải N-body |
 | ASTRAL-02 Tinh Hà Tận Thế | `src/main.js`; chòm sao/cột sáng và hạt | Ánh sáng thể tích còn là xấp xỉ |
 | ASTRAL-03 Sáng Thế Tinh Vực | `src/main.js`; dải xoắn/thiên hà và bụi điểm | Hạt không có tương tác hấp dẫn |
-| PSYCHIC-01 Tâm Thức Băng Diệt | `src/main.js`; mắt/tâm điểm shader và distortion | Tương tác ánh sáng là stylized |
-| PSYCHIC-02 Vạn Niệm Thần Vực | `src/main.js`; ảo ảnh, tia, hạt | Vật cản/ánh sáng đơn giản |
-| PSYCHIC-03 Thần Niệm Sáng Thế | `src/main.js`; tinh thể fractal, mảnh và sóng | Vỡ mảnh không dùng solver fracture |
 
 Quy ước hồ sơ: geometry/hạt/đèn/hậu kỳ/cleanup chi tiết sẽ được bổ sung sau khi đọc từng module; nếu không được xác minh trực tiếp, đánh dấu chưa kiểm kê thay vì suy đoán. Chi phí và FPS chỉ ghi khi đo được.
 
@@ -42,7 +72,7 @@ Quy ước hồ sơ: geometry/hạt/đèn/hậu kỳ/cleanup chi tiết sẽ đ�
 1. **Giai đoạn A — nền đồ họa chung:** khảo sát và ổn định pipeline; hoàn thiện post-effects theo preset (SSR/GTAO/SSAO/DoF tùy khả năng tương thích), fallback IBL, SSS giả lập, volumetric/caustic, điều khiển riêng, adaptive quality có hysteresis, debug overlay, giới hạn tài nguyên và progress log. Build + smoke check trước khi chuyển giai đoạn.
 2. **Giai đoạn B — Thủy, Thổ, Phong:** làm theo thứ tự người dùng yêu cầu; giữ hình thái/timeline và ngân sách Low/Medium. Sau mỗi hệ build, kiểm tra tĩnh; ghi rõ không thể xem trực quan nếu trình duyệt không khả dụng.
 3. **Giai đoạn C — Hỏa, Băng, Lôi, Độc, Ánh Sáng, Bóng Tối, Huyết, Không Gian, Thời Gian.**
-4. **Giai đoạn D — Nham, Tinh Tú, Tinh Thần và kiểm thử giao thoa mọi hệ.**
+4. **Giai đoạn D — Nham và Tinh Tú và kiểm thử giao thoa mọi hệ.**
 5. **Giai đoạn E — audit registry/lifecycle/hiệu năng, README, build cuối, ZIP không kèm `node_modules`.**
 
 ## Nhật ký
@@ -98,7 +128,7 @@ Quy ước hồ sơ: geometry/hạt/đèn/hậu kỳ/cleanup chi tiết sẽ đ�
 - Test này phát hiện lỗi runtime ở `src/shadow-orb.js`: `IcosahedronGeometry.index` có thể null. Đã sửa để sao chép index khi có, đồng thời vẫn giữ hình học non-indexed hợp lệ; chạy lại 100 cast mô phỏng qua 300 mốc update và dispose: đạt.
 - Sửa shader hạt nền chung trong `src/main.js`: chặn độ sâu camera nhỏ khi tính kích thước điểm, giới hạn điểm 1–35 px. Mục tiêu là tránh kích thước âm/vọt lớn khi hạt đi sát mặt phẳng camera; cú pháp và build sau sửa: đạt. Chưa kiểm tra trực quan trên GPU.
 - Build hiện vẫn cảnh báo chunk `three-core` 535.18 kB minified (136.58 kB gzip); build thành công. Không tăng ngưỡng cảnh báo để che số liệu.
-- Tiếp theo: hoàn tất audit/kiểm tra các module C, rà các skill Nham/Tinh Tú/Tinh Thần, kiểm thử giao thoa, cập nhật README/progress và đóng gói ZIP cuối. Giao diện trình duyệt hiện chưa dùng được để quan sát, nên tất cả mục thị giác phải vẫn ghi rõ chưa kiểm chứng.
+- Tiếp theo: hoàn tất audit/kiểm tra các module C, rà các skill Nham/Tinh Tú, kiểm thử giao thoa, cập nhật README/progress và đóng gói ZIP cuối. Giao diện trình duyệt hiện chưa dùng được để quan sát, nên tất cả mục thị giác phải vẫn ghi rõ chưa kiểm chứng.
 
 #### Tích hợp giao thoa: Surface State, Light Injection và Phong
 
@@ -110,19 +140,62 @@ Quy ước hồ sơ: geometry/hạt/đèn/hậu kỳ/cleanup chi tiết sẽ đ�
 - Smoke test tích hợp CPU bằng Three.js thật và renderer/PMREM giả: gọi PBR `onBeforeCompile`, xác nhận varying/uSurface/uLight được chèn; xác nhận Low = 360 cỏ, dust = 0.432 theo wind 0.6, heat = 0.1 theo burn 0.4, reset wind về 0 và dispose pass/geometry. Đạt. Đây không phải compile GLSL trên GPU.
 - Chưa kiểm chứng bằng mắt/GPU; cỏ mới có smoke test CPU, không có FPS thật. Hạt custom của các hệ khác, khói/vải riêng chưa đọc trường gió; surface shader/light injection không phải GI hoặc decal vật lý.
 
-### Giai đoạn D — Nham, Tinh Tú, Tinh Thần (đang làm)
+### Giai đoạn D — Nham và Tinh Tú (đang làm)
 
 #### Lớp vật liệu riêng theo hệ
 
-- Tạo `src/graphics/core/element-materials.js`, nối vào đường dựng skill cũ trong `src/main.js`. Ba nhánh dùng MeshPhysicalMaterial chung nhưng khác phản ứng: Nham có dòng nhiệt và khe sáng; Tinh Tú có nền tinh vân, sao nhỏ, phản xạ Fresnel; Tinh Thần có sóng theo bán kính và dải lăng kính ở viền.
-- Áp vật liệu lên các mesh/glow actor của cả ba skill Nham, cả ba skill Tinh Tú và cả ba skill Tinh Thần; cập nhật thời gian/cường độ bằng skill time, không đổi timeline, hit-stop, slow-motion hay hình thái chính. Vật liệu vẫn dùng geometry/instancing sẵn có và được dispose cùng root cast.
-- Smoke test CPU cho đủ ba nhánh: shader chunks tiêu chuẩn nhận uniform/varying riêng; khe nóng/sao/sóng tinh thần hiện diện; uniform nhận skill time/intensity; smoke test tích hợp xác nhận shader riêng vẫn ghép được với PBR Surface State/Light Injection: đạt.
 - `node --check` toàn bộ `src/**/*.js`: đạt. Build Vite: đạt, 47 module; app 372.44 kB, add-ons 112.28 kB, Three core 535.18 kB minified. Gzip lần lượt 118.58 / 23.93 / 136.58 kB. Cảnh báo Three core >500 kB vẫn còn.
-- Đây mới là lớp vật liệu. Còn phải hoàn thiện chuyển động/chi tiết phụ theo từng nhóm Nham, Tinh Tú, Tinh Thần, kiểm tra preset, cleanup/chuyển hệ và rà lại bảng 5 lớp. Chưa kiểm tra bằng mắt hoặc GPU; chưa đo FPS.
+- Đây mới là lớp vật liệu. Còn phải hoàn thiện chuyển động/chi tiết phụ theo từng nhóm Nham và Tinh Tú, kiểm tra preset, cleanup/chuyển hệ và rà lại bảng 5 lớp. Chưa kiểm tra bằng mắt hoặc GPU; chưa đo FPS.
 
 ### Bản bàn giao khi tạm dừng — 17/10/2026
 
 - Đóng gói trạng thái hiện có theo yêu cầu gửi file; tác vụ nâng cấp tổng thể vẫn tạm dừng, chưa hoàn tất giai đoạn D/E.
-- Các thay đổi mới nhất trong main.js gồm hạt đọc trường gió chung, chuyển động sao hội tụ, quỹ đạo thiên thạch Nham và lõi mắt Tinh Thần. Chưa kiểm chứng hình ảnh/GPU của các thay đổi này.
 - Build lại trước khi gửi: đạt (47 module; app 373.21 kB, add-ons 112.28 kB, Three core 535.18 kB; còn cảnh báo kích thước Three core >500 kB).
 - ZIP gồm mã nguồn, dist mới, tài liệu tiến độ và START.bat; không kèm node_modules. Đây là bản tiến độ hiện tại, chưa phải bản hoàn tất mọi yêu cầu.
+
+## Bổ sung AAA — 17/10/2026
+
+### Khảo sát và bảo toàn lượt đang chạy
+
+- Yêu cầu đồ họa mới nối tiếp tác vụ audio. Giữ mã audio Stage A đã build/chạy/đo đạt, không bắt đầu lại. Theo yêu cầu mới append mục này; toàn bộ phần lịch sử phía trên giữ nguyên.
+- Đã đọc lịch sử và mã đồ họa hiện có: PBR/IBL, SSR, GTAO/SSAO, volumetric/caustic/SSS xấp xỉ, Surface State, Wind Field, Light Injection, adaptive và debug đều có; không dựng lại.
+- [Khảo sát 10 ưu tiên và ánh xạ Unreal→web](graphics/AAA_DESIGN.md). Một WebGLRenderer/animate; Three r180/Vite7. Mage Group rig, dummies, arena/cỏ/kiến trúc procedural; không có skeleton hoặc enemy AI hoàn chỉnh.
+- Baseline mới đang chạy bằng Chromium ANGLE/SwiftShader: capabilities, entity census, mỗi hệ 3 mốc và cao trào 4 preset. Số đo frame dùng gl.finish wall time, không phải benchmark native GPU. Chưa có kết luận thị giác hoặc FPS trước khi có kết quả.
+- Việc tiếp: hoàn tất các cổng audio từng hệ, giữ baseline rồi mở các nhóm PBR/ánh sáng/LOD/nhân vật/field/post/adaptive theo graphics/AAA_DESIGN.md. Không ghi hoàn tất phần chưa triển khai.
+
+- Baseline phát hiện fixture đổi hậu kỳ nhưng chưa dựng lại instance theo preset. Lưu các số Medium/High/Ultra ban đầu vào invalid-preset-fixture, không dùng làm kết luận; sửa fixture dispose/recast trước mỗi preset. Giữ các ảnh Low hợp lệ và tiếp tục phần còn thiếu.
+
+- Baseline bị timeout screenshot ở Ice sau chuỗi preset dài. Giữ 35 mốc đã ghi; bổ sung readPixels 1 pixel để chờ framebuffer hoàn tất trước khi chụp/đo, giảm 3→2 mẫu, tăng timeout screenshot60s. Các số gl.finish trước đó chỉ dùng như CPU submission timing, không diễn giải thành GPU FPS. Đây là lần sửa fixture baseline thứ hai; nếu vẫn lỗi sẽ giữ phần chưa kiểm chứng thay vì lặp vô hạn.
+
+### Bổ sung AAA — tiếp nối 17/10/2026
+
+Bảo toàn ce73729/1a6cb41. Giới hạn năng lượng bloom và tách ngưỡng cho các hệ tối; Low23impact, Medium/High/Ultra4ca đại diện, production UI/video, build/unit đạt. 3vòng sửa bloom đã khép; Lôi còn flash rộng. PBR/probes mới vẫn chưa tích hợp; không tự ghi là hoàn thiện AAA. Bằng chứng và phần tiếp tại PROGRESS mục mới nhất, docs/evidence/contrast và docs/evidence/resumed-production.
+
+
+## Thu gọn Hỏa — 17/10/2026
+
+Theo yêu cầu mới, Hỏa chỉ giữ FIRE-01. Hai hàng skill đã gỡ được loại khỏi bản lịch sử phân phối hiện tại; không sửa cấu hình/số đo của các skill còn lại. Snapshot gốc trước thu gọn nằm tại commit3273606. Xem docs/evidence/fire-trim/README.md cho kiểm thử mới; không coi kết quả lịch sử là ma trận19skill mới.
+
+## Bổ sung AAA — fade phù văn chung, 17/10/2026
+
+Theo yêu cầu mới nhất, chỉ chỉnh chuyển tiếp hiển thị phù văn trên15hệ/19skill. Trước sửa, nhiều rune giữ đến impact/aftermath; bản audit tại checkpoint13b1e7f và work/rune-fade/registry-before.json. Sau sửa, chờ nhóm hiệu ứng bật hiển thị rồi fade smoothstep1,8giây mô phỏng, không giảm opacity đột ngột; hết fade tắt vật liệu/hạt/đèn và ẩn group. Mốc xuất hiện trễ của Thời Gian được chờ; root placeholder rỗng không kích hoạt fade.
+
+Không đổi registry/config/cinematic/rune profile/MP/cooldown/score: source audit trước/sau khớp byte, fingerprint19skill đạt. Build65module,16unit,19Low+19High và lifecycle tại docs/evidence/rune-fade/README.md. Phạm vi này không tích hợp draft gate/rune AAA cũ, không tuyên bố hoàn tất roadmap lớn. Các kết quả rune cũ vẫn là lịch sử; thay đổi fade mới là ngoại lệ được người dùng yêu cầu cho toàn bộ skill.
+
+
+## Bổ sung AAA — model tải lên và timeline theo yêu cầu mới,17/10/2026
+
+- Checkpoint phù văn9a78620 đã push trước sửa. Audit mã thực tế:15hệ/19skill, Hỏa chỉ FIRE-01; model cũ procedural có gậy, pose thay theo hệ và chỉ giữ .72s đầu active; pre-cast phụ thuộc pace, active dùng marker gốc. ZIP model người dùng chỉ có HTML/CSS/JS procedural, mặc định Cyber Bot, không có GLB/skin/texture.
+- Theo yêu cầu mới (ngoại lệ cho giới hạn model/timing cũ): port Cyber Bot, căn chân và nâng hai vai/tay trên đầu; khóa di chuyển/nhảy/lướt/đổi hướng actor suốt charging/channeling/active, camera vẫn tự do. Tổng pre-cast mặc định10s=8,5+1,5; active0,5× cho toàn19skill. UI/audio dùng clock mới, rune fade vẫn1,8s simulation từ hiển thị thật. Không nhập renderer/RAF/input/audio/CDN của demo.
+- Build67module/11file unit PASS, gồm3ca mới. Ma trận19Low+19High/228mốc/38cleanup PASS,0JS/WebGL/shader error/warning; thời gian rune10,00s, sai số active<=0,06s do bước .05s/guardcleanup. Medium/Ultra, pause/hit-stop/slow/delayedTime/audio/slider/reset/selection PASS; có2watchdog warning khi init/resetHigh ở các lượt phụ trên SwiftShader.979file nguồn/public asset/dependency/launcher cùng dữ liệu registry/cinematic/rune/MP/cooldown/score giữ nguyên.
+- Production không hook: lượt đầu timeout180s khi chạy song song các browser phần mềm,0console error; lượt riêng DPR0,5 PASS trọn UI/cast/camera/kết thúc/di chuyển/reset, video lưu và chuyển MP4. Lỗi fixture truy cập config ngoài module đã sửa và rerun PASS; không gọi lượt chưa đạt là PASS. Raw trong work/character-cast; bằng chứng bàn giao tại docs/evidence/character-cast.
+- Nguồn/hash model tại assets/sources. Giữ license repo, không thêm dịch vụ hoặc sample ngoài. Audio phát chậm có đổi pitch; WAV tham chiếu offline vẫn theo marker gốc. Không tuyên bố GPU native/Windows thật/Live Preview từ xa. Nhóm này không hoàn tất GĐ2 HP/hurt/death hoặc các draft PBR/gate/AAA rộng hơn. Cập nhật ZIP và cùng Draft PR#1, không merge main.
+
+
+## Bổ sung AAA — camera theo yêu cầu mới,18/10/2026 (Asia/Bangkok)
+
+- Trước sửa: checkpoint c0e5dd2/Git sạch,15hệ/19skill; camera/player forward dùng chung motion.yaw, thiếu map pan/first person/view selector. Baseline production observe/build67module PASS, raw được giữ. Yêu cầu mới cho phép thêm4góc nhìn, không mở thêm HP/Boss/PBR/gate khác.
+- Tách camera thành src/player-camera.js, mặc định3/4, thêm LoL tự do,thứ nhất,orbit360 và giữTheoSau. Yaw/pitch/zoom/pan tách actor; con trỏ ngắm mặt đất3/4/LoL; C/Y/V, chuột giữa/edge pan, body visibility FPS và camera khi pause. Di chuyển theo màn hình và quay actor dùng dấu/đường góc đúng; caster giữ vị trí/hai tay/timing như cũ.
+- Build68module/24unit PASS.125camera/VFX cases PASS (19Low×5view +6High×5view),0JS/WebGL/shader error/warning; UI/input/pan/aim/pose/pause/Showcase/mobile đạt. Ma trận là mốc render với clock.05s, không phải full-playthrough/FPS native. Sau ma trận sửa đúng một dấu trục gamepad, targeted trướcFAIL/sauPASS +fullunit/build/production cuối; hash matrix/final lưu riêng.
+- Ba vòng runtime; lỗi middle-drag do PointerDown.preventDefault chặn MouseMove đã sửa bằng PointerMove và feed MouseMove riêng khi pointerlock. Tay cầm chỉ kiểm mô phỏng. Production không hook cuối PASS13ảnh/camera/pan/khóa chuột/orbit/cast/pause/Showcase,0error/warning; video lưu trong docs/evidence/camera-modes. Esc giả lập làm kẹt lượt ghi đầu; giữ raw, chỉ dừng tiến trình thuộc lượt đó. Lượt cuối kiểm API exitPointerLock, không khẳng định Esc vật lý/Windows thật.
+- Bảo toàn983file và block registry/cinematic/rune/cast/nền; bot,MP/cooldown/audio và rune10s/active0,5×/fade1,8s không đổi. ZIP có camera/video mới; hai WebM nền đất cũ giữ trong repo và dẫn online trong ZIP để dưới100MiB, không xóa source/artifact lịch sử. Cùng Draft PR#1, không merge main/deploy công khai. Giới hạn và10ý tưởng ở báo cáo; các nhóm AAA/gameplay rộng hơn vẫn đang dở theo roadmap.

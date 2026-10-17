@@ -1,0 +1,5 @@
+
+> arcane-vfx-studio@2.0.0 preview
+> vite preview --host 0.0.0.0 --host 127.0.0.1 --port 4180 --strictPort
+
+  ➜  Local:   http://127.0.0.1:4180/

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "errors": [],
+  "warnings": [],
+  "checks": {
+    "menus": "Fire 1; Magma 3; Astral 3; Nature 1",
+    "emptyHotkeysSafe": true,
+    "fireManaAfterCast": "47 / 100",
+    "audioLabSingleFireSkill": true
+  }
+}

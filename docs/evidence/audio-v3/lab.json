@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks": {
+    "gestureUnlock": true,
+    "labUIAssetsABStop": true
+  },
+  "skills": [],
+  "errors": [],
+  "earVerified": false
+}

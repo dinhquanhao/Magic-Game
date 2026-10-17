@@ -1,0 +1,685 @@
+{
+  "element": "BLOOD",
+  "cues": [
+    {
+      "id": "blood/precast",
+      "role": "precast",
+      "iterations": 1,
+      "status": "PASS",
+      "failures": [],
+      "metrics": [
+        {
+          "peakDbFS": -14.319430722434742,
+          "truePeakDbTP4x": -14.31390334740367,
+          "rmsDbFS": -25.001997757379698,
+          "lufsApprox": -31.57943470310992,
+          "duration": 0.3,
+          "dc": 0.00011752234564887152,
+          "seam": 0.0,
+          "tailDropDb": 23.895932111177558,
+          "centroidHz": 99.78348893079726,
+          "riserCentroidDeltaHz": -50.692060871671075,
+          "bands": [
+            0.48477189802145015,
+            0.26826862045809874,
+            0.056532369744279665,
+            0.0018697153802395945,
+            4.777717662569576e-06
+          ],
+          "vacuumRmsDbFS": -32.51453778564169,
+          "vacuumBoundaryDelta": 0.0054931640625,
+          "finite": true
+        }
+      ],
+      "earVerified": false
+    },
+    {
+      "id": "blood/charging",
+      "role": "charging",
+      "iterations": 1,
+      "status": "PASS",
+      "failures": [],
+      "metrics": [
+        {
+          "peakDbFS": -16.43270162140602,
+          "truePeakDbTP4x": -16.424449156089718,
+          "rmsDbFS": -27.00077217098304,
+          "lufsApprox": -34.079001017012445,
+          "duration": 1.2,
+          "dc": 1.7080307006835938e-05,
+          "seam": 0.0,
+          "tailDropDb": 11.80695020847699,
+          "centroidHz": 86.76776883728009,
+          "riserCentroidDeltaHz": -6.621571107668643,
+          "bands": [
+            0.5334455366331348,
+            0.18378710956234356,
+            0.04666549322149632,
+            0.0014684893380273382,
+            3.88603815942704e-06
+          ],
+          "vacuumRmsDbFS": -29.187745562111537,
+          "vacuumBoundaryDelta": 0.00372314453125,
+          "finite": true
+        }
+      ],
+      "earVerified": false
+    },
+    {
+      "id": "blood/casting",
+      "role": "casting",
+      "iterations": 1,
+      "status": "PASS",
+      "failures": [],
+      "metrics": [
+        {
+          "peakDbFS": -7.93246544052856,
+          "truePeakDbTP4x": -7.926938065497488,
+          "rmsDbFS": -22.13137737117713,
+          "lufsApprox": -27.70759596261642,
+          "duration": 0.38,
+          "dc": 0.000688154655590392,
+          "seam": 0.0,
+          "tailDropDb": 27.82890106206972,
+          "centroidHz": 81.65883560542605,
+          "riserCentroidDeltaHz": 28.695598913891175,
+          "bands": [
+            0.5612364190156356,
+            0.24348956138597314,
+            0.03092339648336426,
+            0.0012329270939729325,
+            2.875567220087446e-06
+          ],
+          "vacuumRmsDbFS": -41.560404254235344,
+          "vacuumBoundaryDelta": 0.0001220703125,
+          "finite": true
+        }
+      ],
+      "earVerified": false
+    },
+    {
+      "id": "blood/traveling",
+      "role": "traveling",
+      "iterations": 1,
+      "status": "PASS",
+      "failures": [],
+      "metrics": [
+        {
+          "peakDbFS": -14.494852952640764,
+          "truePeakDbTP4x": -14.489325577609693,
+          "rmsDbFS": -26.001062790369367,
+          "lufsApprox": -32.714028465972675,
+          "duration": 1.2,
+          "dc": 1.3271967569986979e-05,
+          "seam": 0.0,
+          "tailDropDb": 4.661532134970027,
+          "centroidHz": 103.72892819993122,
+          "riserCentroidDeltaHz": -32.86369698791107,
+          "bands": [
+            0.46042827753923643,
+            0.21002458329995707,
+            0.058736128859357084,
+            0.0016650751578552142,
+            5.069715385693334e-06
+          ],
+          "vacuumRmsDbFS": -25.794372561018868,
+          "vacuumBoundaryDelta": 0.002471923828125,
+          "finite": true
+        }
+      ],
+      "earVerified": false
+    },
+    {
+      "id": "blood/material",
+      "role": "material",
+      "iterations": 1,
+      "status": "PASS",
+      "failures": [],
+      "metrics": [
+        {
+          "peakDbFS": -8.357605910566933,
+          "truePeakDbTP4x": -8.349047342695286,
+          "rmsDbFS": -24.002404042048827,
+          "lufsApprox": -29.547635966895722,
+          "duration": 1.2,
+          "dc": 3.455691867404514e-05,
+          "seam": 0.0,
+          "tailDropDb": 71.06411568483244,
+          "centroidHz": 116.33420025346074,
+          "riserCentroidDeltaHz": -3.5970602162676357,
+          "bands": [
+            0.38090087964124125,
+            0.26482707035736913,
+            0.06364199849043774,
+            0.0016969221741637303,
+            4.889554071661494e-06
+          ],
+          "vacuumRmsDbFS": -67.63294308328062,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        },
+        {
+          "peakDbFS": -6.270683044380419,
+          "truePeakDbTP4x": -6.258244152150151,
+          "rmsDbFS": -24.00100659464345,
+          "lufsApprox": -31.84223712186517,
+          "duration": 1.2,
+          "dc": 4.117753770616319e-06,
+          "seam": 0.0,
+          "tailDropDb": 28.815769027658746,
+          "centroidHz": 100.76034589905383,
+          "riserCentroidDeltaHz": 10.159455719348216,
+          "bands": [
+            0.3299232276183676,
+            0.19328425466878538,
+            0.03872482896470175,
+            0.0014435812744586463,
+            3.776647085946386e-06
+          ],
+          "vacuumRmsDbFS": -42.064057249075155,
+          "vacuumBoundaryDelta": 3.0517578125e-05,
+          "finite": true
+        },
+        {
+          "peakDbFS": -8.111355835212334,
+          "truePeakDbTP4x": -8.105828460181263,
+          "rmsDbFS": -24.000881871288907,
+          "lufsApprox": -30.564800154760672,
+          "duration": 1.2,
+          "dc": 6.175571017795139e-06,
+          "seam": 0.0,
+          "tailDropDb": 38.264802597721484,
+          "centroidHz": 107.05433690148071,
+          "riserCentroidDeltaHz": -36.820895795952566,
+          "bands": [
+            0.4261004582619608,
+            0.22379143509511612,
+            0.06393474659694233,
+            0.0015915089023023658,
+            4.689438139641771e-06
+          ],
+          "vacuumRmsDbFS": -51.17025004329739,
+          "vacuumBoundaryDelta": 3.0517578125e-05,
+          "finite": true
+        },
+        {
+          "peakDbFS": -7.338179481849771,
+          "truePeakDbTP4x": -7.3326521068187,
+          "rmsDbFS": -24.000492054667177,
+          "lufsApprox": -29.741212041786714,
+          "duration": 1.2,
+          "dc": 7.601843939887153e-06,
+          "seam": 0.0,
+          "tailDropDb": 38.76679837539875,
+          "centroidHz": 106.12278319561524,
+          "riserCentroidDeltaHz": -11.352623281539763,
+          "bands": [
+            0.4427214723465077,
+            0.2854408619552336,
+            0.07017642830239078,
+            0.0018902527765815066,
+            5.534661479341028e-06
+          ],
+          "vacuumRmsDbFS": -52.797523720333366,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        }
+      ],
+      "earVerified": false
+    },
+    {
+      "id": "blood/motion",
+      "role": "motion",
+      "iterations": 1,
+      "status": "PASS",
+      "failures": [],
+      "metrics": [
+        {
+          "peakDbFS": -10.345556260405544,
+          "truePeakDbTP4x": -10.340028885374473,
+          "rmsDbFS": -26.000602324490597,
+          "lufsApprox": -33.95486618360897,
+          "duration": 1.5,
+          "dc": 5.837334526909722e-06,
+          "seam": 0.0,
+          "tailDropDb": 39.92307859119292,
+          "centroidHz": 77.5492235144691,
+          "riserCentroidDeltaHz": 18.5209506175773,
+          "bands": [
+            0.47619784292110273,
+            0.1292011522590909,
+            0.03937779314878384,
+            0.0009488119730897901,
+            2.917590384317913e-06
+          ],
+          "vacuumRmsDbFS": -55.72891259398065,
+          "vacuumBoundaryDelta": 3.0517578125e-05,
+          "finite": true
+        }
+      ],
+      "earVerified": false
+    },
+    {
+      "id": "blood/environment",
+      "role": "environment",
+      "iterations": 1,
+      "status": "PASS",
+      "failures": [],
+      "metrics": [
+        {
+          "peakDbFS": -20.915503248158398,
+          "truePeakDbTP4x": -20.909975873127323,
+          "rmsDbFS": -31.00057290083401,
+          "lufsApprox": -38.60775493070471,
+          "duration": 2.0,
+          "dc": 5.200068155924479e-06,
+          "seam": 0.0,
+          "tailDropDb": 9.290418685783063,
+          "centroidHz": 95.0665636436524,
+          "riserCentroidDeltaHz": -4.395652196241414,
+          "bands": [
+            0.4590034671028378,
+            0.17258271778889317,
+            0.050596646525097,
+            0.0014862903996305892,
+            4.223347367057113e-06
+          ],
+          "vacuumRmsDbFS": -30.00730964831909,
+          "vacuumBoundaryDelta": 0.0008544921875,
+          "finite": true
+        }
+      ],
+      "earVerified": false
+    },
+    {
+      "id": "blood/secondary",
+      "role": "secondary",
+      "iterations": 1,
+      "status": "PASS",
+      "failures": [],
+      "metrics": [
+        {
+          "peakDbFS": -10.851987582249755,
+          "truePeakDbTP4x": -10.846460207218687,
+          "rmsDbFS": -27.037786879066978,
+          "lufsApprox": -33.29885012346951,
+          "duration": 0.9,
+          "dc": 8.02753589771412e-05,
+          "seam": 0.0,
+          "tailDropDb": 23.900909144821934,
+          "centroidHz": 123.74983355789765,
+          "riserCentroidDeltaHz": -44.79639021636363,
+          "bands": [
+            0.3996813403982126,
+            0.3328326811186181,
+            0.07216055225299665,
+            0.0016946880863683413,
+            6.009177155871829e-06
+          ],
+          "vacuumRmsDbFS": -39.66260605653686,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        },
+        {
+          "peakDbFS": -8.946023879728482,
+          "truePeakDbTP4x": -8.940496504697412,
+          "rmsDbFS": -27.055791834281425,
+          "lufsApprox": -32.74624798947201,
+          "duration": 0.9,
+          "dc": 0.00014448942961516203,
+          "seam": 0.0,
+          "tailDropDb": 35.334542344470535,
+          "centroidHz": 103.6212101181108,
+          "riserCentroidDeltaHz": -37.25367932023396,
+          "bands": [
+            0.276639512320621,
+            0.3254583712734515,
+            0.060951005597450404,
+            0.00162541129102061,
+            4.41561972878329e-06
+          ],
+          "vacuumRmsDbFS": -51.81699859937624,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        },
+        {
+          "peakDbFS": -10.825214876831016,
+          "truePeakDbTP4x": -10.819687501799944,
+          "rmsDbFS": -27.046621637682602,
+          "lufsApprox": -33.02268767660064,
+          "duration": 0.9,
+          "dc": 0.0001581432201244213,
+          "seam": 0.0,
+          "tailDropDb": 28.808242682594745,
+          "centroidHz": 117.23372143962995,
+          "riserCentroidDeltaHz": -39.75419363150432,
+          "bands": [
+            0.5239068319165469,
+            0.17929347519182362,
+            0.08111784883691749,
+            0.002234989564291226,
+            7.119718556123102e-06
+          ],
+          "vacuumRmsDbFS": -44.7187627148947,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        },
+        {
+          "peakDbFS": -10.082665831856916,
+          "truePeakDbTP4x": -10.077138456825846,
+          "rmsDbFS": -27.013302602949757,
+          "lufsApprox": -33.165647479500116,
+          "duration": 0.9,
+          "dc": 5.991052698206018e-05,
+          "seam": 0.0,
+          "tailDropDb": 33.665440958620806,
+          "centroidHz": 85.15738603684507,
+          "riserCentroidDeltaHz": 16.206070262858418,
+          "bands": [
+            0.6359881001820282,
+            0.20306824618246405,
+            0.04381608598267027,
+            0.0013566053580499299,
+            3.962778922530986e-06
+          ],
+          "vacuumRmsDbFS": -50.27455696866654,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        }
+      ],
+      "earVerified": false
+    },
+    {
+      "id": "blood/riser",
+      "role": "riser",
+      "iterations": 1,
+      "status": "PASS",
+      "failures": [],
+      "metrics": [
+        {
+          "peakDbFS": -7.6798334970638535,
+          "truePeakDbTP4x": -7.674306122032783,
+          "rmsDbFS": -23.979907302108412,
+          "lufsApprox": -28.533588927504095,
+          "duration": 0.8,
+          "dc": 3.496805826822917e-08,
+          "seam": 0.0,
+          "tailDropDb": 225.19390661192625,
+          "centroidHz": 480.66866363896946,
+          "riserCentroidDeltaHz": 267.0216197894453,
+          "bands": [
+            0.3061057671674101,
+            0.11780121651493249,
+            0.4665766511269555,
+            0.0014207969965670702,
+            4.572072274938635e-06
+          ],
+          "vacuumRmsDbFS": -240.0,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        }
+      ],
+      "earVerified": false
+    },
+    {
+      "id": "blood/impact",
+      "role": "impact",
+      "iterations": 2,
+      "status": "PASS",
+      "failures": [],
+      "metrics": [
+        {
+          "peakDbFS": -1.7278487158694031,
+          "truePeakDbTP4x": -1.7223213408383318,
+          "rmsDbFS": -19.011678301637236,
+          "lufsApprox": -24.12941236656576,
+          "duration": 3.2,
+          "dc": 5.479256312052409e-06,
+          "seam": 0.0,
+          "tailDropDb": 38.052978568056744,
+          "centroidHz": 343.76534440242796,
+          "riserCentroidDeltaHz": 5563.399227573066,
+          "bands": [
+            0.41866157528098363,
+            0.23602405120251158,
+            0.07896187420807017,
+            0.012174820576898181,
+            0.014219722733238382
+          ],
+          "vacuumRmsDbFS": -41.95069057031396,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        }
+      ],
+      "earVerified": false
+    },
+    {
+      "id": "blood/shockwave",
+      "role": "shockwave",
+      "iterations": 1,
+      "status": "PASS",
+      "failures": [],
+      "metrics": [
+        {
+          "peakDbFS": -7.908054812133547,
+          "truePeakDbTP4x": -7.902527437102476,
+          "rmsDbFS": -25.001506453148203,
+          "lufsApprox": -29.5553010200622,
+          "duration": 1.2,
+          "dc": 3.804948594835069e-05,
+          "seam": 0.0,
+          "tailDropDb": 29.91819466111706,
+          "centroidHz": 99.16561863574606,
+          "riserCentroidDeltaHz": -2.4145456169217283,
+          "bands": [
+            0.5241955280202655,
+            0.3374536552311593,
+            0.035941052462320905,
+            0.0007443341142242046,
+            2.3049242748371116e-06
+          ],
+          "vacuumRmsDbFS": -44.878183995549186,
+          "vacuumBoundaryDelta": 3.0517578125e-05,
+          "finite": true
+        }
+      ],
+      "earVerified": false
+    },
+    {
+      "id": "blood/aftermath",
+      "role": "aftermath",
+      "iterations": 1,
+      "status": "PASS",
+      "failures": [],
+      "metrics": [
+        {
+          "peakDbFS": -11.92116016371717,
+          "truePeakDbTP4x": -11.9156327886861,
+          "rmsDbFS": -30.000371501330672,
+          "lufsApprox": -37.21569729410786,
+          "duration": 3.6,
+          "dc": 3.468548810040509e-06,
+          "seam": 0.0,
+          "tailDropDb": 42.441463152555826,
+          "centroidHz": 98.99557374622256,
+          "riserCentroidDeltaHz": -19.8552328354659,
+          "bands": [
+            0.44223089057324594,
+            0.206241325648696,
+            0.05686856041087451,
+            0.001816940078783464,
+            4.8509712972157115e-06
+          ],
+          "vacuumRmsDbFS": -57.85290051919763,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        }
+      ],
+      "earVerified": false
+    },
+    {
+      "id": "blood/rune",
+      "role": "rune",
+      "iterations": 1,
+      "status": "PASS",
+      "failures": [],
+      "metrics": [
+        {
+          "peakDbFS": -10.787504066796881,
+          "truePeakDbTP4x": -10.78197669176581,
+          "rmsDbFS": -29.26982012259868,
+          "lufsApprox": -31.048057235311923,
+          "duration": 0.48,
+          "dc": 0.00037775304582383896,
+          "seam": 0.0,
+          "tailDropDb": 57.11688498089704,
+          "centroidHz": 110.80580427488289,
+          "riserCentroidDeltaHz": -12.008185627894136,
+          "bands": [
+            0.0029223915166341455,
+            0.975129438037089,
+            0.020353366083735804,
+            1.0296259634701773e-05,
+            6.633211385703238e-08
+          ],
+          "vacuumRmsDbFS": -75.65462797016926,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        },
+        {
+          "peakDbFS": -11.209684078025944,
+          "truePeakDbTP4x": -11.204156702994872,
+          "rmsDbFS": -29.282538321991403,
+          "lufsApprox": -31.042766492483864,
+          "duration": 0.48,
+          "dc": 0.00038344860076904296,
+          "seam": 0.0,
+          "tailDropDb": 46.824330646374726,
+          "centroidHz": 110.1689923085144,
+          "riserCentroidDeltaHz": -12.996215726073572,
+          "bands": [
+            0.003993290116604719,
+            0.9737734930631963,
+            0.02029607937913216,
+            8.089236953089325e-06,
+            6.435680098734685e-08
+          ],
+          "vacuumRmsDbFS": -65.93133622324581,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        },
+        {
+          "peakDbFS": -11.180827275277707,
+          "truePeakDbTP4x": -11.175299900246635,
+          "rmsDbFS": -29.278655115257408,
+          "lufsApprox": -31.045017996698736,
+          "duration": 0.48,
+          "dc": 0.00037767357296413846,
+          "seam": 0.0,
+          "tailDropDb": 41.81975071297194,
+          "centroidHz": 110.63901173266889,
+          "riserCentroidDeltaHz": -13.049679514380088,
+          "bands": [
+            0.006413443025655972,
+            0.9696663576709674,
+            0.019981105244487325,
+            9.271550807042524e-06,
+            6.260067094542464e-08
+          ],
+          "vacuumRmsDbFS": -60.84357289806881,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        },
+        {
+          "peakDbFS": -10.746301751228568,
+          "truePeakDbTP4x": -10.740774376197496,
+          "rmsDbFS": -29.24897741229701,
+          "lufsApprox": -31.02999848413315,
+          "duration": 0.48,
+          "dc": 0.0003635406494140625,
+          "seam": 0.0,
+          "tailDropDb": 49.35482030767462,
+          "centroidHz": 109.98505199813273,
+          "riserCentroidDeltaHz": -11.500687747115137,
+          "bands": [
+            0.0033721245309515794,
+            0.9750247802416238,
+            0.020500306648507126,
+            8.083155223360863e-06,
+            7.095189473950864e-08
+          ],
+          "vacuumRmsDbFS": -67.89766028087935,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        }
+      ],
+      "earVerified": false
+    },
+    {
+      "id": "blood/ui",
+      "role": "ui",
+      "iterations": 1,
+      "status": "PASS",
+      "failures": [],
+      "metrics": [
+        {
+          "peakDbFS": -17.188952285535215,
+          "truePeakDbTP4x": -17.182819879501185,
+          "rmsDbFS": -34.4946554507497,
+          "lufsApprox": -35.42309932406289,
+          "duration": 0.09,
+          "dc": 0.0006272775155526621,
+          "seam": 0.0,
+          "tailDropDb": 42.93384585433782,
+          "centroidHz": 227.6424577899006,
+          "riserCentroidDeltaHz": -18.563681017282875,
+          "bands": [
+            0.0008160156100879777,
+            0.8769420774263829,
+            0.10864459361457354,
+            7.5076371494528745e-06,
+            7.275210217600884e-07
+          ],
+          "vacuumRmsDbFS": -38.09524391274304,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        }
+      ],
+      "earVerified": false
+    },
+    {
+      "id": "blood/drone",
+      "role": "drone",
+      "iterations": 1,
+      "status": "PASS",
+      "failures": [],
+      "metrics": [
+        {
+          "peakDbFS": -24.97966079038953,
+          "truePeakDbTP4x": -24.97413341535846,
+          "rmsDbFS": -34.00047543507955,
+          "lufsApprox": -42.63146022163235,
+          "duration": 2.0,
+          "dc": 5.995432535807292e-07,
+          "seam": 0.0,
+          "tailDropDb": 9.701107247906599,
+          "centroidHz": 48.910049472514295,
+          "riserCentroidDeltaHz": 2.0112008632667013,
+          "bands": [
+            0.9538192098084525,
+            0.013270490705747871,
+            0.0038235617653258214,
+            0.00011444965829454274,
+            4.239743530691716e-07
+          ],
+          "vacuumRmsDbFS": -40.16098128776911,
+          "vacuumBoundaryDelta": 0.000579833984375,
+          "finite": true
+        }
+      ],
+      "earVerified": false
+    }
+  ],
+  "passed": true,
+  "earVerified": false
+}

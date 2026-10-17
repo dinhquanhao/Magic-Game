@@ -1,0 +1,28 @@
+{
+  "element": "POISON",
+  "earVerified": false,
+  "material": {
+    "peak": 0.053859248757362366,
+    "rms": 0.020162771348046876,
+    "limiter": "lookahead-brickwall",
+    "limiterReductionDb": 0,
+    "liveSources": 1,
+    "pooledNodes": 231,
+    "decodedBytes": 2420160,
+    "baseLatency": 0.01,
+    "outputLatency": 0.032
+  },
+  "impact": {
+    "peak": 0.14734210073947906,
+    "rms": 0.0653829128106976,
+    "limiter": "lookahead-brickwall",
+    "limiterReductionDb": 0,
+    "liveSources": 1,
+    "pooledNodes": 231,
+    "decodedBytes": 2420160,
+    "baseLatency": 0.01,
+    "outputLatency": 0.032
+  },
+  "passed": true,
+  "errors": []
+}

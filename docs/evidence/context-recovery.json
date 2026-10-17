@@ -1,0 +1,94 @@
+[
+  {
+    "contextRecovery": {
+      "skill": "BLOOD-01",
+      "active": true,
+      "phase": "active",
+      "time": 11.050000000000022,
+      "camera": [
+        19.309408327138332,
+        18.21984275875618,
+        24.3908315711221
+      ],
+      "environmentId": "2b6c9224-e7ea-4d20-b13e-9027acd49982",
+      "status": "ĐANG THI TRIỂN",
+      "mana": 100,
+      "playMode": false,
+      "paused": false,
+      "contextLost": false,
+      "density": 1,
+      "debrisDensity": 1,
+      "runtimeDensityScale": 1,
+      "effectiveDensity": 1,
+      "render": {
+        "frame": 50,
+        "calls": 34,
+        "triangles": 2459873,
+        "points": 434,
+        "lines": 1082
+      },
+      "memory": {
+        "geometries": 16,
+        "textures": 14
+      },
+      "badTransforms": [],
+      "badPrograms": 0,
+      "glError": 0,
+      "graphics": {
+        "quality": "Low",
+        "features": {
+          "reflections": false,
+          "ao": false,
+          "volumetric": false,
+          "caustics": false,
+          "subsurface": false,
+          "motionBlur": false,
+          "dof": false,
+          "adaptive": false
+        },
+        "requestedFeatures": {
+          "reflections": false,
+          "ao": false,
+          "volumetric": false,
+          "caustics": false,
+          "subsurface": false,
+          "motionBlur": false,
+          "dof": false,
+          "adaptive": false
+        },
+        "autoReduced": [],
+        "averageFrameMs": 212.43781315918446,
+        "post": {
+          "ssr": false,
+          "gtao": false,
+          "ssao": false,
+          "dof": false,
+          "ssrTemporal": false,
+          "ssrResolution": "fallback IBL",
+          "maxTextures": 32,
+          "lastUpdateMs": 0,
+          "unavailable": []
+        },
+        "fields": {
+          "initialized": true,
+          "activeLights": 1,
+          "windStrength": 0,
+          "windTurbulence": 0,
+          "quality": "Low"
+        },
+        "grass": {
+          "quality": "Low",
+          "bladeInstances": 360,
+          "windAlpha": 0,
+          "initialized": true
+        },
+        "particleWind": {
+          "connectedMaterials": 26
+        },
+        "trackedMaterials": 25,
+        "estimatedRenderTargetBytes": 0
+      },
+      "feedback": "KHAI TRIỂN"
+    }
+  }
+]

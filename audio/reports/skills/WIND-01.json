@@ -1,0 +1,45 @@
+{
+  "id": "WIND-01",
+  "duration": 26.717833333333335,
+  "timeAxis": "reference wall-time mapping of extracted world controls; not a recording of browser output",
+  "impactSeconds": 12.267216666666666,
+  "metrics": {
+    "peakDbFS": -9.350268376432778,
+    "truePeakDbTP4x": -9.337962449002186,
+    "rmsDbFS": -35.95674438543909,
+    "lufsApprox": -37.731017861354054,
+    "duration": 26.717833333333335,
+    "dc": 1.567598402255126e-06,
+    "seam": 0.0,
+    "tailDropDb": 224.67004626404753,
+    "centroidHz": 495.5311331137014,
+    "riserCentroidDeltaHz": -341.38202410221675,
+    "bands": [
+      0.24690303083201365,
+      0.2504969949151638,
+      0.45452295571148815,
+      0.042364204848118266,
+      0.001318635981384371
+    ],
+    "vacuumRmsDbFS": -240.0,
+    "vacuumBoundaryDelta": 0.0,
+    "finite": true
+  },
+  "limiter": {
+    "reductionDb": 0,
+    "lookaheadSamples": 128,
+    "rate": 24000
+  },
+  "peakEnvelopeAt": 12.350000000000001,
+  "finalePeakWindowDbFS": -15.665868026052696,
+  "preFinalePeakWindowDbFS": -30.325436890286014,
+  "finaleContrastDb": 14.659568864233318,
+  "vacuumContrastDb": 48.78905420247988,
+  "earVerified": false,
+  "thresholds": {
+    "masterTruePeakDbTP4xMax": -1,
+    "vacuumContrastDbMin": 12,
+    "finaleContrastDbMin": 3
+  },
+  "passed": true
+}

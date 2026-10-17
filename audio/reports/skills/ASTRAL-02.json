@@ -1,0 +1,45 @@
+{
+  "id": "ASTRAL-02",
+  "duration": 16.47458333333333,
+  "timeAxis": "reference wall-time mapping of extracted world controls; not a recording of browser output",
+  "impactSeconds": 8.234016666666665,
+  "metrics": {
+    "peakDbFS": -10.064912778579503,
+    "truePeakDbTP4x": -10.059385403548431,
+    "rmsDbFS": -32.51357792834106,
+    "lufsApprox": -33.62865647144031,
+    "duration": 16.47458333333333,
+    "dc": 9.556318825439756e-06,
+    "seam": 0.0,
+    "tailDropDb": 225.96832680959335,
+    "centroidHz": 300.3294666129469,
+    "riserCentroidDeltaHz": -244.9071668169546,
+    "bands": [
+      0.07225212457623327,
+      0.5301288601456376,
+      0.3919985976224473,
+      0.004640066309114943,
+      0.0004208396209163921
+    ],
+    "vacuumRmsDbFS": -240.0,
+    "vacuumBoundaryDelta": 0.0,
+    "finite": true
+  },
+  "limiter": {
+    "reductionDb": 0,
+    "lookaheadSamples": 128,
+    "rate": 24000
+  },
+  "peakEnvelopeAt": 8.375,
+  "finalePeakWindowDbFS": -14.424291154431497,
+  "preFinalePeakWindowDbFS": -31.647008468514414,
+  "finaleContrastDb": 17.222717314082917,
+  "vacuumContrastDb": 55.0451649512477,
+  "earVerified": false,
+  "thresholds": {
+    "masterTruePeakDbTP4xMax": -1,
+    "vacuumContrastDbMin": 12,
+    "finaleContrastDbMin": 3
+  },
+  "passed": true
+}

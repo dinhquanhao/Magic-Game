@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "errors": [],
+  "warnings": [
+    "[Arcane VFX] Adaptive quality reduced volumetric; user settings are preserved.",
+    "[Arcane VFX] Performance watchdog limited runtime VFX budgets; user settings are preserved. {skill: FIRE-01, reason: synchronous skill construction exceeded 250 ms, frameCostMs: 274, runtimeDensityScale: 0.72}"
+  ],
+  "rows": [],
+  "checks": {
+    "Medium": true,
+    "Ultra": true,
+    "pauseResume": true,
+    "hitStopFreezesFade": true,
+    "slowMotionUsesSimulationClock": true,
+    "toggleDoesNotResurrect": true,
+    "recastRestoresFullOpacity": true,
+    "autoRepeatCleanup": true
+  },
+  "renderer": "Chromium/SwiftShader; no native GPU benchmark"
+}

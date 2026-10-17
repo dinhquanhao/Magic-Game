@@ -1,0 +1,8 @@
+{
+  "enabled": false,
+  "authenticationVerified": false,
+  "usageAndCostsApproved": false,
+  "permissionsReviewed": false,
+  "protectedEnvironmentConfigured": false,
+  "note": "Disabled template only. No API key created, paid call made, workflow installed or schedule activated."
+}

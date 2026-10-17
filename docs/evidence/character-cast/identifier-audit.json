@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "scope": "Current project source, UI, documentation, audio metadata and filenames; built dist included when present. Dependency code, Git history, external safety copies, caches and ZIPs excluded. Archive entries are audited separately. Binary image/audio content is not OCR/transcription.",
+  "files": 3247,
+  "textFiles": 277,
+  "pathMatches": [],
+  "textMatches": [],
+  "searchPatternsUtf8Hex": [
+    "70737963686963",
+    "74696e68207468e1baa76e",
+    "6d696e64627265616b6572457965",
+    "61737472616c4d696e64446f6d696e696f6e",
+    "70737963686f47656e65736973",
+    "54c3a26d205468e1bba9632042c4836e67204469e1bb8774",
+    "56e1baa16e204e69e1bb876d205468e1baa76e2056e1bbb163",
+    "5468e1baa76e204e69e1bb876d2053c3a16e67205468e1babf"
+  ]
+}

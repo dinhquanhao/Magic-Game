@@ -1,5 +1,5 @@
 export function createElementSurfaceMaterial(THREE, elementIndex, hex) {
-  const kind = elementIndex === 8 ? 0 : elementIndex === 13 ? 1 : 2;
+  const kind = elementIndex === 8 ? 0 : 1;
   const uniforms = {
     uArcElementTime: { value: 0 },
     uArcElementIntensity: { value: 1 },
@@ -8,8 +8,8 @@ export function createElementSurfaceMaterial(THREE, elementIndex, hex) {
   };
   const material = new THREE.MeshPhysicalMaterial({
     color: 0xffffff,
-    metalness: kind === 0 ? 0.42 : kind === 1 ? 0.28 : 0.18,
-    roughness: kind === 0 ? 0.58 : kind === 1 ? 0.32 : 0.24,
+    metalness: kind === 0 ? 0.42 : 0.28,
+    roughness: kind === 0 ? 0.58 : 0.32,
     clearcoat: kind === 0 ? 0.2 : 0.72,
     clearcoatRoughness: 0.24,
     transparent: true,
@@ -61,11 +61,7 @@ if(uArcElementKind<.5){
  float arcStar=pow(arcElementHash(floor(arcEP*19.)),26.);
  arcEBase=mix(vec3(.012,.018,.09),vec3(.16,.075,.42),arcNebula);
  arcEBase=mix(arcEBase,vec3(.16,.72,1.),arcNebula*.38+arcStar*.72+arcEF*.34);
-}else{
- float arcThought=.5+.5*sin(length(arcEP.xy)*13.-uArcElementTime*2.2+arcEN*5.);
- float arcPrism=.5+.5*sin(arcEP.z*7.+uArcElementTime*.6+arcEN*4.);
- arcEBase=mix(vec3(.035,.025,.16),vec3(.21,.12,.58),arcThought*.72);
- arcEBase=mix(arcEBase,vec3(.3,.72,1.),arcPrism*arcEF*.52+arcThought*.2);
+
 }
 arcEBase*=mix(vec3(1.),max(uArcElementTint,vec3(.25)),.28);
 diffuseColor.rgb=mix(diffuseColor.rgb,arcEBase,clamp(.74+arcEN*.18,0.,.96));`)
@@ -73,8 +69,7 @@ diffuseColor.rgb=mix(diffuseColor.rgb,arcEBase,clamp(.74+arcEN*.18,0.,.96));`)
 roughnessFactor=mix(roughnessFactor,uArcElementKind<.5?.72:.24,clamp(.28+arcEN*.2,0.,.56));`)
       .replace('#include <emissivemap_fragment>', `#include <emissivemap_fragment>
 if(uArcElementKind<.5){float arcCrackEmission=1.-smoothstep(.015,.13,abs(sin((arcEP.x+arcEN*.11)*4.1)*sin((arcEP.y-arcEN*.08)*4.7)*sin((arcEP.z+arcEN*.1)*4.3)));totalEmissiveRadiance+=vec3(1.,.16,.018)*arcCrackEmission*uArcElementIntensity*.42;}
-else if(uArcElementKind<1.5){float arcStarEmission=pow(arcElementHash(floor(arcEP*19.)),24.);totalEmissiveRadiance+=vec3(.16,.54,1.)*(arcStarEmission+arcEN*.12+arcEF*.16)*uArcElementIntensity*.46;}
-else{float arcMindWave=.5+.5*sin(length(arcEP.xy)*13.-uArcElementTime*2.2+arcEN*5.);totalEmissiveRadiance+=vec3(.24,.42,1.)*(arcMindWave*.18+arcEF*.22)*uArcElementIntensity*.36;}`);
+else if(uArcElementKind<1.5){float arcStarEmission=pow(arcElementHash(floor(arcEP*19.)),24.);totalEmissiveRadiance+=vec3(.16,.54,1.)*(arcStarEmission+arcEN*.12+arcEF*.16)*uArcElementIntensity*.46;}`);
     material.userData.elementShader = shader;
   };
   material.customProgramCacheKey = () => `arcane-element-surface-${kind}-v1`;

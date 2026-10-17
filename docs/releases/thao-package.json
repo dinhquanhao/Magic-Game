@@ -1,0 +1,11 @@
+{
+  "file": "Arcane-VFX-Studio-Thao-Update.zip",
+  "sourceCommit": "b61153d2919ed115465c0e09190f09bcf080366e",
+  "bytes": 101890739,
+  "sha256": "5d691ced436dd093e2debb2d3e448fb092a7af3ab4d98212da75b1b5eca41c96",
+  "entries": 1293,
+  "crcPassed": true,
+  "noNodeModules": true,
+  "launcherBytesPreserved": true,
+  "scope": "Runtime/source checkpoint b61153d2919ed115465c0e09190f09bcf080366e. Current registry: 15 elements, 19 skills; Fire retains only FIRE-01. Player cameras: default three-quarter, LoL-style free map, first-person, 360-degree orbit, and legacy follow; V cycles, C recenters, Y toggles map follow. Uploaded Cyber Bot raises both hands and stays planted throughout casting. Default drawing plus convergence is 10 simulation seconds; all 19 active skill timelines play at 0.5x for double duration. Authored skill config, MP/cooldown and audio score markers remain intact. Rune release still fades over 1.8 simulation seconds after effect visibility. Includes current camera video/screenshots and character-cast, forest, brown-ground, retained-skill, rune-fade evidence and public runtime WAV/PNG assets. Two historical brown-ground WebM files are linked online via ARCHIVE_MEDIA_LINKS.json and rewritten report links; both remain intact in GitHub. Excludes node_modules, Git, dist, caches, duplicate offline audio/rendered and audio/reports/cues, and bulky historical graphics/browser evidence or unintegrated graphics drafts. Runtime mirrors and package lock are present for npm ci/build. Broader 11-layer graphics/rune requests remain separately documented, not claimed complete by this archive."
+}

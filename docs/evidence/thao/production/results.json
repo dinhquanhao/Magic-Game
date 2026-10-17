@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "errors": [],
+  "checks": {
+    "natureLastSlotAndOneSkill": true,
+    "castThroughImpact": true,
+    "playManaPause": true,
+    "noShippedTestGlobals": true
+  },
+  "bundleRequests": [
+    "http://127.0.0.1:4173/assets/index-BfNtKmr_.js",
+    "http://127.0.0.1:4173/assets/three-core-6sTE0ePi.js",
+    "http://127.0.0.1:4173/assets/three-addons-C4wE7UlF.js"
+  ],
+  "fixture": "none; production UI only"
+}

@@ -1,0 +1,359 @@
+{
+  "skills": [
+    {
+      "id": "FIRE-01",
+      "cues": [
+        "precast",
+        "charging",
+        "casting",
+        "traveling",
+        "impact",
+        "shockwave",
+        "aftermath"
+      ],
+      "voices": 1,
+      "banks": [
+        "FIRE"
+      ]
+    },
+    {
+      "id": "WATER-01",
+      "cues": [
+        "precast",
+        "charging",
+        "casting",
+        "traveling",
+        "impact",
+        "shockwave",
+        "aftermath"
+      ],
+      "voices": 2,
+      "banks": [
+        "FIRE",
+        "WATER"
+      ]
+    },
+    {
+      "id": "EARTH-01",
+      "cues": [
+        "precast",
+        "charging",
+        "casting",
+        "traveling",
+        "impact",
+        "shockwave",
+        "aftermath"
+      ],
+      "voices": 2,
+      "banks": [
+        "FIRE",
+        "WATER",
+        "EARTH"
+      ]
+    },
+    {
+      "id": "LIGHT-01",
+      "cues": [
+        "precast",
+        "charging",
+        "casting",
+        "traveling",
+        "impact",
+        "shockwave",
+        "aftermath"
+      ],
+      "voices": 2,
+      "banks": [
+        "WATER",
+        "EARTH",
+        "LIGHT"
+      ]
+    },
+    {
+      "id": "SHADOW-01",
+      "cues": [
+        "precast",
+        "charging",
+        "casting",
+        "traveling",
+        "impact",
+        "shockwave",
+        "aftermath"
+      ],
+      "voices": 3,
+      "banks": [
+        "EARTH",
+        "LIGHT",
+        "SHADOW"
+      ]
+    },
+    {
+      "id": "WIND-01",
+      "cues": [
+        "precast",
+        "charging",
+        "casting",
+        "traveling",
+        "impact",
+        "shockwave",
+        "aftermath"
+      ],
+      "voices": 1,
+      "banks": [
+        "LIGHT",
+        "SHADOW",
+        "WIND"
+      ]
+    },
+    {
+      "id": "LIGHTNING-01",
+      "cues": [
+        "precast",
+        "charging",
+        "casting",
+        "traveling",
+        "impact",
+        "shockwave",
+        "aftermath"
+      ],
+      "voices": 1,
+      "banks": [
+        "SHADOW",
+        "WIND",
+        "LIGHTNING"
+      ]
+    },
+    {
+      "id": "ICE-01",
+      "cues": [
+        "precast",
+        "charging",
+        "casting",
+        "traveling",
+        "impact",
+        "shockwave",
+        "aftermath"
+      ],
+      "voices": 1,
+      "banks": [
+        "WIND",
+        "LIGHTNING",
+        "ICE"
+      ]
+    },
+    {
+      "id": "MAGMA-01",
+      "cues": [
+        "precast",
+        "charging",
+        "casting",
+        "traveling",
+        "impact",
+        "shockwave",
+        "aftermath"
+      ],
+      "voices": 1,
+      "banks": [
+        "LIGHTNING",
+        "ICE",
+        "MAGMA"
+      ]
+    },
+    {
+      "id": "MAGMA-02",
+      "cues": [
+        "precast",
+        "charging",
+        "casting",
+        "traveling",
+        "impact",
+        "shockwave",
+        "aftermath"
+      ],
+      "voices": 2,
+      "banks": [
+        "LIGHTNING",
+        "ICE",
+        "MAGMA"
+      ]
+    },
+    {
+      "id": "MAGMA-03",
+      "cues": [
+        "precast",
+        "charging",
+        "casting",
+        "traveling",
+        "impact",
+        "shockwave",
+        "aftermath"
+      ],
+      "voices": 3,
+      "banks": [
+        "LIGHTNING",
+        "ICE",
+        "MAGMA"
+      ]
+    },
+    {
+      "id": "POISON-01",
+      "cues": [
+        "precast",
+        "charging",
+        "casting",
+        "traveling",
+        "impact",
+        "shockwave",
+        "aftermath"
+      ],
+      "voices": 2,
+      "banks": [
+        "ICE",
+        "MAGMA",
+        "POISON"
+      ]
+    },
+    {
+      "id": "SPACE-01",
+      "cues": [
+        "precast",
+        "charging",
+        "casting",
+        "traveling",
+        "impact",
+        "shockwave",
+        "aftermath"
+      ],
+      "voices": 3,
+      "banks": [
+        "MAGMA",
+        "POISON",
+        "SPACE"
+      ]
+    },
+    {
+      "id": "TIME-01",
+      "cues": [
+        "precast",
+        "charging",
+        "casting",
+        "traveling",
+        "impact",
+        "shockwave",
+        "aftermath"
+      ],
+      "voices": 2,
+      "banks": [
+        "POISON",
+        "SPACE",
+        "TIME"
+      ]
+    },
+    {
+      "id": "BLOOD-01",
+      "cues": [
+        "precast",
+        "charging",
+        "casting",
+        "traveling",
+        "impact",
+        "shockwave",
+        "aftermath"
+      ],
+      "voices": 0,
+      "banks": [
+        "SPACE",
+        "TIME",
+        "BLOOD"
+      ]
+    },
+    {
+      "id": "ASTRAL-01",
+      "cues": [
+        "precast",
+        "charging",
+        "casting",
+        "traveling",
+        "impact",
+        "shockwave",
+        "aftermath"
+      ],
+      "voices": 1,
+      "banks": [
+        "TIME",
+        "BLOOD",
+        "ASTRAL"
+      ]
+    },
+    {
+      "id": "ASTRAL-02",
+      "cues": [
+        "precast",
+        "charging",
+        "casting",
+        "traveling",
+        "impact",
+        "shockwave",
+        "aftermath"
+      ],
+      "voices": 1,
+      "banks": [
+        "TIME",
+        "BLOOD",
+        "ASTRAL"
+      ]
+    },
+    {
+      "id": "ASTRAL-03",
+      "cues": [
+        "precast",
+        "charging",
+        "casting",
+        "traveling",
+        "impact",
+        "shockwave",
+        "aftermath"
+      ],
+      "voices": 1,
+      "banks": [
+        "TIME",
+        "BLOOD",
+        "ASTRAL"
+      ]
+    }
+  ],
+  "checks": {
+    "gestureUnlock": true,
+    "all23SevenCues": true,
+    "liveSignal": {
+      "peak": 0.01734967529773712,
+      "rms": 0.0064565970319893735,
+      "maxVoices": 3,
+      "decodedBytes": 3725508
+    },
+    "pauseResumeSlowMotion": true,
+    "spatialAttenuation": {
+      "nearRms": 0.02889140128665305,
+      "farRms": 0.003412446614805089,
+      "listener": [
+        0,
+        0,
+        0
+      ],
+      "source": [
+        0,
+        0,
+        -120
+      ]
+    },
+    "ambientToggle": true,
+    "missingAssetFallback": true,
+    "disableCleanup": true,
+    "dispose": true
+  },
+  "renderer": "Chromium ANGLE/SwiftShader",
+  "passed": true,
+  "errors": [],
+  "warnings": [],
+  "historicalRecordNote": "Retired skill rows/references removed from the distributed record after checkpoint 3273606. Surviving measurements are unchanged; original run totals are historical, not a new 19-skill test."
+}

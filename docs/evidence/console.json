@@ -1,0 +1,31 @@
+{
+  "stage0-round1": {
+    "errors": [],
+    "warnings": []
+  },
+  "stage0-round2": {
+    "errors": [],
+    "warnings": [
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+      }
+    ]
+  },
+  "stage1-round1": {
+    "errors": [],
+    "warnings": []
+  },
+  "production-final": {
+    "errors": [],
+    "warnings": []
+  }
+}

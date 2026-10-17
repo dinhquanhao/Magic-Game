@@ -1,0 +1,53 @@
+{
+  "parentCommit": "1ce5028b6940918978f1e4a8d0550a542b7a74dc",
+  "runtimeFilesSHA256": {
+    "src/main.js": "711b439981f4524140eb70b476155803af49fe6491f2e5a4446752cd797c4096",
+    "src/graphics-upgrade.js": "2b2deac8871195e6cbe46c8fea2015869c4293e8771105b1765cee0f6ae72110",
+    "START.bat": "67f2f70c870abd45d2604f1b20ddbf506907d6913cbf9a1598162f04cf159f72"
+  },
+  "registryIdentical": true,
+  "elements": 15,
+  "skills": 21,
+  "staticMemoryBefore": {
+    "geometries": 23,
+    "textures": 14
+  },
+  "staticMemoryAfter": {
+    "geometries": 23,
+    "textures": 14
+  },
+  "launcherBytesPreserved": true,
+  "fixedTimeResetExactPixels": [
+    "Low",
+    "High"
+  ],
+  "browserChecks": 18,
+  "browserErrors": [],
+  "browserWarnings": [],
+  "productionWarnings": [
+    {
+      "type": "warning",
+      "text": "[Arcane VFX] Adaptive quality reduced volumetric; user settings are preserved."
+    },
+    {
+      "type": "warning",
+      "text": "[Arcane VFX] Performance watchdog limited runtime VFX budgets; user settings are preserved. {skill: FIRE-01, reason: synchronous skill construction exceeded 250 ms, frameCostMs: 257, runtimeDensityScale: 0.72}"
+    }
+  ],
+  "productionPassed": true,
+  "unitTests": {
+    "passed": 12,
+    "failed": 0
+  },
+  "build": {
+    "passed": true,
+    "modules": 64,
+    "existingWarning": "three-core chunk 535.18 kB"
+  },
+  "rounds": 1,
+  "limitations": [
+    "SwiftShader, not a native GPU performance benchmark",
+    "Remote interactive Live Preview not verified",
+    "Production video is silent; startup performance watchdog warnings retained"
+  ]
+}

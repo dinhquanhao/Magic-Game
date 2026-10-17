@@ -1,0 +1,4468 @@
+{
+  "passed": true,
+  "errors": [],
+  "warnings": [],
+  "checks": {
+    "Medium": true,
+    "Ultra": true,
+    "pauseResume": true,
+    "toggleDoesNotResurrect": true,
+    "recastRestoresFullOpacity": true,
+    "autoRepeatCleanup": true
+  },
+  "renderer": "Chromium/SwiftShader; no native GPU benchmark",
+  "rows": [
+    {
+      "id": "FIRE-01",
+      "quality": "Low",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "FIRE-01",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": false,
+            "opacitySum": 247.41603239169464,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 439,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.5,
+          "state": {
+            "skill": "FIRE-01",
+            "phase": "active",
+            "time": 0.5,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 202.998038912969,
+            "maxOpacity": 0.8026423727601556,
+            "maxIntensity": 21.9375,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 465,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "FIRE-01",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 64.05816572026406,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 465,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.4000000000000001,
+          "state": {
+            "skill": "FIRE-01",
+            "phase": "active",
+            "time": 1.4000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 2.508951147525914,
+            "maxOpacity": 0.1484375,
+            "maxIntensity": 4.0625,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 465,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "FIRE-01",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 465,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 3.8200000000000003,
+          "state": {
+            "skill": "FIRE-01",
+            "phase": "active",
+            "time": 3.8200000000000003,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 519,
+              "textures": 14
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "WATER-01",
+      "quality": "Low",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "WATER-01",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 286.82012778386405,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 496,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.5,
+          "state": {
+            "skill": "WATER-01",
+            "phase": "active",
+            "time": 0.5,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 240.3045993792284,
+            "maxOpacity": 0.826875,
+            "maxIntensity": 21.9375,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 496,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "WATER-01",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 103.16624824379825,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 496,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.4000000000000001,
+          "state": {
+            "skill": "WATER-01",
+            "phase": "active",
+            "time": 1.4000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 4.644869558150373,
+            "maxOpacity": 0.1484375,
+            "maxIntensity": 4.0625,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 496,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "WATER-01",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 496,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 9.65,
+          "state": {
+            "skill": "WATER-01",
+            "phase": "active",
+            "time": 9.65,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 510,
+              "textures": 14
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "EARTH-01",
+      "quality": "Low",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "EARTH-01",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 329.6230117077177,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 589,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.5,
+          "state": {
+            "skill": "EARTH-01",
+            "phase": "active",
+            "time": 0.5,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 267.07714348100706,
+            "maxOpacity": 0.8254369987409723,
+            "maxIntensity": 21.9375,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 589,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "EARTH-01",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 89.01602763056258,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 589,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.4000000000000001,
+          "state": {
+            "skill": "EARTH-01",
+            "phase": "active",
+            "time": 1.4000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 4.448441699195195,
+            "maxOpacity": 0.1484375,
+            "maxIntensity": 4.0625,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 589,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "EARTH-01",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 589,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 9.45,
+          "state": {
+            "skill": "EARTH-01",
+            "phase": "active",
+            "time": 9.45,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 598,
+              "textures": 14
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "LIGHT-01",
+      "quality": "Low",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "LIGHT-01",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 443.58723632547657,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 779,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.5,
+          "state": {
+            "skill": "LIGHT-01",
+            "phase": "active",
+            "time": 0.5,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 350.507122429401,
+            "maxOpacity": 0.8044718316742285,
+            "maxIntensity": 21.9375,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 779,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "LIGHT-01",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 108.8032376971886,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 779,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.4000000000000001,
+          "state": {
+            "skill": "LIGHT-01",
+            "phase": "active",
+            "time": 1.4000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 5.2119522604900075,
+            "maxOpacity": 0.1484375,
+            "maxIntensity": 4.0625,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 779,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "LIGHT-01",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 779,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 12.15,
+          "state": {
+            "skill": "LIGHT-01",
+            "phase": "active",
+            "time": 12.15,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 779,
+              "textures": 14
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "SHADOW-01",
+      "quality": "Low",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "SHADOW-01",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 272.67882775046246,
+            "maxOpacity": 0.9881653531287203,
+            "maxIntensity": 26,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 473,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.5,
+          "state": {
+            "skill": "SHADOW-01",
+            "phase": "active",
+            "time": 0.5,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 225.84625206745267,
+            "maxOpacity": 0.8323033947250439,
+            "maxIntensity": 21.9375,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 473,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "SHADOW-01",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 78.8733980455218,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 473,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.4000000000000001,
+          "state": {
+            "skill": "SHADOW-01",
+            "phase": "active",
+            "time": 1.4000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 3.5707880239435874,
+            "maxOpacity": 0.1484375,
+            "maxIntensity": 4.0625,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 473,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "SHADOW-01",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 473,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 13.6,
+          "state": {
+            "skill": "SHADOW-01",
+            "phase": "active",
+            "time": 13.6,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 476,
+              "textures": 14
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "WIND-01",
+      "quality": "Low",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "WIND-01",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 374.8921084449547,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 645,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.5,
+          "state": {
+            "skill": "WIND-01",
+            "phase": "active",
+            "time": 0.5,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 309.12315552544624,
+            "maxOpacity": 0.8250938206314375,
+            "maxIntensity": 21.9375,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 645,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "WIND-01",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 102.96261943950714,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 645,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.4000000000000001,
+          "state": {
+            "skill": "WIND-01",
+            "phase": "active",
+            "time": 1.4000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 4.2552476169515066,
+            "maxOpacity": 0.1484375,
+            "maxIntensity": 4.0625,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 645,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "WIND-01",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 645,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 6.1,
+          "state": {
+            "skill": "WIND-01",
+            "phase": "active",
+            "time": 6.1,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 646,
+              "textures": 14
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "LIGHTNING-01",
+      "quality": "Low",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "LIGHTNING-01",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 433.99069831404864,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 769,
+              "textures": 16
+            }
+          }
+        },
+        {
+          "at": 0.5,
+          "state": {
+            "skill": "LIGHTNING-01",
+            "phase": "active",
+            "time": 0.5,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 359.63193423588274,
+            "maxOpacity": 0.8266186994734374,
+            "maxIntensity": 21.9375,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 780,
+              "textures": 16
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "LIGHTNING-01",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 118.57623533928246,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 780,
+              "textures": 16
+            }
+          }
+        },
+        {
+          "at": 1.4000000000000001,
+          "state": {
+            "skill": "LIGHTNING-01",
+            "phase": "active",
+            "time": 1.4000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 4.519518241787504,
+            "maxOpacity": 0.1484375,
+            "maxIntensity": 4.0625,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 780,
+              "textures": 16
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "LIGHTNING-01",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 780,
+              "textures": 16
+            }
+          }
+        },
+        {
+          "at": 12.35,
+          "state": {
+            "skill": "LIGHTNING-01",
+            "phase": "active",
+            "time": 12.35,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 780,
+              "textures": 16
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ICE-01",
+      "quality": "Low",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "ICE-01",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 256.6392658948925,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 462,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.5,
+          "state": {
+            "skill": "ICE-01",
+            "phase": "active",
+            "time": 0.5,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 213.00719925937918,
+            "maxOpacity": 0.8246937556223334,
+            "maxIntensity": 21.9375,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 462,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "ICE-01",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 72.41530417168298,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 462,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.4000000000000001,
+          "state": {
+            "skill": "ICE-01",
+            "phase": "active",
+            "time": 1.4000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 3.2706699966297417,
+            "maxOpacity": 0.1484375,
+            "maxIntensity": 4.0625,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 462,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "ICE-01",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 462,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 10.95,
+          "state": {
+            "skill": "ICE-01",
+            "phase": "active",
+            "time": 10.95,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 462,
+              "textures": 14
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "MAGMA-01",
+      "quality": "Low",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "MAGMA-01",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": false,
+            "opacitySum": 365.4519501675195,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 627,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.5,
+          "state": {
+            "skill": "MAGMA-01",
+            "phase": "active",
+            "time": 0.5,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 293.5249986518378,
+            "maxOpacity": 0.826875,
+            "maxIntensity": 21.9375,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 657,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "MAGMA-01",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 94.92874033653031,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 657,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.4000000000000001,
+          "state": {
+            "skill": "MAGMA-01",
+            "phase": "active",
+            "time": 1.4000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 4.514918304509889,
+            "maxOpacity": 0.1484375,
+            "maxIntensity": 4.0625,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 657,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "MAGMA-01",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 676,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 2.55,
+          "state": {
+            "skill": "MAGMA-01",
+            "phase": "active",
+            "time": 2.55,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 719,
+              "textures": 14
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "MAGMA-02",
+      "quality": "Low",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "MAGMA-02",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": false,
+            "opacitySum": 504.8858018140724,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 852,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.5,
+          "state": {
+            "skill": "MAGMA-02",
+            "phase": "active",
+            "time": 0.5,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 415.00400016564726,
+            "maxOpacity": 0.826875,
+            "maxIntensity": 21.9375,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 865,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "MAGMA-02",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 143.6653514287985,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 867,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.4000000000000001,
+          "state": {
+            "skill": "MAGMA-02",
+            "phase": "active",
+            "time": 1.4000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 5.917257097962842,
+            "maxOpacity": 0.1484375,
+            "maxIntensity": 4.0625,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 867,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "MAGMA-02",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 886,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 2.55,
+          "state": {
+            "skill": "MAGMA-02",
+            "phase": "active",
+            "time": 2.55,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 932,
+              "textures": 14
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "MAGMA-03",
+      "quality": "Low",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "MAGMA-03",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": false,
+            "opacitySum": 245.5761268501163,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 438,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.5,
+          "state": {
+            "skill": "MAGMA-03",
+            "phase": "active",
+            "time": 0.5,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 199.1772570493426,
+            "maxOpacity": 0.8179616980569323,
+            "maxIntensity": 21.9375,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 482,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "MAGMA-03",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 65.08693410124263,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 485,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.4000000000000001,
+          "state": {
+            "skill": "MAGMA-03",
+            "phase": "active",
+            "time": 1.4000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 3.2286029344649227,
+            "maxOpacity": 0.1484375,
+            "maxIntensity": 4.0625,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 485,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "MAGMA-03",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 504,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 2.55,
+          "state": {
+            "skill": "MAGMA-03",
+            "phase": "active",
+            "time": 2.55,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 546,
+              "textures": 14
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "POISON-01",
+      "quality": "Low",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "POISON-01",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 371.01306543662145,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 636,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.5,
+          "state": {
+            "skill": "POISON-01",
+            "phase": "active",
+            "time": 0.5,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 298.1754606524804,
+            "maxOpacity": 0.8254369987409723,
+            "maxIntensity": 21.9375,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 636,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "POISON-01",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 97.51210318247455,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 636,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.4000000000000001,
+          "state": {
+            "skill": "POISON-01",
+            "phase": "active",
+            "time": 1.4000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 4.866796051756798,
+            "maxOpacity": 0.1484375,
+            "maxIntensity": 4.0625,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 636,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "POISON-01",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 636,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 12.299999999999999,
+          "state": {
+            "skill": "POISON-01",
+            "phase": "active",
+            "time": 12.299999999999999,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 636,
+              "textures": 14
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "SPACE-01",
+      "quality": "Low",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "SPACE-01",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 481.4416971606478,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 825,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.5,
+          "state": {
+            "skill": "SPACE-01",
+            "phase": "active",
+            "time": 0.5,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 400.2646558599878,
+            "maxOpacity": 0.826875,
+            "maxIntensity": 21.9375,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 825,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "SPACE-01",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 134.9832250796647,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 825,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.4000000000000001,
+          "state": {
+            "skill": "SPACE-01",
+            "phase": "active",
+            "time": 1.4000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 5.022424637799856,
+            "maxOpacity": 0.1484375,
+            "maxIntensity": 4.0625,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 825,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "SPACE-01",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 825,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 14.6,
+          "state": {
+            "skill": "SPACE-01",
+            "phase": "active",
+            "time": 14.6,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 825,
+              "textures": 14
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "TIME-01",
+      "quality": "Low",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "TIME-01",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": null,
+            "runeVisible": true,
+            "attackVisible": false,
+            "opacitySum": 283.95187708809596,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 496,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.9,
+          "state": {
+            "skill": "TIME-01",
+            "phase": "active",
+            "time": 1.9,
+            "runeStart": 1.9,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 284.5397205685349,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 533,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 2.35,
+          "state": {
+            "skill": "TIME-01",
+            "phase": "active",
+            "time": 2.35,
+            "runeStart": 1.9,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 237.77478872872305,
+            "maxOpacity": 0.8250938206314373,
+            "maxIntensity": 21.937499999999996,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 533,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 2.8,
+          "state": {
+            "skill": "TIME-01",
+            "phase": "active",
+            "time": 2.8,
+            "runeStart": 1.9,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 81.22564666039526,
+            "maxOpacity": 0.4750000000000001,
+            "maxIntensity": 13.000000000000004,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 534,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 3.25,
+          "state": {
+            "skill": "TIME-01",
+            "phase": "active",
+            "time": 3.25,
+            "runeStart": 1.9,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 3.513428562285974,
+            "maxOpacity": 0.1484375,
+            "maxIntensity": 4.0625,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 534,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 3.75,
+          "state": {
+            "skill": "TIME-01",
+            "phase": "active",
+            "time": 3.75,
+            "runeStart": 1.9,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 534,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 12.6,
+          "state": {
+            "skill": "TIME-01",
+            "phase": "active",
+            "time": 12.6,
+            "runeStart": 1.9,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 535,
+              "textures": 14
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "BLOOD-01",
+      "quality": "Low",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "BLOOD-01",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 334.2314221028394,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 597,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.5,
+          "state": {
+            "skill": "BLOOD-01",
+            "phase": "active",
+            "time": 0.5,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 271.95585678850887,
+            "maxOpacity": 0.819969012288422,
+            "maxIntensity": 21.9375,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 597,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "BLOOD-01",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 87.12453411676631,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 597,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.4000000000000001,
+          "state": {
+            "skill": "BLOOD-01",
+            "phase": "active",
+            "time": 1.4000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 3.6330996526911665,
+            "maxOpacity": 0.1484375,
+            "maxIntensity": 4.0625,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 597,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "BLOOD-01",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 597,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 12.82,
+          "state": {
+            "skill": "BLOOD-01",
+            "phase": "active",
+            "time": 12.82,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 598,
+              "textures": 14
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ASTRAL-01",
+      "quality": "Low",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "ASTRAL-01",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": false,
+            "opacitySum": 443.0400883359124,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 778,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.5,
+          "state": {
+            "skill": "ASTRAL-01",
+            "phase": "active",
+            "time": 0.5,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 356.2480141640172,
+            "maxOpacity": 0.8190491293799084,
+            "maxIntensity": 21.9375,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 806,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "ASTRAL-01",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 112.5883321261484,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 809,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.4000000000000001,
+          "state": {
+            "skill": "ASTRAL-01",
+            "phase": "active",
+            "time": 1.4000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 4.9543676125801515,
+            "maxOpacity": 0.1484375,
+            "maxIntensity": 4.0625,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 809,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "ASTRAL-01",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 828,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 2.55,
+          "state": {
+            "skill": "ASTRAL-01",
+            "phase": "active",
+            "time": 2.55,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 874,
+              "textures": 14
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ASTRAL-02",
+      "quality": "Low",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "ASTRAL-02",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": false,
+            "opacitySum": 269.8510648307047,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 469,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.5,
+          "state": {
+            "skill": "ASTRAL-02",
+            "phase": "active",
+            "time": 0.5,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 220.81423074675794,
+            "maxOpacity": 0.826875,
+            "maxIntensity": 21.9375,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 493,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "ASTRAL-02",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 76.86061195688906,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 496,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.4000000000000001,
+          "state": {
+            "skill": "ASTRAL-02",
+            "phase": "active",
+            "time": 1.4000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 3.6531452153402584,
+            "maxOpacity": 0.1484375,
+            "maxIntensity": 4.0625,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 515,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "ASTRAL-02",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 555,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 2.55,
+          "state": {
+            "skill": "ASTRAL-02",
+            "phase": "active",
+            "time": 2.55,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 558,
+              "textures": 14
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ASTRAL-03",
+      "quality": "Low",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "ASTRAL-03",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": false,
+            "opacitySum": 371.51707161343876,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 639,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.5,
+          "state": {
+            "skill": "ASTRAL-03",
+            "phase": "active",
+            "time": 0.5,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 303.8427874338997,
+            "maxOpacity": 0.826875,
+            "maxIntensity": 21.9375,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 673,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "ASTRAL-03",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 104.56677825266837,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 678,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.4000000000000001,
+          "state": {
+            "skill": "ASTRAL-03",
+            "phase": "active",
+            "time": 1.4000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 4.848729076193932,
+            "maxOpacity": 0.1484375,
+            "maxIntensity": 4.0625,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 678,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "ASTRAL-03",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 678,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 2.55,
+          "state": {
+            "skill": "ASTRAL-03",
+            "phase": "active",
+            "time": 2.55,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 697,
+              "textures": 14
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "NATURE-01",
+      "quality": "Low",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "NATURE-01",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 421.5287246442921,
+            "maxOpacity": 0.991895903141304,
+            "maxIntensity": 26,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 762,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.5,
+          "state": {
+            "skill": "NATURE-01",
+            "phase": "active",
+            "time": 0.5,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 335.1981972330172,
+            "maxOpacity": 0.8392729980091944,
+            "maxIntensity": 21.9375,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 762,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "NATURE-01",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 104.89272942530744,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 762,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.4000000000000001,
+          "state": {
+            "skill": "NATURE-01",
+            "phase": "active",
+            "time": 1.4000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 5.1966231420757545,
+            "maxOpacity": 0.1484375,
+            "maxIntensity": 4.0625,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 762,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "NATURE-01",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 762,
+              "textures": 14
+            }
+          }
+        },
+        {
+          "at": 7.3,
+          "state": {
+            "skill": "NATURE-01",
+            "phase": "active",
+            "time": 7.3,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 762,
+              "textures": 14
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "FIRE-01",
+      "quality": "High",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "FIRE-01",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": false,
+            "opacitySum": 335.6858535520536,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 557,
+              "textures": 21
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "FIRE-01",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 86.24025742515022,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 583,
+              "textures": 21
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "FIRE-01",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 583,
+              "textures": 21
+            }
+          }
+        },
+        {
+          "at": 3.8200000000000003,
+          "state": {
+            "skill": "FIRE-01",
+            "phase": "active",
+            "time": 3.8200000000000003,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 637,
+              "textures": 21
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "WATER-01",
+      "quality": "High",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "WATER-01",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 400.4298706908209,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 647,
+              "textures": 21
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "WATER-01",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 145.0613340365682,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 647,
+              "textures": 21
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "WATER-01",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 647,
+              "textures": 21
+            }
+          }
+        },
+        {
+          "at": 9.65,
+          "state": {
+            "skill": "WATER-01",
+            "phase": "active",
+            "time": 9.65,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 661,
+              "textures": 28
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "EARTH-01",
+      "quality": "High",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "EARTH-01",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 445.8656900713026,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 744,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "EARTH-01",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 121.4223579211014,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 744,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "EARTH-01",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 744,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 9.45,
+          "state": {
+            "skill": "EARTH-01",
+            "phase": "active",
+            "time": 9.45,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 753,
+              "textures": 28
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "LIGHT-01",
+      "quality": "High",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "LIGHT-01",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 605.8172139926347,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 995,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "LIGHT-01",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 148.86291995428078,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 995,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "LIGHT-01",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 995,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 12.15,
+          "state": {
+            "skill": "LIGHT-01",
+            "phase": "active",
+            "time": 12.15,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 995,
+              "textures": 28
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "SHADOW-01",
+      "quality": "High",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "SHADOW-01",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 377.6686489108213,
+            "maxOpacity": 0.9881653531287203,
+            "maxIntensity": 26,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 613,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "SHADOW-01",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 109.69581628277334,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 613,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "SHADOW-01",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 613,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 13.6,
+          "state": {
+            "skill": "SHADOW-01",
+            "phase": "active",
+            "time": 13.6,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 616,
+              "textures": 28
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "WIND-01",
+      "quality": "High",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "WIND-01",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 530.8019296053106,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 852,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "WIND-01",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 146.60057973244201,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 852,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "WIND-01",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 852,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 6.1,
+          "state": {
+            "skill": "WIND-01",
+            "phase": "active",
+            "time": 6.1,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 852,
+              "textures": 28
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "LIGHTNING-01",
+      "quality": "High",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "LIGHTNING-01",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 575.4407542346089,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 957,
+              "textures": 30
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "LIGHTNING-01",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 157.66946253033666,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 968,
+              "textures": 30
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "LIGHTNING-01",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 968,
+              "textures": 30
+            }
+          }
+        },
+        {
+          "at": 12.35,
+          "state": {
+            "skill": "LIGHTNING-01",
+            "phase": "active",
+            "time": 12.35,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 968,
+              "textures": 30
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ICE-01",
+      "quality": "High",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "ICE-01",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 349.98893054844797,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 585,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "ICE-01",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 98.80145972135085,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 585,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "ICE-01",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 585,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 10.95,
+          "state": {
+            "skill": "ICE-01",
+            "phase": "active",
+            "time": 10.95,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 585,
+              "textures": 28
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "MAGMA-01",
+      "quality": "High",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "MAGMA-01",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": false,
+            "opacitySum": 508.181849581278,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 816,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "MAGMA-01",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 133.6792506475208,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 846,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "MAGMA-01",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 865,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 2.55,
+          "state": {
+            "skill": "MAGMA-01",
+            "phase": "active",
+            "time": 2.55,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 908,
+              "textures": 28
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "MAGMA-02",
+      "quality": "High",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "MAGMA-02",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": false,
+            "opacitySum": 706.1159359880334,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 1119,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "MAGMA-02",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 203.14518812246916,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 1134,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "MAGMA-02",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 1153,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 2.55,
+          "state": {
+            "skill": "MAGMA-02",
+            "phase": "active",
+            "time": 2.55,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 1199,
+              "textures": 28
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "MAGMA-03",
+      "quality": "High",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "MAGMA-03",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": false,
+            "opacitySum": 331.06586975707364,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 551,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "MAGMA-03",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 88.07735357910724,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 598,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "MAGMA-03",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 617,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 2.55,
+          "state": {
+            "skill": "MAGMA-03",
+            "phase": "active",
+            "time": 2.55,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 659,
+              "textures": 28
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "POISON-01",
+      "quality": "High",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "POISON-01",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 512.9631996105848,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 825,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "POISON-01",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 136.5064346209474,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 825,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "POISON-01",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 825,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 12.299999999999999,
+          "state": {
+            "skill": "POISON-01",
+            "phase": "active",
+            "time": 12.299999999999999,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 825,
+              "textures": 28
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "SPACE-01",
+      "quality": "High",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "SPACE-01",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 662.6519095880109,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 1066,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "SPACE-01",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 186.35575836097985,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 1066,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "SPACE-01",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 1066,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 14.6,
+          "state": {
+            "skill": "SPACE-01",
+            "phase": "active",
+            "time": 14.6,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 1066,
+              "textures": 28
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "TIME-01",
+      "quality": "High",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "TIME-01",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": null,
+            "runeVisible": true,
+            "attackVisible": false,
+            "opacitySum": 400.93846444801835,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 650,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 1.9,
+          "state": {
+            "skill": "TIME-01",
+            "phase": "active",
+            "time": 1.9,
+            "runeStart": 1.9,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 401.35524341834537,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 687,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 2.8,
+          "state": {
+            "skill": "TIME-01",
+            "phase": "active",
+            "time": 2.8,
+            "runeStart": 1.9,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 113.53862394747479,
+            "maxOpacity": 0.4750000000000001,
+            "maxIntensity": 13.000000000000004,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 688,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 3.75,
+          "state": {
+            "skill": "TIME-01",
+            "phase": "active",
+            "time": 3.75,
+            "runeStart": 1.9,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 688,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 12.6,
+          "state": {
+            "skill": "TIME-01",
+            "phase": "active",
+            "time": 12.6,
+            "runeStart": 1.9,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 689,
+              "textures": 28
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "BLOOD-01",
+      "quality": "High",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "BLOOD-01",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 450.62124326319724,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 751,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "BLOOD-01",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 118.23331942113956,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 751,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "BLOOD-01",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 751,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 12.82,
+          "state": {
+            "skill": "BLOOD-01",
+            "phase": "active",
+            "time": 12.82,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 752,
+              "textures": 28
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ASTRAL-01",
+      "quality": "High",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "ASTRAL-01",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": false,
+            "opacitySum": 596.9298312428677,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 981,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "ASTRAL-01",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 152.18966176237257,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 1012,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "ASTRAL-01",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 1031,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 2.55,
+          "state": {
+            "skill": "ASTRAL-01",
+            "phase": "active",
+            "time": 2.55,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 1077,
+              "textures": 28
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ASTRAL-02",
+      "quality": "High",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "ASTRAL-02",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": false,
+            "opacitySum": 372.06080773766183,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 604,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "ASTRAL-02",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 106.68537059152894,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 631,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "ASTRAL-02",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 674,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 2.55,
+          "state": {
+            "skill": "ASTRAL-02",
+            "phase": "active",
+            "time": 2.55,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 34,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 677,
+              "textures": 28
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ASTRAL-03",
+      "quality": "High",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "ASTRAL-03",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": false,
+            "opacitySum": 527.4268927737952,
+            "maxOpacity": 0.98,
+            "maxIntensity": 26,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 845,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "ASTRAL-03",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 149.7203800086735,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 884,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "ASTRAL-03",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 884,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 2.55,
+          "state": {
+            "skill": "ASTRAL-03",
+            "phase": "active",
+            "time": 2.55,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 46,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 903,
+              "textures": 28
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "NATURE-01",
+      "quality": "High",
+      "frames": [
+        {
+          "at": 0.05,
+          "state": {
+            "skill": "NATURE-01",
+            "phase": "active",
+            "time": 0.05,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 559.6807596668115,
+            "maxOpacity": 0.991895903141304,
+            "maxIntensity": 26,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 947,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 0.9500000000000001,
+          "state": {
+            "skill": "NATURE-01",
+            "phase": "active",
+            "time": 0.9500000000000001,
+            "runeStart": 0.05,
+            "runeVisible": true,
+            "attackVisible": true,
+            "opacitySum": 139.59544025231793,
+            "maxOpacity": 0.475,
+            "maxIntensity": 13,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 947,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 1.9000000000000001,
+          "state": {
+            "skill": "NATURE-01",
+            "phase": "active",
+            "time": 1.9000000000000001,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 947,
+              "textures": 28
+            }
+          }
+        },
+        {
+          "at": 7.3,
+          "state": {
+            "skill": "NATURE-01",
+            "phase": "active",
+            "time": 7.3,
+            "runeStart": 0.05,
+            "runeVisible": false,
+            "attackVisible": true,
+            "opacitySum": 0,
+            "maxOpacity": 0,
+            "maxIntensity": 0,
+            "runeObjects": 60,
+            "glError": 0,
+            "badPrograms": 0,
+            "badTransforms": [],
+            "memory": {
+              "geometries": 947,
+              "textures": 28
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -58,17 +58,20 @@ diffuseColor.a *= smoothstep(0.025, 0.14, uArcGrassAlpha);
 diffuseColor.rgb *= 0.72 + 0.28 * uArcGrassAlpha;`);
   };
   material.customProgramCacheKey = () => 'arcane-wind-grass-v1'; material.needsUpdate = true;
-  let quality = 'High', initialized = false, lastWallTime = performance.now();
+  let quality = 'High', initialized = false, lastSimulationTime = null;
   function init() { if (!initialized) scene.add(mesh); initialized = true; mesh.count = COUNTS[quality]; return getStatus(); }
   function update(time = 0) {
-    const now = performance.now(), delta = Math.min(0.1, Math.max(0, (now - lastWallTime) / 1000)); lastWallTime = now;
+    const now = Number.isFinite(time) ? time : 0;
+    const delta = lastSimulationTime === null ? 0 : Math.min(0.1, Math.max(0, now - lastSimulationTime));
+    lastSimulationTime = now;
     const target = Math.max(0, Math.min(1, windUniform.value.z)), rate = target > grassAlpha.value ? 3.4 : 1.45;
     grassAlpha.value += (target - grassAlpha.value) * (1 - Math.exp(-delta * rate));
     mesh.visible = initialized && grassAlpha.value > 0.018;
     grassTime.value = Number.isFinite(time) ? time : 0; return grassAlpha.value;
   }
+  function reset() { grassAlpha.value = 0; grassTime.value = 0; lastSimulationTime = null; mesh.visible = false; }
   function setQuality(nextQuality) { quality = COUNTS[nextQuality] ? nextQuality : 'High'; mesh.count = COUNTS[quality]; return getStatus(); }
   function getStatus() { return { quality, bladeInstances: mesh.count, windAlpha: grassAlpha.value, initialized }; }
   function dispose() { if (initialized) scene.remove(mesh); initialized = false; mesh.visible = false; bladeGeometry.dispose(); material.dispose(); grassAlpha.value = 0; }
-  return { init, update, setQuality, getStatus, dispose, mesh, material };
+  return { init, update, reset, setQuality, getStatus, dispose, mesh, material };
 }

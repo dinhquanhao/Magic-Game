@@ -1,0 +1,3966 @@
+[
+  {
+    "id": "FIRE-01",
+    "name": "Thiên Nhật Diệt Thế",
+    "element": "FIRE",
+    "identity": {
+      "base": 103,
+      "material": "flame",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.91,
+        3.12
+      ],
+      "cutoff": 5500,
+      "room": "arena",
+      "keywords": "lách tách · đối lưu · phập · nóng",
+      "bass": 0.95
+    },
+    "chargePace": 1.04,
+    "channelDuration": 0.8504,
+    "impact": 3.72,
+    "end": 9.84,
+    "fadeAt": 5.6899999999999995,
+    "hitstop": 0.135,
+    "preSlow": 0.48,
+    "shake": 1.34,
+    "events": [
+      {
+        "key": "release",
+        "role": "casting",
+        "at": 0,
+        "variant": 0,
+        "gain": 1,
+        "source": "main.js channel→active"
+      },
+      {
+        "key": "formation-motion",
+        "role": "motion",
+        "at": 0.02,
+        "variant": 1,
+        "gain": 1,
+        "source": "main.js animateRelease"
+      },
+      {
+        "key": "anticipation",
+        "role": "riser",
+        "at": 2.92,
+        "variant": 2,
+        "gain": 1,
+        "priority": 85,
+        "source": "audio-only anticipation of existing impact; does not change VFX"
+      },
+      {
+        "key": "finale",
+        "role": "impact",
+        "at": 3.72,
+        "variant": 3,
+        "gain": 1,
+        "priority": 100,
+        "source": "cinematicPlans.impactAt / VFX hit-stop callback"
+      },
+      {
+        "key": "pressure-0",
+        "role": "shockwave",
+        "at": 3.72,
+        "variant": 0,
+        "gain": 0.5,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "pressure-1",
+        "role": "shockwave",
+        "at": 3.91,
+        "variant": 1,
+        "gain": 0.36,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "pressure-2",
+        "role": "shockwave",
+        "at": 4.1000000000000005,
+        "variant": 2,
+        "gain": 0.2592,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "decay",
+        "role": "aftermath",
+        "at": 4.17,
+        "variant": 2,
+        "gain": 1,
+        "source": "audio tail follows existing aftermath; truncated by cleanup"
+      },
+      {
+        "key": "aftershock-0",
+        "role": "secondary",
+        "at": 4.34,
+        "variant": 3,
+        "gain": 0.5,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "aftershock-1",
+        "role": "secondary",
+        "at": 4.66,
+        "variant": 0,
+        "gain": 0.275,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "aftershock-2",
+        "role": "secondary",
+        "at": 4.9799999999999995,
+        "variant": 1,
+        "gain": 0.15125000000000002,
+        "source": "existing module aftershock array",
+        "region": true
+      }
+    ],
+    "timeControls": [
+      {
+        "at": 3.24,
+        "type": "pre",
+        "duration": 0.48,
+        "scale": 0.23
+      },
+      {
+        "at": 3.72,
+        "type": "freeze",
+        "duration": 0.135,
+        "postScale": 0.3,
+        "postDuration": 0.78
+      }
+    ],
+    "ideas": [
+      {
+        "idea": "Rune cộng hưởng theo cấp của Thiên Nhật Diệt Thế",
+        "implemented": true,
+        "method": "actual tower progress → tier note; seeded modal frequency"
+      },
+      {
+        "idea": "Đường chuyển động solarImpact có cue riêng",
+        "implemented": true,
+        "method": "existing waves/beat/descent markers; gain/pitch/round robin"
+      },
+      {
+        "idea": "Trường âm FIRE trải trên AOE",
+        "implemented": true,
+        "method": "regional clusters within actual AOE and stereo-linked dry/wet; mono-safe core"
+      },
+      {
+        "idea": "Đọc lại mọi va chạm GPU để phát từng hạt",
+        "implemented": false,
+        "reason": "No GPU collision event readback; would stall rendering and produce excessive voices. Cluster at known wave markers instead."
+      }
+    ]
+  },
+  {
+    "id": "WATER-01",
+    "name": "Hải Thần Lĩnh Vực",
+    "element": "WATER",
+    "identity": {
+      "base": 168,
+      "material": "bubble",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.42,
+        2.8,
+        4.9
+      ],
+      "cutoff": 3600,
+      "room": "underwater",
+      "keywords": "chảy · bọt · ẩm · sóng",
+      "bass": 0.85
+    },
+    "chargePace": 1,
+    "channelDuration": 0.84,
+    "impact": 9.55,
+    "end": 17,
+    "fadeAt": 15.55,
+    "hitstop": 0.12,
+    "preSlow": 0.6,
+    "shake": 1.65,
+    "events": [
+      {
+        "key": "release",
+        "role": "casting",
+        "at": 0,
+        "variant": 0,
+        "gain": 1,
+        "source": "main.js channel→active"
+      },
+      {
+        "key": "formation-motion",
+        "role": "motion",
+        "at": 0.02,
+        "variant": 1,
+        "gain": 1,
+        "source": "main.js animateRelease"
+      },
+      {
+        "key": "gate",
+        "role": "material",
+        "at": 2.35,
+        "variant": 2,
+        "gain": 1,
+        "source": "ocean-dominion.js gateOpen(2.35,...)"
+      },
+      {
+        "key": "whale-swim",
+        "role": "motion",
+        "at": 4.65,
+        "variant": 3,
+        "gain": 1,
+        "source": "ocean-dominion.js swimStart=4.65"
+      },
+      {
+        "key": "anticipation",
+        "role": "riser",
+        "at": 8.75,
+        "variant": 3,
+        "gain": 1,
+        "priority": 85,
+        "source": "audio-only anticipation of existing impact; does not change VFX"
+      },
+      {
+        "key": "finale",
+        "role": "impact",
+        "at": 9.55,
+        "variant": 0,
+        "gain": 1,
+        "priority": 100,
+        "source": "cinematicPlans.impactAt / VFX hit-stop callback"
+      },
+      {
+        "key": "pressure-0",
+        "role": "shockwave",
+        "at": 9.59,
+        "variant": 1,
+        "gain": 0.5,
+        "source": "ocean-dominion.js shockwaves age",
+        "region": true
+      },
+      {
+        "key": "pressure-1",
+        "role": "shockwave",
+        "at": 9.71,
+        "variant": 2,
+        "gain": 0.36,
+        "source": "ocean-dominion.js shockwaves age",
+        "region": true
+      },
+      {
+        "key": "pressure-2",
+        "role": "shockwave",
+        "at": 9.83,
+        "variant": 3,
+        "gain": 0.2592,
+        "source": "ocean-dominion.js shockwaves age",
+        "region": true
+      },
+      {
+        "key": "decay",
+        "role": "aftermath",
+        "at": 10,
+        "variant": 3,
+        "gain": 1,
+        "source": "audio tail follows existing aftermath; truncated by cleanup"
+      },
+      {
+        "key": "tide-0",
+        "role": "material",
+        "at": 10.55,
+        "variant": 0,
+        "gain": 0.7,
+        "region": true,
+        "source": "ocean-dominion.js surgeTimes"
+      },
+      {
+        "key": "aftershock-0",
+        "role": "secondary",
+        "at": 10.600000000000001,
+        "variant": 0,
+        "gain": 0.5,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "tide-1",
+        "role": "material",
+        "at": 11.270000000000001,
+        "variant": 1,
+        "gain": 0.7999999999999999,
+        "region": true,
+        "source": "ocean-dominion.js surgeTimes"
+      },
+      {
+        "key": "aftershock-1",
+        "role": "secondary",
+        "at": 11.3,
+        "variant": 1,
+        "gain": 0.275,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "tide-2",
+        "role": "material",
+        "at": 11.99,
+        "variant": 2,
+        "gain": 0.8999999999999999,
+        "region": true,
+        "source": "ocean-dominion.js surgeTimes"
+      },
+      {
+        "key": "aftershock-2",
+        "role": "secondary",
+        "at": 12.000000000000002,
+        "variant": 2,
+        "gain": 0.15125000000000002,
+        "source": "existing module aftershock array",
+        "region": true
+      }
+    ],
+    "timeControls": [
+      {
+        "at": 8.950000000000001,
+        "type": "pre",
+        "duration": 0.6,
+        "scale": 0.25
+      },
+      {
+        "at": 9.55,
+        "type": "freeze",
+        "duration": 0.12,
+        "postScale": 0.5,
+        "postDuration": 0.5
+      }
+    ],
+    "ideas": [
+      {
+        "idea": "Rune cộng hưởng theo cấp của Hải Thần Lĩnh Vực",
+        "implemented": true,
+        "method": "actual tower progress → tier note; seeded modal frequency"
+      },
+      {
+        "idea": "Đường chuyển động oceanDominion có cue riêng",
+        "implemented": true,
+        "method": "existing waves/beat/descent markers; gain/pitch/round robin"
+      },
+      {
+        "idea": "Trường âm WATER trải trên AOE",
+        "implemented": true,
+        "method": "regional clusters within actual AOE and stereo-linked dry/wet; mono-safe core"
+      },
+      {
+        "idea": "Đọc lại mọi va chạm GPU để phát từng hạt",
+        "implemented": false,
+        "reason": "No GPU collision event readback; would stall rendering and produce excessive voices. Cluster at known wave markers instead."
+      }
+    ]
+  },
+  {
+    "id": "EARTH-01",
+    "name": "Đại Lục Phân Liệt",
+    "element": "EARTH",
+    "identity": {
+      "base": 62,
+      "material": "stone",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.48,
+        2.17,
+        3.83
+      ],
+      "cutoff": 1800,
+      "room": "arena",
+      "keywords": "đá · rạn · sỏi · nặng",
+      "bass": 1.1
+    },
+    "chargePace": 1,
+    "channelDuration": 0.84,
+    "impact": 9.35,
+    "end": 18,
+    "fadeAt": 14.9,
+    "hitstop": 0.12,
+    "preSlow": 0.68,
+    "shake": 1.55,
+    "events": [
+      {
+        "key": "release",
+        "role": "casting",
+        "at": 0,
+        "variant": 0,
+        "gain": 1,
+        "source": "main.js channel→active"
+      },
+      {
+        "key": "formation-motion",
+        "role": "motion",
+        "at": 0.02,
+        "variant": 1,
+        "gain": 1,
+        "source": "main.js animateRelease"
+      },
+      {
+        "key": "meteor-descent",
+        "role": "material",
+        "at": 5.1,
+        "variant": 2,
+        "gain": 1,
+        "source": "earth-meteor.js descentStart"
+      },
+      {
+        "key": "anticipation",
+        "role": "riser",
+        "at": 8.549999999999999,
+        "variant": 2,
+        "gain": 1,
+        "priority": 85,
+        "source": "audio-only anticipation of existing impact; does not change VFX"
+      },
+      {
+        "key": "finale",
+        "role": "impact",
+        "at": 9.35,
+        "variant": 3,
+        "gain": 1,
+        "priority": 100,
+        "source": "cinematicPlans.impactAt / VFX hit-stop callback"
+      },
+      {
+        "key": "pressure-0",
+        "role": "shockwave",
+        "at": 9.389999999999999,
+        "variant": 0,
+        "gain": 0.5,
+        "source": "earth-meteor.js shockwaves",
+        "region": true
+      },
+      {
+        "key": "pressure-1",
+        "role": "shockwave",
+        "at": 9.67,
+        "variant": 1,
+        "gain": 0.36,
+        "source": "earth-meteor.js shockwaves",
+        "region": true
+      },
+      {
+        "key": "decay",
+        "role": "aftermath",
+        "at": 9.799999999999999,
+        "variant": 3,
+        "gain": 1,
+        "source": "audio tail follows existing aftermath; truncated by cleanup"
+      },
+      {
+        "key": "pressure-2",
+        "role": "shockwave",
+        "at": 10,
+        "variant": 2,
+        "gain": 0.2592,
+        "source": "earth-meteor.js shockwaves",
+        "region": true
+      },
+      {
+        "key": "ground-aftershock-0",
+        "role": "shockwave",
+        "at": 10.7,
+        "variant": 3,
+        "gain": 0.55,
+        "region": true,
+        "source": "earthMeteor.aftershock.times"
+      },
+      {
+        "key": "ground-aftershock-1",
+        "role": "shockwave",
+        "at": 11.85,
+        "variant": 0,
+        "gain": 0.30250000000000005,
+        "region": true,
+        "source": "earthMeteor.aftershock.times"
+      },
+      {
+        "key": "ground-aftershock-2",
+        "role": "shockwave",
+        "at": 12.899999999999999,
+        "variant": 1,
+        "gain": 0.16637500000000005,
+        "region": true,
+        "source": "earthMeteor.aftershock.times"
+      }
+    ],
+    "timeControls": [
+      {
+        "at": 8.67,
+        "type": "pre",
+        "duration": 0.68,
+        "scale": 0.25
+      },
+      {
+        "at": 9.35,
+        "type": "freeze",
+        "duration": 0.12,
+        "postScale": 0.5,
+        "postDuration": 0.62
+      }
+    ],
+    "ideas": [
+      {
+        "idea": "Rune cộng hưởng theo cấp của Đại Lục Phân Liệt",
+        "implemented": true,
+        "method": "actual tower progress → tier note; seeded modal frequency"
+      },
+      {
+        "idea": "Đường chuyển động earthMeteorRupture có cue riêng",
+        "implemented": true,
+        "method": "existing waves/beat/descent markers; gain/pitch/round robin"
+      },
+      {
+        "idea": "Trường âm EARTH trải trên AOE",
+        "implemented": true,
+        "method": "regional clusters within actual AOE and stereo-linked dry/wet; mono-safe core"
+      },
+      {
+        "idea": "Đọc lại mọi va chạm GPU để phát từng hạt",
+        "implemented": false,
+        "reason": "No GPU collision event readback; would stall rendering and produce excessive voices. Cluster at known wave markers instead."
+      }
+    ]
+  },
+  {
+    "id": "LIGHT-01",
+    "name": "Lục Dực Thánh Khải",
+    "element": "LIGHT",
+    "identity": {
+      "base": 528,
+      "material": "bell",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.25,
+        1.5,
+        2,
+        3
+      ],
+      "cutoff": 7800,
+      "room": "cathedral",
+      "keywords": "chuông · sáng · thanh · lấp lánh",
+      "bass": 0.65
+    },
+    "chargePace": 1,
+    "channelDuration": 0.84,
+    "impact": 12.05,
+    "end": 17.2,
+    "fadeAt": 10.6,
+    "hitstop": 0.08,
+    "preSlow": 0.48,
+    "shake": 1.24,
+    "events": [
+      {
+        "key": "release",
+        "role": "casting",
+        "at": 0,
+        "variant": 0,
+        "gain": 1,
+        "source": "main.js channel→active"
+      },
+      {
+        "key": "formation-motion",
+        "role": "motion",
+        "at": 0.02,
+        "variant": 1,
+        "gain": 1,
+        "source": "main.js animateRelease"
+      },
+      {
+        "key": "wave-0",
+        "role": "material",
+        "at": 2.55,
+        "variant": 2,
+        "gain": 0.35,
+        "pitch": 1,
+        "density": 1,
+        "source": "seraphicRain.waves[0].start",
+        "region": true
+      },
+      {
+        "key": "wave-detail-0",
+        "role": "secondary",
+        "at": 2.6925,
+        "variant": 3,
+        "gain": 0.39,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "wave-1",
+        "role": "material",
+        "at": 4.35,
+        "variant": 0,
+        "gain": 0.45,
+        "pitch": 1.025,
+        "density": 2,
+        "source": "seraphicRain.waves[1].start",
+        "region": true
+      },
+      {
+        "key": "wave-detail-1",
+        "role": "secondary",
+        "at": 4.4925,
+        "variant": 1,
+        "gain": 0.48,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "wave-2",
+        "role": "material",
+        "at": 6.15,
+        "variant": 2,
+        "gain": 0.55,
+        "pitch": 1.05,
+        "density": 3,
+        "source": "seraphicRain.waves[2].start",
+        "region": true
+      },
+      {
+        "key": "wave-detail-2",
+        "role": "secondary",
+        "at": 6.3075,
+        "variant": 3,
+        "gain": 0.5700000000000001,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "wave-3",
+        "role": "material",
+        "at": 8.1,
+        "variant": 0,
+        "gain": 0.65,
+        "pitch": 1.075,
+        "density": 4,
+        "source": "seraphicRain.waves[3].start",
+        "region": true
+      },
+      {
+        "key": "wave-detail-3",
+        "role": "secondary",
+        "at": 8.272499999999999,
+        "variant": 1,
+        "gain": 0.66,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "wave-4",
+        "role": "material",
+        "at": 10.85,
+        "variant": 2,
+        "gain": 0.75,
+        "pitch": 1.1,
+        "density": 5,
+        "source": "seraphicRain.waves[4].start",
+        "region": true
+      },
+      {
+        "key": "wave-detail-4",
+        "role": "secondary",
+        "at": 10.868,
+        "variant": 3,
+        "gain": 0.75,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "anticipation",
+        "role": "riser",
+        "at": 11.25,
+        "variant": 0,
+        "gain": 1,
+        "priority": 85,
+        "source": "audio-only anticipation of existing impact; does not change VFX"
+      },
+      {
+        "key": "finale",
+        "role": "impact",
+        "at": 12.05,
+        "variant": 1,
+        "gain": 1,
+        "priority": 100,
+        "source": "cinematicPlans.impactAt / VFX hit-stop callback"
+      },
+      {
+        "key": "pressure-0",
+        "role": "shockwave",
+        "at": 12.05,
+        "variant": 2,
+        "gain": 0.5,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "pressure-1",
+        "role": "shockwave",
+        "at": 12.24,
+        "variant": 3,
+        "gain": 0.36,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "aftershock-0",
+        "role": "secondary",
+        "at": 12.35,
+        "variant": 1,
+        "gain": 0.5,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "pressure-2",
+        "role": "shockwave",
+        "at": 12.430000000000001,
+        "variant": 0,
+        "gain": 0.2592,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "decay",
+        "role": "aftermath",
+        "at": 12.5,
+        "variant": 0,
+        "gain": 1,
+        "source": "audio tail follows existing aftermath; truncated by cleanup"
+      },
+      {
+        "key": "aftershock-1",
+        "role": "secondary",
+        "at": 13.07,
+        "variant": 2,
+        "gain": 0.275,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "aftershock-2",
+        "role": "secondary",
+        "at": 13.79,
+        "variant": 3,
+        "gain": 0.15125000000000002,
+        "source": "existing module aftershock array",
+        "region": true
+      }
+    ],
+    "timeControls": [
+      {
+        "at": 11.57,
+        "type": "pre",
+        "duration": 0.48,
+        "scale": 0.5
+      },
+      {
+        "at": 12.05,
+        "type": "freeze",
+        "duration": 0.08,
+        "postScale": 0.52,
+        "postDuration": 0.72
+      }
+    ],
+    "ideas": [
+      {
+        "idea": "Rune cộng hưởng theo cấp của Lục Dực Thánh Khải",
+        "implemented": true,
+        "method": "actual tower progress → tier note; seeded modal frequency"
+      },
+      {
+        "idea": "Độ dày tăng theo 5 đợt thật",
+        "implemented": true,
+        "method": "existing waves/beat/descent markers; gain/pitch/round robin"
+      },
+      {
+        "idea": "Trường âm LIGHT trải trên AOE",
+        "implemented": true,
+        "method": "regional clusters within actual AOE and stereo-linked dry/wet; mono-safe core"
+      },
+      {
+        "idea": "Đọc lại mọi va chạm GPU để phát từng hạt",
+        "implemented": false,
+        "reason": "No GPU collision event readback; would stall rendering and produce excessive voices. Cluster at known wave markers instead."
+      }
+    ]
+  },
+  {
+    "id": "SHADOW-01",
+    "name": "Vạn Ảnh Thiên Kiếp",
+    "element": "SHADOW",
+    "identity": {
+      "base": 58,
+      "material": "void",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.067,
+        1.39,
+        2.12
+      ],
+      "cutoff": 1500,
+      "room": "void",
+      "keywords": "hút · trầm · u · mờ",
+      "bass": 1
+    },
+    "chargePace": 1,
+    "channelDuration": 0.84,
+    "impact": 13.5,
+    "end": 17,
+    "fadeAt": 14.2,
+    "hitstop": 0.12,
+    "preSlow": 0.9,
+    "shake": 1.35,
+    "events": [
+      {
+        "key": "release",
+        "role": "casting",
+        "at": 0,
+        "variant": 0,
+        "gain": 1,
+        "source": "main.js channel→active"
+      },
+      {
+        "key": "formation-motion",
+        "role": "motion",
+        "at": 0.02,
+        "variant": 1,
+        "gain": 1,
+        "source": "main.js animateRelease"
+      },
+      {
+        "key": "wave-0",
+        "role": "material",
+        "at": 4.45,
+        "variant": 2,
+        "gain": 0.375,
+        "pitch": 1,
+        "density": 1,
+        "source": "nightmareSpears.waves[0].start",
+        "region": true
+      },
+      {
+        "key": "wave-detail-0",
+        "role": "secondary",
+        "at": 4.63,
+        "variant": 3,
+        "gain": 0.4125,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "wave-1",
+        "role": "material",
+        "at": 6.25,
+        "variant": 0,
+        "gain": 0.5,
+        "pitch": 1.025,
+        "density": 2,
+        "source": "nightmareSpears.waves[1].start",
+        "region": true
+      },
+      {
+        "key": "wave-detail-1",
+        "role": "secondary",
+        "at": 6.43,
+        "variant": 1,
+        "gain": 0.525,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "wave-2",
+        "role": "material",
+        "at": 8.15,
+        "variant": 2,
+        "gain": 0.625,
+        "pitch": 1.05,
+        "density": 3,
+        "source": "nightmareSpears.waves[2].start",
+        "region": true
+      },
+      {
+        "key": "wave-detail-2",
+        "role": "secondary",
+        "at": 8.33,
+        "variant": 3,
+        "gain": 0.6375,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "wave-3",
+        "role": "material",
+        "at": 10.15,
+        "variant": 0,
+        "gain": 0.75,
+        "pitch": 1.075,
+        "density": 4,
+        "source": "nightmareSpears.waves[3].start",
+        "region": true
+      },
+      {
+        "key": "wave-detail-3",
+        "role": "secondary",
+        "at": 10.33,
+        "variant": 1,
+        "gain": 0.75,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "anticipation",
+        "role": "riser",
+        "at": 12.7,
+        "variant": 2,
+        "gain": 1,
+        "priority": 85,
+        "source": "audio-only anticipation of existing impact; does not change VFX"
+      },
+      {
+        "key": "finale",
+        "role": "impact",
+        "at": 13.5,
+        "variant": 3,
+        "gain": 1,
+        "priority": 100,
+        "source": "cinematicPlans.impactAt / VFX hit-stop callback"
+      },
+      {
+        "key": "pressure-0",
+        "role": "shockwave",
+        "at": 13.5,
+        "variant": 0,
+        "gain": 0.5,
+        "source": "shadow-orb.js shockwave age",
+        "region": true
+      },
+      {
+        "key": "pressure-1",
+        "role": "shockwave",
+        "at": 13.62,
+        "variant": 1,
+        "gain": 0.36,
+        "source": "shadow-orb.js shockwave age",
+        "region": true
+      },
+      {
+        "key": "pressure-2",
+        "role": "shockwave",
+        "at": 13.74,
+        "variant": 2,
+        "gain": 0.2592,
+        "source": "shadow-orb.js shockwave age",
+        "region": true
+      },
+      {
+        "key": "decay",
+        "role": "aftermath",
+        "at": 13.95,
+        "variant": 2,
+        "gain": 1,
+        "source": "audio tail follows existing aftermath; truncated by cleanup"
+      },
+      {
+        "key": "aftershock-0",
+        "role": "secondary",
+        "at": 15.15,
+        "variant": 3,
+        "gain": 0.5,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "aftershock-1",
+        "role": "secondary",
+        "at": 15.85,
+        "variant": 0,
+        "gain": 0.275,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "aftershock-2",
+        "role": "secondary",
+        "at": 16.55,
+        "variant": 1,
+        "gain": 0.15125000000000002,
+        "source": "existing module aftershock array",
+        "region": true
+      }
+    ],
+    "timeControls": [
+      {
+        "at": 11.94,
+        "type": "pre",
+        "duration": 0.9,
+        "scale": 0.3
+      },
+      {
+        "at": 13.5,
+        "type": "freeze",
+        "duration": 0.12,
+        "postScale": 0.5,
+        "postDuration": 0.5
+      }
+    ],
+    "ideas": [
+      {
+        "idea": "Rune cộng hưởng theo cấp của Vạn Ảnh Thiên Kiếp",
+        "implemented": true,
+        "method": "actual tower progress → tier note; seeded modal frequency"
+      },
+      {
+        "idea": "Độ dày tăng theo 4 đợt thật",
+        "implemented": true,
+        "method": "existing waves/beat/descent markers; gain/pitch/round robin"
+      },
+      {
+        "idea": "Trường âm SHADOW trải trên AOE",
+        "implemented": true,
+        "method": "regional clusters within actual AOE and stereo-linked dry/wet; mono-safe core"
+      },
+      {
+        "idea": "Đọc lại mọi va chạm GPU để phát từng hạt",
+        "implemented": false,
+        "reason": "No GPU collision event readback; would stall rendering and produce excessive voices. Cluster at known wave markers instead."
+      }
+    ]
+  },
+  {
+    "id": "WIND-01",
+    "name": "Thiên Khí Băng Diệt",
+    "element": "WIND",
+    "identity": {
+      "base": 290,
+      "material": "air",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.05,
+        1.51
+      ],
+      "cutoff": 4200,
+      "room": "arena",
+      "keywords": "rít · xoáy · lá · thoáng",
+      "bass": 0.65
+    },
+    "chargePace": 1.18,
+    "channelDuration": 0.8868,
+    "impact": 6,
+    "end": 20.25,
+    "fadeAt": 6,
+    "hitstop": 0.04,
+    "preSlow": 0.22,
+    "shake": 0.92,
+    "events": [
+      {
+        "key": "release",
+        "role": "casting",
+        "at": 0,
+        "variant": 0,
+        "gain": 1,
+        "source": "main.js channel→active"
+      },
+      {
+        "key": "formation-motion",
+        "role": "motion",
+        "at": 0.02,
+        "variant": 1,
+        "gain": 1,
+        "source": "main.js animateRelease"
+      },
+      {
+        "key": "anticipation",
+        "role": "riser",
+        "at": 5.2,
+        "variant": 2,
+        "gain": 1,
+        "priority": 85,
+        "source": "audio-only anticipation of existing impact; does not change VFX"
+      },
+      {
+        "key": "touchdown",
+        "role": "material",
+        "at": 6,
+        "variant": 2,
+        "gain": 0.6,
+        "source": "tornado.touchdownTime"
+      },
+      {
+        "key": "finale",
+        "role": "impact",
+        "at": 6,
+        "variant": 3,
+        "gain": 1,
+        "priority": 100,
+        "source": "cinematicPlans.impactAt / VFX hit-stop callback"
+      },
+      {
+        "key": "pressure-0",
+        "role": "shockwave",
+        "at": 6,
+        "variant": 0,
+        "gain": 0.5,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "pressure-1",
+        "role": "shockwave",
+        "at": 6.19,
+        "variant": 1,
+        "gain": 0.36,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "pressure-2",
+        "role": "shockwave",
+        "at": 6.38,
+        "variant": 2,
+        "gain": 0.2592,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "decay",
+        "role": "aftermath",
+        "at": 6.45,
+        "variant": 2,
+        "gain": 1,
+        "source": "audio tail follows existing aftermath; truncated by cleanup"
+      },
+      {
+        "key": "aftershock-0",
+        "role": "secondary",
+        "at": 6.62,
+        "variant": 3,
+        "gain": 0.5,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "aftershock-1",
+        "role": "secondary",
+        "at": 6.94,
+        "variant": 0,
+        "gain": 0.275,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "aftershock-2",
+        "role": "secondary",
+        "at": 7.26,
+        "variant": 1,
+        "gain": 0.15125000000000002,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "vortex-travel-0",
+        "role": "motion",
+        "at": 9.5,
+        "variant": 3,
+        "gain": 0.6,
+        "region": true,
+        "source": "main.js travelTime begins after touch+fade"
+      },
+      {
+        "key": "vortex-travel-1",
+        "role": "motion",
+        "at": 11.5,
+        "variant": 0,
+        "gain": 0.6,
+        "region": true,
+        "source": "main.js travelTime begins after touch+fade"
+      },
+      {
+        "key": "vortex-travel-2",
+        "role": "motion",
+        "at": 13.5,
+        "variant": 1,
+        "gain": 0.6,
+        "region": true,
+        "source": "main.js travelTime begins after touch+fade"
+      }
+    ],
+    "timeControls": [
+      {
+        "at": 5.78,
+        "type": "pre",
+        "duration": 0.22,
+        "scale": 0.68
+      },
+      {
+        "at": 6,
+        "type": "freeze",
+        "duration": 0.04,
+        "postScale": 0.6,
+        "postDuration": 0.8
+      }
+    ],
+    "ideas": [
+      {
+        "idea": "Rune cộng hưởng theo cấp của Thiên Khí Băng Diệt",
+        "implemented": true,
+        "method": "actual tower progress → tier note; seeded modal frequency"
+      },
+      {
+        "idea": "Đường chuyển động atmosphericCollapse có cue riêng",
+        "implemented": true,
+        "method": "existing waves/beat/descent markers; gain/pitch/round robin"
+      },
+      {
+        "idea": "Trường âm WIND trải trên AOE",
+        "implemented": true,
+        "method": "regional clusters within actual AOE and stereo-linked dry/wet; mono-safe core"
+      },
+      {
+        "idea": "Đọc lại mọi va chạm GPU để phát từng hạt",
+        "implemented": false,
+        "reason": "No GPU collision event readback; would stall rendering and produce excessive voices. Cluster at known wave markers instead."
+      }
+    ]
+  },
+  {
+    "id": "LIGHTNING-01",
+    "name": "Lôi Giới Tận Thế",
+    "element": "LIGHTNING",
+    "identity": {
+      "base": 111,
+      "material": "electric",
+      "noise": "white",
+      "modes": [
+        1,
+        2,
+        4.17,
+        7.2
+      ],
+      "cutoff": 8500,
+      "room": "arena",
+      "keywords": "crack · ion · buzz · sấm",
+      "bass": 1
+    },
+    "chargePace": 1.05,
+    "channelDuration": 0.853,
+    "impact": 12.25,
+    "end": 17.2,
+    "fadeAt": 14.5,
+    "hitstop": 0.08,
+    "preSlow": 0.7,
+    "shake": 1.2,
+    "events": [
+      {
+        "key": "release",
+        "role": "casting",
+        "at": 0,
+        "variant": 0,
+        "gain": 1,
+        "source": "main.js channel→active"
+      },
+      {
+        "key": "formation-motion",
+        "role": "motion",
+        "at": 0.02,
+        "variant": 1,
+        "gain": 1,
+        "source": "main.js animateRelease"
+      },
+      {
+        "key": "wave-0",
+        "role": "material",
+        "at": 2.5,
+        "variant": 2,
+        "gain": 0.35,
+        "pitch": 1,
+        "density": 1,
+        "source": "lightningStorm.waves[0].start",
+        "region": true
+      },
+      {
+        "key": "wave-detail-0",
+        "role": "secondary",
+        "at": 2.68,
+        "variant": 3,
+        "gain": 0.39,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "wave-1",
+        "role": "material",
+        "at": 4.25,
+        "variant": 0,
+        "gain": 0.45,
+        "pitch": 1.025,
+        "density": 2,
+        "source": "lightningStorm.waves[1].start",
+        "region": true
+      },
+      {
+        "key": "wave-detail-1",
+        "role": "secondary",
+        "at": 4.43,
+        "variant": 1,
+        "gain": 0.48,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "wave-2",
+        "role": "material",
+        "at": 6.25,
+        "variant": 2,
+        "gain": 0.55,
+        "pitch": 1.05,
+        "density": 3,
+        "source": "lightningStorm.waves[2].start",
+        "region": true
+      },
+      {
+        "key": "wave-detail-2",
+        "role": "secondary",
+        "at": 6.43,
+        "variant": 3,
+        "gain": 0.5700000000000001,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "wave-3",
+        "role": "material",
+        "at": 8.4,
+        "variant": 0,
+        "gain": 0.65,
+        "pitch": 1.075,
+        "density": 4,
+        "source": "lightningStorm.waves[3].start",
+        "region": true
+      },
+      {
+        "key": "wave-detail-3",
+        "role": "secondary",
+        "at": 8.58,
+        "variant": 1,
+        "gain": 0.66,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "anticipation",
+        "role": "riser",
+        "at": 11.45,
+        "variant": 0,
+        "gain": 1,
+        "priority": 85,
+        "source": "audio-only anticipation of existing impact; does not change VFX"
+      },
+      {
+        "key": "wave-4",
+        "role": "material",
+        "at": 11.7,
+        "variant": 2,
+        "gain": 0.75,
+        "pitch": 1.1,
+        "density": 5,
+        "source": "lightningStorm.waves[4].start",
+        "region": true
+      },
+      {
+        "key": "wave-detail-4",
+        "role": "secondary",
+        "at": 11.782499999999999,
+        "variant": 3,
+        "gain": 0.75,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "finale",
+        "role": "impact",
+        "at": 12.25,
+        "variant": 1,
+        "gain": 1,
+        "priority": 100,
+        "source": "cinematicPlans.impactAt / VFX hit-stop callback"
+      },
+      {
+        "key": "pressure-0",
+        "role": "shockwave",
+        "at": 12.25,
+        "variant": 2,
+        "gain": 0.5,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "pressure-1",
+        "role": "shockwave",
+        "at": 12.44,
+        "variant": 3,
+        "gain": 0.36,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "pressure-2",
+        "role": "shockwave",
+        "at": 12.63,
+        "variant": 0,
+        "gain": 0.2592,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "decay",
+        "role": "aftermath",
+        "at": 12.7,
+        "variant": 1,
+        "gain": 1,
+        "source": "audio tail follows existing aftermath; truncated by cleanup"
+      }
+    ],
+    "timeControls": [
+      {
+        "at": 11.55,
+        "type": "pre",
+        "duration": 0.7,
+        "scale": 0.5
+      },
+      {
+        "at": 12.25,
+        "type": "freeze",
+        "duration": 0.08,
+        "postScale": 0.58,
+        "postDuration": 0.45
+      }
+    ],
+    "ideas": [
+      {
+        "idea": "Rune cộng hưởng theo cấp của Lôi Giới Tận Thế",
+        "implemented": true,
+        "method": "actual tower progress → tier note; seeded modal frequency"
+      },
+      {
+        "idea": "Độ dày tăng theo 5 đợt thật",
+        "implemented": true,
+        "method": "existing waves/beat/descent markers; gain/pitch/round robin"
+      },
+      {
+        "idea": "Trường âm LIGHTNING trải trên AOE",
+        "implemented": true,
+        "method": "regional clusters within actual AOE and stereo-linked dry/wet; mono-safe core"
+      },
+      {
+        "idea": "Đọc lại mọi va chạm GPU để phát từng hạt",
+        "implemented": false,
+        "reason": "No GPU collision event readback; would stall rendering and produce excessive voices. Cluster at known wave markers instead."
+      }
+    ]
+  },
+  {
+    "id": "ICE-01",
+    "name": "Vĩnh Băng Thiên Kiếp",
+    "element": "ICE",
+    "identity": {
+      "base": 691,
+      "material": "crystal",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.47,
+        2.71,
+        4.13,
+        5.3
+      ],
+      "cutoff": 7200,
+      "room": "cave",
+      "keywords": "tinh thể · nứt · trong · lạnh",
+      "bass": 0.75
+    },
+    "chargePace": 1.08,
+    "channelDuration": 0.8608,
+    "impact": 10.85,
+    "end": 16,
+    "fadeAt": 13.25,
+    "hitstop": 0.1,
+    "preSlow": 0.62,
+    "shake": 1.4,
+    "events": [
+      {
+        "key": "release",
+        "role": "casting",
+        "at": 0,
+        "variant": 0,
+        "gain": 1,
+        "source": "main.js channel→active"
+      },
+      {
+        "key": "formation-motion",
+        "role": "motion",
+        "at": 0.02,
+        "variant": 1,
+        "gain": 1,
+        "source": "main.js animateRelease"
+      },
+      {
+        "key": "wave-0",
+        "role": "material",
+        "at": 6.6,
+        "variant": 2,
+        "gain": 0.375,
+        "pitch": 1,
+        "density": 1,
+        "source": "eternalWinter.waves[0].start",
+        "region": true
+      },
+      {
+        "key": "wave-detail-0",
+        "role": "secondary",
+        "at": 6.779999999999999,
+        "variant": 3,
+        "gain": 0.4125,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "wave-1",
+        "role": "material",
+        "at": 7.55,
+        "variant": 0,
+        "gain": 0.5,
+        "pitch": 1.025,
+        "density": 2,
+        "source": "eternalWinter.waves[1].start",
+        "region": true
+      },
+      {
+        "key": "wave-detail-1",
+        "role": "secondary",
+        "at": 7.7299999999999995,
+        "variant": 1,
+        "gain": 0.525,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "wave-2",
+        "role": "material",
+        "at": 9.1,
+        "variant": 2,
+        "gain": 0.625,
+        "pitch": 1.05,
+        "density": 3,
+        "source": "eternalWinter.waves[2].start",
+        "region": true
+      },
+      {
+        "key": "wave-detail-2",
+        "role": "secondary",
+        "at": 9.28,
+        "variant": 3,
+        "gain": 0.6375,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "anticipation",
+        "role": "riser",
+        "at": 10.049999999999999,
+        "variant": 2,
+        "gain": 1,
+        "priority": 85,
+        "source": "audio-only anticipation of existing impact; does not change VFX"
+      },
+      {
+        "key": "wave-3",
+        "role": "material",
+        "at": 10.85,
+        "variant": 0,
+        "gain": 0.75,
+        "pitch": 1.075,
+        "density": 4,
+        "source": "eternalWinter.waves[3].start",
+        "region": true
+      },
+      {
+        "key": "finale",
+        "role": "impact",
+        "at": 10.85,
+        "variant": 3,
+        "gain": 1,
+        "priority": 100,
+        "source": "cinematicPlans.impactAt / VFX hit-stop callback"
+      },
+      {
+        "key": "pressure-0",
+        "role": "shockwave",
+        "at": 10.85,
+        "variant": 0,
+        "gain": 0.5,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "wave-detail-3",
+        "role": "secondary",
+        "at": 10.969999999999999,
+        "variant": 1,
+        "gain": 0.75,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "pressure-1",
+        "role": "shockwave",
+        "at": 11.04,
+        "variant": 1,
+        "gain": 0.36,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "pressure-2",
+        "role": "shockwave",
+        "at": 11.23,
+        "variant": 2,
+        "gain": 0.2592,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "decay",
+        "role": "aftermath",
+        "at": 11.299999999999999,
+        "variant": 2,
+        "gain": 1,
+        "source": "audio tail follows existing aftermath; truncated by cleanup"
+      },
+      {
+        "key": "aftershock-0",
+        "role": "secondary",
+        "at": 11.61,
+        "variant": 3,
+        "gain": 0.5,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "aftershock-1",
+        "role": "secondary",
+        "at": 12.309999999999999,
+        "variant": 0,
+        "gain": 0.275,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "aftershock-2",
+        "role": "secondary",
+        "at": 13.01,
+        "variant": 1,
+        "gain": 0.15125000000000002,
+        "source": "existing module aftershock array",
+        "region": true
+      }
+    ],
+    "timeControls": [
+      {
+        "at": 3.2,
+        "type": "pre",
+        "duration": 0.58,
+        "scale": 0.52
+      },
+      {
+        "at": 10.23,
+        "type": "pre",
+        "duration": 0.62,
+        "scale": 0.5
+      },
+      {
+        "at": 10.85,
+        "type": "freeze",
+        "duration": 0.1,
+        "postScale": 0.54,
+        "postDuration": 0.65
+      }
+    ],
+    "ideas": [
+      {
+        "idea": "Rune cộng hưởng theo cấp của Vĩnh Băng Thiên Kiếp",
+        "implemented": true,
+        "method": "actual tower progress → tier note; seeded modal frequency"
+      },
+      {
+        "idea": "Độ dày tăng theo 4 đợt thật",
+        "implemented": true,
+        "method": "existing waves/beat/descent markers; gain/pitch/round robin"
+      },
+      {
+        "idea": "Trường âm ICE trải trên AOE",
+        "implemented": true,
+        "method": "regional clusters within actual AOE and stereo-linked dry/wet; mono-safe core"
+      },
+      {
+        "idea": "Đọc lại mọi va chạm GPU để phát từng hạt",
+        "implemented": false,
+        "reason": "No GPU collision event readback; would stall rendering and produce excessive voices. Cluster at known wave markers instead."
+      }
+    ]
+  },
+  {
+    "id": "MAGMA-01",
+    "name": "Khai Thiên Nham Ngục",
+    "element": "MAGMA",
+    "identity": {
+      "base": 51,
+      "material": "lava",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.67,
+        2.21,
+        3.5
+      ],
+      "cutoff": 2600,
+      "room": "cave",
+      "keywords": "sôi · đặc · rền · nứt nóng",
+      "bass": 1.1
+    },
+    "chargePace": 0.96,
+    "channelDuration": 0.8295999999999999,
+    "impact": 2.04,
+    "end": 9.760000000000002,
+    "fadeAt": 6.300000000000002,
+    "hitstop": 0.1,
+    "preSlow": 0.31,
+    "shake": 0.82,
+    "events": [
+      {
+        "key": "release",
+        "role": "casting",
+        "at": 0,
+        "variant": 0,
+        "gain": 1,
+        "source": "main.js channel→active"
+      },
+      {
+        "key": "formation-motion",
+        "role": "motion",
+        "at": 0.02,
+        "variant": 1,
+        "gain": 1,
+        "source": "main.js animateRelease"
+      },
+      {
+        "key": "anticipation",
+        "role": "riser",
+        "at": 1.24,
+        "variant": 2,
+        "gain": 1,
+        "priority": 85,
+        "source": "audio-only anticipation of existing impact; does not change VFX"
+      },
+      {
+        "key": "finale",
+        "role": "impact",
+        "at": 2.04,
+        "variant": 3,
+        "gain": 1,
+        "priority": 100,
+        "source": "cinematicPlans.impactAt / VFX hit-stop callback"
+      },
+      {
+        "key": "pressure-0",
+        "role": "shockwave",
+        "at": 2.04,
+        "variant": 0,
+        "gain": 0.5,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "pressure-1",
+        "role": "shockwave",
+        "at": 2.23,
+        "variant": 1,
+        "gain": 0.36,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "pressure-2",
+        "role": "shockwave",
+        "at": 2.42,
+        "variant": 2,
+        "gain": 0.2592,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "decay",
+        "role": "aftermath",
+        "at": 2.49,
+        "variant": 2,
+        "gain": 1,
+        "source": "audio tail follows existing aftermath; truncated by cleanup"
+      },
+      {
+        "key": "aftershock-0",
+        "role": "secondary",
+        "at": 2.66,
+        "variant": 3,
+        "gain": 0.5,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "aftershock-1",
+        "role": "secondary",
+        "at": 2.98,
+        "variant": 0,
+        "gain": 0.275,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "aftershock-2",
+        "role": "secondary",
+        "at": 3.3000000000000003,
+        "variant": 1,
+        "gain": 0.15125000000000002,
+        "source": "existing module aftershock array",
+        "region": true
+      }
+    ],
+    "timeControls": [
+      {
+        "at": 1.73,
+        "type": "pre",
+        "duration": 0.31,
+        "scale": 0.285
+      },
+      {
+        "at": 2.04,
+        "type": "freeze",
+        "duration": 0.1,
+        "postScale": 0.46,
+        "postDuration": 0.6799999999999999
+      }
+    ],
+    "ideas": [
+      {
+        "idea": "Rune cộng hưởng theo cấp của Khai Thiên Nham Ngục",
+        "implemented": true,
+        "method": "actual tower progress → tier note; seeded modal frequency"
+      },
+      {
+        "idea": "Đường chuyển động volcanicGenesis có cue riêng",
+        "implemented": true,
+        "method": "existing waves/beat/descent markers; gain/pitch/round robin"
+      },
+      {
+        "idea": "Trường âm MAGMA trải trên AOE",
+        "implemented": true,
+        "method": "regional clusters within actual AOE and stereo-linked dry/wet; mono-safe core"
+      },
+      {
+        "idea": "Đọc lại mọi va chạm GPU để phát từng hạt",
+        "implemented": false,
+        "reason": "No GPU collision event readback; would stall rendering and produce excessive voices. Cluster at known wave markers instead."
+      }
+    ]
+  },
+  {
+    "id": "MAGMA-02",
+    "name": "Nham Thiên Diệt Thế",
+    "element": "MAGMA",
+    "identity": {
+      "base": 51,
+      "material": "lava",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.67,
+        2.21,
+        3.5
+      ],
+      "cutoff": 2600,
+      "room": "cave",
+      "keywords": "sôi · đặc · rền · nứt nóng",
+      "bass": 1.1
+    },
+    "chargePace": 1.14,
+    "channelDuration": 0.8764,
+    "impact": 2.19,
+    "end": 9.940000000000001,
+    "fadeAt": 6.740000000000002,
+    "hitstop": 0.125,
+    "preSlow": 0.38,
+    "shake": 0.82,
+    "events": [
+      {
+        "key": "release",
+        "role": "casting",
+        "at": 0,
+        "variant": 0,
+        "gain": 1,
+        "source": "main.js channel→active"
+      },
+      {
+        "key": "formation-motion",
+        "role": "motion",
+        "at": 0.02,
+        "variant": 1,
+        "gain": 1,
+        "source": "main.js animateRelease"
+      },
+      {
+        "key": "anticipation",
+        "role": "riser",
+        "at": 1.39,
+        "variant": 2,
+        "gain": 1,
+        "priority": 85,
+        "source": "audio-only anticipation of existing impact; does not change VFX"
+      },
+      {
+        "key": "finale",
+        "role": "impact",
+        "at": 2.19,
+        "variant": 3,
+        "gain": 1,
+        "priority": 100,
+        "source": "cinematicPlans.impactAt / VFX hit-stop callback"
+      },
+      {
+        "key": "pressure-0",
+        "role": "shockwave",
+        "at": 2.19,
+        "variant": 0,
+        "gain": 0.5,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "pressure-1",
+        "role": "shockwave",
+        "at": 2.38,
+        "variant": 1,
+        "gain": 0.36,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "pressure-2",
+        "role": "shockwave",
+        "at": 2.57,
+        "variant": 2,
+        "gain": 0.2592,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "decay",
+        "role": "aftermath",
+        "at": 2.64,
+        "variant": 2,
+        "gain": 1,
+        "source": "audio tail follows existing aftermath; truncated by cleanup"
+      },
+      {
+        "key": "aftershock-0",
+        "role": "secondary",
+        "at": 2.81,
+        "variant": 3,
+        "gain": 0.5,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "aftershock-1",
+        "role": "secondary",
+        "at": 3.13,
+        "variant": 0,
+        "gain": 0.275,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "aftershock-2",
+        "role": "secondary",
+        "at": 3.45,
+        "variant": 1,
+        "gain": 0.15125000000000002,
+        "source": "existing module aftershock array",
+        "region": true
+      }
+    ],
+    "timeControls": [
+      {
+        "at": 1.81,
+        "type": "pre",
+        "duration": 0.38,
+        "scale": 0.32999999999999996
+      },
+      {
+        "at": 2.19,
+        "type": "freeze",
+        "duration": 0.125,
+        "postScale": 0.54,
+        "postDuration": 0.86
+      }
+    ],
+    "ideas": [
+      {
+        "idea": "Rune cộng hưởng theo cấp của Nham Thiên Diệt Thế",
+        "implemented": true,
+        "method": "actual tower progress → tier note; seeded modal frequency"
+      },
+      {
+        "idea": "Đường chuyển động moltenHeavenfall có cue riêng",
+        "implemented": true,
+        "method": "existing waves/beat/descent markers; gain/pitch/round robin"
+      },
+      {
+        "idea": "Trường âm MAGMA trải trên AOE",
+        "implemented": true,
+        "method": "regional clusters within actual AOE and stereo-linked dry/wet; mono-safe core"
+      },
+      {
+        "idea": "Đọc lại mọi va chạm GPU để phát từng hạt",
+        "implemented": false,
+        "reason": "No GPU collision event readback; would stall rendering and produce excessive voices. Cluster at known wave markers instead."
+      }
+    ]
+  },
+  {
+    "id": "MAGMA-03",
+    "name": "Nham Thần Giáng Thế",
+    "element": "MAGMA",
+    "identity": {
+      "base": 51,
+      "material": "lava",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.67,
+        2.21,
+        3.5
+      ],
+      "cutoff": 2600,
+      "room": "cave",
+      "keywords": "sôi · đặc · rền · nứt nóng",
+      "bass": 1.1
+    },
+    "chargePace": 0.88,
+    "channelDuration": 0.8088,
+    "impact": 1.8,
+    "end": 9.680000000000001,
+    "fadeAt": 6.040000000000001,
+    "hitstop": 0.075,
+    "preSlow": 0.24,
+    "shake": 1.05,
+    "events": [
+      {
+        "key": "release",
+        "role": "casting",
+        "at": 0,
+        "variant": 0,
+        "gain": 1,
+        "source": "main.js channel→active"
+      },
+      {
+        "key": "formation-motion",
+        "role": "motion",
+        "at": 0.02,
+        "variant": 1,
+        "gain": 1,
+        "source": "main.js animateRelease"
+      },
+      {
+        "key": "anticipation",
+        "role": "riser",
+        "at": 1,
+        "variant": 2,
+        "gain": 1,
+        "priority": 85,
+        "source": "audio-only anticipation of existing impact; does not change VFX"
+      },
+      {
+        "key": "finale",
+        "role": "impact",
+        "at": 1.8,
+        "variant": 3,
+        "gain": 1,
+        "priority": 100,
+        "source": "cinematicPlans.impactAt / VFX hit-stop callback"
+      },
+      {
+        "key": "pressure-0",
+        "role": "shockwave",
+        "at": 1.8,
+        "variant": 0,
+        "gain": 0.5,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "pressure-1",
+        "role": "shockwave",
+        "at": 1.99,
+        "variant": 1,
+        "gain": 0.36,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "pressure-2",
+        "role": "shockwave",
+        "at": 2.18,
+        "variant": 2,
+        "gain": 0.2592,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "decay",
+        "role": "aftermath",
+        "at": 2.25,
+        "variant": 2,
+        "gain": 1,
+        "source": "audio tail follows existing aftermath; truncated by cleanup"
+      },
+      {
+        "key": "aftershock-0",
+        "role": "secondary",
+        "at": 2.42,
+        "variant": 3,
+        "gain": 0.5,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "aftershock-1",
+        "role": "secondary",
+        "at": 2.7399999999999998,
+        "variant": 0,
+        "gain": 0.275,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "aftershock-2",
+        "role": "secondary",
+        "at": 3.06,
+        "variant": 1,
+        "gain": 0.15125000000000002,
+        "source": "existing module aftershock array",
+        "region": true
+      }
+    ],
+    "timeControls": [
+      {
+        "at": 1.56,
+        "type": "pre",
+        "duration": 0.24,
+        "scale": 0.24
+      },
+      {
+        "at": 1.8,
+        "type": "freeze",
+        "duration": 0.075,
+        "postScale": 0.38,
+        "postDuration": 0.5
+      }
+    ],
+    "ideas": [
+      {
+        "idea": "Rune cộng hưởng theo cấp của Nham Thần Giáng Thế",
+        "implemented": true,
+        "method": "actual tower progress → tier note; seeded modal frequency"
+      },
+      {
+        "idea": "Đường chuyển động magmaTitan có cue riêng",
+        "implemented": true,
+        "method": "existing waves/beat/descent markers; gain/pitch/round robin"
+      },
+      {
+        "idea": "Trường âm MAGMA trải trên AOE",
+        "implemented": true,
+        "method": "regional clusters within actual AOE and stereo-linked dry/wet; mono-safe core"
+      },
+      {
+        "idea": "Đọc lại mọi va chạm GPU để phát từng hạt",
+        "implemented": false,
+        "reason": "No GPU collision event readback; would stall rendering and produce excessive voices. Cluster at known wave markers instead."
+      }
+    ]
+  },
+  {
+    "id": "POISON-01",
+    "name": "Vạn Độc Diệt Giới",
+    "element": "POISON",
+    "identity": {
+      "base": 139,
+      "material": "slime",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.23,
+        2.7,
+        3.71
+      ],
+      "cutoff": 4800,
+      "room": "cave",
+      "keywords": "nhầy · sủi · xì · ăn mòn",
+      "bass": 0.8
+    },
+    "chargePace": 1,
+    "channelDuration": 0.84,
+    "impact": 12.2,
+    "end": 16,
+    "fadeAt": 13.3,
+    "hitstop": 0.1,
+    "preSlow": 0.58,
+    "shake": 1.35,
+    "events": [
+      {
+        "key": "release",
+        "role": "casting",
+        "at": 0,
+        "variant": 0,
+        "gain": 1,
+        "source": "main.js channel→active"
+      },
+      {
+        "key": "formation-motion",
+        "role": "motion",
+        "at": 0.02,
+        "variant": 1,
+        "gain": 1,
+        "source": "main.js animateRelease"
+      },
+      {
+        "key": "wave-0",
+        "role": "material",
+        "at": 5,
+        "variant": 2,
+        "gain": 0.35,
+        "pitch": 1,
+        "density": 1,
+        "source": "venomApocalypse.waves[0].start",
+        "region": true
+      },
+      {
+        "key": "wave-detail-0",
+        "role": "secondary",
+        "at": 5.18,
+        "variant": 3,
+        "gain": 0.39,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "wave-1",
+        "role": "material",
+        "at": 6.4,
+        "variant": 0,
+        "gain": 0.45,
+        "pitch": 1.025,
+        "density": 2,
+        "source": "venomApocalypse.waves[1].start",
+        "region": true
+      },
+      {
+        "key": "wave-detail-1",
+        "role": "secondary",
+        "at": 6.58,
+        "variant": 1,
+        "gain": 0.48,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "wave-2",
+        "role": "material",
+        "at": 8.1,
+        "variant": 2,
+        "gain": 0.55,
+        "pitch": 1.05,
+        "density": 3,
+        "source": "venomApocalypse.waves[2].start",
+        "region": true
+      },
+      {
+        "key": "wave-detail-2",
+        "role": "secondary",
+        "at": 8.28,
+        "variant": 3,
+        "gain": 0.5700000000000001,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "wave-3",
+        "role": "material",
+        "at": 9.55,
+        "variant": 0,
+        "gain": 0.65,
+        "pitch": 1.075,
+        "density": 4,
+        "source": "venomApocalypse.waves[3].start",
+        "region": true
+      },
+      {
+        "key": "wave-detail-3",
+        "role": "secondary",
+        "at": 9.73,
+        "variant": 1,
+        "gain": 0.66,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "wave-4",
+        "role": "material",
+        "at": 11.35,
+        "variant": 2,
+        "gain": 0.75,
+        "pitch": 1.1,
+        "density": 5,
+        "source": "venomApocalypse.waves[4].start",
+        "region": true
+      },
+      {
+        "key": "anticipation",
+        "role": "riser",
+        "at": 11.399999999999999,
+        "variant": 0,
+        "gain": 1,
+        "priority": 85,
+        "source": "audio-only anticipation of existing impact; does not change VFX"
+      },
+      {
+        "key": "wave-detail-4",
+        "role": "secondary",
+        "at": 11.44,
+        "variant": 3,
+        "gain": 0.75,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "finale",
+        "role": "impact",
+        "at": 12.2,
+        "variant": 1,
+        "gain": 1,
+        "priority": 100,
+        "source": "cinematicPlans.impactAt / VFX hit-stop callback"
+      },
+      {
+        "key": "pressure-0",
+        "role": "shockwave",
+        "at": 12.2,
+        "variant": 2,
+        "gain": 0.5,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "pressure-1",
+        "role": "shockwave",
+        "at": 12.389999999999999,
+        "variant": 3,
+        "gain": 0.36,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "pressure-2",
+        "role": "shockwave",
+        "at": 12.58,
+        "variant": 0,
+        "gain": 0.2592,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "decay",
+        "role": "aftermath",
+        "at": 12.649999999999999,
+        "variant": 0,
+        "gain": 1,
+        "source": "audio tail follows existing aftermath; truncated by cleanup"
+      },
+      {
+        "key": "aftershock-0",
+        "role": "secondary",
+        "at": 12.979999999999999,
+        "variant": 1,
+        "gain": 0.5,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "aftershock-1",
+        "role": "secondary",
+        "at": 13.679999999999998,
+        "variant": 2,
+        "gain": 0.275,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "aftershock-2",
+        "role": "secondary",
+        "at": 14.379999999999999,
+        "variant": 3,
+        "gain": 0.15125000000000002,
+        "source": "existing module aftershock array",
+        "region": true
+      }
+    ],
+    "timeControls": [
+      {
+        "at": 11.62,
+        "type": "pre",
+        "duration": 0.58,
+        "scale": 0.5
+      },
+      {
+        "at": 12.2,
+        "type": "freeze",
+        "duration": 0.1,
+        "postScale": 0.54,
+        "postDuration": 0.68
+      }
+    ],
+    "ideas": [
+      {
+        "idea": "Rune cộng hưởng theo cấp của Vạn Độc Diệt Giới",
+        "implemented": true,
+        "method": "actual tower progress → tier note; seeded modal frequency"
+      },
+      {
+        "idea": "Độ dày tăng theo 5 đợt thật",
+        "implemented": true,
+        "method": "existing waves/beat/descent markers; gain/pitch/round robin"
+      },
+      {
+        "idea": "Trường âm POISON trải trên AOE",
+        "implemented": true,
+        "method": "regional clusters within actual AOE and stereo-linked dry/wet; mono-safe core"
+      },
+      {
+        "idea": "Đọc lại mọi va chạm GPU để phát từng hạt",
+        "implemented": false,
+        "reason": "No GPU collision event readback; would stall rendering and produce excessive voices. Cluster at known wave markers instead."
+      }
+    ]
+  },
+  {
+    "id": "SPACE-01",
+    "name": "Không Gian Băng Diệt",
+    "element": "SPACE",
+    "identity": {
+      "base": 47,
+      "material": "warp",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.07,
+        1.414,
+        2.91
+      ],
+      "cutoff": 2200,
+      "room": "void",
+      "keywords": "hút · xoay · giãn · sâu",
+      "bass": 1.15
+    },
+    "chargePace": 0.88,
+    "channelDuration": 0.8088,
+    "impact": 14.5,
+    "end": 19.2,
+    "fadeAt": 16.5,
+    "hitstop": 0.08,
+    "preSlow": 0.45,
+    "shake": 1.6,
+    "events": [
+      {
+        "key": "release",
+        "role": "casting",
+        "at": 0,
+        "variant": 0,
+        "gain": 1,
+        "source": "main.js channel→active"
+      },
+      {
+        "key": "formation-motion",
+        "role": "motion",
+        "at": 0.02,
+        "variant": 1,
+        "gain": 1,
+        "source": "main.js animateRelease"
+      },
+      {
+        "key": "wave-0",
+        "role": "material",
+        "at": 1.7,
+        "variant": 2,
+        "gain": 0.375,
+        "pitch": 1,
+        "density": 1,
+        "source": "dimensionalCollapse.waves[0].start",
+        "region": true
+      },
+      {
+        "key": "wave-detail-0",
+        "role": "secondary",
+        "at": 1.865,
+        "variant": 3,
+        "gain": 0.4125,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "wave-1",
+        "role": "material",
+        "at": 3.1,
+        "variant": 0,
+        "gain": 0.5,
+        "pitch": 1.025,
+        "density": 2,
+        "source": "dimensionalCollapse.waves[1].start",
+        "region": true
+      },
+      {
+        "key": "wave-detail-1",
+        "role": "secondary",
+        "at": 3.2800000000000002,
+        "variant": 1,
+        "gain": 0.525,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "wave-2",
+        "role": "material",
+        "at": 4.65,
+        "variant": 2,
+        "gain": 0.625,
+        "pitch": 1.05,
+        "density": 3,
+        "source": "dimensionalCollapse.waves[2].start",
+        "region": true
+      },
+      {
+        "key": "wave-detail-2",
+        "role": "secondary",
+        "at": 4.83,
+        "variant": 3,
+        "gain": 0.6375,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "wave-3",
+        "role": "material",
+        "at": 6.2,
+        "variant": 0,
+        "gain": 0.75,
+        "pitch": 1.075,
+        "density": 4,
+        "source": "dimensionalCollapse.waves[3].start",
+        "region": true
+      },
+      {
+        "key": "wave-detail-3",
+        "role": "secondary",
+        "at": 6.38,
+        "variant": 1,
+        "gain": 0.75,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "anticipation",
+        "role": "riser",
+        "at": 13.7,
+        "variant": 2,
+        "gain": 1,
+        "priority": 85,
+        "source": "audio-only anticipation of existing impact; does not change VFX"
+      },
+      {
+        "key": "finale",
+        "role": "impact",
+        "at": 14.5,
+        "variant": 3,
+        "gain": 1,
+        "priority": 100,
+        "source": "cinematicPlans.impactAt / VFX hit-stop callback"
+      },
+      {
+        "key": "pressure-0",
+        "role": "shockwave",
+        "at": 14.5,
+        "variant": 0,
+        "gain": 0.5,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "pressure-1",
+        "role": "shockwave",
+        "at": 14.69,
+        "variant": 1,
+        "gain": 0.36,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "pressure-2",
+        "role": "shockwave",
+        "at": 14.88,
+        "variant": 2,
+        "gain": 0.2592,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "decay",
+        "role": "aftermath",
+        "at": 14.95,
+        "variant": 3,
+        "gain": 1,
+        "source": "audio tail follows existing aftermath; truncated by cleanup"
+      }
+    ],
+    "timeControls": [
+      {
+        "at": 14.05,
+        "type": "pre",
+        "duration": 0.45,
+        "scale": 0.62
+      },
+      {
+        "at": 14.5,
+        "type": "freeze",
+        "duration": 0.08,
+        "postScale": 0.7,
+        "postDuration": 0.35
+      }
+    ],
+    "ideas": [
+      {
+        "idea": "Rune cộng hưởng theo cấp của Không Gian Băng Diệt",
+        "implemented": true,
+        "method": "actual tower progress → tier note; seeded modal frequency"
+      },
+      {
+        "idea": "Độ dày tăng theo 4 đợt thật",
+        "implemented": true,
+        "method": "existing waves/beat/descent markers; gain/pitch/round robin"
+      },
+      {
+        "idea": "Trường âm SPACE trải trên AOE",
+        "implemented": true,
+        "method": "regional clusters within actual AOE and stereo-linked dry/wet; mono-safe core"
+      },
+      {
+        "idea": "Đọc lại mọi va chạm GPU để phát từng hạt",
+        "implemented": false,
+        "reason": "No GPU collision event readback; would stall rendering and produce excessive voices. Cluster at known wave markers instead."
+      }
+    ]
+  },
+  {
+    "id": "TIME-01",
+    "name": "Vĩnh Hằng Chung Khúc",
+    "element": "TIME",
+    "identity": {
+      "base": 440,
+      "material": "clock",
+      "noise": "pink",
+      "modes": [
+        1,
+        1.5,
+        2,
+        3,
+        4.01
+      ],
+      "cutoff": 6200,
+      "room": "cathedral",
+      "keywords": "chuông · lặng · nhịp · trong",
+      "bass": 0.25
+    },
+    "chargePace": 1.04,
+    "channelDuration": 0.8504,
+    "impact": 12.5,
+    "end": 18,
+    "fadeAt": 15,
+    "hitstop": 0.07,
+    "preSlow": 0.6,
+    "shake": 0.5,
+    "events": [
+      {
+        "key": "release",
+        "role": "casting",
+        "at": 0,
+        "variant": 0,
+        "gain": 1,
+        "source": "main.js channel→active"
+      },
+      {
+        "key": "formation-motion",
+        "role": "motion",
+        "at": 0.02,
+        "variant": 1,
+        "gain": 1,
+        "source": "main.js animateRelease"
+      },
+      {
+        "key": "time-first",
+        "role": "rune",
+        "at": 2.5,
+        "variant": 2,
+        "gain": 1,
+        "source": "timeDomain.chimes.first"
+      },
+      {
+        "key": "time-expand-0",
+        "role": "rune",
+        "at": 4.5,
+        "variant": 3,
+        "gain": 0.7,
+        "pitch": 1,
+        "source": "timeDomain.chimes.expansion"
+      },
+      {
+        "key": "time-expand-1",
+        "role": "rune",
+        "at": 5.6,
+        "variant": 0,
+        "gain": 0.7999999999999999,
+        "pitch": 1.125,
+        "source": "timeDomain.chimes.expansion"
+      },
+      {
+        "key": "time-expand-2",
+        "role": "rune",
+        "at": 6.8,
+        "variant": 1,
+        "gain": 0.8999999999999999,
+        "pitch": 1.25,
+        "source": "timeDomain.chimes.expansion"
+      },
+      {
+        "key": "time-stasis-0",
+        "role": "rune",
+        "at": 8.12,
+        "variant": 2,
+        "gain": 0.45,
+        "source": "timeDomain.chimes.stasis"
+      },
+      {
+        "key": "time-stasis-1",
+        "role": "rune",
+        "at": 9.18,
+        "variant": 3,
+        "gain": 0.45,
+        "source": "timeDomain.chimes.stasis"
+      },
+      {
+        "key": "time-stasis-2",
+        "role": "rune",
+        "at": 10.239999999999998,
+        "variant": 0,
+        "gain": 0.45,
+        "source": "timeDomain.chimes.stasis"
+      },
+      {
+        "key": "time-stasis-3",
+        "role": "rune",
+        "at": 11.299999999999999,
+        "variant": 1,
+        "gain": 0.45,
+        "source": "timeDomain.chimes.stasis"
+      },
+      {
+        "key": "anticipation",
+        "role": "riser",
+        "at": 11.7,
+        "variant": 3,
+        "gain": 1,
+        "priority": 85,
+        "source": "audio-only anticipation of existing impact; does not change VFX"
+      },
+      {
+        "key": "finale",
+        "role": "impact",
+        "at": 12.5,
+        "variant": 0,
+        "gain": 0.7,
+        "priority": 100,
+        "source": "cinematicPlans.impactAt / VFX hit-stop callback"
+      },
+      {
+        "key": "pressure-0",
+        "role": "shockwave",
+        "at": 12.5,
+        "variant": 1,
+        "gain": 0.5,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "pressure-1",
+        "role": "shockwave",
+        "at": 12.69,
+        "variant": 2,
+        "gain": 0.36,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "pressure-2",
+        "role": "shockwave",
+        "at": 12.88,
+        "variant": 3,
+        "gain": 0.2592,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "decay",
+        "role": "aftermath",
+        "at": 12.95,
+        "variant": 0,
+        "gain": 1,
+        "source": "audio tail follows existing aftermath; truncated by cleanup"
+      },
+      {
+        "key": "time-catchup",
+        "role": "secondary",
+        "at": 13.3,
+        "variant": 2,
+        "gain": 0.5,
+        "pitch": 1.7,
+        "source": "shell crackDuration + domain release"
+      }
+    ],
+    "timeControls": [
+      {
+        "at": 11.9,
+        "type": "pre",
+        "duration": 0.6,
+        "scale": 0.5
+      },
+      {
+        "at": 12.5,
+        "type": "freeze",
+        "duration": 0.07,
+        "postScale": 0.62,
+        "postDuration": 0.28
+      }
+    ],
+    "ideas": [
+      {
+        "idea": "Rune cộng hưởng theo cấp của Vĩnh Hằng Chung Khúc",
+        "implemented": true,
+        "method": "actual tower progress → tier note; seeded modal frequency"
+      },
+      {
+        "idea": "Đường chuyển động eternalRequiem có cue riêng",
+        "implemented": true,
+        "method": "existing waves/beat/descent markers; gain/pitch/round robin"
+      },
+      {
+        "idea": "Trường âm TIME trải trên AOE",
+        "implemented": true,
+        "method": "regional clusters within actual AOE and stereo-linked dry/wet; mono-safe core"
+      },
+      {
+        "idea": "Đọc lại mọi va chạm GPU để phát từng hạt",
+        "implemented": false,
+        "reason": "No GPU collision event readback; would stall rendering and produce excessive voices. Cluster at known wave markers instead."
+      }
+    ]
+  },
+  {
+    "id": "BLOOD-01",
+    "name": "Vạn Huyết Thiên Thượng",
+    "element": "BLOOD",
+    "identity": {
+      "base": 92,
+      "material": "viscous",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.31,
+        2.43,
+        3.82
+      ],
+      "cutoff": 2400,
+      "room": "cave",
+      "keywords": "sệt · nhịp · ẩm · căng",
+      "bass": 0.85
+    },
+    "chargePace": 1,
+    "channelDuration": 0.84,
+    "impact": 12.72,
+    "end": 17.4,
+    "fadeAt": 14.55,
+    "hitstop": 0.12,
+    "preSlow": 0.62,
+    "shake": 1.42,
+    "events": [
+      {
+        "key": "release",
+        "role": "casting",
+        "at": 0,
+        "variant": 0,
+        "gain": 1,
+        "source": "main.js channel→active"
+      },
+      {
+        "key": "formation-motion",
+        "role": "motion",
+        "at": 0.02,
+        "variant": 1,
+        "gain": 1,
+        "source": "main.js animateRelease"
+      },
+      {
+        "key": "wave-0",
+        "role": "material",
+        "at": 4.65,
+        "variant": 2,
+        "gain": 0.35,
+        "pitch": 1,
+        "density": 1,
+        "source": "bloodChainNet.waves[0].start",
+        "region": true
+      },
+      {
+        "key": "wave-detail-0",
+        "role": "secondary",
+        "at": 4.812,
+        "variant": 3,
+        "gain": 0.39,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "wave-1",
+        "role": "material",
+        "at": 6.05,
+        "variant": 0,
+        "gain": 0.45,
+        "pitch": 1.025,
+        "density": 2,
+        "source": "bloodChainNet.waves[1].start",
+        "region": true
+      },
+      {
+        "key": "wave-detail-1",
+        "role": "secondary",
+        "at": 6.218,
+        "variant": 1,
+        "gain": 0.48,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "wave-2",
+        "role": "material",
+        "at": 7.5,
+        "variant": 2,
+        "gain": 0.55,
+        "pitch": 1.05,
+        "density": 3,
+        "source": "bloodChainNet.waves[2].start",
+        "region": true
+      },
+      {
+        "key": "wave-detail-2",
+        "role": "secondary",
+        "at": 7.6725,
+        "variant": 3,
+        "gain": 0.5700000000000001,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "wave-3",
+        "role": "material",
+        "at": 8.95,
+        "variant": 0,
+        "gain": 0.65,
+        "pitch": 1.075,
+        "density": 4,
+        "source": "bloodChainNet.waves[3].start",
+        "region": true
+      },
+      {
+        "key": "wave-detail-3",
+        "role": "secondary",
+        "at": 9.126999999999999,
+        "variant": 1,
+        "gain": 0.66,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "wave-4",
+        "role": "material",
+        "at": 10.45,
+        "variant": 2,
+        "gain": 0.75,
+        "pitch": 1.1,
+        "density": 5,
+        "source": "bloodChainNet.waves[4].start",
+        "region": true
+      },
+      {
+        "key": "wave-detail-4",
+        "role": "secondary",
+        "at": 10.626999999999999,
+        "variant": 3,
+        "gain": 0.75,
+        "source": "cluster near wave emission, not individual GPU collision",
+        "region": true,
+        "domain": true
+      },
+      {
+        "key": "anticipation",
+        "role": "riser",
+        "at": 11.92,
+        "variant": 0,
+        "gain": 1,
+        "priority": 85,
+        "source": "audio-only anticipation of existing impact; does not change VFX"
+      },
+      {
+        "key": "finale",
+        "role": "impact",
+        "at": 12.72,
+        "variant": 1,
+        "gain": 1,
+        "priority": 100,
+        "source": "cinematicPlans.impactAt / VFX hit-stop callback"
+      },
+      {
+        "key": "pressure-0",
+        "role": "shockwave",
+        "at": 12.72,
+        "variant": 2,
+        "gain": 0.5,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "pressure-1",
+        "role": "shockwave",
+        "at": 12.91,
+        "variant": 3,
+        "gain": 0.36,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "pressure-2",
+        "role": "shockwave",
+        "at": 13.100000000000001,
+        "variant": 0,
+        "gain": 0.2592,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "decay",
+        "role": "aftermath",
+        "at": 13.17,
+        "variant": 0,
+        "gain": 1,
+        "source": "audio tail follows existing aftermath; truncated by cleanup"
+      },
+      {
+        "key": "aftershock-0",
+        "role": "secondary",
+        "at": 13.34,
+        "variant": 1,
+        "gain": 0.5,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "aftershock-1",
+        "role": "secondary",
+        "at": 13.66,
+        "variant": 2,
+        "gain": 0.275,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "aftershock-2",
+        "role": "secondary",
+        "at": 13.98,
+        "variant": 3,
+        "gain": 0.15125000000000002,
+        "source": "existing module aftershock array",
+        "region": true
+      }
+    ],
+    "timeControls": [
+      {
+        "at": 12.100000000000001,
+        "type": "pre",
+        "duration": 0.62,
+        "scale": 0.32
+      },
+      {
+        "at": 12.72,
+        "type": "freeze",
+        "duration": 0.12,
+        "postScale": 0.5,
+        "postDuration": 0.72
+      }
+    ],
+    "ideas": [
+      {
+        "idea": "Rune cộng hưởng theo cấp của Vạn Huyết Thiên Thượng",
+        "implemented": true,
+        "method": "actual tower progress → tier note; seeded modal frequency"
+      },
+      {
+        "idea": "Độ dày tăng theo 5 đợt thật",
+        "implemented": true,
+        "method": "existing waves/beat/descent markers; gain/pitch/round robin"
+      },
+      {
+        "idea": "Trường âm BLOOD trải trên AOE",
+        "implemented": true,
+        "method": "regional clusters within actual AOE and stereo-linked dry/wet; mono-safe core"
+      },
+      {
+        "idea": "Đọc lại mọi va chạm GPU để phát từng hạt",
+        "implemented": false,
+        "reason": "No GPU collision event readback; would stall rendering and produce excessive voices. Cluster at known wave markers instead."
+      }
+    ]
+  },
+  {
+    "id": "ASTRAL-01",
+    "name": "Vạn Tinh Quy Nhất",
+    "element": "ASTRAL",
+    "identity": {
+      "base": 392,
+      "material": "stars",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.5,
+        2,
+        2.5,
+        4
+      ],
+      "cutoff": 6900,
+      "room": "void",
+      "keywords": "tinh quang · quỹ đạo · ngân · bụi",
+      "bass": 0.7
+    },
+    "chargePace": 1.02,
+    "channelDuration": 0.8452,
+    "impact": 2.19,
+    "end": 9.82,
+    "fadeAt": 6.3100000000000005,
+    "hitstop": 0.125,
+    "preSlow": 0.38,
+    "shake": 0.82,
+    "events": [
+      {
+        "key": "release",
+        "role": "casting",
+        "at": 0,
+        "variant": 0,
+        "gain": 1,
+        "source": "main.js channel→active"
+      },
+      {
+        "key": "formation-motion",
+        "role": "motion",
+        "at": 0.02,
+        "variant": 1,
+        "gain": 1,
+        "source": "main.js animateRelease"
+      },
+      {
+        "key": "anticipation",
+        "role": "riser",
+        "at": 1.39,
+        "variant": 2,
+        "gain": 1,
+        "priority": 85,
+        "source": "audio-only anticipation of existing impact; does not change VFX"
+      },
+      {
+        "key": "finale",
+        "role": "impact",
+        "at": 2.19,
+        "variant": 3,
+        "gain": 1,
+        "priority": 100,
+        "source": "cinematicPlans.impactAt / VFX hit-stop callback"
+      },
+      {
+        "key": "pressure-0",
+        "role": "shockwave",
+        "at": 2.19,
+        "variant": 0,
+        "gain": 0.5,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "pressure-1",
+        "role": "shockwave",
+        "at": 2.38,
+        "variant": 1,
+        "gain": 0.36,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "pressure-2",
+        "role": "shockwave",
+        "at": 2.57,
+        "variant": 2,
+        "gain": 0.2592,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "decay",
+        "role": "aftermath",
+        "at": 2.64,
+        "variant": 2,
+        "gain": 1,
+        "source": "audio tail follows existing aftermath; truncated by cleanup"
+      },
+      {
+        "key": "aftershock-0",
+        "role": "secondary",
+        "at": 2.81,
+        "variant": 3,
+        "gain": 0.5,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "aftershock-1",
+        "role": "secondary",
+        "at": 3.13,
+        "variant": 0,
+        "gain": 0.275,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "aftershock-2",
+        "role": "secondary",
+        "at": 3.45,
+        "variant": 1,
+        "gain": 0.15125000000000002,
+        "source": "existing module aftershock array",
+        "region": true
+      }
+    ],
+    "timeControls": [
+      {
+        "at": 1.81,
+        "type": "pre",
+        "duration": 0.38,
+        "scale": 0.32999999999999996
+      },
+      {
+        "at": 2.19,
+        "type": "freeze",
+        "duration": 0.125,
+        "postScale": 0.54,
+        "postDuration": 0.86
+      }
+    ],
+    "ideas": [
+      {
+        "idea": "Rune cộng hưởng theo cấp của Vạn Tinh Quy Nhất",
+        "implemented": true,
+        "method": "actual tower progress → tier note; seeded modal frequency"
+      },
+      {
+        "idea": "Đường chuyển động astralConvergence có cue riêng",
+        "implemented": true,
+        "method": "existing waves/beat/descent markers; gain/pitch/round robin"
+      },
+      {
+        "idea": "Trường âm ASTRAL trải trên AOE",
+        "implemented": true,
+        "method": "regional clusters within actual AOE and stereo-linked dry/wet; mono-safe core"
+      },
+      {
+        "idea": "Đọc lại mọi va chạm GPU để phát từng hạt",
+        "implemented": false,
+        "reason": "No GPU collision event readback; would stall rendering and produce excessive voices. Cluster at known wave markers instead."
+      }
+    ]
+  },
+  {
+    "id": "ASTRAL-02",
+    "name": "Tinh Hà Tận Thế",
+    "element": "ASTRAL",
+    "identity": {
+      "base": 392,
+      "material": "stars",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.5,
+        2,
+        2.5,
+        4
+      ],
+      "cutoff": 6900,
+      "room": "void",
+      "keywords": "tinh quang · quỹ đạo · ngân · bụi",
+      "bass": 0.7
+    },
+    "chargePace": 1.16,
+    "channelDuration": 0.8815999999999999,
+    "impact": 1.95,
+    "end": 9.96,
+    "fadeAt": 6.710000000000001,
+    "hitstop": 0.075,
+    "preSlow": 0.24,
+    "shake": 0.82,
+    "events": [
+      {
+        "key": "release",
+        "role": "casting",
+        "at": 0,
+        "variant": 0,
+        "gain": 1,
+        "source": "main.js channel→active"
+      },
+      {
+        "key": "formation-motion",
+        "role": "motion",
+        "at": 0.02,
+        "variant": 1,
+        "gain": 1,
+        "source": "main.js animateRelease"
+      },
+      {
+        "key": "anticipation",
+        "role": "riser",
+        "at": 1.15,
+        "variant": 2,
+        "gain": 1,
+        "priority": 85,
+        "source": "audio-only anticipation of existing impact; does not change VFX"
+      },
+      {
+        "key": "finale",
+        "role": "impact",
+        "at": 1.95,
+        "variant": 3,
+        "gain": 1,
+        "priority": 100,
+        "source": "cinematicPlans.impactAt / VFX hit-stop callback"
+      },
+      {
+        "key": "pressure-0",
+        "role": "shockwave",
+        "at": 1.95,
+        "variant": 0,
+        "gain": 0.5,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "pressure-1",
+        "role": "shockwave",
+        "at": 2.14,
+        "variant": 1,
+        "gain": 0.36,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "pressure-2",
+        "role": "shockwave",
+        "at": 2.33,
+        "variant": 2,
+        "gain": 0.2592,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "decay",
+        "role": "aftermath",
+        "at": 2.4,
+        "variant": 2,
+        "gain": 1,
+        "source": "audio tail follows existing aftermath; truncated by cleanup"
+      },
+      {
+        "key": "aftershock-0",
+        "role": "secondary",
+        "at": 2.57,
+        "variant": 3,
+        "gain": 0.5,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "aftershock-1",
+        "role": "secondary",
+        "at": 2.8899999999999997,
+        "variant": 0,
+        "gain": 0.275,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "aftershock-2",
+        "role": "secondary",
+        "at": 3.21,
+        "variant": 1,
+        "gain": 0.15125000000000002,
+        "source": "existing module aftershock array",
+        "region": true
+      }
+    ],
+    "timeControls": [
+      {
+        "at": 1.71,
+        "type": "pre",
+        "duration": 0.24,
+        "scale": 0.24
+      },
+      {
+        "at": 1.95,
+        "type": "freeze",
+        "duration": 0.075,
+        "postScale": 0.38,
+        "postDuration": 0.5
+      }
+    ],
+    "ideas": [
+      {
+        "idea": "Rune cộng hưởng theo cấp của Tinh Hà Tận Thế",
+        "implemented": true,
+        "method": "actual tower progress → tier note; seeded modal frequency"
+      },
+      {
+        "idea": "Đường chuyển động celestialArmageddon có cue riêng",
+        "implemented": true,
+        "method": "existing waves/beat/descent markers; gain/pitch/round robin"
+      },
+      {
+        "idea": "Trường âm ASTRAL trải trên AOE",
+        "implemented": true,
+        "method": "regional clusters within actual AOE and stereo-linked dry/wet; mono-safe core"
+      },
+      {
+        "idea": "Đọc lại mọi va chạm GPU để phát từng hạt",
+        "implemented": false,
+        "reason": "No GPU collision event readback; would stall rendering and produce excessive voices. Cluster at known wave markers instead."
+      }
+    ]
+  },
+  {
+    "id": "ASTRAL-03",
+    "name": "Sáng Thế Tinh Vực",
+    "element": "ASTRAL",
+    "identity": {
+      "base": 392,
+      "material": "stars",
+      "noise": "blue",
+      "modes": [
+        1,
+        1.5,
+        2,
+        2.5,
+        4
+      ],
+      "cutoff": 6900,
+      "room": "void",
+      "keywords": "tinh quang · quỹ đạo · ngân · bụi",
+      "bass": 0.7
+    },
+    "chargePace": 0.88,
+    "channelDuration": 0.8088,
+    "impact": 2.27,
+    "end": 9.680000000000001,
+    "fadeAt": 4.620000000000001,
+    "hitstop": 0.1,
+    "preSlow": 0.31,
+    "shake": 0.68,
+    "events": [
+      {
+        "key": "release",
+        "role": "casting",
+        "at": 0,
+        "variant": 0,
+        "gain": 1,
+        "source": "main.js channel→active"
+      },
+      {
+        "key": "formation-motion",
+        "role": "motion",
+        "at": 0.02,
+        "variant": 1,
+        "gain": 1,
+        "source": "main.js animateRelease"
+      },
+      {
+        "key": "anticipation",
+        "role": "riser",
+        "at": 1.47,
+        "variant": 2,
+        "gain": 1,
+        "priority": 85,
+        "source": "audio-only anticipation of existing impact; does not change VFX"
+      },
+      {
+        "key": "finale",
+        "role": "impact",
+        "at": 2.27,
+        "variant": 3,
+        "gain": 1,
+        "priority": 100,
+        "source": "cinematicPlans.impactAt / VFX hit-stop callback"
+      },
+      {
+        "key": "pressure-0",
+        "role": "shockwave",
+        "at": 2.27,
+        "variant": 0,
+        "gain": 0.5,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "pressure-1",
+        "role": "shockwave",
+        "at": 2.46,
+        "variant": 1,
+        "gain": 0.36,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "pressure-2",
+        "role": "shockwave",
+        "at": 2.65,
+        "variant": 2,
+        "gain": 0.2592,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "decay",
+        "role": "aftermath",
+        "at": 2.72,
+        "variant": 2,
+        "gain": 1,
+        "source": "audio tail follows existing aftermath; truncated by cleanup"
+      },
+      {
+        "key": "aftershock-0",
+        "role": "secondary",
+        "at": 2.89,
+        "variant": 3,
+        "gain": 0.5,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "aftershock-1",
+        "role": "secondary",
+        "at": 3.21,
+        "variant": 0,
+        "gain": 0.275,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "aftershock-2",
+        "role": "secondary",
+        "at": 3.5300000000000002,
+        "variant": 1,
+        "gain": 0.15125000000000002,
+        "source": "existing module aftershock array",
+        "region": true
+      }
+    ],
+    "timeControls": [
+      {
+        "at": 1.96,
+        "type": "pre",
+        "duration": 0.31,
+        "scale": 0.285
+      },
+      {
+        "at": 2.27,
+        "type": "freeze",
+        "duration": 0.1,
+        "postScale": 0.46,
+        "postDuration": 0.6799999999999999
+      }
+    ],
+    "ideas": [
+      {
+        "idea": "Rune cộng hưởng theo cấp của Sáng Thế Tinh Vực",
+        "implemented": true,
+        "method": "actual tower progress → tier note; seeded modal frequency"
+      },
+      {
+        "idea": "Đường chuyển động galaxyGenesis có cue riêng",
+        "implemented": true,
+        "method": "existing waves/beat/descent markers; gain/pitch/round robin"
+      },
+      {
+        "idea": "Trường âm ASTRAL trải trên AOE",
+        "implemented": true,
+        "method": "regional clusters within actual AOE and stereo-linked dry/wet; mono-safe core"
+      },
+      {
+        "idea": "Đọc lại mọi va chạm GPU để phát từng hạt",
+        "implemented": false,
+        "reason": "No GPU collision event readback; would stall rendering and produce excessive voices. Cluster at known wave markers instead."
+      }
+    ]
+  },
+  {
+    "id": "NATURE-01",
+    "name": "Vạn Mộc Sinh Giới",
+    "element": "NATURE",
+    "identity": {
+      "base": 146,
+      "material": "wood",
+      "noise": "brown",
+      "modes": [
+        1,
+        1.57,
+        2.83,
+        4.36
+      ],
+      "cutoff": 3900,
+      "room": "arena",
+      "keywords": "gỗ · lá · hạt · sinh trưởng",
+      "bass": 0.75
+    },
+    "chargePace": 1.06,
+    "channelDuration": 0.8555999999999999,
+    "impact": 7.2,
+    "end": 18,
+    "fadeAt": 14,
+    "hitstop": 0.045,
+    "preSlow": 0.22,
+    "shake": 0.42,
+    "events": [
+      {
+        "key": "release",
+        "role": "casting",
+        "at": 0,
+        "variant": 0,
+        "gain": 1,
+        "source": "main.js channel→active"
+      },
+      {
+        "key": "formation-motion",
+        "role": "motion",
+        "at": 0.02,
+        "variant": 1,
+        "gain": 1,
+        "source": "main.js animateRelease"
+      },
+      {
+        "key": "growth-0",
+        "role": "material",
+        "at": 0.65,
+        "variant": 2,
+        "gain": 0.45,
+        "source": "nature-growth birth waves"
+      },
+      {
+        "key": "growth-1",
+        "role": "material",
+        "at": 1.9,
+        "variant": 3,
+        "gain": 0.5700000000000001,
+        "source": "nature-growth birth waves"
+      },
+      {
+        "key": "growth-2",
+        "role": "material",
+        "at": 2.9,
+        "variant": 0,
+        "gain": 0.69,
+        "source": "nature-growth birth waves"
+      },
+      {
+        "key": "growth-3",
+        "role": "material",
+        "at": 3.8,
+        "variant": 1,
+        "gain": 0.81,
+        "source": "nature-growth birth waves"
+      },
+      {
+        "key": "forest-strike-0",
+        "role": "motion",
+        "at": 5.6,
+        "variant": 2,
+        "gain": 0.5,
+        "region": true,
+        "source": "clustered root/branch/seed attack phase"
+      },
+      {
+        "key": "anticipation",
+        "role": "riser",
+        "at": 6.4,
+        "variant": 2,
+        "gain": 1,
+        "priority": 85,
+        "source": "audio-only anticipation of existing impact; does not change VFX"
+      },
+      {
+        "key": "forest-strike-1",
+        "role": "secondary",
+        "at": 6.47,
+        "variant": 3,
+        "gain": 0.5,
+        "region": true,
+        "source": "clustered root/branch/seed attack phase"
+      },
+      {
+        "key": "finale",
+        "role": "impact",
+        "at": 7.2,
+        "variant": 3,
+        "gain": 1,
+        "priority": 100,
+        "source": "cinematicPlans.impactAt / VFX hit-stop callback"
+      },
+      {
+        "key": "pressure-0",
+        "role": "shockwave",
+        "at": 7.2,
+        "variant": 0,
+        "gain": 0.5,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "forest-strike-2",
+        "role": "secondary",
+        "at": 7.34,
+        "variant": 0,
+        "gain": 0.5,
+        "region": true,
+        "source": "clustered root/branch/seed attack phase"
+      },
+      {
+        "key": "pressure-1",
+        "role": "shockwave",
+        "at": 7.390000000000001,
+        "variant": 1,
+        "gain": 0.36,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "pressure-2",
+        "role": "shockwave",
+        "at": 7.58,
+        "variant": 2,
+        "gain": 0.2592,
+        "source": "main.js makeImpactSuite waves delay",
+        "region": true
+      },
+      {
+        "key": "decay",
+        "role": "aftermath",
+        "at": 7.65,
+        "variant": 2,
+        "gain": 1,
+        "source": "audio tail follows existing aftermath; truncated by cleanup"
+      },
+      {
+        "key": "aftershock-0",
+        "role": "secondary",
+        "at": 7.82,
+        "variant": 3,
+        "gain": 0.5,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "aftershock-1",
+        "role": "secondary",
+        "at": 8.14,
+        "variant": 0,
+        "gain": 0.275,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "forest-strike-3",
+        "role": "motion",
+        "at": 8.209999999999999,
+        "variant": 1,
+        "gain": 0.5,
+        "region": true,
+        "source": "clustered root/branch/seed attack phase"
+      },
+      {
+        "key": "aftershock-2",
+        "role": "secondary",
+        "at": 8.46,
+        "variant": 1,
+        "gain": 0.15125000000000002,
+        "source": "existing module aftershock array",
+        "region": true
+      },
+      {
+        "key": "forest-strike-4",
+        "role": "secondary",
+        "at": 9.08,
+        "variant": 2,
+        "gain": 0.5,
+        "region": true,
+        "source": "clustered root/branch/seed attack phase"
+      },
+      {
+        "key": "forest-strike-5",
+        "role": "secondary",
+        "at": 9.95,
+        "variant": 3,
+        "gain": 0.5,
+        "region": true,
+        "source": "clustered root/branch/seed attack phase"
+      },
+      {
+        "key": "forest-strike-6",
+        "role": "motion",
+        "at": 10.82,
+        "variant": 0,
+        "gain": 0.5,
+        "region": true,
+        "source": "clustered root/branch/seed attack phase"
+      },
+      {
+        "key": "forest-strike-7",
+        "role": "secondary",
+        "at": 11.69,
+        "variant": 1,
+        "gain": 0.5,
+        "region": true,
+        "source": "clustered root/branch/seed attack phase"
+      }
+    ],
+    "timeControls": [
+      {
+        "at": 6.98,
+        "type": "pre",
+        "duration": 0.22,
+        "scale": 0.65
+      },
+      {
+        "at": 7.2,
+        "type": "freeze",
+        "duration": 0.045,
+        "postScale": 0.75,
+        "postDuration": 0.22
+      }
+    ],
+    "ideas": [
+      {
+        "idea": "Rune cộng hưởng theo cấp của Vạn Mộc Sinh Giới",
+        "implemented": true,
+        "method": "actual tower progress → tier note; seeded modal frequency"
+      },
+      {
+        "idea": "Đường chuyển động verdantGenesis có cue riêng",
+        "implemented": true,
+        "method": "existing waves/beat/descent markers; gain/pitch/round robin"
+      },
+      {
+        "idea": "Trường âm NATURE trải trên AOE",
+        "implemented": true,
+        "method": "regional clusters within actual AOE and stereo-linked dry/wet; mono-safe core"
+      },
+      {
+        "idea": "Đọc lại mọi va chạm GPU để phát từng hạt",
+        "implemented": false,
+        "reason": "No GPU collision event readback; would stall rendering and produce excessive voices. Cluster at known wave markers instead."
+      }
+    ]
+  }
+]

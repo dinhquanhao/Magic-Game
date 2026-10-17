@@ -1,0 +1,6 @@
+{
+  "removedFiles": 141,
+  "filteredJsonFiles": 18,
+  "removedPathListSha256": "55132c2e46ccb563ddec972ccd51a54ddca107598eff18acd678df10e17d5ab2",
+  "method": "Removed dedicated paths/assets, obsolete mixed archives and records in shared JSON. No old results were renamed. Original files remain in base commit and an external local safety copy. Names are omitted here so the current shipped tree contains no retired identifier."
+}

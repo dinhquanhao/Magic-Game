@@ -1,0 +1,94 @@
+{
+  "passed": true,
+  "production": true,
+  "sourceInterception": false,
+  "interactiveLivePreview": false,
+  "videoAudioTrack": false,
+  "deviceScaleFactor": 0.75,
+  "errors": [],
+  "warnings": [],
+  "captures": [
+    {
+      "file": "quarter.png",
+      "view": "quarter",
+      "phase": "VẼ PHÙ VĂN",
+      "help": "Góc chéo 3/4 · WASD di chuyển · trỏ chuột để ngắm · con lăn thu/phóng."
+    },
+    {
+      "file": "moba.png",
+      "view": "moba",
+      "phase": "VẼ PHÙ VĂN",
+      "help": "Rê sát mép hoặc kéo chuột giữa để pan · C về nhân vật · Y khóa/mở theo dõi · con lăn zoom."
+    },
+    {
+      "file": "moba-pan.png",
+      "view": "moba",
+      "phase": "VẼ PHÙ VĂN",
+      "help": "Rê sát mép hoặc kéo chuột giữa để pan · C về nhân vật · Y khóa/mở theo dõi · con lăn zoom."
+    },
+    {
+      "file": "moba-follow.png",
+      "view": "moba",
+      "phase": "VẼ PHÙ VĂN",
+      "help": "Rê sát mép hoặc kéo chuột giữa để pan · C về nhân vật · Y khóa/mở theo dõi · con lăn zoom."
+    },
+    {
+      "file": "first-person.png",
+      "view": "first-person",
+      "phase": "VẼ PHÙ VĂN",
+      "help": "Nhấp cảnh để khóa chuột hoặc giữ chuột phải để nhìn · Esc thả chuột · E thi triển."
+    },
+    {
+      "file": "orbit-2.png",
+      "view": "orbit",
+      "phase": "VẼ PHÙ VĂN",
+      "help": "Giữ chuột phải và kéo để xoay 360° quanh nhân vật · con lăn zoom · WASD di chuyển."
+    },
+    {
+      "file": "orbit-4.png",
+      "view": "orbit",
+      "phase": "VẼ PHÙ VĂN",
+      "help": "Giữ chuột phải và kéo để xoay 360° quanh nhân vật · con lăn zoom · WASD di chuyển."
+    },
+    {
+      "file": "orbit-6.png",
+      "view": "orbit",
+      "phase": "VẼ PHÙ VĂN",
+      "help": "Giữ chuột phải và kéo để xoay 360° quanh nhân vật · con lăn zoom · WASD di chuyển."
+    },
+    {
+      "file": "active-quarter.png",
+      "view": "quarter",
+      "phase": "TẠM DỪNG",
+      "help": "Góc chéo 3/4 · WASD di chuyển · trỏ chuột để ngắm · con lăn thu/phóng."
+    },
+    {
+      "file": "active-moba.png",
+      "view": "moba",
+      "phase": "TẠM DỪNG",
+      "help": "Rê sát mép hoặc kéo chuột giữa để pan · C về nhân vật · Y khóa/mở theo dõi · con lăn zoom."
+    },
+    {
+      "file": "active-first-person.png",
+      "view": "first-person",
+      "phase": "TẠM DỪNG",
+      "help": "Nhấp cảnh để khóa chuột hoặc giữ chuột phải để nhìn · Esc thả chuột · E thi triển."
+    },
+    {
+      "file": "active-orbit.png",
+      "view": "orbit",
+      "phase": "TẠM DỪNG",
+      "help": "Giữ chuột phải và kéo để xoay 360° quanh nhân vật · con lăn zoom · WASD di chuyển."
+    },
+    {
+      "file": "returned.png",
+      "view": "quarter",
+      "phase": "VẼ PHÙ VĂN",
+      "help": "Góc chéo 3/4 · WASD di chuyển · trỏ chuột để ngắm · con lăn thu/phóng."
+    }
+  ],
+  "sourceCommit": "c0e5dd2a0eaf89349476bbca2789d7d8216961f4",
+  "sourceDirty": true,
+  "syntheticEscapeNotAutomated": true,
+  "pointerLockExitApiVerified": true
+}

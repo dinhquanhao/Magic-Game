@@ -1,7 +1,7 @@
 CÁCH KHỞI CHẠY
 
 1. Nhấp đúp START.bat trên Windows.
-2. Cần cài Node.js phiên bản hỗ trợ dài hạn.
+2. Cài Node.js bản LTS hiện tại tại https://nodejs.org/ (Vite 7 cần Node 20.19+, 22.12+ hoặc bản mới hơn được hỗ trợ).
 3. Lần đầu chạy, chương trình sẽ cài thư viện cần thiết rồi mở máy chủ trên một cổng nội bộ còn trống.
 4. Dùng bảng điều khiển bên phải để chỉnh Tháp Phù Văn, số tầng, số vòng, màu sắc, góc nhìn và tốc độ.
 5. Đóng cửa sổ dòng lệnh hoặc nhấn Ctrl+C để dừng chương trình.

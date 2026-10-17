@@ -1,0 +1,896 @@
+{
+  "passed": false,
+  "errors": [],
+  "warnings": [],
+  "checks": {
+    "menu": [
+      {
+        "value": "quarter",
+        "text": "3/4"
+      },
+      {
+        "value": "moba",
+        "text": "TỰ DO — LoL"
+      },
+      {
+        "value": "first-person",
+        "text": "THỨ NHẤT"
+      },
+      {
+        "value": "orbit",
+        "text": "XOAY 360°"
+      },
+      {
+        "value": "follow",
+        "text": "THEO SAU"
+      }
+    ],
+    "quarterIdle": {
+      "skill": "FIRE-01",
+      "active": false,
+      "phase": null,
+      "time": null,
+      "areaRadius": null,
+      "vfxRadius": null,
+      "previewRadius": 18.75,
+      "camera": [
+        6.597923307533295,
+        8.595516288221624,
+        18.597923307533296
+      ],
+      "environmentId": "5ab418ef-5283-41e2-8fb5-ac0824d6c570",
+      "status": "ĐANG VẼ PHÙ VĂN",
+      "mana": 100,
+      "playMode": true,
+      "paused": false,
+      "contextLost": false,
+      "density": 1,
+      "debrisDensity": 1,
+      "runtimeDensityScale": 1,
+      "effectiveDensity": 1,
+      "render": {
+        "frame": 66,
+        "calls": 43,
+        "triangles": 24027,
+        "points": 0,
+        "lines": 186
+      },
+      "memory": {
+        "geometries": 25,
+        "textures": 14
+      },
+      "badTransforms": [],
+      "badPrograms": 0,
+      "glError": 0,
+      "graphics": {
+        "quality": "Low",
+        "features": {
+          "reflections": false,
+          "ao": false,
+          "volumetric": false,
+          "caustics": false,
+          "subsurface": false,
+          "motionBlur": false,
+          "dof": false,
+          "adaptive": false
+        },
+        "requestedFeatures": {
+          "reflections": false,
+          "ao": false,
+          "volumetric": false,
+          "caustics": false,
+          "subsurface": false,
+          "motionBlur": false,
+          "dof": false,
+          "adaptive": false
+        },
+        "autoReduced": [],
+        "averageFrameMs": 105.77271839273813,
+        "post": {
+          "ssr": false,
+          "gtao": false,
+          "ssao": false,
+          "dof": false,
+          "ssrTemporal": false,
+          "ssrResolution": "fallback IBL",
+          "maxTextures": 32,
+          "lastUpdateMs": 0,
+          "unavailable": []
+        },
+        "fields": {
+          "initialized": true,
+          "activeLights": 0,
+          "windStrength": 0,
+          "windTurbulence": 0,
+          "quality": "Low"
+        },
+        "grass": {
+          "quality": "Low",
+          "bladeInstances": 360,
+          "windAlpha": 0,
+          "initialized": true
+        },
+        "particleWind": {
+          "connectedMaterials": 0
+        },
+        "trackedMaterials": 21,
+        "estimatedRenderTargetBytes": 0,
+        "surfaceNature": 0
+      },
+      "feedback": "",
+      "view": {
+        "mode": "quarter",
+        "yaw": 0.7853981633974483,
+        "pitch": 0.68,
+        "distance": 12,
+        "fov": 52,
+        "follow": false,
+        "needsSnap": false,
+        "focus": [
+          0,
+          0,
+          12
+        ],
+        "pointer": [
+          0,
+          0
+        ],
+        "edge": [
+          0,
+          0
+        ]
+      },
+      "actor": [
+        0,
+        0,
+        12
+      ],
+      "actorYaw": 0,
+      "modelVisible": true,
+      "direction": [
+        -0.5498269422944411,
+        -0.6287930240184687,
+        -0.5498269422944413
+      ],
+      "hands": [
+        [
+          -0.5,
+          0.7799999999999999,
+          12
+        ],
+        [
+          0.5,
+          0.7799999999999999,
+          12
+        ]
+      ],
+      "headTop": 1.9799999999999998,
+      "worldActive": null,
+      "context": null,
+      "fov": 52
+    },
+    "mobaIdle": {
+      "skill": "FIRE-01",
+      "active": false,
+      "phase": null,
+      "time": null,
+      "areaRadius": null,
+      "vfxRadius": null,
+      "previewRadius": 18.75,
+      "camera": [
+        16.221594851913935,
+        33.76766273203993,
+        28.221594851913938
+      ],
+      "environmentId": "5ab418ef-5283-41e2-8fb5-ac0824d6c570",
+      "status": "ĐANG VẼ PHÙ VĂN",
+      "mana": 100,
+      "playMode": true,
+      "paused": false,
+      "contextLost": false,
+      "density": 1,
+      "debrisDensity": 1,
+      "runtimeDensityScale": 1,
+      "effectiveDensity": 1,
+      "render": {
+        "frame": 98,
+        "calls": 72,
+        "triangles": 26639,
+        "points": 0,
+        "lines": 194
+      },
+      "memory": {
+        "geometries": 54,
+        "textures": 14
+      },
+      "badTransforms": [],
+      "badPrograms": 0,
+      "glError": 0,
+      "graphics": {
+        "quality": "Low",
+        "features": {
+          "reflections": false,
+          "ao": false,
+          "volumetric": false,
+          "caustics": false,
+          "subsurface": false,
+          "motionBlur": false,
+          "dof": false,
+          "adaptive": false
+        },
+        "requestedFeatures": {
+          "reflections": false,
+          "ao": false,
+          "volumetric": false,
+          "caustics": false,
+          "subsurface": false,
+          "motionBlur": false,
+          "dof": false,
+          "adaptive": false
+        },
+        "autoReduced": [],
+        "averageFrameMs": 75.83601123271434,
+        "post": {
+          "ssr": false,
+          "gtao": false,
+          "ssao": false,
+          "dof": false,
+          "ssrTemporal": false,
+          "ssrResolution": "fallback IBL",
+          "maxTextures": 32,
+          "lastUpdateMs": 0,
+          "unavailable": []
+        },
+        "fields": {
+          "initialized": true,
+          "activeLights": 0,
+          "windStrength": 0,
+          "windTurbulence": 0,
+          "quality": "Low"
+        },
+        "grass": {
+          "quality": "Low",
+          "bladeInstances": 360,
+          "windAlpha": 0,
+          "initialized": true
+        },
+        "particleWind": {
+          "connectedMaterials": 0
+        },
+        "trackedMaterials": 21,
+        "estimatedRenderTargetBytes": 0,
+        "surfaceNature": 0
+      },
+      "feedback": "",
+      "view": {
+        "mode": "moba",
+        "yaw": 0.7853981633974483,
+        "pitch": 0.96,
+        "distance": 40,
+        "fov": 46,
+        "follow": false,
+        "needsSnap": false,
+        "focus": [
+          0,
+          0,
+          12
+        ],
+        "pointer": [
+          0,
+          0
+        ],
+        "edge": [
+          0,
+          0
+        ]
+      },
+      "actor": [
+        0,
+        0,
+        12
+      ],
+      "actorYaw": 0,
+      "modelVisible": true,
+      "direction": [
+        -0.4055398712978485,
+        -0.8191915683009983,
+        -0.4055398712978484
+      ],
+      "hands": [
+        [
+          -0.5,
+          0.7799999999999999,
+          12
+        ],
+        [
+          0.5,
+          0.7799999999999999,
+          12
+        ]
+      ],
+      "headTop": 1.9799999999999998,
+      "worldActive": null,
+      "context": null,
+      "fov": 46
+    },
+    "first-personIdle": {
+      "skill": "FIRE-01",
+      "active": false,
+      "phase": null,
+      "time": null,
+      "areaRadius": null,
+      "vfxRadius": null,
+      "previewRadius": 18.75,
+      "camera": [
+        0,
+        1.77,
+        11.76
+      ],
+      "environmentId": "5ab418ef-5283-41e2-8fb5-ac0824d6c570",
+      "status": "ĐANG VẼ PHÙ VĂN",
+      "mana": 100,
+      "playMode": true,
+      "paused": false,
+      "contextLost": false,
+      "density": 1,
+      "debrisDensity": 1,
+      "runtimeDensityScale": 1,
+      "effectiveDensity": 1,
+      "render": {
+        "frame": 130,
+        "calls": 39,
+        "triangles": 23835,
+        "points": 0,
+        "lines": 190
+      },
+      "memory": {
+        "geometries": 54,
+        "textures": 14
+      },
+      "badTransforms": [],
+      "badPrograms": 0,
+      "glError": 0,
+      "graphics": {
+        "quality": "Low",
+        "features": {
+          "reflections": false,
+          "ao": false,
+          "volumetric": false,
+          "caustics": false,
+          "subsurface": false,
+          "motionBlur": false,
+          "dof": false,
+          "adaptive": false
+        },
+        "requestedFeatures": {
+          "reflections": false,
+          "ao": false,
+          "volumetric": false,
+          "caustics": false,
+          "subsurface": false,
+          "motionBlur": false,
+          "dof": false,
+          "adaptive": false
+        },
+        "autoReduced": [],
+        "averageFrameMs": 50.052672619109174,
+        "post": {
+          "ssr": false,
+          "gtao": false,
+          "ssao": false,
+          "dof": false,
+          "ssrTemporal": false,
+          "ssrResolution": "fallback IBL",
+          "maxTextures": 32,
+          "lastUpdateMs": 0,
+          "unavailable": []
+        },
+        "fields": {
+          "initialized": true,
+          "activeLights": 0,
+          "windStrength": 0,
+          "windTurbulence": 0,
+          "quality": "Low"
+        },
+        "grass": {
+          "quality": "Low",
+          "bladeInstances": 360,
+          "windAlpha": 0,
+          "initialized": true
+        },
+        "particleWind": {
+          "connectedMaterials": 0
+        },
+        "trackedMaterials": 21,
+        "estimatedRenderTargetBytes": 0,
+        "surfaceNature": 0
+      },
+      "feedback": "",
+      "view": {
+        "mode": "first-person",
+        "yaw": 0,
+        "pitch": 0,
+        "distance": 0,
+        "fov": 75,
+        "follow": false,
+        "needsSnap": false,
+        "focus": [
+          0,
+          0,
+          12
+        ],
+        "pointer": [
+          0,
+          0
+        ],
+        "edge": [
+          0,
+          0
+        ]
+      },
+      "actor": [
+        0,
+        0,
+        12
+      ],
+      "actorYaw": 0,
+      "modelVisible": false,
+      "direction": [
+        -0.0,
+        -0.0,
+        -1
+      ],
+      "hands": [
+        [
+          -0.5,
+          0.7799999999999999,
+          12
+        ],
+        [
+          0.5,
+          0.7799999999999999,
+          12
+        ]
+      ],
+      "headTop": 1.9799999999999998,
+      "worldActive": null,
+      "context": null,
+      "fov": 75
+    },
+    "orbitIdle": {
+      "skill": "FIRE-01",
+      "active": false,
+      "phase": null,
+      "time": null,
+      "areaRadius": null,
+      "vfxRadius": null,
+      "previewRadius": 18.75,
+      "camera": [
+        0,
+        3.8266585776513784,
+        20.26507676947263
+      ],
+      "environmentId": "5ab418ef-5283-41e2-8fb5-ac0824d6c570",
+      "status": "ĐANG VẼ PHÙ VĂN",
+      "mana": 100,
+      "playMode": true,
+      "paused": false,
+      "contextLost": false,
+      "density": 1,
+      "debrisDensity": 1,
+      "runtimeDensityScale": 1,
+      "effectiveDensity": 1,
+      "render": {
+        "frame": 162,
+        "calls": 49,
+        "triangles": 24163,
+        "points": 0,
+        "lines": 187
+      },
+      "memory": {
+        "geometries": 54,
+        "textures": 14
+      },
+      "badTransforms": [],
+      "badPrograms": 0,
+      "glError": 0,
+      "graphics": {
+        "quality": "Low",
+        "features": {
+          "reflections": false,
+          "ao": false,
+          "volumetric": false,
+          "caustics": false,
+          "subsurface": false,
+          "motionBlur": false,
+          "dof": false,
+          "adaptive": false
+        },
+        "requestedFeatures": {
+          "reflections": false,
+          "ao": false,
+          "volumetric": false,
+          "caustics": false,
+          "subsurface": false,
+          "motionBlur": false,
+          "dof": false,
+          "adaptive": false
+        },
+        "autoReduced": [],
+        "averageFrameMs": 33.05203763644212,
+        "post": {
+          "ssr": false,
+          "gtao": false,
+          "ssao": false,
+          "dof": false,
+          "ssrTemporal": false,
+          "ssrResolution": "fallback IBL",
+          "maxTextures": 32,
+          "lastUpdateMs": 0,
+          "unavailable": []
+        },
+        "fields": {
+          "initialized": true,
+          "activeLights": 0,
+          "windStrength": 0,
+          "windTurbulence": 0,
+          "quality": "Low"
+        },
+        "grass": {
+          "quality": "Low",
+          "bladeInstances": 360,
+          "windAlpha": 0,
+          "initialized": true
+        },
+        "particleWind": {
+          "connectedMaterials": 0
+        },
+        "trackedMaterials": 21,
+        "estimatedRenderTargetBytes": 0,
+        "surfaceNature": 0
+      },
+      "feedback": "",
+      "view": {
+        "mode": "orbit",
+        "yaw": 0,
+        "pitch": 0.28,
+        "distance": 8.6,
+        "fov": 58,
+        "follow": false,
+        "needsSnap": false,
+        "focus": [
+          0,
+          0,
+          12
+        ],
+        "pointer": [
+          0,
+          0
+        ],
+        "edge": [
+          0,
+          0
+        ]
+      },
+      "actor": [
+        0,
+        0,
+        12
+      ],
+      "actorYaw": 0,
+      "modelVisible": true,
+      "direction": [
+        -0.0,
+        -0.2763556485641138,
+        -0.9610554383107711
+      ],
+      "hands": [
+        [
+          -0.5,
+          0.7799999999999999,
+          12
+        ],
+        [
+          0.5,
+          0.7799999999999999,
+          12
+        ]
+      ],
+      "headTop": 1.9799999999999998,
+      "worldActive": null,
+      "context": null,
+      "fov": 58
+    },
+    "followIdle": {
+      "skill": "FIRE-01",
+      "active": false,
+      "phase": null,
+      "time": null,
+      "areaRadius": null,
+      "vfxRadius": null,
+      "previewRadius": 18.75,
+      "camera": [
+        0,
+        3.326774758495476,
+        20.392718064243205
+      ],
+      "environmentId": "5ab418ef-5283-41e2-8fb5-ac0824d6c570",
+      "status": "ĐANG VẼ PHÙ VĂN",
+      "mana": 100,
+      "playMode": true,
+      "paused": false,
+      "contextLost": false,
+      "density": 1,
+      "debrisDensity": 1,
+      "runtimeDensityScale": 1,
+      "effectiveDensity": 1,
+      "render": {
+        "frame": 194,
+        "calls": 49,
+        "triangles": 24163,
+        "points": 0,
+        "lines": 187
+      },
+      "memory": {
+        "geometries": 54,
+        "textures": 14
+      },
+      "badTransforms": [],
+      "badPrograms": 0,
+      "glError": 0,
+      "graphics": {
+        "quality": "Low",
+        "features": {
+          "reflections": false,
+          "ao": false,
+          "volumetric": false,
+          "caustics": false,
+          "subsurface": false,
+          "motionBlur": false,
+          "dof": false,
+          "adaptive": false
+        },
+        "requestedFeatures": {
+          "reflections": false,
+          "ao": false,
+          "volumetric": false,
+          "caustics": false,
+          "subsurface": false,
+          "motionBlur": false,
+          "dof": false,
+          "adaptive": false
+        },
+        "autoReduced": [],
+        "averageFrameMs": 17.036229914601925,
+        "post": {
+          "ssr": false,
+          "gtao": false,
+          "ssao": false,
+          "dof": false,
+          "ssrTemporal": false,
+          "ssrResolution": "fallback IBL",
+          "maxTextures": 32,
+          "lastUpdateMs": 0,
+          "unavailable": []
+        },
+        "fields": {
+          "initialized": true,
+          "activeLights": 0,
+          "windStrength": 0,
+          "windTurbulence": 0,
+          "quality": "Low"
+        },
+        "grass": {
+          "quality": "Low",
+          "bladeInstances": 360,
+          "windAlpha": 0,
+          "initialized": true
+        },
+        "particleWind": {
+          "connectedMaterials": 0
+        },
+        "trackedMaterials": 21,
+        "estimatedRenderTargetBytes": 0,
+        "surfaceNature": 0
+      },
+      "feedback": "",
+      "view": {
+        "mode": "follow",
+        "yaw": 0,
+        "pitch": 0.22,
+        "distance": 8.6,
+        "fov": 58,
+        "follow": false,
+        "needsSnap": false,
+        "focus": [
+          0,
+          0,
+          12
+        ],
+        "pointer": [
+          0,
+          0
+        ],
+        "edge": [
+          0,
+          0
+        ]
+      },
+      "actor": [
+        0,
+        0,
+        12
+      ],
+      "actorYaw": 0,
+      "modelVisible": true,
+      "direction": [
+        -0.0,
+        -0.21822962308086935,
+        -0.9758974493306055
+      ],
+      "hands": [
+        [
+          -0.5,
+          0.7799999999999999,
+          12
+        ],
+        [
+          0.5,
+          0.7799999999999999,
+          12
+        ]
+      ],
+      "headTop": 1.9799999999999998,
+      "worldActive": null,
+      "context": null,
+      "fov": 58
+    },
+    "orbitIndependentOfMovement": {
+      "skill": "FIRE-01",
+      "active": false,
+      "phase": null,
+      "time": null,
+      "areaRadius": null,
+      "vfxRadius": null,
+      "previewRadius": 18.75,
+      "camera": [
+        4.127154652154647,
+        3.8266585776513784,
+        12.000056123217028
+      ],
+      "environmentId": "5ab418ef-5283-41e2-8fb5-ac0824d6c570",
+      "status": "ĐANG VẼ PHÙ VĂN",
+      "mana": 100,
+      "playMode": true,
+      "paused": false,
+      "contextLost": false,
+      "density": 1,
+      "debrisDensity": 1,
+      "runtimeDensityScale": 1,
+      "effectiveDensity": 1,
+      "render": {
+        "frame": 274,
+        "calls": 45,
+        "triangles": 23647,
+        "points": 0,
+        "lines": 187
+      },
+      "memory": {
+        "geometries": 56,
+        "textures": 14
+      },
+      "badTransforms": [],
+      "badPrograms": 0,
+      "glError": 0,
+      "graphics": {
+        "quality": "Low",
+        "features": {
+          "reflections": false,
+          "ao": false,
+          "volumetric": false,
+          "caustics": false,
+          "subsurface": false,
+          "motionBlur": false,
+          "dof": false,
+          "adaptive": false
+        },
+        "requestedFeatures": {
+          "reflections": false,
+          "ao": false,
+          "volumetric": false,
+          "caustics": false,
+          "subsurface": false,
+          "motionBlur": false,
+          "dof": false,
+          "adaptive": false
+        },
+        "autoReduced": [],
+        "averageFrameMs": 1.9637220935414095,
+        "post": {
+          "ssr": false,
+          "gtao": false,
+          "ssao": false,
+          "dof": false,
+          "ssrTemporal": false,
+          "ssrResolution": "fallback IBL",
+          "maxTextures": 32,
+          "lastUpdateMs": 0,
+          "unavailable": []
+        },
+        "fields": {
+          "initialized": true,
+          "activeLights": 0,
+          "windStrength": 0,
+          "windTurbulence": 0,
+          "quality": "Low"
+        },
+        "grass": {
+          "quality": "Low",
+          "bladeInstances": 360,
+          "windAlpha": 0,
+          "initialized": true
+        },
+        "particleWind": {
+          "connectedMaterials": 0
+        },
+        "trackedMaterials": 21,
+        "estimatedRenderTargetBytes": 0,
+        "surfaceNature": 0
+      },
+      "feedback": "",
+      "view": {
+        "mode": "orbit",
+        "yaw": 1.5707963267948966,
+        "pitch": 0.28,
+        "distance": 8.6,
+        "fov": 58,
+        "follow": false,
+        "needsSnap": false,
+        "focus": [
+          0,
+          0,
+          12
+        ],
+        "pointer": [
+          0,
+          0
+        ],
+        "edge": [
+          0,
+          0
+        ]
+      },
+      "actor": [
+        -4.618593792297161,
+        0,
+        12
+      ],
+      "actorYaw": 1.5706024751279468,
+      "modelVisible": true,
+      "direction": [
+        -0.965002776678726,
+        -0.2622396632166854,
+        -6.19261583090225e-06
+      ],
+      "hands": [
+        [
+          -4.385664583725533,
+          0.8709385034236528,
+          12.500045163110546
+        ],
+        [
+          -4.8021988009692995,
+          0.8282929510805878,
+          11.499964398467945
+        ]
+      ],
+      "headTop": 2.005831560322039,
+      "worldActive": null,
+      "context": null,
+      "fov": 58
+    }
+  },
+  "rows": [],
+  "environment": "Chromium ANGLE/SwiftShader; fixed .05s clock, milestone rendering; no GPU FPS benchmark",
+  "story": "select/play camera -> controller/input/aim ray -> render; static client game, no API/database/credentials added"
+}

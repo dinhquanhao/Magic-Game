@@ -1,3 +1,4 @@
+import { getSkillAreaRadius } from './skill-area.js';
 import * as THREE from 'three';
 
 const TAU = Math.PI * 2;
@@ -96,7 +97,7 @@ function makeAcidShockwave(root, radius) {
 
 export function createPoisonAcidRainAttack(parent, index, hex, skill, config, callbacks) {
   const settings = skill.poisonAcid, root = new THREE.Group(); parent.add(root); root.visible = false;
-  const radius = Math.min(settings.cloud.radius, Math.max(1, skill.spread * (config.aoeRadius / skill.aoe) * (config.aoeScale || 1)));
+  const radius = getSkillAreaRadius(skill, config.aoeRadius);
   const total = Math.min(settings.rain.totalByQuality[config.quality] || RAIN_COUNTS.High, RAIN_COUNTS.Ultra);
   const timing = new Float32Array(total * 4), meta = new Float32Array(total * 4), wind = new Float32Array(total * 2), instancePosition = new Float32Array(total * 3);
   const reactions = [], golden = Math.PI * (3 - Math.sqrt(5)); let rainIndex = 0;

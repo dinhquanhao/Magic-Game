@@ -1,0 +1,1005 @@
+{
+  "passed": true,
+  "errors": [],
+  "warnings": [
+    "[Arcane VFX] Adaptive quality reduced volumetric; user settings are preserved.",
+    "[Arcane VFX] Performance watchdog limited runtime VFX budgets; user settings are preserved. {skill: FIRE-01, reason: synchronous skill construction exceeded 250 ms, frameCostMs: 325, runtimeDensityScale: 0.72}"
+  ],
+  "rows": [
+    {
+      "id": "FIRE-01",
+      "quality": "Medium",
+      "ritualSeconds": 10,
+      "activeSeconds": 19.700000000000003,
+      "expectedActiveSeconds": 19.68,
+      "samples": [
+        {
+          "skill": "FIRE-01",
+          "active": true,
+          "phase": "charging",
+          "time": 0,
+          "areaRadius": 18.75,
+          "vfxRadius": 18.75,
+          "previewRadius": 18.75,
+          "camera": [
+            0.0038658990112022413,
+            4.0710424038927115,
+            20.384081216891733
+          ],
+          "environmentId": "dd057088-46d3-4bd8-ad98-0b5ffe31d622",
+          "status": "ĐANG VẼ PHÙ VĂN",
+          "mana": 100,
+          "playMode": true,
+          "paused": false,
+          "contextLost": false,
+          "density": 1,
+          "debrisDensity": 1,
+          "runtimeDensityScale": 0.72,
+          "effectiveDensity": 0.72,
+          "render": {
+            "frame": 34,
+            "calls": 0,
+            "triangles": 0,
+            "points": 0,
+            "lines": 0
+          },
+          "memory": {
+            "geometries": 0,
+            "textures": 1
+          },
+          "badTransforms": [],
+          "badPrograms": 0,
+          "glError": 0,
+          "graphics": {
+            "quality": "Medium",
+            "features": {
+              "reflections": true,
+              "ao": true,
+              "volumetric": false,
+              "caustics": false,
+              "subsurface": false,
+              "motionBlur": false,
+              "dof": false,
+              "adaptive": false
+            },
+            "requestedFeatures": {
+              "reflections": true,
+              "ao": true,
+              "volumetric": false,
+              "caustics": false,
+              "subsurface": false,
+              "motionBlur": false,
+              "dof": false,
+              "adaptive": false
+            },
+            "autoReduced": [],
+            "averageFrameMs": 5.256250310424042,
+            "post": {
+              "ssr": false,
+              "gtao": false,
+              "ssao": true,
+              "dof": false,
+              "ssrTemporal": false,
+              "ssrResolution": "50%",
+              "maxTextures": 32,
+              "lastUpdateMs": 0,
+              "unavailable": []
+            },
+            "fields": {
+              "initialized": true,
+              "activeLights": 0,
+              "windStrength": 0,
+              "windTurbulence": 0,
+              "quality": "Medium"
+            },
+            "grass": {
+              "quality": "Medium",
+              "bladeInstances": 800,
+              "windAlpha": 0,
+              "initialized": true
+            },
+            "particleWind": {
+              "connectedMaterials": 18
+            },
+            "trackedMaterials": 21,
+            "estimatedRenderTargetBytes": 15466000,
+            "surfaceNature": 0
+          },
+          "feedback": "VẼ PHÙ VĂN",
+          "steps": 20,
+          "seconds": 1,
+          "authoredEnd": 9.84,
+          "timing": {
+            "charge": 8.5,
+            "channel": 1.5,
+            "ritual": 10
+          },
+          "worldActive": 0,
+          "runeStart": null,
+          "runeVisible": true,
+          "maxRuneOpacity": 0.98,
+          "character": "UploadedCyberBot",
+          "position": [
+            0,
+            0,
+            12
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "locked": true,
+          "modelYaw": 0,
+          "headTop": [
+            0,
+            1.9799999999999998,
+            12
+          ],
+          "hands": [
+            [
+              -0.6074170912014152,
+              2.1284164908684047,
+              12.047185218841216
+            ],
+            [
+              0.6074170912014152,
+              2.1284164908684047,
+              12.047185218841216
+            ]
+          ],
+          "arms": [
+            -3.06157384251439,
+            -3.06157384251439
+          ],
+          "feedbackSeconds": "7.5 s"
+        },
+        {
+          "skill": "FIRE-01",
+          "active": true,
+          "phase": "channeling",
+          "time": 0,
+          "areaRadius": 18.75,
+          "vfxRadius": 18.75,
+          "previewRadius": 18.75,
+          "camera": [
+            -1.46161862858897,
+            4.217903209981861,
+            20.21872540596828
+          ],
+          "environmentId": "dd057088-46d3-4bd8-ad98-0b5ffe31d622",
+          "status": "ĐANG HỘI TỤ NĂNG LƯỢNG",
+          "mana": 100,
+          "playMode": true,
+          "paused": false,
+          "contextLost": false,
+          "density": 1,
+          "debrisDensity": 1,
+          "runtimeDensityScale": 0.72,
+          "effectiveDensity": 0.72,
+          "render": {
+            "frame": 54,
+            "calls": 663,
+            "triangles": 154090,
+            "points": 1243,
+            "lines": 17828
+          },
+          "memory": {
+            "geometries": 513,
+            "textures": 19
+          },
+          "badTransforms": [],
+          "badPrograms": 0,
+          "glError": 0,
+          "graphics": {
+            "quality": "Medium",
+            "features": {
+              "reflections": true,
+              "ao": true,
+              "volumetric": false,
+              "caustics": false,
+              "subsurface": false,
+              "motionBlur": false,
+              "dof": false,
+              "adaptive": false
+            },
+            "requestedFeatures": {
+              "reflections": true,
+              "ao": true,
+              "volumetric": false,
+              "caustics": false,
+              "subsurface": false,
+              "motionBlur": false,
+              "dof": false,
+              "adaptive": false
+            },
+            "autoReduced": [],
+            "averageFrameMs": 0.48390910128711606,
+            "post": {
+              "ssr": false,
+              "gtao": false,
+              "ssao": true,
+              "dof": false,
+              "ssrTemporal": false,
+              "ssrResolution": "50%",
+              "maxTextures": 32,
+              "lastUpdateMs": 0,
+              "unavailable": []
+            },
+            "fields": {
+              "initialized": true,
+              "activeLights": 0,
+              "windStrength": 0,
+              "windTurbulence": 0,
+              "quality": "Medium"
+            },
+            "grass": {
+              "quality": "Medium",
+              "bladeInstances": 800,
+              "windAlpha": 0,
+              "initialized": true
+            },
+            "particleWind": {
+              "connectedMaterials": 18
+            },
+            "trackedMaterials": 21,
+            "estimatedRenderTargetBytes": 15466000,
+            "surfaceNature": 0
+          },
+          "feedback": "HỘI TỤ",
+          "steps": 170,
+          "seconds": 8.5,
+          "authoredEnd": 9.84,
+          "timing": {
+            "charge": 8.5,
+            "channel": 1.5,
+            "ritual": 10
+          },
+          "worldActive": 0,
+          "runeStart": null,
+          "runeVisible": true,
+          "maxRuneOpacity": 0.98,
+          "character": "UploadedCyberBot",
+          "position": [
+            0,
+            0,
+            12
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "locked": true,
+          "modelYaw": 0,
+          "headTop": [
+            0,
+            1.9799999999999998,
+            12
+          ],
+          "hands": [
+            [
+              -0.6074177440554945,
+              2.1284182430237615,
+              12.047174140573599
+            ],
+            [
+              0.6074177440554945,
+              2.1284182430237615,
+              12.047174140573599
+            ]
+          ],
+          "arms": [
+            -3.061592653589793,
+            -3.061592653589793
+          ],
+          "feedbackSeconds": "1.5 s"
+        },
+        {
+          "skill": "FIRE-01",
+          "active": true,
+          "phase": "active",
+          "time": 0,
+          "areaRadius": 18.75,
+          "vfxRadius": 18.75,
+          "previewRadius": 18.75,
+          "camera": [
+            -1.46161862858897,
+            4.217903209981861,
+            20.21872540596828
+          ],
+          "environmentId": "dd057088-46d3-4bd8-ad98-0b5ffe31d622",
+          "status": "TUYỆT KỸ ĐÃ KHAI TRIỂN",
+          "mana": 100,
+          "playMode": true,
+          "paused": false,
+          "contextLost": false,
+          "density": 1,
+          "debrisDensity": 1,
+          "runtimeDensityScale": 0.72,
+          "effectiveDensity": 0.72,
+          "render": {
+            "frame": 74,
+            "calls": 542,
+            "triangles": 85450,
+            "points": 1243,
+            "lines": 17855
+          },
+          "memory": {
+            "geometries": 513,
+            "textures": 19
+          },
+          "badTransforms": [],
+          "badPrograms": 0,
+          "glError": 0,
+          "graphics": {
+            "quality": "Medium",
+            "features": {
+              "reflections": true,
+              "ao": true,
+              "volumetric": false,
+              "caustics": false,
+              "subsurface": false,
+              "motionBlur": false,
+              "dof": false,
+              "adaptive": false
+            },
+            "requestedFeatures": {
+              "reflections": true,
+              "ao": true,
+              "volumetric": false,
+              "caustics": false,
+              "subsurface": false,
+              "motionBlur": false,
+              "dof": false,
+              "adaptive": false
+            },
+            "autoReduced": [],
+            "averageFrameMs": 0.4595305381724801,
+            "post": {
+              "ssr": false,
+              "gtao": false,
+              "ssao": true,
+              "dof": false,
+              "ssrTemporal": false,
+              "ssrResolution": "50%",
+              "maxTextures": 32,
+              "lastUpdateMs": 0,
+              "unavailable": []
+            },
+            "fields": {
+              "initialized": true,
+              "activeLights": 0,
+              "windStrength": 0,
+              "windTurbulence": 0,
+              "quality": "Medium"
+            },
+            "grass": {
+              "quality": "Medium",
+              "bladeInstances": 800,
+              "windAlpha": 0,
+              "initialized": true
+            },
+            "particleWind": {
+              "connectedMaterials": 18
+            },
+            "trackedMaterials": 21,
+            "estimatedRenderTargetBytes": 15466000,
+            "surfaceNature": 0
+          },
+          "feedback": "KHAI TRIỂN",
+          "steps": 200,
+          "seconds": 10,
+          "authoredEnd": 9.84,
+          "timing": {
+            "charge": 8.5,
+            "channel": 1.5,
+            "ritual": 10
+          },
+          "worldActive": 0,
+          "runeStart": null,
+          "runeVisible": true,
+          "maxRuneOpacity": 0.98,
+          "character": "UploadedCyberBot",
+          "position": [
+            0,
+            0,
+            12
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "locked": true,
+          "modelYaw": 0,
+          "headTop": [
+            0,
+            1.9799999999999998,
+            12
+          ],
+          "hands": [
+            [
+              -0.6074177440554945,
+              2.1284182430237615,
+              12.047174140573599
+            ],
+            [
+              0.6074177440554945,
+              2.1284182430237615,
+              12.047174140573599
+            ]
+          ],
+          "arms": [
+            -3.061592653589793,
+            -3.061592653589793
+          ],
+          "feedbackSeconds": "7.4 s"
+        },
+        {
+          "skill": "FIRE-01",
+          "active": true,
+          "phase": "active",
+          "time": 0.5000000000000001,
+          "areaRadius": 18.75,
+          "vfxRadius": 18.75,
+          "previewRadius": 18.75,
+          "camera": [
+            -2.8645816788590044,
+            4.366840631138948,
+            19.7999582466121
+          ],
+          "environmentId": "dd057088-46d3-4bd8-ad98-0b5ffe31d622",
+          "status": "TUYỆT KỸ ĐÃ KHAI TRIỂN",
+          "mana": 100,
+          "playMode": true,
+          "paused": false,
+          "contextLost": false,
+          "density": 1,
+          "debrisDensity": 1,
+          "runtimeDensityScale": 0.72,
+          "effectiveDensity": 0.72,
+          "render": {
+            "frame": 94,
+            "calls": 612,
+            "triangles": 118654,
+            "points": 1967,
+            "lines": 17857
+          },
+          "memory": {
+            "geometries": 543,
+            "textures": 19
+          },
+          "badTransforms": [],
+          "badPrograms": 0,
+          "glError": 0,
+          "graphics": {
+            "quality": "Medium",
+            "features": {
+              "reflections": true,
+              "ao": true,
+              "volumetric": false,
+              "caustics": false,
+              "subsurface": false,
+              "motionBlur": false,
+              "dof": false,
+              "adaptive": false
+            },
+            "requestedFeatures": {
+              "reflections": true,
+              "ao": true,
+              "volumetric": false,
+              "caustics": false,
+              "subsurface": false,
+              "motionBlur": false,
+              "dof": false,
+              "adaptive": false
+            },
+            "autoReduced": [],
+            "averageFrameMs": 3.1345351756463717,
+            "post": {
+              "ssr": false,
+              "gtao": false,
+              "ssao": true,
+              "dof": false,
+              "ssrTemporal": false,
+              "ssrResolution": "50%",
+              "maxTextures": 32,
+              "lastUpdateMs": 0,
+              "unavailable": []
+            },
+            "fields": {
+              "initialized": true,
+              "activeLights": 1,
+              "windStrength": 0,
+              "windTurbulence": 0,
+              "quality": "Medium"
+            },
+            "grass": {
+              "quality": "Medium",
+              "bladeInstances": 800,
+              "windAlpha": 0,
+              "initialized": true
+            },
+            "particleWind": {
+              "connectedMaterials": 18
+            },
+            "trackedMaterials": 21,
+            "estimatedRenderTargetBytes": 15466000,
+            "surfaceNature": 0
+          },
+          "feedback": "KHAI TRIỂN",
+          "steps": 220,
+          "seconds": 11,
+          "authoredEnd": 9.84,
+          "timing": {
+            "charge": 8.5,
+            "channel": 1.5,
+            "ritual": 10
+          },
+          "worldActive": 1.0000000000000002,
+          "runeStart": 0.05,
+          "runeVisible": true,
+          "maxRuneOpacity": 0.4354573902606308,
+          "character": "UploadedCyberBot",
+          "position": [
+            0,
+            0,
+            12
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "locked": true,
+          "modelYaw": 0,
+          "headTop": [
+            0,
+            1.9799999999999998,
+            12
+          ],
+          "hands": [
+            [
+              -0.6074177440554945,
+              2.1284182430237615,
+              12.047174140573599
+            ],
+            [
+              0.6074177440554945,
+              2.1284182430237615,
+              12.047174140573599
+            ]
+          ],
+          "arms": [
+            -3.061592653589793,
+            -3.061592653589793
+          ],
+          "feedbackSeconds": "6.4 s"
+        },
+        {
+          "skill": "FIRE-01",
+          "active": true,
+          "phase": "active",
+          "time": 3.7749999999999906,
+          "areaRadius": 18.75,
+          "vfxRadius": 18.75,
+          "previewRadius": 18.75,
+          "camera": [
+            -2.8648671955562413,
+            4.366870941360286,
+            19.799873023400966
+          ],
+          "environmentId": "dd057088-46d3-4bd8-ad98-0b5ffe31d622",
+          "status": "ĐANG THI TRIỂN",
+          "mana": 100,
+          "playMode": true,
+          "paused": false,
+          "contextLost": false,
+          "density": 1,
+          "debrisDensity": 1,
+          "runtimeDensityScale": 0.72,
+          "effectiveDensity": 0.72,
+          "render": {
+            "frame": 114,
+            "calls": 244,
+            "triangles": 146102,
+            "points": 724,
+            "lines": 500
+          },
+          "memory": {
+            "geometries": 598,
+            "textures": 19
+          },
+          "badTransforms": [],
+          "badPrograms": 0,
+          "glError": 0,
+          "graphics": {
+            "quality": "Medium",
+            "features": {
+              "reflections": true,
+              "ao": true,
+              "volumetric": false,
+              "caustics": false,
+              "subsurface": false,
+              "motionBlur": false,
+              "dof": false,
+              "adaptive": false
+            },
+            "requestedFeatures": {
+              "reflections": true,
+              "ao": true,
+              "volumetric": false,
+              "caustics": false,
+              "subsurface": false,
+              "motionBlur": false,
+              "dof": false,
+              "adaptive": false
+            },
+            "autoReduced": [],
+            "averageFrameMs": 1.5850463081328785,
+            "post": {
+              "ssr": false,
+              "gtao": false,
+              "ssao": true,
+              "dof": false,
+              "ssrTemporal": false,
+              "ssrResolution": "50%",
+              "maxTextures": 32,
+              "lastUpdateMs": 0,
+              "unavailable": []
+            },
+            "fields": {
+              "initialized": true,
+              "activeLights": 1,
+              "windStrength": 0,
+              "windTurbulence": 0,
+              "quality": "Medium"
+            },
+            "grass": {
+              "quality": "Medium",
+              "bladeInstances": 800,
+              "windAlpha": 0,
+              "initialized": true
+            },
+            "particleWind": {
+              "connectedMaterials": 18
+            },
+            "trackedMaterials": 21,
+            "estimatedRenderTargetBytes": 15466000,
+            "surfaceNature": 0
+          },
+          "feedback": "DƯ CHẤN",
+          "steps": 351,
+          "seconds": 17.55,
+          "authoredEnd": 9.84,
+          "timing": {
+            "charge": 8.5,
+            "channel": 1.5,
+            "ritual": 10
+          },
+          "worldActive": 7.549999999999981,
+          "runeStart": 0.05,
+          "runeVisible": false,
+          "maxRuneOpacity": 0,
+          "character": "UploadedCyberBot",
+          "position": [
+            0,
+            0,
+            12
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "locked": true,
+          "modelYaw": 0,
+          "headTop": [
+            0,
+            1.9799999999999998,
+            12
+          ],
+          "hands": [
+            [
+              -0.6074177440554945,
+              2.1284182430237615,
+              12.047174140573599
+            ],
+            [
+              0.6074177440554945,
+              2.1284182430237615,
+              12.047174140573599
+            ]
+          ],
+          "arms": [
+            -3.061592653589793,
+            -3.061592653589793
+          ],
+          "feedbackSeconds": "12.1 s"
+        },
+        {
+          "skill": "FIRE-01",
+          "active": true,
+          "phase": "active",
+          "time": 9.750000000000071,
+          "areaRadius": 18.75,
+          "vfxRadius": 18.75,
+          "previewRadius": 18.75,
+          "camera": [
+            -2.8648671955562413,
+            4.366870941360286,
+            19.799873023400966
+          ],
+          "environmentId": "dd057088-46d3-4bd8-ad98-0b5ffe31d622",
+          "status": "ĐANG THI TRIỂN",
+          "mana": 100,
+          "playMode": true,
+          "paused": false,
+          "contextLost": false,
+          "density": 1,
+          "debrisDensity": 1,
+          "runtimeDensityScale": 0.72,
+          "effectiveDensity": 0.72,
+          "render": {
+            "frame": 134,
+            "calls": 152,
+            "triangles": 83094,
+            "points": 724,
+            "lines": 188
+          },
+          "memory": {
+            "geometries": 598,
+            "textures": 19
+          },
+          "badTransforms": [],
+          "badPrograms": 0,
+          "glError": 0,
+          "graphics": {
+            "quality": "Medium",
+            "features": {
+              "reflections": true,
+              "ao": true,
+              "volumetric": false,
+              "caustics": false,
+              "subsurface": false,
+              "motionBlur": false,
+              "dof": false,
+              "adaptive": false
+            },
+            "requestedFeatures": {
+              "reflections": true,
+              "ao": true,
+              "volumetric": false,
+              "caustics": false,
+              "subsurface": false,
+              "motionBlur": false,
+              "dof": false,
+              "adaptive": false
+            },
+            "autoReduced": [],
+            "averageFrameMs": 0.4564188987440219,
+            "post": {
+              "ssr": false,
+              "gtao": false,
+              "ssao": true,
+              "dof": false,
+              "ssrTemporal": false,
+              "ssrResolution": "50%",
+              "maxTextures": 32,
+              "lastUpdateMs": 0,
+              "unavailable": []
+            },
+            "fields": {
+              "initialized": true,
+              "activeLights": 1,
+              "windStrength": 0,
+              "windTurbulence": 0,
+              "quality": "Medium"
+            },
+            "grass": {
+              "quality": "Medium",
+              "bladeInstances": 800,
+              "windAlpha": 0,
+              "initialized": true
+            },
+            "particleWind": {
+              "connectedMaterials": 18
+            },
+            "trackedMaterials": 21,
+            "estimatedRenderTargetBytes": 15466000,
+            "surfaceNature": 0
+          },
+          "feedback": "DƯ CHẤN",
+          "steps": 590,
+          "seconds": 29.5,
+          "authoredEnd": 9.84,
+          "timing": {
+            "charge": 8.5,
+            "channel": 1.5,
+            "ritual": 10
+          },
+          "worldActive": 19.500000000000142,
+          "runeStart": 0.05,
+          "runeVisible": false,
+          "maxRuneOpacity": 0,
+          "character": "UploadedCyberBot",
+          "position": [
+            0,
+            0,
+            12
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "locked": true,
+          "modelYaw": 0,
+          "headTop": [
+            0,
+            1.9799999999999998,
+            12
+          ],
+          "hands": [
+            [
+              -0.6074177440554945,
+              2.1284182430237615,
+              12.047174140573599
+            ],
+            [
+              0.6074177440554945,
+              2.1284182430237615,
+              12.047174140573599
+            ]
+          ],
+          "arms": [
+            -3.061592653589793,
+            -3.061592653589793
+          ],
+          "feedbackSeconds": "0.2 s"
+        }
+      ],
+      "cleanup": {
+        "skill": "FIRE-01",
+        "active": false,
+        "phase": null,
+        "time": null,
+        "areaRadius": null,
+        "vfxRadius": null,
+        "previewRadius": 18.75,
+        "camera": [
+          -2.8648671955562413,
+          4.366870941360286,
+          19.799873023400966
+        ],
+        "environmentId": "dd057088-46d3-4bd8-ad98-0b5ffe31d622",
+        "status": "SẴN SÀNG THI TRIỂN",
+        "mana": 100,
+        "playMode": true,
+        "paused": false,
+        "contextLost": false,
+        "density": 1,
+        "debrisDensity": 1,
+        "runtimeDensityScale": 0.72,
+        "effectiveDensity": 0.72,
+        "render": {
+          "frame": 154,
+          "calls": 84,
+          "triangles": 49178,
+          "points": 0,
+          "lines": 188
+        },
+        "memory": {
+          "geometries": 46,
+          "textures": 19
+        },
+        "badTransforms": [],
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Medium",
+          "features": {
+            "reflections": true,
+            "ao": true,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": true,
+            "ao": true,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 2.027983919423993,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": true,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "50%",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 0,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Medium"
+          },
+          "grass": {
+            "quality": "Medium",
+            "bladeInstances": 800,
+            "windAlpha": 0,
+            "initialized": true
+          },
+          "particleWind": {
+            "connectedMaterials": 0
+          },
+          "trackedMaterials": 21,
+          "estimatedRenderTargetBytes": 15466000,
+          "surfaceNature": 0
+        },
+        "feedback": "DƯ CHẤN",
+        "steps": 594,
+        "seconds": 29.700000000000003,
+        "authoredEnd": 9.84,
+        "timing": null,
+        "worldActive": null,
+        "runeStart": null,
+        "runeVisible": false,
+        "maxRuneOpacity": 0,
+        "character": "UploadedCyberBot",
+        "position": [
+          0,
+          0,
+          12
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "locked": true,
+        "modelYaw": 0,
+        "headTop": [
+          0,
+          1.9799999999999998,
+          12
+        ],
+        "hands": [
+          [
+            -0.6074177440554945,
+            2.1284182430237615,
+            12.047174140573599
+          ],
+          [
+            0.6074177440554945,
+            2.1284182430237615,
+            12.047174140573599
+          ]
+        ],
+        "arms": [
+          -3.061592653589793,
+          -3.061592653589793
+        ],
+        "feedbackSeconds": "0.0 s"
+      },
+      "movementResumes": true
+    }
+  ],
+  "checks": {},
+  "environment": "Chromium ANGLE/SwiftShader, fixed .05s simulation, milestone rendering; no GPU FPS claim"
+}

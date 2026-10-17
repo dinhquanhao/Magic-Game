@@ -1,0 +1,40 @@
+{
+  "rawWebm": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "vp8",
+        "width": 960,
+        "height": 646,
+        "avg_frame_rate": "25/1",
+        "nb_read_frames": "6567"
+      }
+    ],
+    "format": {
+      "duration": "262.680000",
+      "size": "20816206"
+    }
+  },
+  "mp4": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 960,
+        "height": 646,
+        "avg_frame_rate": "25/1",
+        "nb_read_frames": "6567"
+      }
+    ],
+    "format": {
+      "duration": "262.680000",
+      "size": "4084650"
+    }
+  },
+  "framesAndDurationPreserved": true,
+  "audioTrack": false,
+  "codedFrameRateNotGameFPS": true,
+  "sha256": "14f3072a56a6a555d7cc348af84b4f8b071ae33e09f900e1aa046279bc52fc58"
+}

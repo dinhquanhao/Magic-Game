@@ -1,0 +1,7 @@
+work/
+test-results/
+playwright-report/
+docs/evidence/
+node_modules/
+docs/releases/
+docs/drafts/

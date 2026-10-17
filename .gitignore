@@ -13,3 +13,8 @@ build/
 # Playwright test artifacts
 playwright-report/
 test-results/
+
+# Local development evidence and scratch work
+work/
+__pycache__/
+.vercel/

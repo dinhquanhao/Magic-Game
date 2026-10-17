@@ -1,0 +1,325 @@
+{
+  "passed": false,
+  "checks": {
+    "gestureUnlock": true,
+    "poolBurst": {
+      "activeVoices": 8,
+      "liveSources": 12,
+      "voiceLimit": 8
+    },
+    "presets": [
+      {
+        "preset": "Low",
+        "voiceLimit": 8,
+        "pooledNodes": 231,
+        "decodedBytes": 2581440,
+        "peak": 0.11599359661340714,
+        "rms": 0.044083691322591934,
+        "limiter": "lookahead-brickwall"
+      },
+      {
+        "preset": "Medium",
+        "voiceLimit": 12,
+        "pooledNodes": 231,
+        "decodedBytes": 2581440,
+        "peak": 0.11599383503198624,
+        "rms": 0.04505206740710277,
+        "limiter": "lookahead-brickwall"
+      },
+      {
+        "preset": "High",
+        "voiceLimit": 20,
+        "pooledNodes": 231,
+        "decodedBytes": 2581440,
+        "peak": 0.1640441119670868,
+        "rms": 0.06234310071787823,
+        "limiter": "lookahead-brickwall"
+      },
+      {
+        "preset": "Ultra",
+        "voiceLimit": 28,
+        "pooledNodes": 231,
+        "decodedBytes": 2581440,
+        "peak": 0.20613716542720795,
+        "rms": 0.06624931054643349,
+        "limiter": "lookahead-brickwall"
+      }
+    ],
+    "pauseRateMute": true,
+    "rapidSelection": {
+      "banks": [
+        "FIRE"
+      ],
+      "decodedBytes": 4840320,
+      "errors": []
+    }
+  },
+  "skills": [
+    {
+      "id": "FIRE-01",
+      "passed": true,
+      "impactCount": 1,
+      "rms": 0.02449503537367964,
+      "peak": 0.050164029002189636,
+      "cleanupRms": 5.677809854308514e-09,
+      "banks": 1
+    },
+    {
+      "id": "WATER-01",
+      "passed": true,
+      "impactCount": 1,
+      "rms": 0.02309406547747338,
+      "peak": 0.05622684583067894,
+      "cleanupRms": 7.540062691467761e-09,
+      "banks": 2
+    },
+    {
+      "id": "EARTH-01",
+      "passed": true,
+      "impactCount": 1,
+      "rms": 0.01255420349774327,
+      "peak": 0.024673007428646088,
+      "cleanupRms": 2.646858673992418e-09,
+      "banks": 2
+    },
+    {
+      "id": "LIGHT-01",
+      "passed": true,
+      "impactCount": 1,
+      "rms": 0.036840384832735,
+      "peak": 0.07187500596046448,
+      "cleanupRms": 7.197688868861735e-09,
+      "banks": 2
+    },
+    {
+      "id": "SHADOW-01",
+      "passed": true,
+      "impactCount": 1,
+      "rms": 0.017822124669121704,
+      "peak": 0.03521524369716644,
+      "cleanupRms": 1.9155150190934342e-08,
+      "banks": 2
+    },
+    {
+      "id": "WIND-01",
+      "passed": true,
+      "impactCount": 1,
+      "rms": 0.036692055339392474,
+      "peak": 0.08791467547416687,
+      "cleanupRms": 1.513341839021813e-08,
+      "banks": 2
+    },
+    {
+      "id": "LIGHTNING-01",
+      "passed": true,
+      "impactCount": 1,
+      "rms": 0.022399333009891456,
+      "peak": 0.05897326022386551,
+      "cleanupRms": 1.0039533744740295e-08,
+      "banks": 2
+    },
+    {
+      "id": "ICE-01",
+      "passed": true,
+      "impactCount": 1,
+      "rms": 0.03788937552339239,
+      "peak": 0.07333256304264069,
+      "cleanupRms": 7.11292396412545e-09,
+      "banks": 2
+    },
+    {
+      "id": "MAGMA-01",
+      "passed": true,
+      "impactCount": 1,
+      "rms": 0.029135398426480004,
+      "peak": 0.05772492289543152,
+      "cleanupRms": 1.7538994402642886e-08,
+      "banks": 2
+    },
+    {
+      "id": "MAGMA-02",
+      "passed": true,
+      "impactCount": 1,
+      "rms": 0.026181519113037125,
+      "peak": 0.057137876749038696,
+      "cleanupRms": 1.4274959893835949e-08,
+      "banks": 2
+    },
+    {
+      "id": "MAGMA-03",
+      "passed": true,
+      "impactCount": 1,
+      "rms": 0.028752598722228875,
+      "peak": 0.05723372846841812,
+      "cleanupRms": 7.218477255717472e-09,
+      "banks": 2
+    },
+    {
+      "id": "POISON-01",
+      "passed": true,
+      "impactCount": 1,
+      "rms": 0.03596378646404126,
+      "peak": 0.08510705828666687,
+      "cleanupRms": 6.9797461840727875e-09,
+      "banks": 2
+    },
+    {
+      "id": "SPACE-01",
+      "passed": true,
+      "impactCount": 1,
+      "rms": 0.026335689239285105,
+      "peak": 0.05236123129725456,
+      "cleanupRms": 1.8512816290740555e-08,
+      "banks": 2
+    },
+    {
+      "id": "TIME-01",
+      "passed": true,
+      "impactCount": 1,
+      "rms": 0.028537393326120368,
+      "peak": 0.05358446389436722,
+      "cleanupRms": 8.722696277785614e-10,
+      "banks": 2
+    },
+    {
+      "id": "BLOOD-01",
+      "passed": true,
+      "impactCount": 1,
+      "rms": 0.0074498197670261794,
+      "peak": 0.01756560429930687,
+      "cleanupRms": 5.834555426559288e-09,
+      "banks": 2
+    },
+    {
+      "id": "ASTRAL-01",
+      "passed": true,
+      "impactCount": 1,
+      "rms": 0.0401916270710204,
+      "peak": 0.08002930879592896,
+      "cleanupRms": 1.4925402033475374e-09,
+      "banks": 2
+    },
+    {
+      "id": "ASTRAL-02",
+      "passed": true,
+      "impactCount": 1,
+      "rms": 0.03718876467770726,
+      "peak": 0.07790534198284149,
+      "cleanupRms": 6.707036308411719e-09,
+      "banks": 2
+    },
+    {
+      "id": "ASTRAL-03",
+      "passed": true,
+      "impactCount": 1,
+      "rms": 0.0401912204128548,
+      "peak": 0.08002596348524094,
+      "cleanupRms": 9.080341413247892e-09,
+      "banks": 2
+    }
+  ],
+  "errors": [],
+  "earVerified": false,
+  "failure": "Page.evaluate: ReferenceError: audioLab is not defined\n    at eval (eval at evaluate (:311:30), <anonymous>:1:1)\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:311:30)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+  "diagnosticsOnFailure": {
+    "peak": 0.016044871881604195,
+    "rms": 0.005670409488040302,
+    "limiter": "lookahead-brickwall",
+    "ceilingDb": -1.8,
+    "limiterReductionDb": 0,
+    "compressorReductionDb": -0.01951516792178154,
+    "limiterBlocks": 672,
+    "preset": "Low",
+    "adaptive": 1,
+    "pooledNodes": 231,
+    "irBuffers": 1,
+    "baseLatency": 0.01,
+    "outputLatency": 0.032,
+    "estimatedUnderruns": null,
+    "enabled": true,
+    "sampleRate": 44100,
+    "state": "running",
+    "status": "Âm thanh sẵn sàng",
+    "currentTime": 2.110113378684807,
+    "volume": 0.35481338923357547,
+    "muted": false,
+    "settings": {
+      "masterDb": -9,
+      "sfxDb": 0,
+      "ambienceDb": -10,
+      "droneDb": -15,
+      "impact": 1,
+      "spatial": true,
+      "doppler": false,
+      "reduced": false,
+      "mute": false,
+      "ui": true,
+      "room": "arena"
+    },
+    "activeVoices": 1,
+    "retiringVoices": 0,
+    "liveSources": 1,
+    "voiceLimit": 8,
+    "maxVoices": 1,
+    "banks": [
+      "FIRE",
+      "WATER"
+    ],
+    "decodedBytes": 4886400,
+    "fallbacks": 0,
+    "loading": false,
+    "history": [
+      {
+        "cast": "lab",
+        "element": "WATER",
+        "cue": "impact",
+        "key": "impact",
+        "time": 0,
+        "target": 0,
+        "scheduledAt": 0.9113832199546485,
+        "requestedAt": 0.9113832199546485,
+        "schedulingErrorMs": 0,
+        "variant": 0,
+        "rate": 1,
+        "category": "impact"
+      },
+      {
+        "cast": "lab",
+        "element": "WATER",
+        "cue": "impact",
+        "key": "impact",
+        "time": 0,
+        "target": 0,
+        "scheduledAt": 1.6602267573696146,
+        "requestedAt": 1.6602267573696146,
+        "schedulingErrorMs": 0,
+        "variant": 0,
+        "rate": 1,
+        "category": "impact"
+      }
+    ],
+    "rates": [
+      1
+    ],
+    "center": null,
+    "listener": [
+      0,
+      0,
+      34
+    ],
+    "ambient": false,
+    "cast": null,
+    "sourcePositions": [
+      [
+        0,
+        0,
+        22
+      ]
+    ],
+    "updateCostMs": 0,
+    "deviceChanges": 0,
+    "errors": [],
+    "pending": 0
+  },
+  "historicalRecordNote": "Retired skill rows/references removed from the distributed record after checkpoint 3273606. Surviving measurements are unchanged; original run totals are historical, not a new 19-skill test."
+}

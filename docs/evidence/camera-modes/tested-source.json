@@ -1,0 +1,31 @@
+{
+  "runtimeFiles": {
+    "index.html": "1b9254a3205c4afc8a77a765e8a9feff369e65d819637cb527c8fb401d0d8309",
+    "src/main.js": "d9a3ea8d9d5627d3b9cd02bba9fc920c0109f56e5071f5619f1625dc0b1e130f",
+    "src/playable.js": "6e8b36e8ffeb0be92e148e02caa2e697d8ea7325b249c746ff1e989cdde1ecce",
+    "src/playable.css": "8d7802089625a5fa1a18c0a54bfb71062144053971bb5255f2618a8278c4c946",
+    "src/player-camera.js": "faf4c48b890337ee41939d324a9507ef273f8d40db5ce7cdb6293e03d9164696"
+  },
+  "productionBuildFiles": {
+    "dist/index.html": "e14b6ea1cf8bdb51dadc7d350d32bb81113f49c7bcb4a66aef73f1d01776444c",
+    "dist/assets/index-D3BAF0aa.css": "2a70a90823e5069bedf3bf2132f72f04cbf9db6b01f6eaffb890baaddd8f3ec1",
+    "dist/assets/index-CoGqEejf.js": "1a17d39e6b760586d5ed656c07e46ad8b322be8f120897de58f2606c2f975cba",
+    "dist/assets/three-addons-Do0o4mK4.js": "7453fc23f2edbc092683bc977524a251160b0009507721aad0e7f614d3987a16",
+    "dist/assets/three-core-9O7ayZ0O.js": "871e8722222a93c2f561b07e698c6acc30550de398b838d564ec010bbcceeb82"
+  },
+  "matrixRuntimeFiles": {
+    "index.html": "1b9254a3205c4afc8a77a765e8a9feff369e65d819637cb527c8fb401d0d8309",
+    "src/main.js": "d9a3ea8d9d5627d3b9cd02bba9fc920c0109f56e5071f5619f1625dc0b1e130f",
+    "src/playable.js": "d5e82a938eb89a1aeb225edaa7593259bdbd99df30d7cd435d97f5fa22668f30",
+    "src/playable.css": "8d7802089625a5fa1a18c0a54bfb71062144053971bb5255f2618a8278c4c946",
+    "src/player-camera.js": "faf4c48b890337ee41939d324a9507ef273f8d40db5ce7cdb6293e03d9164696"
+  },
+  "matrixBuildFiles": {
+    "dist/index.html": "056c68e5c9a52a0f2d65002f294d5b892248644d97d21f1a3598b31fe6fdcc60",
+    "dist/assets/index-D3BAF0aa.css": "2a70a90823e5069bedf3bf2132f72f04cbf9db6b01f6eaffb890baaddd8f3ec1",
+    "dist/assets/three-addons-Do0o4mK4.js": "7453fc23f2edbc092683bc977524a251160b0009507721aad0e7f614d3987a16",
+    "dist/assets/three-core-9O7ayZ0O.js": "871e8722222a93c2f561b07e698c6acc30550de398b838d564ec010bbcceeb82",
+    "dist/assets/index-DmiwOakr.js": "58c98cb7b2170364a98bd2970089a18f09fc1d7d9975bba89ca61b93d395b748"
+  },
+  "postMatrixChange": "One horizontal gamepad look sign corrected after125camera/VFX cases; verified by a failing-then-passing targeted controller test, full unit/build and final unmodified production UI run. Mouse/keyboard and skill/camera geometry unchanged."
+}

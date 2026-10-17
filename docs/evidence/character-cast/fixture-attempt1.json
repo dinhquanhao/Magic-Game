@@ -1,0 +1,364 @@
+{
+  "passed": false,
+  "errors": [],
+  "warnings": [],
+  "rows": [],
+  "checks": {
+    "pauseFreezesBothClocksAndPose": true,
+    "hitStopFreezesRuneAndAttack": true,
+    "quarterSpeedAndDoubleDurationCompose": true,
+    "fadeRemains1point8SimulationSeconds": true,
+    "delayedTimeEffectStillStartsFade": true,
+    "webAudioUsesSamePlaybackRateAndSingleFinale": {
+      "frames": [
+        {
+          "phase": "active",
+          "time": 3.0062499999999934,
+          "rate": 0.5,
+          "paused": false
+        },
+        {
+          "phase": "active",
+          "time": 3.0312499999999933,
+          "rate": 0.5,
+          "paused": false
+        },
+        {
+          "phase": "active",
+          "time": 3.0562499999999932,
+          "rate": 0.5,
+          "paused": false
+        },
+        {
+          "phase": "active",
+          "time": 3.081249999999993,
+          "rate": 0.5,
+          "paused": false
+        },
+        {
+          "phase": "active",
+          "time": 3.106249999999993,
+          "rate": 0.5,
+          "paused": false
+        },
+        {
+          "phase": "active",
+          "time": 3.131249999999993,
+          "rate": 0.5,
+          "paused": false
+        },
+        {
+          "phase": "active",
+          "time": 3.156249999999993,
+          "rate": 0.5,
+          "paused": false
+        },
+        {
+          "phase": "active",
+          "time": 3.181249999999993,
+          "rate": 0.5,
+          "paused": false
+        },
+        {
+          "phase": "active",
+          "time": 3.2062499999999927,
+          "rate": 0.5,
+          "paused": false
+        },
+        {
+          "phase": "active",
+          "time": 3.2312499999999926,
+          "rate": 0.5,
+          "paused": false
+        },
+        {
+          "phase": "active",
+          "time": 3.2562499999999925,
+          "rate": 0.5,
+          "paused": false
+        },
+        {
+          "phase": "active",
+          "time": 3.2812499999999925,
+          "rate": 0.5,
+          "paused": false
+        },
+        {
+          "phase": "active",
+          "time": 3.3062499999999924,
+          "rate": 0.5,
+          "paused": false
+        },
+        {
+          "phase": "active",
+          "time": 3.3312499999999923,
+          "rate": 0.5,
+          "paused": false
+        },
+        {
+          "phase": "active",
+          "time": 3.356249999999992,
+          "rate": 0.5,
+          "paused": false
+        },
+        {
+          "phase": "active",
+          "time": 3.381249999999992,
+          "rate": 0.5,
+          "paused": false
+        },
+        {
+          "phase": "active",
+          "time": 3.406249999999992,
+          "rate": 0.5,
+          "paused": false
+        },
+        {
+          "phase": "active",
+          "time": 3.431249999999992,
+          "rate": 0.5,
+          "paused": false
+        },
+        {
+          "phase": "active",
+          "time": 3.456249999999992,
+          "rate": 0.5,
+          "paused": false
+        },
+        {
+          "phase": "active",
+          "time": 3.4812499999999917,
+          "rate": 0.5,
+          "paused": false
+        },
+        {
+          "phase": "active",
+          "time": 3.5062499999999917,
+          "rate": 0.5,
+          "paused": false
+        },
+        {
+          "phase": "active",
+          "time": 3.5312499999999916,
+          "rate": 0.5,
+          "paused": false
+        },
+        {
+          "phase": "active",
+          "time": 3.5562499999999915,
+          "rate": 0.5,
+          "paused": false
+        },
+        {
+          "phase": "active",
+          "time": 3.5812499999999914,
+          "rate": 0.5,
+          "paused": false
+        },
+        {
+          "phase": "active",
+          "time": 3.6062499999999913,
+          "rate": 0.5,
+          "paused": false
+        },
+        {
+          "phase": "active",
+          "time": 3.631249999999991,
+          "rate": 0.5,
+          "paused": false
+        },
+        {
+          "phase": "active",
+          "time": 3.656249999999991,
+          "rate": 0.5,
+          "paused": false
+        },
+        {
+          "phase": "active",
+          "time": 3.681249999999991,
+          "rate": 0.5,
+          "paused": false
+        },
+        {
+          "phase": "active",
+          "time": 3.706249999999991,
+          "rate": 0.5,
+          "paused": false
+        },
+        {
+          "phase": "active",
+          "time": 3.731249999999991,
+          "rate": 0.5,
+          "paused": false
+        }
+      ],
+      "rate": [
+        0.13243287801742554,
+        0.14030775427818298,
+        0.1486508846282959,
+        0.16610510647296906,
+        0.125,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "errors": [],
+      "finale": [
+        {
+          "cast": "711915ea-ebd1-4f48-8d81-0b14309d6ddd",
+          "element": "FIRE",
+          "cue": "impact",
+          "key": "finale",
+          "time": 3.731249999999991,
+          "target": 3.72,
+          "scheduledAt": 1.8401814058956916,
+          "requestedAt": 1.8401814058956916,
+          "schedulingErrorMs": 22.499999999981313,
+          "variant": 0,
+          "rate": 0.5,
+          "category": "impact"
+        }
+      ]
+    },
+    "resetReleasesPose": true,
+    "rapidSelectionCleanup": {
+      "skill": "NATURE-01",
+      "active": false,
+      "phase": null,
+      "time": null,
+      "areaRadius": null,
+      "vfxRadius": null,
+      "previewRadius": 20,
+      "camera": [
+        0.7639752369922563,
+        4.06820772484109,
+        20.26184810492588
+      ],
+      "environmentId": "30f6b5bc-a47c-4900-a3bd-ee2b3a5fc478",
+      "status": "SẴN SÀNG THI TRIỂN",
+      "mana": 100,
+      "playMode": true,
+      "paused": false,
+      "contextLost": false,
+      "density": 1,
+      "debrisDensity": 1,
+      "runtimeDensityScale": 1,
+      "effectiveDensity": 1,
+      "render": {
+        "frame": 290,
+        "calls": 0,
+        "triangles": 0,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 51,
+        "textures": 14
+      },
+      "badTransforms": [],
+      "badPrograms": 0,
+      "glError": 0,
+      "graphics": {
+        "quality": "Low",
+        "features": {
+          "reflections": false,
+          "ao": false,
+          "volumetric": false,
+          "caustics": false,
+          "subsurface": false,
+          "motionBlur": false,
+          "dof": false,
+          "adaptive": false
+        },
+        "requestedFeatures": {
+          "reflections": false,
+          "ao": false,
+          "volumetric": false,
+          "caustics": false,
+          "subsurface": false,
+          "motionBlur": false,
+          "dof": false,
+          "adaptive": false
+        },
+        "autoReduced": [],
+        "averageFrameMs": 0.5360768128388873,
+        "post": {
+          "ssr": false,
+          "gtao": false,
+          "ssao": false,
+          "dof": false,
+          "ssrTemporal": false,
+          "ssrResolution": "fallback IBL",
+          "maxTextures": 32,
+          "lastUpdateMs": 0,
+          "unavailable": []
+        },
+        "fields": {
+          "initialized": true,
+          "activeLights": 0,
+          "windStrength": 0,
+          "windTurbulence": 0,
+          "quality": "Low"
+        },
+        "grass": {
+          "quality": "Low",
+          "bladeInstances": 360,
+          "windAlpha": 0,
+          "initialized": true
+        },
+        "particleWind": {
+          "connectedMaterials": 0
+        },
+        "trackedMaterials": 21,
+        "estimatedRenderTargetBytes": 0,
+        "surfaceNature": 0
+      },
+      "feedback": "DƯ CHẤN",
+      "steps": 922,
+      "seconds": 46.1,
+      "authoredEnd": 18,
+      "timing": null,
+      "worldActive": null,
+      "runeStart": null,
+      "runeVisible": false,
+      "maxRuneOpacity": 0,
+      "character": "UploadedCyberBot",
+      "position": [
+        0.0624295418605219,
+        0,
+        11.927912574402885
+      ],
+      "velocity": [
+        1.248590837210438,
+        0,
+        -1.4417485119422935
+      ],
+      "locked": false,
+      "modelYaw": 0.25863362243081656,
+      "headTop": [
+        0.053456216444656125,
+        1.985485820403192,
+        11.89399452427792
+      ],
+      "hands": [
+        [
+          -0.3298598743461818,
+          1.519075329307714,
+          12.631436953641971
+        ],
+        [
+          0.748087945158057,
+          1.603414150041857,
+          12.333286351433003
+        ]
+      ],
+      "arms": [
+        -1.6087739481998504,
+        -1.7517013983402818
+      ],
+      "feedbackSeconds": "0.0 s"
+    }
+  },
+  "environment": "Chromium ANGLE/SwiftShader, fixed .05s simulation, milestone rendering; no GPU FPS claim",
+  "harnessFailure": "Fixture referenced module-scoped config from page.evaluate in its final two checks; corrected to call the injected module helper. Runtime source unchanged for the rerun."
+}

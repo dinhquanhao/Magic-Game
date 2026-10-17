@@ -1,0 +1,36 @@
+
+> arcane-vfx-studio@2.0.0 test
+> node --test tests/*.test.js
+
+✔ tests/audio-assets.test.js (117.472802ms)
+✔ tests/audio-limiter.test.js (92.4519ms)
+✔ tests/audio-score.test.js (85.820301ms)
+✔ tests/autonomy.test.js (30.8527ms)
+✔ ritual total is ten seconds and active playback doubles authored duration (0.954964ms)
+✔ uploaded bot plants its feet and raises both hands above its head (5.67388ms)
+✔ held movement, jump, dash, aim and target tracking cannot move a casting player (23.781451ms)
+✔ six forest templates have finite, bounded, valid indices at every detail level (18.230006ms)
+✔ nearest targets are throttled; all four real hits occur and retarget after movement (12.411447ms)
+✔ every quality has bounded GPU batches, no per-tree Mesh, and disposable instance buffers (15.467077ms)
+✔ invalid time cleans target effects; pending shader warm-up cancels safely on rapid replacement (47.082462ms)
+✔ all views stay finite, clear first-person occlusion, and preserve the casting anchor (33.101136ms)
+✔ orbit makes a full revolution without movement steering or actor yaw controlling it (7.986012ms)
+✔ LoL pan is independent, bounded, supports edges/follow/recenter and UI clears edge input (0.523897ms)
+✔ third-person collision and extreme zoom/pitch avoid obstacles and floor clipping (2.47726ms)
+✔ gamepad right stick looks right in orbit and first person without rotating a casting actor (8.915829ms)
+✔ releasing a cast disposes shared resources once and every instance buffer (2.398011ms)
+✔ retained skills keep their pre-edit config, rune profile, cinematic, MP, cooldown and audio (11.283925ms)
+✔ runes wait for a visible effect, including delayed skills and empty placeholder roots (0.782735ms)
+✔ release has no opacity jump, fades smoothly to zero, and never reappears late (0.248393ms)
+✔ pause reuses simulation age and each cast starts with independent visibility (0.134902ms)
+✔ AOE uses a linear meter scale rather than applying the ratio twice (0.702245ms)
+✔ water respects its world-unit cap and invalid settings fall back safely (0.137125ms)
+✔ tests/windows-launcher.test.js (32.217139ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 24
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1010.728031

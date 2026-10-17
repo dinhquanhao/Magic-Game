@@ -1,0 +1,685 @@
+{
+  "element": "MAGMA",
+  "cues": [
+    {
+      "id": "magma/precast",
+      "role": "precast",
+      "iterations": 1,
+      "status": "PASS",
+      "failures": [],
+      "metrics": [
+        {
+          "peakDbFS": -13.027087230709409,
+          "truePeakDbTP4x": -13.021559855678337,
+          "rmsDbFS": -25.000306383624803,
+          "lufsApprox": -32.25374795055306,
+          "duration": 0.3,
+          "dc": 1.9238789876302082e-05,
+          "seam": 0.0,
+          "tailDropDb": 22.684706891056393,
+          "centroidHz": 114.25916531553335,
+          "riserCentroidDeltaHz": -8.760370899617683,
+          "bands": [
+            0.49284440929452883,
+            0.15503663501007903,
+            0.0574201095026944,
+            0.0021869630917820196,
+            7.146250985144459e-06
+          ],
+          "vacuumRmsDbFS": -30.685080396486608,
+          "vacuumBoundaryDelta": 0.0029296875,
+          "finite": true
+        }
+      ],
+      "earVerified": false
+    },
+    {
+      "id": "magma/charging",
+      "role": "charging",
+      "iterations": 1,
+      "status": "PASS",
+      "failures": [],
+      "metrics": [
+        {
+          "peakDbFS": -16.81544934173038,
+          "truePeakDbTP4x": -16.806226135265213,
+          "rmsDbFS": -27.00039709983736,
+          "lufsApprox": -35.95276886613069,
+          "duration": 1.2,
+          "dc": 1.0847515530056424e-05,
+          "seam": 0.0,
+          "tailDropDb": 6.842844380560681,
+          "centroidHz": 94.37569162226632,
+          "riserCentroidDeltaHz": -5.957693821367883,
+          "bands": [
+            0.4312176968455476,
+            0.11032055006997595,
+            0.04842951984034881,
+            0.0018023326141754705,
+            5.805968874683532e-06
+          ],
+          "vacuumRmsDbFS": -28.13795555835577,
+          "vacuumBoundaryDelta": 0.00164794921875,
+          "finite": true
+        }
+      ],
+      "earVerified": false
+    },
+    {
+      "id": "magma/casting",
+      "role": "casting",
+      "iterations": 1,
+      "status": "PASS",
+      "failures": [],
+      "metrics": [
+        {
+          "peakDbFS": -8.024120425416212,
+          "truePeakDbTP4x": -8.018593050385142,
+          "rmsDbFS": -22.005807780287476,
+          "lufsApprox": -32.47944689425362,
+          "duration": 0.38,
+          "dc": 0.00013938033789919133,
+          "seam": 0.0,
+          "tailDropDb": 22.9640169140776,
+          "centroidHz": 113.24227662255142,
+          "riserCentroidDeltaHz": -19.19192587673642,
+          "bands": [
+            0.22617454014915267,
+            0.09394199678819727,
+            0.03618692397602363,
+            0.001998465060348334,
+            5.024369404124211e-06
+          ],
+          "vacuumRmsDbFS": -35.75549226867799,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        }
+      ],
+      "earVerified": false
+    },
+    {
+      "id": "magma/traveling",
+      "role": "traveling",
+      "iterations": 1,
+      "status": "PASS",
+      "failures": [],
+      "metrics": [
+        {
+          "peakDbFS": -15.51280671876718,
+          "truePeakDbTP4x": -15.507279343736109,
+          "rmsDbFS": -26.00046164544516,
+          "lufsApprox": -34.34947569901621,
+          "duration": 1.2,
+          "dc": 3.7638346354166668e-06,
+          "seam": 0.0,
+          "tailDropDb": 9.231212702548838,
+          "centroidHz": 91.9590103172175,
+          "riserCentroidDeltaHz": -13.241750673382512,
+          "bands": [
+            0.5101021858388677,
+            0.1196467780594137,
+            0.05345925711637071,
+            0.001869925042829725,
+            6.137013302373413e-06
+          ],
+          "vacuumRmsDbFS": -26.31339397793038,
+          "vacuumBoundaryDelta": 0.0003662109375,
+          "finite": true
+        }
+      ],
+      "earVerified": false
+    },
+    {
+      "id": "magma/material",
+      "role": "material",
+      "iterations": 1,
+      "status": "PASS",
+      "failures": [],
+      "metrics": [
+        {
+          "peakDbFS": -8.562600455066342,
+          "truePeakDbTP4x": -8.542423135905153,
+          "rmsDbFS": -24.001227452952175,
+          "lufsApprox": -32.35741261361949,
+          "duration": 1.2,
+          "dc": 4.547754923502604e-05,
+          "seam": 0.0,
+          "tailDropDb": 26.21691795896766,
+          "centroidHz": 97.96356715315275,
+          "riserCentroidDeltaHz": -17.49867384433537,
+          "bands": [
+            0.47623583332241903,
+            0.13807664106187173,
+            0.04946339484755295,
+            0.0021760124750854113,
+            7.078650788792402e-06
+          ],
+          "vacuumRmsDbFS": -37.86219212657742,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        },
+        {
+          "peakDbFS": -10.213975587374337,
+          "truePeakDbTP4x": -10.183303485983737,
+          "rmsDbFS": -24.000722982435178,
+          "lufsApprox": -32.550530715689746,
+          "duration": 1.2,
+          "dc": 7.765028211805555e-06,
+          "seam": 0.0,
+          "tailDropDb": 35.66564966660239,
+          "centroidHz": 92.7924670087708,
+          "riserCentroidDeltaHz": -17.406424906371726,
+          "bands": [
+            0.5116776787448841,
+            0.12555089993390156,
+            0.05853511642342712,
+            0.00210455696776509,
+            6.645879427732833e-06
+          ],
+          "vacuumRmsDbFS": -51.57404827126661,
+          "vacuumBoundaryDelta": 3.0517578125e-05,
+          "finite": true
+        },
+        {
+          "peakDbFS": -7.439334485793124,
+          "truePeakDbTP4x": -7.415776146451055,
+          "rmsDbFS": -24.000826329955206,
+          "lufsApprox": -30.971532050672277,
+          "duration": 1.2,
+          "dc": 2.041498819986979e-05,
+          "seam": 0.0,
+          "tailDropDb": 49.53419489804135,
+          "centroidHz": 96.31711197620007,
+          "riserCentroidDeltaHz": -17.82682031472227,
+          "bands": [
+            0.5427167181963429,
+            0.12857234319440788,
+            0.05322706032511038,
+            0.0019982548946469044,
+            5.892451922424509e-06
+          ],
+          "vacuumRmsDbFS": -59.42023969156647,
+          "vacuumBoundaryDelta": 3.0517578125e-05,
+          "finite": true
+        },
+        {
+          "peakDbFS": -7.691392423321329,
+          "truePeakDbTP4x": -7.685865048290257,
+          "rmsDbFS": -24.000470204479495,
+          "lufsApprox": -30.908294573882937,
+          "duration": 1.2,
+          "dc": 5.016326904296875e-06,
+          "seam": 0.0,
+          "tailDropDb": 56.54693024269113,
+          "centroidHz": 91.05034587095999,
+          "riserCentroidDeltaHz": 12.120577015011634,
+          "bands": [
+            0.4879320249189868,
+            0.174220417675226,
+            0.046120875925016694,
+            0.001473439078663282,
+            4.532849138083502e-06
+          ],
+          "vacuumRmsDbFS": -63.9562299422316,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        }
+      ],
+      "earVerified": false
+    },
+    {
+      "id": "magma/motion",
+      "role": "motion",
+      "iterations": 1,
+      "status": "PASS",
+      "failures": [],
+      "metrics": [
+        {
+          "peakDbFS": -9.680829414161876,
+          "truePeakDbTP4x": -9.675302039130804,
+          "rmsDbFS": -26.000657067017293,
+          "lufsApprox": -33.699697830959046,
+          "duration": 1.5,
+          "dc": 1.881747775607639e-05,
+          "seam": 0.0,
+          "tailDropDb": 30.461249680633074,
+          "centroidHz": 104.68503571565078,
+          "riserCentroidDeltaHz": 4.900661572188696,
+          "bands": [
+            0.5044166211918034,
+            0.1389892156589767,
+            0.06844012187533716,
+            0.0023523156576151145,
+            8.07108772253305e-06
+          ],
+          "vacuumRmsDbFS": -45.558947350577384,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        }
+      ],
+      "earVerified": false
+    },
+    {
+      "id": "magma/environment",
+      "role": "environment",
+      "iterations": 1,
+      "status": "PASS",
+      "failures": [],
+      "metrics": [
+        {
+          "peakDbFS": -20.367639971224264,
+          "truePeakDbTP4x": -20.362112596193192,
+          "rmsDbFS": -31.0015751548639,
+          "lufsApprox": -38.87973890698992,
+          "duration": 2.0,
+          "dc": 6.2853495279947915e-06,
+          "seam": 0.0,
+          "tailDropDb": 3.075412813691674,
+          "centroidHz": 93.61758596645551,
+          "riserCentroidDeltaHz": -18.44531711318791,
+          "bands": [
+            0.5147420498458691,
+            0.14136855640331425,
+            0.049702662916914456,
+            0.0018335340579860638,
+            6.016232404882954e-06
+          ],
+          "vacuumRmsDbFS": -31.1974209992879,
+          "vacuumBoundaryDelta": 0.000518798828125,
+          "finite": true
+        }
+      ],
+      "earVerified": false
+    },
+    {
+      "id": "magma/secondary",
+      "role": "secondary",
+      "iterations": 1,
+      "status": "PASS",
+      "failures": [],
+      "metrics": [
+        {
+          "peakDbFS": -11.246374195525458,
+          "truePeakDbTP4x": -11.240846820494388,
+          "rmsDbFS": -27.00606225193349,
+          "lufsApprox": -34.66637198097004,
+          "duration": 0.9,
+          "dc": 4.278253625940393e-05,
+          "seam": 0.0,
+          "tailDropDb": 39.768786164970535,
+          "centroidHz": 81.0283776113111,
+          "riserCentroidDeltaHz": 8.081499722802647,
+          "bands": [
+            0.6507833405167048,
+            0.1206322357579499,
+            0.03701927372197592,
+            0.001443887453127569,
+            4.682186969034167e-06
+          ],
+          "vacuumRmsDbFS": -56.517265003992286,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        },
+        {
+          "peakDbFS": -9.016844296581828,
+          "truePeakDbTP4x": -9.011316921550758,
+          "rmsDbFS": -27.00729420159871,
+          "lufsApprox": -34.461154312639685,
+          "duration": 0.9,
+          "dc": 2.0811292860243056e-05,
+          "seam": 0.0,
+          "tailDropDb": 46.48473060257341,
+          "centroidHz": 84.84450332440075,
+          "riserCentroidDeltaHz": -2.8540791495329927,
+          "bands": [
+            0.6204504366465363,
+            0.1190888529093056,
+            0.04952476308001564,
+            0.0015909288389395172,
+            6.227574511935787e-06
+          ],
+          "vacuumRmsDbFS": -60.73020336360362,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        },
+        {
+          "peakDbFS": -11.658508758183512,
+          "truePeakDbTP4x": -11.65298138315244,
+          "rmsDbFS": -27.021601691321404,
+          "lufsApprox": -33.580688693053446,
+          "duration": 0.9,
+          "dc": 6.653821026837384e-05,
+          "seam": 0.0,
+          "tailDropDb": 27.817766726497,
+          "centroidHz": 91.28081454470865,
+          "riserCentroidDeltaHz": 23.46183304299872,
+          "bands": [
+            0.5133559202782078,
+            0.1595671257077358,
+            0.05112961315452141,
+            0.00181070963250153,
+            5.663962715804817e-06
+          ],
+          "vacuumRmsDbFS": -44.35462646523917,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        },
+        {
+          "peakDbFS": -9.29135448591377,
+          "truePeakDbTP4x": -9.285827110882698,
+          "rmsDbFS": -27.18371108083543,
+          "lufsApprox": -34.336056884680325,
+          "duration": 0.9,
+          "dc": 0.0002261635109230324,
+          "seam": 0.0,
+          "tailDropDb": 29.04334767026619,
+          "centroidHz": 90.60525642722722,
+          "riserCentroidDeltaHz": 43.9311198115971,
+          "bands": [
+            0.5973977457478413,
+            0.11743701156013144,
+            0.05525976566629889,
+            0.0019258839208458219,
+            6.498901102517346e-06
+          ],
+          "vacuumRmsDbFS": -44.504345389332855,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        }
+      ],
+      "earVerified": false
+    },
+    {
+      "id": "magma/riser",
+      "role": "riser",
+      "iterations": 1,
+      "status": "PASS",
+      "failures": [],
+      "metrics": [
+        {
+          "peakDbFS": -8.955681059709384,
+          "truePeakDbTP4x": -8.948699876446044,
+          "rmsDbFS": -23.523695540670822,
+          "lufsApprox": -31.57682052780994,
+          "duration": 0.8,
+          "dc": 1.2238820393880208e-07,
+          "seam": 0.0,
+          "tailDropDb": 225.2540250995915,
+          "centroidHz": 233.32967240580737,
+          "riserCentroidDeltaHz": 110.91426466943864,
+          "bands": [
+            0.39008707033480655,
+            0.10207704061677701,
+            0.14643983475559436,
+            0.0013108172013747508,
+            4.4645008944178975e-06
+          ],
+          "vacuumRmsDbFS": -240.0,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        }
+      ],
+      "earVerified": false
+    },
+    {
+      "id": "magma/impact",
+      "role": "impact",
+      "iterations": 2,
+      "status": "PASS",
+      "failures": [],
+      "metrics": [
+        {
+          "peakDbFS": -2.912440848687799,
+          "truePeakDbTP4x": -2.9069134736567284,
+          "rmsDbFS": -19.01521520396361,
+          "lufsApprox": -23.713608132036235,
+          "duration": 3.2,
+          "dc": 7.141947746276856e-05,
+          "seam": 0.0,
+          "tailDropDb": 46.25862076485033,
+          "centroidHz": 216.27974662785326,
+          "riserCentroidDeltaHz": 5756.065223196763,
+          "bands": [
+            0.43821091161941433,
+            0.246117302497484,
+            0.09029712023181241,
+            0.007129281886067203,
+            0.005751163587598143
+          ],
+          "vacuumRmsDbFS": -51.669208274737855,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        }
+      ],
+      "earVerified": false
+    },
+    {
+      "id": "magma/shockwave",
+      "role": "shockwave",
+      "iterations": 1,
+      "status": "PASS",
+      "failures": [],
+      "metrics": [
+        {
+          "peakDbFS": -7.464338863300082,
+          "truePeakDbTP4x": -7.45881148826901,
+          "rmsDbFS": -25.002934416264758,
+          "lufsApprox": -29.604451452729908,
+          "duration": 1.2,
+          "dc": 3.479321797688802e-05,
+          "seam": 0.0,
+          "tailDropDb": 39.641247147242076,
+          "centroidHz": 101.85004212845362,
+          "riserCentroidDeltaHz": -4.691630517712838,
+          "bands": [
+            0.3543446953013584,
+            0.3914090269971576,
+            0.03870470305009707,
+            0.0012662938355738223,
+            4.060092922715645e-06
+          ],
+          "vacuumRmsDbFS": -53.86793673262848,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        }
+      ],
+      "earVerified": false
+    },
+    {
+      "id": "magma/aftermath",
+      "role": "aftermath",
+      "iterations": 1,
+      "status": "PASS",
+      "failures": [],
+      "metrics": [
+        {
+          "peakDbFS": -11.38388455520641,
+          "truePeakDbTP4x": -11.37398859931456,
+          "rmsDbFS": -30.000291422863413,
+          "lufsApprox": -37.36040634799764,
+          "duration": 3.6,
+          "dc": 2.421626338252315e-06,
+          "seam": 0.0,
+          "tailDropDb": 37.37530090449736,
+          "centroidHz": 92.7377087607941,
+          "riserCentroidDeltaHz": 7.068088545995721,
+          "bands": [
+            0.5296124697705117,
+            0.1400554649122148,
+            0.05095849706141506,
+            0.0019385122791108884,
+            6.367611062225609e-06
+          ],
+          "vacuumRmsDbFS": -53.16387664123131,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        }
+      ],
+      "earVerified": false
+    },
+    {
+      "id": "magma/rune",
+      "role": "rune",
+      "iterations": 1,
+      "status": "PASS",
+      "failures": [],
+      "metrics": [
+        {
+          "peakDbFS": -12.58708405043941,
+          "truePeakDbTP4x": -12.581556675408338,
+          "rmsDbFS": -29.349871535538856,
+          "lufsApprox": -34.95110255199113,
+          "duration": 0.48,
+          "dc": 0.00036466121673583984,
+          "seam": 0.0,
+          "tailDropDb": 36.58923606036916,
+          "centroidHz": 59.99676769005913,
+          "riserCentroidDeltaHz": 1.6147371106522783,
+          "bands": [
+            0.8038532323545972,
+            0.189954402134464,
+            0.000786102717305714,
+            2.720275843965507e-05,
+            1.4506742285824015e-07
+          ],
+          "vacuumRmsDbFS": -55.787062344931506,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        },
+        {
+          "peakDbFS": -12.497225345084612,
+          "truePeakDbTP4x": -12.491697970053544,
+          "rmsDbFS": -29.35415710460427,
+          "lufsApprox": -34.890220900663905,
+          "duration": 0.48,
+          "dc": 0.00036651558346218534,
+          "seam": 0.0,
+          "tailDropDb": 44.17091387179727,
+          "centroidHz": 59.425276074818505,
+          "riserCentroidDeltaHz": -0.9209201528036672,
+          "bands": [
+            0.7872400988240318,
+            0.20454337612866133,
+            0.0007736912864843977,
+            2.9583474061902683e-05,
+            1.4634424189562593e-07
+          ],
+          "vacuumRmsDbFS": -62.71523619667232,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        },
+        {
+          "peakDbFS": -12.452642213002834,
+          "truePeakDbTP4x": -12.447114837971762,
+          "rmsDbFS": -29.332436214258742,
+          "lufsApprox": -34.78725746528654,
+          "duration": 0.48,
+          "dc": 0.0003497229682074653,
+          "seam": 0.0,
+          "tailDropDb": 36.47020481901494,
+          "centroidHz": 60.79058516652139,
+          "riserCentroidDeltaHz": -5.405618282173222,
+          "bands": [
+            0.7789538297719782,
+            0.20958039939979087,
+            0.0007904324276465538,
+            2.8762082468277033e-05,
+            1.396449665430594e-07
+          ],
+          "vacuumRmsDbFS": -55.484944795835304,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        },
+        {
+          "peakDbFS": -12.539792338486633,
+          "truePeakDbTP4x": -12.534264963455561,
+          "rmsDbFS": -29.33279156877626,
+          "lufsApprox": -34.83237640191592,
+          "duration": 0.48,
+          "dc": 0.0003569841384887695,
+          "seam": 0.0,
+          "tailDropDb": 39.95333812631566,
+          "centroidHz": 60.571140286118855,
+          "riserCentroidDeltaHz": -2.4570777574425833,
+          "bands": [
+            0.7840621412061252,
+            0.19315796344348773,
+            0.000558709839383463,
+            2.718188334862122e-05,
+            1.132083233530639e-07
+          ],
+          "vacuumRmsDbFS": -59.15081066102066,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        }
+      ],
+      "earVerified": false
+    },
+    {
+      "id": "magma/ui",
+      "role": "ui",
+      "iterations": 1,
+      "status": "PASS",
+      "failures": [],
+      "metrics": [
+        {
+          "peakDbFS": -24.116395350676385,
+          "truePeakDbTP4x": -24.110867975645313,
+          "rmsDbFS": -35.294316145435914,
+          "lufsApprox": -36.86137530232989,
+          "duration": 0.09,
+          "dc": 0.0009979671902126735,
+          "seam": 0.0,
+          "tailDropDb": 22.275080119557227,
+          "centroidHz": 133.25537736914927,
+          "riserCentroidDeltaHz": -9.046463227401418,
+          "bands": [
+            0.007925030628297573,
+            0.929841466315288,
+            0.031105078689279596,
+            1.8733553964117015e-05,
+            6.139356230837526e-07
+          ],
+          "vacuumRmsDbFS": -37.05472095857467,
+          "vacuumBoundaryDelta": 0.0,
+          "finite": true
+        }
+      ],
+      "earVerified": false
+    },
+    {
+      "id": "magma/drone",
+      "role": "drone",
+      "iterations": 1,
+      "status": "PASS",
+      "failures": [],
+      "metrics": [
+        {
+          "peakDbFS": -25.787316379677883,
+          "truePeakDbTP4x": -25.78178900464681,
+          "rmsDbFS": -34.00055596981388,
+          "lufsApprox": -48.10188589971857,
+          "duration": 2.0,
+          "dc": 4.3481190999348955e-06,
+          "seam": 0.0,
+          "tailDropDb": 11.162002285776516,
+          "centroidHz": 31.538946338384676,
+          "riserCentroidDeltaHz": 2.6540266104147605,
+          "bands": [
+            0.8526178088217307,
+            0.020562625116558767,
+            0.0073545872380813586,
+            0.00026761455513614035,
+            1.018904500628087e-06
+          ],
+          "vacuumRmsDbFS": -37.35656844517471,
+          "vacuumBoundaryDelta": 0.000579833984375,
+          "finite": true
+        }
+      ],
+      "earVerified": false
+    }
+  ],
+  "passed": true,
+  "earVerified": false
+}

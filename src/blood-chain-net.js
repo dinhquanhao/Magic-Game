@@ -1,3 +1,4 @@
+import { getSkillAreaRadius } from './skill-area.js';
 import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 
@@ -162,7 +163,7 @@ function makeBloodMaterial(colorHex) {
   material.userData.bloodUniforms = uniforms;
   material.onBeforeCompile = (shader) => {
     Object.assign(shader.uniforms, uniforms);
-    const attributes = '\nattribute float aBloodBorn;\nattribute float aBloodProgress;\nattribute float aBloodSeed;\nattribute float aBloodWaveStart;\nattribute float aBloodSize;\nattribute float aBloodVariant;\nattribute float aBloodTension;\nattribute float aBloodShatterSpeed;\nattribute vec3 aBloodTangent;\nattribute vec3 aBloodFragmentDirection;\nuniform float uBloodTime;\nuniform float uBloodIntensity;\nuniform float uBloodConstrict;\nuniform float uBloodShatterTime;\nuniform vec3 uBloodCenter;\nuniform vec3 uBloodColor;\nuniform vec3 uBloodHotColor;\nvarying vec3 vBloodLinkPosition;\nvarying vec3 vBloodViewDirection;\nvarying float vBloodAlpha;\nvarying float vBloodProgress;\nvarying float vBloodSeed;\nvarying float vBloodVariant;\nvarying float vBloodTension;';
+    const attributes = '\nattribute vec4 aBloodTiming;\nattribute vec4 aBloodShape;\n#define aBloodBorn aBloodTiming.x\n#define aBloodProgress aBloodTiming.y\n#define aBloodSeed aBloodTiming.z\n#define aBloodWaveStart aBloodTiming.w\n#define aBloodSize aBloodShape.x\n#define aBloodVariant aBloodShape.y\n#define aBloodTension aBloodShape.z\n#define aBloodShatterSpeed aBloodShape.w\n\nattribute vec3 aBloodTangent;\nattribute vec3 aBloodFragmentDirection;\nuniform float uBloodTime;\nuniform float uBloodIntensity;\nuniform float uBloodConstrict;\nuniform float uBloodShatterTime;\nuniform vec3 uBloodCenter;\nuniform vec3 uBloodColor;\nuniform vec3 uBloodHotColor;\nvarying vec3 vBloodLinkPosition;\nvarying vec3 vBloodViewDirection;\nvarying float vBloodAlpha;\nvarying float vBloodProgress;\nvarying float vBloodSeed;\nvarying float vBloodVariant;\nvarying float vBloodTension;';
     const fragmentDeclarations = '\nuniform float uBloodTime;\nuniform float uBloodIntensity;\nuniform vec3 uBloodColor;\nuniform vec3 uBloodHotColor;\nvarying vec3 vBloodLinkPosition;\nvarying vec3 vBloodViewDirection;\nvarying float vBloodAlpha;\nvarying float vBloodProgress;\nvarying float vBloodSeed;\nvarying float vBloodVariant;\nvarying float vBloodTension;';
     shader.vertexShader = shader.vertexShader.replace('#include <common>', '#include <common>' + attributes);
     shader.vertexShader = shader.vertexShader.replace('#include <begin_vertex>', '#include <begin_vertex>\nvBloodLinkPosition = position;\nvBloodProgress = aBloodProgress;\nvBloodSeed = aBloodSeed;\nvBloodVariant = aBloodVariant;\nvBloodTension = aBloodTension;');
@@ -170,7 +171,7 @@ function makeBloodMaterial(colorHex) {
     shader.fragmentShader = shader.fragmentShader.replace('#include <common>', '#include <common>' + fragmentDeclarations);
     shader.fragmentShader = shader.fragmentShader.replace('#include <emissivemap_fragment>', '#include <emissivemap_fragment>\nfloat bloodFlow = 0.5 + 0.5 * sin(vBloodProgress * 37.0 - uBloodTime * 2.8 + vBloodSeed * 22.0);\nfloat bloodEtch = pow(max(0.0, sin(vBloodLinkPosition.x * 19.0 + vBloodLinkPosition.y * 15.0 + vBloodSeed * 31.0 + vBloodProgress * 52.0)), 18.0);\nfloat bloodRune = pow(max(0.0, sin(vBloodLinkPosition.y * 28.0 + vBloodLinkPosition.x * 8.0 + vBloodSeed * 9.0)), 14.0);\nfloat bloodFresnel = pow(1.0 - abs(dot(normalize(normal), normalize(vBloodViewDirection))), 2.45);\nvec3 bloodMetal = mix(vec3(0.045, 0.003, 0.012), uBloodColor, 0.44 + bloodFlow * 0.28);\nbloodMetal = mix(bloodMetal, vec3(0.24, 0.012, 0.035), clamp(vBloodVariant * 0.12 + bloodRune * 0.2, 0.0, 0.42));\ndiffuseColor.rgb = mix(diffuseColor.rgb * 0.34, bloodMetal, 0.9);\ndiffuseColor.rgb += uBloodHotColor * (bloodFresnel * 0.22 + vBloodTension * 0.08);\ndiffuseColor.a *= vBloodAlpha;\ntotalEmissiveRadiance += uBloodHotColor * (bloodEtch * 0.52 + bloodRune * 0.24 + bloodFresnel * 0.08 + vBloodTension * 0.1) * uBloodIntensity * vBloodAlpha;');
   };
-  material.customProgramCacheKey = () => 'arcane-blood-chain-instanced-v1';
+  material.customProgramCacheKey = () => 'arcane-blood-chain-instanced-v2';
   return material;
 }
 
@@ -267,24 +268,20 @@ function makeGroundMarks(parent, radius, settings) {
 
 function makeChainMaterialAttributes(mesh, records) {
   const count = records.length;
-  const scalar = (name, read) => {
-    const values = new Float32Array(count);
-    for (let i = 0; i < count; i++) values[i] = read(records[i]);
-    mesh.geometry.setAttribute(name, new THREE.InstancedBufferAttribute(values, 1));
+  // Pack eight scalars into two slots. Together with instanceMatrix and the
+  // PBR vertex attributes this stays below WebGL2's minimum 16-attribute limit.
+  const packed = (name, keys) => {
+    const values = new Float32Array(count * 4);
+    for (let i = 0; i < count; i++) for (let k = 0; k < 4; k++) values[i * 4 + k] = records[i][keys[k]];
+    mesh.geometry.setAttribute(name, new THREE.InstancedBufferAttribute(values, 4));
   };
   const vector = (name, read) => {
     const values = new Float32Array(count * 3);
     for (let i = 0; i < count; i++) values.set(read(records[i]), i * 3);
     mesh.geometry.setAttribute(name, new THREE.InstancedBufferAttribute(values, 3));
   };
-  scalar('aBloodBorn', record => record.born);
-  scalar('aBloodProgress', record => record.progress);
-  scalar('aBloodSeed', record => record.seed);
-  scalar('aBloodWaveStart', record => record.waveStart);
-  scalar('aBloodSize', record => record.size);
-  scalar('aBloodVariant', record => record.variant);
-  scalar('aBloodTension', record => record.tension);
-  scalar('aBloodShatterSpeed', record => record.shatterSpeed);
+  packed('aBloodTiming', ['born', 'progress', 'seed', 'waveStart']);
+  packed('aBloodShape', ['size', 'variant', 'tension', 'shatterSpeed']);
   vector('aBloodTangent', record => record.tangent.toArray());
   vector('aBloodFragmentDirection', record => record.fragmentDirection.toArray());
 }
@@ -355,7 +352,7 @@ export function createBloodChainNetAttack(parent, index, hex, skill, config, cal
   const root = new THREE.Group();
   parent.add(root);
   root.visible = false;
-  const radius = Math.max(4, skill.spread * (config.aoeRadius / skill.aoe) * (config.aoeScale || 1));
+  const radius = getSkillAreaRadius(skill, config.aoeRadius);
   const qualityName = config.quality || 'High';
   const quality = QUALITY[qualityName] || QUALITY.High;
   const density = Math.max(0.62, (config.density || 1) * (config.qualityScale || 1));

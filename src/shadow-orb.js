@@ -19,7 +19,7 @@ function qualityIndex(config) {
 
 function makeOrbMaterial() {
   return new THREE.ShaderMaterial({
-    uniforms: { uTime: { value: 0 }, uCompression: { value: 0 }, uCrack: { value: 0 }, uPulse: { value: 0 }, uFlash: { value: 0 } },
+    uniforms: { uTime: { value: 0 }, uCompression: { value: 0 }, uCrack: { value: 0 }, uPulse: { value: 0 }, uFlash: { value: 0 }, uPurple: { value: PURPLE }, uDarkPurple: { value: DARK_PURPLE } },
     vertexShader: `
       varying vec3 vNormal; varying vec3 vPosition; varying vec3 vEye;
       uniform float uTime; uniform float uCompression;
@@ -32,6 +32,7 @@ function makeOrbMaterial() {
     fragmentShader: `
       varying vec3 vNormal; varying vec3 vPosition; varying vec3 vEye;
       uniform float uTime; uniform float uCompression; uniform float uCrack; uniform float uPulse; uniform float uFlash;
+      uniform vec3 uPurple; uniform vec3 uDarkPurple;
       float hash(vec3 p){p=fract(p*.3183099+vec3(.1,.2,.3));p*=17.0;return fract(p.x*p.y*p.z*(p.x+p.y+p.z));}
       float noise(vec3 x){vec3 i=floor(x),f=fract(x);f=f*f*(3.0-2.0*f);return mix(mix(mix(hash(i),hash(i+vec3(1,0,0)),f.x),mix(hash(i+vec3(0,1,0)),hash(i+vec3(1,1,0)),f.x),f.y),mix(mix(hash(i+vec3(0,0,1)),hash(i+vec3(1,0,1)),f.x),mix(hash(i+vec3(0,1,1)),hash(i+vec3(1,1,1)),f.x),f.y),f.z);}
       void main(){
@@ -42,7 +43,7 @@ function makeOrbMaterial() {
         float crackNoise=noise(p*vec3(13.0,17.0,11.0)+vec3(uTime*.08,-uTime*.04,uTime*.06));
         float cracks=(1.0-smoothstep(.012,.055,abs(crackNoise-.49)))*uCrack;
         float heartbeat=.82+.18*uPulse;
-        vec3 color=vec3(.0015,.0012,.003)+DARK_PURPLE*inkVein+PURPLE*(edge*(.22+.42*uCompression)+cracks*.9+uFlash*.12);
+        vec3 color=vec3(.0015,.0012,.003)+uDarkPurple*inkVein+uPurple*(edge*(.22+.42*uCompression)+cracks*.9+uFlash*.12);
         color*=heartbeat; gl_FragColor=vec4(color,1.0);
       }`,
     transparent: false,
@@ -335,7 +336,7 @@ export function createShadowOrbAttack(parent, index, hex, skill, config, callbac
   }
 
   return {
-    group: root, update, cameraPose: cameraPoseAt,
+    group: root, radius: absorbRadius, update, cameraPose: cameraPoseAt,
     environmentMood: () => currentMood,
     flashLevel: () => currentFlash,
     distortionLevel: () => currentPull * .65 + currentVignette * .22 + currentFlash * .2,

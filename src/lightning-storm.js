@@ -101,21 +101,20 @@ function makeBoltShapes(variantCount, segmentCount, seed, jaggedness = .35, bran
 function makeBoltGeometry(segmentCount, boltCount, seed) {
   const geometry = new THREE.InstancedBufferGeometry();
   const vertices = segmentCount * 6;
-  const positions = new Float32Array(vertices * 3), segments = new Float32Array(vertices), points = new Float32Array(vertices), sides = new Float32Array(vertices), branches = new Float32Array(vertices), progress = new Float32Array(vertices);
+  const positions = new Float32Array(vertices * 3), segments = new Float32Array(vertices), points = new Float32Array(vertices), sides = new Float32Array(vertices), progress = new Float32Array(vertices);
   const corners = [[0,-1],[1,-1],[1,1],[0,-1],[1,1],[0,1]];
   let v = 0;
   for (let segment = 0; segment < segmentCount; segment++) for (const [point, side] of corners) {
     segments[v] = segment; points[v] = point; sides[v] = side;
-    branches[v] = 0;
     progress[v] = (segment + point) / segmentCount;
     v++;
   }
   geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
-  geometry.setAttribute('aSegment', new THREE.BufferAttribute(segments, 1));
-  geometry.setAttribute('aPoint', new THREE.BufferAttribute(points, 1));
-  geometry.setAttribute('aSide', new THREE.BufferAttribute(sides, 1));
-  geometry.setAttribute('aBranch', new THREE.BufferAttribute(branches, 1));
-  geometry.setAttribute('aProgress', new THREE.BufferAttribute(progress, 1));
+  // One vertex attribute replaces four scalar slots, leaving room for bolt
+  // instance data on devices exposing the WebGL2 minimum attribute budget.
+  const vertexData = new Float32Array(vertices * 4);
+  for (let i = 0; i < vertices; i++) vertexData.set([segments[i], points[i], sides[i], progress[i]], i * 4);
+  geometry.setAttribute('aBoltVertex', new THREE.BufferAttribute(vertexData, 4));
   const rand = randomSource(seed), origin = new Float32Array(boltCount * 3), variant = new Float32Array(boltCount), born = new Float32Array(boltCount), leader = new Float32Array(boltCount), pulseCount = new Float32Array(boltCount), life = new Float32Array(boltCount), width = new Float32Array(boltCount), length = new Float32Array(boltCount), seedAttr = new Float32Array(boltCount), master = new Float32Array(boltCount), waveId = new Float32Array(boltCount);
   const add = (name, array, size = 1) => geometry.setAttribute(name, new THREE.InstancedBufferAttribute(array, size));
   add('aOrigin', origin, 3); add('aVariant', variant); add('aBorn', born); add('aLeader', leader); add('aPulseCount', pulseCount); add('aLife', life); add('aWidth', width); add('aLength', length); add('aSeed', seedAttr); add('aMaster', master); add('aWave', waveId);
@@ -132,8 +131,12 @@ function makeBoltMaterial(startTexture, endTexture, segmentCount, variantCount) 
       uColor: { value: new THREE.Color(0x8c8bff) },
     },
     vertexShader: `
-      attribute float aSegment; attribute float aPoint; attribute float aSide; attribute float aBranch; attribute float aProgress;
-      attribute vec3 aOrigin; attribute float aVariant; attribute float aBorn; attribute float aLeader; attribute float aPulseCount; attribute float aLife; attribute float aWidth; attribute float aLength; attribute float aSeed; attribute float aMaster; attribute float aWave;
+      attribute vec4 aBoltVertex;
+      #define aSegment aBoltVertex.x
+      #define aPoint aBoltVertex.y
+      #define aSide aBoltVertex.z
+      #define aProgress aBoltVertex.w
+      attribute vec3 aOrigin; attribute float aVariant; attribute float aBorn; attribute float aLeader; attribute float aPulseCount; attribute float aLife; attribute float aWidth; attribute float aLength; attribute float aSeed; attribute float aMaster;
       uniform sampler2D uStart; uniform sampler2D uEnd; uniform float uSegmentCount; uniform float uVariantCount; uniform float uTime; uniform float uRadius; uniform float uHeight; uniform float uIntensity; uniform float uDensity; uniform float uReducedMotion; uniform float uFlickerHz;
       varying float vAlpha; varying float vSide; varying float vBranch; varying float vMaster; varying float vSeed;
       void main(){
@@ -152,14 +155,14 @@ function makeBoltMaterial(startTexture, endTexture, segmentCount, variantCount) 
         float life=leader*(1.0+.18*aPulseCount)+max(.38,aLife);
         float fade=1.0-smoothstep(life*.66,life,age);
         float restrike=.38+.62*abs(sin(max(0.0,age-leader)*(uFlickerHz*.48+aPulseCount*2.0)+aSeed*19.0));
-        float active=step(0.0,age)*stroke*fade*restrike;
+        float rayActive=step(0.0,age)*stroke*fade*restrike;
         float flicker=.68+.32*abs(sin(uTime*(uFlickerHz+uReducedMotion*2.0)+aSeed*37.0));
         float branchWidth=branch<.5?1.0:branch<1.5?.58:.34;
         float masterBoost=1.0+aMaster*1.5;
         float px=aWidth*branchWidth*masterBoost*uRadius;
         view.xy+=perpendicular*aSide*px;
         gl_Position=projectionMatrix*view;
-        vAlpha=active*flicker*uIntensity*mix(.65,1.0,uDensity);
+        vAlpha=rayActive*flicker*uIntensity*mix(.65,1.0,uDensity);
         vSide=aSide; vBranch=branch; vMaster=aMaster; vSeed=aSeed;
       }
     `,
@@ -224,7 +227,7 @@ function makeFallbackLightning(starts, ends, segmentCount, variantCount, boltDat
 function makeGroundMarkMaterial(arcLifetime, crawlingDensity, duration) {
   return new THREE.ShaderMaterial({
     uniforms: { uTime: { value: 0 }, uIntensity: { value: 1 }, uDensity: { value: crawlingDensity }, uArcLifetime: { value: arcLifetime }, uDuration: { value: duration } },
-    vertexShader: `attribute vec3 instanceColor; varying vec2 vUv; varying vec3 vData; void main(){vUv=uv;vData=instanceColor;gl_Position=projectionMatrix*modelViewMatrix*instanceMatrix*vec4(position,1.0); }`,
+    vertexShader: `varying vec2 vUv; varying vec3 vData; void main(){vUv=uv;vData=instanceColor;gl_Position=projectionMatrix*modelViewMatrix*instanceMatrix*vec4(position,1.0); }`,
     fragmentShader: `
       uniform float uTime; uniform float uIntensity; uniform float uDensity; uniform float uArcLifetime; uniform float uDuration; varying vec2 vUv; varying vec3 vData;
       void main(){
@@ -285,7 +288,7 @@ function makeShockwave(radius, definition, duration) {
 
 export function createLightningStormAttack(parent, index, hex, skill, config, callbacks) {
   const definition = skill.lightningStorm, quality = QUALITY[config.quality] || QUALITY.High;
-  const scale = THREE.MathUtils.clamp(config.aoeRadius / skill.aoe * config.aoeScale, .38, 1.6);
+  const scale = THREE.MathUtils.clamp(config.aoeRadius / skill.aoe, .38, 1.6);
   const radius = skill.spread * scale, height = radius * (definition.cloud.height / definition.aoeRadius) * 1.3, duration = definition.totalDuration;
   const requestedBoltCount = Math.round((definition.bolts.totalByQuality[config.quality] || quality.bolts) * (config.qualityScale || 1));
   const boltCount = Math.max(Math.round(quality.bolts * .72), requestedBoltCount);
@@ -405,7 +408,7 @@ export function createLightningStormAttack(parent, index, hex, skill, config, ca
   };
   group.userData.dispose = () => { startTexture.dispose(); endTexture.dispose(); };
   return {
-    group, update,
+    group, update, radius,
     environmentMood: () => currentMood,
     flashLevel: () => currentFlash,
     cameraPull: () => currentMood * .12,

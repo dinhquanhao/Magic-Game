@@ -1,0 +1,5162 @@
+[
+  {
+    "skill": {
+      "index": 0,
+      "id": "FIRE-01",
+      "name": "Thiên Nhật Diệt Thế",
+      "element": 0,
+      "impact": 3.72,
+      "end": 9.84
+    },
+    "samples": [
+      {
+        "skill": "FIRE-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG VẼ PHÙ VĂN",
+        "render": {
+          "frame": 50,
+          "calls": 67,
+          "triangles": 38031,
+          "points": 1203,
+          "lines": 182
+        },
+        "memory": {
+          "geometries": 42,
+          "textures": 14
+        },
+        "badPrograms": 4,
+        "glError": 1282,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 157.63599999999954,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "FIRE-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 66,
+          "calls": 147,
+          "triangles": 79111,
+          "points": 1623,
+          "lines": 494
+        },
+        "memory": {
+          "geometries": 104,
+          "textures": 14
+        },
+        "badPrograms": 10,
+        "glError": 1282,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 273.5771199999991,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "FIRE-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 82,
+          "calls": 149,
+          "triangles": 85063,
+          "points": 1623,
+          "lines": 494
+        },
+        "memory": {
+          "geometries": 105,
+          "textures": 14
+        },
+        "badPrograms": 10,
+        "glError": 1282,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 253.09895039999734,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      }
+    ],
+    "errors": [
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 0 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:71: '#' : invalid character\nERROR: 0:71: 'include' : syntax error\n\n  66: #ifdef USE_SKINNING\n  67: \tattribute vec4 skinIndex;\n  68: \tattribute vec4 skinWeight;\n  69: #endif\n  70: \n> 71: varying float vFireY;varying vec3 vFireP;#include <common>\n  72: #ifdef USE_BATCHING\n  73: \t#if ! defined( GL_ANGLE_multi_draw )\n  74: \t#define gl_DrawID _gl_DrawID\n  75: \tuniform int _gl_DrawID;\n  76: \t#endif\n  77: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:70: '#' : invalid character\nERROR: 0:70: 'include' : syntax error\n\n  65: #ifdef USE_SKINNING\n  66: \tattribute vec4 skinIndex;\n  67: \tattribute vec4 skinWeight;\n  68: #endif\n  69: \n> 70: varying float vFireY;varying vec3 vFireP;#include <common>\n  71: #ifdef USE_BATCHING\n  72: \t#if ! defined( GL_ANGLE_multi_draw )\n  73: \t#define gl_DrawID _gl_DrawID\n  74: \tuniform int _gl_DrawID;\n  75: \t#endif\n  76: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:72: '#' : invalid character\nERROR: 0:72: 'include' : syntax error\n\n  67: #ifdef USE_SKINNING\n  68: \tattribute vec4 skinIndex;\n  69: \tattribute vec4 skinWeight;\n  70: #endif\n  71: \n> 72: varying float vFireY;varying vec3 vFireP;#include <common>\n  73: #ifdef USE_BATCHING\n  74: \t#if ! defined( GL_ANGLE_multi_draw )\n  75: \t#define gl_DrawID _gl_DrawID\n  76: \tuniform int _gl_DrawID;\n  77: \t#endif\n  78: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:71: '#' : invalid character\nERROR: 0:71: 'include' : syntax error\n\n  66: #ifdef USE_SKINNING\n  67: \tattribute vec4 skinIndex;\n  68: \tattribute vec4 skinWeight;\n  69: #endif\n  70: \n> 71: varying float vFireY;varying vec3 vFireP;#include <common>\n  72: #ifdef USE_BATCHING\n  73: \t#if ! defined( GL_ANGLE_multi_draw )\n  74: \t#define gl_DrawID _gl_DrawID\n  75: \tuniform int _gl_DrawID;\n  76: \t#endif\n  77: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 0 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:71: '#' : invalid character\nERROR: 0:71: 'include' : syntax error\n\n  66: #ifdef USE_SKINNING\n  67: \tattribute vec4 skinIndex;\n  68: \tattribute vec4 skinWeight;\n  69: #endif\n  70: \n> 71: varying float vFireY;varying vec3 vFireP;#include <common>\n  72: #ifdef USE_BATCHING\n  73: \t#if ! defined( GL_ANGLE_multi_draw )\n  74: \t#define gl_DrawID _gl_DrawID\n  75: \tuniform int _gl_DrawID;\n  76: \t#endif\n  77: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:70: '#' : invalid character\nERROR: 0:70: 'include' : syntax error\n\n  65: #ifdef USE_SKINNING\n  66: \tattribute vec4 skinIndex;\n  67: \tattribute vec4 skinWeight;\n  68: #endif\n  69: \n> 70: varying float vFireY;varying vec3 vFireP;#include <common>\n  71: #ifdef USE_BATCHING\n  72: \t#if ! defined( GL_ANGLE_multi_draw )\n  73: \t#define gl_DrawID _gl_DrawID\n  74: \tuniform int _gl_DrawID;\n  75: \t#endif\n  76: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:71: '#' : invalid character\nERROR: 0:71: 'include' : syntax error\n\n  66: #ifdef USE_SKINNING\n  67: \tattribute vec4 skinIndex;\n  68: \tattribute vec4 skinWeight;\n  69: #endif\n  70: \n> 71: varying float vFireY;varying vec3 vFireP;#include <common>\n  72: #ifdef USE_BATCHING\n  73: \t#if ! defined( GL_ANGLE_multi_draw )\n  74: \t#define gl_DrawID _gl_DrawID\n  75: \tuniform int _gl_DrawID;\n  76: \t#endif\n  77: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:70: '#' : invalid character\nERROR: 0:70: 'include' : syntax error\n\n  65: #ifdef USE_SKINNING\n  66: \tattribute vec4 skinIndex;\n  67: \tattribute vec4 skinWeight;\n  68: #endif\n  69: \n> 70: varying float vFireY;varying vec3 vFireP;#include <common>\n  71: #ifdef USE_BATCHING\n  72: \t#if ! defined( GL_ANGLE_multi_draw )\n  73: \t#define gl_DrawID _gl_DrawID\n  74: \tuniform int _gl_DrawID;\n  75: \t#endif\n  76: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:72: '#' : invalid character\nERROR: 0:72: 'include' : syntax error\n\n  67: #ifdef USE_SKINNING\n  68: \tattribute vec4 skinIndex;\n  69: \tattribute vec4 skinWeight;\n  70: #endif\n  71: \n> 72: varying float vFireY;varying vec3 vFireP;#include <common>\n  73: #ifdef USE_BATCHING\n  74: \t#if ! defined( GL_ANGLE_multi_draw )\n  75: \t#define gl_DrawID _gl_DrawID\n  76: \tuniform int _gl_DrawID;\n  77: \t#endif\n  78: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:71: '#' : invalid character\nERROR: 0:71: 'include' : syntax error\n\n  66: #ifdef USE_SKINNING\n  67: \tattribute vec4 skinIndex;\n  68: \tattribute vec4 skinWeight;\n  69: #endif\n  70: \n> 71: varying float vFireY;varying vec3 vFireP;#include <common>\n  72: #ifdef USE_BATCHING\n  73: \t#if ! defined( GL_ANGLE_multi_draw )\n  74: \t#define gl_DrawID _gl_DrawID\n  75: \tuniform int _gl_DrawID;\n  76: \t#endif\n  77: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      }
+    ]
+  },
+  {
+    "samples": [],
+    "errors": [
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 0 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:71: '#' : invalid character\nERROR: 0:71: 'include' : syntax error\n\n  66: #ifdef USE_SKINNING\n  67: \tattribute vec4 skinIndex;\n  68: \tattribute vec4 skinWeight;\n  69: #endif\n  70: \n> 71: varying float vFireY;varying vec3 vFireP;#include <common>\n  72: #ifdef USE_BATCHING\n  73: \t#if ! defined( GL_ANGLE_multi_draw )\n  74: \t#define gl_DrawID _gl_DrawID\n  75: \tuniform int _gl_DrawID;\n  76: \t#endif\n  77: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:70: '#' : invalid character\nERROR: 0:70: 'include' : syntax error\n\n  65: #ifdef USE_SKINNING\n  66: \tattribute vec4 skinIndex;\n  67: \tattribute vec4 skinWeight;\n  68: #endif\n  69: \n> 70: varying float vFireY;varying vec3 vFireP;#include <common>\n  71: #ifdef USE_BATCHING\n  72: \t#if ! defined( GL_ANGLE_multi_draw )\n  73: \t#define gl_DrawID _gl_DrawID\n  74: \tuniform int _gl_DrawID;\n  75: \t#endif\n  76: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:72: '#' : invalid character\nERROR: 0:72: 'include' : syntax error\n\n  67: #ifdef USE_SKINNING\n  68: \tattribute vec4 skinIndex;\n  69: \tattribute vec4 skinWeight;\n  70: #endif\n  71: \n> 72: varying float vFireY;varying vec3 vFireP;#include <common>\n  73: #ifdef USE_BATCHING\n  74: \t#if ! defined( GL_ANGLE_multi_draw )\n  75: \t#define gl_DrawID _gl_DrawID\n  76: \tuniform int _gl_DrawID;\n  77: \t#endif\n  78: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:71: '#' : invalid character\nERROR: 0:71: 'include' : syntax error\n\n  66: #ifdef USE_SKINNING\n  67: \tattribute vec4 skinIndex;\n  68: \tattribute vec4 skinWeight;\n  69: #endif\n  70: \n> 71: varying float vFireY;varying vec3 vFireP;#include <common>\n  72: #ifdef USE_BATCHING\n  73: \t#if ! defined( GL_ANGLE_multi_draw )\n  74: \t#define gl_DrawID _gl_DrawID\n  75: \tuniform int _gl_DrawID;\n  76: \t#endif\n  77: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:72: '#' : invalid character\nERROR: 0:72: 'include' : syntax error\n\n  67: #ifdef USE_SKINNING\n  68: \tattribute vec4 skinIndex;\n  69: \tattribute vec4 skinWeight;\n  70: #endif\n  71: \n> 72: varying float vFireY;varying vec3 vFireP;#include <common>\n  73: #ifdef USE_BATCHING\n  74: \t#if ! defined( GL_ANGLE_multi_draw )\n  75: \t#define gl_DrawID _gl_DrawID\n  76: \tuniform int _gl_DrawID;\n  77: \t#endif\n  78: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:71: '#' : invalid character\nERROR: 0:71: 'include' : syntax error\n\n  66: #ifdef USE_SKINNING\n  67: \tattribute vec4 skinIndex;\n  68: \tattribute vec4 skinWeight;\n  69: #endif\n  70: \n> 71: varying float vFireY;varying vec3 vFireP;#include <common>\n  72: #ifdef USE_BATCHING\n  73: \t#if ! defined( GL_ANGLE_multi_draw )\n  74: \t#define gl_DrawID _gl_DrawID\n  75: \tuniform int _gl_DrawID;\n  76: \t#endif\n  77: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:71: '#' : invalid character\nERROR: 0:71: 'include' : syntax error\n\n  66: #ifdef USE_SKINNING\n  67: \tattribute vec4 skinIndex;\n  68: \tattribute vec4 skinWeight;\n  69: #endif\n  70: \n> 71: varying float vFireY;varying vec3 vFireP;#include <common>\n  72: #ifdef USE_BATCHING\n  73: \t#if ! defined( GL_ANGLE_multi_draw )\n  74: \t#define gl_DrawID _gl_DrawID\n  75: \tuniform int _gl_DrawID;\n  76: \t#endif\n  77: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:70: '#' : invalid character\nERROR: 0:70: 'include' : syntax error\n\n  65: #ifdef USE_SKINNING\n  66: \tattribute vec4 skinIndex;\n  67: \tattribute vec4 skinWeight;\n  68: #endif\n  69: \n> 70: varying float vFireY;varying vec3 vFireP;#include <common>\n  71: #ifdef USE_BATCHING\n  72: \t#if ! defined( GL_ANGLE_multi_draw )\n  73: \t#define gl_DrawID _gl_DrawID\n  74: \tuniform int _gl_DrawID;\n  75: \t#endif\n  76: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 0 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:71: '#' : invalid character\nERROR: 0:71: 'include' : syntax error\n\n  66: #ifdef USE_SKINNING\n  67: \tattribute vec4 skinIndex;\n  68: \tattribute vec4 skinWeight;\n  69: #endif\n  70: \n> 71: varying float vFireY;varying vec3 vFireP;#include <common>\n  72: #ifdef USE_BATCHING\n  73: \t#if ! defined( GL_ANGLE_multi_draw )\n  74: \t#define gl_DrawID _gl_DrawID\n  75: \tuniform int _gl_DrawID;\n  76: \t#endif\n  77: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:70: '#' : invalid character\nERROR: 0:70: 'include' : syntax error\n\n  65: #ifdef USE_SKINNING\n  66: \tattribute vec4 skinIndex;\n  67: \tattribute vec4 skinWeight;\n  68: #endif\n  69: \n> 70: varying float vFireY;varying vec3 vFireP;#include <common>\n  71: #ifdef USE_BATCHING\n  72: \t#if ! defined( GL_ANGLE_multi_draw )\n  73: \t#define gl_DrawID _gl_DrawID\n  74: \tuniform int _gl_DrawID;\n  75: \t#endif\n  76: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:72: '#' : invalid character\nERROR: 0:72: 'include' : syntax error\n\n  67: #ifdef USE_SKINNING\n  68: \tattribute vec4 skinIndex;\n  69: \tattribute vec4 skinWeight;\n  70: #endif\n  71: \n> 72: varying float vFireY;varying vec3 vFireP;#include <common>\n  73: #ifdef USE_BATCHING\n  74: \t#if ! defined( GL_ANGLE_multi_draw )\n  75: \t#define gl_DrawID _gl_DrawID\n  76: \tuniform int _gl_DrawID;\n  77: \t#endif\n  78: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:71: '#' : invalid character\nERROR: 0:71: 'include' : syntax error\n\n  66: #ifdef USE_SKINNING\n  67: \tattribute vec4 skinIndex;\n  68: \tattribute vec4 skinWeight;\n  69: #endif\n  70: \n> 71: varying float vFireY;varying vec3 vFireP;#include <common>\n  72: #ifdef USE_BATCHING\n  73: \t#if ! defined( GL_ANGLE_multi_draw )\n  74: \t#define gl_DrawID _gl_DrawID\n  75: \tuniform int _gl_DrawID;\n  76: \t#endif\n  77: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:72: '#' : invalid character\nERROR: 0:72: 'include' : syntax error\n\n  67: #ifdef USE_SKINNING\n  68: \tattribute vec4 skinIndex;\n  69: \tattribute vec4 skinWeight;\n  70: #endif\n  71: \n> 72: varying float vFireY;varying vec3 vFireP;#include <common>\n  73: #ifdef USE_BATCHING\n  74: \t#if ! defined( GL_ANGLE_multi_draw )\n  75: \t#define gl_DrawID _gl_DrawID\n  76: \tuniform int _gl_DrawID;\n  77: \t#endif\n  78: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:71: '#' : invalid character\nERROR: 0:71: 'include' : syntax error\n\n  66: #ifdef USE_SKINNING\n  67: \tattribute vec4 skinIndex;\n  68: \tattribute vec4 skinWeight;\n  69: #endif\n  70: \n> 71: varying float vFireY;varying vec3 vFireP;#include <common>\n  72: #ifdef USE_BATCHING\n  73: \t#if ! defined( GL_ANGLE_multi_draw )\n  74: \t#define gl_DrawID _gl_DrawID\n  75: \tuniform int _gl_DrawID;\n  76: \t#endif\n  77: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:71: '#' : invalid character\nERROR: 0:71: 'include' : syntax error\n\n  66: #ifdef USE_SKINNING\n  67: \tattribute vec4 skinIndex;\n  68: \tattribute vec4 skinWeight;\n  69: #endif\n  70: \n> 71: varying float vFireY;varying vec3 vFireP;#include <common>\n  72: #ifdef USE_BATCHING\n  73: \t#if ! defined( GL_ANGLE_multi_draw )\n  74: \t#define gl_DrawID _gl_DrawID\n  75: \tuniform int _gl_DrawID;\n  76: \t#endif\n  77: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:70: '#' : invalid character\nERROR: 0:70: 'include' : syntax error\n\n  65: #ifdef USE_SKINNING\n  66: \tattribute vec4 skinIndex;\n  67: \tattribute vec4 skinWeight;\n  68: #endif\n  69: \n> 70: varying float vFireY;varying vec3 vFireP;#include <common>\n  71: #ifdef USE_BATCHING\n  72: \t#if ! defined( GL_ANGLE_multi_draw )\n  73: \t#define gl_DrawID _gl_DrawID\n  74: \tuniform int _gl_DrawID;\n  75: \t#endif\n  76: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 0 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:71: '#' : invalid character\nERROR: 0:71: 'include' : syntax error\n\n  66: #ifdef USE_SKINNING\n  67: \tattribute vec4 skinIndex;\n  68: \tattribute vec4 skinWeight;\n  69: #endif\n  70: \n> 71: varying float vFireY;varying vec3 vFireP;#include <common>\n  72: #ifdef USE_BATCHING\n  73: \t#if ! defined( GL_ANGLE_multi_draw )\n  74: \t#define gl_DrawID _gl_DrawID\n  75: \tuniform int _gl_DrawID;\n  76: \t#endif\n  77: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:70: '#' : invalid character\nERROR: 0:70: 'include' : syntax error\n\n  65: #ifdef USE_SKINNING\n  66: \tattribute vec4 skinIndex;\n  67: \tattribute vec4 skinWeight;\n  68: #endif\n  69: \n> 70: varying float vFireY;varying vec3 vFireP;#include <common>\n  71: #ifdef USE_BATCHING\n  72: \t#if ! defined( GL_ANGLE_multi_draw )\n  73: \t#define gl_DrawID _gl_DrawID\n  74: \tuniform int _gl_DrawID;\n  75: \t#endif\n  76: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      }
+    ]
+  },
+  {
+    "samples": [],
+    "errors": [
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 0 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:72: '#' : invalid character\nERROR: 0:72: 'include' : syntax error\n\n  67: #ifdef USE_SKINNING\n  68: \tattribute vec4 skinIndex;\n  69: \tattribute vec4 skinWeight;\n  70: #endif\n  71: \n> 72: varying float vFireY;varying vec3 vFireP;#include <common>\n  73: #ifdef USE_BATCHING\n  74: \t#if ! defined( GL_ANGLE_multi_draw )\n  75: \t#define gl_DrawID _gl_DrawID\n  76: \tuniform int _gl_DrawID;\n  77: \t#endif\n  78: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:71: '#' : invalid character\nERROR: 0:71: 'include' : syntax error\n\n  66: #ifdef USE_SKINNING\n  67: \tattribute vec4 skinIndex;\n  68: \tattribute vec4 skinWeight;\n  69: #endif\n  70: \n> 71: varying float vFireY;varying vec3 vFireP;#include <common>\n  72: #ifdef USE_BATCHING\n  73: \t#if ! defined( GL_ANGLE_multi_draw )\n  74: \t#define gl_DrawID _gl_DrawID\n  75: \tuniform int _gl_DrawID;\n  76: \t#endif\n  77: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:72: '#' : invalid character\nERROR: 0:72: 'include' : syntax error\n\n  67: #ifdef USE_SKINNING\n  68: \tattribute vec4 skinIndex;\n  69: \tattribute vec4 skinWeight;\n  70: #endif\n  71: \n> 72: varying float vFireY;varying vec3 vFireP;#include <common>\n  73: #ifdef USE_BATCHING\n  74: \t#if ! defined( GL_ANGLE_multi_draw )\n  75: \t#define gl_DrawID _gl_DrawID\n  76: \tuniform int _gl_DrawID;\n  77: \t#endif\n  78: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:71: '#' : invalid character\nERROR: 0:71: 'include' : syntax error\n\n  66: #ifdef USE_SKINNING\n  67: \tattribute vec4 skinIndex;\n  68: \tattribute vec4 skinWeight;\n  69: #endif\n  70: \n> 71: varying float vFireY;varying vec3 vFireP;#include <common>\n  72: #ifdef USE_BATCHING\n  73: \t#if ! defined( GL_ANGLE_multi_draw )\n  74: \t#define gl_DrawID _gl_DrawID\n  75: \tuniform int _gl_DrawID;\n  76: \t#endif\n  77: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:72: '#' : invalid character\nERROR: 0:72: 'include' : syntax error\n\n  67: #ifdef USE_SKINNING\n  68: \tattribute vec4 skinIndex;\n  69: \tattribute vec4 skinWeight;\n  70: #endif\n  71: \n> 72: varying float vFireY;varying vec3 vFireP;#include <common>\n  73: #ifdef USE_BATCHING\n  74: \t#if ! defined( GL_ANGLE_multi_draw )\n  75: \t#define gl_DrawID _gl_DrawID\n  76: \tuniform int _gl_DrawID;\n  77: \t#endif\n  78: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:71: '#' : invalid character\nERROR: 0:71: 'include' : syntax error\n\n  66: #ifdef USE_SKINNING\n  67: \tattribute vec4 skinIndex;\n  68: \tattribute vec4 skinWeight;\n  69: #endif\n  70: \n> 71: varying float vFireY;varying vec3 vFireP;#include <common>\n  72: #ifdef USE_BATCHING\n  73: \t#if ! defined( GL_ANGLE_multi_draw )\n  74: \t#define gl_DrawID _gl_DrawID\n  75: \tuniform int _gl_DrawID;\n  76: \t#endif\n  77: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:72: '#' : invalid character\nERROR: 0:72: 'include' : syntax error\n\n  67: #ifdef USE_SKINNING\n  68: \tattribute vec4 skinIndex;\n  69: \tattribute vec4 skinWeight;\n  70: #endif\n  71: \n> 72: varying float vFireY;varying vec3 vFireP;#include <common>\n  73: #ifdef USE_BATCHING\n  74: \t#if ! defined( GL_ANGLE_multi_draw )\n  75: \t#define gl_DrawID _gl_DrawID\n  76: \tuniform int _gl_DrawID;\n  77: \t#endif\n  78: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:71: '#' : invalid character\nERROR: 0:71: 'include' : syntax error\n\n  66: #ifdef USE_SKINNING\n  67: \tattribute vec4 skinIndex;\n  68: \tattribute vec4 skinWeight;\n  69: #endif\n  70: \n> 71: varying float vFireY;varying vec3 vFireP;#include <common>\n  72: #ifdef USE_BATCHING\n  73: \t#if ! defined( GL_ANGLE_multi_draw )\n  74: \t#define gl_DrawID _gl_DrawID\n  75: \tuniform int _gl_DrawID;\n  76: \t#endif\n  77: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 0 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:72: '#' : invalid character\nERROR: 0:72: 'include' : syntax error\n\n  67: #ifdef USE_SKINNING\n  68: \tattribute vec4 skinIndex;\n  69: \tattribute vec4 skinWeight;\n  70: #endif\n  71: \n> 72: varying float vFireY;varying vec3 vFireP;#include <common>\n  73: #ifdef USE_BATCHING\n  74: \t#if ! defined( GL_ANGLE_multi_draw )\n  75: \t#define gl_DrawID _gl_DrawID\n  76: \tuniform int _gl_DrawID;\n  77: \t#endif\n  78: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:71: '#' : invalid character\nERROR: 0:71: 'include' : syntax error\n\n  66: #ifdef USE_SKINNING\n  67: \tattribute vec4 skinIndex;\n  68: \tattribute vec4 skinWeight;\n  69: #endif\n  70: \n> 71: varying float vFireY;varying vec3 vFireP;#include <common>\n  72: #ifdef USE_BATCHING\n  73: \t#if ! defined( GL_ANGLE_multi_draw )\n  74: \t#define gl_DrawID _gl_DrawID\n  75: \tuniform int _gl_DrawID;\n  76: \t#endif\n  77: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:72: '#' : invalid character\nERROR: 0:72: 'include' : syntax error\n\n  67: #ifdef USE_SKINNING\n  68: \tattribute vec4 skinIndex;\n  69: \tattribute vec4 skinWeight;\n  70: #endif\n  71: \n> 72: varying float vFireY;varying vec3 vFireP;#include <common>\n  73: #ifdef USE_BATCHING\n  74: \t#if ! defined( GL_ANGLE_multi_draw )\n  75: \t#define gl_DrawID _gl_DrawID\n  76: \tuniform int _gl_DrawID;\n  77: \t#endif\n  78: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:71: '#' : invalid character\nERROR: 0:71: 'include' : syntax error\n\n  66: #ifdef USE_SKINNING\n  67: \tattribute vec4 skinIndex;\n  68: \tattribute vec4 skinWeight;\n  69: #endif\n  70: \n> 71: varying float vFireY;varying vec3 vFireP;#include <common>\n  72: #ifdef USE_BATCHING\n  73: \t#if ! defined( GL_ANGLE_multi_draw )\n  74: \t#define gl_DrawID _gl_DrawID\n  75: \tuniform int _gl_DrawID;\n  76: \t#endif\n  77: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:71: '#' : invalid character\nERROR: 0:71: 'include' : syntax error\n\n  66: #ifdef USE_SKINNING\n  67: \tattribute vec4 skinIndex;\n  68: \tattribute vec4 skinWeight;\n  69: #endif\n  70: \n> 71: varying float vFireY;varying vec3 vFireP;#include <common>\n  72: #ifdef USE_BATCHING\n  73: \t#if ! defined( GL_ANGLE_multi_draw )\n  74: \t#define gl_DrawID _gl_DrawID\n  75: \tuniform int _gl_DrawID;\n  76: \t#endif\n  77: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:70: '#' : invalid character\nERROR: 0:70: 'include' : syntax error\n\n  65: #ifdef USE_SKINNING\n  66: \tattribute vec4 skinIndex;\n  67: \tattribute vec4 skinWeight;\n  68: #endif\n  69: \n> 70: varying float vFireY;varying vec3 vFireP;#include <common>\n  71: #ifdef USE_BATCHING\n  72: \t#if ! defined( GL_ANGLE_multi_draw )\n  73: \t#define gl_DrawID _gl_DrawID\n  74: \tuniform int _gl_DrawID;\n  75: \t#endif\n  76: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:72: '#' : invalid character\nERROR: 0:72: 'include' : syntax error\n\n  67: #ifdef USE_SKINNING\n  68: \tattribute vec4 skinIndex;\n  69: \tattribute vec4 skinWeight;\n  70: #endif\n  71: \n> 72: varying float vFireY;varying vec3 vFireP;#include <common>\n  73: #ifdef USE_BATCHING\n  74: \t#if ! defined( GL_ANGLE_multi_draw )\n  75: \t#define gl_DrawID _gl_DrawID\n  76: \tuniform int _gl_DrawID;\n  77: \t#endif\n  78: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:71: '#' : invalid character\nERROR: 0:71: 'include' : syntax error\n\n  66: #ifdef USE_SKINNING\n  67: \tattribute vec4 skinIndex;\n  68: \tattribute vec4 skinWeight;\n  69: #endif\n  70: \n> 71: varying float vFireY;varying vec3 vFireP;#include <common>\n  72: #ifdef USE_BATCHING\n  73: \t#if ! defined( GL_ANGLE_multi_draw )\n  74: \t#define gl_DrawID _gl_DrawID\n  75: \tuniform int _gl_DrawID;\n  76: \t#endif\n  77: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:72: '#' : invalid character\nERROR: 0:72: 'include' : syntax error\n\n  67: #ifdef USE_SKINNING\n  68: \tattribute vec4 skinIndex;\n  69: \tattribute vec4 skinWeight;\n  70: #endif\n  71: \n> 72: varying float vFireY;varying vec3 vFireP;#include <common>\n  73: #ifdef USE_BATCHING\n  74: \t#if ! defined( GL_ANGLE_multi_draw )\n  75: \t#define gl_DrawID _gl_DrawID\n  76: \tuniform int _gl_DrawID;\n  77: \t#endif\n  78: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshBasicMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:71: '#' : invalid character\nERROR: 0:71: 'include' : syntax error\n\n  66: #ifdef USE_SKINNING\n  67: \tattribute vec4 skinIndex;\n  68: \tattribute vec4 skinWeight;\n  69: #endif\n  70: \n> 71: varying float vFireY;varying vec3 vFireP;#include <common>\n  72: #ifdef USE_BATCHING\n  73: \t#if ! defined( GL_ANGLE_multi_draw )\n  74: \t#define gl_DrawID _gl_DrawID\n  75: \tuniform int _gl_DrawID;\n  76: \t#endif\n  77: \tuniform highp sampler2D batchingTexture;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      }
+    ]
+  },
+  {
+    "skill": {
+      "index": 3,
+      "id": "WATER-01",
+      "name": "Hải Thần Lĩnh Vực",
+      "element": 1,
+      "impact": 9.55,
+      "end": 17
+    },
+    "samples": [
+      {
+        "skill": "WATER-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG VẼ PHÙ VĂN",
+        "render": {
+          "frame": 194,
+          "calls": 49,
+          "triangles": 64339,
+          "points": 1400,
+          "lines": 214
+        },
+        "memory": {
+          "geometries": 32,
+          "textures": 14
+        },
+        "badPrograms": 1,
+        "glError": 1282,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 354.772218876739,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "WATER-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 210,
+          "calls": 63,
+          "triangles": 67298,
+          "points": 1400,
+          "lines": 462
+        },
+        "memory": {
+          "geometries": 45,
+          "textures": 14
+        },
+        "badPrograms": 1,
+        "glError": 1282,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 361.17444136659896,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "WATER-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 226,
+          "calls": 51,
+          "triangles": 67795,
+          "points": 1400,
+          "lines": 214
+        },
+        "memory": {
+          "geometries": 46,
+          "textures": 14
+        },
+        "badPrograms": 1,
+        "glError": 1282,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 332.4244860572724,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      }
+    ],
+    "errors": [
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 0 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: ShaderMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:74: 'active' : Illegal use of reserved word\nERROR: 0:74: 'active' : syntax error\n\n  69: uniform float uTime;uniform float uRadius;uniform float uSurgeStart;uniform float uSurgeSpeed;uniform float uWaveHeight;uniform float uFloodDepth;uniform float uEbbStart;uniform float uEbbDuration;uniform float uWhirlpoolRadius;varying vec2 vP;varying float vFoam;varying float vDepth;varying vec3 vN;varying vec3 vV;\n  70:   float hash31(vec3 p){return fract(sin(dot(p,vec3(127.1,311.7,74.7)))*43758.5453);}\n  71:   float noise3(vec3 p){vec3 i=floor(p),f=fract(p);f=f*f*(3.0-2.0*f);return mix(mix(mix(hash31(i),hash31(i+vec3(1,0,0)),f.x),mix(hash31(i+vec3(0,1,0)),hash31(i+vec3(1,1,0)),f.x),f.y),mix(mix(hash31(i+vec3(0,0,1)),hash31(i+vec3(1,0,1)),f.x),mix(hash31(i+vec3(0,1,1)),hash31(i+vec3(1,1,1)),f.x),f.y),f.z);}\n  72:   float fbm(vec3 p){float v=0.0,a=.5;for(int i=0;i<4;i++){v+=noise3(p)*a;p=p*2.03+vec3(7.1,3.7,5.3);a*=.48;}return v;}\n  73: \n> 74:       void main(){vP=position.xy;float r=length(position.xy);float surge=clamp(uTime-uSurgeStart,0.0,20.0);float front=surge*uSurgeSpeed;float active=smoothstep(uSurgeStart,uSurgeStart+.28,uTime)*(1.0-smoothstep(uEbbStart,uEbbStart+uEbbDuration,uTime));float ebb=smoothstep(uEbbStart,uEbbStart+uEbbDuration,uTime);float flood=smoothstep(uSurgeStart+1.0,uSurgeStart+3.6,uTime)*(1.0-ebb);float lead=exp(-abs(r-front)*1.45)*active;float secondary=0.0;for(int i=1;i<=3;i++){float d=abs(r-(front-float(i)*uSurgeSpeed*1.35));secondary+=exp(-d*1.25)*active/(float(i)+.65);}float angle=atan(position.y,position.x);float waveA=(sin(position.x*.72+uTime*1.1)*.09+sin(position.x*1.83+position.y*.31-uTime*1.76)*.035)*flood;\n  75: float waveB=(sin(position.y*.91-position.x*.22-uTime*.94)*.065+sin(position.y*2.14+uTime*1.48)*.024)*flood;\n  76: float wave=waveA+waveB+(sin(r*2.0-uTime*3.2+sin(angle*3.0)*.8)+sin(r*3.7-uTime*4.6+angle*2.0)*.36)*.105*flood;float whirl=exp(-r/max(.001,uWhirlpoolRadius*.38))*ebb*1.05;float n=fbm(vec3(position.xy*.62,uTime*.12));float height=uFloodDepth*flood+uWaveHeight*(lead*.72+secondary*.4)+wave+n*.07*flood-whirl;vec3 p=position;p.z=height;vFoam=clamp(lead*.82+secondary*.52+abs(wave)*.7+abs(waveA)*.42+abs(waveB)*.42,0.0,1.0);vDepth=clamp(flood+lead*.65,0.0,1.0);vec3 waveNormal=normalize(vec3(-(waveA+waveB)*.18,-(waveA-waveB)*.14,1.0));vec4 mv=modelViewMatrix*vec4(p,1.0);vN=normalize(normalMatrix*waveNormal);vV=normalize(-mv.xyz);gl_Position=projectionMatrix*mv;}\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      }
+    ]
+  },
+  {
+    "skill": {
+      "index": 4,
+      "id": "EARTH-01",
+      "name": "Đại Lục Phân Liệt",
+      "element": 2,
+      "impact": 9.35,
+      "end": 18
+    },
+    "samples": [
+      {
+        "skill": "EARTH-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG VẼ PHÙ VĂN",
+        "render": {
+          "frame": 242,
+          "calls": 45,
+          "triangles": 26663,
+          "points": 98,
+          "lines": 182
+        },
+        "memory": {
+          "geometries": 31,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 313.41452717268976,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0.05,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "EARTH-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 258,
+          "calls": 55,
+          "triangles": 40643,
+          "points": 98,
+          "lines": 455
+        },
+        "memory": {
+          "geometries": 40,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 333.95736499887556,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0.1875,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "EARTH-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 274,
+          "calls": 49,
+          "triangles": 37015,
+          "points": 98,
+          "lines": 182
+        },
+        "memory": {
+          "geometries": 40,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 307.35277579896507,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0.1844533527696793,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      }
+    ],
+    "errors": []
+  },
+  {
+    "skill": {
+      "index": 5,
+      "id": "LIGHT-01",
+      "name": "Lục Dực Thánh Khải",
+      "element": 3,
+      "impact": 12.05,
+      "end": 17.2
+    },
+    "samples": [
+      {
+        "skill": "LIGHT-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG VẼ PHÙ VĂN",
+        "render": {
+          "frame": 290,
+          "calls": 43,
+          "triangles": 29627,
+          "points": 680,
+          "lines": 246
+        },
+        "memory": {
+          "geometries": 29,
+          "textures": 14
+        },
+        "badPrograms": 1,
+        "glError": 1282,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 301.10855373504694,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "LIGHT-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 306,
+          "calls": 43,
+          "triangles": 29627,
+          "points": 680,
+          "lines": 246
+        },
+        "memory": {
+          "geometries": 29,
+          "textures": 14
+        },
+        "badPrograms": 1,
+        "glError": 1282,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 277.7078694362413,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "LIGHT-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 322,
+          "calls": 44,
+          "triangles": 31547,
+          "points": 680,
+          "lines": 246
+        },
+        "memory": {
+          "geometries": 30,
+          "textures": 14
+        },
+        "badPrograms": 1,
+        "glError": 1282,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 255.6272398813406,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      }
+    ],
+    "errors": [
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 0 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: ShaderMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:84: 'active' : Illegal use of reserved word\nERROR: 0:84: 'active' : syntax error\n\n  79:       varying float vBrightness;\n  80:       varying float vWarmth;\n  81:       varying float vSeed;\n  82:       void main(){\n  83:         float localTime=uTime-aMotion.x;\n> 84:         float active=step(0.0,localTime);\n  85:         float fallDuration=max(0.08,aMotion.y);\n  86:         float descent=clamp(localTime/fallDuration,0.0,1.0);\n  87:         float eased=descent*descent*(3.0-2.0*descent);\n  88:         float impactAge=max(0.0,localTime-fallDuration);\n  89:         float linger=max(0.0,1.0-smoothstep(aStyle.w*0.48,aStyle.w,impactAge));\n  90:         float fallLength=aMotion.z*eased;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      }
+    ]
+  },
+  {
+    "skill": {
+      "index": 6,
+      "id": "SHADOW-01",
+      "name": "Vạn Ảnh Thiên Kiếp",
+      "element": 4,
+      "impact": 13.5,
+      "end": 17
+    },
+    "samples": [
+      {
+        "skill": "SHADOW-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG VẼ PHÙ VĂN",
+        "render": {
+          "frame": 338,
+          "calls": 42,
+          "triangles": 35115,
+          "points": 0,
+          "lines": 182
+        },
+        "memory": {
+          "geometries": 28,
+          "textures": 14
+        },
+        "badPrograms": 1,
+        "glError": 1282,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 240.42506069083385,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "SHADOW-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 354,
+          "calls": 46,
+          "triangles": 37885,
+          "points": 1200,
+          "lines": 182
+        },
+        "memory": {
+          "geometries": 32,
+          "textures": 14
+        },
+        "badPrograms": 1,
+        "glError": 1282,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 247.71105583556715,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "SHADOW-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 370,
+          "calls": 44,
+          "triangles": 37165,
+          "points": 0,
+          "lines": 182
+        },
+        "memory": {
+          "geometries": 33,
+          "textures": 14
+        },
+        "badPrograms": 1,
+        "glError": 1282,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 228.10217136872225,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      }
+    ],
+    "errors": [
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 0 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: ShaderMaterial\n\nProgram Info Log: Fragment shader is not compiled.\n\nFRAGMENT\n\nERROR: 0:70: 'DARK_PURPLE' : undeclared identifier\nERROR: 0:70: 'PURPLE' : undeclared identifier\n\n  65:         float inkVein=smoothstep(.62,.86,ink)*(.035+.12*uCompression);\n  66:         float edge=pow(1.0-clamp(abs(dot(n,eye)),0.0,1.0),5.2);\n  67:         float crackNoise=noise(p*vec3(13.0,17.0,11.0)+vec3(uTime*.08,-uTime*.04,uTime*.06));\n  68:         float cracks=(1.0-smoothstep(.012,.055,abs(crackNoise-.49)))*uCrack;\n  69:         float heartbeat=.82+.18*uPulse;\n> 70:         vec3 color=vec3(.0015,.0012,.003)+DARK_PURPLE*inkVein+PURPLE*(edge*(.22+.42*uCompression)+cracks*.9+uFlash*.12);\n  71:         color*=heartbeat; gl_FragColor=vec4(color,1.0);\n  72:       }"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      }
+    ]
+  },
+  {
+    "skill": {
+      "index": 7,
+      "id": "WIND-01",
+      "name": "Thiên Khí Băng Diệt",
+      "element": 5,
+      "impact": 6,
+      "end": 20.25
+    },
+    "samples": [
+      {
+        "skill": "WIND-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG VẼ PHÙ VĂN",
+        "render": {
+          "frame": 386,
+          "calls": 66,
+          "triangles": 115803,
+          "points": 0,
+          "lines": 434
+        },
+        "memory": {
+          "geometries": 30,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 261.34199765922494,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "WIND-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 402,
+          "calls": 67,
+          "triangles": 118251,
+          "points": 0,
+          "lines": 434
+        },
+        "memory": {
+          "geometries": 31,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 287.20263784648745,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 1,
+            "windTurbulence": 1,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.28822967723739035,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "WIND-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 418,
+          "calls": 67,
+          "triangles": 118251,
+          "points": 0,
+          "lines": 434
+        },
+        "memory": {
+          "geometries": 31,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 264.4104268187675,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 1,
+            "windTurbulence": 1,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.49338300763441045,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      }
+    ],
+    "errors": []
+  },
+  {
+    "skill": {
+      "index": 8,
+      "id": "LIGHTNING-01",
+      "name": "Lôi Giới Tận Thế",
+      "element": 6,
+      "impact": 12.25,
+      "end": 17.2
+    },
+    "samples": [
+      {
+        "skill": "LIGHTNING-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG VẼ PHÙ VĂN",
+        "render": {
+          "frame": 434,
+          "calls": 51,
+          "triangles": 115013,
+          "points": 900,
+          "lines": 13012
+        },
+        "memory": {
+          "geometries": 33,
+          "textures": 14
+        },
+        "badPrograms": 2,
+        "glError": 1282,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 276.50559267326656,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 8.43628867422573e-06,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.4267873006457921,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "LIGHTNING-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 450,
+          "calls": 61,
+          "triangles": 117753,
+          "points": 1047,
+          "lines": 13062
+        },
+        "memory": {
+          "geometries": 43,
+          "textures": 14
+        },
+        "badPrograms": 2,
+        "glError": 1282,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 295.32914525940663,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0.0414,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.36918052947516644,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "LIGHTNING-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 466,
+          "calls": 61,
+          "triangles": 117753,
+          "points": 1047,
+          "lines": 13062
+        },
+        "memory": {
+          "geometries": 43,
+          "textures": 14
+        },
+        "badPrograms": 2,
+        "glError": 1282,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 272.0628136386541,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0.008942400000000003,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.3193493881784461,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      }
+    ],
+    "errors": [
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 0 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: ShaderMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:90: 'active' : Illegal use of reserved word\nERROR: 0:90: 'active' : syntax error\n\n  85:         float reveal=clamp(age/leader,0.0,1.0);\n  86:         float stroke=age<leader ? step(aProgress,reveal+.035) : 1.0;\n  87:         float life=leader*(1.0+.18*aPulseCount)+max(.38,aLife);\n  88:         float fade=1.0-smoothstep(life*.66,life,age);\n  89:         float restrike=.38+.62*abs(sin(max(0.0,age-leader)*(uFlickerHz*.48+aPulseCount*2.0)+aSeed*19.0));\n> 90:         float active=step(0.0,age)*stroke*fade*restrike;\n  91:         float flicker=.68+.32*abs(sin(uTime*(uFlickerHz+uReducedMotion*2.0)+aSeed*37.0));\n  92:         float branchWidth=branch<.5?1.0:branch<1.5?.58:.34;\n  93:         float masterBoost=1.0+aMaster*1.5;\n  94:         float px=aWidth*branchWidth*masterBoost*uRadius;\n  95:         view.xy+=perpendicular*aSide*px;\n  96:         gl_Position=projectionMatrix*view;\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: ShaderMaterial\n\nProgram Info Log: Vertex shader is not compiled.\nVERTEX\n\nERROR: 0:72: 'instanceColor' : redefinition\n\n  67: #ifdef USE_SKINNING\n  68: \tattribute vec4 skinIndex;\n  69: \tattribute vec4 skinWeight;\n  70: #endif\n  71: \n> 72: attribute vec3 instanceColor; varying vec2 vUv; varying vec3 vData; void main(){vUv=uv;vData=instanceColor;gl_Position=projectionMatrix*modelViewMatrix*instanceMatrix*vec4(position,1.0); }\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      }
+    ]
+  },
+  {
+    "skill": {
+      "index": 9,
+      "id": "ICE-01",
+      "name": "Vĩnh Băng Thiên Kiếp",
+      "element": 7,
+      "impact": 10.85,
+      "end": 16
+    },
+    "samples": [
+      {
+        "skill": "ICE-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG VẼ PHÙ VĂN",
+        "render": {
+          "frame": 482,
+          "calls": 56,
+          "triangles": 101139,
+          "points": 654,
+          "lines": 182
+        },
+        "memory": {
+          "geometries": 36,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 348.4337885475604,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.2900362062054598,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "ICE-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 498,
+          "calls": 56,
+          "triangles": 101139,
+          "points": 654,
+          "lines": 182
+        },
+        "memory": {
+          "geometries": 36,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 320.8550854637542,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.25088778417698665,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "ICE-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 514,
+          "calls": 56,
+          "triangles": 101139,
+          "points": 654,
+          "lines": 182
+        },
+        "memory": {
+          "geometries": 36,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 295.5706786266529,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.21702352638224975,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      }
+    ],
+    "errors": []
+  },
+  {
+    "skill": {
+      "index": 10,
+      "id": "MAGMA-01",
+      "name": "Khai Thiên Nham Ngục",
+      "element": 8,
+      "impact": 2.04,
+      "end": 9.760000000000002
+    },
+    "samples": [
+      {
+        "skill": "MAGMA-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG VẼ PHÙ VĂN",
+        "render": {
+          "frame": 530,
+          "calls": 62,
+          "triangles": 25019,
+          "points": 0,
+          "lines": 545
+        },
+        "memory": {
+          "geometries": 46,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 282.9090243365198,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0.10089285714285716,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.18773018845015316,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "MAGMA-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 546,
+          "calls": 91,
+          "triangles": 31599,
+          "points": 147,
+          "lines": 928
+        },
+        "memory": {
+          "geometries": 75,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 338.2283023895978,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0.1875,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.1623907980992631,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "MAGMA-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 562,
+          "calls": 125,
+          "triangles": 61391,
+          "points": 147,
+          "lines": 952
+        },
+        "memory": {
+          "geometries": 117,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 348.11403819843133,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0.05357142857142857,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.14047166055190796,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      }
+    ],
+    "errors": []
+  },
+  {
+    "skill": {
+      "index": 11,
+      "id": "MAGMA-02",
+      "name": "Nham Thiên Diệt Thế",
+      "element": 8,
+      "impact": 2.19,
+      "end": 9.940000000000001
+    },
+    "samples": [
+      {
+        "skill": "MAGMA-02",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG VẼ PHÙ VĂN",
+        "render": {
+          "frame": 578,
+          "calls": 44,
+          "triangles": 25467,
+          "points": 0,
+          "lines": 239
+        },
+        "memory": {
+          "geometries": 28,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 384.17691514255637,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0.09419642857142857,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.12151111792768508,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "MAGMA-02",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 594,
+          "calls": 114,
+          "triangles": 64795,
+          "points": 189,
+          "lines": 703
+        },
+        "memory": {
+          "geometries": 89,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 424.6507619311524,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0.1875,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.10510982586825586,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "MAGMA-02",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 610,
+          "calls": 113,
+          "triangles": 64715,
+          "points": 189,
+          "lines": 703
+        },
+        "memory": {
+          "geometries": 89,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 391.38270097665924,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0.05357142857142859,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.0909223426010294,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      }
+    ],
+    "errors": []
+  },
+  {
+    "skill": {
+      "index": 12,
+      "id": "MAGMA-03",
+      "name": "Nham Thần Giáng Thế",
+      "element": 8,
+      "impact": 1.8,
+      "end": 9.680000000000001
+    },
+    "samples": [
+      {
+        "skill": "MAGMA-03",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG VẼ PHÙ VĂN",
+        "render": {
+          "frame": 626,
+          "calls": 76,
+          "triangles": 27027,
+          "points": 231,
+          "lines": 749
+        },
+        "memory": {
+          "geometries": 61,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 396.104084898526,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0.11160714285714288,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.07864985329174289,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "MAGMA-03",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 642,
+          "calls": 109,
+          "triangles": 32647,
+          "points": 231,
+          "lines": 1246
+        },
+        "memory": {
+          "geometries": 94,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 389.6477581066435,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0.1875,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.06803387644724682,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "MAGMA-03",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 658,
+          "calls": 140,
+          "triangles": 59743,
+          "points": 231,
+          "lines": 1270
+        },
+        "memory": {
+          "geometries": 134,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 375.09193745811297,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0.05357142857142857,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.058850819813610296,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      }
+    ],
+    "errors": []
+  },
+  {
+    "skill": {
+      "index": 13,
+      "id": "POISON-01",
+      "name": "Vạn Độc Diệt Giới",
+      "element": 9,
+      "impact": 12.2,
+      "end": 16
+    },
+    "samples": [
+      {
+        "skill": "POISON-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG VẼ PHÙ VĂN",
+        "render": {
+          "frame": 674,
+          "calls": 44,
+          "triangles": 258707,
+          "points": 1750,
+          "lines": 182
+        },
+        "memory": {
+          "geometries": 29,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 385.75658246146577,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.05090727110661623,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "POISON-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 690,
+          "calls": 44,
+          "triangles": 258707,
+          "points": 1750,
+          "lines": 182
+        },
+        "memory": {
+          "geometries": 29,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 355.09605586454853,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.044035924388655355,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "POISON-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 706,
+          "calls": 44,
+          "triangles": 258707,
+          "points": 1750,
+          "lines": 182
+        },
+        "memory": {
+          "geometries": 29,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 326.78437139538323,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.043295156263719256,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      }
+    ],
+    "errors": []
+  },
+  {
+    "skill": {
+      "index": 14,
+      "id": "SPACE-01",
+      "name": "Không Gian Băng Diệt",
+      "element": 10,
+      "impact": 14.5,
+      "end": 19.2
+    },
+    "samples": [
+      {
+        "skill": "SPACE-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG VẼ PHÙ VĂN",
+        "render": {
+          "frame": 722,
+          "calls": 42,
+          "triangles": 27891,
+          "points": 4200,
+          "lines": 182
+        },
+        "memory": {
+          "geometries": 27,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 337.01762168375353,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.03745127535183031,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "SPACE-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 738,
+          "calls": 42,
+          "triangles": 27891,
+          "points": 4200,
+          "lines": 182
+        },
+        "memory": {
+          "geometries": 27,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 310.20021194905235,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.03239618808476204,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "SPACE-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 754,
+          "calls": 42,
+          "triangles": 27891,
+          "points": 4200,
+          "lines": 182
+        },
+        "memory": {
+          "geometries": 27,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 285.66419499312815,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.02802342490512773,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      }
+    ],
+    "errors": []
+  },
+  {
+    "skill": {
+      "index": 15,
+      "id": "TIME-01",
+      "name": "Vĩnh Hằng Chung Khúc",
+      "element": 11,
+      "impact": 12.5,
+      "end": 18
+    },
+    "samples": [
+      {
+        "skill": "TIME-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG VẼ PHÙ VĂN",
+        "render": {
+          "frame": 770,
+          "calls": 39,
+          "triangles": 24627,
+          "points": 0,
+          "lines": 182
+        },
+        "memory": {
+          "geometries": 24,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 262.96305939367744,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.02424088727225025,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "TIME-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 786,
+          "calls": 76,
+          "triangles": 42135,
+          "points": 8000,
+          "lines": 254
+        },
+        "memory": {
+          "geometries": 61,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 273.3820146421842,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.020968907895280893,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "TIME-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 802,
+          "calls": 78,
+          "triangles": 46935,
+          "points": 8000,
+          "lines": 254
+        },
+        "memory": {
+          "geometries": 62,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 272.3194534708099,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.018138572791603805,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      }
+    ],
+    "errors": []
+  },
+  {
+    "skill": {
+      "index": 16,
+      "id": "BLOOD-01",
+      "name": "Vạn Huyết Thiên Thượng",
+      "element": 12,
+      "impact": 12.72,
+      "end": 17.4
+    },
+    "samples": [
+      {
+        "skill": "BLOOD-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG VẼ PHÙ VĂN",
+        "render": {
+          "frame": 818,
+          "calls": 54,
+          "triangles": 2462453,
+          "points": 434,
+          "lines": 1082
+        },
+        "memory": {
+          "geometries": 37,
+          "textures": 14
+        },
+        "badPrograms": 2,
+        "glError": 1282,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 255.52589719314466,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.015690269829949224,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "BLOOD-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 834,
+          "calls": 54,
+          "triangles": 2462453,
+          "points": 434,
+          "lines": 1082
+        },
+        "memory": {
+          "geometries": 37,
+          "textures": 14
+        },
+        "badPrograms": 2,
+        "glError": 1282,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 235.35582541769264,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.014223218916181656,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "BLOOD-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 850,
+          "calls": 55,
+          "triangles": 2463573,
+          "points": 434,
+          "lines": 1082
+        },
+        "memory": {
+          "geometries": 38,
+          "textures": 14
+        },
+        "badPrograms": 2,
+        "glError": 1282,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 217.23135938427632,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.01366920871357385,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      }
+    ],
+    "errors": [
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 0 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshPhysicalMaterial\n\nProgram Info Log: Too many attributes (aBloodFragmentDirection)\n\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "error",
+        "text": "THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshPhysicalMaterial\n\nProgram Info Log: Too many attributes (aBloodFragmentDirection)\n\n"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      },
+      {
+        "type": "warning",
+        "text": "WebGL: INVALID_OPERATION: useProgram: program not valid"
+      }
+    ]
+  },
+  {
+    "skill": {
+      "index": 17,
+      "id": "ASTRAL-01",
+      "name": "Vạn Tinh Quy Nhất",
+      "element": 13,
+      "impact": 2.19,
+      "end": 9.82
+    },
+    "samples": [
+      {
+        "skill": "ASTRAL-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG VẼ PHÙ VĂN",
+        "render": {
+          "frame": 866,
+          "calls": 60,
+          "triangles": 34663,
+          "points": 560,
+          "lines": 1182
+        },
+        "memory": {
+          "geometries": 41,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 370.7008506335347,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.011824170266424978,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "ASTRAL-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 882,
+          "calls": 143,
+          "triangles": 80287,
+          "points": 707,
+          "lines": 1744
+        },
+        "memory": {
+          "geometries": 104,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 400.0127825828501,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.01022817087799478,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "ASTRAL-01",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 898,
+          "calls": 147,
+          "triangles": 92191,
+          "points": 707,
+          "lines": 1744
+        },
+        "memory": {
+          "geometries": 106,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 368.41975997622257,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.008847595827211549,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      }
+    ],
+    "errors": []
+  },
+  {
+    "skill": {
+      "index": 18,
+      "id": "ASTRAL-02",
+      "name": "Tinh Hà Tận Thế",
+      "element": 13,
+      "impact": 1.95,
+      "end": 9.96
+    },
+    "samples": [
+      {
+        "skill": "ASTRAL-02",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG VẼ PHÙ VĂN",
+        "render": {
+          "frame": 914,
+          "calls": 54,
+          "triangles": 32747,
+          "points": 735,
+          "lines": 182
+        },
+        "memory": {
+          "geometries": 33,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 393.8341791781253,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.00765336763097156,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "ASTRAL-02",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 930,
+          "calls": 142,
+          "triangles": 86803,
+          "points": 924,
+          "lines": 1244
+        },
+        "memory": {
+          "geometries": 100,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 438.3674448438753,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.006620333618162541,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "ASTRAL-02",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 946,
+          "calls": 140,
+          "triangles": 86643,
+          "points": 924,
+          "lines": 1244
+        },
+        "memory": {
+          "geometries": 100,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 403.7700492563648,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.005726736167541092,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      }
+    ],
+    "errors": []
+  },
+  {
+    "skill": {
+      "index": 19,
+      "id": "ASTRAL-03",
+      "name": "Sáng Thế Tinh Vực",
+      "element": 13,
+      "impact": 2.27,
+      "end": 9.680000000000001
+    },
+    "samples": [
+      {
+        "skill": "ASTRAL-03",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG VẼ PHÙ VĂN",
+        "render": {
+          "frame": 962,
+          "calls": 59,
+          "triangles": 29667,
+          "points": 910,
+          "lines": 1082
+        },
+        "memory": {
+          "geometries": 40,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 437.5084453158557,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.004953754451686614,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "ASTRAL-03",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 978,
+          "calls": 123,
+          "triangles": 63127,
+          "points": 1141,
+          "lines": 2120
+        },
+        "memory": {
+          "geometries": 86,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 434.5957696905877,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.004285108035305497,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      },
+      {
+        "skill": "ASTRAL-03",
+        "phase": "active",
+        "active": true,
+        "status": "ĐANG THI TRIỂN",
+        "render": {
+          "frame": 994,
+          "calls": 157,
+          "triangles": 93159,
+          "points": 1141,
+          "lines": 2144
+        },
+        "memory": {
+          "geometries": 128,
+          "textures": 14
+        },
+        "badPrograms": 0,
+        "glError": 0,
+        "graphics": {
+          "quality": "Low",
+          "features": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "requestedFeatures": {
+            "reflections": false,
+            "ao": false,
+            "volumetric": false,
+            "caustics": false,
+            "subsurface": false,
+            "motionBlur": false,
+            "dof": false,
+            "adaptive": false
+          },
+          "autoReduced": [],
+          "averageFrameMs": 418.9801081153402,
+          "post": {
+            "ssr": false,
+            "gtao": false,
+            "ssao": false,
+            "dof": false,
+            "ssrTemporal": false,
+            "ssrResolution": "fallback IBL",
+            "maxTextures": 32,
+            "lastUpdateMs": 0,
+            "unavailable": []
+          },
+          "fields": {
+            "initialized": true,
+            "activeLights": 1,
+            "windStrength": 0,
+            "windTurbulence": 0,
+            "quality": "Low"
+          },
+          "grass": {
+            "quality": "Low",
+            "bladeInstances": 360,
+            "windAlpha": 0.003706713978927225,
+            "initialized": true
+          },
+          "estimatedRenderTargetBytes": 0
+        }
+      }
+    ],
+    "errors": []
+  }
+]

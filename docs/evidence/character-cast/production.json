@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "production": true,
+  "sourceInterception": false,
+  "interactiveLivePreview": false,
+  "videoAudioTrack": false,
+  "deviceScaleFactor": 0.5,
+  "errors": [],
+  "warnings": [],
+  "captures": [
+    {
+      "file": "idle-bot.png",
+      "phase": "VẼ PHÙ VĂN",
+      "remaining": "7.7 s",
+      "status": "ĐANG VẼ PHÙ VĂN"
+    },
+    {
+      "file": "casting-bot.png",
+      "phase": "VẼ PHÙ VĂN",
+      "remaining": "7.9 s",
+      "status": "ĐANG VẼ PHÙ VĂN"
+    },
+    {
+      "file": "convergence.png",
+      "phase": "HỘI TỤ",
+      "remaining": "1.2 s",
+      "status": "ĐANG HỘI TỤ NĂNG LƯỢNG"
+    },
+    {
+      "file": "active-bot.png",
+      "phase": "TẠM DỪNG",
+      "remaining": "6.8 s",
+      "status": "TUYỆT KỸ ĐÃ KHAI TRIỂN"
+    },
+    {
+      "file": "active-orbit.png",
+      "phase": "TẠM DỪNG",
+      "remaining": "5.5 s",
+      "status": "TUYỆT KỸ ĐÃ KHAI TRIỂN"
+    },
+    {
+      "file": "aftermath.png",
+      "phase": "DƯ CHẤN",
+      "remaining": "11.9 s",
+      "status": "ĐANG THI TRIỂN"
+    },
+    {
+      "file": "movement-resumed.png",
+      "phase": "DƯ CHẤN",
+      "remaining": "0.0 s",
+      "status": "SẴN SÀNG THI TRIỂN"
+    },
+    {
+      "file": "reset.png",
+      "phase": "DƯ CHẤN",
+      "remaining": "0.0 s",
+      "status": "ĐÃ ĐẶT LẠI ĐẤU TRƯỜNG"
+    }
+  ],
+  "sourceCommit": "9a786205e26d05f90f79dfd7079f423b78951d03",
+  "sourceDirty": true
+}

@@ -1,0 +1,35 @@
+{
+  "baseline": "9a786205e26d05f90f79dfd7079f423b78951d03",
+  "unchangedFiles": 979,
+  "changedProtectedFiles": [],
+  "authoredData": {
+    "registry": {
+      "unchanged": true,
+      "sha256": "da1942cb16892841dc7bd616cd8d58a5e6d291d7017de5a5d899e77e009210f5"
+    },
+    "cinematic": {
+      "unchanged": true,
+      "sha256": "80df519dea62add7d382b37357bab7aa2ee91a530949274d9ca8b813aa76d5ee"
+    },
+    "runeProfiles": {
+      "unchanged": true,
+      "sha256": "a6800b604e39e2f42ae8bc89853975c91cd48a0bbd0fdab9d864fbf5a3dcce91"
+    }
+  },
+  "registry": "15 elements / 19 skills, FIRE-01 only Fire skill; retained-skills.test.js checks all 19 config/cinematic/rune/MP/cooldown/audio fingerprints",
+  "launcherSha256": "67f2f70c870abd45d2604f1b20ddbf506907d6913cbf9a1598162f04cf159f72",
+  "authorizedChanges": [
+    "Cyber Bot model and casting pose/movement lock",
+    "10 second default shared ritual timing; per-cast timing snapshot",
+    "Active playback .5 and UI/audio synchronization; rune fade keeps world simulation clock"
+  ],
+  "provenance": {
+    "source": "User-supplied model_3d_camera_360.zip",
+    "archiveSha256": "d3df91ba4a03c3475a156d3889ef4a6524dbb957f3ae258fc5a520b1b7a594fc",
+    "sourceFile": "js/game.js",
+    "sourceSha256": "ec6816bdde80401b52f1d4422fa0614333ecc59eb7a5b67d5e81587ab203fdec",
+    "imported": "Default bot geometry and materials from buildCharacterModel; no drone/astronaut selection, scene, renderer, RAF, external scripts, audio or input imported.",
+    "adaptation": "ES module, named hand/head/cast anchors, body grounding -0.09 m, both-hands casting animation, existing game controller retained.",
+    "license": "Provided by the user for this project; no separate license included in the archive. Repository license unchanged."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "checks": {
+    "zeroRateHitStop": true,
+    "webglLossRestoreAudio": true,
+    "rapidSelectionAbort": true,
+    "tenRecasts": {
+      "voicesDuringCast": [
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2
+      ],
+      "afterStop": 0
+    },
+    "lateUnlockDoesNotReplayImpact": true
+  },
+  "errors": [],
+  "warnings": [
+    "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+    "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+    "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+  ],
+  "passed": true
+}

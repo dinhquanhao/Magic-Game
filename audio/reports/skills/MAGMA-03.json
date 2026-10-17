@@ -1,0 +1,45 @@
+{
+  "id": "MAGMA-03",
+  "duration": 14.861791666666667,
+  "timeAxis": "reference wall-time mapping of extracted world controls; not a recording of browser output",
+  "impactSeconds": 6.751216666666666,
+  "metrics": {
+    "peakDbFS": -10.876061057908224,
+    "truePeakDbTP4x": -10.870533682877152,
+    "rmsDbFS": -34.53978172730442,
+    "lufsApprox": -39.719383218106906,
+    "duration": 14.861791666666667,
+    "dc": 2.715312642808881e-06,
+    "seam": 0.0,
+    "tailDropDb": 224.87962700043545,
+    "centroidHz": 145.08086133348885,
+    "riserCentroidDeltaHz": 37.51428552098393,
+    "bands": [
+      0.6374982214309123,
+      0.1834679295990612,
+      0.06938695343451913,
+      0.0037902050065880787,
+      0.0035210584399377907
+    ],
+    "vacuumRmsDbFS": -240.0,
+    "vacuumBoundaryDelta": 0.0,
+    "finite": true
+  },
+  "limiter": {
+    "reductionDb": 0,
+    "lookaheadSamples": 128,
+    "rate": 24000
+  },
+  "peakEnvelopeAt": 6.925000000000001,
+  "finalePeakWindowDbFS": -16.6263362390376,
+  "preFinalePeakWindowDbFS": -32.07960052730891,
+  "finaleContrastDb": 15.453264288271313,
+  "vacuumContrastDb": 18.97810820814422,
+  "earVerified": false,
+  "thresholds": {
+    "masterTruePeakDbTP4xMax": -1,
+    "vacuumContrastDbMin": 12,
+    "finaleContrastDbMin": 3
+  },
+  "passed": true
+}

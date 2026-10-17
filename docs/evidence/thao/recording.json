@@ -1,0 +1,103 @@
+{
+  "passed": true,
+  "method": "Chromium canvas sampled at fixed simulation times, encoded at 8fps; no audio, no real-time FPS claim; Rune Tower off for VFX detail, tested separately",
+  "errors": [],
+  "finalState": {
+    "skill": "NATURE-01",
+    "active": false,
+    "phase": null,
+    "time": null,
+    "areaRadius": null,
+    "vfxRadius": null,
+    "previewRadius": 1,
+    "camera": [
+      19,
+      18.000000000000004,
+      23.999999999999996
+    ],
+    "environmentId": "bc3ccd28-0998-456e-bb3d-07e3a244ac59",
+    "status": "SẴN SÀNG THI TRIỂN",
+    "mana": 100,
+    "playMode": false,
+    "paused": false,
+    "contextLost": false,
+    "density": 1,
+    "debrisDensity": 1,
+    "runtimeDensityScale": 1,
+    "effectiveDensity": 1,
+    "render": {
+      "frame": 3625,
+      "calls": 62,
+      "triangles": 42043,
+      "points": 0,
+      "lines": 182
+    },
+    "memory": {
+      "geometries": 24,
+      "textures": 21
+    },
+    "badTransforms": [],
+    "badPrograms": 0,
+    "glError": 0,
+    "graphics": {
+      "quality": "High",
+      "features": {
+        "reflections": true,
+        "ao": true,
+        "volumetric": true,
+        "caustics": true,
+        "subsurface": true,
+        "motionBlur": false,
+        "dof": false,
+        "adaptive": false
+      },
+      "requestedFeatures": {
+        "reflections": true,
+        "ao": true,
+        "volumetric": true,
+        "caustics": true,
+        "subsurface": true,
+        "motionBlur": false,
+        "dof": false,
+        "adaptive": false
+      },
+      "autoReduced": [],
+      "averageFrameMs": 13.076196711357108,
+      "post": {
+        "ssr": false,
+        "gtao": true,
+        "ssao": false,
+        "dof": false,
+        "ssrTemporal": false,
+        "ssrResolution": "100%",
+        "maxTextures": 32,
+        "lastUpdateMs": 0,
+        "unavailable": []
+      },
+      "fields": {
+        "initialized": true,
+        "activeLights": 0,
+        "windStrength": 0,
+        "windTurbulence": 0,
+        "quality": "High"
+      },
+      "grass": {
+        "quality": "High",
+        "bladeInstances": 1400,
+        "windAlpha": 0,
+        "initialized": true
+      },
+      "particleWind": {
+        "connectedMaterials": 0
+      },
+      "trackedMaterials": 24,
+      "estimatedRenderTargetBytes": 21350400,
+      "surfaceNature": 0
+    },
+    "feedback": "DƯ CHẤN"
+  },
+  "frames": 171,
+  "playbackFps": 8,
+  "playbackSeconds": 21.375,
+  "renderCaptureWallSeconds": 316.3808677039997
+}

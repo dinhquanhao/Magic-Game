@@ -1,0 +1,74 @@
+{
+  "engineChecksPassed": true,
+  "skillCount": 23,
+  "checks": {
+    "gestureUnlock": true,
+    "poolBurst": {
+      "activeVoices": 8,
+      "liveSources": 12,
+      "voiceLimit": 8
+    },
+    "presets": [
+      {
+        "preset": "Low",
+        "voiceLimit": 8,
+        "pooledNodes": 231,
+        "decodedBytes": 2581440,
+        "peak": 0.11599359661340714,
+        "rms": 0.044083691322591934,
+        "limiter": "lookahead-brickwall"
+      },
+      {
+        "preset": "Medium",
+        "voiceLimit": 12,
+        "pooledNodes": 231,
+        "decodedBytes": 2581440,
+        "peak": 0.11599383503198624,
+        "rms": 0.04505206740710277,
+        "limiter": "lookahead-brickwall"
+      },
+      {
+        "preset": "High",
+        "voiceLimit": 20,
+        "pooledNodes": 231,
+        "decodedBytes": 2581440,
+        "peak": 0.1640441119670868,
+        "rms": 0.06234310071787823,
+        "limiter": "lookahead-brickwall"
+      },
+      {
+        "preset": "Ultra",
+        "voiceLimit": 28,
+        "pooledNodes": 231,
+        "decodedBytes": 2581440,
+        "peak": 0.20613716542720795,
+        "rms": 0.06624931054643349,
+        "limiter": "lookahead-brickwall"
+      }
+    ],
+    "pauseRateMute": true,
+    "rapidSelection": {
+      "banks": [
+        "FIRE"
+      ],
+      "decodedBytes": 4840320,
+      "errors": []
+    }
+  },
+  "fullHarnessPassed": false,
+  "harnessFailure": "Page.evaluate: ReferenceError: audioLab is not defined\n    at eval (eval at evaluate (:311:30), <anonymous>:1:1)\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:311:30)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+  "labPassed": true,
+  "fixtureFix": "Expose audioLab via route-only __audioQA.lab; focused UI rerun passed",
+  "assetMirror": {
+    "files": 833,
+    "hashMatched": true
+  },
+  "cueTotals": {
+    "pass": 224,
+    "fail": 1,
+    "total": 225
+  },
+  "earVerified": false,
+  "build": "PASS, 61 modules",
+  "unit": "PASS, 6 files"
+}

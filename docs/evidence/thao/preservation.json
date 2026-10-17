@@ -1,0 +1,119 @@
+{
+  "baseCommit": "3c0908215106b802b3140e979ceb54cde6af9c0b",
+  "systems": 15,
+  "skills": 21,
+  "retainedElementsEqual": true,
+  "retainedSkills": [
+    {
+      "id": "FIRE-01",
+      "beforeSha256": "5e8c1313f7fc88cfebfed4b9721ebfbbdf8a916bfef1e0cd65601935a681bc2f",
+      "afterSha256": "5e8c1313f7fc88cfebfed4b9721ebfbbdf8a916bfef1e0cd65601935a681bc2f",
+      "equal": true
+    },
+    {
+      "id": "WATER-01",
+      "beforeSha256": "e35a84619e58aef00cbece14e93086b4eb9abadc8db37e98e4c12b583eecef09",
+      "afterSha256": "e35a84619e58aef00cbece14e93086b4eb9abadc8db37e98e4c12b583eecef09",
+      "equal": true
+    },
+    {
+      "id": "EARTH-01",
+      "beforeSha256": "f89124a5357b648c5d8c1b701c2e552fa047c2918480553ab9c696cdc80c4325",
+      "afterSha256": "f89124a5357b648c5d8c1b701c2e552fa047c2918480553ab9c696cdc80c4325",
+      "equal": true
+    },
+    {
+      "id": "LIGHT-01",
+      "beforeSha256": "826da5410ac2ed4003903f77c1161b57fc89e1998f3941155d06726b9630fa4d",
+      "afterSha256": "826da5410ac2ed4003903f77c1161b57fc89e1998f3941155d06726b9630fa4d",
+      "equal": true
+    },
+    {
+      "id": "SHADOW-01",
+      "beforeSha256": "1916bda396e9216486d44201adbd7800480f2219c1212fa41dd12288c60d6f5b",
+      "afterSha256": "1916bda396e9216486d44201adbd7800480f2219c1212fa41dd12288c60d6f5b",
+      "equal": true
+    },
+    {
+      "id": "WIND-01",
+      "beforeSha256": "8f9916ac6d415a47d93c9f711e40dafb9f59ca9565070473382c73b12005cffe",
+      "afterSha256": "8f9916ac6d415a47d93c9f711e40dafb9f59ca9565070473382c73b12005cffe",
+      "equal": true
+    },
+    {
+      "id": "LIGHTNING-01",
+      "beforeSha256": "597efe01ad87e19f52d8407a2e5457e240e4903575d4c21be66254c4852d3a43",
+      "afterSha256": "597efe01ad87e19f52d8407a2e5457e240e4903575d4c21be66254c4852d3a43",
+      "equal": true
+    },
+    {
+      "id": "ICE-01",
+      "beforeSha256": "9e5ec034d0bebb091313d465fc7938b0dd96b1486c8cb1303df192c1e69f2585",
+      "afterSha256": "9e5ec034d0bebb091313d465fc7938b0dd96b1486c8cb1303df192c1e69f2585",
+      "equal": true
+    },
+    {
+      "id": "MAGMA-01",
+      "beforeSha256": "ee7b817a4deec0f089a01eb268df01432fd816c4e6d4a9f47564766137ba7bdf",
+      "afterSha256": "ee7b817a4deec0f089a01eb268df01432fd816c4e6d4a9f47564766137ba7bdf",
+      "equal": true
+    },
+    {
+      "id": "MAGMA-02",
+      "beforeSha256": "e13140c343d41ee277e1b9edc52732a8e9f8eeae657dbd8f4a20720d812f2fee",
+      "afterSha256": "e13140c343d41ee277e1b9edc52732a8e9f8eeae657dbd8f4a20720d812f2fee",
+      "equal": true
+    },
+    {
+      "id": "MAGMA-03",
+      "beforeSha256": "eeadaab78d1e68e51435c87fa41f30332dbebd9ec16b7ea288c47e5b9af51276",
+      "afterSha256": "eeadaab78d1e68e51435c87fa41f30332dbebd9ec16b7ea288c47e5b9af51276",
+      "equal": true
+    },
+    {
+      "id": "POISON-01",
+      "beforeSha256": "cea0474f31c22be5ba3e163b7bcd18d60718486fa7e1866ed12fef451764eb23",
+      "afterSha256": "cea0474f31c22be5ba3e163b7bcd18d60718486fa7e1866ed12fef451764eb23",
+      "equal": true
+    },
+    {
+      "id": "SPACE-01",
+      "beforeSha256": "996e117006d3e8c1c3468c049fa5945afb37aa6cf2d5dc80278216817ee38d81",
+      "afterSha256": "996e117006d3e8c1c3468c049fa5945afb37aa6cf2d5dc80278216817ee38d81",
+      "equal": true
+    },
+    {
+      "id": "TIME-01",
+      "beforeSha256": "8005628394e8dbf9fd641e07e131c1f5057ef85f8e2a1e03607560e0648c32b0",
+      "afterSha256": "8005628394e8dbf9fd641e07e131c1f5057ef85f8e2a1e03607560e0648c32b0",
+      "equal": true
+    },
+    {
+      "id": "BLOOD-01",
+      "beforeSha256": "a940c06f594f7741d93841f0b214eff7f0b85ee87d35c80f55b7cf173c673f09",
+      "afterSha256": "a940c06f594f7741d93841f0b214eff7f0b85ee87d35c80f55b7cf173c673f09",
+      "equal": true
+    },
+    {
+      "id": "ASTRAL-01",
+      "beforeSha256": "17c78fe153ebda2b03f3d34a2af77f3cd3dc048723744c2c24a6ef2ef9063dd7",
+      "afterSha256": "17c78fe153ebda2b03f3d34a2af77f3cd3dc048723744c2c24a6ef2ef9063dd7",
+      "equal": true
+    },
+    {
+      "id": "ASTRAL-02",
+      "beforeSha256": "1b7a343cbcb70e25188f597c46596b9113e47ac2b60caeb63c1312899352dbfd",
+      "afterSha256": "1b7a343cbcb70e25188f597c46596b9113e47ac2b60caeb63c1312899352dbfd",
+      "equal": true
+    },
+    {
+      "id": "ASTRAL-03",
+      "beforeSha256": "ceecc32f022eefd202e2811364477d13c49cf2b05874a022a0578b6d958831a8",
+      "afterSha256": "ceecc32f022eefd202e2811364477d13c49cf2b05874a022a0578b6d958831a8",
+      "equal": true
+    }
+  ],
+  "scope": "Full parsed configuration including per-skill cinematic plan, not only names",
+  "windowsLauncherSha256": "67f2f70c870abd45d2604f1b20ddbf506907d6913cbf9a1598162f04cf159f72",
+  "historicalRecordNote": "Retired skill rows/references removed from the distributed record after checkpoint 3273606. Surviving measurements are unchanged; original run totals are historical, not a new 19-skill test."
+}

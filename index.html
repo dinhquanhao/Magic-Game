@@ -4,14 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Xưởng Hiệu Ứng Ma Thuật</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3E✦%3C/text%3E%3C/svg%3E">
 </head>
 <body>
   <div id="app">
-    <canvas id="stage"></canvas><div id="impactFlash" aria-hidden="true"></div>
+    <canvas id="stage"></canvas><div id="impactFlashOverlay" aria-hidden="true"></div>
+    <section id="castFeedback" class="cast-feedback" aria-label="Tiến trình thi triển" hidden>
+      <div><span data-cast-phase role="status"></span><output data-cast-remaining></output></div>
+      <progress max="1" value="0" aria-label="Tiến trình thi triển"></progress>
+    </section>
     <header class="brand">
       <div class="brand-mark">✦</div>
       <div><div class="eyebrow">PHÒNG THÍ NGHIỆM MA THUẬT</div><h1>XƯỞNG <span>HIỆU ỨNG MA THUẬT</span></h1></div>
-      <div class="version" id="projectCount">15 HỆ · 23 TUYỆT KỸ</div>
+      <div class="version" id="projectCount">15 HỆ · 19 TUYỆT KỸ</div>
     </header>
     <button id="modeToggle" class="mode-toggle" type="button">▶ VÀO CHẾ ĐỘ CHƠI</button>
     <aside class="instructions">
@@ -28,6 +33,13 @@
     <aside class="settings">
       <div class="panel-heading"><span>ĐIỀU KHIỂN HIỆU ỨNG</span><span class="live">● TRỰC TIẾP</span></div>
       <div class="control"><label>CHẤT LƯỢNG</label><select id="qualityPreset"><option value="Low">Thấp</option><option value="Medium">Vừa</option><option value="High" selected>Cao</option><option value="Ultra">Siêu cao</option></select></div>
+      <details class="audio-options">
+        <summary>ÂM THANH</summary>
+        <button id="audioToggle" class="secondary" type="button" aria-pressed="false">BẬT ÂM THANH</button>
+        <div class="control"><label for="audioVolume">ÂM LƯỢNG <output id="audioVolumeOut">65%</output></label><input id="audioVolume" type="range" min="0" max="1" step="0.05" value="0.65"></div>
+        <label class="toggle"><span>GIÓ ĐẤU TRƯỜNG</span><input type="checkbox" id="ambientAudio"></label>
+        <p id="audioStatus" role="status">Bật để nghe âm thanh phép thuật</p>
+      </details>
       <details class="graphics-options"><summary>ĐỒ HỌA NÂNG CAO</summary>
         <div class="toggle"><span>SSR TRÊN MẶT ĐẤT · IBL DỰ PHÒNG</span><input type="checkbox" id="graphicsReflections" checked></div>
         <div class="toggle"><span>GTAO / SSAO THEO CHẤT LƯỢNG</span><input type="checkbox" id="graphicsAo" checked></div>
@@ -58,7 +70,7 @@
       <div class="control"><label>TỐC ĐỘ HOẠT ẢNH <output id="speedOut">1.00</output></label><input id="speed" type="range" min="0.3" max="2" step="0.05" value="1"></div>
       <div class="control"><label>QUẦNG SÁNG <output id="bloomOut">1.15</output></label><input id="bloom" type="range" min="0" max="2.5" step="0.05" value="1.15"></div>
       <div id="showcaseDistanceControl" class="control"><label>KHOẢNG CÁCH MÁY QUAY <output id="distanceOut">34</output></label><input id="distance" type="range" min="12" max="50" step="1" value="34"></div>
-      <div class="control"><label>THỜI GIAN VẼ PHÙ VĂN <output id="castTimeOut">4.50</output></label><input id="castTime" type="range" min="0.3" max="5" step="0.1" value="4.5"></div>
+      <div class="control"><label>VẼ + HỘI TỤ PHÙ VĂN (GIÂY) <output id="castTimeOut">10.00</output></label><input id="castTime" type="range" min="2" max="20" step="0.5" value="10"></div>
       <div class="control"><label>SỐ TẦNG <output id="layerCountOut">8</output></label><input id="layerCount" type="range" min="7" max="9" step="1" value="8"></div>
       <div class="control"><label>SỐ VÒNG MỖI TẦNG <output id="ringsPerLayerOut">3</output></label><input id="ringsPerLayer" type="range" min="2" max="4" step="1" value="3"></div>
       <div class="control"><label>KÍCH THƯỚC VÒNG TRUNG TÂM <output id="centralRingSizeOut">8.8</output></label><input id="centralRingSize" type="range" min="8" max="10" step="0.2" value="8.8"></div>
@@ -84,7 +96,7 @@
       <div class="aim-label" id="aimLabel">NGẮM TỰ DO</div>
       <div class="play-actions"><button id="lockButton" type="button">⌖ KHÓA MỤC TIÊU [TAB]</button><button id="replayButton" type="button">↻ THI TRIỂN LẠI</button></div>
       <div class="play-help"><b>W A S D</b> di chuyển · <b>Shift</b> chạy · <b>Space</b> nhảy · <b>Q</b> lướt · <b>E</b> thi triển · <b>chuột phải</b> ngắm · <b>Tab</b> khóa mục tiêu · <b>Esc</b> thả chuột</div>
-      <div class="play-tuning"><label>ĐỘ NHẠY <input id="mouseSensitivity" type="range" min="0.4" max="2" value="1" step="0.05"></label><label>FOV <input id="playFov" type="range" min="38" max="78" value="58" step="1"></label><label>BÁN KÍNH ĐẤU TRƯỜNG <input id="arenaRadius" type="range" min="30" max="82" value="58" step="1"></label><label class="god-toggle"><input id="infiniteManaToggle" type="checkbox"> BỎ GIỚI HẠN MANA / HỒI CHIÊU</label></div>
+      <div class="play-tuning"><label for="playCameraMode">GÓC NHÌN [V]<select id="playCameraMode"><option value="quarter">3/4</option><option value="moba">TỰ DO — LoL</option><option value="first-person">THỨ NHẤT</option><option value="orbit">XOAY 360°</option><option value="follow">THEO SAU</option></select></label><div class="camera-actions"><button id="cameraCenter" type="button">VỀ NHÂN VẬT [C]</button><button id="cameraFollow" type="button" aria-pressed="false" hidden>TỰ DO [Y]</button></div><p id="cameraHelp" aria-live="polite"></p><label>ĐỘ NHẠY <input id="mouseSensitivity" type="range" min="0.4" max="2" value="1" step="0.05"></label><label>FOV <input id="playFov" type="range" min="38" max="90" value="58" step="1"></label><label>BÁN KÍNH ĐẤU TRƯỜNG <input id="arenaRadius" type="range" min="30" max="82" value="58" step="1"></label><label class="god-toggle"><input id="infiniteManaToggle" type="checkbox"> BỎ GIỚI HẠN MANA / HỒI CHIÊU</label></div>
     </section>
     <div class="status"><span id="fps">60 khung hình/giây</span><span class="dot">·</span><span>ĐỘNG CƠ HIỆU ỨNG 3D</span><span class="dot">·</span><span id="status">SẴN SÀNG</span></div>
   </div>
